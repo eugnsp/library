@@ -19,7 +19,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II
 
 DOI: [10.1002/spe.4380231105](https://doi.org/10.1002/spe.4380231105)
 
-<div>[Read](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
+[Read](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
 
 ## Standard library algorithms
 ### STL algorithms: how to use them and how to write your own
@@ -158,7 +158,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II
 
 DOI: [10.1145/356635.356640](https://doi.org/10.1145/356635.356640)
 
-<div>Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
+Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
 
 ## Rethinking pointers
 
@@ -303,7 +303,7 @@ the art, are described. A distinction is made between various classes of matrice
 
 *Peter Steinbach* @ Meeting C++ (2015)
 
-<div class="abstract"><i>No description is available.</i></div>
+> *No description is available.*
 
 [Watch at YouTube](https://www.youtube.com/watch?v=z43l_LaOqnM)
 
