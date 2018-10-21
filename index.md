@@ -4,7 +4,7 @@
 
 *Erik Demaine* @ MIT OCW 6.006 (2011)
 
-> I. This lecture introduces dynamic programming, in which careful exhaustive search can be used to design polynomial-time algorithms. The Fibonacci and shortest paths problems are used to introduce guessing, memoization, and reusing solutions to subproblems. II. This lecture starts with a five-step process for dynamic programming, and then covers text justification and perfect-information blackjack. The lecture also describes how parent pointers are used to recover the solution. III. This lecture starts with how to define useful subproblems for strings or sequences, and then looks at parenthesization, edit distance, and the knapsack problem. The lecture ends with a brief discussion of pseudopolynomial time. IV. This lecture introduces a second type of guessing, in which more subproblems are created so that more features of the solution can be found. This type of guessing is illustrated with piano/guitar fingering and the Tetris and Super Mario Brothers games.
+> <b>I.</b> This lecture introduces dynamic programming, in which careful exhaustive search can be used to design polynomial-time algorithms. The Fibonacci and shortest paths problems are used to introduce guessing, memoization, and reusing solutions to subproblems. <b>II.</b> This lecture starts with a five-step process for dynamic programming, and then covers text justification and perfect-information blackjack. The lecture also describes how parent pointers are used to recover the solution. <b>III.</b> This lecture starts with how to define useful subproblems for strings or sequences, and then looks at parenthesization, edit distance, and the knapsack problem. The lecture ends with a brief discussion of pseudopolynomial time. <b>IV.</b> This lecture introduces a second type of guessing, in which more subproblems are created so that more features of the solution can be found. This type of guessing is illustrated with piano/guitar fingering and the Tetris and Super Mario Brothers games.
 
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY) [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY) [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) 
 
@@ -13,12 +13,13 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II
 ## Sorting algorithms
 ### Engineering a sort function
 
-*Jon L. Bentley, M. Douglas McIlroy* @ Software: Practice and Experience <u>23</u>, 1249 (1993)
+*Jon L. Bentley, M. Douglas McIlroy* @ Software: Practice and Experience &lt;u&gt;23&lt;/u&gt;, 1249 (1993)
 
 > We recount the history of a new `qsort` function for a C library. Our function is clearer, faster and more robust than existing sorts. It chooses partitioning elements by a new sampling scheme; it partitions by a novel solution to Dijkstra's Dutch National Flag problem; and it swaps efficiently. Its behavior was assessed with timing and debugging testbeds, and with a program to certify performance. The design techniques apply in domains beyond sorting.
 
 DOI: [10.1002/spe.4380231105](https://doi.org/10.1002/spe.4380231105)
-[Read](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
+
+<div>[Read](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
 
 ## Standard library algorithms
 ### STL algorithms: how to use them and how to write your own
@@ -46,7 +47,7 @@ DOI: [10.1002/spe.4380231105](https://doi.org/10.1002/spe.4380231105)
 
 *Tim Shen* @ CppCon (2016)
 
-> Regular expressions are widely used in application development and data processing, yet it is challenging to design and implement a regular expression library that is expressive, efficient and safe. In this talk, Tim Shen, the current maintainer of libstdc++'s `<regex>`, will introduce the basics of implementing regular expressions in C++, the status of existing implementations, and what is expected from the standardization process. For the implementation, several data structures and algorithms will be introduced, with pros and cons listed; we will show how several popular implementations (Boost.Regex, Boost.Xpressive, `<regex>` from standard library implementations, RE2, etc) pick their algorithms. Several popular features/patterns that hurt performance will be explained, with a "safe" regex usage suggested. Finally a wishlist of features will be presented, in order to deliver a more efficient and usable regex library. 
+> Regular expressions are widely used in application development and data processing, yet it is challenging to design and implement a regular expression library that is expressive, efficient and safe. In this talk, Tim Shen, the current maintainer of libstdc++'s `&lt;regex&gt;`, will introduce the basics of implementing regular expressions in C++, the status of existing implementations, and what is expected from the standardization process. For the implementation, several data structures and algorithms will be introduced, with pros and cons listed; we will show how several popular implementations (Boost.Regex, Boost.Xpressive, `&lt;regex&gt;` from standard library implementations, RE2, etc) pick their algorithms. Several popular features/patterns that hurt performance will be explained, with a "safe" regex usage suggested. Finally a wishlist of features will be presented, in order to deliver a more efficient and usable regex library. 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=N_rkHzhXueo)
 
@@ -58,7 +59,7 @@ DOI: [10.1002/spe.4380231105](https://doi.org/10.1002/spe.4380231105)
 
 *Alisdair Meredith* @ C++Now (2017)
 
-> C++17 is about to ship, and one of the subtle additions is the reservation of a family of namespaces for a future standard library. As our attention turns to C++20 and beyond, Alisdair Meredith will explore how language evolution could (and should) affect the design of this future library, and just what kind of a new library do we want anyway? This presentation breaks down into three parts. I. The first session lays down a vision of delivering all the language features likely to impact a library design in C++20. The obvious candidates are modules, concepts, and contracts, but what else? We will look at a variety of language features, assessing what they offer, or how they impact, a library designer. II. The second session looks into constraints and opportunities when designing a new C++ standard library. How compatible must we be with the old library? How ambitious should the new design be? What should our basic vocabulary types be? And how do we cope with language dependencies on `std` types like `type_info`? III. The final session is a planned workshop, to gain feedback from the attendees of C++Now — an invaluable resource of world class library designers. Have I highlighted the correct questions? What should the priorities be? What is an appropriate schedule for developing and standardizing such a new library? How can those of us without access to committee meetings still help with the process? The results of this workshop will be written up in an informational paper for the next ISO mailing.
+> C++17 is about to ship, and one of the subtle additions is the reservation of a family of namespaces for a future standard library. As our attention turns to C++20 and beyond, Alisdair Meredith will explore how language evolution could (and should) affect the design of this future library, and just what kind of a new library do we want anyway? This presentation breaks down into three parts. <b>I.</b> The first session lays down a vision of delivering all the language features likely to impact a library design in C++20. The obvious candidates are modules, concepts, and contracts, but what else? We will look at a variety of language features, assessing what they offer, or how they impact, a library designer. <b>II.</b> The second session looks into constraints and opportunities when designing a new C++ standard library. How compatible must we be with the old library? How ambitious should the new design be? What should our basic vocabulary types be? And how do we cope with language dependencies on `std` types like `type_info`? <b>III.</b> The final session is a planned workshop, to gain feedback from the attendees of C++Now &mdash; an invaluable resource of world class library designers. Have I highlighted the correct questions? What should the priorities be? What is an appropriate schedule for developing and standardizing such a new library? How can those of us without access to committee meetings still help with the process? The results of this workshop will be written up in an informational paper for the next ISO mailing.
 
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II](https://www.youtube.com/watch?v=fjtwfauk7a8) [Part III](https://www.youtube.com/watch?v=iAAAYNKU5g0) 
 
@@ -68,7 +69,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II
 
 *Herb Sutter* @ CppCon (2017)
 
-> Two years ago, I started to focus on exploring ways that we might evolve the C++ language itself to make C++ programming both more powerful and simpler. The only way to accomplish both of those goals at the same time is by adding abstractions that let programmers directly express their intent — to elevate comments and documentation to testable code, and elevate coding patterns and idioms into compiler-checkable declarations. The work came up with several potential candidate features where judiciously adding some power to the language could simplify code dramatically, while staying true to C++'s core values of efficient abstraction, closeness to hardware, and the zero-overhead principle. The first two potential candidate features from that work to be further developed and proposed for ISO C++ are the `<=>` unified comparison operator (minor) and what I've provisionally called "metaclasses" as a way to generatively write C++ types (major). This talk is about the latter, and includes design motivation, current progress, and some live online compiler demos using the prototype Clang-based compiler built by Andrew Sutton and hosted at godbolt.org.
+> Two years ago, I started to focus on exploring ways that we might evolve the C++ language itself to make C++ programming both more powerful and simpler. The only way to accomplish both of those goals at the same time is by adding abstractions that let programmers directly express their intent &mdash; to elevate comments and documentation to testable code, and elevate coding patterns and idioms into compiler-checkable declarations. The work came up with several potential candidate features where judiciously adding some power to the language could simplify code dramatically, while staying true to C++'s core values of efficient abstraction, closeness to hardware, and the zero-overhead principle. The first two potential candidate features from that work to be further developed and proposed for ISO C++ are the `&lt;=&gt;` unified comparison operator (minor) and what I've provisionally called "metaclasses" as a way to generatively write C++ types (major). This talk is about the latter, and includes design motivation, current progress, and some live online compiler demos using the prototype Clang-based compiler built by Andrew Sutton and hosted at <a href="https://godbolt.org" target="_blank">godbolt.org</a>.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=4AfRAVcThyA)
 
@@ -80,7 +81,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II
 
 *Matt Godbolt* @ C++Now (2018)
 
-> We've given Matt four day's notice to tell us what his compiler has done for him since his CppCon 2017 Keynote.
+> We've given Matt four day's notice to tell us what his compiler has done for him since his [CppCon 2017 Keynote](https://cppcon2017.sched.com/event/BguG/unbolting-the-compilers-lid-what-has-my-compiler-done-for-me-lately).
 
 [Watch at YouTube](https://www.youtube.com/watch?v=nAbCKa0FzjQ)
 
@@ -151,19 +152,19 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II
 # Design and style
 ## Structured programming with `go to` statements
 
-*Donald E. Knuth* @ ACM Computing Surveys <u>6</u>, 261 (1974)
+*Donald E. Knuth* @ ACM Computing Surveys &lt;u&gt;6&lt;/u&gt;, 261 (1974)
 
 > A consideration of several different examples sheds new light on the problem of creating reliable,  well-structured programs that behave efficiently. This study focuses largely on two issues: (a) improved syntax for iterations and error exits, making it possible to write a larger class of programs clearly and efficiently without go to statements; (b) a methodology of program design, beginning with readable and correct, but possibly inefficient programs that are systematically transformed if necessary into efficient and correct, but possibly less readable code. The discussion brings out opposing points of view about whether or not `go to` statements should be abolished; some merit is found on both sides of this  question. Finally, an attempt is made to define the true nature of structured programming, and to recommend  fruitful directions for further study.
 
 DOI: [10.1145/356635.356640](https://doi.org/10.1145/356635.356640)
-Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
-)[Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
+
+<div>Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
 
 ## Rethinking pointers
 
-*Jonathan Müller* @ C++Now (2018)
+*Jonathan M&uuml;ller* @ C++Now (2018)
 
-> "Do not use owning raw pointers, use a smart pointer instead." — And yet it is common to use them when writing a linked list, for example. "Use a reference when a pointer is non-null." — But the standard library interfaces themselves don't follow this advice all the time. We're at a point where a simple question "I need to point to some other object" requires a complicated lecture about raw vs. smart pointers, references and the danger of putting references inside angle brackets. Clearly we can do better. Let's take a step back, and look at the bigger picture: What are the common pointer-like types? Which properties do they have in common, which are unique? What are the possible situations that require pointer-like types? Which properties do those situations require? This talk will answer those questions and so provide the definitive guide to choosing the correct pointer types. We'll be discussing whether or not `optional<T&>` or `std::observer_ptr` are necessary, talk about the difference in applications for `T&`, `gsl::non_null<T>` and `std::reference_wrapper<T>`, and look how the type system can help us catch lifetime issues.
+> "Do not use owning raw pointers, use a smart pointer instead." &mdash; And yet it is common to use them when writing a linked list, for example. "Use a reference when a pointer is non-null." &mdash; But the standard library interfaces themselves don't follow this advice all the time. We're at a point where a simple question "I need to point to some other object" requires a complicated lecture about raw vs. smart pointers, references and the danger of putting references inside angle brackets. Clearly we can do better. Let's take a step back, and look at the bigger picture: What are the common pointer-like types? Which properties do they have in common, which are unique? What are the possible situations that require pointer-like types? Which properties do those situations require? This talk will answer those questions and so provide the definitive guide to choosing the correct pointer types. We'll be discussing whether or not `optional&lt;T&amp;&gt;` or `std::observer_ptr` are necessary, talk about the difference in applications for `T&amp;`, `gsl::non_null&lt;T&gt;` and `std::reference_wrapper&lt;T&gt;`, and look how the type system can help us catch lifetime issues.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=kYiEvVEh6Tw)
 
@@ -173,7 +174,7 @@ Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
 
 *Ben Deane* @ CppCon (2016)
 
-> C++ has a pretty good type system, and modern C++ gives us a greater ability than ever before to use that type system for good: to make APIs easier to use and harder to misuse, to make our datatypes more closely express our intent, and generally to make code safer, more obvious in function and perhaps even faster. This is an interactive session — incorporating games played between presenter and audience, even - taking a look at choices available to us as datatype and API designers, and examining how a little knowledge about the algebra of algebraic datatypes can help. We'll see why `std::optional` and (hopefully soon) `std::variant` will quickly become an essential part of everyone's toolbox, and also explore how types can be used to express not just the structure of data, but also the behaviour of objects and functions.
+> C++ has a pretty good type system, and modern C++ gives us a greater ability than ever before to use that type system for good: to make APIs easier to use and harder to misuse, to make our datatypes more closely express our intent, and generally to make code safer, more obvious in function and perhaps even faster. This is an interactive session &mdash; incorporating games played between presenter and audience, even - taking a look at choices available to us as datatype and API designers, and examining how a little knowledge about the algebra of algebraic datatypes can help. We'll see why `std::optional` and (hopefully soon) `std::variant` will quickly become an essential part of everyone's toolbox, and also explore how types can be used to express not just the structure of data, but also the behaviour of objects and functions.
 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=ojZbFIQSdl8)
@@ -195,7 +196,7 @@ Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
 
 *Titus Winters* @ C++Now (2018)
 
-> The old rules for C++API design are due for an update — we made ad hoc changes to design principles in the standard library, but haven't really written down the new ideas. Parameter passing and API design for free functions/member functions is due for a general update, particularly as a result of rvalue-references and reference qualification. How do we express "maybe move" APIs? When do we want reference-qualified overload sets? What does an rvalue-reference qualified non-overloaded method mean? How do we express call once semantics? This talk will focus on modern C++ design from small (choice of passing by value or reference) to large (regular types, reference types, move-only types, etc). We will also introduce a taxonomy of type properties as a means to discuss known-good type design families. 
+> The old rules for C++API design are due for an update &mdash; we made ad hoc changes to design principles in the standard library, but haven't really written down the new ideas. Parameter passing and API design for free functions/member functions is due for a general update, particularly as a result of rvalue-references and reference qualification. How do we express "maybe move" APIs? When do we want reference-qualified overload sets? What does an rvalue-reference qualified non-overloaded method mean? How do we express call once semantics? This talk will focus on modern C++ design from small (choice of passing by value or reference) to large (regular types, reference types, move-only types, etc). We will also introduce a taxonomy of type properties as a means to discuss known-good type design families. 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=2UmDvg5xv1U)
 
@@ -205,7 +206,7 @@ Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
 
 *Klaus Iglberger* @ CppCon (2017)
 
-> You are devoted to minimize coupling and duplication? You are taking care to maximize cohesion, flexibility, extensibility, encapsulation, testability, and even performance in order to achieve the high goals of (object-oriented) programming? Awesome! But wait: You still favor member functions? Seriously? You have been deceived! You have been praying at the altar of false promises! Shed the shackles of Java philosophy! Free your functions! In this talk I will demonstrate why in C++ free functions should generally be preferred to member functions, and why free functions — not member functions! — provide you with all the aforementioned advantages you expect from object-oriented programming. Note, though, that this talk might fundamentally change your perception of C++ and object-oriented programming in general! 
+> You are devoted to minimize coupling and duplication? You are taking care to maximize cohesion, flexibility, extensibility, encapsulation, testability, and even performance in order to achieve the high goals of (object-oriented) programming? Awesome! But wait: You still favor member functions? Seriously? You have been deceived! You have been praying at the altar of false promises! Shed the shackles of Java philosophy! Free your functions! In this talk I will demonstrate why in C++ free functions should generally be preferred to member functions, and why free functions &mdash; not member functions! &mdash; provide you with all the aforementioned advantages you expect from object-oriented programming. Note, though, that this talk might fundamentally change your perception of C++ and object-oriented programming in general! 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=WLDT1lDOsb4)
 
@@ -215,9 +216,9 @@ Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
 ## Standard library exceptions and error handling
 ### Your own error code
 
-*Andrzej Krzemieński* @  (2017)
+*Andrzej Krzemie&nacute;ski* @  (2017)
 
-> I was recently implementing the "classification of error conditions" in my application offered by the functionality behind `std::error_code`. In this post I want to share some of my experience and insight. C++11 comes with a quite sophisticated mechanism for classifying error conditions. You may have encountered names like "error code", "error condition", "error category", but figuring out what good they are, and how to use them is difficult. The only valuable source of information on the subject in the Internet is a series of blog posts by Christopher Kohlhoff, the author of Boost.Asio library. And this was a really good start for me. But still, I believe it would be beneficial to have more than one source of information, and more than one way of explaining the subject. So here we go…
+> I was recently implementing the "classification of error conditions" in my application offered by the functionality behind `std::error_code`. In this post I want to share some of my experience and insight. C++11 comes with a quite sophisticated mechanism for classifying error conditions. You may have encountered names like "error code", "error condition", "error category", but figuring out what good they are, and how to use them is difficult. The only valuable source of information on the subject in the Internet is a series of blog posts by <em>Christopher Kohlhoff</em>, the author of Boost.Asio library. And this was a really good start for me. But still, I believe it would be beneficial to have more than one source of information, and more than one way of explaining the subject. So here we go&hellip;
 
 [Read](https://akrzemi1.wordpress.com/2017/07/12/your-own-error-code/)
 
@@ -225,13 +226,9 @@ Read:[Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
 
 *Christopher Kohlhoff* @  (2010)
 
-> Among the many new library features in C++0x is a little header called `<system_error>`. It provides a selection of utilities for managing, well, system errors. The principal components defined in the header are: `class error_category`, `class error_code`, `class error_condition`, `class system_error`, `enum class errc`. I had a hand in the design of this facility, so in this series of posts I will try to capture the rationale, history, and intended uses of the various components.
+> Among the many new library features in C++0x is a little header called `&lt;system_error&gt;`. It provides a selection of utilities for managing, well, system errors. The principal components defined in the header are: `class error_category`, `class error_code`, `class error_condition`, `class system_error`, `enum class errc`. I had a hand in the design of this facility, so in this series of posts I will try to capture the rationale, history, and intended uses of the various components.
 
-Read: [Part I](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-1.html
-)[Part II](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-2.html
-)[Part III](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-3.html
-)[Part IV](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-4.html
-)[Part V](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-5.html)
+Read: [Part I](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-1.html)[Part II](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-2.html)[Part III](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-3.html)[Part IV](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-4.html)[Part V](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-5.html)
 
 # Numerical methods
 ## Iterative solvers and preconditioners
@@ -241,7 +238,7 @@ Read: [Part I](http://blog.think-async.com/2010/04/system-error-support-in-c0x-p
 
 > In these lecture notes an introduction to Krylov subspace solvers and preconditioners is presented. After a discretization of partial differential equations large, sparse systems of linear
 equations has to be solved. Fast solution of these systems is very urgent nowadays. The size
-of the problems can be 1013 unknowns and 1013 equations. Iterative solution methods are the
+of the problems can be 10<sup>13</sup> unknowns and 10<sup>13</sup> equations. Iterative solution methods are the
 methods of choice for these large linear systems. We start with a short introduction of Basic
 Iterative Methods. Thereafter preconditioned Krylov subspace methods, which are state of
 the art, are described. A distinction is made between various classes of matrices.
@@ -274,7 +271,7 @@ the art, are described. A distinction is made between various classes of matrice
 
 *Carl Cook* @ CppCon (2017)
 
-> Automated trading involves submitting electronic orders rapidly when opportunities arise. But it's harder than it seems: either your system is the fastest and you make the trade, or you get nothing. This is a considerable challenge for any C++ developer — the critical path is only a fraction of the total codebase, it is invoked infrequently and unpredictably, yet must execute quickly and without delay. Unfortunately we can't rely on the help of compilers, operating systems and standard hardware, as they typically aim for maximum throughput and fairness across all processes. This talk describes how successful low latency trading systems can be developed in C++, demonstrating common coding techniques used to reduce execution times. While automated trading is used as the motivation for this talk, the topics discussed are equally valid to other domains such as game development and soft real-time processing. 
+> Automated trading involves submitting electronic orders rapidly when opportunities arise. But it's harder than it seems: either your system is the fastest and you make the trade, or you get nothing. This is a considerable challenge for any C++ developer &mdash; the critical path is only a fraction of the total codebase, it is invoked infrequently and unpredictably, yet must execute quickly and without delay. Unfortunately we can't rely on the help of compilers, operating systems and standard hardware, as they typically aim for maximum throughput and fairness across all processes. This talk describes how successful low latency trading systems can be developed in C++, demonstrating common coding techniques used to reduce execution times. While automated trading is used as the motivation for this talk, the topics discussed are equally valid to other domains such as game development and soft real-time processing. 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=NH1Tta7purM)
 
@@ -306,12 +303,22 @@ the art, are described. A distinction is made between various classes of matrice
 
 *Peter Steinbach* @ Meeting C++ (2015)
 
-No description is available.
-
+<div class="abstract"><i>No description is available.</i></div>
 
 [Watch at YouTube](https://www.youtube.com/watch?v=z43l_LaOqnM)
 
 [See more details](https://github.com/psteinb/meetingcpp2015)
+
+## Multi-core computing
+### atomic<> Weapons
+
+*Herb Sutter* @ C++ and Beyond (2012)
+
+> *The facts.* The C++11 memory model and what it requires you to do to make sure your code is correct and stays correct. We'll include clear answers to several FAQs: "how do the compiler and hardware cooperate to remember how to respect these rules?", "what is a race condition?", and the ageless one-hand-clapping question "how is a race condition like a debugger?" *The tools.* The deep interrelationships and fundamental tradeoffs among mutexes, atomics, and fences/barriers. I'll try to convince you why standalone memory barriers are bad, and why barriers should always be associated with a specific load or store. *The unspeakables.* I'll grudgingly and reluctantly talk about the Thing I Said I'd Never Teach That Programmers Should Never Need To Now: relaxed atomics. Don't use them! If you can avoid it. But here's what you need to know, even though it would be nice if you didn't need to know it. *The rapidly-changing hardware reality.* How locks and atomics map to hardware instructions on ARM and x86/x64, and throw in POWER and Itanium for good measure &mdash; and I'll cover how and why the answers are actually different last year and this year, and how they will likely be different again a few years from now. We'll cover how the latest CPU and GPU hardware memory models are rapidly evolving, and how this directly affects C++ programmers.
+
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4) [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU) 
+
+[See more details](https://channel9.msdn.com/Shows/Going+Deep/Cpp-and-Beyond-2012-Herb-Sutter-atomic-Weapons-1-of-2)
 
 # Standard library
 ## Iterator haiku
@@ -324,11 +331,11 @@ No description is available.
 
 [See more details](https://cppcon2016.sched.com/event/7nLy/iterator-haiku)
 
-## `<functional>`: What's new, and proper usage
+## `&lt;functional&gt;`: What's new, and proper usage
 
 *Stephan T. Lavavej* @ CppCon (2015)
 
-> `<functional>` gained lots of machinery in C++11, with further changes in C++14 and C++17. This talk will cover what's new in 11/14/17, focusing on how to use it properly. For example, you've probably used `std::function`, but do you know the criteria for activating the Small Functor Optimization? (It's not just being small!) We'll also look at `std::bind()`, `std::mem_fn`, C++17's `std::invoke()`, and more.
+> `&lt;functional&gt;` gained lots of machinery in C++11, with further changes in C++14 and C++17. This talk will cover what's new in 11/14/17, focusing on how to use it properly. For example, you've probably used `std::function`, but do you know the criteria for activating the Small Functor Optimization? (It's not just being small!) We'll also look at `std::bind()`, `std::mem_fn`, C++17's `std::invoke()`, and more.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=zt7ThwVfap0)
 
@@ -359,7 +366,7 @@ No description is available.
 
 *Arthur O'Dwyer* @ C++Now (2018)
 
-> C++17 introduced the `std::pmr` framework. In this framework, a `std::pmr::polymorphic_allocator<T>` holds a pointer to a `std::pmr::memory_resource`. The memory resource is in charge of managing and organizing the heap itself, and the allocator object is just a thin "handle" pointing to the memory resource. This is not just a convenient implementation strategy for `std::pmr`! Rather, this elucidates the true meaning of the Allocator concept which has existed, unchanged, since C++98. An Allocator is a handle to a MemoryResource. Even `std::allocator` can – and should – be viewed as a handle to a global singleton "heap", and not as a MemoryResource in its own right. From this core insight we derive many corollaries, such as the need for allocator types to be lightweight and efficiently copyable, the fundamental impossibility of implementing an "in-place" `std::vector` via stupid allocator tricks, and the philosophical underpinnings of "rebinding." We'll show at least two non-standard examples of types modeling Allocator that act as different kinds of handles to heaps: a `shmem_allocator` that holds a `shmem_ptr` to a memory resource, and a `shutdown_safe_allocator` that holds a `weak_ptr` to a memory resource. We'll discuss what we can expect from a "moved-from" allocator object, relate the notion of "handle" to neighboring notions such as "façade" and "adaptor", and suggest similarities between "allocator/heap" and "executor/execution-context".
+> C++17 introduced the `std::pmr` framework. In this framework, a `std::pmr::polymorphic_allocator&lt;T&gt;` holds a pointer to a `std::pmr::memory_resource`. The memory resource is in charge of managing and organizing the heap itself, and the allocator object is just a thin "handle" pointing to the memory resource. This is not just a convenient implementation strategy for `std::pmr`! Rather, this elucidates the true meaning of the Allocator concept which has existed, unchanged, since C++98. An Allocator <b>is</b> a handle to a MemoryResource. Even `std::allocator` can &ndash; and should &ndash; be viewed as a handle to a global singleton "heap", and not as a MemoryResource in its own right. From this core insight we derive many corollaries, such as the need for allocator types to be lightweight and efficiently copyable, the fundamental impossibility of implementing an "in-place" `std::vector` via stupid allocator tricks, and the philosophical underpinnings of "rebinding." We'll show at least two non-standard examples of types modeling Allocator that act as different kinds of handles to heaps: a `shmem_allocator` that holds a `shmem_ptr` to a memory resource, and a `shutdown_safe_allocator` that holds a `weak_ptr` to a memory resource. We'll discuss what we can expect from a "moved-from" allocator object, relate the notion of "handle" to neighboring notions such as "fa&ccedil;ade" and "adaptor", and suggest similarities between "allocator/heap" and "executor/execution-context".
 
 [Watch at YouTube](https://www.youtube.com/watch?v=0MdSJsCTRkY)
 
@@ -389,7 +396,7 @@ No description is available.
 
 [See more details](https://cppnow2018.sched.com/event/4058f00b8431f1610d3246f62066ac51)
 
-### `tuple<>`: What's new and how it works
+### `tuple&lt;&gt;`: What's new and how it works
 
 *Stephan T. Lavavej* @ CppCon (2016)
 
@@ -414,7 +421,7 @@ No description is available.
 
 *Walter E. Brown* @ CppCon (2014)
 
-> Template metaprogramming has become an important part of a C++ programmer's toolkit. This talk will demonstrate state-of-the-art metaprogramming techniques, applying each to obtain representative implementations of selected standard library facilities. Along the way, we will look at `std::void_t`, a recently-proposed, extremely simple new new `<type_traits>` candidate whose use has been described by one expert as "highly advanced (and elegant), and surprising even to experienced template metaprogrammers."
+> Template metaprogramming has become an important part of a C++ programmer's toolkit. This talk will demonstrate state-of-the-art metaprogramming techniques, applying each to obtain representative implementations of selected standard library facilities. Along the way, we will look at `std::void_t`, a recently-proposed, extremely simple new new `&lt;type_traits&gt;` candidate whose use has been described by one expert as "highly advanced (and elegant), and surprising even to experienced template metaprogrammers."
 
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY) [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) 
 
@@ -425,7 +432,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY) [Part II
 
 *Arthur O'Dwyer* @ C++Now (2018)
 
-> I'll present three candidates for the best type trait that doesn't (yet!) exist in C++. The first trait, `is_trivially_relocatable_v<T>`, tells whether objects of type `T` can be "atomically move-constructed-and-destroyed" by `std::memcpy`. The canonical use-cases for this operation are vector resizing and hash-table rehashing. We'll look at benchmarks for resizing `std::vector<std::unique_ptr<T>>` with and without this type trait, and consider the curious case of swapping two trivially relocatable objects. The second trait, `is_trivially_equality_comparable_v<T>`, tells whether objects of type `T` can be compared by `std::memcmp`. The canonical use-case for this operation is compare-exchange on `std::atomic<T>`, which is already implemented in terms of `std::memcmp` but has undefined behavior for types that are not trivially comparable. (WG21 has begun to tackle this problem via papers N4130 and P0528.) With the introduction of "operator spaceship" in C++2a, the compiler now has enough information to determine the trivial comparability of every user-defined type; this could be exposed as a built-in type trait. We'll look at benchmarks for `std::vector<std::unique_ptr<T>>::operator==` with and without this type trait, and give a nod to `is_trivially_less_than_comparable_v<T>`. The third trait is actually a traits class: `tombstone_traits<T>`. This part of the talk will build on Mark Zeren's C++Now 2017 session "Rethinking Strings". Most object types have invalid or "spare" representations, for example the all-bits-zero representation of a `std::reference_wrapper<U>` or the `0x02` representation of a `bool`. By opting into a specialization of `tombstone_traits<T>`, the programmer can make these "spare" representations available to tombstone-aware library classes such as `std::optional<T>` and `cuckoo_hash<T>`. We'll show how `tombstone_traits<bool>` exposes the spare representations, how `tombstone_traits<std::optional<T>>` propagates them appropriately, and how the tombstone representations can be used in practice by a Robin Hood hash table.
+> I'll present three candidates for the best type trait that doesn't (yet!) exist in C++. The first trait, `is_trivially_relocatable_v&lt;T&gt;`, tells whether objects of type `T` can be "atomically move-constructed-and-destroyed" by `std::memcpy`. The canonical use-cases for this operation are vector resizing and hash-table rehashing. We'll look at benchmarks for resizing `std::vector&lt;std::unique_ptr&lt;T&gt;&gt` with and without this type trait, and consider the curious case of <b>swapping</b> two trivially relocatable objects. The second trait, `is_trivially_equality_comparable_v&lt;T&gt;`, tells whether objects of type `T` can be compared by `std::memcmp`. The canonical use-case for this operation is compare-exchange on `std::atomic&lt;T&gt;`, which is already implemented in terms of `std::memcmp` but has undefined behavior for types that are not trivially comparable. (WG21 has begun to tackle this problem via papers N4130 and P0528.) With the introduction of "operator spaceship" in C++2a, the compiler now has enough information to determine the trivial comparability of every user-defined type; this could be exposed as a built-in type trait. We'll look at benchmarks for `std::vector&lt;std::unique_ptr&lt;T&gt;&gt;::operator==` with and without this type trait, and give a nod to `is_trivially_less_than_comparable_v&lt;T&gt;`. The third trait is actually a traits class: `tombstone_traits&lt;T&gt;`. This part of the talk will build on Mark Zeren's C++Now 2017 session "Rethinking Strings". Most object types have invalid or "spare" representations, for example the all-bits-zero representation of a `std::reference_wrapper&lt;U&gt;` or the `0x02` representation of a `bool`. By opting into a specialization of `tombstone_traits&lt;T&gt;`, the programmer can make these "spare" representations available to tombstone-aware library classes such as `std::optional&lt;T&gt;` and `cuckoo_hash&lt;T&gt;`. We'll show how `tombstone_traits&lt;bool&gt;` exposes the spare representations, how `tombstone_traits&lt;std::optional&lt;T&gt;&gt;` propagates them appropriately, and how the tombstone representations can be used in practice by a Robin Hood hash table.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=MWBfmmg8-Yo)
 
@@ -440,5 +447,4 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY) [Part II
 [Watch at YouTube](https://www.youtube.com/watch?v=VvbTP_k_Df4)
 
 [See more details](https://cppcon2015.sched.com/event/3vci/type-traits-what-are-they-and-why-should-i-use-them)
-
 
