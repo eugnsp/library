@@ -47,7 +47,7 @@ DOI: [10.1002/spe.4380231105](https://doi.org/10.1002/spe.4380231105)
 
 *Tim Shen* @ CppCon (2016)
 
-> Regular expressions are widely used in application development and data processing, yet it is challenging to design and implement a regular expression library that is expressive, efficient and safe. In this talk, Tim Shen, the current maintainer of libstdc++'s `&lt;regex&gt;`, will introduce the basics of implementing regular expressions in C++, the status of existing implementations, and what is expected from the standardization process. For the implementation, several data structures and algorithms will be introduced, with pros and cons listed; we will show how several popular implementations (Boost.Regex, Boost.Xpressive, `&lt;regex&gt;` from standard library implementations, RE2, etc) pick their algorithms. Several popular features/patterns that hurt performance will be explained, with a "safe" regex usage suggested. Finally a wishlist of features will be presented, in order to deliver a more efficient and usable regex library. 
+> Regular expressions are widely used in application development and data processing, yet it is challenging to design and implement a regular expression library that is expressive, efficient and safe. In this talk, Tim Shen, the current maintainer of libstdc++'s `<regex>`, will introduce the basics of implementing regular expressions in C++, the status of existing implementations, and what is expected from the standardization process. For the implementation, several data structures and algorithms will be introduced, with pros and cons listed; we will show how several popular implementations (Boost.Regex, Boost.Xpressive, `<regex>` from standard library implementations, RE2, etc) pick their algorithms. Several popular features/patterns that hurt performance will be explained, with a "safe" regex usage suggested. Finally a wishlist of features will be presented, in order to deliver a more efficient and usable regex library. 
 
 [Watch at YouTube](https://www.youtube.com/watch?v=N_rkHzhXueo)
 
@@ -164,7 +164,7 @@ Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 
 
 *Jonathan M&uuml;ller* @ C++Now (2018)
 
-> "Do not use owning raw pointers, use a smart pointer instead." &mdash; And yet it is common to use them when writing a linked list, for example. "Use a reference when a pointer is non-null." &mdash; But the standard library interfaces themselves don't follow this advice all the time. We're at a point where a simple question "I need to point to some other object" requires a complicated lecture about raw vs. smart pointers, references and the danger of putting references inside angle brackets. Clearly we can do better. Let's take a step back, and look at the bigger picture: What are the common pointer-like types? Which properties do they have in common, which are unique? What are the possible situations that require pointer-like types? Which properties do those situations require? This talk will answer those questions and so provide the definitive guide to choosing the correct pointer types. We'll be discussing whether or not `optional&lt;T&amp;&gt;` or `std::observer_ptr` are necessary, talk about the difference in applications for `T&amp;`, `gsl::non_null&lt;T&gt;` and `std::reference_wrapper&lt;T&gt;`, and look how the type system can help us catch lifetime issues.
+> "Do not use owning raw pointers, use a smart pointer instead." &mdash; And yet it is common to use them when writing a linked list, for example. "Use a reference when a pointer is non-null." &mdash; But the standard library interfaces themselves don't follow this advice all the time. We're at a point where a simple question "I need to point to some other object" requires a complicated lecture about raw vs. smart pointers, references and the danger of putting references inside angle brackets. Clearly we can do better. Let's take a step back, and look at the bigger picture: What are the common pointer-like types? Which properties do they have in common, which are unique? What are the possible situations that require pointer-like types? Which properties do those situations require? This talk will answer those questions and so provide the definitive guide to choosing the correct pointer types. We'll be discussing whether or not `optional<T&>` or `std::observer_ptr` are necessary, talk about the difference in applications for `T&`, `gsl::non_null<T>` and `std::reference_wrapper<T>`, and look how the type system can help us catch lifetime issues.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=kYiEvVEh6Tw)
 
@@ -310,7 +310,7 @@ the art, are described. A distinction is made between various classes of matrice
 [See more details](https://github.com/psteinb/meetingcpp2015)
 
 ## Multi-core computing
-### atomic<> Weapons
+### `atomic<>` Weapons
 
 *Herb Sutter* @ C++ and Beyond (2012)
 
@@ -331,11 +331,11 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4) [Part II
 
 [See more details](https://cppcon2016.sched.com/event/7nLy/iterator-haiku)
 
-## `&lt;functional&gt;`: What's new, and proper usage
+## `<functional>`: What's new, and proper usage
 
 *Stephan T. Lavavej* @ CppCon (2015)
 
-> `&lt;functional&gt;` gained lots of machinery in C++11, with further changes in C++14 and C++17. This talk will cover what's new in 11/14/17, focusing on how to use it properly. For example, you've probably used `std::function`, but do you know the criteria for activating the Small Functor Optimization? (It's not just being small!) We'll also look at `std::bind()`, `std::mem_fn`, C++17's `std::invoke()`, and more.
+> `<functional>` gained lots of machinery in C++11, with further changes in C++14 and C++17. This talk will cover what's new in 11/14/17, focusing on how to use it properly. For example, you've probably used `std::function`, but do you know the criteria for activating the Small Functor Optimization? (It's not just being small!) We'll also look at `std::bind()`, `std::mem_fn`, C++17's `std::invoke()`, and more.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=zt7ThwVfap0)
 
@@ -345,7 +345,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4) [Part II
 
 *Marshall Clow* @ CppCon (2015)
 
-> The library fundamentals TS contains a new class `std::string_view`, which appears to be unlike anything else in the standard library. In this talk, we will explore the uses of `std::string_view`, when it is appropriate to use it, and when it is not. Along the way, I will discuss other possible "_view" classes, with an eye to the upcoming "ranges" proposal before the standards committee.
+> The library fundamentals TS contains a new class `std::string_view`, which appears to be unlike anything else in the standard library. In this talk, we will explore the uses of `std::string_view`, when it is appropriate to use it, and when it is not. Along the way, I will discuss other possible `_view` classes, with an eye to the upcoming "ranges" proposal before the standards committee.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=H9gAaNRoon4)
 
@@ -396,7 +396,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4) [Part II
 
 [See more details](https://cppnow2018.sched.com/event/4058f00b8431f1610d3246f62066ac51)
 
-### `tuple&lt;&gt;`: What's new and how it works
+### `tuple<>`: What's new and how it works
 
 *Stephan T. Lavavej* @ CppCon (2016)
 
@@ -421,7 +421,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4) [Part II
 
 *Walter E. Brown* @ CppCon (2014)
 
-> Template metaprogramming has become an important part of a C++ programmer's toolkit. This talk will demonstrate state-of-the-art metaprogramming techniques, applying each to obtain representative implementations of selected standard library facilities. Along the way, we will look at `std::void_t`, a recently-proposed, extremely simple new new `&lt;type_traits&gt;` candidate whose use has been described by one expert as "highly advanced (and elegant), and surprising even to experienced template metaprogrammers."
+> Template metaprogramming has become an important part of a C++ programmer's toolkit. This talk will demonstrate state-of-the-art metaprogramming techniques, applying each to obtain representative implementations of selected standard library facilities. Along the way, we will look at `std::void_t`, a recently-proposed, extremely simple new new `<type_traits>` candidate whose use has been described by one expert as "highly advanced (and elegant), and surprising even to experienced template metaprogrammers."
 
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY) [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) 
 
@@ -432,7 +432,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY) [Part II
 
 *Arthur O'Dwyer* @ C++Now (2018)
 
-> I'll present three candidates for the best type trait that doesn't (yet!) exist in C++. The first trait, `is_trivially_relocatable_v&lt;T&gt;`, tells whether objects of type `T` can be "atomically move-constructed-and-destroyed" by `std::memcpy`. The canonical use-cases for this operation are vector resizing and hash-table rehashing. We'll look at benchmarks for resizing `std::vector&lt;std::unique_ptr&lt;T&gt;&gt` with and without this type trait, and consider the curious case of <b>swapping</b> two trivially relocatable objects. The second trait, `is_trivially_equality_comparable_v&lt;T&gt;`, tells whether objects of type `T` can be compared by `std::memcmp`. The canonical use-case for this operation is compare-exchange on `std::atomic&lt;T&gt;`, which is already implemented in terms of `std::memcmp` but has undefined behavior for types that are not trivially comparable. (WG21 has begun to tackle this problem via papers N4130 and P0528.) With the introduction of "operator spaceship" in C++2a, the compiler now has enough information to determine the trivial comparability of every user-defined type; this could be exposed as a built-in type trait. We'll look at benchmarks for `std::vector&lt;std::unique_ptr&lt;T&gt;&gt;::operator==` with and without this type trait, and give a nod to `is_trivially_less_than_comparable_v&lt;T&gt;`. The third trait is actually a traits class: `tombstone_traits&lt;T&gt;`. This part of the talk will build on Mark Zeren's C++Now 2017 session "Rethinking Strings". Most object types have invalid or "spare" representations, for example the all-bits-zero representation of a `std::reference_wrapper&lt;U&gt;` or the `0x02` representation of a `bool`. By opting into a specialization of `tombstone_traits&lt;T&gt;`, the programmer can make these "spare" representations available to tombstone-aware library classes such as `std::optional&lt;T&gt;` and `cuckoo_hash&lt;T&gt;`. We'll show how `tombstone_traits&lt;bool&gt;` exposes the spare representations, how `tombstone_traits&lt;std::optional&lt;T&gt;&gt;` propagates them appropriately, and how the tombstone representations can be used in practice by a Robin Hood hash table.
+> I'll present three candidates for the best type trait that doesn't (yet!) exist in C++. The first trait, `is_trivially_relocatable_v<T>`, tells whether objects of type `T` can be "atomically move-constructed-and-destroyed" by `std::memcpy`. The canonical use-cases for this operation are vector resizing and hash-table rehashing. We'll look at benchmarks for resizing `std::vector<std::unique_ptr<T>>` with and without this type trait, and consider the curious case of **swapping** two trivially relocatable objects. The second trait, `is_trivially_equality_comparable_v<T>`, tells whether objects of type `T` can be compared by `std::memcmp`. The canonical use-case for this operation is compare-exchange on `std::atomic<T>`, which is already implemented in terms of `std::memcmp` but has undefined behavior for types that are not trivially comparable. (WG21 has begun to tackle this problem via papers N4130 and P0528.) With the introduction of "operator spaceship" in C++2a, the compiler now has enough information to determine the trivial comparability of every user-defined type; this could be exposed as a built-in type trait. We'll look at benchmarks for `std::vector<std::unique_ptr<T>>::operator==` with and without this type trait, and give a nod to `is_trivially_less_than_comparable_v<T>`. The third trait is actually a traits class: `tombstone_traits<T>`. This part of the talk will build on Mark Zeren's C++Now 2017 session "Rethinking Strings". Most object types have invalid or "spare" representations, for example the all-bits-zero representation of a `std::reference_wrapper<U>` or the `0x02` representation of a `bool`. By opting into a specialization of `tombstone_traits<T>`, the programmer can make these "spare" representations available to tombstone-aware library classes such as `std::optional<T>` and `cuckoo_hash<T>`. We'll show how `tombstone_traits<bool>` exposes the spare representations, how `tombstone_traits<std::optional<T>>` propagates them appropriately, and how the tombstone representations can be used in practice by a Robin Hood hash table.
 
 [Watch at YouTube](https://www.youtube.com/watch?v=MWBfmmg8-Yo)
 
