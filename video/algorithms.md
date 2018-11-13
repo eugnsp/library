@@ -7,9 +7,8 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=OQ5jsbhAv_M" target="_blank"><img src="http://img.youtube.com/vi/OQ5jsbhAv_M/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=ENyox7kNKeY" target="_blank"><img src="http://img.youtube.com/vi/ENyox7kNKeY/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=ocZMDMZwhCY" target="_blank"><img src="http://img.youtube.com/vi/ocZMDMZwhCY/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=tp4_UXaVyx8" target="_blank"><img src="http://img.youtube.com/vi/tp4_UXaVyx8/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> 
 
-[See more details](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+[Source / Details](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
-# Sorting algorithms
 # Standard library algorithms
 ### STL algorithms: how to use them and how to write your own
 
@@ -19,7 +18,7 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=3nXLxMYXgWs" target="_blank"><img src="http://img.youtube.com/vi/3nXLxMYXgWs/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
 
-[See more details](https://accu.org/index.php/conferences/accu_conference_2016/accu2016_sessions#STL_Algorithms_%E2%80%93_How_to_Use_Them_and_How_to_Write_Your_Own)
+[Source / Details](https://accu.org/index.php/conferences/accu_conference_2016/accu2016_sessions#STL_Algorithms_%E2%80%93_How_to_Use_Them_and_How_to_Write_Your_Own)
 
 # String algorithms
 ### Fast conversion from UTF-8 with C++, DFAs, and SSE intrinsics
@@ -30,7 +29,7 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=h5oczBeib_M" target="_blank"><img src="http://img.youtube.com/vi/h5oczBeib_M/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
 
-[See more details](https://cppnow2018.sched.com/event/EC6x/fast-conversion-from-utf-8-with-c-dfas-and-sse-intrinsics)
+[Source / Details](https://cppnow2018.sched.com/event/EC6x/fast-conversion-from-utf-8-with-c-dfas-and-sse-intrinsics)
 
 ### Regular expressions in C++, present and future
 
@@ -40,5 +39,6 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=N_rkHzhXueo" target="_blank"><img src="http://img.youtube.com/vi/N_rkHzhXueo/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
 
-[See more details](https://cppcon2016.sched.com/event/7nDI/regular-expressions-in-c-present-and-future)
+[Source / Details](https://cppcon2016.sched.com/event/7nDI/regular-expressions-in-c-present-and-future)
 
+<sub>*(Note: this file was generated automatically)*</sub>
