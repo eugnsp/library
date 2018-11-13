@@ -1,7 +1,18 @@
+<style>
+  .purple {
+  color:inherit;
+    }
+      .purple:hover {
+          color:rgb(107,79,187);
+            }
+</style>
+            
+
 # Dynamic programming
 ### Introduction to algorithms: dynamic programming
 
 *Erik Demaine* @ MIT OCW 6.006 (2011)
+{: .purple}
 
 > <b>I.</b> This lecture introduces dynamic programming, in which careful exhaustive search can be used to design polynomial-time algorithms. The Fibonacci and shortest paths problems are used to introduce guessing, memoization, and reusing solutions to subproblems. <b>II.</b> This lecture starts with a five-step process for dynamic programming, and then covers text justification and perfect-information blackjack. The lecture also describes how parent pointers are used to recover the solution. <b>III.</b> This lecture starts with how to define useful subproblems for strings or sequences, and then looks at parenthesization, edit distance, and the knapsack problem. The lecture ends with a brief discussion of pseudopolynomial time. <b>IV.</b> This lecture introduces a second type of guessing, in which more subproblems are created so that more features of the solution can be found. This type of guessing is illustrated with piano/guitar fingering and the Tetris and Super Mario Brothers games.
 
