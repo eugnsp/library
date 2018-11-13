@@ -1,5 +1,5 @@
 # Dynamic programming
-#### Introduction to algorithms: dynamic programming
+### Introduction to algorithms: dynamic programming
 
 *Erik Demaine* @ MIT OCW 6.006 (2011)
 
@@ -11,7 +11,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II
 
 # Sorting algorithms
 # Standard library algorithms
-#### STL algorithms: how to use them and how to write your own
+### STL algorithms: how to use them and how to write your own
 
 *Marshall Clow* @ ACCU (2016)
 
@@ -22,7 +22,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II
 [See more details](https://accu.org/index.php/conferences/accu_conference_2016/accu2016_sessions#STL_Algorithms_%E2%80%93_How_to_Use_Them_and_How_to_Write_Your_Own)
 
 # String algorithms
-#### Fast conversion from UTF-8 with C++, DFAs, and SSE intrinsics
+### Fast conversion from UTF-8 with C++, DFAs, and SSE intrinsics
 
 *Bob Steagall* @ C++Now (2018)
 
@@ -32,7 +32,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II
 
 [See more details](https://cppnow2018.sched.com/event/EC6x/fast-conversion-from-utf-8-with-c-dfas-and-sse-intrinsics)
 
-#### Regular expressions in C++, present and future
+### Regular expressions in C++, present and future
 
 *Tim Shen* @ CppCon (2016)
 
