@@ -1,5 +1,5 @@
 # Iterative solvers and preconditioners
-## Krylov subspace solvers and preconditioners
+### Krylov subspace solvers and preconditioners
 
 *Kees Vuik* @ CEMRACS Summer school (2016)
 
@@ -10,7 +10,7 @@ methods of choice for these large linear systems. We start with a short introduc
 Iterative Methods. Thereafter preconditioned Krylov subspace methods, which are state of
 the art, are described. A distinction is made between various classes of matrices.
 
-[Watch at YouTube](https://www.youtube.com/watch?v=TbYgBL2lSM0)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TbYgBL2lSM0" target="_blank"><img src="http://img.youtube.com/vi/TbYgBL2lSM0/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
 
 [See more details](http://ta.twi.tudelft.nl/users/vuik/cemracs/)
 
