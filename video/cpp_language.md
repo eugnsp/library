@@ -7,7 +7,7 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=hizGxfDdc7M" target="_blank"><img src="http://img.youtube.com/vi/hizGxfDdc7M/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=fjtwfauk7a8" target="_blank"><img src="http://img.youtube.com/vi/fjtwfauk7a8/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=iAAAYNKU5g0" target="_blank"><img src="http://img.youtube.com/vi/iAAAYNKU5g0/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> 
 
-[See more details](https://cppnow2017.sched.com/event/A8Ia/a-vision-for-c20-and-std2-part-1-of-3)
+[Source / Details](https://cppnow2017.sched.com/event/A8Ia/a-vision-for-c20-and-std2-part-1-of-3)
 
 ### Meta: Thoughts on generative C++
 
@@ -15,7 +15,8 @@
 
 > Two years ago, I started to focus on exploring ways that we might evolve the C++ language itself to make C++ programming both more powerful and simpler. The only way to accomplish both of those goals at the same time is by adding abstractions that let programmers directly express their intent &mdash; to elevate comments and documentation to testable code, and elevate coding patterns and idioms into compiler-checkable declarations. The work came up with several potential candidate features where judiciously adding some power to the language could simplify code dramatically, while staying true to C++'s core values of efficient abstraction, closeness to hardware, and the zero-overhead principle. The first two potential candidate features from that work to be further developed and proposed for ISO C++ are the `<=>` unified comparison operator (minor) and what I've provisionally called "metaclasses" as a way to generatively write C++ types (major). This talk is about the latter, and includes design motivation, current progress, and some live online compiler demos using the prototype Clang-based compiler built by Andrew Sutton and hosted at [godbolt.org](https://godbolt.org).
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=4AfRAVcThyA" target="_blank"><img src="http://img.youtube.com/vi/4AfRAVcThyA/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=4AfRAVcThyA" target="_blank"><img src="http://img.youtube.com/vi/4AfRAVcThyA/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> 
 
-[See more details](https://cppcon2017.sched.com/event/BguH/meta-thoughts-on-generative-c)
+[Source / Details](https://cppcon2017.sched.com/event/BguH/meta-thoughts-on-generative-c)
 
+<sub>*(Note: this file was generated automatically)*</sub>

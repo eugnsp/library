@@ -5,9 +5,9 @@
 
 > *No description is available.*
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=z43l_LaOqnM" target="_blank"><img src="http://img.youtube.com/vi/z43l_LaOqnM/0.jpg" alt="Watch at YouTube" width="240" height="180"></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=z43l_LaOqnM" target="_blank"><img src="http://img.youtube.com/vi/z43l_LaOqnM/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> 
 
-[See more details](https://github.com/psteinb/meetingcpp2015)
+[Source / Details](https://github.com/psteinb/meetingcpp2015)
 
 # Multi-core computing
 ### `atomic<>` Weapons
@@ -18,5 +18,6 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=A8eCGOqgvH4" target="_blank"><img src="http://img.youtube.com/vi/A8eCGOqgvH4/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> <a href="http://www.youtube.com/watch?feature=player_embedded&v=KeLBd2EJLOU" target="_blank"><img src="http://img.youtube.com/vi/KeLBd2EJLOU/0.jpg" alt="Watch at YouTube" width="240" height="180"></a> 
 
-[See more details](https://channel9.msdn.com/Shows/Going+Deep/Cpp-and-Beyond-2012-Herb-Sutter-atomic-Weapons-1-of-2)
+[Source / Details](https://channel9.msdn.com/Shows/Going+Deep/Cpp-and-Beyond-2012-Herb-Sutter-atomic-Weapons-1-of-2)
 
+<sub>*(Note: this file was generated automatically)*</sub>
