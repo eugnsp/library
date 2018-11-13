@@ -4,7 +4,7 @@
 
 *Erik Demaine* @ MIT OCW 6.006 (2011)
 
-> <b>I.</b> This lecture introduces dynamic programming, in which careful exhaustive search can be used to design polynomial-time algorithms. The Fibonacci and shortest paths problems are used to introduce guessing, memoization, and reusing solutions to subproblems. <b>II.</b> This lecture starts with a five-step process for dynamic programming, and then covers text justification and perfect-information blackjack. The lecture also describes how parent pointers are used to recover the solution. <b>III.</b> This lecture starts with how to define useful subproblems for strings or sequences, and then looks at parenthesization, edit distance, and the knapsack problem. The lecture ends with a brief discussion of pseudopolynomial time. <b>IV.</b> This lecture introduces a second type of guessing, in which more subproblems are created so that more features of the solution can be found. This type of guessing is illustrated with piano/guitar fingering and the Tetris and Super Mario Brothers games.
+> <small><b>I.</b> This lecture introduces dynamic programming, in which careful exhaustive search can be used to design polynomial-time algorithms. The Fibonacci and shortest paths problems are used to introduce guessing, memoization, and reusing solutions to subproblems. <b>II.</b> This lecture starts with a five-step process for dynamic programming, and then covers text justification and perfect-information blackjack. The lecture also describes how parent pointers are used to recover the solution. <b>III.</b> This lecture starts with how to define useful subproblems for strings or sequences, and then looks at parenthesization, edit distance, and the knapsack problem. The lecture ends with a brief discussion of pseudopolynomial time. <b>IV.</b> This lecture introduces a second type of guessing, in which more subproblems are created so that more features of the solution can be found. This type of guessing is illustrated with piano/guitar fingering and the Tetris and Super Mario Brothers games.</small>
 
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M) [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY) [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY) [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) 
 
@@ -158,7 +158,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=hizGxfDdc7M) [Part II
 
 DOI: [10.1145/356635.356640](https://doi.org/10.1145/356635.356640)
 
-Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
+Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf
+) [Source 2](http://web.archive.org/web/20130731202547/http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf)
 
 ## Rethinking pointers
 
@@ -228,7 +229,11 @@ Read: [Source 1](http://oberon2005.oberoncore.ru/classics/dk1974b.pdf) [Source 
 
 > Among the many new library features in C++0x is a little header called `&lt;system_error&gt;`. It provides a selection of utilities for managing, well, system errors. The principal components defined in the header are: `class error_category`, `class error_code`, `class error_condition`, `class system_error`, `enum class errc`. I had a hand in the design of this facility, so in this series of posts I will try to capture the rationale, history, and intended uses of the various components.
 
-Read: [Part I](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-1.html)[Part II](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-2.html)[Part III](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-3.html)[Part IV](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-4.html)[Part V](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-5.html)
+Read: [Part I](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-1.html
+)[Part II](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-2.html
+)[Part III](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-3.html
+)[Part IV](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-4.html
+)[Part V](http://blog.think-async.com/2010/04/system-error-support-in-c0x-part-5.html)
 
 # Numerical methods
 ## Iterative solvers and preconditioners
