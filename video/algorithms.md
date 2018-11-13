@@ -17,7 +17,12 @@
 
 > The STL contains a collection of containers, which everyone knows about, and a collection of algorithms, which are less well known. In this session, I will talk about the algorithms that are in the STL, how they are designed, and talk about writing your own algorithms that work in the same style as existing ones.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3nXLxMYXgWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- blank line -->
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3nXLxMYXgWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</figure>
+<!-- blank line -->
 
 [See more details](https://accu.org/index.php/conferences/accu_conference_2016/accu2016_sessions#STL_Algorithms_%E2%80%93_How_to_Use_Them_and_How_to_Write_Your_Own)
 
@@ -28,7 +33,12 @@
 
 > UTF-8 is taking on an increasingly important role in text processing. Many applications require the conversion of UTF-8 to UTF-16 or UTF-32, but typical conversion algorithms are sub-optimal. This talk will describe a fast, correct, DFA-based approach to UTF-8 conversion that requires only three simple lookup tables and a small amount of straightforward C++ code. We'll begin with a quick review UTF-8 and its relation to UTF-16 and UTF-32, as well as the concept of code units and code points. Next, we'll look at the layout of bits within a UTF-8 byte sequence, and from that, show a simple algorithm for converting from UTF-8 to UTF-32. Along the way will be a definition of overlong and invalid byte sequences. Following that will be a discussion of how to construct a DFA to perform the same operations as the simple algorithm. We'll then look at code for the DFA traversal underlying the basic conversion algorithm, and how to gain an additional performance boost by using SSE intrinsics. Finally, we'll compare the performance of this approach to several commonly-available implementations on Windows and Linux, and show how it's possible to do significantly faster conversions. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h5oczBeib_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- blank line -->
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/h5oczBeib_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</figure>
+<!-- blank line -->
 
 [See more details](https://cppnow2018.sched.com/event/EC6x/fast-conversion-from-utf-8-with-c-dfas-and-sse-intrinsics)
 
@@ -38,7 +48,12 @@
 
 > Regular expressions are widely used in application development and data processing, yet it is challenging to design and implement a regular expression library that is expressive, efficient and safe. In this talk, Tim Shen, the current maintainer of libstdc++'s `<regex>`, will introduce the basics of implementing regular expressions in C++, the status of existing implementations, and what is expected from the standardization process. For the implementation, several data structures and algorithms will be introduced, with pros and cons listed; we will show how several popular implementations (Boost.Regex, Boost.Xpressive, `<regex>` from standard library implementations, RE2, etc) pick their algorithms. Several popular features/patterns that hurt performance will be explained, with a "safe" regex usage suggested. Finally a wishlist of features will be presented, in order to deliver a more efficient and usable regex library. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N_rkHzhXueo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- blank line -->
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/N_rkHzhXueo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</figure>
+<!-- blank line -->
 
 [See more details](https://cppcon2016.sched.com/event/7nDI/regular-expressions-in-c-present-and-future)
 
