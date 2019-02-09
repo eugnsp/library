@@ -16,11 +16,12 @@ A self-balancing binary search tree is a binary search tree that automatically k
 
 Original paper:
 
-> G.M.Adelson-Velskii, E.M.Landis. *An algorithm for organization of information*. Dokl. Akad. Nauk SSSR **146**, 263 (1962)
->
+> G.M.Adelson-Velskii, E.M.Landis. *An algorithm for organization of information*. Dokl. Akad. Nauk SSSR **146**, 263 (1962)\
 > [Full text (english)](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) | [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
 General references:
-
 * https://en.wikipedia.org/wiki/AVL_tree
 * https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+
+Implementations:
+* https://interactivepython.org/courselib/static/pythonds/Trees/AVLTreeImplementation.html (Python)
