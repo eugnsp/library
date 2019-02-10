@@ -33,9 +33,9 @@ An AVL tree is a self-balancing binary search tree in which is no node has subtr
 
 #### Videos
 
-* [MIT OCW 6.006 Introduction to algorithms (2011), lecture 6: *AVL Trees, AVL Sort*](https://www.youtube.com/watch?v=FNeL18KsWPc)
+* [MIT OCW 6.006 Introduction to algorithms (2011) &ndash; Lecture 6: *AVL Trees, AVL Sort*](https://www.youtube.com/watch?v=FNeL18KsWPc)
 
-#### Visualization
+#### Visualizations
 
 * https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
 
@@ -43,7 +43,7 @@ An AVL tree is a self-balancing binary search tree in which is no node has subtr
 
 A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 
-#### References
+#### Descriptions and implementations
 
 * https://en.wikipedia.org/wiki/Fenwick_tree
 
@@ -54,7 +54,7 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 #### Books
 
-* S.Halim, F.Halim. *Competitive Programming*. 3rd ed., 2013: sec. 2.4.4
+* S.Halim, F.Halim. *Competitive Programming*. 3rd ed., 2013 &ndash; Sec. 2.4.4
  *Binary Indexed (Fenwick) Tree*
 
 #### Videos
