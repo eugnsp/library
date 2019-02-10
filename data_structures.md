@@ -45,8 +45,11 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 #### Notes
 
+<details>
 * Maximum height of an AVL tree with `N` nodes is `1.44 log(N + 2) - 1.328`.
-* > Since one rotation always suffices, a carefully coded nonrecursive version generally turns out to be faster than the recursive version, but on modern compilers the difference is not as significant as in the past. However, nonrecursive versions are quite difficult to code correctly, whereas a casual recursive implementation is easily readable. [M.A.Weiss]
+* One rotation always suffices. Non-recursive insertions and deletions are generally faster, but harded to code and read.
+* Differences in heights (balance factors) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
+* Double rotations can be made more efficient if performed as a single step and not as two single rotations.</details>
 
 ### Binary indexed trees = Fenwick trees
 
