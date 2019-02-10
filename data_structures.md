@@ -18,7 +18,7 @@ A self-balancing binary search tree is a binary search tree that automatically k
 
 An AVL tree is a self-balancing binary search tree in which is no node has subtrees differing in height by more than one.
 
-#### Description
+#### References
 
 * https://en.wikipedia.org/wiki/AVL_tree
 * https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
@@ -32,11 +32,11 @@ An AVL tree is a self-balancing binary search tree in which is no node has subtr
 
 * [MIT OCW 6.006 Introduction to algorithms (2011), lecture 6: *AVL Trees, AVL Sort*](https://www.youtube.com/watch?v=FNeL18KsWPc)
 
-### Binary indexed tree AKA Fenwick tree
+### Binary indexed trees AKA Fenwick trees
 
 A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 
-#### Description
+#### References
 
 * https://en.wikipedia.org/wiki/Fenwick_tree
 
@@ -44,6 +44,11 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 * P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
+
+#### Books
+
+* S.Halim, F.Halim. *Competitive Programming*. 3rd ed., 2013: sec. 2.4.4
+ *Binary Indexed (Fenwick) Tree*
 
 #### Videos
 
