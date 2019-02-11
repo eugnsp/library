@@ -5,6 +5,7 @@ This is a library of usefull references (web pages, papers, video, books) and no
 ## Table of contents
 
 * Algorithms
+	* [Dynamic programming](algorithms/dynamic_programming.md)
 	* [Sorting](algorithms/sorting.md)
 * Data structures
 	* [Trees](data_structures/trees.md)

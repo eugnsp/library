@@ -44,7 +44,8 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 :movie_camera: *Videos*
 
-* [MIT OCW 6.006 Introduction to algorithms (2011) &ndash; Lecture 6: *AVL Trees, AVL Sort*](https://www.youtube.com/watch?v=FNeL18KsWPc)
+* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *AVL Trees, AVL Sort*\
+[Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :dizzy: *Visualizations*
 
@@ -81,7 +82,8 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 :movie_camera: *Videos*
 
-* [Algorithms Live!: *Fenwick Trees*](https://www.youtube.com/watch?v=kPaJfAUwViY)
+* Algorithms Live! &ndash; *Fenwick Trees*\
+[Watch at YouTube](https://www.youtube.com/watch?v=kPaJfAUwViY)
 
 :memo: *Notes*
 
