@@ -4,7 +4,7 @@
 
 * Binary trees
 	* [Self-balancing binary search trees](#self-balancing-binary-search-trees)
-		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiilandis-trees)
+		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	* [Other binary trees](#other-binary-trees)
 		* [Binary indexed trees &ndash; Fenwick trees](#binary-indexed-trees--fenwick-trees)
 
@@ -57,7 +57,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 * Balance factors (differences in heights) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
 
-### Other bindary trees
+### Other binary trees
 
 #### Binary indexed trees &ndash; Fenwick trees
 
