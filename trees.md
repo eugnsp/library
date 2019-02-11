@@ -25,7 +25,7 @@ A self-balancing binary search tree is a binary search tree that automatically k
 
 An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
 
-*Descriptions and implementations*
+:link: *Descriptions and implementations*
 
 * https://en.wikipedia.org/wiki/AVL_tree
 * https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template
