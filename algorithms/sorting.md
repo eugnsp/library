@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-* [Comparison sort](#comparison_sort)
+* [Comparison sort](#comparison-sort)
 
 ## Comparison sort
 
