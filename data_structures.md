@@ -1,3 +1,5 @@
+[TOC]
+
 # Trees
 
 ## Binary trees
@@ -28,7 +30,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 #### Papers
 
-* G.M.Adelson-Velskii, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962)\
+* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962)\
 [Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) | [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
 #### Books
@@ -47,16 +49,19 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 * Maximum height of an AVL tree with `N` nodes is `1.44 log(N + 2) - 1.328`.
 * One rotation always suffices. Non-recursive insertions and deletions are generally faster, but harded to code and read.
-* Differences in heights (balance factors) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
+* Balance factors (differences in heights) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
 
-### Binary indexed trees = Fenwick trees
+### Binary indexed trees &ndash; Fenwick trees
 
 A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 
 #### Descriptions and implementations
 
 * https://en.wikipedia.org/wiki/Fenwick_tree
+* https://brilliant.org/wiki/fenwick-tree/
+* https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
+* https://github.com/Microsoft/fast-binary-indexed-tree-js
 
 #### Papers
 
@@ -70,3 +75,7 @@ A binary indexed tree is a data structure that can efficiently update elements a
 #### Videos
 
 * [Algorithms Live!: *Fenwick Trees*](https://www.youtube.com/watch?v=kPaJfAUwViY)
+
+#### Notes
+
+* Both zero-based and one-based indexing can be used in equally elegant ways.
