@@ -21,7 +21,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 A self-balancing binary search tree is a binary search tree that automatically keeps its height small during insertions and deletions.
 
-* https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
+* [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
@@ -29,11 +29,11 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 :link: *Web pages*
 
-* https://en.wikipedia.org/wiki/AVL_tree
-* https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template
-* https://www.bradapp.com/ftp/src/libs/C++/AvlTrees.html
-* http://somethingk.com/main/?p=1127
-* https://gist.github.com/harish-r/097688ac7f48bcbadfa5
+* [AVL tree](https://en.wikipedia.org/wiki/AVL_tree)
+* [C++ AVL tree template](https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template)
+* [AVL trees: Tutorial and C++ implementation](https://www.bradapp.com/ftp/src/libs/C++/AvlTrees.html)
+* [Simple AVL tree in C++](http://somethingk.com/main/?p=1127)
+* [AVL tree implementation in C++](https://gist.github.com/harish-r/097688ac7f48bcbadfa5)
 
 :book: *Books*
 
@@ -51,7 +51,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 :dizzy: *Visualizations*
 
-* https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
+* [AVL Tree Visualzation](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
 
 :memo: *Notes*
 
@@ -80,11 +80,11 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 :book: *Books*
 
-* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*
+* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*
 
 :page_facing_up: *Papers*
 
-* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
+* P.M.Fenwick. *A new data structure for cumulative frequency tables.* Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
 :memo: *Notes*
