@@ -1,6 +1,6 @@
 # Algorithms, data structures and C++ reference library
 
-This is a library of usefull references (web pages, papers, video, books) and notes on common algorithms and data structures. Currently is under construction, and will always be.
+This is a library of usefull references (web pages, papers, video, books) and notes on common algorithms and data structures.
 
 ## Table of contents
 
@@ -12,3 +12,5 @@ This is a library of usefull references (web pages, papers, video, books) and no
 * C++
 	* [The standard library](cpp/std_library.md)
 	* [Parallel computing](cpp/parallel_computing.md)
+
+:hammer_and_wrench: Currently is under construction, and will always be.

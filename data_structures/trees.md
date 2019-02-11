@@ -35,7 +35,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 :book: *Books*
 
-* M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4th ed., 2014 &ndash; Sec. 4.4: *AVL trees*
+* M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed., 2014 &ndash; Sec. 4.4: *AVL trees*
 
 :page_facing_up: *Papers*
 
@@ -73,7 +73,7 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 :book: *Books*
 
-* S.Halim, F.Halim. *Competitive Programming*. 3rd ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*
+* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*
 
 :page_facing_up: *Papers*
 
