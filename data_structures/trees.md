@@ -8,6 +8,8 @@
 	* [Other binary trees](#other-binary-trees)
 		* [Binary indexed trees &ndash; Fenwick trees](#binary-indexed-trees--fenwick-trees)
 
+---
+
 ## Binary trees
 
 <!--

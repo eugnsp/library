@@ -8,9 +8,11 @@ This is a library of usefull references (web pages, papers, video, books) and no
 	* [Dynamic programming](algorithms/dynamic_programming.md)
 	* [Sorting](algorithms/sorting.md)
 * Data structures
+	* [Lists](data_structures/lists.md)
 	* [Trees](data_structures/trees.md)
 * C++
-	* [The standard library](cpp/std_library.md)
+	* [Templates](cpp/templates.md)
+	* ~~[The standard library](cpp/std_library.md)~~
 	* [Parallel computing](cpp/parallel_computing.md)
 
 :hammer_and_wrench: Currently is under construction, and will always be.

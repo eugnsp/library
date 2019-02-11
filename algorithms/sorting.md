@@ -4,6 +4,8 @@
 
 * [Comparison sort](#comparison-sort)
 
+---
+
 ## Comparison sort
 
 :page_facing_up: *Papers*
