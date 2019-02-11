@@ -33,24 +33,24 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 * http://somethingk.com/main/?p=1127
 * https://gist.github.com/harish-r/097688ac7f48bcbadfa5
 
-*Papers*
+:page_facing_up: *Papers*
 
 * G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962)\
 [Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) | [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
-*Books*
+:book: *Books*
 
 * M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4th ed., 2014 &ndash; Sec. 4.4: *AVL trees*
 
-*Videos*
+:movie_camera: *Videos*
 
 * [MIT OCW 6.006 Introduction to algorithms (2011) &ndash; Lecture 6: *AVL Trees, AVL Sort*](https://www.youtube.com/watch?v=FNeL18KsWPc)
 
-*Visualizations*
+:dizzy: *Visualizations*
 
 * https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
 
-*Notes*
+:information_source: *Notes*
 
 * Maximum height of an AVL tree with `N` nodes is `1.44 log(N + 2) - 1.328`.
 * One rotation always suffices. Non-recursive insertions and deletions are generally faster, but harded to code and read.
@@ -63,26 +63,26 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 
-*Descriptions and implementations*
+:link: *Descriptions and implementations*
 
 * https://en.wikipedia.org/wiki/Fenwick_tree
 * https://brilliant.org/wiki/fenwick-tree/
 * https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
 * https://github.com/Microsoft/fast-binary-indexed-tree-js
 
-*Papers*
+:page_facing_up: *Papers*
 
 * P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
-*Books*
+:book: *Books*
 
 * S.Halim, F.Halim. *Competitive Programming*. 3rd ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*
 
-*Videos*
+:movie_camera: *Videos*
 
 * [Algorithms Live!: *Fenwick Trees*](https://www.youtube.com/watch?v=kPaJfAUwViY)
 
-*Notes*
+:information_source: *Notes*
 
 * Both zero-based and one-based indexing can be used in equally elegant ways.
