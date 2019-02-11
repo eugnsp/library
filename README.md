@@ -5,4 +5,8 @@ This is a library of usefull references (web pages, papers, video, books) and no
 ## Table of contents
 
 * Data structures
-	* [Trees](trees.md)
+	* [Trees](data_structures/trees.md)
+
+* C++
+	* [The standard library](cpp/std_library)
+	* [Parallel computing](cpp/parallel_computing)
