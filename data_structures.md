@@ -1,22 +1,28 @@
-[TOC]
+# Data structures
+
+## Contents
+
+* Trees
+	* Self-balancing binary search trees
+		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiilandis-trees)
+	* Other trees
+		* [Binary indexed trees &ndash; Fenwick trees](#binary-indexed-trees--fenwick-trees)
 
 # Trees
 
-## Binary trees
-
 <!--
-## Binary search trees
+## Binary trees
+### Binary search trees
 
-A binary search tree is a rooted binary tree that satisfies the binary search property: the value in each node must be greater than or equal to any value stored in the left subtree, and less than or equal to any value stored in the right subtree.
--->
+A binary search tree is a rooted binary tree that satisfies the binary search property: the value in each node must be greater than or equal to any value stored in the left subtree, and less than or equal to any value stored in the right subtree.-->
 
-## Self-balancing binary search trees
+### Self-balancing binary search trees
 
 A self-balancing binary search tree is a binary search tree that automatically keeps its height small during insertions and deletions.
 
 * https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
 
-### AVL (Adelson-Velskii&ndash;Landis) trees
+### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
 An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
 
@@ -51,6 +57,8 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 * One rotation always suffices. Non-recursive insertions and deletions are generally faster, but harded to code and read.
 * Balance factors (differences in heights) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
+
+### Other trees
 
 ### Binary indexed trees &ndash; Fenwick trees
 
