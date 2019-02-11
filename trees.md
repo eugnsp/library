@@ -1,6 +1,6 @@
 # Data structures: Trees
 
-## Contents
+## Table of contents
 
 * Binary trees
 	* [Self-balancing binary search trees](#self-balancing-binary-search-trees)
@@ -50,7 +50,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 * https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
 
-:information_source: *Notes*
+:memo: *Notes*
 
 * Maximum height of an AVL tree with `N` nodes is `1.44 log(N + 2) - 1.328`.
 * One rotation always suffices. Non-recursive insertions and deletions are generally faster, but harded to code and read.
@@ -83,6 +83,6 @@ A binary indexed tree is a data structure that can efficiently update elements a
 
 * [Algorithms Live!: *Fenwick Trees*](https://www.youtube.com/watch?v=kPaJfAUwViY)
 
-:information_source: *Notes*
+:memo: *Notes*
 
 * Both zero-based and one-based indexing can be used in equally elegant ways.
