@@ -19,13 +19,15 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 ### Self-balancing binary search trees
 
-A self-balancing binary search tree is a binary search tree that automatically keeps its height small during insertions and deletions.
+> A self-balancing binary search tree is a binary search tree that automatically keeps its height small during insertions and deletions.
+
+:link: *Web pages*
 
 * [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
-An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
+> An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
 
 :link: *Web pages*
 
@@ -64,7 +66,7 @@ An AVL tree is a self-balancing binary search tree in which for every node the h
 
 #### Binary indexed trees &ndash; Fenwick trees
 
-A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
+> A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 
 :link: *Webpages*
 
