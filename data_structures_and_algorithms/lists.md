@@ -1,4 +1,4 @@
-# Data structures and algorithms: Lists
+# Lists
 
 ## Table of contents
 

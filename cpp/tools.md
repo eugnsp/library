@@ -1,4 +1,4 @@
-# C++: Tools
+# Tools
 
 :link: *Webpages*
 

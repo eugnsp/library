@@ -1,4 +1,4 @@
-# Data structures and algorithms: Dynamic programming
+# Dynamic programming
 
 :movie_camera: *Videos*
 

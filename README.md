@@ -19,4 +19,4 @@ implementation.
 	* [The standard library](cpp/std_library.md)
 	* [Tools](cpp/tools.md)
 
-:hammer_and_wrench: Currently is under construction, and will always be.
+:hammer_and_wrench: Currently is under construction, and will always be. Please report broken links.

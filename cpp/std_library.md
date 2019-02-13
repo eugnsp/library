@@ -1,4 +1,4 @@
-# C++: The standard library
+# The standard library
 
 ## Table of contents
 

@@ -1,4 +1,4 @@
-# C++: Parallel computing
+# Parallel computing
 
 ## Table of contents
 

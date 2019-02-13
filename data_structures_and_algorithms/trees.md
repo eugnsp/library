@@ -1,4 +1,4 @@
-# Data structures and algorithms: Trees
+# Trees
 
 ## Table of contents
 
@@ -78,13 +78,15 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 * [Fenwick tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
 * [Fenwick tree](https://brilliant.org/wiki/fenwick-tree/)
-* [Binary indexed trees](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
-* [A JavaScript implementation of Binary Indexed](https://github.com/Microsoft/fast-binary-indexed-tree-js)
+* [Binary indexed trees &ndash; Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
+* [A JavaScript implementation of Binary Indexed &ndash; Github](https://github.com/Microsoft/fast-binary-indexed-tree-js)
 
 :movie_camera: *Videos*
 
 * Algorithms Live! &ndash; *Fenwick trees*\
 [Watch at YouTube](https://www.youtube.com/watch?v=kPaJfAUwViY)
+* William Fiset &ndash; *Fenwick tree/Binary indexed tree*\
+[Watch at YouTube](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
 
 :book: *Books*
 
@@ -98,6 +100,11 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 :memo: *Notes*
 
 * Both `0`-based and `1`-based indexing can be used in equally elegant ways.
+* A Fenwick tree can be built for any set with an associative and invertible binary operation defined on it (e.g., `x + y` and `x * y`); if this is not the case (e.g., `min(x, y)` and `gcd(x, y)`), segment trees should be considered. <!-- TODO : link -->
+* Applications:
+	* Arithmetic coding
+	* Inversions counting
+	* Monte-Carlo simulations
 
 ## Traversal
 

@@ -1,4 +1,4 @@
-# C++: Templates
+# Templates
 
 ## Table of contents
 

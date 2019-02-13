@@ -1,4 +1,4 @@
-# Data structures and algorithms: Sorting
+# Sorting
 
 ## Table of contents
 

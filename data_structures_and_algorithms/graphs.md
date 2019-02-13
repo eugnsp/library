@@ -1,4 +1,4 @@
-# Data structures and algorithms: Graphs
+# Graphs
 
 ## Table of contents
 
