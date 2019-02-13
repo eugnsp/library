@@ -12,7 +12,8 @@ This is a library of usefull references (web pages, papers, video, books) and no
 	* [Trees](data_structures/trees.md)
 * C++
 	* [Templates](cpp/templates.md)
-	* ~~[The standard library](cpp/std_library.md)~~
+	* [The standard library](cpp/std_library.md)
+	* ~~[Tools](cpp/tools.md)~~
 	* [Parallel computing](cpp/parallel_computing.md)
 
 :hammer_and_wrench: Currently is under construction, and will always be.
