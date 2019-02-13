@@ -18,6 +18,8 @@
 
 :movie_camera: *Videos*
 
+* A.Sermersheim @ CppCon (2017) &ndash; *Multithreading is the answer. What is the question?*\
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
 * R.Grimm @ Meeting C++ (2014) &ndash; *C++11 multithreading done right?*\
 [Watch at YouTube](https://www.youtube.com/watch?v=paK38WAq8WY)
 * H.Sutter @ C++ and Beyond (2012) &ndash; *`atomic<>` weapons*\
