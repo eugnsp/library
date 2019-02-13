@@ -6,7 +6,7 @@
 	* [Self-balancing binary search trees](#self-balancing-binary-search-trees)
 		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	* [Other binary trees](#other-binary-trees)
-		* [Binary indexed trees &ndash; Fenwick trees](#binary-indexed-trees--fenwick-trees)
+		* [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
 
 ---
 
@@ -64,7 +64,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 ### Other binary trees
 
-#### Binary indexed trees &ndash; Fenwick trees
+#### Binary indexed trees (Fenwick trees)
 
 > A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
 

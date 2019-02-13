@@ -5,9 +5,8 @@
 * [Data structures](#data-structures)
 * [Traversal and search](#traversal-and-search)
 	* [Breadth-first search (BFS)](#breadth-first-search-bfs)
-	* [Depth-first search (BFS)](#depth-first-search-bfs)
+	* [Depth-first search (DFS) and edge classification](#depth-first-search-dfs-and-edge-classification)
 	* [Cycle detection](#cycle-detection)
-	* [Edge classification](#edge-classification)
 	* [Topological sort](#topological-sort)
 
 ---
@@ -51,16 +50,10 @@
 :memo: *Notes*
 
 * Applications:
+ 	* [Cycle detection](#cycle-detection)
 	* [Topological sort](#topological-sort)
 
 ### Cycle detection
-
-:movie_camera: *Videos*
-
-* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Depth-First Search (DFS)*\
-[Watch at YouTube](https://www.youtube.com/AfSk24UTFS8?t=1093) (from 18:13) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
-
-### Edge classification
 
 :movie_camera: *Videos*
 
@@ -72,4 +65,4 @@
 :movie_camera: *Videos*
 
 * MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Topological Sort*\
-[Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+[Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8&t=2515) (from 41:55) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
