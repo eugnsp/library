@@ -1,4 +1,10 @@
-# Algorithms: Dynamic programming
+# Data structures and algorithms: Graphs
+
+---
+
+## Data structures
+
+## Traversal
 
 :movie_camera: *Videos*
 

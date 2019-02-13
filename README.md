@@ -1,19 +1,22 @@
-# Algorithms, data structures and C++ reference library
+# Data structures, algorithms, and C++ reference library
 
-This is a library of usefull references (web pages, papers, video, books) and notes on common algorithms and data structures.
+This is a library of usefull references (web pages, papers, video, books) and notes
+on common data structures and algorithms with an emphasis on C++ when it comes to their
+implementation.
+
 
 ## Table of contents
 
-* Algorithms
-	* [Dynamic programming](algorithms/dynamic_programming.md)
-	* [Sorting](algorithms/sorting.md)
-* Data structures
-	* [Lists](data_structures/lists.md)
-	* [Trees](data_structures/trees.md)
+* Algorithms and data structures
+	* [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
+	* [Graphs](data_structures_and_algorithms/graphs.md)*
+	* [Lists](data_structures_and_algorithms/lists.md)
+	* [Sorting](data_structures_and_algorithms/sorting.md)
+	* [Trees](data_structures_and_algorithms/trees.md)
 * C++
+	* [Parallel computing](cpp/parallel_computing.md)
 	* [Templates](cpp/templates.md)
 	* [The standard library](cpp/std_library.md)
 	* [Tools](cpp/tools.md)
-	* [Parallel computing](cpp/parallel_computing.md)
 
 :hammer_and_wrench: Currently is under construction, and will always be.

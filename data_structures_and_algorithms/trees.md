@@ -1,4 +1,4 @@
-# Data structures: Trees
+# Data structures and algorithms: Trees
 
 ## Table of contents
 
