@@ -12,9 +12,11 @@
 
 :link: *Web pages*
 
-* [Linked list](https://en.wikipedia.org/wiki/Linked_list)
+* [Linked list - Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
 
 ## Singly linked lists
+
+> A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list.
 
 :page_facing_up: *Papers*
 
@@ -23,7 +25,9 @@
 
 ## Doubly linked lists
 
+> A doubly linked list contains nodes which have a data field, `next` field, which points to the next node in the list, and `prev` field, which which points to the previous node in the list.
+
 :link: *Web pages*
 
-* [Doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list)
+* [Doubly linked list - Wikipedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
 * [A memory-efficient doubly linked list](https://www.linuxjournal.com/article/6828)

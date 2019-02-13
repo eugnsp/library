@@ -3,7 +3,7 @@
 ## Table of contents
 
 * [Data structures](#data-structures)
-* [Traversal and search](#traversal-and-search)
+* [Traversal](#traversal)
 	* [Breadth-first search (BFS)](#breadth-first-search-bfs)
 	* [Depth-first search (DFS) and edge classification](#depth-first-search-dfs-and-edge-classification)
 	* [Cycle detection](#cycle-detection)
@@ -13,7 +13,7 @@
 
 ## Data structures
 
-## Traversal and search
+## Traversal
 
 ### Breadth-first search (BFS)
 
@@ -21,7 +21,7 @@
 
 :link: *Webpages*
 
-* [Breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search)
+* [Breadth-first search - Wikipedia](https://en.wikipedia.org/wiki/Breadth-first_search)
 
 :movie_camera: *Videos*
 
@@ -36,7 +36,9 @@
 
 * Applications:-->
 
-### Depth-first search (DFS)
+### Depth-first search (DFS) and edge classification
+
+> Depth-first search is an algorithm for traversing or searching a graph that explores as far as possible along each branch before backtracking.
 
 :movie_camera: *Videos*
 

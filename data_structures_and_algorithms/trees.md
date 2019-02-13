@@ -2,11 +2,12 @@
 
 ## Table of contents
 
-* Binary trees
+* [Binary trees](#binary-trees)
 	* [Self-balancing binary search trees](#self-balancing-binary-search-trees)
 		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	* [Other binary trees](#other-binary-trees)
 		* [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
+* [Traversal](#traversal)
 
 ---
 
@@ -23,7 +24,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :link: *Web pages*
 
-* [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
+* [Self-balancing binary search tree - Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
@@ -31,7 +32,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :link: *Web pages*
 
-* [AVL tree](https://en.wikipedia.org/wiki/AVL_tree)
+* [AVL tree - Wikipedia](https://en.wikipedia.org/wiki/AVL_tree)
 * [C++ AVL tree template](https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template)
 * [AVL trees: Tutorial and C++ implementation](https://www.bradapp.com/ftp/src/libs/C++/AvlTrees.html)
 * [Simple AVL tree in C++](http://somethingk.com/main/?p=1127)
@@ -53,7 +54,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :dizzy: *Visualizations*
 
-* [AVL Tree Visualzation](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
+* [AVL tree visualzation](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
 
 :memo: *Notes*
 
@@ -70,10 +71,10 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :link: *Webpages*
 
-* https://en.wikipedia.org/wiki/Fenwick_tree
-* https://brilliant.org/wiki/fenwick-tree/
-* https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
-* https://github.com/Microsoft/fast-binary-indexed-tree-js
+* [Fenwick tree - Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
+* [Fenwick tree](https://brilliant.org/wiki/fenwick-tree/)
+* [Binary indexed trees](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
+* [A JavaScript implementation of Binary Indexed](https://github.com/Microsoft/fast-binary-indexed-tree-js)
 
 :movie_camera: *Videos*
 
@@ -92,3 +93,13 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 :memo: *Notes*
 
 * Both zero-based and one-based indexing can be used in equally elegant ways.
+
+## Traversal
+
+:link: *Webpages*
+
+[Tree traversal - Wikipedia](https://en.wikipedia.org/wiki/Tree_traversal)
+
+:memo: *Notes*
+
+* See also: [Graphs &ndash; Traversal](graphs.md#traversal)
