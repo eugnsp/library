@@ -100,7 +100,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 :memo: *Notes*
 
 * Both `0`-based and `1`-based indexing can be used in equally elegant ways.
-* A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for `min(&bull;, &bull;)`), a segment tree enters the stage.
+* A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for `min(•, •)`), a segment tree enters the stage.
 * Applications:
 	* Arithmetic coding
 	* Inversions counting
