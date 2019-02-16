@@ -14,7 +14,7 @@
 
 * J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing, 2017\
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012\
+* N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012 &ndash; Ch. 18: *Concurrency*\
 [Book website](http://www.cppstdlib.com/)
 
 ## Algorithms

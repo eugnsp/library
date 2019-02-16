@@ -37,9 +37,9 @@
 :book: *Books*
 
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.2: *Breadth-first search*\
-[Full text](https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf) | [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.6: *Breadth-first search*\
-[Full text](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf) | [Book website](http://www.algorist.com/)
+[Book website](http://www.algorist.com/)
 * S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.2: *Breadth first search*
 
 <!-- :memo: *Notes*
@@ -60,9 +60,9 @@
 :book: *Books*
 
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.3: *Depth-first search*\
-[Full text](https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf) | [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs*\
-[Full text](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf) | [Book website](http://www.algorist.com/)
+[Book website](http://www.algorist.com/)
 * S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.1: *Depth first search*
 
 :memo: *Notes*
@@ -98,7 +98,7 @@
 :book: *Books*
 
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.4: *Topological sort*\
-[Full text](https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf) | [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 
 #### Kahn's algorithm
 
@@ -109,7 +109,7 @@
 :book: *Books*
 
 * D.E.Knuth. *The Art of Computer Programming, Vol. 1: Fundamental Algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*\
-[Full text](http://broiler.astrometry.net/~kilian/The_Art_of_Computer_Programming%20-%20Vol%201.pdf) | [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+[Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 :page_facing_up: *Papers*
 
