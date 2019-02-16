@@ -28,9 +28,9 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 :book: *Books*
 
 * A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed., 2019\
-[Book website](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
+[Full text (1<sup>st</sup> ed.)](https://www.bogotobogo.com/cplusplus/files/CplusplusConcurrencyInAction_PracticalMultithreading.pdf) | [Book website](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
 * J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing, 2017 &ndash; Ch. 9: *Parallelism and concurrency*\
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
 * N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012 &ndash; Ch. 18: *Concurrency*\
-[Book website](http://www.cppstdlib.com/)
+[Full text](https://www.mica.edu.vn/perso/Vu-Hai/EE3490/Ref/The%20C++Standard%20Library%20-%202nd%20Edition.pdf) | [Book website](http://www.cppstdlib.com/)
 

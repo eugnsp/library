@@ -69,7 +69,7 @@
 
 * Applications:
  	* [Cycle detection](#cycle-detection)
-	* [Topological sort](#topological-sort)
+	* [DFS-based topological sorting](#dfs-based-topological-sorting)
 
 ### Cycle detection
 
