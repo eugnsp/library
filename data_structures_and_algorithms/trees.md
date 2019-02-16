@@ -30,6 +30,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 * Applications:
 	* Implementation of sorted associative containers (e.g., `std::set` and `std::map`).
+	* Counting inversions in an array
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
@@ -77,8 +78,8 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 :link: *Webpages*
 
 * [Fenwick tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
-* [Fenwick tree](https://brilliant.org/wiki/fenwick-tree/)
 * [Binary indexed trees &ndash; Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
+* [Fenwick tree &ndash; Brilliant](https://brilliant.org/wiki/fenwick-tree/)
 * [A JavaScript implementation of Binary Indexed &ndash; Github](https://github.com/Microsoft/fast-binary-indexed-tree-js)
 
 :movie_camera: *Videos*
@@ -103,7 +104,6 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 * A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for `min(•, •)`), a segment tree enters the stage.
 * Applications:
 	* Arithmetic coding
-	* Inversions counting
 	* Monte-Carlo simulations
 
  <!-- TODO : add links -->

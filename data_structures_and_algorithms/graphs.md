@@ -8,6 +8,8 @@
 	* [Depth-first search (DFS)](#depth-first-search-dfs)
 	* [Cycle detection](#cycle-detection)
 	* [Topological sorting](#topological-sorting)
+		* [DFS-based topological sorting](#dfs-based-topological-sorting)
+		* [Kahn's algorithm](#kahns-algorithm)
 * Shortest paths
 	* Single-source shortest paths
 	* All-pairs shortest paths
@@ -78,6 +80,14 @@
 
 ### Topological sorting
 
+:link: *Webpages*
+
+[Topological sorting &ndash; Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
+
+:book: *Books*
+
+* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*
+
 #### DFS-based topological sorting
 
 :movie_camera: *Videos*
@@ -89,10 +99,26 @@
 
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.4: *Topological sort*\
 [Full text](https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf) | [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*
 
-#### Khan's algorithm
+#### Kahn's algorithm
+
+:link: *Webpages*
+
+[`tsort.c` by Mark Kettenis](http://agentzh.org/misc/code/coreutils/tsort.c.html)
 
 :book: *Books*
 
-* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*
+* D.E.Knuth. *The Art of Computer Programming, Vol. 1: Fundamental Algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*\
+[Full text](http://broiler.astrometry.net/~kilian/The_Art_of_Computer_Programming%20-%20Vol%201.pdf) | [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+
+:page_facing_up: *Papers*
+
+* A.B.Kahn. *Topological sorting of large networks*. Communications of the ACM **5**, [558](https://dx.doi.org/10.1145/368996.369025) (1962)
+
+<!--
+:memo: *Notes*
+
+* Applications:
+	* Coffman&ndash;Graham algorithm
+	* Layered graph drawing
+-->
