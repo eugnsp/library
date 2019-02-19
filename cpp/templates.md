@@ -3,13 +3,15 @@
 ## Table of contents
 
 * [General information](#general-information)
+* Syntax
+	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 * [Type traits](#type-traits)
 
 ---
 
 ## General information
 
-:movie_camera: *Videos*
+:movie_camera: **Videos**
 
 * W.E.Brown @ CppCon (2014) &ndash; *Modern template metaprogramming: A compendium*\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE)
@@ -19,7 +21,21 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 * D.Vandevoorde, N.M.Josuttis, D.Gregor. *C++ templates: The complete guide.* Addison-Wesley, 2<sup>nd</sup> ed., 2017\
 [Book website](http://www.tmplbook.com/)
 
+## Syntax
+
+### Keywords `template` and `typename` as disambiguators
+
+:link: **Webpages**
+
+* [Where and why do I have to put the `template` and `typename` keywords? &ndash; Stack Overflow](https://stackoverflow.com/a/613132/1625187)
+
 ## Type traits
+
+:link: **Webpages**
+
+* [C++ type traits by J.Maddock and S.Cleary &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/cpp/c-type-traits/184404270)
+* [An introduction to C++ traits by T.Frogley &ndash; ACCU](https://accu.org/index.php/journals/442)
+* [Standard library header `<type_traits>` &ndash; C++ reference](https://en.cppreference.com/w/cpp/header/type_traits)
 
 :movie_camera: *Videos*
 
