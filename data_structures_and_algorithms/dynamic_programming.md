@@ -25,10 +25,12 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part I
 
 :link: **Webpages**
 
-[*Longest increasing subsequence* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+[Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
 
 :book: **Books**
 
+* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
+[Book website](https://cpbook.net/)
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.3: *Longest increasing sequence*\
 [Book website](http://www.algorist.com/)
 

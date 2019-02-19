@@ -37,7 +37,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 * [An introduction to C++ traits by T.Frogley &ndash; ACCU](https://accu.org/index.php/journals/442)
 * [Standard library header `<type_traits>` &ndash; C++ reference](https://en.cppreference.com/w/cpp/header/type_traits)
 
-:movie_camera: *Videos*
+:movie_camera: **Videos**
 
 * A.O'Dwyer @ C++Now (2018) &ndash; *The best type traits that C++ doesn't have*\
 [Watch at YouTube](https://www.youtube.com/watch?v=MWBfmmg8-Yo)
