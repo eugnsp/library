@@ -8,6 +8,23 @@
 
 ---
 
+## Longest increasing subsequence
+
+> Longest increasing subsequence problem is a task to find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
+
+:link: **Webpages**
+
+[Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+
+:book: **Books**
+
+* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
+[Book website](https://cpbook.net/)
+
+:memo: **Notes**
+
+* There exists a dynamic programming solution, see [Dynamic programming &ndash; Longest increasing subsequence](dynamic_programming.md#longest-increasing-subsequence).
+
 ## Sorting
 
 ### Comparison sorting
