@@ -67,10 +67,10 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :memo: **Notes**
 
-* Maximum height of an AVL tree with *N* nodes is `~1.44 log₂N`.
+* Maximum height of an AVL tree with *N* nodes is `~1.44 log₂ N`.
 * For insertions, one rotation always suffices. For deletions, `O(log N)` rotations may be required. Non-recursive insertions and deletions are generally faster, but harded to code and read.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
-* Balance factors (differences in heights) can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
+* Balance factors, i.e. differences in heights, can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
 * AVL trees require at most 45% more comparisons than optimal binary search trees.
 
 ### Other binary trees

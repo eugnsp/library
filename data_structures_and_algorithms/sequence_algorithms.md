@@ -2,11 +2,15 @@
 
 ## Table of contents
 
-* [Comparison sort](#comparison-sort)
+* [Longest increasing subsequence](#longest-increasing-subsequence)
+* [Sorting](#sorting)
+	* [Comparison sorting](#comparison-sorting)
 
 ---
 
-## Comparison sort
+## Sorting
+
+### Comparison sorting
 
 :page_facing_up: **Papers**
 
