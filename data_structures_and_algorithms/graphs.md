@@ -53,6 +53,11 @@
 
 > Depth-first search is an algorithm for traversing or searching a graph that explores as far as possible along each branch before backtracking.
 
+:wrench: **Applications**
+
+* [Cycle detection](#cycle-detection)
+* [DFS-based topological sorting](#dfs-based-topological-sorting)
+
 :movie_camera: **Videos**
 
 * MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Depth-First Search (DFS)*\
@@ -66,12 +71,6 @@
 [Book website](http://www.algorist.com/)
 * S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.1: *Depth first search*\
 [Book website](https://cpbook.net/)
-
-:memo: **Notes**
-
-* Applications:
- 	* [Cycle detection](#cycle-detection)
-	* [DFS-based topological sorting](#dfs-based-topological-sorting)
 
 ### Cycle detection
 

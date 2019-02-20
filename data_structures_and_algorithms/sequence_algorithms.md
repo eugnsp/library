@@ -1,4 +1,4 @@
-# Sorting
+# Sequence algorithms
 
 ## Table of contents
 
@@ -12,18 +12,29 @@
 
 > Longest increasing subsequence problem is a task to find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
 
+:memo: **Notes**
+
+* The dynamic programming solution has running time `O(N²)` (without additional tricks), and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search.
+
 :link: **Webpages**
 
 [Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+[Longest increasing subsequence &ndash; CP-Algorithms](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
+
+:movie_camera: **Videos**
+
+* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Dynamic programming*\
+[Watch at YouTube](https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570) (from 42:50) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
+* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.3: *Longest increasing sequence*\
+[Book website](http://www.algorist.com/)
 * S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
 [Book website](https://cpbook.net/)
 
-:memo: **Notes**
 
-* There exists a dynamic programming solution, see [Dynamic programming &ndash; Longest increasing subsequence](dynamic_programming.md#longest-increasing-subsequence).
+<!--### Counting the number of longest increasing subsequences->
 
 ## Sorting
 
