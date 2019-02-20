@@ -14,12 +14,13 @@
 
 :memo: **Notes**
 
-* The dynamic programming solution has running time `O(N²)` (without additional tricks), and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search.
+* The dynamic programming solution (without additional tricks) has running time `O(N²)`, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search.
+* Binary search based algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
 
 :link: **Webpages**
 
-[Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
-[Longest increasing subsequence &ndash; CP-Algorithms](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
+* [Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+* [Longest increasing subsequence &ndash; CP-Algorithms](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
 
 :movie_camera: **Videos**
 

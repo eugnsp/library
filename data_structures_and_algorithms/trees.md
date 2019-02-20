@@ -22,7 +22,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 > A self-balancing binary search tree is a binary search tree that automatically keeps its height small during arbitrary insertions and deletions.
 
-:memo: *Notes*
+:memo: **Notes**
 
 * For a self-balancing BST containing `N` nodes, lookup, insertion, and removal of an item takes `O(log N)` worst-case time, and ordered enumeration of all nodes takes `O(N)` time.
 
@@ -31,7 +31,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 * Implementation of sorted associative containers (e.g., `std::set` and `std::map`).
 * Counting inversions in an array
 
-:link: *Web pages*
+:link: **Webpages**
 
 * [Self-balancing binary search tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) <!-- TODO : link -->
 
@@ -47,7 +47,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 * Balance factors, i.e. differences in heights, can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
 * AVL trees require at most 45% more comparisons than optimal binary search trees.
 
-:link: *Web pages*
+:link: **Webpages**
 
 * [AVL tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/AVL_tree)
 * [C++ AVL tree template](https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template)
@@ -85,9 +85,11 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 * Both `0`-based and `1`-based indexing can be used in equally elegant ways.
 * A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for `min(•, •)`), a segment tree enters the stage.
-* Applications:
-	* Arithmetic coding
-	* Monte-Carlo simulations
+
+:wrench: **Applications**
+
+* Arithmetic coding
+* Monte-Carlo simulations
 
  <!-- TODO : add links -->
 
