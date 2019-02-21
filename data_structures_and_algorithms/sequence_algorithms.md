@@ -14,8 +14,8 @@
 
 :memo: **Notes**
 
-* The dynamic programming solution (without additional tricks) has running time `O(N²)`, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search.
-* Binary search based algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
+* The dynamic programming solution (without additional tricks) has running time `O(N²)`, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
+* Any comparison-based algorithm has worst-case running time `Ω(N log N)`.
 
 :link: **Webpages**
 
@@ -31,9 +31,13 @@
 
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.3: *Longest increasing sequence*\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
+* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
 [Book website](https://cpbook.net/)
 
+:page_facing_up: **Papers**
+
+* M.L.Fredman. *On computing the length of longest increasing subsequences*. Discrete Mathematics **11**, [29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)\
+[Full text 1](https://core.ac.uk/download/pdf/82290717.pdf) | [Full text 2](https://dx.doi.org/10.1016/0012-365X(75)90103-X)
 
 <!--### Counting the number of longest increasing subsequences->
 

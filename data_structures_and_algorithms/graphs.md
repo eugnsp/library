@@ -69,7 +69,7 @@
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs*\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive Programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.1: *Depth first search*\
+* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.1: *Depth first search*\
 [Book website](https://cpbook.net/)
 
 ### Cycle detection
@@ -90,7 +90,7 @@
 
 :book: **Books**
 
-* S.Halim, F.Halim. *Competitive programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*\
+* S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*\
 [Book website](https://cpbook.net/)
 
 :memo: **Notes**

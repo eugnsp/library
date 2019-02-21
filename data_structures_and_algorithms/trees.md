@@ -30,6 +30,7 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 * Implementation of sorted associative containers (e.g., `std::set` and `std::map`).
 * Counting inversions in an array
+* Counting the number of smaller/larger elements on the right/left side of each element in an array
 
 :link: **Webpages**
 
@@ -109,12 +110,12 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 
 :book: **Books**
 
-* S.Halim, F.Halim. *Competitive programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*\
+* S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*\
 [Book website](https://cpbook.net/)
 
 :page_facing_up: **Papers**
 
-* P.M.Fenwick. *A new data structure for cumulative frequency tables.* Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
+* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
 ## Traversal
