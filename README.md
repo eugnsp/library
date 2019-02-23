@@ -8,6 +8,7 @@ implementation.
 ## Table of contents
 
 * Data structures and algorithms
+	* [Algorithm analysis](data_structures_and_algorithms/algoritm_analysis.md)
 	* [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
 	* [Graphs](data_structures_and_algorithms/graphs.md)
 	* [Lists](data_structures_and_algorithms/lists.md)

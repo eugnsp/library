@@ -65,12 +65,14 @@ A binary search tree is a rooted binary tree that satisfies the binary search pr
 :page_facing_up: **Papers**
 
 * G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962)\
-[Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) | [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
+[Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) |
+[Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
 :movie_camera: **Videos**
 
 * MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *AVL Trees, AVL Sort*\
-[Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) | [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+[Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :dizzy: **Visualizations**
 
