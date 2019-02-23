@@ -15,6 +15,7 @@ implementation.
 	* [Sequence algorithms](data_structures_and_algorithms/sequence_algorithms.md)
 	* [Trees](data_structures_and_algorithms/trees.md)
 * C++
+	* [Core language](cpp/core_language.md)
 	* [Parallel computing](cpp/parallel_computing.md)
 	* [Templates](cpp/templates.md)
 	* [The standard library](cpp/std_library.md)
