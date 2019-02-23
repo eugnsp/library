@@ -35,7 +35,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 
 * [C++ type traits by J.Maddock and S.Cleary &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/cpp/c-type-traits/184404270)
 * [An introduction to C++ traits by T.Frogley &ndash; ACCU](https://accu.org/index.php/journals/442)
-* [Standard library header `<type_traits>` &ndash; C++ reference](https://en.cppreference.com/w/cpp/header/type_traits)
+* [Type support &ndash; C++ reference](https://en.cppreference.com/w/cpp/types)
 
 :movie_camera: **Videos**
 
