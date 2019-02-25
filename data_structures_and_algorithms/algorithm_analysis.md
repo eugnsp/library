@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Loop invariants](#loop-invariants)
+	* [Binary search](#binary-search)
 
 ---
 
