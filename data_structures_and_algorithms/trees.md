@@ -15,7 +15,7 @@
 
 :memo: **Notes**
 
-* The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically `C(N) ~ 4^N / [N^1.5 sqrt(π)]`.
+* The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically `C(N) ~ 4^N / [N^1.5 √̅π]`.
 
 ### Binary search trees
 
@@ -49,7 +49,7 @@
 
 :memo: **Notes**
 
-* Maximum height of an AVL tree with `N` nodes is ~ `1.44 log2 N`.
+* Maximum height of an AVL tree with `N` nodes is `~ 1.44 log2 N`.
 * For insertions, one rotation always suffices. For deletions, `O(log N)` rotations may be required. Non-recursive insertions and deletions are generally faster, but harded to code and read.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
 * Balance factors, i.e. differences in heights, can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
