@@ -5,7 +5,9 @@
 * [Longest increasing subsequence](#longest-increasing-subsequence)
 * [Sorting](#sorting)
 	* [Comparison sorting](#comparison-sorting)
+	* [Order statistics](#order-statistics)
 * [String searching](#string-searching)
+	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuth-morris-pratt-algorithm)
 
 ---
 
@@ -52,6 +54,27 @@
 
 * J.L.Bentley, M.D.McIlroy. *Engineering a sort function.* Software: Practice and Experience **23**, [1249](https://dx.doi.org/10.1002/spe.4380231105) (1993)\
 [Full text](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
+
+### Order statistics
+
+> The k<sup>th</sup> order statistic of an array is its k<sup>th</sup> smallest element.
+
+:link: **Webpages**
+
+* [Selection and order statistics &ndash; ICS 161: Design and Analysis of Algorithms (1996)](https://www.ics.uci.edu/~eppstein/161/960125.html)
+
+:movie_camera: **Videos**
+
+* MIT OCW 6.046J/18.410J: Introduction to Algorithms (2005) &ndash; *Order statistics, median*\
+[Watch at YouTube](https://www.youtube.com/watch?v=mR_RUjsJnV8) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/)
+
+:book: **Books**
+
+* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Ch. 9: *Medians and order statistics*\
+[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*
+* A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974 &ndash; Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics*.
 
 ## String searching
 

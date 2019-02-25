@@ -15,7 +15,7 @@
 
 :memo: **Notes**
 
-* The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically `C(N) ~ 4^N / [N^1.5 √̅π]`.
+* The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically `C(N) ~ 4^N / [N^1.5 sqrt(π)]`.
 
 ### Binary search trees
 
@@ -77,7 +77,7 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *AVL Trees, AVL Sort*\
+* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *AVL Trees, AVL Sort*\
 [Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
