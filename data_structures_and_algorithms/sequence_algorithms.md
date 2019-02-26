@@ -17,7 +17,7 @@
 
 :memo: **Notes**
 
-* The dynamic programming solution (without additional tricks) has running time `O(N^2)`, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
+* The dynamic programming solution (without additional tricks) has running time <code>O(N<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
 * Any algorithm requires at least `N log N - N log log N + O(N)` in the worst case.
 
 :link: **Webpages**
@@ -63,7 +63,7 @@
 
 * Any algorithm of finding the smallest element in an array of size `N` requires at least `N - 1` comparisons in the worst case.
 * Any algorithm of finding the smallest and the largest elements in an array of size `N` requires at least `⌈3N / 2⌉ - 1` comparisons in the worst case.
-* Any algorithm of finding the second smallest element in an array of size `N` requires at least `N + ⌈log2 N⌉ - 2 &#955;` comparisons in the worst case.
+* Any algorithm of finding the second smallest element in an array of size `N` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
 
 :link: **Webpages**
 
