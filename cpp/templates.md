@@ -29,6 +29,12 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 
 * [Where and why do I have to put the `template` and `typename` keywords? &ndash; Stack Overflow](https://stackoverflow.com/a/613132/1625187)
 
+:movie_camera: **Videos**
+
+* Alexander Stepanov: Efficient programming with components (2013) &ndash; Part of lecture 12\
+[Watch at YouTube](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) (from 2:18)
+
+
 ## Type traits
 
 :link: **Webpages**

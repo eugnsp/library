@@ -7,7 +7,7 @@
 	* [Comparison sorting](#comparison-sorting)
 	* [Order statistics](#order-statistics)
 * [String searching](#string-searching)
-	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuth-morris-pratt-algorithm)
+	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
 
 ---
 
@@ -54,7 +54,7 @@
 
 :page_facing_up: **Papers**
 
-* J.L.Bentley, M.D.McIlroy. *Engineering a sort function.* Software: Practice and Experience **23**, [1249](https://dx.doi.org/10.1002/spe.4380231105) (1993)\
+* J.L.Bentley, M.D.McIlroy. *Engineering a sort function*. Software: Practice and experience **23**, [1249](https://dx.doi.org/10.1002/spe.4380231105) (1993)\
 [Full text](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
 
 ### Order statistics
@@ -78,9 +78,8 @@
 * MIT OCW 6.046J/18.410J: Introduction to algorithms (2005) &ndash; *Order statistics, median*\
 [Watch at YouTube](https://www.youtube.com/watch?v=mR_RUjsJnV8) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/)
-* Alexander Stepanov: Efficient Programming with Components (2013) &ndash; Lectures 6-?: *Finding the smallest and second smallest elements*\
-Watch at YouTube: [Part I (6-1)](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD),
-[Part I (6-1)](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD)
+* Alexander Stepanov: Efficient programming with components (2013) &ndash; Lectures 6-10: *Finding the smallest and second smallest elements*\
+[Watch at YouTube](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD) (subsequent lectures are in the playlist)
 
 :book: **Books**
 
