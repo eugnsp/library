@@ -49,7 +49,7 @@
 
 :memo: **Notes**
 
-* Maximum height of an AVL tree with `N` nodes is <code>~ 1.44 log<sub>2</sub> N</code>.
+* The height of an AVL tree with `N` nodes lies between <code>log<sub>2</sub> (N + 1)</code> and <code>1.4404 log<sub>2</sub> (N + 2) - 0.3277</code>.
 * For insertions, one rotation always suffices. For deletions, `O(log N)` rotations may be required. Non-recursive insertions and deletions are generally faster, but harded to code and read.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
 * Balance factors, i.e. differences in heights, can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
@@ -65,19 +65,21 @@
 
 :book: **Books**
 
+* D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998 &ndash; Sec. 6.2.3: *Balanced trees* \
+[Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 * M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed., 2014 &ndash; Sec. 4.4: *AVL trees*\
 [Book website](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html)
 * U.Manber. *Introduction to algorithms: A creative approach.* Addison-Wesley, 1<sup>st</sup> ed., 1989 &ndash; Sec. 4.3.4: *AVL trees*
 
 :page_facing_up: **Papers**
 
-* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962)\
+* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady akademii nauk SSSR **146**, 263 (1962)\
 [Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) |
 [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *AVL Trees, AVL Sort*\
+* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *AVL trees, AVL sort*\
 [Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
@@ -124,7 +126,7 @@
 
 :page_facing_up: **Papers**
 
-* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
+* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994)\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
 ## Traversal

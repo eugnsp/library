@@ -130,7 +130,7 @@
 
 :book: **Books**
 
-* D.E.Knuth. *The Art of Computer Programming, Vol. 1: Fundamental Algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*\
+* D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*\
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 :page_facing_up: **Papers**
