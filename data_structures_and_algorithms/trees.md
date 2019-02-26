@@ -23,7 +23,7 @@
 
 :memo: **Notes**
 
-* The total number of binary search trees with `N` different keys is given by the `N`<sup>th</sup> Catalan number `C(N)`. Asymptotically `C(N) ~ 4^N / [N^1.5 sqrt(π)]`.
+* The total number of binary search trees with `N` different keys is given by the `N`<sup>th</sup> Catalan number `C(N)`. Asymptotically `C(N) ~ 4^N / [N^1.5 sqrt π]`.
 
 ### Self-balancing binary search trees
 

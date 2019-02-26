@@ -18,7 +18,7 @@
 :memo: **Notes**
 
 * The dynamic programming solution (without additional tricks) has running time `O(N^2)`, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
-* Any comparison-based algorithm has worst-case running time `Ω(N log N)`.
+* Any algorithm requires at least `N log N - N log log N + O(N)` in the worst case.
 
 :link: **Webpages**
 
@@ -59,9 +59,16 @@
 
 > The k<sup>th</sup> order statistic of an array is its k<sup>th</sup> smallest element.
 
+:memo: **Notes**
+
+* Any algorithm of finding the smallest element in an array of size `N` requires at least `N - 1` comparisons in the worst case.
+* Any algorithm of finding the smallest and the largest elements in an array of size `N` requires at least `⌈3N / 2⌉ - 1` comparisons in the worst case.
+* Any algorithm of finding the second smallest element in an array of size `N` requires at least `N + ⌈log2 N⌉ - 2 &#955;` comparisons in the worst case.
+
 :link: **Webpages**
 
-* [Selection and order statistics &ndash; ICS 161: Design and Analysis of Algorithms (1996)](https://www.ics.uci.edu/~eppstein/161/960125.html)
+* [Selection and order statistics &ndash; ICS 161: Design and analysis of algorithms (1996)](https://www.ics.uci.edu/~eppstein/161/960125.html)
+* [Sample proofs involving selection problems &ndash; COMP 363: Design and analysis of computer algorithms (2003)](http://cs.slu.edu/~goldwasser/class/loyola/comp363/2003_Spring/handouts/selectionproofs.pdf)
 
 :movie_camera: **Videos**
 
@@ -74,7 +81,7 @@
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Ch. 9: *Medians and order statistics*\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*
-* A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974 &ndash; Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics*.
+* A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974 &ndash; Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics*
 
 ## String searching
 
