@@ -6,6 +6,7 @@
 * [Sorting](#sorting)
 	* [Comparison sorting](#comparison-sorting)
 	* [Order statistics](#order-statistics)
+		* [Second smallest element](#second-smallest-element)
 * [String searching](#string-searching)
 	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
 
@@ -13,7 +14,7 @@
 
 ## Longest increasing subsequence
 
-> Longest increasing subsequence problem is a task to find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
+> Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
 
 :memo: **Notes**
 
@@ -37,6 +38,7 @@
 [Book website](http://www.algorist.com/)
 * S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*\
 [Book website](https://cpbook.net/)
+* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence*
 
 :page_facing_up: **Papers**
 
@@ -85,7 +87,7 @@
 
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Ch. 9: *Medians and order statistics*\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*
+* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set*
 * A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974 &ndash; Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics*
 
 :page_facing_up: **Papers**

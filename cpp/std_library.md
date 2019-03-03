@@ -9,6 +9,7 @@
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
+* [Tricks and subtleties](#tricks-and-subtleties)
 
 ---
 
@@ -70,4 +71,8 @@
 * S.T.Lavavej @ CppCon (2016) &ndash; *`tuple<>`: What's new and how it works*\
 [Watch at YouTube](https://www.youtube.com/watch?v=JhgWFYfdIho)
 
+# Tricks and subtleties
 
+:link: **Webpages**
+
+* [In `std::exchange`, why is the second template parameter defaulted? &ndash; Stack Overflow](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted)

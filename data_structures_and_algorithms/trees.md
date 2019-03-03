@@ -16,6 +16,7 @@
 :memo: **Notes**
 
 * The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically <code>C(N) ~ 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>.
+* The average height of a randomly built binary search tree is `O(log n)`.
 
 ### Binary search trees
 

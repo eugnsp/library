@@ -5,6 +5,7 @@
 * [General information](#general-information)
 * [Singly linked lists](#singly-linked-lists)
 * [Doubly linked lists](#doubly-linked-lists)
+	* [XOR doubly linked lists](#xor-doubly-linked-lists)
 
 ---
 
@@ -30,4 +31,11 @@
 :link: **Webpages**
 
 * [Doubly linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
-* [A memory-efficient doubly linked list](https://www.linuxjournal.com/article/6828)
+
+### XOR doubly linked lists
+
+:link: **Webpages**
+
+* [XOR linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/XOR_linked_list)
+* [A memory-efficient doubly linked list &ndash; Linux Journal](https://www.linuxjournal.com/article/6828)
+
