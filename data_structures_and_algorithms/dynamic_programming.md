@@ -21,7 +21,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 :book: **Books**
 
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Ch. 8: *Dynamic programming*\
+* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Ch. 8: *Dynamic programming*.\
 [Book website](http://www.algorist.com/)
 
 ## Linear partition
@@ -34,9 +34,9 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 :book: **Books**
 
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.5: *The partition problem*\
+* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.5: *The partition problem*.\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 8.4.1: *Two components: binary search the answer and other*\
+* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 8.4.1: *Two components: binary search the answer and other*.\
 [Book website](https://cpbook.net/)
 
 ## Longest increasing subsequence

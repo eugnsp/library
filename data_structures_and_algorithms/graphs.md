@@ -110,13 +110,13 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *Topological Sort*\
+* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *Topological Sort*.\
 [Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8&t=2515) (from 41:55) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.4: *Topological sort*\
+* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.4: *Topological sort*.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.10.1: *Topological sorting*\
 [Book website](http://www.algorist.com/)
@@ -130,12 +130,12 @@
 
 :book: **Books**
 
-* D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*\
+* D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*.\
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 :page_facing_up: **Papers**
 
-* A.B.Kahn. *Topological sorting of large networks*. Communications of the ACM **5**, [558](https://dx.doi.org/10.1145/368996.369025) (1962)
+* A.B.Kahn. *Topological sorting of large networks*. Communications of the ACM **5**, [558](https://dx.doi.org/10.1145/368996.369025) (1962).
 
 <!--
 :memo: *Notes*

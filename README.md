@@ -13,6 +13,7 @@ implementation.
 	* [Graphs](data_structures_and_algorithms/graphs.md)
 	* [Lists](data_structures_and_algorithms/lists.md)
 	* [Sequence algorithms](data_structures_and_algorithms/sequence_algorithms.md)
+	* [Sorting](data_structures_and_algorithms/sorting.md)
 	* [Trees](data_structures_and_algorithms/trees.md)
 * C++
 	* [Core language](cpp/core_language.md)
