@@ -7,6 +7,8 @@
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
+* J.Kleinberg, E.Tardos. *Algorithm Design*. Pearson, 2005.\
+[Book website](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
 * D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997.\
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 * D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998.\

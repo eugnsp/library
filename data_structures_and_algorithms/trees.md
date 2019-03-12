@@ -32,13 +32,9 @@
 
 :memo: **Notes**
 
-* For a self-balancing BST containing `N` nodes, lookup, insertion, and removal of an item takes `O(log N)` worst-case time, and ordered enumeration of all nodes takes `O(N)` time.
-
-:wrench: **Applications**
-
-* Implementation of sorted associative containers (e.g., `std::set` and `std::map`).
-* Counting inversions in an array.
-* Counting the number of smaller/larger elements on the right/left side of each element in an array.
+* For a self-balancing binary search tree containing `N` nodes, lookup, insertion, and removal of an item takes `O(log N)` worst-case time, and ordered enumeration of all nodes takes `O(N)` time.
+* Self-balancing binary search trees can be used to implement sorted associative containers. For example, `std::set` and `std::map` are typically implemented using red-black trees.
+* Self-balancing binary search can be used to count the number of inversions in an array and the number of smaller/larger elements on the right/left side of each element in an array.
 
 :link: **Webpages**
 

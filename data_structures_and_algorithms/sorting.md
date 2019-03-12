@@ -1,13 +1,14 @@
-# Sequence algorithms
+# Sorting
 
 ## Table of contents
 
 * [Comparison sorting](#comparison-sorting)
 	* [Insertion sort](#insertion-sort)
+	* [Selection sort](#selection-sort)
 	* [Heap sort](#heap-sort)
 	* [Merge sort](#merge-sort)
+		* [Inversions counting](#inversions-counting)
 * [Order statistics](#order-statistics)
-	* [Second smallest element](#second-smallest-element)
 
 ---
 
@@ -34,25 +35,19 @@
 
 :memo: **Notes**
 
-* Running time &ndash; :smiley: `O(N)`, :neutral_face: <code>O(N<sup>2</sup>)</code>,  :anguished: <code>O(N<sup>2</sup>)</code>. It requires no additional space.
-
-:wrench: **Applications**
-
-* Sorting a small number of elements. It is used in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
+* Insertion sort is commonly used to sort a small number of elements. It is employed in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Ch. 9: *Medians and order statistics*.\
+* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* R.Sedgewick. *Algorithms*. Addison-Wesley, 1983 &ndash; Ch. 8: *Elementary sorting methods*.
+* Ch. 8: *Elementary sorting methods* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
 
 ### Selection sort
 
 :memo: **Notes**
 
-:wrench: **Applications**
-
-* Sorting elements with small keys and very large associated data.
+* Selection sort makes only `O(N)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
 
 :link: **Webpages**
 
@@ -61,18 +56,6 @@
 :book: **Books**
 
 * R.Sedgewick. *Algorithms*. Addison-Wesley, 1983 &ndash; Ch. 8: *Elementary sorting methods*.
-
-### Merge sort
-
-:wrench: **Applications**
-
-* Sorting linked lists.
-* External sorting of data that doesn't fit into memory.
-* Counting inversions in an array.
-
-:link: **Webpages**
-
-* [Merge sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 
 ### Heap sort
 
@@ -98,20 +81,54 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.046J/18.410J: Introduction to algorithms (2005) &ndash; *Order statistics, median*.\
+* *Order statistics, median* &ndash; MIT OCW 6.046J/18.410J: Introduction to algorithms (2005).\
 [Watch at YouTube](https://www.youtube.com/watch?v=mR_RUjsJnV8) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/)
-* Alexander Stepanov: Efficient programming with components (2013) &ndash; Lectures 6-10: *Finding the smallest and second smallest elements*.\
+* Lectures 6-10: *Finding the smallest and second smallest elements* &ndash; Alexander Stepanov: Efficient programming with components (2013).\
 [Watch at YouTube](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD) (subsequent lectures are in the playlist)
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Ch. 9: *Medians and order statistics*.\
+* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set*.
-* A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974 &ndash; Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics*.
+* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set* &ndash; U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989.
+* Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics* &ndash; A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974.
 
 :page_facing_up: **Papers**
 
 * S.S.Kislitsyn. *On the selection of the `K`<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky matematichesky zhurnal **5**, 557 (1964).\
 [Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})
+
+### Merge sort
+
+:wrench: **Applications**
+
+* Sorting linked lists.
+* External sorting of data that doesn't fit into memory.
+
+:link: **Webpages**
+
+* [Merge sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
+
+#### Inversions counting
+
+:memo: **Notes**
+
+* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`.
+
+:link: **Webpages**
+
+* [Counting inversions in a permutation &ndash; CS 122: Algorithm design and analysis (2010)](https://en.wikipedia.org/wiki/Merge_sort)
+
+:movie_camera: **Videos**
+
+* *Counting the number of inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010).\
+[Watch at YouTube](https://www.youtube.com/watch?v=Vj5IOD7A6f8) |
+[Course website](http://web.cs.ucdavis.edu/~gusfield/cs122f10/)
+
+:book: **Books**
+
+* Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm Design*. Pearson, 2005.\
+[Book website](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
+
+<!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->

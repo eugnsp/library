@@ -9,6 +9,7 @@ implementation.
 
 * Data structures and algorithms
 	* [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
+	* [Backtracking](data_structures_and_algorithms/backtracking.md)
 	* [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
 	* [Graphs](data_structures_and_algorithms/graphs.md)
 	* [Lists](data_structures_and_algorithms/lists.md)
