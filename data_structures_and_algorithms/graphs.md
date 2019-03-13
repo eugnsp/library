@@ -31,17 +31,17 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *Breadth-First Search*\
+* *Breadth-First Search* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=s-CYnVz-uh4) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.2: *Breadth-first search*\
+* Sec. 22.2: *Breadth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.6: *Breadth-first search*\
+* Sec. 5.6: *Breadth-first search* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive programming.* 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.2: *Breadth first search*\
+* Sec. 4.2.2: *Breadth first search* &ndash; S.Halim, F.Halim. *Competitive programming.* 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
 
 <!-- :memo: **Notes**
@@ -61,24 +61,24 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Depth-First Search (DFS)*\
+* *Depth-First Search (DFS)* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.3: *Depth-first search*\
+* Sec. 22.3: *Depth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs*\
+* Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.1: *Depth first search*\
+* Sec. 4.2.1: *Depth first search* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
 
 ### Cycle detection
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *Depth-First Search (DFS)*\
+* *Depth-First Search (DFS)* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/AfSk24UTFS8?t=1093) (from 18:13) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
@@ -93,7 +93,7 @@
 
 :book: **Books**
 
-* S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 4.2.5: *Topological Sort*\
+* Sec. 4.2.5: *Topological Sort* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
 
 :memo: **Notes**
@@ -110,15 +110,15 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *Topological Sort*.\
+* *Topological Sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8&t=2515) (from 41:55) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
-* T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009 &ndash; Sec. 22.4: *Topological sort*.\
+* Sec. 22.4: *Topological sort* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 5.10.1: *Topological sorting*\
+* Sec. 5.10.1: *Topological sorting* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
 
 
@@ -130,7 +130,7 @@
 
 :book: **Books**
 
-* D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997 &ndash; Sec. 2.2.3: *Linked allocation*.\
+* Sec. 2.2.3: *Linked allocation* &ndash; D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997.\
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 :page_facing_up: **Papers**

@@ -14,8 +14,8 @@
 
 :memo: **Notes**
 
-* The dynamic programming solution (without additional tricks) has running time <code>O(N<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time.
-* Any comparison-based algorithm requires at least <code>N log<sub>2</sub> N - N log<sub>2</sub> log<sub>2</sub> N + O(N)</code> comparisons in the worst case.
+* The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time.
+* Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
 
 :link: **Webpages**
 
@@ -24,17 +24,17 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006 Introduction to algorithms (2011) &ndash; *Dynamic programming*\
+* *Dynamic programming* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570) (from 42:50) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book: **Books**
 
-* S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008 &ndash; Sec. 8.3: *Longest increasing sequence*.\
+* Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
-* S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 3.5.2 *Classical examples*.\
+* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
-* U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989 &ndash; Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence*.
+* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989.
 
 :page_facing_up: **Papers**
 

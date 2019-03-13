@@ -18,7 +18,7 @@
 
 :memo: **Notes**
 
-* For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(N<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(N log N)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn't exceed `16` elements, and Microsoft's implementation uses the value `32`.
+* For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn't exceed `16` elements, and Microsoft's implementation uses the value `32`.
 
 :page_facing_up: **Papers**
 
@@ -47,7 +47,7 @@
 
 :memo: **Notes**
 
-* Selection sort makes only `O(N)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
+* Selection sort makes only `O(n)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
 
 :link: **Webpages**
 
@@ -61,17 +61,17 @@
 
 :wrench: **Applications**
 
-* Implementation of `std::partial_sort` that rearranges a given range such that `K` smallest elements become the first `K` elements of the range, in sorted order.
+* Implementation of `std::partial_sort` that rearranges a given range such that `k` smallest elements become the first `k` elements of the range, in sorted order.
 
 ## Order statistics
 
-> The `K`<sup>th</sup> order statistic of an array is its `K`<sup>th</sup> smallest element.
+> The `k`<sup>th</sup> order statistic of an array is its `k`<sup>th</sup> smallest element.
 
 :memo: **Notes**
 
-* Any comparison-based algorithm of finding the smallest element in an array of size `N` requires at least `N - 1` comparisons in the worst case.
-* Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `N` requires at least `⌈3N / 2⌉ - 1` comparisons in the worst case.
-* Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `N` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
+* Any comparison-based algorithm of finding the smallest element in an array of size `n` requires at least `n - 1` comparisons in the worst case.
+* Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `n` requires at least `⌈3n / 2⌉ - 1` comparisons in the worst case.
+* Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `n` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
 
 :link: **Webpages**
 
@@ -96,7 +96,7 @@
 
 :page_facing_up: **Papers**
 
-* S.S.Kislitsyn. *On the selection of the `K`<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky matematichesky zhurnal **5**, 557 (1964).\
+* S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky matematichesky zhurnal **5**, 557 (1964).\
 [Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})
 
 ### Merge sort
@@ -111,6 +111,8 @@
 * [Merge sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 
 #### Inversions counting
+
+> Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>n</sub></code>), i.e. the number of pairs (<code>a<sub>i</sub></code>, <code>a<sub>j</sub></code>) with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
 
 :memo: **Notes**
 
@@ -128,7 +130,7 @@
 
 :book: **Books**
 
-* Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm Design*. Pearson, 2005.\
+* Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm design*. Pearson, 2005.\
 [Book website](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
