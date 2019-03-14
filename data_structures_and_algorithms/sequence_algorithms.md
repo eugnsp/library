@@ -2,11 +2,32 @@
 
 ## Table of contents
 
+* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
+	* [Duval's based algorithm](#duvals-based-algorithm)
 * [Longest increasing subsequence](#longest-increasing-subsequence)
+* [Lyndon factorization](#lyndon-factorization)
+	* [Duval's algorithm](#duvals-algorithm)
 * [String searching](#string-searching)
 	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
 
 ---
+
+## Lexicographically minimal string rotation
+
+> Problem: find the rotation of a string possessing the lowest lexicographical order of all such rotations.
+
+[Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+
+### Duval's based algorithm
+
+:memo: **Notes**
+
+* This algorithm is also known as Zhou Yuan's minimal expression algorithm.
+
+:link: **Webpages**
+
+* [Lyndon factorization &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
+* [How does the minimum expression algorithm by Zhou Yuan work? &ndash; Quora](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work)
 
 ## Longest increasing subsequence
 
@@ -43,6 +64,30 @@
 [Full text (alternative source)](https://core.ac.uk/download/pdf/82290717.pdf)
 
 <!--### Counting the number of longest increasing subsequences-->
+
+## Lyndon factorization
+
+> Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, <code>w<sub>i</sub></code>, with <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
+
+:memo: **Notes**
+
+* An algorithm for Lyndon factorization can be used to find the lexicographically minimal string rotation. See [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation).
+
+:link: **Webpages**
+
+* [Lyndon word &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lyndon_word)
+
+### Duval's algorithm
+
+:link: **Webpages**
+
+* [Lyndon factorization &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
+
+:page_facing_up: **Papers**
+
+* J.P.Duval. *Factorizing words over an ordered alphabet*. Journal of algorithms **8**, [363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983).
+* S.S.Ghuman, E.Giaquinta, J.Tarhio. *Alternative algorithms for Lyndon factorization*. Preprint (2014).\
+[arXiv preprint](https://arxiv.org/abs/1405.4892)
 
 ## String searching
 
