@@ -26,7 +26,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 ## Linear partition
 
-> Problem: partition (without reordering) a set of non-negative integral numbers into `K` ranges such that the maximum sum over all the ranges is minimized.
+> Problem: partition (without reordering) a set of non-negative integral numbers into `k` ranges such that the maximum sum over all the ranges is minimized.
 
 :memo: **Notes**
 

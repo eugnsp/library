@@ -16,6 +16,7 @@ implementation.
 	* [Sequence algorithms](data_structures_and_algorithms/sequence_algorithms.md)
 	* [Sorting](data_structures_and_algorithms/sorting.md)
 	* [Trees](data_structures_and_algorithms/trees.md)
+	* [Geometric algorithms](data_structures_and_algorithms/geometric_algorithms.md)
 * C++
 	* [Core language](cpp/core_language.md)
 	* [Parallel computing](cpp/parallel_computing.md)

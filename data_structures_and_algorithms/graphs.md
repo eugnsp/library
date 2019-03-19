@@ -19,6 +19,11 @@
 
 ## Data structures
 
+:book: **Books**
+
+* Sec. 5.2: *Data structures for graphs* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
+[Book website](http://www.algorist.com/)
+
 ## Traversal
 
 ### Breadth-first search (BFS)
@@ -31,7 +36,7 @@
 
 :movie_camera: **Videos**
 
-* *Breadth-First Search* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
+* *Breadth-first search* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=s-CYnVz-uh4) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
@@ -61,7 +66,7 @@
 
 :movie_camera: **Videos**
 
-* *Depth-First Search (DFS)* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
+* *Depth-first search (DFS)* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
@@ -78,13 +83,13 @@
 
 :movie_camera: **Videos**
 
-* *Depth-First Search (DFS)* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
+* *Depth-first search (DFS)* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/AfSk24UTFS8?t=1093) (from 18:13) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 ### Topological sorting
 
-> Topological sorting of a directed acyclic graph (DAG) is a linear ordering of its vertices such that for every directed edge `(u → v)`, vertex `u` comes before vertex `v` in the ordering.
+> Topological sorting of a directed acyclic graph (DAG) is a linear ordering of its vertices such that for every directed edge <code>(u &rarr; v)</code>, vertex `u` comes before vertex `v` in the ordering.
 
 :link: **Webpages**
 
@@ -93,7 +98,7 @@
 
 :book: **Books**
 
-* Sec. 4.2.5: *Topological Sort* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
+* Sec. 4.2.5: *Topological sort* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
 
 :memo: **Notes**

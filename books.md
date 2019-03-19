@@ -26,6 +26,8 @@
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
 * N.M.Josuttis. *The C++ standard library: A tutorial and reference*. Addison-Wesley, 2<sup>nd</sup> ed., 2012.\
 [Book website](http://www.cppstdlib.com/)
+* A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley, 2009.\
+[Book website](http://elementsofprogramming.com/)
 * D.Vandevoorde, N.M.Josuttis, D.Gregor. *C++ templates: The complete guide*. Addison-Wesley, 2<sup>nd</sup> ed., 2017.\
 [Book website](http://www.tmplbook.com/)
 * A.Williams. *C++ concurrency in action: Practical multithreading*. Manning, 2<sup>nd</sup> ed., 2019.\

@@ -2,8 +2,10 @@
 
 ## Table of contents
 
-* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
-	* [Duval's based algorithm](#duvals-based-algorithm)
+* [Rotation (cyclic shift)](#rotation-cyclic-shift)
+	* [Three reverses rotation](#three-reverses-rotation)
+	* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
+		* [Duval's based algorithm](#duvals-based-algorithm)
 * [Longest increasing subsequence](#longest-increasing-subsequence)
 * [Lyndon factorization](#lyndon-factorization)
 	* [Duval's algorithm](#duvals-algorithm)
@@ -12,17 +14,36 @@
 
 ---
 
-## Lexicographically minimal string rotation
+## Rotation (cyclic shift)
 
-> Problem: find the rotation of a string possessing the lowest lexicographical order of all such rotations.
+> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>(a<sub>0</sub>, a<sub>2</sub>, ... a<sub>n-1</sub>)</code> is a sequence <code>(a<sub>P(1)</sub>, a<sub>P(2)</sub>, ..., a<sub>P(n-1)</sub>)</code>, where the index permutation is `P(i) = (i - k) % n`.
 
-[Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+:book: **Books**
 
-### Duval's based algorithm
+* Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley, 2009.\
+[Book website](http://elementsofprogramming.com/)
+
+### Three reverses rotation
+
+> Gist of the algorithm: to rotate a sequence <code>(a<sub>0</sub>, ..., a<sub>k</sub>, ... a<sub>n-1</sub>)</code> into <code>(a<sub>k</sub>, ..., a<sub>n-1</sub>, a<sub>0</sub>, ..., a<sub>k-1</sub>)</code>, first reverse the subsequences <code>(a<sub>0</sub>, ..., a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>, ... a<sub>n-1</sub>)</code>, then reverse the whole sequence <code>(a<sub>k-1</sub>, ..., a<sub>0</sub>, a<sub>n-1</sub>, ..., a<sub>k</sub>)</code>.
 
 :memo: **Notes**
 
-* This algorithm is also known as Zhou Yuan's minimal expression algorithm.
+* This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
+
+### Lexicographically minimal string rotation
+
+> Problem: find the rotation of a string possessing the lowest lexicographical order of all such rotations.
+
+:link: **Webpages**
+
+[Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+
+#### Duval's based algorithm
+
+:memo: **Notes**
+
+* This algorithm is also known as the Zhou Yuan's minimal expression algorithm.
 
 :link: **Webpages**
 
@@ -67,7 +88,7 @@
 
 ## Lyndon factorization
 
-> Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, <code>w<sub>i</sub></code>, with <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
+> Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, such that <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
 
 :memo: **Notes**
 
@@ -96,3 +117,8 @@
 :link: **Webpages**
 
 * [Knuth&ndash;Morris&ndash;Pratt algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+
+:movie_camera: **Videos**
+
+* *KMP searching algorithm* &ndash; William Brinkman (2017).\
+[Watch at YouTube](https://www.youtube.com/watch?v=y2b94AxPlF8)
