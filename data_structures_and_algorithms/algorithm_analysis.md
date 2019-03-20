@@ -15,6 +15,10 @@
 
 * [Loop invariant &ndash; Wikipedia](https://en.wikipedia.org/wiki/Loop_invariant)
 
+:book: **Books**
+
+* Col.4: *Writing correct programs* &ndash; J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.
+
 ### Binary search
 
 :link: **Webpages**

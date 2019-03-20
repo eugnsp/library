@@ -22,7 +22,11 @@
 
 :memo: **Notes**
 
-* Any rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
+* Any non-zero rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
+
+:link: **Webpages**
+
+* [Benchmarking block-swapping algorithms &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
 
 :book: **Books**
 
@@ -30,10 +34,13 @@
 [Book website](http://www.fm2gp.com/)
 * Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley, 2009.\
 [Book website](http://elementsofprogramming.com/)
+* Sec. 2.3: *The power of primitives* &ndash; J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.
 
 :page_facing_up: **Papers**
 
-D.Gries, H.Mills. *Swapping sections*. Technical Report 81-452, Department of Computer Science, Cornell University, 1981.\
+* C.A.Furia. *Rotation of sequences: Algorithms and proofs*. Preprint (2014).\
+[Full text](https://arxiv.org/abs/1406.5453)
+* D.Gries, H.Mills. *Swapping sections*. Technical Report 81-452, Department of Computer Science, Cornell University, 1981.\
 [Full text](https://hdl.handle.net/1813/6292)
 
 ### Three reverses rotation algorithm
@@ -61,9 +68,10 @@ D.Gries, H.Mills. *Swapping sections*. Technical Report 81-452, Department of Co
 
 :memo: **Notes**
 
+* This algorithm is also known as the juggling algorithm.
 * The total number of assignments is `n + gcd(k, n)`.
-* This algorithm is typically used to implement `std::rotate` for random access iterators.
-* This algorithm is cache-unfriendly and can have poor performance in practice.
+* This algorithm is not cache-friendly and can have poor performance in practice, although it makes fewer (~2-3 times) memory accesses.
+* This algorithm is somethimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up: **Papers**
 
@@ -146,7 +154,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 * J.P.Duval. *Factorizing words over an ordered alphabet*. Journal of algorithms **8**, [363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983).
 * S.S.Ghuman, E.Giaquinta, J.Tarhio. *Alternative algorithms for Lyndon factorization*. Preprint (2014).\
-[arXiv preprint](https://arxiv.org/abs/1405.4892)
+[Full text](https://arxiv.org/abs/1405.4892)
 
 ## String searching
 

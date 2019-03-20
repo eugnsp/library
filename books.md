@@ -3,6 +3,7 @@
 ## Data structures and algorithms
 
 * A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974.
+* J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.
 * T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
