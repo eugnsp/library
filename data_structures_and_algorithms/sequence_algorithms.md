@@ -69,9 +69,8 @@
 :memo: **Notes**
 
 * This algorithm is also known as the juggling algorithm.
-* The total number of assignments is `n + gcd(k, n)`.
-* This algorithm is not cache-friendly and can have poor performance in practice, although it makes fewer (~2-3 times) memory accesses.
-* This algorithm is somethimes used to implement `std::rotate` for random access iterators.
+* The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes fewer (~2-3 times) memory accesses.
+* This algorithm is sometimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up: **Papers**
 
