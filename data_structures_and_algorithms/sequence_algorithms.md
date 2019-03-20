@@ -3,7 +3,9 @@
 ## Table of contents
 
 * [Rotation (cyclic shift)](#rotation-cyclic-shift)
-	* [Three reverses rotation](#three-reverses-rotation)
+	* [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
+	* [Gries&ndash;Mills algorithm](#gries-mills-algorithm)
+	* [Dolphin algoirithm](#dolphin-algoirithm)
 	* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
 		* [Duval's based algorithm](#duvals-based-algorithm)
 * [Longest increasing subsequence](#longest-increasing-subsequence)
@@ -16,24 +18,60 @@
 
 ## Rotation (cyclic shift)
 
-> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>(a<sub>0</sub>, a<sub>2</sub>, ... a<sub>n-1</sub>)</code> is a sequence <code>(a<sub>P(1)</sub>, a<sub>P(2)</sub>, ..., a<sub>P(n-1)</sub>)</code>, where the index permutation is `P(i) = (i - k) % n`.
-
-:book: **Books**
-
-* Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley, 2009.\
-[Book website](http://elementsofprogramming.com/)
-
-### Three reverses rotation
-
-> Gist of the algorithm: to rotate a sequence <code>(a<sub>0</sub>, ..., a<sub>k</sub>, ... a<sub>n-1</sub>)</code> into <code>(a<sub>k</sub>, ..., a<sub>n-1</sub>, a<sub>0</sub>, ..., a<sub>k-1</sub>)</code>, first reverse the subsequences <code>(a<sub>0</sub>, ..., a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>, ... a<sub>n-1</sub>)</code>, then reverse the whole sequence <code>(a<sub>k-1</sub>, ..., a<sub>0</sub>, a<sub>n-1</sub>, ..., a<sub>k</sub>)</code>.
+> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>(a<sub>0</sub>a<sub>2</sub>...a<sub>n-1</sub>)</code> is a sequence <code>(a<sub>P(1)</sub>a<sub>P(2)</sub>...a<sub>P(n-1)</sub>)</code>, where the index permutation is `P(i) = (i + k) % n`.
 
 :memo: **Notes**
 
+* Any rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
+
+:book: **Books**
+
+* Sec. 11.3: *Rotation* &ndash; A.A.Stepanov, D.E.Rose. *From mathematics to generic programming*. Addison-Wesley, 2014.\
+[Book website](http://www.fm2gp.com/)
+* Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley, 2009.\
+[Book website](http://elementsofprogramming.com/)
+
+:page_facing_up: **Papers**
+
+D.Gries, H.Mills. *Swapping sections*. Technical Report 81-452, Department of Computer Science, Cornell University, 1981.\
+[Full text](https://hdl.handle.net/1813/6292)
+
+### Three reverses rotation algorithm
+
+> Gist of the algorithm: reverse the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>, then reverse the whole sequence <code>(a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>)</code>.
+
+:memo: **Notes**
+
+* The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>.
 * This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
+
+### Gries&ndash;Mills algorithm
+
+> Gist of the algorithm: if `k = n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>; if `k < n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>2k-1</sub>)</code>, then proceed recursively for the suffix subsequence <code>(a<sub>0</sub>...a<sub>k-1</sub>a<sub>2k</sub>...a<sub>n-1</sub>)</code> with `k' = k`; if `k > n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>n-k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>, then proceed recursively for the suffix subsequence <code>(a<sub>n-k</sub>...a<sub>k-1</sub>a<sub>0</sub>...a<sub>n-k-1</sub>)</code> with `k' = 2k - n`.
+
+:memo: **Notes**
+
+* The section sizes `(k, n - k)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(k, n)`.
+* The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
+* The Gries&ndash;Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
+
+### Dolphin algoirithm
+
+> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>(a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...)</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>(a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>)</code>.
+
+:memo: **Notes**
+
+* The total number of assignments is `n + gcd(k, n)`.
+* This algorithm is typically used to implement `std::rotate` for random access iterators.
+* This algorithm is cache-unfriendly and can have poor performance in practice.
+
+:page_facing_up: **Papers**
+
+W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Communications of the ACM **9**, [326](https://dx.doi.org/10.1145/355592.365609) (1966).
 
 ### Lexicographically minimal string rotation
 
-> Problem: find the rotation of a string possessing the lowest lexicographical order of all such rotations.
+> Lexicographically minimal rotation if the rotation of a string possessing the lowest lexicographical order of all its rotations.
 
 :link: **Webpages**
 

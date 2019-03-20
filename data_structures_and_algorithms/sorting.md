@@ -112,11 +112,11 @@
 
 #### Inversions counting
 
-> Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>n</sub></code>), i.e. the number of pairs (<code>a<sub>i</sub></code>, <code>a<sub>j</sub></code>) with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
+> Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>n</sub>)</code>, i.e. the number of pairs <code>(a<sub>i</sub></code>, <code>a<sub>j</sub>)</code> with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
 
 :memo: **Notes**
 
-* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`.
+* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert it into the identity one) is equal to the number of inversions in `P`.
 
 :link: **Webpages**
 
