@@ -10,11 +10,14 @@
 	* [Topological sorting](#topological-sorting)
 		* [DFS-based topological sorting](#dfs-based-topological-sorting)
 		* [Kahn's algorithm](#kahns-algorithm)
+* [Connectivity]
+	* [Biconnectivity]
+		* [Articulation points and bridges](#articulation-points-and-bridges)
+		* [Biconnected components](#biconnected-components)
 * Shortest paths
 	* Single-source shortest paths
 	* All-pairs shortest paths
 	* Travelling salesman problem
-
 ---
 
 ## Data structures
@@ -59,10 +62,9 @@
 
 > Depth-first search is an algorithm for traversing or searching a graph that explores as far as possible along each branch before backtracking.
 
-:wrench: **Applications**
+:memo: **Notes**
 
-* [Cycle detection](#cycle-detection)
-* [DFS-based topological sorting](#dfs-based-topological-sorting)
+* DFS can be used for [cycle detection](#cycle-detection), [topological sorting](#dfs-based-topological-sorting), finding [articulation points and bridges](#articulation-points-and-bridges), fiding [biconnected components](#biconnected-components).
 
 :movie_camera: **Videos**
 
@@ -126,7 +128,6 @@
 * Sec. 5.10.1: *Topological sorting* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
 
-
 #### Kahn's algorithm
 
 :link: **Webpages**
@@ -149,3 +150,38 @@
 	* Coffman&ndash;Graham algorithm
 	* Layered graph drawing
 -->
+
+## Connectivity
+
+:link: **Webpages**
+
+* [Graph connectivity &ndash; AlgoWiki](https://algowiki-project.org/en/Graph_connectivity)
+
+:page_facing_up: **Papers**
+
+* J.Hopcroft, R.Tarjan. *Algorithm 447: Efficient algorithms for graph manipulation*. Communications of the ACM **16**, [372](https://doi.org/10.1145/362248.362272) (1973).\
+[Full text](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/06/Hopcroft73.pdf)
+
+### Biconnectivity
+
+:book: **Books**
+
+* Ch. 30: *Connectivity*, Sec.: *Biconnectivity* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
+* Sec. 6.4: *Biconnected components and DFS* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms*. W.H.Freeman, 1997.
+
+#### Articulation points and bridges
+
+> An articulation point (cut vertex) is a vertex which, if deleted, would increase the number connected components. A bridge (cut adge) is an edge which, if deleted, would increase the number of connected components.
+
+:movie_camera: **Videos**
+
+* William Fiset &ndash; *Bridges and articulation points algorithm*\
+[Watch at YouTube](https://www.youtube.com/watch?watch?v=aZXi1unBdJA)
+
+#### Biconnected components
+
+> Biconnected component is a set of vertices mutually accessible via two distinct paths.
+
+:link: **Webpages**
+
+* [Biconnected component &ndash; Wikipedia](https://en.wikipedia.org/wiki/Biconnected_component)

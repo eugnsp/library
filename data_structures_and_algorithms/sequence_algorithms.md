@@ -11,6 +11,10 @@
 * [Longest increasing subsequence](#longest-increasing-subsequence)
 * [Lyndon factorization](#lyndon-factorization)
 	* [Duval's algorithm](#duvals-algorithm)
+* [Maximum subsequence](#maximum-subsequence)
+	* [Kadane's algorithm](#kadanes-algorithm)
+* [Majority element](#majority-element)
+	* [Boyer&ndash;Moore majority vote algorithm](#boyer-moore-majority-vote-algorithm)
 * [String searching](#string-searching)
 	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
 
@@ -69,7 +73,7 @@
 :memo: **Notes**
 
 * This algorithm is also known as the juggling algorithm.
-* The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes fewer (~2-3 times) memory accesses.
+* The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses.
 * This algorithm is sometimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up: **Papers**
@@ -154,6 +158,28 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 * J.P.Duval. *Factorizing words over an ordered alphabet*. Journal of algorithms **8**, [363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983).
 * S.S.Ghuman, E.Giaquinta, J.Tarhio. *Alternative algorithms for Lyndon factorization*. Preprint (2014).\
 [Full text](https://arxiv.org/abs/1405.4892)
+
+## Maximum subsequence
+
+> Problem: find a contiguous subsequence with the largest sum within a given one-dimensional sequence.
+
+:page_facing_up: **Papers**
+
+* J.Bentley. *Programming pearls: Algorithm design techniques*. Communications of the ACM *27*, [865](https://dx.doi.org/10.1145/358234.381162) (1984).\
+[Full text](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf)
+
+### Kadane's algorithm
+
+* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of computer programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
+[Full text](https://core.ac.uk/download/pdf/82596333.pdf)
+
+## Majority element
+
+### Boyer&ndash;Moore majority vote algorithm
+
+:link: **Webpages**
+
+* [Boyer&ndash;Moore majority vote algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
 
 ## String searching
 

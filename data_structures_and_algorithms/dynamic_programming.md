@@ -43,3 +43,12 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 See [Sequence algorithms &ndash; Longest increasing subsequence](sequence_algorithms.md#longest-increasing-subsequence).
 
+
+<!--
+Maximum square in bool matrix:
+
+* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of computer programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
+[Full text](https://core.ac.uk/download/pdf/82596333.pdf)
+
+https://dl.acm.org/citation.cfm?id=800754
+ -->

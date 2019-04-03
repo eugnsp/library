@@ -17,7 +17,13 @@
 
 :book: **Books**
 
-* Col.4: *Writing correct programs* &ndash; J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.
+* Col.4: *Writing correct programs* &ndash; J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.\
+[Book website](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/)
+
+:page_facing_up: **Papers**
+
+* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of computer programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
+[Full text](https://core.ac.uk/download/pdf/82596333.pdf)
 
 ### Binary search
 
