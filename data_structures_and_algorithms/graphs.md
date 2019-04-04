@@ -10,8 +10,8 @@
 	* [Topological sorting](#topological-sorting)
 		* [DFS-based topological sorting](#dfs-based-topological-sorting)
 		* [Kahn's algorithm](#kahns-algorithm)
-* [Connectivity]
-	* [Biconnectivity]
+* [Connectivity](#connectivity)
+	* [Biconnectivity](#biconnectivity)
 		* [Articulation points and bridges](#articulation-points-and-bridges)
 		* [Biconnected components](#biconnected-components)
 * Shortest paths
@@ -176,11 +176,11 @@
 :movie_camera: **Videos**
 
 * William Fiset &ndash; *Bridges and articulation points algorithm*\
-[Watch at YouTube](https://www.youtube.com/watch?watch?v=aZXi1unBdJA)
+[Watch at YouTube](https://www.youtube.com/watch?v=aZXi1unBdJA)
 
 #### Biconnected components
 
-> Biconnected component is a set of vertices mutually accessible via two distinct paths.
+> A biconnected component is a set of vertices mutually accessible via two distinct paths.
 
 :link: **Webpages**
 
