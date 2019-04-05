@@ -44,7 +44,7 @@
 
 * C.A.Furia. *Rotation of sequences: Algorithms and proofs*. Preprint (2014).\
 [Full text](https://arxiv.org/abs/1406.5453)
-* D.Gries, H.Mills. *Swapping sections*. Technical Report 81-452, Department of Computer Science, Cornell University, 1981.\
+* D.Gries, H.Mills. *Swapping sections*. Technical report 81-452, Department of computer science, Cornell University, 1981.\
 [Full text](https://hdl.handle.net/1813/6292)
 
 ### Three reverses rotation algorithm
@@ -86,7 +86,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link: **Webpages**
 
-[Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+* [Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
 
 #### Duval's based algorithm
 

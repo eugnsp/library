@@ -132,5 +132,5 @@
 
 :page_facing_up: **Papers**
 
-* S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky matematichesky zhurnal **5**, 557 (1964).\
+* S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky Matematichesky Zhurnal **5**, 557 (1964).\
 [Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})

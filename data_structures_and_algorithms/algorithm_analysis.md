@@ -22,7 +22,7 @@
 
 :page_facing_up: **Papers**
 
-* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of computer programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
+* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of Computer Programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
 [Full text](https://core.ac.uk/download/pdf/82596333.pdf)
 
 ### Binary search

@@ -12,6 +12,8 @@
 * E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms*. W.H.Freeman, 1997.
 * J.Kleinberg, E.Tardos. *Algorithm design*. Pearson, 2005.\
 [Book website](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
+* D.E.Knuth. *Stable marriage and its relation to other combinatorial problems: An introduction to the mathematical analysis of algorithms*. American Mathematical Society, 1996.\
+[Book website](https://www-cs-faculty.stanford.edu/~knuth/ms.html)
 * D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997.\
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 * D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998.\
