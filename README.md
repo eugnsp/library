@@ -4,13 +4,13 @@ This is a library of usefull references (web pages, papers, video, books) and no
 on common data structures and algorithms with an emphasis on C++ when it comes to their
 implementation.
 
-
 ## Table of contents
 
 * Data structures and algorithms
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :arrow_heading_up: [Backtracking](data_structures_and_algorithms/backtracking.md)
 	* :pushpin: [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
+	* :game_die: [Game theory](data_structures_and_algorithms/game_theory.md5)
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric_algorithms.md)
 	* :curly_loop: [Graphs](data_structures_and_algorithms/graphs.md)
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
