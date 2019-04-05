@@ -130,7 +130,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 :page_facing_up: **Papers**
 
 * M.L.Fredman. *On computing the length of longest increasing subsequences*. Discrete Mathematics **11**, [29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975).\
-[Full text](https://dx.doi.org/10.1016/0012-365X(75)90103-X),
+[Full text](https://dx.doi.org/10.1016/0012-365X(75)90103-X) |
 [Full text (alternative source)](https://core.ac.uk/download/pdf/82290717.pdf)
 
 <!--### Counting the number of longest increasing subsequences-->

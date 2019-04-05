@@ -24,6 +24,12 @@ implementation.
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)
 
+<!--
+* Miscellaneous funny stuff:
+http://www.cs.columbia.edu/~evs/songs/
+-->
+
+
 :construction: Currently is under construction, and will always be. Please report broken links.
 
 <!-- :hourglass: Optimization -->

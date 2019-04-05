@@ -18,7 +18,6 @@
 :link: **Webpages**
 
 * [Stable marriage problem &ndash; Wikipedia](https://en.wikipedia.org/wiki/Stable_marriage_problem)
-* [The stable marriage problem and school choice &ndash; AMS Feature column](http://www.ams.org/publicoutreach/feature-column/fc-2015-03)
 
 :movie_camera: **Videos**
 
@@ -27,4 +26,16 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part I
 * The stable matching algorithm: Examples and implementation &ndash; The Simple Engineer (2017).\
 [Watch at YouTube](https://www.youtube.com/watch?v=FhRf0j068ZA)
 
+:page_facing_up: **Papers**
+
+* H.Mairson. *The stable marriage problem*. The Brandeis Review *12*, 38 (1992).\
+[Full text](https://archive.org/details/brandeisreview1214bran/page/n38) |
+[Full text (plain text, abridged)](http://www.cs.columbia.edu/~evs/intro/stable/writeup.html)
+
 ### Gale&ndash;Shapley algorithm
+
+:link: **Webpages**
+
+* [The stable marriage problem and school choice &ndash; AMS Feature column](http://www.ams.org/publicoutreach/feature-column/fc-2015-03)
+* [Stable marriage problem &ndash; Rosetta Code](https://rosettacode.org/wiki/Stable_marriage_problem)
+
