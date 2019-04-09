@@ -17,9 +17,9 @@ implementation.
 	* :abc: [Sequence algorithms](data_structures_and_algorithms/sequence_algorithms.md)
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
-* C++
+* C++/Implementations
 	* :chestnut: [Core language](cpp/core_language.md)
-	* :twisted_rightwards_arrows: [Parallel computing](cpp/parallel_computing.md)
+	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)

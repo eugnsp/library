@@ -29,7 +29,7 @@
 
 :link: **Webpages**
 
-* Invariants for binary search &ndash; Dr. Dobb's Journal\
+* Invariants for binary search &ndash; Dr.Dobb's Journal\
 [Part I](http://www.drdobbs.com/cpp/invariants-for-binary-search-part-1-a-si/240169169),
 [Part II](http://www.drdobbs.com/cpp/invariants-for-binary-search-part-2-refi/240169199),
 [Part III](http://www.drdobbs.com/cpp/invariants-for-binary-search-part-3-impr/240169239),

@@ -70,7 +70,7 @@
 
 :page_facing_up: **Papers**
 
-* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady akademii nauk SSSR **146**, 263 (1962).\
+* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962).\
 [Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) |
 [Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
 
@@ -123,7 +123,7 @@
 
 :page_facing_up: **Papers**
 
-* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994).\
+* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994).\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
 ## Traversal
