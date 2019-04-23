@@ -7,11 +7,15 @@
 		* [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	* [Other binary trees](#other-binary-trees)
 		* [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
+* [B-trees](#b-trees)
+	* [2-3 trees](#2-3-trees)
 * [Traversal](#traversal)
 
 ---
 
 ## Binary trees
+
+> A binary tree is a tree in which no node can have more than two children.
 
 :memo: **Notes**
 
@@ -20,11 +24,17 @@
 
 ### Binary search trees
 
-> A binary search tree is a rooted binary tree that satisfies the binary search property: the key in each node must be greater than or equal to any key stored in the left subtree, and less than or equal to any key stored in the right subtree.
+> A binary search tree is a binary tree that satisfies the binary search property: the key in each node must be greater than or equal to any key stored in the left subtree, and less than or equal to any key stored in the right subtree.
 
 :memo: **Notes**
 
 * The total number of binary search trees with `N` different keys is given by the `N`<sup>th</sup> Catalan number `C(N)`. Asymptotically <code>C(N) &sim; 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>.
+
+:movie_camera: **Videos**
+
+* *Binary search trees* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
+[Watch at YouTube](https://www.youtube.com/watch?v=9Jry5-82I68) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 ### Self-balancing binary search trees
 
@@ -38,7 +48,7 @@
 
 :link: **Webpages**
 
-* [Self-balancing binary search tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) <!-- TODO : link -->
+* [Self-balancing binary search tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
@@ -46,7 +56,7 @@
 
 :memo: **Notes**
 
-* The height of an AVL tree with `N` nodes lies between <code>log<sub>2</sub> (N + 1)</code> and <code>1.4404 log<sub>2</sub> (N + 2) - 0.3277</code>.
+* The height of an AVL tree with `N` nodes lies between <code>log<sub>2</sub>(N + 1)</code> and <code>1.4404 log<sub>2</sub>(N + 2) - 0.3277</code>.
 * For insertions, one rotation always suffices. For deletions, `O(log N)` rotations may be required. Non-recursive insertions and deletions are generally faster, but harded to code and read.
 * Double rotations can be made more efficient if performed as a single step and not as two single rotations.
 * Balance factors, i.e. differences in heights, can be stored instead of heights. This results in faster but more complicated code. If a balance factor is stored as a separate data member, there is no profit in the amount of space used due to data alignment.
@@ -62,11 +72,11 @@
 
 :book: **Books**
 
-* D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998 &ndash; Sec. 6.2.3: *Balanced trees*. \
+* Sec. 6.2.3: *Balanced trees* &ndash; D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998. \
 [Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
-* M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed., 2014 &ndash; Sec. 4.4: *AVL trees*.\
+* Sec. 4.4: *AVL trees* &ndash; M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed., 2014.\
 [Book website](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html)
-* U.Manber. *Introduction to algorithms: A creative approach.* Addison-Wesley, 1<sup>st</sup> ed., 1989 &ndash; Sec. 4.3.4: *AVL trees*.
+* Sec. 4.3.4: *AVL trees* &ndash; U.Manber. *Introduction to algorithms: A creative approach.* Addison-Wesley, 1<sup>st</sup> ed., 1989.
 
 :page_facing_up: **Papers**
 
@@ -76,7 +86,7 @@
 
 :movie_camera: **Videos**
 
-* MIT OCW 6.006: Introduction to algorithms (2011) &ndash; *AVL trees, AVL sort*.\
+* *AVL trees, AVL sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
@@ -93,7 +103,7 @@
 :memo: **Notes**
 
 * Both `0`-based and `1`-based indexing can be used in equally elegant ways.
-* A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for `min(•, •)`), a segment tree enters the stage.
+* A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for <code>min(&bullet;, &bullet;)</code>), a segment tree can be used.
 
 :wrench: **Applications**
 
@@ -111,20 +121,35 @@
 
 :movie_camera: **Videos**
 
-* Algorithms Live! &ndash; *Fenwick trees*\
+* *Fenwick trees* &ndash; Algorithms Live!\
 [Watch at YouTube](https://www.youtube.com/watch?v=kPaJfAUwViY)
-* William Fiset &ndash; *Fenwick tree/Binary indexed tree*\
+* *Fenwick tree/Binary indexed tree* &ndash; William Fiset.\
 [Watch at YouTube](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
 
 :book: **Books**
 
-* S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013 &ndash; Sec. 2.4.4: *Binary indexed (Fenwick) tree*.\
+* Sec. 2.4.4: *Binary indexed (Fenwick) tree* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
 
 :page_facing_up: **Papers**
 
 * P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994).\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
+
+## B-trees
+
+:movie_camera: **Videos**
+
+* *2-3 Trees and B-Trees* &ndash; MIT OCW 6.046J: Design and analysis of algorithms (2015).\
+[Watch at YouTube](https://www.youtube.com/watch?v=TOb1tuEZ2X4) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm)
+
+:book: **Books**
+
+* Ch. 18: *B-trees* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
+[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+
+### 2-3 trees
 
 ## Traversal
 

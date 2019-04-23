@@ -1,4 +1,4 @@
-# Sorting
+# Sorting algorithms
 
 ## Table of contents
 

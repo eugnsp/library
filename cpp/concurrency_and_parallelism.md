@@ -44,13 +44,14 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 
 :link: **Webpages**
 
+* [Hazard pointer &ndash; Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
 * [Lock-free data structures with hazard pointers &ndash; Dr.Dobb's Journal](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890)
 
 #### Read-copy-update (RCU)
 
 :link: **Webpages**
 
-* [Read-copy-update](https://en.wikipedia.org/wiki/Read-copy-update)
+* [Read-copy-update &ndash; Wikipedia](https://en.wikipedia.org/wiki/Read-copy-update)
 * [Introduction to RCU &ndash; Paul E. McKenney](http://www2.rdrop.com/users/paulmck/RCU/)
 
 :movie_camera: **Videos**
@@ -60,7 +61,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 * *A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016).\
 [Watch at YouTube](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289) (from 38:09)
 
-:orange_book: **Standards and technical reports**
+:anchor: **Standards and technical reports**
 
 * [WG21/P0461R1: Proposed RCU C++ API (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf)
 * [WG21/P0279R1: Read-copy update (RCU) for C++ (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf)
