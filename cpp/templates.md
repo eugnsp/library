@@ -49,3 +49,10 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 [Watch at YouTube](https://www.youtube.com/watch?v=MWBfmmg8-Yo)
 * M.Clow @ CppCon (2015) &ndash; *Type traits: what are they and why should I use them?*\
 [Watch at YouTube](https://www.youtube.com/watch?v=VvbTP_k_Df4)
+
+
+<!--
+
+https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions
+
+-->

@@ -9,6 +9,8 @@
 	* [Merge sort](#merge-sort)
 		* [Inversions counting](#inversions-counting)
 	* [Order statistics](#order-statistics)
+* [Linear-time sorting](#linear-time-sorting)
+	* [Count sort](#count-sort)
 
 ---
 
@@ -16,9 +18,21 @@
 
 > In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed.
 
+:link: **Webpages**
+
+* [Comparison sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
+* [Minimal number of comparisons needed to sort `n` elements &ndash; The OEIS](https://oeis.org/A036604)
+
 :memo: **Notes**
 
+* Any comparison-based algorithm of sorting an array of size `n` requires <code>&Omega;(n log n)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `n`. No simple formula for the solution is known.
 * For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn't exceed `16` elements, and Microsoft's implementation uses the value `32`.
+
+:movie_camera: **Videos**
+
+* *Lower bounds for sorting* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
+[Watch at YouTube](https://www.youtube.com/watch?v=Nz1KZXbghj8) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :page_facing_up: **Papers**
 
@@ -65,10 +79,9 @@
 
 ### Merge sort
 
-:wrench: **Applications**
+:memo: **Notes**
 
-* Sorting linked lists.
-* External sorting of data that doesn't fit into memory.
+* Merge sort is useful for sorting linked lists and for external sorting of data that doesn't fit into main memory.
 
 :link: **Webpages**
 
@@ -134,3 +147,15 @@
 
 * S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky Matematichesky Zhurnal **5**, 557 (1964).\
 [Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})
+
+## Linear-time sorting
+
+:movie_camera: **Videos**
+
+* *Counting sort and radix sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
+[Watch at YouTube](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) (from 32:46) |
+[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+
+### Count sort
+
+

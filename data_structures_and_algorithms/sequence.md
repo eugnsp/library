@@ -115,7 +115,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :movie_camera: **Videos**
 
-* *Dynamic programming* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
+* *Dynamic programming* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 [Watch at YouTube](https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570) (from 42:50) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
