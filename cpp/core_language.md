@@ -14,7 +14,7 @@
 
 ## Attributes
 
-### `[[[nodiscard]]`
+### `[[nodiscard]]`
 
 > This attribute encourages the compiler to issue a warning if the return value is discarded.
 
@@ -26,6 +26,11 @@
 		* *new APIs*: not using the return value is usually an error.
 	* Should not be added:
 		* *existing APIs*: not using the return value is a possible/common way of programming at least for some input; not using the return value makes no sense but doesn't hurt.
+
+:link: **Webpages**
+
+* [What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code? &ndash; Software Engineering](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c)
+
 
 :anchor: **Standards and technical reports**
 
@@ -44,7 +49,7 @@
 
 :movie_camera: *Videos*
 
-* N.Josuttis @ CppCon (2017) &ndash; *The nightmare of move semantics for trivial classes*\
+* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
 
 ## Tricks
