@@ -3,8 +3,10 @@
 ## Table of contents
 
 * [General information](#general-information)
-* Syntax
+* [Function templates]
+* [Syntax](#syntax)
 	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
+* [Two-phase lookup](#two-phase-lookup)
 * [Type traits](#type-traits)
 
 ---
@@ -21,6 +23,13 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 * D.Vandevoorde, N.M.Josuttis, D.Gregor. *C++ templates: The complete guide.* Addison-Wesley, 2<sup>nd</sup> ed., 2017\
 [Book website](http://www.tmplbook.com/)
 
+## Function templates
+
+:link: **Webpages**
+
+* [Necessity of forward-declaring template functions &ndash; Stack Overflow](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions)
+* [Why not specialize function templates? &ndash; Herb Sutter](http://www.gotw.ca/publications/mill17.htm)
+
 ## Syntax
 
 ### Keywords `template` and `typename` as disambiguators
@@ -34,13 +43,19 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 * Alexander Stepanov: Efficient programming with components (2013) &ndash; Part of lecture 12\
 [Watch at YouTube](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) (from 2:18)
 
+## Two-phase lookup
+
+:link: **Webpages**
+
+* [Two-phase name lookup support comes to MSVC &ndash; T.Gani, S.T.Lavavej, A.Marino, G.D.Reis, A.Pardoe, C++ team blog](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/)
+* [Two-phase lookup in C++ templates &ndash; ](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/)
 
 ## Type traits
 
 :link: **Webpages**
 
-* [C++ type traits by J.Maddock and S.Cleary &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/cpp/c-type-traits/184404270)
-* [An introduction to C++ traits by T.Frogley &ndash; ACCU](https://accu.org/index.php/journals/442)
+* [C++ type traits &ndash; J.Maddock, S.Cleary, Dr. Dobb's Journal](http://www.drdobbs.com/cpp/c-type-traits/184404270)
+* [An introduction to C++ traits &ndash; T.Frogley, ACCU](https://accu.org/index.php/journals/442)
 * [Type support &ndash; C++ reference](https://en.cppreference.com/w/cpp/types)
 
 :movie_camera: **Videos**
@@ -50,9 +65,9 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 * M.Clow @ CppCon (2015) &ndash; *Type traits: what are they and why should I use them?*\
 [Watch at YouTube](https://www.youtube.com/watch?v=VvbTP_k_Df4)
 
-
 <!--
-
-https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions
-
--->
+http://www.gotw.ca/publications/mxc++-item-4.htm
+https://stackoverflow.com/questions/281725/template-specialization-based-on-inherit-class
+https://www.codeproject.com/Articles/268849/An-Idiots-Guide-to-Cplusplus-Templates-Part-2
+https://www.hackcraft.net/cpp/templateinheritance/
+ -->

@@ -22,7 +22,10 @@
 
 :page_facing_up: **Papers**
 
-* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of Computer Programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
+* J.Bentley. *Programming pearls: Writing correct programs*. Communications of the ACM **26**, [1040](https://doi.org/10.1145/358476.358484) (1983).\
+[Full text](https://www.cs.tufts.edu/~nr/cs257/archive/jon-bentley/correct-programs.pdf)
+
+* D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of Computer Programming **2**, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
 [Full text](https://core.ac.uk/download/pdf/82596333.pdf)
 
 ### Binary search

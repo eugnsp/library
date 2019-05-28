@@ -6,6 +6,7 @@
 * [Algorithms](#algorithms)
 * [Containers](#containers)
 * [Regular expressions]($regular-expressions)
+* [Smart pointers](#smart-pointers)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
@@ -17,23 +18,23 @@
 
 :book: **Books**
 
-* J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing, 2017\
+* *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* &ndash; J.Galowicz. Packt Publishing, 2017.\
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012 &ndash; Ch. 18: *Concurrency*\
+* Ch. 18: *Concurrency* in *The C++ standard library: A tutorial and reference* &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed., 2012.\
 [Book website](http://www.cppstdlib.com/)
 
 ## Algorithms
 
 :movie_camera: **Videos**
 
-* M.Clow @ ACCU (2016) &ndash; *STL algorithms: How to use them and how to write your own*\
+* *STL algorithms: How to use them and how to write your own* &ndash; M.Clow @ ACCU (2016).\
 [Watch at YouTube](https://www.youtube.com/watch?v=3nXLxMYXgWs)
 
 ## Containers
 
 :movie_camera: **Videos**
 
-* B.Steagall @ C++Now (2018) &ndash; *If I had my 'druthers: A proposal for improving the containers in C++2x*\
+* *If I had my 'druthers: A proposal for improving the containers in C++2x* &ndash; B.Steagall @ C++Now (2018).\
 [Watch at YouTube](https://www.youtube.com/watch?v=bAE0qteS4Rk)
 
 ## Regular expressions
@@ -44,8 +45,14 @@
 
 :movie_camera: **Videos**
 
-* T.Shen @ CppCon (2016) &ndash; *Regular expressions in C++, present and future*\
+* *Regular expressions in C++, present and future* &ndash; T.Shen @ CppCon (2016).\
 [Watch at YouTube](https://www.youtube.com/watch?v=N_rkHzhXueo)
+
+## Smart pointers
+
+:link: **Webpages**
+
+* [Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed? &ndash; Stack Overflow](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed)
 
 ## Utilities
 
@@ -61,14 +68,14 @@
 
 :movie_camera: **Videos**
 
-* S.T.Lavavej @ CppCon (2015) &ndash; *`<functional>`: What's new, and proper usage*\
+* *`<functional>`: What's new, and proper usage* &ndash; S.T.Lavavej @ CppCon (2015).\
 [Watch at YouTube](https://www.youtube.com/watch?v=zt7ThwVfap0)
 
 ### Pairs and tuples
 
 :movie_camera: **Videos**
 
-* S.T.Lavavej @ CppCon (2016) &ndash; *`tuple<>`: What's new and how it works*\
+* *`tuple<>`: What's new and how it works* &ndash; S.T.Lavavej @ CppCon (2016).\
 [Watch at YouTube](https://www.youtube.com/watch?v=JhgWFYfdIho)
 
 # Tricks and subtleties

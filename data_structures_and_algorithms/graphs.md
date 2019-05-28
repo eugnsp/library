@@ -159,7 +159,7 @@
 
 :page_facing_up: **Papers**
 
-* J.Hopcroft, R.Tarjan. *Algorithm 447: Efficient algorithms for graph manipulation*. Communications of the ACM **16**, [372](https://doi.org/10.1145/362248.362272) (1973).\
+* *Algorithm 447: Efficient algorithms for graph manipulation* &ndash; J.Hopcroft, R.Tarjan. Communications of the ACM **16**, [372](https://doi.org/10.1145/362248.362272) (1973).\
 [Full text](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/06/Hopcroft73.pdf)
 
 ### Biconnectivity
@@ -175,7 +175,7 @@
 
 :movie_camera: **Videos**
 
-* William Fiset &ndash; *Bridges and articulation points algorithm*\
+* *Bridges and articulation points algorithm* &ndash;William Fiset\
 [Watch at YouTube](https://www.youtube.com/watch?v=aZXi1unBdJA)
 
 #### Biconnected components
