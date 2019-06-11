@@ -6,7 +6,12 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
+* [Memory access](#memory-access)
+	* [Strict aliasing rule](#strict-aliasing-rule)
 * [Move semantics](#move-semantics)
+* [References](#references)
+	* [Lifetime of a temporary](#lifetime-of-a-temporary)
+* [Structured bindings](#structured-bindings)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 
@@ -45,12 +50,39 @@
 * [Destructors that throw &ndash; A.Krzemie&nacute;ski C++ blog (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
 * [Throwing destructors &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
 
+## Memory access
+
+### Strict aliasing rule
+
+:memo: **Notes**
+
+* See also: [The standard library &ndash; `std::launder`](std_library.md#std-launder)
+
+:link: **Webpages**
+
+* [What is the strict aliasing rule? &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+
 ## Move semantics
 
 :movie_camera: *Videos*
 
 * *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
+
+## References
+
+### Lifetime of a temporary
+
+:link: **Webpages**
+
+* [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
+* [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
+
+## Structured bindings
+
+:link: **Webpages**
+
+* [Structured bindings and tuple of references &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
 
 ## Tricks
 
