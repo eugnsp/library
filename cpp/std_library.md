@@ -13,8 +13,8 @@
 	* [Pairs and tuples](#pairs-and-tuples)
 	* [`std::launder`](#std-launder)
 * [Tricks and subtleties](#tricks-and-subtleties)
-* [Proposals]
-	* [`std::expected`](#std-expected)
+* [Proposals](#proposals)
+	* [`std::expected`](#stdexpected)
 
 ---
 
