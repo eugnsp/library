@@ -93,7 +93,7 @@
 
 :memo: **Notes**
 
-* See also: [Core language &ndash; Strict aliasing rule](core_language#strict-aliasing-rule)
+* See also: [Core language &ndash; Strict aliasing rule](core_language.md#strict-aliasing-rule)
 
 :link: **Webpages**
 

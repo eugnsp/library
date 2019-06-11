@@ -56,7 +56,7 @@
 
 :memo: **Notes**
 
-* See also: [The standard library &ndash; `std::launder`](std_library.md#std-launder)
+* See also: [The standard library &ndash; `std::launder`](std_library.md#stdlaunder)
 
 :link: **Webpages**
 
