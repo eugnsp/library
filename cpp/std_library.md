@@ -5,6 +5,7 @@
 * [General information](#general-information)
 * [Algorithms](#algorithms)
 * [Containers](#containers)
+	* [std::vector<bool>](#stdvectorbool)
 * [Regular expressions]($regular-expressions)
 * [Smart pointers](#smart-pointers)
 * [Strings](#strings)
@@ -40,6 +41,12 @@
 
 * *If I had my 'druthers: A proposal for improving the containers in C++2x* &ndash; B.Steagall @ C++Now (2018)\
 [Watch at YouTube](https://www.youtube.com/watch?v=bAE0qteS4Rk)
+
+### `std::vector<bool>`
+
+:link: **Webpages**
+
+* [`On vector<bool>` &ndash; H.E.Hinnant (2012)](https://howardhinnant.github.io/onvectorbool.html)
 
 ## Regular expressions
 
