@@ -5,7 +5,7 @@
 * [General information](#general-information)
 * [Algorithms](#algorithms)
 * [Containers](#containers)
-	* [std::vector<bool>](#stdvectorbool)
+	* [`std::vector<bool>`](#stdvectorbool)
 * [Regular expressions]($regular-expressions)
 * [Smart pointers](#smart-pointers)
 * [Strings](#strings)
@@ -46,7 +46,7 @@
 
 :link: **Webpages**
 
-* [`On vector<bool>` &ndash; H.E.Hinnant (2012)](https://howardhinnant.github.io/onvectorbool.html)
+* [On `vector<bool>` &ndash; H.E.Hinnant (2012)](https://howardhinnant.github.io/onvectorbool.html)
 
 ## Regular expressions
 
