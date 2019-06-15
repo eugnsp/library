@@ -22,6 +22,8 @@
 
 :movie_camera: **Videos**
 
+* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017).\
+[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
 * *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017).\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
 * *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014).\
@@ -78,3 +80,10 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 
 * [Why do we need `atomic_shared_ptr`? &ndash; Anthony Williams (2015)](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html)
 * [What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`? &ndash;Stack Overflow](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha)
+
+
+<!--
+
+https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf
+https://stackoverflow.com/questions/5002046/atomicity-in-c-myth-or-reality
+-->

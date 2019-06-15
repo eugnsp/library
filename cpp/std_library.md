@@ -14,6 +14,7 @@
 	* [Pairs and tuples](#pairs-and-tuples)
 	* [`std::launder`](#std-launder)
 * [Tricks and subtleties](#tricks-and-subtleties)
+	* [SFINAE](#sfinae)
 * [Proposals](#proposals)
 	* [`std::expected`](#stdexpected)
 
@@ -113,6 +114,10 @@
 :link: **Webpages**
 
 * [In `std::exchange`, why is the second template parameter defaulted? &ndash; Stack Overflow](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted)
+
+## SFINAE
+
+* [Making `std::get` play nice with SFINAE &ndash; Stack Overflow](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae)
 
 # Proposals
 

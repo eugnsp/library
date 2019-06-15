@@ -11,22 +11,23 @@
 	* [Order statistics](#order-statistics)
 * [Linear-time sorting](#linear-time-sorting)
 	* [Count sort](#count-sort)
-
+* [Other](#other)
+	* [Pancake sorting](#pancake-sorting)
 ---
 
 ## Comparison sorting
 
 > In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed.
 
-:link: **Webpages**
-
-* [Comparison sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
-* [Minimal number of comparisons needed to sort `n` elements &ndash; The OEIS](https://oeis.org/A036604)
-
 :memo: **Notes**
 
 * Any comparison-based algorithm of sorting an array of size `n` requires <code>&Omega;(n log n)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `n`. No simple formula for the solution is known.
 * For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn't exceed `16` elements, and Microsoft's implementation uses the value `32`.
+
+:link: **Webpages**
+
+* [Comparison sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
+* [Minimal number of comparisons needed to sort `n` elements &ndash; The OEIS](https://oeis.org/A036604)
 
 :movie_camera: **Videos**
 
@@ -156,6 +157,18 @@
 [Watch at YouTube](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) (from 32:46) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
-### Count sort
+<!--### Count sort-->
+
+## Other
+
+### Pancake sorting
+
+:memo: **Notes**
+
+* The problem of finding the shortest sequence of flips for a given stack of pancakes is NP-hard ( L.Bulteau, G.Fertin, I.Rusu, 2011).
+
+:link: **Webpages**
+
+* [Pancake sorting &ndash; Wikipedia](https://en.wikipedia.org/wiki/Pancake_sorting)
 
 
