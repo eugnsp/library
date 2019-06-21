@@ -2,9 +2,25 @@
 
 ## Table of contents
 
-* [Passkey]
+* [Double-checked locking](#double-checked-locking)
+* [Passkey](#passkey)
 
 ---
+
+# Double-checked locking
+
+:memo: **Notes**
+
+* See also [Concurrency and parallelism - Multithreading](concurrency_and_parallelism.md#multithreading).
+
+:link: **Webpages**
+
+* [Double-checked locking &ndash; Wikipedia](https://en.wikipedia.org/wiki/Double-checked_locking)
+
+:movie_camera: **Videos**
+
+* *Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015).\
+[Watch at YouTube](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
 
 ## Passkey
 

@@ -4,9 +4,10 @@
 
 * [GPU computing](#gpu-computing)
 * [Multithreading](#multithreading)
-	* [Synchronization mechanisms](#lock-free-data-structures-and-design)
-		* [Hazard pointers](#hazard-pointers)
-		* [Read-copy-update (RCU)](#read-copy-update-rcu)
+	* [Lock-free programming](#lock-free-programming)
+	* [Spin locks](#spin-locks)
+	* [Hazard pointers](#hazard-pointers)
+	* [Read-copy-update (RCU)](#read-copy-update-rcu)
 	* [Concurrency and the standard library](#concurrency-and-the-standard-library)
 		* [`std::atomic_shared_ptr` class](#stdatomicsharedptr-class)
 ---
@@ -22,14 +23,10 @@
 
 :movie_camera: **Videos**
 
-* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017).\
-[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
 * *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017).\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
 * *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014).\
 [Watch at YouTube](https://www.youtube.com/watch?v=paK38WAq8WY)
-* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012).\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
 
 :book: **Books**
 
@@ -40,16 +37,31 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 * Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012.\
 [Book website](http://www.cppstdlib.com/)
 
-### Synchronization mechanisms
+### Lock-free programming
 
-#### Hazard pointers
+:movie_camera: **Videos**
+
+* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017).\
+[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
+* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015).\
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
+* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012).\
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
+
+### Spin locks
+
+:memo: **Notes**
+
+* Spin locks are typically slower if the number of threads is larger than the number of cores.
+
+### Hazard pointers
 
 :link: **Webpages**
 
 * [Hazard pointer &ndash; Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
 * [Lock-free data structures with hazard pointers &ndash; Dr.Dobb's Journal](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890)
 
-#### Read-copy-update (RCU)
+### Read-copy-update (RCU)
 
 :link: **Webpages**
 

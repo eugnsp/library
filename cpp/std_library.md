@@ -67,6 +67,12 @@
 * [Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed? &ndash; Stack Overflow](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed)
 * [What to use `std::optional` or `std::unique_ptr`? &ndash; Stack Overflow](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1)
 
+### `std::shared_ptr`
+
+:link: **Webpages**
+
+* [`std::shared_ptr` thread safety &ndash; Stack Overflow](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety)
+
 ## Strings
 
 :link: **Webpages**
