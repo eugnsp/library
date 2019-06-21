@@ -2,6 +2,8 @@
 
 ## Table of contents
 
+* [ABI](#abi)
+	* [Itanium C++ ABI](#itanium-c-abi)
 * [Attributes](#attributes)
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
@@ -16,6 +18,16 @@
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 
 ---
+
+## ABI
+
+### Itanium C++ ABI
+
+> The Itanium C++ ABI is an ABI for C++. As an ABI, it gives precise rules for implementing the language, ensuring that separately-compiled parts of a program can successfully interoperate. It is not platform-specific and can be layered portably on top of an arbitrary C ABI. It is used as the standard C++ ABI for many major operating systems on all major architectures, and is implemented in many major C++ compilers, including GCC and Clang.
+
+:link: **Webpages**
+
+* [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
 
 ## Attributes
 

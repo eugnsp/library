@@ -7,7 +7,11 @@
 
 ---
 
-# Double-checked locking
+:link: **Webpages**
+
+* [Design patterns &ndash; Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
+
+## Double-checked locking
 
 :memo: **Notes**
 
