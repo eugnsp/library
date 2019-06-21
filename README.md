@@ -26,6 +26,7 @@ implementation.
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)
+* [People](people.md)
 
 <!--
 * Miscellaneous funny stuff:
