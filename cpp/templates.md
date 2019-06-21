@@ -3,7 +3,7 @@
 ## Table of contents
 
 * [General information](#general-information)
-* [Function templates]
+* [Function templates](#function-templates)
 * [Syntax](#syntax)
 	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 * [Two-phase lookup](#two-phase-lookup)
@@ -15,12 +15,12 @@
 
 :movie_camera: **Videos**
 
-* W.E.Brown @ CppCon (2014) &ndash; *Modern template metaprogramming: A compendium*\
+* *Modern template metaprogramming: A compendium* &ndash; W.E.Brown @ CppCon (2014)\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE)
 
 :book: *Books*
 
-* D.Vandevoorde, N.M.Josuttis, D.Gregor. *C++ templates: The complete guide.* Addison-Wesley, 2<sup>nd</sup> ed., 2017\
+* D.Vandevoorde, N.M.Josuttis, D.Gregor. *C++ templates: The complete guide.* Addison-Wesley, 2<sup>nd</sup> ed. (2017)\
 [Book website](http://www.tmplbook.com/)
 
 ## Function templates
@@ -40,7 +40,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 
 :movie_camera: **Videos**
 
-* Alexander Stepanov: Efficient programming with components (2013) &ndash; Part of lecture 12\
+* *Efficient programming with components* (part of lecture 12) &ndash; Alexander Stepanov, A9 (2013)\
 [Watch at YouTube](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) (from 2:18)
 
 ## Two-phase lookup
@@ -48,7 +48,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 :link: **Webpages**
 
 * [Two-phase name lookup support comes to MSVC &ndash; T.Gani, S.T.Lavavej, A.Marino, G.D.Reis, A.Pardoe, C++ team blog](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/)
-* [Two-phase lookup in C++ templates &ndash; ](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/)
+* [Two-phase lookup in C++ templates](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/)
 
 ## Type traits
 
@@ -60,9 +60,9 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 
 :movie_camera: **Videos**
 
-* A.O'Dwyer @ C++Now (2018) &ndash; *The best type traits that C++ doesn't have*\
+* *The best type traits that C++ doesn't have* &ndash; A.O'Dwyer @ C++Now (2018)\
 [Watch at YouTube](https://www.youtube.com/watch?v=MWBfmmg8-Yo)
-* M.Clow @ CppCon (2015) &ndash; *Type traits: what are they and why should I use them?*\
+* *Type traits: what are they and why should I use them?* &ndash; M.Clow @ CppCon (2015)\
 [Watch at YouTube](https://www.youtube.com/watch?v=VvbTP_k_Df4)
 
 <!--
