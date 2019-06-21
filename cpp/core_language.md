@@ -76,6 +76,12 @@
 
 ## Move semantics
 
+:link: **Webpages**
+
+* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
+* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
+* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
+
 :movie_camera: *Videos*
 
 * *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\

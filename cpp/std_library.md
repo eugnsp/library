@@ -64,6 +64,7 @@
 
 :link: **Webpages**
 
+* [GotW #91 solution: smart pointer parameters &ndash; H.Sutter](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
 * [Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed? &ndash; Stack Overflow](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed)
 * [What to use `std::optional` or `std::unique_ptr`? &ndash; Stack Overflow](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1)
 
@@ -72,6 +73,7 @@
 :link: **Webpages**
 
 * [`std::shared_ptr` thread safety &ndash; Stack Overflow](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety)
+* [`std::shared_ptr`'s secret constructor &ndash; A.Williams](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
 
 ## Strings
 
