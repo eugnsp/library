@@ -19,7 +19,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
-* Implementations / C++
+* C++
 	* :chestnut: [Core language](cpp/core_language.md)
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :bookmark_tabs: [Patterns and idioms](cpp/patterns_and_idioms.md)

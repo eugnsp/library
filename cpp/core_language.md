@@ -8,12 +8,14 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
+* [Friend declaration](#friend-declaration)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
 * [References](#references)
 	* [Lifetime of a temporary](#lifetime-of-a-temporary)
 	* [Rvalue references](#rvalue-references)
 * [Structured bindings](#structured-bindings)
+* [Templates](#templates)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 
@@ -61,6 +63,18 @@
 * [Destructors that throw &ndash; A.Krzemie&nacute;ski C++ blog (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
 * [Throwing destructors &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
 
+## Friend declaration
+
+### Hidden friends
+
+:link: **Webpages**
+
+* [The power of hidden friends in C++ &ndash; A.Williams (2019)](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html)
+
+:anchor: **Standards and technical reports**
+
+* [WG21/P1601R0: Recommendations for specifying "hidden friends" (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
+
 ## Memory access
 
 ### Strict aliasing rule
@@ -106,6 +120,10 @@
 :link: **Webpages**
 
 * [Structured bindings and tuple of references &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
+
+## Templates
+
+See [Templates](templates.md).
 
 ## Tricks
 
