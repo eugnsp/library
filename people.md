@@ -1,10 +1,22 @@
 # People
 
+## Joris Dauphin
+
+:link: **Webpages**
+
+* [Stack Overflow](https://stackoverflow.com/users/2684539/jarod42)
+
 ## Edsger Dijkstra
 
 :link: **Webpages**
 
 * [E.W.Dijkstra archive](https://www.cs.utexas.edu/users/EWD/)
+
+## Jesper Juhl
+
+:link: **Webpages**
+
+* [Stack Overflow](https://stackoverflow.com/users/5910058/jesper-juhl)
 
 ## Donald Knuth
 

@@ -37,6 +37,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 :link: **Webpages**
 
 * [Where and why do I have to put the `template` and `typename` keywords? &ndash; Stack Overflow](https://stackoverflow.com/a/613132/1625187)
+* [GotW #35: Typename &ndash; H.Sutter (2009)](http://www.gotw.ca/gotw/035.htm)
 
 :movie_camera: **Videos**
 

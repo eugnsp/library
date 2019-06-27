@@ -3,12 +3,12 @@
 ## Table of contents
 
 * [Exact cover](#exact_cover)
-	* [Algorithms X and dancing links](#algorithms_x_and_dancing_links)
+	* [Algorithm X and dancing links](#algorithms_x_and_dancing_links)
 ---
 
 ## Exact cover
 
-### Algorithms X and dancing links
+### Algorithm X and dancing links
 
 
 https://www-cs-faculty.stanford.edu/~knuth/fasc5c.ps.gz

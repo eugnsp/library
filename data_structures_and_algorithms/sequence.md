@@ -15,6 +15,7 @@
 	* [Kadane's algorithm](#kadanes-algorithm)
 * [Majority element](#majority-element)
 	* [Boyer&ndash;Moore majority vote algorithm](#boyer-moore-majority-vote-algorithm)
+* [Permutations](#permutations)
 * [String searching](#string-searching)
 	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
 

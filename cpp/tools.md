@@ -1,21 +1,31 @@
 # Tools
 
-:link: *Webpages*
+## Table of contents
 
+* [Build automation](#build-automation)
+	* [CMake](#cmake)
+* [IDEs](#ides)
+	* [Visual Studio Code](#visual-studio-code)
 * [Online compilers](#online-compilers)
+* [Version-control system](#version-control-system)
+	* [Git](#git)
 * [Quick benchmark](http://quick-bench.com/)
 
 ---
 
-## Online compilers
+## Build automation
 
-:link: *Webpages*
+### Git
 
-* [Compiler explorer](https://godbolt.org/)
+:movie_camera: **Videos**
 
-## CMake
+* *Git tutorial for beginners* &ndash; C.Schafer\
+[Watch at YouTube](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
 
-### External libraries
+
+### CMake
+
+#### External libraries
 
 :link: *Webpages*
 
@@ -28,3 +38,12 @@
 :link: *Webpages*
 
 * [Home page](https://code.visualstudio.com/)
+
+## Online compilers
+
+:link: *Webpages*
+
+* [Compiler explorer](https://godbolt.org/)
+
+## Version-control system](#version-control-system)
+	* [Git](#git)

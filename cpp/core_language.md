@@ -10,9 +10,9 @@
 	* [Exceptions in destructors](#exceptions-in-destructors)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
-* [Move semantics](#move-semantics)
 * [References](#references)
 	* [Lifetime of a temporary](#lifetime-of-a-temporary)
+	* [Rvalue references](#rvalue-references)
 * [Structured bindings](#structured-bindings)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
@@ -48,7 +48,6 @@
 
 * [What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code? &ndash; Software Engineering](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c)
 
-
 :anchor: **Standards and technical reports**
 
 * [`[[nodiscard]]` in the Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf)
@@ -74,20 +73,11 @@
 
 * [What is the strict aliasing rule? &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
 
-## Move semantics
+## References
 
 :link: **Webpages**
 
-* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
-* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
-* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
-
-:movie_camera: *Videos*
-
-* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
-
-## References
+* [Is null reference possible? &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
 
 ### Lifetime of a temporary
 
@@ -95,6 +85,21 @@
 
 * [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
 * [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
+
+### Rvalue references
+
+:link: **Webpages**
+
+* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
+* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
+* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
+* [Rvalues, lvalues and formal definitions &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
+* [Pass by value vs pass by rvalue reference &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
+
+:movie_camera: *Videos*
+
+* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
+[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
 
 ## Structured bindings
 

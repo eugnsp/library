@@ -13,6 +13,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :curly_loop: [Graphs](data_structures_and_algorithms/graphs.md)
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
+	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
 	* :abc: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
@@ -25,7 +26,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)
-* [People](people.md)
+<!-- * [People](people.md) -->
 
 <!--
 * Miscellaneous funny stuff:

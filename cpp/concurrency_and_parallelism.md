@@ -4,10 +4,11 @@
 
 * [GPU computing](#gpu-computing)
 * [Multithreading](#multithreading)
-	* [Lock-free programming](#lock-free-programming)
-	* [Spin locks](#spin-locks)
-	* [Hazard pointers](#hazard-pointers)
-	* [Read-copy-update (RCU)](#read-copy-update-rcu)
+	* [Lock-based](#lock)
+		* [Spin locks](#spin-locks)
+	* [Lock-free](#lock-free)
+		* [Hazard pointers](#hazard-pointers)
+		* [Read-copy-update (RCU)](#read-copy-update-rcu)
 	* [Concurrency and the standard library](#concurrency-and-the-standard-library)
 		* [`std::atomic_shared_ptr` class](#stdatomicsharedptr-class)
 ---
@@ -16,16 +17,16 @@
 
 :movie_camera: **Videos**
 
-* P.Steinbach @ Meeting C++ (2015) &ndash; *C++ on GPUs done right?*\
+* *C++ on GPUs done right?* &ndash; P.Steinbach @ Meeting C++ (2015)\
 [Watch at YouTube](https://www.youtube.com/watch?v=z43l_LaOqnM)
 
 ## Multithreading
 
 :movie_camera: **Videos**
 
-* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017).\
+* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
-* *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014).\
+* *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)\
 [Watch at YouTube](https://www.youtube.com/watch?v=paK38WAq8WY)
 
 :book: **Books**
@@ -37,31 +38,41 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part I
 * Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012.\
 [Book website](http://www.cppstdlib.com/)
 
-### Lock-free programming
+### Lock-based
 
-:movie_camera: **Videos**
-
-* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017).\
-[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
-* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015).\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
-* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012).\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
-
-### Spin locks
+#### Spin locks
 
 :memo: **Notes**
 
 * Spin locks are typically slower if the number of threads is larger than the number of cores.
 
-### Hazard pointers
+:link: **Webpages**
+
+* [When should one use a spinlock instead of mutex? &ndash; Stack Overflow](https://stackoverflow.com/questions/5869825/when-should-one-use-a-spinlock-instead-of-mutex)
+* [Spinlock versus Semaphore &ndash; Stack Overflow](https://stackoverflow.com/questions/195853/spinlock-versus-semaphore)
+
+### Lock-free
+
+> Lock-free programming is a set of techniques for writing concurrent programs without using
+explicit locks.
+
+:movie_camera: **Videos**
+
+* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017)\
+[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
+* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015)\
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
+* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012)\
+Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
+
+#### Hazard pointers
 
 :link: **Webpages**
 
 * [Hazard pointer &ndash; Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
 * [Lock-free data structures with hazard pointers &ndash; Dr.Dobb's Journal](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890)
 
-### Read-copy-update (RCU)
+#### Read-copy-update (RCU)
 
 :link: **Webpages**
 
@@ -70,9 +81,9 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 
 :movie_camera: **Videos**
 
-* *Read, copy, update, then what? RCU for non-kernel programmers* &ndash; F.Pikus @ CppCon (2017).\
+* *Read, copy, update, then what? RCU for non-kernel programmers* &ndash; F.Pikus @ CppCon (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=rxQ5K9lo034)
-* *A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016).\
+* *A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016)\
 [Watch at YouTube](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289) (from 38:09)
 
 :anchor: **Standards and technical reports**
