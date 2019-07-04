@@ -26,6 +26,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)
+	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
 <!-- * [People](people.md) -->
 
 <!--

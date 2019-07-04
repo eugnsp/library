@@ -27,6 +27,8 @@
 * Sec. 5.2: *Data structures for graphs* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
 
+---
+
 ## Traversal
 
 ### Breadth-first search (BFS)
@@ -150,6 +152,8 @@
 	* Coffman&ndash;Graham algorithm
 	* Layered graph drawing
 -->
+
+---
 
 ## Connectivity
 

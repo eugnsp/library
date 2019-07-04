@@ -24,6 +24,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 * Ch. 8: *Dynamic programming* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
 
+---
+
 ## Linear partition
 
 > Problem: partition (without reordering) a set of non-negative integral numbers into `k` ranges such that the maximum sum over all the ranges is minimized.
@@ -38,6 +40,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 [Book website](http://www.algorist.com/)
 * Sec. 8.4.1: *Two components: binary search the answer and other* &ndash; S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013.\
 [Book website](https://cpbook.net/)
+
+---
 
 ## Longest increasing subsequence
 

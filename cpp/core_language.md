@@ -8,6 +8,7 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
+* [Floating-point types](#floating-point-types)
 * [Friend declaration](#friend-declaration)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
@@ -30,6 +31,8 @@
 :link: **Webpages**
 
 * [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
+
+---
 
 ## Attributes
 
@@ -54,7 +57,14 @@
 
 * [`[[nodiscard]]` in the Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf)
 
+---
+
 ## Exceptions
+
+:link: **Webpages**
+
+* [When and how to use exceptions &ndash; H.Sutter, Dr.Dobb's Journal (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
+* [Exceptions &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/exceptions)
 
 ### Exceptions in destructors
 
@@ -62,6 +72,16 @@
 
 * [Destructors that throw &ndash; A.Krzemie&nacute;ski C++ blog (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
 * [Throwing destructors &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+
+---
+
+## Floating-point types
+
+:link: **Webpages**
+
+* [Byte swapping floating point types &ndash; D.Howard](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
+
+---
 
 ## Friend declaration
 
@@ -75,6 +95,8 @@
 
 * [WG21/P1601R0: Recommendations for specifying "hidden friends" (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
 
+---
+
 ## Memory access
 
 ### Strict aliasing rule
@@ -86,6 +108,8 @@
 :link: **Webpages**
 
 * [What is the strict aliasing rule? &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+
+---
 
 ## References
 
@@ -115,6 +139,8 @@
 * *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
 
+---
+
 ## Structured bindings
 
 :link: **Webpages**
@@ -124,6 +150,8 @@
 ## Templates
 
 See [Templates](templates.md).
+
+---
 
 ## Tricks
 

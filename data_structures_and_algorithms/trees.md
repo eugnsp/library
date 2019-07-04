@@ -136,6 +136,8 @@
 * P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994).\
 [Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
 
+---
+
 ## B-trees
 
 :movie_camera: **Videos**
@@ -150,6 +152,8 @@
 [Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 
 ### 2-3 trees
+
+---
 
 ## Traversal
 

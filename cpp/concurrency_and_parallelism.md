@@ -2,6 +2,7 @@
 
 ## Table of contents
 
+* [Introduction and overview](#introduction-and-overview)
 * [GPU computing](#gpu-computing)
 * [Multithreading](#multithreading)
 	* [Lock-based](#lock)
@@ -11,7 +12,14 @@
 		* [Read-copy-update (RCU)](#read-copy-update-rcu)
 	* [Concurrency and the standard library](#concurrency-and-the-standard-library)
 		* [`std::atomic_shared_ptr` class](#stdatomicsharedptr-class)
+	* [POSIX threads](#posix-threads)
 ---
+
+## Introduction and overview
+
+:link: **Webpages**
+
+* [Introduction to parallel computing &ndash; B.Barney](https://computing.llnl.gov/tutorials/parallel_comp/)
 
 ## GPU computing
 
@@ -104,6 +112,11 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 * [Why do we need `atomic_shared_ptr`? &ndash; Anthony Williams (2015)](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html)
 * [What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`? &ndash;Stack Overflow](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha)
 
+### POSIX threads
+
+:link: **Webpages**
+
+* [POSIX threads programming &ndash; B.Barney](https://computing.llnl.gov/tutorials/pthreads/)
 
 <!--
 

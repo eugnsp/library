@@ -16,6 +16,8 @@
 
 * [Linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
 
+---
+
 ## Singly linked lists
 
 > A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list.
@@ -24,6 +26,8 @@
 
 * *Unrolling lists* &ndash; Z.Shao, J.H.Reppy, A.W.Appel. ACM conference on LISP and functional programming, [185](https://doi.org/10.1145/182590.182453) (1994)\
 [Full text](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz)
+
+---
 
 ## Doubly linked lists
 
@@ -39,6 +43,8 @@
 
 * [XOR linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/XOR_linked_list)
 * [A memory-efficient doubly linked list &ndash; P.Sinha, Linux Journal](https://www.linuxjournal.com/article/6828)
+
+---
 
 ## Skip lists
 

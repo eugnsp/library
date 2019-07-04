@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-* [General information](#general-information)
+* [Introduction and overview](#introduction-and-overview)
 * [Function templates](#function-templates)
 * [Syntax](#syntax)
 	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
@@ -11,7 +11,7 @@
 
 ---
 
-## General information
+## Introduction and overview
 
 :movie_camera: **Videos**
 
@@ -68,7 +68,11 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part I
 
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm
+
 https://stackoverflow.com/questions/281725/template-specialization-based-on-inherit-class
+
 https://www.codeproject.com/Articles/268849/An-Idiots-Guide-to-Cplusplus-Templates-Part-2
 https://www.hackcraft.net/cpp/templateinheritance/
+
+https://stackoverflow.com/questions/55396786/check-if-class-is-a-template-specialization/55398444#55398444
  -->

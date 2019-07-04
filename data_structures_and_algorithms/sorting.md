@@ -149,6 +149,8 @@
 * S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky Matematichesky Zhurnal **5**, 557 (1964).\
 [Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})
 
+---
+
 ## Linear-time sorting
 
 :movie_camera: **Videos**
@@ -158,6 +160,8 @@
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 <!--### Count sort-->
+
+---
 
 ## Other
 

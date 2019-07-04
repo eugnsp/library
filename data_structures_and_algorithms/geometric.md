@@ -17,6 +17,8 @@
 * [Confusion on Delaunay triangulation and largest inscribed circle &ndash; Stack Overflow](https://stackoverflow.com/questions/27872964/confusion-on-delaunay-triangulation-and-largest-inscribed-circle)
 * [Largest circle inside a non-convex polygon &ndash; Stack Overflow](https://stackoverflow.com/questions/4279478/largest-circle-inside-a-non-convex-polygon)
 
+---
+
 ## Closest pair of points
 
 > Problem: in the given set of <code>n &geq; 2</code> points in a metric space, find a pair of points with the smallest distance between them.

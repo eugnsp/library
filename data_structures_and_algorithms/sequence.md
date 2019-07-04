@@ -100,6 +100,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 * [Lyndon factorization &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
 * [How does the minimum expression algorithm by Zhou Yuan work? &ndash; Quora](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work)
 
+---
+
 ## Longest increasing subsequence
 
 > Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
@@ -136,6 +138,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 <!--### Counting the number of longest increasing subsequences-->
 
+---
+
 ## Lyndon factorization
 
 > Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, such that <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
@@ -160,6 +164,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 * S.S.Ghuman, E.Giaquinta, J.Tarhio. *Alternative algorithms for Lyndon factorization*. Preprint (2014).\
 [Full text](https://arxiv.org/abs/1405.4892)
 
+---
+
 ## Maximum subsequence
 
 > Problem: find a contiguous subsequence with the largest sum within a given one-dimensional sequence.
@@ -174,6 +180,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 * D.Gries. *A note on a standard strategy for developing loop invariants and loops*. Science of computer programming *2*, [207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982).\
 [Full text](https://core.ac.uk/download/pdf/82596333.pdf)
 
+---
+
 ## Majority element
 
 ### Boyer&ndash;Moore majority vote algorithm
@@ -181,6 +189,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 :link: **Webpages**
 
 * [Boyer&ndash;Moore majority vote algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
+
+---
 
 ## String searching
 
