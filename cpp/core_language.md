@@ -8,7 +8,9 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
-* [Friend declaration](#friend-declaration)
+* [Keywords](#keywords)
+	* [`const` and `mutable`](const-and-mutable)
+	* [`friend`](#friend)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
 * [Structured bindings](#structured-bindings)
@@ -20,7 +22,7 @@
 	* [Opaque typedefs](#opaque-typedefs)
 	* [References](#references)
 		* [Lifetime of a temporary](#lifetime-of-a-temporary)
-		* [Rvalue references](#rvalue-references)
+		* [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
 
 ---
 
@@ -77,9 +79,23 @@
 
 ---
 
-## Friend declaration
+## Keywords
 
-### Hidden friends
+### `const` and `mutable`
+
+:memo: **Notes**
+
+* In C++98: `const` means "logically `const`", in C++11 `const` means "thread safe" (bitwise `const` or internally synchronized).
+* In C++98: `mutable` means "not observably non-`const`", in C++11 `mutable` means "thread safe" (bitwise `const` or internally synchronized).
+
+:movie_camera: **Videos**
+
+* *You don't know `const` and `mutable`* &ndash; H.Sutter @ C++ and Beyond (2012)\
+[Watch at Channel 9](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank)
+
+### `friend`
+
+#### Hidden friends
 
 :link: **Webpages**
 
@@ -162,7 +178,7 @@ See [Templates](templates.md).
 * [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
 * [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
 
-#### Rvalue references
+#### Rvalue references and move semantics
 
 :link: **Webpages**
 
@@ -172,7 +188,7 @@ See [Templates](templates.md).
 * [Rvalues, lvalues and formal definitions &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
 * [Pass by value vs pass by rvalue reference &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
 
-:movie_camera: *Videos*
+:movie_camera: **Videos**
 
 * *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
