@@ -5,6 +5,7 @@
 * [Introduction](#introduction)
 * [Adapter](#adapter)
 * [Double-checked locking](#double-checked-locking)
+* [Opaque typedefs](#opaque-typedefs)
 * [Passkey](#passkey)
 
 ---
@@ -34,7 +35,7 @@
 
 :memo: **Notes**
 
-* See also [Concurrency and parallelism - Multithreading](concurrency_and_parallelism.md#multithreading).
+* See also [Concurrency and parallelism &ndash; Multithreading](concurrency_and_parallelism.md#multithreading).
 
 :link: **Webpages**
 
@@ -44,6 +45,18 @@
 
 * *Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015).\
 [Watch at YouTube](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
+
+---
+
+## Opaque typedefs
+
+:memo: **Notes**
+
+* See also [Core language &ndash; Opaque typedefs](core-language.md#opaque-typedefs).
+
+:link: **Webpages**
+
+* [Tutorial: Emulating strong/opaque typedefs in C++ &ndash; J.Müller, foonathan::blog() (2016)](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 
 ---
 

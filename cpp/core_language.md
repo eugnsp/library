@@ -8,17 +8,19 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
-* [Floating-point types](#floating-point-types)
 * [Friend declaration](#friend-declaration)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
-* [References](#references)
-	* [Lifetime of a temporary](#lifetime-of-a-temporary)
-	* [Rvalue references](#rvalue-references)
 * [Structured bindings](#structured-bindings)
 * [Templates](#templates)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
+* [Types]
+	* [Floating-point types](#floating-point-types)
+	* [Opaque typedefs](#opaque-typedefs)
+	* [References](#references)
+		* [Lifetime of a temporary](#lifetime-of-a-temporary)
+		* [Rvalue references](#rvalue-references)
 
 ---
 
@@ -75,14 +77,6 @@
 
 ---
 
-## Floating-point types
-
-:link: **Webpages**
-
-* [Byte swapping floating point types &ndash; D.Howard](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
-
----
-
 ## Friend declaration
 
 ### Hidden friends
@@ -111,36 +105,6 @@
 
 ---
 
-## References
-
-:link: **Webpages**
-
-* [Is null reference possible? &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
-
-### Lifetime of a temporary
-
-:link: **Webpages**
-
-* [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
-* [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
-
-### Rvalue references
-
-:link: **Webpages**
-
-* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
-* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
-* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
-* [Rvalues, lvalues and formal definitions &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
-* [Pass by value vs pass by rvalue reference &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
-
-:movie_camera: *Videos*
-
-* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
-
----
-
 ## Structured bindings
 
 :link: **Webpages**
@@ -161,3 +125,57 @@ See [Templates](templates.md).
 
 * [Accessing private members &ndash; Stack Overflow](https://stackoverflow.com/questions/726096/accessing-private-members)
 * [Access to private members. That's easy! &ndash; Johannes Schaub, litb's Blog](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html)
+
+---
+
+## Types
+
+### Floating-point types
+
+:link: **Webpages**
+
+* [Byte swapping floating point types &ndash; D.Howard](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
+
+### Opaque typedefs
+
+> An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
+
+:memo: **Notes**
+
+* > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.Müller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
+* See [Patterns and idioms &ndash; Opaque typedefs](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
+
+:anchor: **Standards and technical reports**
+
+* [WG21/N3741: Toward Opaque Typedefs for C++1Y, v2 (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
+
+### References
+
+:link: **Webpages**
+
+* [Is null reference possible? &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
+
+#### Lifetime of a temporary
+
+:link: **Webpages**
+
+* [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
+* [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
+
+#### Rvalue references
+
+:link: **Webpages**
+
+* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
+* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
+* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
+* [Rvalues, lvalues and formal definitions &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
+* [Pass by value vs pass by rvalue reference &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
+
+:movie_camera: *Videos*
+
+* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
+[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
+
+
+
