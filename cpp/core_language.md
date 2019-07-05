@@ -15,7 +15,7 @@
 * [Templates](#templates)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
-* [Types]
+* [Types](#types)
 	* [Floating-point types](#floating-point-types)
 	* [Opaque typedefs](#opaque-typedefs)
 	* [References](#references)
@@ -147,7 +147,7 @@ See [Templates](templates.md).
 
 :anchor: **Standards and technical reports**
 
-* [WG21/N3741: Toward Opaque Typedefs for C++1Y, v2 (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
+* [WG21/N3741: Toward opaque typedefs for C++1Y, v2 &ndash; W.E.Brown (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
 
 ### References
 
