@@ -4,6 +4,7 @@
 
 * [Introduction](#introduction)
 * [Adapter](#adapter)
+* [Bridge and pimpl](#bridge-and-pimpl)
 * [Double-checked locking](#double-checked-locking)
 * [Opaque typedefs](#opaque-typedefs)
 * [Passkey](#passkey)
@@ -27,6 +28,21 @@
 :movie_camera: **Videos**
 
 * *Adapter design pattern* &ndash; D.Banas\
+[Watch at YouTube](https://www.youtube.com/watch?v=9jIgSsIfh_8)
+
+---
+
+## Bridge and pimpl
+
+:link: **Webpages**
+
+* [Bridge pattern &ndash; Wikipedia](https://en.wikipedia.org/wiki/Bridge_pattern)
+
+:movie_camera: **Videos**
+
+* *The composite and bridge patterns* &ndash; D.Schmidt\
+[Watch at YouTube](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730) (from 12:11)
+* *Bridge design pattern* &ndash; D.Banas\
 [Watch at YouTube](https://www.youtube.com/watch?v=qG286LQM6BU)
 
 ---

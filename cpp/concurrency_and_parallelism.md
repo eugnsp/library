@@ -25,26 +25,34 @@
 
 :movie_camera: **Videos**
 
-* *C++ on GPUs done right?* &ndash; P.Steinbach @ Meeting C++ (2015)\
+* P.Steinbach. *C++ on GPUs done right?* @ Meeting C++ (2015)\
 [Watch at YouTube](https://www.youtube.com/watch?v=z43l_LaOqnM)
 
 ## Multithreading
 
 :movie_camera: **Videos**
 
-* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)\
+* A.Sermersheim. *Multithreading is the answer. What is the question?* @ CppCon (2017)\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
-* *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)\
+* R.Grimm. *C++11 multithreading done right?* @ Meeting C++ (2014)\
 [Watch at YouTube](https://www.youtube.com/watch?v=paK38WAq8WY)
 
 :book: **Books**
 
-* A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed., 2019.\
+* P.E.McKenney. *Is parallel programming hard, and, if so, what can you do about it?* (2018)\
+[Book website](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
+* A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed. (2019)\
 [Book website](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
-* Ch. 9: *Parallelism and concurrency* &ndash; J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing, 2017.\
+* Ch. 9: *Parallelism and concurrency* &ndash; J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing (2017)\
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed., 2012.\
+* Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed. (2012)\
 [Book website](http://www.cppstdlib.com/)
+
+:page_facing_up: **Papers**
+
+* P.E.McKenney. *Memory barriers: a hardware view for software hackers* (2010)\
+[Full text](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf)
+
 
 ### Lock-based
 
@@ -94,7 +102,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 * *A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016)\
 [Watch at YouTube](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289) (from 38:09)
 
-:anchor: **Standards and technical reports**
+:anchor: **Standards, technical reports and proposals**
 
 * [WG21/P0461R1: Proposed RCU C++ API (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf)
 * [WG21/P0279R1: Read-copy update (RCU) for C++ (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf)

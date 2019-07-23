@@ -8,6 +8,8 @@
 	* [`[[nodiscard]]`](#nodiscard)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
+* [Functions](#functions)
+	* [Argument-dependent lookup](#argument-dependent-lookup)
 * [Keywords](#keywords)
 	* [`const` and `mutable`](const-and-mutable)
 	* [`friend`](#friend)
@@ -67,15 +69,29 @@
 
 :link: **Webpages**
 
-* [When and how to use exceptions &ndash; H.Sutter, Dr.Dobb's Journal (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
-* [Exceptions &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/exceptions)
+* [H.Sutter. *When and how to use exceptions* [Dr.Dobb's Journal] (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
+* [*Exceptions* [C++ reference]](https://en.cppreference.com/w/cpp/language/exceptions)
 
 ### Exceptions in destructors
 
 :link: **Webpages**
 
-* [Destructors that throw &ndash; A.Krzemie&nacute;ski C++ blog (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
-* [Throwing destructors &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+* [A.Krzemie&nacute;ski. *Destructors that throw* (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
+* [B.Kolpackov. *Throwing destructors* (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+
+---
+
+## Functions
+
+### Argument-dependent lookup
+
+:link: **Webpages**
+
+* [*Argument-dependent lookup* [C++ reference]](https://en.cppreference.com/w/cpp/language/adl)
+* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?* [Stack Overflow]](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup)
+* [A.O'Dwyer. *What is ADL?* (2019)](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/)
+* [A.O'Dwyer. *ADL insanity* (2019)](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/)
+* [A.O'Dwyer. *How `hana::type<T>` "disables ADL"* (2019)](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/)
 
 ---
 
@@ -101,7 +117,7 @@
 
 * [The power of hidden friends in C++ &ndash; A.Williams (2019)](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html)
 
-:anchor: **Standards and technical reports**
+:anchor: **Standards, technical reports and proposals**
 
 * [WG21/P1601R0: Recommendations for specifying "hidden friends" (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
 
@@ -148,6 +164,10 @@ See [Templates](templates.md).
 
 ### Floating-point types
 
+:memo: **Notes**
+
+* See also [Numeric data structures and algorithms &ndash; Floating-point numbers](../data_structures_and_algorithms/numeric.md).
+
 :link: **Webpages**
 
 * [Byte swapping floating point types &ndash; D.Howard](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
@@ -161,7 +181,7 @@ See [Templates](templates.md).
 * > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.Müller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 * See [Patterns and idioms &ndash; Opaque typedefs](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
 
-:anchor: **Standards and technical reports**
+:anchor: **Standards, technical reports and proposals**
 
 * [WG21/N3741: Toward opaque typedefs for C++1Y, v2 &ndash; W.E.Brown (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
 
