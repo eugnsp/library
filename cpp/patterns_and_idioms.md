@@ -1,4 +1,4 @@
-# Patterns and idioms
+# Patterns, idioms, and design principles
 
 ## Table of contents
 
@@ -8,6 +8,8 @@
 * [Double-checked locking](#double-checked-locking)
 * [Opaque typedefs](#opaque-typedefs)
 * [Passkey](#passkey)
+* [Design principles](#design-principles)
+	* [Class design](#class-design)
 
 ---
 
@@ -78,7 +80,7 @@
 
 ## Passkey
 
-:link: **Webpages**
+:link:
 
 <!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
 
@@ -92,64 +94,28 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 ---
 
-## Exceptions
+## Design principles
 
-### Exceptions in destructors
+:link:
 
-:link: **Webpages**
+* [*The principles of OOD* &ndash; R.C.Martin (2004)](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
 
-* [Destructors that throw &ndash; A.Krzemie&nacute;ski C++ blog (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
-* [Throwing destructors &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+### Class design
 
----
+> The five principles of class design [R.C.Martin]:
+>
+> * Single responsibility principle: a class should have one, and only one, reason to change.
+> * Open-closed principle: you should be able to extend a class behavior, without modifying it.
+> * Liskov substitution principle: derived classes must be substitutable for their base classes.
+> * Interface segregation principle: make fine grained interfaces that are client specific.
+> * Dependency inversion principle: depend on abstractions, not on concretions.
 
-## Memory access
+:link:
 
-### Strict aliasing rule
-
-:memo: **Notes**
-
-* See also: [The standard library &ndash; `std::launder`](std_library.md#stdlaunder)
-
-:link: **Webpages**
-
-* [What is the strict aliasing rule? &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
-
----
-
-## Move semantics
-
-:movie_camera: *Videos*
-
-* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
-
----
-
-## References
-
-### Lifetime of a temporary
-
-:link: **Webpages**
-
-* [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
-* [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
-
----
-
-## Structured bindings
-
-:link: **Webpages**
-
-* [Structured bindings and tuple of references &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
-
----
-
-## Tricks
-
-### Accessing private and protected members
-
-:link: **Webpages**
-
-* [Accessing private members &ndash; Stack Overflow](https://stackoverflow.com/questions/726096/accessing-private-members)
-* [Access to private members. That's easy! &ndash; Johannes Schaub, litb's Blog](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html)
+* [*SOLID* &ndash; Wikipedia](https://en.wikipedia.org/wiki/SOLID)
+* [*Design principles and design patterns* &ndash; R.C.Martin (2000)](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
+* [*Single responsibility principle* &ndash; R.C.Martin](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf)
+* [*Open-closed principle* &ndash; R.C.Martin](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf)
+* [*Liskov substitution principle* &ndash; R.C.Martin](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf)
+* [*Interface segregation principle* &ndash; R.C.Martin](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf)
+* [*Dependency inversion principle* &ndash; R.C.Martin](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)

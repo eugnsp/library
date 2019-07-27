@@ -25,7 +25,7 @@
 * S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed. (2008)\
 [Book website](http://www.algorist.com/)
 * A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley (2009)\
-[Book website](http://elementsofprogramming.com/)
+[Book website](http://elementsofprogramming.com/) | [Full text](http://elementsofprogramming.com/eop_coloredlinks.pdf)
 * A.A.Stepanov, D.E.Rose. *From mathematics to generic programming*. Addison-Wesley (2014)\
 [Book website](http://www.fm2gp.com/)
 * M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed. (2014)\

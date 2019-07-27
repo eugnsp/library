@@ -18,7 +18,7 @@
 * [Permutations](#permutations)
 * [String searching](#string-searching)
 	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
-
+* [Sqrt decomposition]
 ---
 
 ## Rotation (cyclic shift)
@@ -196,7 +196,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 ### Knuth&ndash;Morris&ndash;Pratt algorithm
 
-:link: **Webpages**
+:link:
 
 * [Knuth&ndash;Morris&ndash;Pratt algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 
@@ -204,3 +204,12 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 * *KMP searching algorithm* &ndash; William Brinkman (2017).\
 [Watch at YouTube](https://www.youtube.com/watch?v=y2b94AxPlF8)
+
+---
+
+## Sqrt decomposition
+
+:link:
+
+* [Sqrt decomposition [CP-Algorithms]](https://cp-algorithms.com/data_structures/sqrt_decomposition.html)
+* [Sqrt decomposition [S.Kopeliovich, MIPT] (2016)](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf)

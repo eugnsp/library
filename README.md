@@ -22,7 +22,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 * C++
 	* :chestnut: [Core language](cpp/core_language.md)
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
-	* :bookmark_tabs: [Patterns and idioms](cpp/patterns_and_idioms.md)
+	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library](cpp/std_library.md)
 	* :wrench: [Tools](cpp/tools.md)
