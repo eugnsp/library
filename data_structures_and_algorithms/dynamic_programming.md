@@ -10,7 +10,7 @@
 
 ## General information
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Dynamic programming* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
@@ -19,7 +19,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) |
 [Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
-:book: **Books**
+:book:
 
 * Ch. 8: *Dynamic programming* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)
@@ -30,11 +30,11 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 > Problem: partition (without reordering) a set of non-negative integral numbers into `k` ranges such that the maximum sum over all the ranges is minimized.
 
-:memo: **Notes**
+:memo:
 
 * This problem has another solution based on binary searching the answer in the space of possible answers that is obtained using a greedy approach.
 
-:book: **Books**
+:book:
 
 * Sec. 8.5: *The partition problem* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
 [Book website](http://www.algorist.com/)

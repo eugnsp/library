@@ -9,18 +9,18 @@
 
 ## Loop invariants
 
-:link: **Webpages**
+:link:
 
 > A loop invariant is a property of a program loop that is true before and after each iteration.
 
 * [Loop invariant &ndash; Wikipedia](https://en.wikipedia.org/wiki/Loop_invariant)
 
-:book: **Books**
+:book:
 
 * Col.4: *Writing correct programs* &ndash; J.Bentley. *Programming pearls*. Addison-Wesley, 2<sup>nd</sup> ed., 1999.\
 [Book website](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/)
 
-:page_facing_up: **Papers**
+:page_facing_up:
 
 * J.Bentley. *Programming pearls: Writing correct programs*. Communications of the ACM **26**, [1040](https://doi.org/10.1145/358476.358484) (1983).\
 [Full text](https://www.cs.tufts.edu/~nr/cs257/archive/jon-bentley/correct-programs.pdf)
@@ -30,7 +30,7 @@
 
 ### Binary search
 
-:link: **Webpages**
+:link:
 
 * Invariants for binary search &ndash; Dr.Dobb's Journal\
 [Part I](http://www.drdobbs.com/cpp/invariants-for-binary-search-part-1-a-si/240169169),

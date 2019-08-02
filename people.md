@@ -2,43 +2,43 @@
 
 ## Joris Dauphin
 
-:link: **Webpages**
+:link:
 
 * [Stack Overflow](https://stackoverflow.com/users/2684539/jarod42)
 
 ## Edsger Dijkstra
 
-:link: **Webpages**
+:link:
 
 * [E.W.Dijkstra archive](https://www.cs.utexas.edu/users/EWD/)
 
 ## Jesper Juhl
 
-:link: **Webpages**
+:link:
 
 * [Stack Overflow](https://stackoverflow.com/users/5910058/jesper-juhl)
 
 ## Donald Knuth
 
-:link: **Webpages**
+:link:
 
 * [Home page](https://www-cs-faculty.stanford.edu/~knuth/)
 * [Papers at arXiv](https://arxiv.org/search/cs?searchtype=author&query=Knuth%2C+D+E)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *The Christmas lectures*\
 [Watch at YouTube](https://www.youtube.com/playlist?list=PLoROMvodv4rOAvKVR_dyCigSBMcYjevYB)
 
 ## Nathan Oliver
 
-:link: **Webpages**
+:link:
 
 * [Stack Overflow](https://stackoverflow.com/users/4342498/nathanoliver)
 
 ## Barry Revzin
 
-:link: **Webpages**
+:link:
 
 * [Blog](https://brevzin.github.io/)
 * [GitHub](https://brevzin.github.io/)
@@ -46,13 +46,13 @@
 
 ## Alexander Stepanov
 
-:link: **Webpages**
+:link:
 
 * [Collected papers](http://stepanovpapers.com/)
 * [The short canon: A short list of materials for civilizing programmers](https://psoberoi.github.io/stepanov-civilization/canon.html)
 * [Interview &ndash; G.L.Russo, STLport](http://www.stlport.org/resources/StepanovUSA.html)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Programming conversations* &ndash; A9 (2014)\
 [Watch at YouTube](https://www.youtube.com/watch?v=k-meLQaYP5Y)
@@ -67,7 +67,7 @@ Watch at YouTube (in Russian): [Part I](https://www.youtube.com/watch?v=NfGeVReb
 * *STL and its design principles* &ndash; Adobe Systems (2002)\
 [Watch at YouTube](https://www.youtube.com/watch?v=COuHLky7E2Q)
 
-:book: **Books**
+:book:
 
 * A.A.Stepanov, P.McJones. *Elements of programming*. Addison-Wesley (2009)\
 [Book website](http://elementsofprogramming.com/)
@@ -76,13 +76,13 @@ Watch at YouTube (in Russian): [Part I](https://www.youtube.com/watch?v=NfGeVReb
 
 ## Herb Sutter
 
-:link: **Webpages**
+:link:
 
 * [GotW.ca](http://www.gotw.ca/)
 
 ## Jonathan Wakely
 
-:link: **Webpages**
+:link:
 
 * [GitHub](https://github.com/jwakely)
 * [Stack Overflow](https://stackoverflow.com/users/981959/jonathan-wakely)

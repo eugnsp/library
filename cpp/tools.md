@@ -19,7 +19,7 @@
 
 ### Git
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Git tutorial for beginners* &ndash; C.Schafer\
 [Watch at YouTube](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
@@ -30,7 +30,7 @@
 
 * [Include Google Benchmark/Test in C++ Project &ndash; Software Engineering Blog](https://felixmoessbauer.com/blog-reader/include-google-benchmark-test-in-c-project.html)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Introduction to CMake* &ndash; F.Castelli @ SwedenCpp (2018)
 [Watch at YouTube](https://www.youtube.com/watch?v=jt3meXdP-QI)
@@ -47,7 +47,7 @@
 
 ### Valgrind
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *C++ Weekly &ndash; Ep 86: Valgrind compiler optimization* &ndash; J.Turner (2017)\
 [Watch at YouTube](https://www.youtube.com/watch?v=3l0BQs2ThTo)

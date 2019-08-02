@@ -15,7 +15,7 @@
 
 ## Introduction
 
-:link: **Webpages**
+:link:
 
 * [Design patterns &ndash; Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
 
@@ -23,11 +23,11 @@
 
 ## Adapter
 
-:link: **Webpages**
+:link:
 
 * [Adapter pattern &ndash; Wikipedia](https://en.wikipedia.org/wiki/Adapter_pattern)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Adapter design pattern* &ndash; D.Banas\
 [Watch at YouTube](https://www.youtube.com/watch?v=9jIgSsIfh_8)
@@ -36,11 +36,11 @@
 
 ## Bridge and pimpl
 
-:link: **Webpages**
+:link:
 
 * [Bridge pattern &ndash; Wikipedia](https://en.wikipedia.org/wiki/Bridge_pattern)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *The composite and bridge patterns* &ndash; D.Schmidt\
 [Watch at YouTube](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730) (from 12:11)
@@ -51,15 +51,15 @@
 
 ## Double-checked locking
 
-:memo: **Notes**
+:memo:
 
-* See also [Concurrency and parallelism &ndash; Multithreading](concurrency_and_parallelism.md#multithreading).
+* See also [*Concurrency and parallelism* &ndash; Multithreading](concurrency_and_parallelism.md#multithreading).
 
-:link: **Webpages**
+:link:
 
-* [Double-checked locking &ndash; Wikipedia](https://en.wikipedia.org/wiki/Double-checked_locking)
+* [*Double-checked locking* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Double-checked_locking)
 
-:movie_camera: **Videos**
+:movie_camera:
 
 * *Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015).\
 [Watch at YouTube](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
@@ -68,13 +68,13 @@
 
 ## Opaque typedefs
 
-:memo: **Notes**
+:memo:
 
 * See also [Core language &ndash; Opaque typedefs](core-language.md#opaque-typedefs).
 
-:link: **Webpages**
+:link:
 
-* [Tutorial: Emulating strong/opaque typedefs in C++ &ndash; J.Müller, foonathan::blog() (2016)](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
+* [*Tutorial: Emulating strong/opaque typedefs in C++* &ndash; J.Müller, foonathan::blog() (2016)](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 
 ---
 
@@ -88,10 +88,6 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 * [Is this key-oriented access-protection pattern a known idiom? &ndash; Stack Overflow](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom)
 
-:anchor: **Standards and technical reports**
-
-* [`[[nodiscard]]` in the Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf)
-
 ---
 
 ## Design principles
@@ -104,11 +100,11 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 > The five principles of class design [R.C.Martin]:
 >
-> * Single responsibility principle: a class should have one, and only one, reason to change.
-> * Open-closed principle: you should be able to extend a class behavior, without modifying it.
-> * Liskov substitution principle: derived classes must be substitutable for their base classes.
-> * Interface segregation principle: make fine grained interfaces that are client specific.
-> * Dependency inversion principle: depend on abstractions, not on concretions.
+> 1. Single responsibility principle: a class should have one, and only one, reason to change.
+> 2. Open-closed principle: you should be able to extend a class behavior, without modifying it.
+> 3. Liskov substitution principle: derived classes must be substitutable for their base classes.
+> 4. Interface segregation principle: make fine grained interfaces that are client specific.
+> 5. Dependency inversion principle: depend on abstractions, not on concretions.
 
 :link:
 

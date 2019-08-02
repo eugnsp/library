@@ -11,7 +11,7 @@
 
 ### Shunting yard algorithm
 
-:link: **Webpages**
+:link:
 
 * [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm) &ndash; Wikipedia
 * [Shunting yard algorithm](https://web.archive.org/web/20180807214703/http://wcipeg.com/wiki/Shunting_yard_algorithm) &ndash; PEGWiki
