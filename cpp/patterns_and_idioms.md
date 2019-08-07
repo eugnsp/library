@@ -6,6 +6,11 @@
 * [Adapter](#adapter)
 * [Bridge and pimpl](#bridge-and-pimpl)
 * [Double-checked locking](#double-checked-locking)
+* [Execute-around](#execute-around)
+	* [Execute-around object](execute-around-object)
+	* [Execute-around proxy](execute-around-proxy)
+	* [Execute-around pointer](execute-around-pointer)
+	* [Execute-around function](execute-around-function)
 * [Opaque typedefs](#opaque-typedefs)
 * [Passkey](#passkey)
 * [Design principles](#design-principles)
@@ -63,6 +68,52 @@
 
 * *Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015).\
 [Watch at YouTube](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
+
+---
+
+## Execute-around
+
+:link:
+
+* [*C++ patterns: Executing around sequences* &ndash; K.Henney, EuroPLoP (2000)](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf)
+
+### Execute-around object
+
+> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence.
+
+:memo:
+
+* This idiom is also known by the name of Resource acquisition is initialization (RAII).
+* An example of this idiom is provided by smart pointers, e.g. by `std::unique_ptr`. See [The standard library &ndash; Smart pointers](std_library.md#smart-pointers).
+
+:link:
+
+* [*Resource acquisition is initialization* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)
+* [*RAII* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/raii)
+* [*What is meant by Resource acquisition is initialization (RAII)?* &ndash; Stack Overflow](https://stackoverflow.com/questions/2321511/what-is-meant-by-resource-acquisition-is-initialization-raii)
+
+<!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
+
+### Execute-around proxy
+
+> Execute-around proxy idiom applies execute-around object idiom for individual calls on an object.
+
+### Execute-around pointer
+
+> Execute-around pointer idiom defines an execute-around proxy idiom when the actions performed on a target object are the same for all functions.
+
+:memo:
+
+* This idiom can be used to "convert" a non-thread-safe class into a thread-safe one by automatically locking and unlocking a mutex when member functions are called.
+
+:link:
+
+* [*Execute-around pointer* &ndash; WikiBooks](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer)
+* [*We make any object thread-safe* &ndash; AlexeyAB, CodeProject (2018)](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe)
+
+### Execute-around function
+
+> Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
 ---
 

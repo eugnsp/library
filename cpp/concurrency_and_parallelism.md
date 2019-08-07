@@ -13,6 +13,8 @@
 	* [Concurrency and the standard library](#concurrency-and-the-standard-library)
 		* [`std::atomic_shared_ptr`](#stdatomicsharedptr)
 		* [`std::promise`](#stdpromise)
+	<!-- * [Patterns and idioms](#patterns-and-idioms)
+		* [Execute-around pointer](#execute-around pointer) -->
 	* [POSIX threads](#posix-threads)
 ---
 
@@ -138,4 +140,6 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 
 https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf
 https://stackoverflow.com/questions/5002046/atomicity-in-c-myth-or-reality
+
+http://www.drdobbs.com/parallel/volatile-vs-volatile/212701484
 -->
