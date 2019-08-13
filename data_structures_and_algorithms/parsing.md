@@ -13,7 +13,7 @@
 
 :link:
 
-* [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm) &ndash; Wikipedia
+* [*Shunting-yard algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Shunting-yard_algorithm) &ndash; Wikipedia
 * [Shunting yard algorithm](https://web.archive.org/web/20180807214703/http://wcipeg.com/wiki/Shunting_yard_algorithm) &ndash; PEGWiki
 * [Parsing expressions by recursive descent](https://www.engr.mun.ca/~theo/Misc/exp_parsing.htm#shunting_yard) &ndash; T.Norvell, Memorial University of Newfoundland.
 * [The shunting-yard algorithm](http://www.reedbeta.com/blog/the-shunting-yard-algorithm/) &ndash; N.Reed blog

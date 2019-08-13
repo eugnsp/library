@@ -33,7 +33,7 @@
 
 :link:
 
-* [Benchmarking block-swapping algorithms &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
+* [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
 
 :book:
 
@@ -89,7 +89,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Lexicographically minimal string rotation &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+* [*Lexicographically minimal string rotation* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
 
 #### Duval's based algorithm
 
@@ -99,8 +99,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Lyndon factorization &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
-* [How does the minimum expression algorithm by Zhou Yuan work? &ndash; Quora](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work)
+* [*Lyndon factorization* &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
+* [*How does the minimum expression algorithm by Zhou Yuan work?* &ndash; Quora](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work)
 
 ---
 
@@ -115,8 +115,8 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Longest increasing subsequence &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
-* [Longest increasing subsequence &ndash; CP-Algorithms](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
+* [*Longest increasing subsequence* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+* [*Longest increasing subsequence* &ndash; CP-Algorithms](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
 
 :movie_camera:
 
@@ -152,13 +152,13 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Lyndon word &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lyndon_word)
+* [*Lyndon word* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lyndon_word)
 
 ### Duval's algorithm
 
 :link:
 
-* [Lyndon factorization &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
+* [*Lyndon factorization* &ndash; CP-Algorithms](https://cp-algorithms.com/string/lyndon_factorization.html)
 
 :page_facing_up:
 
@@ -190,7 +190,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Boyer&ndash;Moore majority vote algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
+* [*Boyer&ndash;Moore majority vote algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
 
 ---
 
@@ -213,12 +213,11 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Knuth&ndash;Morris&ndash;Pratt algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+* [*Knuth&ndash;Morris&ndash;Pratt algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 
 :movie_camera:
 
-* *KMP searching algorithm* &ndash; William Brinkman (2017).\
-[Watch at YouTube](https://www.youtube.com/watch?v=y2b94AxPlF8)
+* [*KMP searching algorithm* &ndash; William Brinkman (2017)](https://www.youtube.com/watch?v=y2b94AxPlF8)
 
 ---
 
@@ -226,5 +225,5 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 
 :link:
 
-* [Sqrt decomposition [CP-Algorithms]](https://cp-algorithms.com/data_structures/sqrt_decomposition.html)
-* [Sqrt decomposition [S.Kopeliovich, MIPT] (2016)](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf)
+* [*Sqrt decomposition* &ndash; CP-Algorithms](https://cp-algorithms.com/data_structures/sqrt_decomposition.html)
+* [*Sqrt decomposition* &ndash; S.Kopeliovich, MIPT (2016)](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf)

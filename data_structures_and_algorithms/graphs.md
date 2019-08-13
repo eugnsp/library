@@ -37,7 +37,7 @@
 
 :link:
 
-* [Breadth-first search &ndash; Wikipedia](https://en.wikipedia.org/wiki/Breadth-first_search)
+* [*Breadth-first search* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Breadth-first_search)
 
 :movie_camera:
 
@@ -97,8 +97,8 @@
 
 :link:
 
-* [Topological sorting &ndash; Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
-* [Topological sorting &ndash; SB Algorithm Repository](http://www3.cs.stonybrook.edu/~algorith/files/topological-sorting.shtml)
+* [*Topological sorting* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
+* [*Topological sorting* &ndash; SB Algorithm Repository](http://www3.cs.stonybrook.edu/~algorith/files/topological-sorting.shtml)
 
 :book:
 
@@ -134,7 +134,7 @@
 
 :link:
 
-[`tsort.c` by Mark Kettenis](http://agentzh.org/misc/code/coreutils/tsort.c.html)
+[*`tsort.c` source code* &ndash; M.Kettenis](http://agentzh.org/misc/code/coreutils/tsort.c.html)
 
 :book:
 

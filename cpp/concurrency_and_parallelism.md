@@ -100,10 +100,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 
 :movie_camera:
 
-* *Read, copy, update, then what? RCU for non-kernel programmers* &ndash; F.Pikus @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=rxQ5K9lo034)
-* *A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016)\
-[Watch at YouTube](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289) (from 38:09)
+* [*Read, copy, update, then what? RCU for non-kernel programmers* &ndash; F.Pikus @ CppCon (2017)](https://www.youtube.com/watch?v=rxQ5K9lo034)
+* [*A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016)](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289)
 
 :anchor:
 

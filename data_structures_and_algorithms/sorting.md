@@ -173,6 +173,6 @@
 
 :link:
 
-* [Pancake sorting &ndash; Wikipedia](https://en.wikipedia.org/wiki/Pancake_sorting)
+* [*Pancake sorting* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Pancake_sorting)
 
 

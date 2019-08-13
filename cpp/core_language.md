@@ -58,7 +58,7 @@
 
 :link:
 
-* [What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code? &ndash; Software Engineering](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c)
+* [*What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code?* &ndash; Software Engineering](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c)
 
 :anchor: **Standards and technical reports**
 
@@ -70,15 +70,15 @@
 
 :link:
 
-* [H.Sutter. *When and how to use exceptions* [Dr.Dobb's Journal] (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
-* [*Exceptions* [C++ reference]](https://en.cppreference.com/w/cpp/language/exceptions)
+* [*Exceptions* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/exceptions)
+* [*When and how to use exceptions* &ndash; H.Sutter, Dr.Dobb's Journal (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
 
 ### Exceptions in destructors
 
 :link:
 
-* [A.Krzemie&nacute;ski. *Destructors that throw* (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
-* [B.Kolpackov. *Throwing destructors* (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+* [*Destructors that throw* &ndash; A.Krzemie&nacute;ski (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
+* [*Throwing destructors* &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
 
 ---
 
@@ -88,11 +88,11 @@
 
 :link:
 
-* [*Argument-dependent lookup* [C++ reference]](https://en.cppreference.com/w/cpp/language/adl)
-* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?* [Stack Overflow]](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup)
-* [A.O'Dwyer. *What is ADL?* (2019)](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/)
-* [A.O'Dwyer. *ADL insanity* (2019)](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/)
-* [A.O'Dwyer. *How `hana::type<T>` "disables ADL"* (2019)](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/)
+* [*Argument-dependent lookup* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/adl)
+* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?* &ndash; Stack Overflow](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup)
+* [*What is ADL?* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/)
+* [*ADL insanity* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/)
+* [*How `hana::type<T>` "disables ADL"* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/)
 
 ---
 
@@ -107,8 +107,7 @@
 
 :movie_camera:
 
-* *You don't know `const` and `mutable`* &ndash; H.Sutter @ C++ and Beyond (2012)\
-[Watch at Channel 9](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank)
+* [*You don't know `const` and `mutable`* &ndash; H.Sutter @ C++ and Beyond (2012)](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank)
 
 ### `friend`
 
@@ -116,11 +115,11 @@
 
 :link:
 
-* [The power of hidden friends in C++ &ndash; A.Williams (2019)](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html)
+* [*The power of hidden friends in C++* &ndash; A.Williams (2019)](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html)
 
-:anchor: **Standards, technical reports and proposals**
+:anchor:
 
-* [WG21/P1601R0: Recommendations for specifying "hidden friends" (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
+* [WG21/P1601R0: *Recommendations for specifying "hidden friends"* (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
 
 ---
 
@@ -130,11 +129,11 @@
 
 :memo:
 
-* See also: [The standard library &ndash; `std::launder`](std_library.md#stdlaunder)
+* See also: [*`std::launder`* &ndash; The standard library](std_library.md#stdlaunder)
 
 :link:
 
-* [What is the strict aliasing rule? &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+* [*What is the strict aliasing rule?* &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
 
 ---
 
@@ -142,7 +141,7 @@
 
 :link:
 
-* [Structured bindings and tuple of references &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
+* [*Structured bindings and tuple of references* &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
 
 ## Templates
 
@@ -167,7 +166,7 @@ See [Templates](templates.md).
 
 :memo:
 
-* See also [Numeric data structures and algorithms &ndash; Floating-point numbers](../data_structures_and_algorithms/numeric.md).
+* See also [*Floating-point numbers* &ndash; Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md).
 
 :link:
 
@@ -186,39 +185,38 @@ See [Templates](templates.md).
 :memo:
 
 * > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.Müller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
-* See [Patterns and idioms &ndash; Opaque typedefs](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
+* See [*Opaque typedefs* &ndash; Patterns and idioms](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
 
 :anchor: **Standards, technical reports and proposals**
 
-* [WG21/N3741: Toward opaque typedefs for C++1Y, v2 &ndash; W.E.Brown (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
+* [WG21/N3741: *Toward opaque typedefs for C++1Y, v2* &ndash; W.E.Brown (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
 
 ### References
 
 :link:
 
-* [Is null reference possible? &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
+* [*Is null reference possible?* &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
 
 #### Lifetime of a temporary
 
 :link:
 
-* [Does a `const` reference class member prolong the life of a temporary? &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
-* [Lifetime of a temporary &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
+* [*Does a `const` reference class member prolong the life of a temporary?* &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
+* [*Lifetime of a temporary* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
 
 #### Rvalue references and move semantics
 
 :link:
 
-* [A brief introduction to rvalue references &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
-* [C++ rvalue references explained &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
-* [What is move semantics? &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
-* [Rvalues, lvalues and formal definitions &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
-* [Pass by value vs pass by rvalue reference &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
+* [*A brief introduction to rvalue references* &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
+* [*C++ rvalue references explained* &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
+* [*What is move semantics?* &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
+* [*Rvalues, lvalues and formal definitions* &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
+* [*Pass by value vs pass by rvalue reference* &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
 
 :movie_camera:
 
-* *The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=PNRju6_yn3o)
+* [*The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)](https://www.youtube.com/watch?v=PNRju6_yn3o)
 
 
 

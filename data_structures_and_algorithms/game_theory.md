@@ -17,7 +17,7 @@
 
 :link:
 
-* [Stable marriage problem &ndash; Wikipedia](https://en.wikipedia.org/wiki/Stable_marriage_problem)
+* [*Stable marriage problem* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Stable_marriage_problem)
 
 :movie_camera:
 
@@ -41,8 +41,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part I
 
 :link:
 
-* [The stable marriage problem and school choice &ndash; AMS Feature column](http://www.ams.org/publicoutreach/feature-column/fc-2015-03)
-* [Stable marriage problem &ndash; Rosetta Code](https://rosettacode.org/wiki/Stable_marriage_problem)
+* [*The stable marriage problem and school choice* &ndash; AMS Feature column](http://www.ams.org/publicoutreach/feature-column/fc-2015-03)
+* [*Stable marriage problem* &ndash; Rosetta Code](https://rosettacode.org/wiki/Stable_marriage_problem)
 
 :page_facing_up:
 

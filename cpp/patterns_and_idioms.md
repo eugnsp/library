@@ -30,12 +30,11 @@
 
 :link:
 
-* [Adapter pattern &ndash; Wikipedia](https://en.wikipedia.org/wiki/Adapter_pattern)
+* [*Adapter pattern* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Adapter_pattern)
 
 :movie_camera:
 
-* *Adapter design pattern* &ndash; D.Banas\
-[Watch at YouTube](https://www.youtube.com/watch?v=9jIgSsIfh_8)
+* [*Adapter design pattern* &ndash; D.Banas](https://www.youtube.com/watch?v=9jIgSsIfh_8)
 
 ---
 
@@ -43,14 +42,12 @@
 
 :link:
 
-* [Bridge pattern &ndash; Wikipedia](https://en.wikipedia.org/wiki/Bridge_pattern)
+* [*Bridge pattern* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Bridge_pattern)
 
 :movie_camera:
 
-* *The composite and bridge patterns* &ndash; D.Schmidt\
-[Watch at YouTube](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730) (from 12:11)
-* *Bridge design pattern* &ndash; D.Banas\
-[Watch at YouTube](https://www.youtube.com/watch?v=qG286LQM6BU)
+* [*The composite and bridge patterns* &ndash; D.Schmidt](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
+* [*Bridge design pattern* &ndash; D.Banas](https://www.youtube.com/watch?v=qG286LQM6BU)
 
 ---
 
@@ -58,7 +55,7 @@
 
 :memo:
 
-* See also [*Concurrency and parallelism* &ndash; Multithreading](concurrency_and_parallelism.md#multithreading).
+* See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
 :link:
 
@@ -66,8 +63,7 @@
 
 :movie_camera:
 
-* *Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015).\
-[Watch at YouTube](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
+* [*Live lock-free or deadlock (practical lock-free programming), Part I* &ndash; F.Pikus @ CppCon (2015)](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
 
 ---
 

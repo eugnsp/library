@@ -25,7 +25,7 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :link:
 
-* [`std::next_permutation` implementation explanation &ndash; Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
+* [*`std::next_permutation` implementation explanation* &ndash; Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
 
 :book:
 
@@ -38,6 +38,6 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :link:
 
-* [Heap's algorithm &ndash; Wikipedia](https://en.wikipedia.org/wiki/Heap%27s_algorithm)
-* [Heap algorithm for permutations &ndash; Stack Overflow](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)
+* [*Heap's algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Heap%27s_algorithm)
+* [*Heap algorithm for permutations* &ndash; Stack Overflow](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)
 

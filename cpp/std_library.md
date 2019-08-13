@@ -39,8 +39,9 @@
 
 :movie_camera:
 
-* *STL algorithms: How to use them and how to write your own* &ndash; M.Clow @ ACCU (2016)\
-[Watch at YouTube](https://www.youtube.com/watch?v=3nXLxMYXgWs)
+* [*105 STL algorithms in less than an hour* &ndash; J.Boccara @ ACCU (2018)](https://www.youtube.com/watch?v=bXkWuUe9V2I)
+* [*STL algorithms: How to use them and how to write your own* &ndash; M.Clow @ ACCU (2016)](https://www.youtube.com/watch?v=3nXLxMYXgWs)
+* [*STL algorithms in action* &ndash; M.VanLoon @ CppCon (2015)](https://www.youtube.com/watch?v=eidEEmGLQcU)
 
 ---
 
@@ -48,13 +49,11 @@
 
 :movie_camera:
 
-* *If I had my 'druthers: A proposal for improving the containers in C++2x* &ndash; B.Steagall @ C++Now (2018)\
-[Watch at YouTube](https://www.youtube.com/watch?v=bAE0qteS4Rk)
+* [*If I had my 'druthers: A proposal for improving the containers in C++2x* &ndash; B.Steagall @ C++Now (2018)](https://www.youtube.com/watch?v=bAE0qteS4Rk)
 
 ### Associative containers
 
-> Associative containers are: `std::set` (collection of unique keys, sorted by keys),
-`std::map` (collection of key-value pairs, sorted by keys, keys are unique), `std::multiset` (collection of keys, sorted by keys), and `std::multimap` (collection of key-value pairs, sorted by keys).
+> Associative containers are: `std::set` (collection of unique keys, sorted by keys), `std::map` (collection of key-value pairs, sorted by keys, keys are unique), `std::multiset` (collection of keys, sorted by keys), and `std::multimap` (collection of key-value pairs, sorted by keys).
 
 :link:
 
@@ -97,8 +96,7 @@
 
 :movie_camera:
 
-* *Regular expressions in C++, present and future* &ndash; T.Shen @ CppCon (2016)\
-[Watch at YouTube](https://www.youtube.com/watch?v=N_rkHzhXueo)
+* [*Regular expressions in C++, present and future* &ndash; T.Shen @ CppCon (2016)](https://www.youtube.com/watch?v=N_rkHzhXueo)
 
 ---
 
@@ -141,15 +139,13 @@
 
 :movie_camera:
 
-* *`<functional>`: What's new, and proper usage* &ndash; S.T.Lavavej @ CppCon (2015)\
-[Watch at YouTube](https://www.youtube.com/watch?v=zt7ThwVfap0)
+* [*`<functional>`: What's new, and proper usage* &ndash; S.T.Lavavej @ CppCon (2015)](https://www.youtube.com/watch?v=zt7ThwVfap0)
 
 ### Pairs and tuples
 
 :movie_camera:
 
-* *`tuple<>`: What's new and how it works* &ndash; S.T.Lavavej @ CppCon (2016)\
-[Watch at YouTube](https://www.youtube.com/watch?v=JhgWFYfdIho)
+* [*`tuple<>`: What's new and how it works* &ndash; S.T.Lavavej @ CppCon (2016)](https://www.youtube.com/watch?v=JhgWFYfdIho)
 
 ### `std::launder`
 
