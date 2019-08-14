@@ -25,7 +25,7 @@
 
 ## Rotation (cyclic shift)
 
-> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>(a<sub>0</sub>a<sub>2</sub>...a<sub>n-1</sub>)</code> is a sequence <code>(a<sub>P(1)</sub>a<sub>P(2)</sub>...a<sub>P(n-1)</sub>)</code>, where the index permutation is `P(i) = (i + k) % n`.
+> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>{a<sub>0</sub>a<sub>2</sub>...a<sub>n-1</sub>}</code> is a sequence <code>{a<sub>P(1)</sub>a<sub>P(2)</sub>...a<sub>P(n-1)</sub>}</code>, where the index permutation is `P(i) = (i + k) % n`.
 
 :memo:
 
@@ -52,7 +52,7 @@
 
 ### Three reverses rotation algorithm
 
-> Gist of the algorithm: reverse the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>, then reverse the whole sequence <code>(a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>)</code>.
+> Gist of the algorithm: reverse the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then reverse the whole sequence <code>{a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>}</code>.
 
 :memo:
 
@@ -61,7 +61,7 @@
 
 ### Gries&ndash;Mills algorithm
 
-> Gist of the algorithm: if `k = n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>; if `k < n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>2k-1</sub>)</code>, then proceed recursively for the suffix subsequence <code>(a<sub>0</sub>...a<sub>k-1</sub>a<sub>2k</sub>...a<sub>n-1</sub>)</code> with `k' = k`; if `k > n - k`, swap the subsequences <code>(a<sub>0</sub>...a<sub>n-k-1</sub>)</code> and <code>(a<sub>k</sub>...a<sub>n-1</sub>)</code>, then proceed recursively for the suffix subsequence <code>(a<sub>n-k</sub>...a<sub>k-1</sub>a<sub>0</sub>...a<sub>n-k-1</sub>)</code> with `k' = 2k - n`.
+> Gist of the algorithm: if `k = n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>; if `k < n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>2k-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>0</sub>...a<sub>k-1</sub>a<sub>2k</sub>...a<sub>n-1</sub>}</code> with `k' = k`; if `k > n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>n-k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>n-k</sub>...a<sub>k-1</sub>a<sub>0</sub>...a<sub>n-k-1</sub>}</code> with `k' = 2k - n`.
 
 :memo:
 
@@ -71,7 +71,7 @@
 
 ### Dolphin algoirithm
 
-> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>(a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...)</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>(a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>)</code>.
+> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>{a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...}</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>{a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>}</code>.
 
 :memo:
 
@@ -191,19 +191,6 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data*. Commun
 :link:
 
 * [*Boyer&ndash;Moore majority vote algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
-
----
-
-## Permutations
-
-### Random permutations
-
-#### Fisher&ndash;Yates AKA Knuth shuffle algoritm
-
-:link:
-
-* [*Fisher&ndash;Yates shuffle* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
-* [*Knuth shuffle* &ndash; Rosetta Code](https://www.rosettacode.org/wiki/Knuth_shuffle)
 
 ---
 

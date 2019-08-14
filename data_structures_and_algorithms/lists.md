@@ -14,7 +14,7 @@
 
 :link:
 
-* [Linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
+* [*Linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
 
 ---
 
@@ -35,14 +35,14 @@
 
 :link:
 
-* [Doubly linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
+* [*Doubly linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
 
 ### XOR doubly linked lists
 
 :link:
 
-* [XOR linked list &ndash; Wikipedia](https://en.wikipedia.org/wiki/XOR_linked_list)
-* [A memory-efficient doubly linked list &ndash; P.Sinha, Linux Journal](https://www.linuxjournal.com/article/6828)
+* [*XOR linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/XOR_linked_list)
+* [*A memory-efficient doubly linked list* &ndash; P.Sinha, Linux Journal](https://www.linuxjournal.com/article/6828)
 
 ---
 
@@ -56,5 +56,4 @@
 
 :page_facing_up:
 
-* *A skip list cookbook* &ndash; W.Pugh, Tech. Rep. UMIACS-TR-89-72.1 (1990)\
-[Full text](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf)
+* [*A skip list cookbook* &ndash; W.Pugh, Tech. Rep. UMIACS-TR-89-72.1 (1990)](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf)

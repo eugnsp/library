@@ -159,7 +159,7 @@
 
 :link:
 
-* [Graph connectivity &ndash; AlgoWiki](https://algowiki-project.org/en/Graph_connectivity)
+* [*Graph connectivity* &ndash; AlgoWiki](https://algowiki-project.org/en/Graph_connectivity)
 
 :page_facing_up:
 
@@ -179,8 +179,7 @@
 
 :movie_camera:
 
-* *Bridges and articulation points algorithm* &ndash;William Fiset\
-[Watch at YouTube](https://www.youtube.com/watch?v=aZXi1unBdJA)
+* [*Bridges and articulation points algorithm* &ndash; W.Fiset](https://www.youtube.com/watch?v=aZXi1unBdJA)
 
 #### Biconnected components
 
@@ -188,4 +187,4 @@
 
 :link:
 
-* [Biconnected component &ndash; Wikipedia](https://en.wikipedia.org/wiki/Biconnected_component)
+* [*Biconnected component* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Biconnected_component)

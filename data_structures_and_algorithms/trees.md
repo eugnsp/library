@@ -114,17 +114,15 @@
 
 :link:
 
-* [Fenwick tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
-* [Binary indexed trees &ndash; Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
-* [Fenwick tree &ndash; Brilliant](https://brilliant.org/wiki/fenwick-tree/)
-* [A JavaScript implementation of binary indexed tree &ndash; Github](https://github.com/Microsoft/fast-binary-indexed-tree-js)
+* [*Fenwick tree* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
+* [*Binary indexed trees* &ndash; Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
+* [*Fenwick tree* &ndash; Brilliant](https://brilliant.org/wiki/fenwick-tree/)
+* [*A JavaScript implementation of binary indexed tree* &ndash; GitHub](https://github.com/Microsoft/fast-binary-indexed-tree-js)
 
 :movie_camera:
 
-* *Fenwick trees* &ndash; Algorithms Live!\
-[Watch at YouTube](https://www.youtube.com/watch?v=kPaJfAUwViY)
-* *Fenwick tree/Binary indexed tree* &ndash; William Fiset.\
-[Watch at YouTube](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
+* [*Fenwick trees* &ndash; Algorithms Live!](https://www.youtube.com/watch?v=kPaJfAUwViY)
+* [*Fenwick tree/Binary indexed tree* &ndash; W.Fiset](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
 
 :book:
 

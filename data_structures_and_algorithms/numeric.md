@@ -24,10 +24,8 @@
 
 :movie_camera:
 
-* *Demystifying floating point* &ndash; J.Farrier @ CppCon (2015)\
-[Watch at YouTube](https://www.youtube.com/watch?v=k12BJGSc2Nc)
-* *Beating floats at their own game* &ndash; J.Gustafson @ HPC Advisory Council Australia Conference (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=N05yYbUZMSQ)
+* [*Demystifying floating point* &ndash; J.Farrier @ CppCon (2015)](https://www.youtube.com/watch?v=k12BJGSc2Nc)
+* [*Beating floats at their own game* &ndash; J.Gustafson @ HPC Advisory Council Australia Conference (2017)](https://www.youtube.com/watch?v=N05yYbUZMSQ)
 
 ### Denormal numbers
 
@@ -38,5 +36,4 @@
 
 :movie_camera:
 
-* *On subnormal floating point and abnormal timing* &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)\
-[Watch at YouTube](https://www.youtube.com/watch?v=DftejgRgmc8)
+* [*On subnormal floating point and abnormal timing* &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)](https://www.youtube.com/watch?v=DftejgRgmc8)
