@@ -23,8 +23,7 @@
 
 * Stable marriage problem &ndash; Numberphile (2014).\
 Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part II](https://www.youtube.com/watch?v=LtTV6rIxhdo)
-* The stable matching algorithm: Examples and implementation &ndash; The Simple Engineer (2017).\
-[Watch at YouTube](https://www.youtube.com/watch?v=FhRf0j068ZA)
+* [*The stable matching algorithm: Examples and implementation* &ndash; The Simple Engineer (2017)](https://www.youtube.com/watch?v=FhRf0j068ZA)
 
 :book:
 
