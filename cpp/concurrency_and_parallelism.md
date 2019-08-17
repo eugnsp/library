@@ -11,7 +11,7 @@
 		* [Hazard pointers](#hazard-pointers)
 		* [Read-copy-update (RCU)](#read-copy-update-rcu)
 	* [Concurrency and the standard library](#concurrency-and-the-standard-library)
-		* [`std::atomic_shared_ptr`](#stdatomicsharedptr)
+		* [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
 		* [`std::promise`](#stdpromise)
 	<!-- * [Patterns and idioms](#patterns-and-idioms)
 		* [Execute-around pointer](#execute-around pointer) -->
@@ -28,24 +28,22 @@
 
 :movie_camera:
 
-* *C++ on GPUs done right?* &ndash; P.Steinbach @ Meeting C++ (2015)\
-[Watch at YouTube](https://www.youtube.com/watch?v=z43l_LaOqnM)
+* [*C++ on GPUs done right?* &ndash; P.Steinbach @ Meeting C++ (2015)](https://www.youtube.com/watch?v=z43l_LaOqnM)
 
 ## Multithreading
 
 :movie_camera:
 
-* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
-* *C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)\
-[Watch at YouTube](https://www.youtube.com/watch?v=paK38WAq8WY)
+* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)
+	* [part I](https://www.youtube.com/watch?v=GNw3RXr-VJk)
+	* [part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
+* [*C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)](https://www.youtube.com/watch?v=paK38WAq8WY)
+* [*The continuing future of C++ concurrency* &ndash; A.Williams @ CppCon (2016)](https://www.youtube.com/watch?v=FaHJOkOrfNo)
 
 :book:
 
-* P.E.McKenney. *Is parallel programming hard, and, if so, what can you do about it?* (2018)\
-[Book website](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
-* A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed. (2019)\
-[Book website](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
+* [P.E.McKenney. *Is parallel programming hard, and, if so, what can you do about it?* (2018)](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
+* [A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed. (2019)](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
 * Ch. 9: *Parallelism and concurrency* &ndash; J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing (2017)\
 [Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
 * Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed. (2012)\
@@ -53,8 +51,7 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part I
 
 :page_facing_up:
 
-* *Memory barriers: a hardware view for software hackers* &ndash; P.E.McKenney (2010)\
-[Full text](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf)
+* [*Memory barriers: a hardware view for software hackers* &ndash; P.E.McKenney (2010)](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf)
 
 
 ### Lock-based
@@ -77,12 +74,13 @@ explicit locks.
 
 :movie_camera:
 
-* *C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017)\
-[Watch at YouTube](https://www.youtube.com/watch?v=ZQFzMfHIxng)
-* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015)\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
-* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012)\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
+* [*C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017)](https://www.youtube.com/watch?v=ZQFzMfHIxng)
+* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015)
+	* [part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
+	* [part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
+* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012)
+	* [part I](https://www.youtube.com/watch?v=A8eCGOqgvH4)
+	* [part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
 
 #### Hazard pointers
 
@@ -126,7 +124,6 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part I
 :link:
 
 * [*What is `std::promise`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/11004273/what-is-stdpromise)
-*
 
 ### POSIX threads
 
