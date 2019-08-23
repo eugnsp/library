@@ -73,6 +73,10 @@
 
 > Unordered containers are: `std::unordered_set` (collection of unique keys, hashed by keys), `std::unordered_map` (collection of key-value pairs, hashed by keys, keys are unique), `std::unordered_multiset` (collection of keys, hashed by keys), and `std::unordered_multimap` (collection of key-value pairs, hashed by keys).
 
+:movie_camera:
+
+* [*You can do better than `std::unordered_map`: New improvements to hash table performance* &ndash; M.Skarupke @ C++ Now (2018)](https://www.youtube.com/watch?v=M2fKMP47slQ)
+
 :anchor:
 
 * [WG21/P0919R3: *Heterogeneous lookup for unordered containers* &ndash; M.Pusz (2018)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html)

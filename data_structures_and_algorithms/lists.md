@@ -15,6 +15,8 @@
 :link:
 
 * [*Linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
+* [*Are lists evil?* &ndash; B.Stroustrup (2014)](https://isocpp.org/blog/2014/06/stroustrup-lists)
+* [*Number crunching: Why you should never, ever, EVER use linked-list in your code again* &ndash; K.Hedstr&ouml;m (2012)](https://kjellkod.wordpress.com/2012/02/25/why-you-should-never-ever-ever-use-linked-list-in-your-code-again/)
 
 ---
 
@@ -24,8 +26,7 @@
 
 :page_facing_up:
 
-* *Unrolling lists* &ndash; Z.Shao, J.H.Reppy, A.W.Appel. ACM conference on LISP and functional programming, [185](https://doi.org/10.1145/182590.182453) (1994)\
-[Full text](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz)
+* [*Unrolling lists* &ndash; Z.Shao, J.H.Reppy, A.W.Appel. @ ACM conference on LISP and functional programming, 185 (1994)](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz)
 
 ---
 
@@ -50,9 +51,7 @@
 
 :movie_camera:
 
-* *Randomization: Skip lists* &ndash; MIT OCW 6.046J/18.410J: Design and analysis of algorithms (2015)\
-[Watch at YouTube](https://www.youtube.com/watch?v=2g9OSRKJuzM) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/)
+* [*Randomization: Skip lists* &ndash; MIT OCW 6.046J/18.410J: Design and analysis of algorithms (2015)](https://www.youtube.com/watch?v=2g9OSRKJuzM)
 
 :page_facing_up:
 

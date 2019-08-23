@@ -35,8 +35,8 @@
 :movie_camera:
 
 * *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)
-	* [part I](https://www.youtube.com/watch?v=GNw3RXr-VJk)
-	* [part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
+	* [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk)
+	* [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
 * [*C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)](https://www.youtube.com/watch?v=paK38WAq8WY)
 * [*The continuing future of C++ concurrency* &ndash; A.Williams @ CppCon (2016)](https://www.youtube.com/watch?v=FaHJOkOrfNo)
 
@@ -76,11 +76,11 @@ explicit locks.
 
 * [*C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017)](https://www.youtube.com/watch?v=ZQFzMfHIxng)
 * *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015)
-	* [part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
-	* [part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
+	* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
+	* [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
 * *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012)
-	* [part I](https://www.youtube.com/watch?v=A8eCGOqgvH4)
-	* [part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
+	* [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4)
+	* [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
 
 #### Hazard pointers
 

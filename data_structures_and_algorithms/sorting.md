@@ -11,9 +11,15 @@
 	* [Order statistics](#order-statistics)
 * [Linear-time sorting](#linear-time-sorting)
 	* [Count sort](#count-sort)
-* [Other](#other)
+	* [Radix sort](#radix-sort)
+* [Other algorithms](#other-algorithms)
 	* [Pancake sorting](#pancake-sorting)
+	* [Spreadsort](#spreadsort)
 ---
+
+:link:
+
+* [*Sort* &ndash; Boost libraries](https://www.boost.org/doc/libs/release/libs/sort/)
 
 ## Comparison sorting
 
@@ -26,19 +32,16 @@
 
 :link:
 
-* [Comparison sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
-* [Minimal number of comparisons needed to sort `n` elements &ndash; The OEIS](https://oeis.org/A036604)
+* [*Comparison sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
+* [*Minimal number of comparisons needed to sort `n` elements* &ndash; The OEIS](https://oeis.org/A036604)
 
 :movie_camera:
 
-* *Lower bounds for sorting* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=Nz1KZXbghj8) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Lower bounds for sorting* &ndash; MIT OCW 6.006: Introduction to algorithms (2011)](https://www.youtube.com/watch?v=Nz1KZXbghj8)
 
 :page_facing_up:
 
-* J.L.Bentley, M.D.McIlroy. *Engineering a sort function*. Software: Practice and experience **23**, [1249](https://dx.doi.org/10.1002/spe.4380231105) (1993).\
-[Full text](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
+* [*Engineering a sort function* &ndash; J.L.Bentley, M.D.McIlroy. Software: Practice and experience **23**, 1249 (1993)](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
 
 :dizzy: **Visualizations**
 
@@ -54,8 +57,7 @@
 
 :book:
 
-* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+* [Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * Ch. 8: *Elementary sorting methods*, Sec.: *Insertion sort* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
 
 ### Selection sort
@@ -66,7 +68,7 @@
 
 :link:
 
-* [Selection sort &ndash; Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)
+* [*Selection sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)
 
 :book:
 
@@ -98,18 +100,16 @@
 
 :link:
 
-* [Counting inversions in a permutation &ndash; CS 122: Algorithm design and analysis (2010)](https://en.wikipedia.org/wiki/Merge_sort)
+* [*Counting inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010)](https://en.wikipedia.org/wiki/Merge_sort)
 
 :movie_camera:
 
-* *Counting the number of inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010).\
-[Watch at YouTube](https://www.youtube.com/watch?v=Vj5IOD7A6f8) |
-[Course website](http://web.cs.ucdavis.edu/~gusfield/cs122f10/)
+* [*Counting the number of inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010)](https://www.youtube.com/watch?v=Vj5IOD7A6f8)
+<!-- [Course website](http://web.cs.ucdavis.edu/~gusfield/cs122f10/) -->
 
 :book:
 
-* Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm design*. Pearson, 2005.\
-[Book website](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
+* [Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm design*. Pearson, 2005](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
 
@@ -131,11 +131,8 @@
 
 :movie_camera:
 
-* *Order statistics, median* &ndash; MIT OCW 6.046J/18.410J: Introduction to algorithms (2005).\
-[Watch at YouTube](https://www.youtube.com/watch?v=mR_RUjsJnV8) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/)
-* Lectures 6-10: *Finding the smallest and second smallest elements* &ndash; Alexander Stepanov: Efficient programming with components (2013).\
-[Watch at YouTube](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD) (subsequent lectures are in the playlist)
+* [*Order statistics, median* &ndash; MIT OCW 6.046J/18.410J: Introduction to algorithms (2005)](https://www.youtube.com/watch?v=mR_RUjsJnV8)
+* [Lectures 6-10: *Finding the smallest and second smallest elements* &ndash; Alexander Stepanov: Efficient programming with components (2013)](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD)
 
 :book:
 
@@ -155,15 +152,24 @@
 
 :movie_camera:
 
-* *Counting sort and radix sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) (from 32:46) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Counting sort and radix sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011)](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966)
 
-<!--### Count sort-->
+### Count sort
+
+### Radix sort
+
+:link:
+
+* [*Radix sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Radix_sort)
+* [*American flag sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/American_flag_sort)
+
+:movie_camera:
+
+* [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort* &ndash; M.Skarupke @ C++ Now (2017)](https://www.youtube.com/watch?v=zqs87a_7zxw)
 
 ---
 
-## Other
+## Other algorithms
 
 ### Pancake sorting
 
@@ -175,4 +181,9 @@
 
 * [*Pancake sorting* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Pancake_sorting)
 
+### Spreadsort
 
+:link:
+
+* [*Spreadsort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Spreadsort)
+* [*Spreadsort* &ndash; Boost.Sort library](https://www.boost.org/doc/libs/1_71_0/libs/sort/doc/html/sort/single_thread/spreadsort.html)

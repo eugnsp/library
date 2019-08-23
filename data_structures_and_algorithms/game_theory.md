@@ -21,8 +21,9 @@
 
 :movie_camera:
 
-* Stable marriage problem &ndash; Numberphile (2014).\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part II](https://www.youtube.com/watch?v=LtTV6rIxhdo)
+* Stable marriage problem &ndash; Numberphile (2014)
+	* [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg)
+	* [Part II](https://www.youtube.com/watch?v=LtTV6rIxhdo)
 * [*The stable matching algorithm: Examples and implementation* &ndash; The Simple Engineer (2017)](https://www.youtube.com/watch?v=FhRf0j068ZA)
 
 :book:
@@ -45,5 +46,4 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part I
 
 :page_facing_up:
 
-* D.Gale, L.S.Shapley. *College admissions and the stability of marriage*. American Mathematical Monthly **69**, [9](https://dx.doi.org/10.2307/2312726) (1962).\
-[Full text](http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf)
+* [*College admissions and the stability of marriage* &ndash; D.Gale, L.S.Shapley @ American Mathematical Monthly **69**, 9 (1962)](http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf)

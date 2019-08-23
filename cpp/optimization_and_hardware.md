@@ -36,5 +36,6 @@
 
 :movie_camera:
 
+* [*Undefined behavior and compiler optimizations* &ndash; J.Regehr @ C++ Now (2018)](https://www.youtube.com/watch?v=AeEwxtEOgH0)
 * [*Understanding compiler optimization* &ndash; C.Carruth @ code::dive (2016)](https://www.youtube.com/watch?v=haQ2cijhvhE)
 * [*Optimization tips* &ndash; A.Alexandrescu @ CppCon (2014)](https://www.youtube.com/watch?v=Qq_WaiwzOtI)
