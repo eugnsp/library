@@ -15,6 +15,8 @@
 	* [`friend`](#friend)
 * [Memory access](#memory-access)
 	* [Strict aliasing rule](#strict-aliasing-rule)
+* [Standards](#standards)
+	* [C++20](#c20)
 * [Structured bindings](#structured-bindings)
 * [Templates](#templates)
 * [Tricks](#tricks)
@@ -134,6 +136,16 @@
 :link:
 
 * [*What is the strict aliasing rule?* &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+
+---
+
+## Standards
+
+###	C++20
+
+:movie_camera:
+
+* [*How C++20 can simplify `std::tuple`* &ndash; A.Meredith @ ACCU (2019)](https://www.youtube.com/watch?v=SvxBvSK4i4k)
 
 ---
 

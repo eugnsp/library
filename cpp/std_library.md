@@ -10,8 +10,10 @@
 	* [`std::vector<bool>`](#stdvectorbool)
 	* [Unordered containers](#unordered-containers)
 * [Random number generation](#random-number-generation)
-* [Regular expressions]($regular-expressions)
+* [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
+	* [`std::shared_ptr`](#stdshared_ptr)
+	* [`std::unique_ptr`](#stdunique_ptr)
 * [Strings](#strings)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
@@ -28,10 +30,8 @@
 
 :book:
 
-* *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* &ndash; J.Galowicz. Packt Publishing, 2017\
-[Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* Ch. 18: *Concurrency* in *The C++ standard library: A tutorial and reference* &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed., 2012\
-[Book website](http://www.cppstdlib.com/)
+* [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* &ndash; J.Galowicz. Packt Publishing (2017)](https://www.packtpub.com/application-development/c17-stl-cookbook)
+* Ch. 18: *Concurrency* in [*The C++ standard library: A tutorial and reference* &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)](http://www.cppstdlib.com/)
 
 ---
 
@@ -73,8 +73,13 @@
 
 > Unordered containers are: `std::unordered_set` (collection of unique keys, hashed by keys), `std::unordered_map` (collection of key-value pairs, hashed by keys, keys are unique), `std::unordered_multiset` (collection of keys, hashed by keys), and `std::unordered_multimap` (collection of key-value pairs, hashed by keys).
 
+:link:
+
+* [*Why is there no `std::is_transparent` equivalent for unordered containers?* &ndash; Stack Overflow](https://stackoverflow.com/questions/33373228/why-is-there-no-stdis-transparent-equivalent-for-unordered-containers)
+
 :movie_camera:
 
+* [*#Hashing* - Dietmar K&uuml;hl @ ACCU (2019)](https://www.youtube.com/watch?v=CJsQSIp7-Ig)
 * [*You can do better than `std::unordered_map`: New improvements to hash table performance* &ndash; M.Skarupke @ C++ Now (2018)](https://www.youtube.com/watch?v=M2fKMP47slQ)
 
 :anchor:
@@ -110,7 +115,6 @@
 
 * [GotW #91: *Smart pointer parameters* &ndash; H.Sutter (2013)](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?* &ndash; Stack Overflow](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed)
-* [*What to use `std::optional` or `std::unique_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1)
 
 ### `std::shared_ptr`
 
@@ -118,6 +122,13 @@
 
 * [*`std::shared_ptr` thread safety* &ndash; Stack Overflow](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety)
 * [*`std::shared_ptr`'s secret constructor* &ndash; A.Williams](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+
+### `std::unique_ptr`
+
+:link:
+
+* [*What to use `std::optional` or `std::unique_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1)
+* [*Should I assign or reset a `unique_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr)
 
 ---
 
@@ -149,6 +160,7 @@
 
 :movie_camera:
 
+* [*How C++20 can simplify `std::tuple`* &ndash; A.Meredith @ ACCU (2019)](https://www.youtube.com/watch?v=SvxBvSK4i4k)
 * [*`tuple<>`: What's new and how it works* &ndash; S.T.Lavavej @ CppCon (2016)](https://www.youtube.com/watch?v=JhgWFYfdIho)
 
 ### `std::launder`

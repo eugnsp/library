@@ -12,6 +12,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :game_die: [Game theory](data_structures_and_algorithms/game_theory.md)
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :curly_loop: [Graphs](data_structures_and_algorithms/graphs.md)
+	* :hash: [Hash tables](data_structures_and_algorithms/hash_tables.md)
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)

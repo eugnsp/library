@@ -23,7 +23,7 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :memo:
 
-* This algorithm is used in some implementations of `std::next_permutation` in the Standard library.
+* This algorithm is used in some implementations of `std::next_permutation` in the standard library.
 
 :link:
 

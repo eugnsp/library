@@ -5,6 +5,7 @@
 * [Binomial coefficient](#binomial-coefficient)
 * [Floating-point numbers](#floating-point-numbers)
 	* [Denormal numbers](#denormal-numbers)
+* [Kahan summation algorithm](#kahan-summation-algorithm)
 
 ---
 
@@ -19,6 +20,7 @@
 
 :link:
 
+* [*What every computer scientist should know about floating-point arithmetic* &ndash; D.Goldberg](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
 * [*Floating point arithmetic before IEEE 754* &ndash; C.Moler (2019)](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/)
 * [*Beating floating point at its own game: Posit arithmetic* &ndash; J.L.Gustafson, I.Yonemoto](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
 
@@ -37,3 +39,10 @@
 :movie_camera:
 
 * [*On subnormal floating point and abnormal timing* &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)](https://www.youtube.com/watch?v=DftejgRgmc8)
+
+---
+
+## Kahan summation algorithm
+
+* [*Kahan summation algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
+* [*Kahan summation* &ndash; Stack Overflow](https://stackoverflow.com/questions/4940072/kahan-summation)
