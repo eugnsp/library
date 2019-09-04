@@ -43,11 +43,9 @@
 :book:
 
 * [P.E.McKenney. *Is parallel programming hard, and, if so, what can you do about it?* (2018)](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
-* [A.Williams. *C++ concurrency in action: Practical multithreading.* Manning, 2<sup>nd</sup> ed. (2019)](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
-* Ch. 9: *Parallelism and concurrency* &ndash; J.Galowicz. *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* Packt Publishing (2017)\
-[Book website](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* Ch. 18: *Concurrency* &ndash; N.M.Josuttis. *The C++ standard library: A tutorial and reference.* Addison-Wesley, 2<sup>nd</sup> ed. (2012)\
-[Book website](http://www.cppstdlib.com/)
+* [*C++ concurrency in action: Practical multithreading.* A.Williams. Manning, 2<sup>nd</sup> ed. (2019)](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
+* [Ch. 9: *Parallelism and concurrency* &ndash; *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* J.Galowicz. Packt Publishing (2017)](https://www.packtpub.com/application-development/c17-stl-cookbook)
+* [Ch. 18: *Concurrency* &ndash; *The C++ standard library: A tutorial and reference.* N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)](http://www.cppstdlib.com/)
 
 :page_facing_up:
 

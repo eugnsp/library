@@ -76,6 +76,8 @@
 :link:
 
 * [*Why is there no `std::is_transparent` equivalent for unordered containers?* &ndash; Stack Overflow](https://stackoverflow.com/questions/33373228/why-is-there-no-stdis-transparent-equivalent-for-unordered-containers)
+* [*Why is `unordered_map` "`find` + `insert`" faster than "`insert` + check for success"?* &ndash; Stack Overflow](https://stackoverflow.com/questions/31804025/why-is-unordered-map-find-insert-faster-than-insert-check-for-success)
+* [*Performance of `emplace` is worse than check followed by `emplace`* &ndash; Stack Overflow](https://stackoverflow.com/questions/24209592/performance-of-emplace-is-worse-than-check-followed-by-emplace)
 
 :movie_camera:
 
