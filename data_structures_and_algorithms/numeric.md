@@ -9,6 +9,9 @@
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
 * [Floating-point numbers](#floating-point-numbers)
 	* [Denormal numbers](#denormal-numbers)
+* [Linear equations solution algorithms](#linear-equations-solution-algorithms)
+	* [Iterative methods](#iterative-methods)
+		* [Jacobi method](#jacobi)
 * [Matrix diagonalization](#matrix-diagonalization)
 	* [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
 
@@ -38,9 +41,10 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 ### Kahan summation algorithm
 
+:link:
+
 * [*Kahan summation algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
 * [*Kahan summation* &ndash; Stack Overflow](https://stackoverflow.com/questions/4940072/kahan-summation)
-
 
 ---
 
@@ -70,6 +74,31 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 ---
 
+## Linear equations solution algorithms
+
+### Iterative methods
+
+:link:
+
+* [*Iterative methods* &ndash; G.Strang (2006)](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/readings/am62.pdf)
+
+:book:
+
+* [Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
+
+#### Jacobi method
+
+:link:
+
+* [*Jacobi method* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Jacobi_method)
+* [*Jacobi method* &ndash; Wolfram MathWorld](http://mathworld.wolfram.com/JacobiMethod.html)
+
+:movie_camera:
+
+* [*Iterative methods and preconditioners* &ndash; G.Strang @ MIT 18.086 Mathematical methods for engineers II (2008)](https://www.youtube.com/watch?v=LtNVodIs1dI)
+
+---
+
 ## Matrix diagonalization
 
 ### Jacobi eigenvalue algorithm
@@ -84,3 +113,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 * [Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
 * [Sec. 8.5: *Jacobi methods* &ndash; *Matrix computations.* G.H.Golub, C.F.Van Loan. Johns Hopkins University Press (2013)](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573)
 * [Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; *Handbook for automatic computation. Vol. II: Linear algebra.* H.Rutishause; J.H.Wilkinson, C.Reinsch (eds.). Springer (1971)](https://www.springer.com/gp/book/9783642869426)
+
+<!--
+https://www.math.wustl.edu/~wick/teaching/Math2605Notes/chap3.pdf
+-->
