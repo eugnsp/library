@@ -4,6 +4,7 @@
 
 * [Binomial coefficient](#binomial-coefficient)
 * [Arithmetic algorithms](#arithmetic-algorithms)
+	* [Arithmetic means](#arithmetic-means)
 	* [Division algorithms](#division-algorithms)
 		* [Integer division](#integer-division)
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
@@ -11,7 +12,7 @@
 	* [Denormal numbers](#denormal-numbers)
 * [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	* [Iterative methods](#iterative-methods)
-		* [Jacobi method](#jacobi)
+		* [Jacobi method](#jacobi-method)
 * [Matrix diagonalization](#matrix-diagonalization)
 	* [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
 
@@ -27,6 +28,15 @@
 ---
 
 ## Arithmetic algorithms
+
+### Arithmetic means
+
+> To compute the arithmetic mean <code>&mu; = 1 / n &sum; x<sub>i</sub></code> in a numerically stable way, use the following recurrence relation: <code>&mu;<sub>n</sub> = &mu;<sub>n - 1</sub> + 1 / n (x<sub>n</sub> - &mu;<sub>n - 1</sub>)</code>.
+
+:link:
+
+* [Numerically stable computation of arithmetic means &ndash; D.Assencio (2015)](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59)
+* [Incremental calculation of weighted mean and variance &ndash; T.Finch (2009)](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf)
 
 ### Division algorithms
 
@@ -87,6 +97,8 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 * [Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
 
 #### Jacobi method
+
+> A recurrence relation: <code>x<sub>k+1</sub> = D<sup>-1</sup> (D - A) x<sub>k</sub> + D<sup>-1</sup> b</code>, where the preconditioner `D` is the diagonal part of `A`: `D = diag(A)`.
 
 :link:
 
