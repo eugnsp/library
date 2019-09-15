@@ -121,6 +121,7 @@
 
 :link:
 
+* [*Empty Scoped Enums as Strong Aliases for Integral Types* &ndash; L.B&ouml;ger, Overload **152**, 9 (2019)](https://accu.org/index.php/journals/2683)
 * [*Tutorial: Emulating strong/opaque typedefs in C++* &ndash; J.Müller, foonathan::blog() (2016)](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 
 ---

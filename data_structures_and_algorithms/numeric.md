@@ -15,6 +15,7 @@
 		* [Jacobi method](#jacobi-method)
 * [Matrix diagonalization](#matrix-diagonalization)
 	* [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
+* [Wavelets](#wavelets)
 
 ---
 
@@ -107,7 +108,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-* [*Iterative methods and preconditioners* &ndash; G.Strang @ MIT 18.086 Mathematical methods for engineers II (2008)](https://www.youtube.com/watch?v=LtNVodIs1dI)
+* [Lec. 15: *Iterative methods and preconditioners* &ndash; G.Strang @ MIT 18.086 Mathematical methods for engineers II (2008)](https://www.youtube.com/watch?v=LtNVodIs1dI)
 
 ---
 
@@ -126,6 +127,22 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 * [Sec. 8.5: *Jacobi methods* &ndash; *Matrix computations.* G.H.Golub, C.F.Van Loan. Johns Hopkins University Press (2013)](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573)
 * [Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; *Handbook for automatic computation. Vol. II: Linear algebra.* H.Rutishause; J.H.Wilkinson, C.Reinsch (eds.). Springer (1971)](https://www.springer.com/gp/book/9783642869426)
 
+---
+
+## Wavelets
+
+:movie_camera:
+
+* [Lec. 27: *Multiresolution, wavelet transform and scaling function* &ndash; G.Strang @ MIT 18.085 Computational science and engineering I (2008?)](https://www.youtube.com/watch?v=LtNVodIs1dI)
+* [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction* &ndash; G.Strang @ MIT 18.085 Computational science and engineering I (2008?)](https://www.youtube.com/watch?v=LeafEHx9d0c)
+
+:book:
+
+* [Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
+
+
 <!--
 https://www.math.wustl.edu/~wick/teaching/Math2605Notes/chap3.pdf
+
+https://www.maths.tcd.ie/~dbennett/js/ising.pdf
 -->
