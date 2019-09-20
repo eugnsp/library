@@ -37,5 +37,11 @@
 :movie_camera:
 
 * [*Undefined behavior and compiler optimizations* &ndash; J.Regehr @ C++ Now (2018)](https://www.youtube.com/watch?v=AeEwxtEOgH0)
+* [*The speed game: Automated trading systems in C++* &ndash; C.Cook @ Meeting C++ (2016)](https://www.youtube.com/watch?v=ulOLGX3HNCI)
 * [*Understanding compiler optimization* &ndash; C.Carruth @ code::dive (2016)](https://www.youtube.com/watch?v=haQ2cijhvhE)
 * [*Optimization tips* &ndash; A.Alexandrescu @ CppCon (2014)](https://www.youtube.com/watch?v=Qq_WaiwzOtI)
+
+<!-- https://www.airs.com/blog/archives/120
+https://www.agner.org/optimize/optimizing_cpp.pdf
+http://www.reedbeta.com/blog/data-oriented-hash-table/
+ -->

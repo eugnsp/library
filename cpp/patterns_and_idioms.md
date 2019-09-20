@@ -22,7 +22,7 @@
 
 :link:
 
-* [Design patterns &ndash; Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
+* [*Design patterns* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
 
 ---
 
@@ -117,7 +117,7 @@
 
 :memo:
 
-* See also [Core language &ndash; Opaque typedefs](core-language.md#opaque-typedefs).
+* See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
 
 :link:
 
@@ -134,7 +134,7 @@
 
 https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern
 
-* [Is this key-oriented access-protection pattern a known idiom? &ndash; Stack Overflow](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom)
+* [*Is this key-oriented access-protection pattern a known idiom?* &ndash; Stack Overflow](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom)
 
 ---
 

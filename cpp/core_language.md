@@ -28,6 +28,8 @@
 	* [References](#references)
 		* [Lifetime of a temporary](#lifetime-of-a-temporary)
 		* [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
+	* [Type conversions](#type-conversions)
+		* [`dynamic_cast`](dynamiccast)
 
 ---
 
@@ -230,5 +232,15 @@ See [Templates](templates.md).
 
 * [*The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)](https://www.youtube.com/watch?v=PNRju6_yn3o)
 
+### Type conversions
 
+#### `dynamic_cast`
+
+:link:
+
+* [*`dynamic_cast` conversion* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/dynamic_cast)
+
+:movie_camera:
+
+* [*`dynamic_cast` from scratch* &ndash; A.O'Dwyer @ CppCon (2017)](https://www.youtube.com/watch?v=QzJL-8WbpuU)
 

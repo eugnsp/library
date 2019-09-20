@@ -36,8 +36,8 @@
 
 :link:
 
-* [Numerically stable computation of arithmetic means &ndash; D.Assencio (2015)](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59)
-* [Incremental calculation of weighted mean and variance &ndash; T.Finch (2009)](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf)
+* [*Numerically stable computation of arithmetic means* &ndash; D.Assencio (2015)](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59)
+* [*Incremental calculation of weighted mean and variance* &ndash; T.Finch (2009)](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf)
 
 ### Division algorithms
 
@@ -48,7 +48,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [Integer division &ndash; I.Kaplan (1996)](http://bearcave.com/software/divide.htm)
+* [*Integer division* &ndash; I.Kaplan (1996)](http://bearcave.com/software/divide.htm)
 
 ### Kahan summation algorithm
 

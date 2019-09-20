@@ -7,6 +7,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 * Data structures and algorithms
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :arrow_heading_up: [Backtracking](data_structures_and_algorithms/backtracking.md)
+	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
 	* :exclamation: [Combinatorial algorithms](data_structures_and_algorithms/combinatorics.md)
 	* :pushpin: [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
 	* :game_die: [Game theory](data_structures_and_algorithms/game_theory.md)
