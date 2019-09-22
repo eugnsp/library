@@ -4,11 +4,11 @@
 
 * [Build automation](#build-automation)
 	* [CMake](#cmake)
-* [Debugging and testing](#debugging-and-testing)
+* [Debugging, testing, and optimization](#debugging-testing-and-optimization)
+	* [Online compilers](#online-compilers)
 	* [Valgrind](#valgrind)
 * [IDEs](#ides)
 	* [Visual Studio Code](#visual-studio-code)
-* [Online compilers](#online-compilers)
 * [Version-control system](#version-control-system)
 	* [Git](#git)
 * [Quick benchmark](http://quick-bench.com/)
@@ -38,7 +38,17 @@
 
 ---
 
-## Debugging and testing
+## Debugging, testing, and optimization
+
+:movie_camera:
+
+* [*Optimising a small real-world C++ application* &ndash; H.Matthews @ ACCU (2019)](https://www.youtube.com/watch?v=fDlE93hs_-U)
+
+### Online compilers
+
+:link: *Webpages*
+
+* [Compiler explorer](https://godbolt.org/)
 
 ### Valgrind
 
@@ -55,14 +65,6 @@
 :link: *Webpages*
 
 * [Home page](https://code.visualstudio.com/)
-
----
-
-## Online compilers
-
-:link: *Webpages*
-
-* [Compiler explorer](https://godbolt.org/)
 
 ---
 

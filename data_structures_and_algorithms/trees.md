@@ -10,6 +10,8 @@
 * [B-trees](#b-trees)
 	* [2-3 trees](#2-3-trees)
 * [Traversal](#traversal)
+* [Volumetric trees](#volumetric-trees)
+	* [OpenVDB](#openvdb)
 
 ---
 
@@ -162,3 +164,15 @@
 :memo:
 
 * See also: [Graphs &ndash; Traversal](graphs.md#traversal)
+
+---
+
+## Volumetric trees
+
+### OpenVDB
+
+:link:
+
+* [OpenVDB](https://www.openvdb.org/)
+* [*OpenVDB: An open source data structure and toolkit for high-resolution volumes* &ndash; K.Museth @ BIDS (2015)](https://www.youtube.com/watch?v=7hUH92xwODg)
+<!-- http://www.museth.org/Ken/Publications_files/Nielsen-Museth_JSC05.pdf -->

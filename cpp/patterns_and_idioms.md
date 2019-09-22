@@ -13,6 +13,7 @@
 	* [Execute-around function](execute-around-function)
 * [Opaque typedefs](#opaque-typedefs)
 * [Passkey](#passkey)
+* [Whole value](#whole-value)
 * [Design principles](#design-principles)
 	* [Class design](#class-design)
 
@@ -135,6 +136,21 @@
 https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern
 
 * [*Is this key-oriented access-protection pattern a known idiom?* &ndash; Stack Overflow](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom)
+
+---
+
+## Whole value
+
+> A minimal example of the *"whole value"* pattern:
+> ```cpp
+> class Value {
+> public:
+>     explicit Value(int v) : v_(v) {}
+>     operator int() const { return v_; }
+> private:
+>     int v_;
+> };
+> ```
 
 ---
 
