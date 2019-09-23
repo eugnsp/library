@@ -31,7 +31,7 @@
 
 :book:
 
-* Sec. 7.2.1.2: *Generating all permutations* &ndash; [*The art of computer programming. Vol. 4A: Combinatorial algorithms, Part 1*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) (2011) &ndash; D.E.Knuth
+* Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
 
 #### Heap's algorithm
 

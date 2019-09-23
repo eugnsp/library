@@ -32,16 +32,16 @@
 
 :link:
 
-* [*Comparison sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Comparison_sort)
-* [*Minimal number of comparisons needed to sort `n` elements* &ndash; The OEIS](https://oeis.org/A036604)
+* [*Comparison sort*](https://en.wikipedia.org/wiki/Comparison_sort) &ndash; Wikipedia
+* [*Minimal number of comparisons needed to sort `n` elements*](https://oeis.org/A036604) &ndash; The OEIS
 
 :movie_camera:
 
-* [*Lower bounds for sorting* &ndash; MIT OCW 6.006: Introduction to algorithms (2011)](https://www.youtube.com/watch?v=Nz1KZXbghj8)
+* [*Lower bounds for sorting*](https://www.youtube.com/watch?v=Nz1KZXbghj8) &ndash; MIT OCW 6.006: Introduction to algorithms (2011)
 
 :page_facing_up:
 
-* [*Engineering a sort function* &ndash; J.L.Bentley, M.D.McIlroy. Software: Practice and experience **23**, 1249 (1993)](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf)
+* J.L.Bentley, M.D.McIlroy. [*Engineering a sort function*](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf) &ndash; [Software: Practice and experience **23**, 1249](https://doi.org/10.1002/spe.4380231105) (1993)
 
 :dizzy: **Visualizations**
 
@@ -57,8 +57,8 @@
 
 :book:
 
-* [Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* Ch. 8: *Elementary sorting methods*, Sec.: *Insertion sort* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
+* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+* Ch. 8: *Elementary sorting methods*, Sec.: *Insertion sort* &ndash; R.Sedgewick. *Algorithms* (1983)
 
 ### Selection sort
 
@@ -72,7 +72,7 @@
 
 :book:
 
-* Ch. 8: *Elementary sorting methods*, Sec: *Selection sort* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
+* Ch. 8: *Elementary sorting methods*, Sec: *Selection sort* &ndash; R.Sedgewick. *Algorithms* (1983)
 
 ### Heap sort
 
@@ -100,16 +100,15 @@
 
 :link:
 
-* [*Counting inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010)](https://en.wikipedia.org/wiki/Merge_sort)
+* [*Counting inversions in a permutation*](https://web.cs.ucdavis.edu/~gusfield/cs122/inversioncount.pdf) &ndash; CS 122A: [Algorithm design and analysis](https://web.cs.ucdavis.edu/~gusfield/cs122f10/) (2010)
 
 :movie_camera:
 
-* [*Counting the number of inversions in a permutation* &ndash; CS 122: Algorithm design and analysis (2010)](https://www.youtube.com/watch?v=Vj5IOD7A6f8)
-<!-- [Course website](http://web.cs.ucdavis.edu/~gusfield/cs122f10/) -->
+* [*Counting the number of inversions in a permutation*](https://www.youtube.com/watch?v=Vj5IOD7A6f8) &ndash; CS 122A: [Algorithm design and analysis](https://web.cs.ucdavis.edu/~gusfield/cs122f10/) (2010)
 
 :book:
 
-* [Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. *Algorithm design*. Pearson, 2005](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html)
+* Sec. 5.3.: *Counting inversions* &ndash; J.Kleinberg, E.Tardos. [*Algorithm design*](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
 
@@ -125,26 +124,24 @@
 
 :link:
 
-* [Selection and order statistics &ndash; ICS 161: Design and analysis of algorithms (1996)](https://www.ics.uci.edu/~eppstein/161/960125.html)
-* [Sample proofs involving selection problems &ndash; COMP 363: Design and analysis of computer algorithms (2003)](http://cs.slu.edu/~goldwasser/class/loyola/comp363/2003_Spring/handouts/selectionproofs.pdf)
-* [Lower bounds and optimality &ndash; COMP 2011/2711: Data organisation (2006)](https://www.cse.unsw.edu.au/~cs2011/lect/2711_Adversary.pdf)
+* [Selection and order statistics](https://www.ics.uci.edu/~eppstein/161/960125.html) &ndash; ICS 161: [Design and analysis of algorithms](https://www.ics.uci.edu/~eppstein/161/) (1996)
+* [Sample proofs involving selection problems](http://cs.slu.edu/~goldwasser/class/loyola/comp363/2003_Spring/handouts/selectionproofs.pdf) &ndash; COMP 363: Design and analysis of computer algorithms (2003)
+* [Lower bounds and optimality](https://www.cse.unsw.edu.au/~cs2011/lect/2711_Adversary.pdf) &ndash; COMP 2011/2711: Data organisation (2006)
 
 :movie_camera:
 
-* [*Order statistics, median* &ndash; MIT OCW 6.046J/18.410J: Introduction to algorithms (2005)](https://www.youtube.com/watch?v=mR_RUjsJnV8)
-* [Lectures 6-10: *Finding the smallest and second smallest elements* &ndash; Alexander Stepanov: Efficient programming with components (2013)](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD)
+* [*Order statistics, median*](https://www.youtube.com/watch?v=mR_RUjsJnV8) &ndash; MIT OCW 6.046J/18.410J: Introduction to algorithms (2005)
+* [Lectures 6-10: *Finding the smallest and second smallest elements*](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD) &ndash; Alexander Stepanov: Efficient programming with components (2013)
 
 :book:
 
-* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set* &ndash; U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989.
-* Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics* &ndash; A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms*. Addison-Wesley, 1974.
+* Ch. 9: *Medians and order statistics* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
+* Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics* &ndash; A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms* (1974)
 
 :page_facing_up:
 
-* S.S.Kislitsyn. *On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*. Sibirsky Matematichesky Zhurnal **5**, 557 (1964).\
-[Full text (russian)](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]})
+* S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) (in russian) &ndash; Sibirsky Matematichesky Zhurnal **5**, 557 (1964)
 
 ---
 
@@ -152,7 +149,7 @@
 
 :movie_camera:
 
-* [*Counting sort and radix sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011)](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966)
+* [*Counting sort and radix sort*](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) &ndash; MIT OCW 6.006: Introduction to algorithms (2011)
 
 ### Count sort
 
@@ -160,12 +157,12 @@
 
 :link:
 
-* [*Radix sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Radix_sort)
-* [*American flag sort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/American_flag_sort)
+* [*Radix sort*](https://en.wikipedia.org/wiki/Radix_sort) &ndash; Wikipedia
+* [*American flag sort*](https://en.wikipedia.org/wiki/American_flag_sort) &ndash; Wikipedia
 
 :movie_camera:
 
-* [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort* &ndash; M.Skarupke @ C++ Now (2017)](https://www.youtube.com/watch?v=zqs87a_7zxw)
+* M.Skarupke. [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort* &ndash; C++ Now (2017)](https://www.youtube.com/watch?v=zqs87a_7zxw)
 
 ---
 
@@ -175,15 +172,15 @@
 
 :memo:
 
-* The problem of finding the shortest sequence of flips for a given stack of pancakes is NP-hard ( L.Bulteau, G.Fertin, I.Rusu, 2011).
+* The problem of finding the shortest sequence of flips for a given stack of pancakes is NP-hard (L.Bulteau, G.Fertin, I.Rusu, 2011)
 
 :link:
 
-* [*Pancake sorting* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Pancake_sorting)
+* [*Pancake sorting*](https://en.wikipedia.org/wiki/Pancake_sorting) &ndash; Wikipedia
 
 ### Spreadsort
 
 :link:
 
-* [*Spreadsort* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Spreadsort)
-* [*Spreadsort* &ndash; Boost.Sort library](https://www.boost.org/doc/libs/1_71_0/libs/sort/doc/html/sort/single_thread/spreadsort.html)
+* [*Spreadsort*](https://en.wikipedia.org/wiki/Spreadsort) &ndash; Wikipedia
+* [*Spreadsort*](https://www.boost.org/doc/libs/1_71_0/libs/sort/doc/html/sort/single_thread/spreadsort.html) &ndash; Boost.Sort library

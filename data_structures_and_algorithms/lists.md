@@ -26,7 +26,7 @@
 
 :page_facing_up:
 
-* Z.Shao, J.H.Reppy, A.W.Appel. [*Unrolling lists*](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz) &ndash; [ACM conference on LISP and functional programming, 185 (1994)](https://doi.org/10.1145/182409.182453)
+* Z.Shao, J.H.Reppy, A.W.Appel. [*Unrolling lists*](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz) &ndash; [ACM conference on LISP and functional programming, 185](https://doi.org/10.1145/182409.182453) (1994)
 
 ---
 
@@ -36,7 +36,7 @@
 
 :link:
 
-* [*Doubly linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
+* [*Doubly linked list*](https://en.wikipedia.org/wiki/Doubly_linked_list) &ndash; Wikipedia
 
 ### XOR doubly linked lists
 

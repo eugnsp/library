@@ -12,7 +12,7 @@
 
 https://www-cs-faculty.stanford.edu/~knuth/fasc5c.ps.gz
 
-* [*Dancing links*](https://www.youtube.com/watch?v=_cR9zDlvP88) &ndash; Stanford Lecture: Donald Knuth's 24th annual Christmas lecture (2018)
+* D.E.Knuth. [*Dancing links*](https://www.youtube.com/watch?v=_cR9zDlvP88) &ndash; Stanford Lecture: Donald Knuth's 24th annual Christmas lecture (2018)
 
 <!--
 https://www.cl.cam.ac.uk/~mr10/backtrk.pdf

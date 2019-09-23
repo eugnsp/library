@@ -34,9 +34,7 @@
 
 :movie_camera:
 
-* *Binary search trees* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=9Jry5-82I68) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Binary search trees*](https://www.youtube.com/watch?v=9Jry5-82I68) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 ### Self-balancing binary search trees
 
@@ -50,7 +48,7 @@
 
 :link:
 
-* [Self-balancing binary search tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
+* [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) &ndash; Wikipedia
 
 #### AVL (Adelson-Velskiĭ&ndash;Landis) trees
 
@@ -66,7 +64,7 @@
 
 :link:
 
-* [AVL tree &ndash; Wikipedia](https://en.wikipedia.org/wiki/AVL_tree)
+* [AVL tree](https://en.wikipedia.org/wiki/AVL_tree) &ndash; Wikipedia
 * [C++ AVL tree template](https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template)
 * [AVL trees: Tutorial and C++ implementation](https://www.bradapp.com/ftp/src/libs/C++/AvlTrees.html)
 * [Simple AVL tree in C++](http://somethingk.com/main/?p=1127)
@@ -74,23 +72,17 @@
 
 :book:
 
-* Sec. 6.2.3: *Balanced trees* &ndash; D.E.Knuth. *The art of computer programming. Vol. 3: Sorting and searching*. Addison-Wesley, 2<sup>nd</sup> ed., 1998. \
-[Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
-* Sec. 4.4: *AVL trees* &ndash; M.A.Weiss. *Data structures and algorithm analysis in C++*. Pearson, 4<sup>th</sup> ed., 2014.\
-[Book website](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html)
-* Sec. 4.3.4: *AVL trees* &ndash; U.Manber. *Introduction to algorithms: A creative approach.* Addison-Wesley, 1<sup>st</sup> ed., 1989.
+* Sec. 6.2.3: *Balanced trees* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 3: Sorting and searching* (1998)
+* Sec. 4.4: *AVL trees* &ndash; M.A.Weiss. [*Data structures and algorithm analysis in C++*](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html) (2014)
+* Sec. 4.3.4: *AVL trees* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
 
-* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*. Doklady Akademii Nauk SSSR **146**, 263 (1962).\
-[Full text](http://professor.ufabc.edu.br/~jesus.mena/courses/mc3305-2q-2015/AED2-10-avl-paper.pdf) |
-[Full text (russian)](http://www.mathnet.ru/links/29d35467640f7ae44d5d347a765fc559/dan26964.pdf)
+* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*: [in english](https://zhjwpku.com/assets/pdf/AED2-10-avl-paper.pdf), [in russian](http://mi.mathnet.ru/rus/dan/v146/i2/p263) &ndash; Doklady Akademii Nauk SSSR **146**, 263 (1962)
 
 :movie_camera:
 
-* *AVL trees, AVL sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=FNeL18KsWPc) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*AVL trees, AVL sort*](https://www.youtube.com/watch?v=FNeL18KsWPc) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :dizzy: **Visualizations**
 
@@ -106,35 +98,29 @@
 
 * Both `0`-based and `1`-based indexing can be used in equally elegant ways.
 * A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for <code>min(&bullet;, &bullet;)</code>), a segment tree can be used.
-
-:wrench: **Applications**
-
-* Arithmetic coding
-* Monte-Carlo simulations
+* Applications: arithmetic coding, Monte-Carlo simulations
 
  <!-- TODO : add links -->
 
 :link:
 
-* [*Fenwick tree* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fenwick_tree)
-* [*Binary indexed trees* &ndash; Topcoder](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/)
-* [*Fenwick tree* &ndash; Brilliant](https://brilliant.org/wiki/fenwick-tree/)
-* [*A JavaScript implementation of binary indexed tree* &ndash; GitHub](https://github.com/Microsoft/fast-binary-indexed-tree-js)
+* [*Fenwick tree*](https://en.wikipedia.org/wiki/Fenwick_tree) &ndash; Wikipedia
+* [*Binary indexed trees*](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) &ndash; Topcoder
+* [*Fenwick tree*](https://brilliant.org/wiki/fenwick-tree/) &ndash; Brilliant
+* [*A JavaScript implementation of binary indexed tree*](https://github.com/Microsoft/fast-binary-indexed-tree-js) &ndash; Microsoft @ GitHub
 
 :movie_camera:
 
-* [*Fenwick trees* &ndash; Algorithms Live!](https://www.youtube.com/watch?v=kPaJfAUwViY)
-* [*Fenwick tree/Binary indexed tree* &ndash; W.Fiset](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
+* [*Fenwick trees*](https://www.youtube.com/watch?v=kPaJfAUwViY) &ndash; Algorithms Live!
+* W.Fiset. [*Fenwick tree/Binary indexed tree*](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
 
 :book:
 
-* Sec. 2.4.4: *Binary indexed (Fenwick) tree* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
+* Sec. 2.4.4: *Binary indexed (Fenwick) tree* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 :page_facing_up:
 
-* P.M.Fenwick. *A new data structure for cumulative frequency tables*. Software: Practice and Experience **24**, [327](https://dx.doi.org/10.1002/spe.4380240306) (1994).\
-[Full text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf)
+* P.M.Fenwick. [*A new data structure for cumulative frequency tables*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf) &ndash; [Software: Practice and Experience **24**, 327](https://dx.doi.org/10.1002/spe.4380240306) (1994)
 
 ---
 
@@ -142,14 +128,11 @@
 
 :movie_camera:
 
-* *2-3 Trees and B-Trees* &ndash; MIT OCW 6.046J: Design and analysis of algorithms (2015).\
-[Watch at YouTube](https://www.youtube.com/watch?v=TOb1tuEZ2X4) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm)
+* [*2-3 Trees and B-Trees*](https://www.youtube.com/watch?v=TOb1tuEZ2X4) &ndash; MIT OCW 6.046J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm) (2015)
 
 :book:
 
-* Ch. 18: *B-trees* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+* Ch. 18: *B-trees* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
 ### 2-3 trees
 
@@ -159,7 +142,7 @@
 
 :link:
 
-[Tree traversal &ndash; Wikipedia](https://en.wikipedia.org/wiki/Tree_traversal)
+[*Tree traversal*](https://en.wikipedia.org/wiki/Tree_traversal) &ndash; Wikipedia
 
 :memo:
 
@@ -174,5 +157,5 @@
 :link:
 
 * [OpenVDB](https://www.openvdb.org/)
-* [*OpenVDB: An open source data structure and toolkit for high-resolution volumes* &ndash; K.Museth @ BIDS (2015)](https://www.youtube.com/watch?v=7hUH92xwODg)
+* K.Museth. [*OpenVDB: An open source data structure and toolkit for high-resolution volumes*](https://www.youtube.com/watch?v=7hUH92xwODg) &ndash; BIDS (2015)
 <!-- http://www.museth.org/Ken/Publications_files/Nielsen-Museth_JSC05.pdf -->

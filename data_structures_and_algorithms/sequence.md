@@ -87,7 +87,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-* [*Lexicographically minimal string rotation* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
+* [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
 
 #### Duval's based algorithm
 
@@ -118,23 +118,17 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :movie_camera:
 
-* *Dynamic programming* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570) (from 42:50) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-* Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
-* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
-* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach*. Addison-Wesley, 1989.
+* Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive Programming*](https://cpbook.net/) (2013)
+* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
 
-* M.L.Fredman. *On computing the length of longest increasing subsequences*. Discrete Mathematics **11**, [29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975).\
-[Full text](https://dx.doi.org/10.1016/0012-365X(75)90103-X) |
-[Full text (alternative source)](https://core.ac.uk/download/pdf/82290717.pdf)
+* M.L.Fredman. [*On computing the length of longest increasing subsequences*](https://core.ac.uk/download/pdf/82290717.pdf) &ndash; [Discrete Mathematics **11**, 29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)
 
 <!--### Counting the number of longest increasing subsequences-->
 
@@ -161,8 +155,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 :page_facing_up:
 
 * J.P.Duval. *Factorizing words over an ordered alphabet* &ndash; [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
-* S.S.Ghuman, E.Giaquinta, J.Tarhio. *Alternative algorithms for Lyndon factorization*. Preprint (2014).\
-[Full text](https://arxiv.org/abs/1405.4892)
+* S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) &ndash; arXiv preprint (2014)
 
 ---
 

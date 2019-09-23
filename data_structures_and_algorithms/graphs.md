@@ -61,7 +61,7 @@
 
 :memo:
 
-* DFS can be used for [cycle detection](#cycle-detection), [topological sorting](#dfs-based-topological-sorting), finding [articulation points and bridges](#articulation-points-and-bridges), fiding [biconnected components](#biconnected-components).
+* DFS can be used for [cycle detection](#cycle-detection), [topological sorting](#dfs-based-topological-sorting), finding [articulation points and bridges](#articulation-points-and-bridges), finding [biconnected components](#biconnected-components).
 
 :movie_camera:
 
@@ -90,13 +90,11 @@
 
 :book:
 
-* Sec. 4.2.5: *Topological sort* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
+* Sec. 4.2.5: *Topological sort* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 :memo:
 
-* Applications:
-	* Job scheduling
+* Applications: job scheduling
 
 <!--
 	* Shortest path finding  TODO : add link

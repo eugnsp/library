@@ -21,7 +21,7 @@
 
 :movie_camera:
 
-* [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) &ndash; C.Schafer
+* C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
 
 ### CMake
 
@@ -31,10 +31,10 @@
 
 :movie_camera:
 
-* [*Introduction to CMake*](https://www.youtube.com/watch?v=jt3meXdP-QI) &ndash; F.Castelli @ SwedenCpp (2018)
-* [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) &ndash; D.Pfeifer @ C++ Now (2017)
-* [*Using modern CMake patterns to enforce a good modular design*](https://www.youtube.com/watch?v=eC9-iRN2b04) &ndash; M.Ropert @ CppCon (2017)
-* [*Ep. 78: Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) &ndash; J.Turner @ C++ Weekly (2017)
+* F.Castelli. [*Introduction to CMake*](https://www.youtube.com/watch?v=jt3meXdP-QI) &ndash; SwedenCpp (2018)
+* D.Pfeifer. [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) &ndash; C++ Now (2017)
+* M.Ropert. [*Using modern CMake patterns to enforce a good modular design*](https://www.youtube.com/watch?v=eC9-iRN2b04) &ndash; CppCon (2017)
+* J.Turner. [*Ep. 78: Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) &ndash; C++ Weekly (2017)
 
 ---
 
@@ -42,7 +42,7 @@
 
 :movie_camera:
 
-* [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; H.Matthews @ ACCU (2019)
+* H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
 
 ### Online compilers
 
@@ -54,7 +54,7 @@
 
 :movie_camera:
 
-* [*Ep. 86: Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) &ndash; J.Turner @ C++ Weekly (2017)
+* J.Turner. [*Ep. 86: Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) &ndash; C++ Weekly (2017)
 
 ---
 
