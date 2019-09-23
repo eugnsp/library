@@ -23,8 +23,8 @@
 
 :link:
 
-* [*How to calculate binomial coefficients* &ndash; M.Dominus](https://blog.plover.com/math/choose.html)
-* [*How to calculate binomial coefficients, again* &ndash; M.Dominus](https://blog.plover.com/math/choose-2.html)
+* M.Dominus. [*How to calculate binomial coefficients*](https://blog.plover.com/math/choose.html)
+* M.Dominus. [*How to calculate binomial coefficients, again*](https://blog.plover.com/math/choose-2.html)
 
 ---
 
@@ -36,8 +36,8 @@
 
 :link:
 
-* [*Numerically stable computation of arithmetic means* &ndash; D.Assencio (2015)](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59)
-* [*Incremental calculation of weighted mean and variance* &ndash; T.Finch (2009)](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf)
+* [*Numerically stable computation of arithmetic means*](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59) &ndash; D.Assencio (2015)
+* [*Incremental calculation of weighted mean and variance*](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf) &ndash; T.Finch (2009)
 
 ### Division algorithms
 
@@ -48,14 +48,14 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Integer division* &ndash; I.Kaplan (1996)](http://bearcave.com/software/divide.htm)
+* [*Integer division*](http://bearcave.com/software/divide.htm) &ndash; I.Kaplan (1996)
 
 ### Kahan summation algorithm
 
 :link:
 
-* [*Kahan summation algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
-* [*Kahan summation* &ndash; Stack Overflow](https://stackoverflow.com/questions/4940072/kahan-summation)
+* [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) &ndash; Wikipedia
+* [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) &ndash; Stack Overflow
 
 ---
 
@@ -63,25 +63,25 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*What every computer scientist should know about floating-point arithmetic* &ndash; D.Goldberg](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
-* [*Floating point arithmetic before IEEE 754* &ndash; C.Moler (2019)](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/)
-* [*Beating floating point at its own game: Posit arithmetic* &ndash; J.L.Gustafson, I.Yonemoto](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
+* [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) &ndash; D.Goldberg
+* [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; C.Moler (2019)
+* [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf) &ndash; J.L.Gustafson, I.Yonemoto
 
 :movie_camera:
 
-* [*Demystifying floating point* &ndash; J.Farrier @ CppCon (2015)](https://www.youtube.com/watch?v=k12BJGSc2Nc)
-* [*Beating floats at their own game* &ndash; J.Gustafson @ HPC Advisory Council Australia Conference (2017)](https://www.youtube.com/watch?v=N05yYbUZMSQ)
+* [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; J.Farrier @ CppCon (2015)
+* [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; J.Gustafson @ HPC Advisory Council Australia Conference (2017)
 
 ### Denormal numbers
 
 :link:
 
-* [*Denormal number* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Denormal_number)
-* [*Floating point denormals, insignificant but controversial* &ndash; C.Moler (2014)](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/)
+* [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
+* [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; C.Moler (2014)
 
 :movie_camera:
 
-* [*On subnormal floating point and abnormal timing* &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)](https://www.youtube.com/watch?v=DftejgRgmc8)
+* [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)
 
 ---
 
@@ -91,11 +91,11 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Iterative methods* &ndash; G.Strang (2006)](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/readings/am62.pdf)
+* [*Iterative methods*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/readings/am62.pdf) &ndash; G.Strang (2006)
 
 :book:
 
-* [Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
+* Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; [*Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
 
 #### Jacobi method
 
@@ -103,12 +103,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Jacobi method* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Jacobi_method)
-* [*Jacobi method* &ndash; Wolfram MathWorld](http://mathworld.wolfram.com/JacobiMethod.html)
+* [*Jacobi method*](https://en.wikipedia.org/wiki/Jacobi_method) &ndash; Wikipedia
+* [*Jacobi method*](http://mathworld.wolfram.com/JacobiMethod.html) &ndash; Wolfram MathWorld
 
 :movie_camera:
 
-* [Lec. 15: *Iterative methods and preconditioners* &ndash; G.Strang @ MIT 18.086 Mathematical methods for engineers II (2008)](https://www.youtube.com/watch?v=LtNVodIs1dI)
+* G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.086 Mathematical methods for engineers II (2008)
 
 ---
 
@@ -118,8 +118,8 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Jacobi eigenvalue algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Jacobi_eigenvalue_algorithm)
-* [*Jacobi methods* &ndash; J.Lambers, CME 335 (2010)](https://web.stanford.edu/class/cme335/lecture7.pdf)
+* [*Jacobi eigenvalue algorithm*](https://en.wikipedia.org/wiki/Jacobi_eigenvalue_algorithm) &ndash; Wikipedia
+* J.Lambers. [*Jacobi methods*](https://web.stanford.edu/class/cme335/lecture7.pdf) &ndash; CME 335 (2010)
 
 :book:
 

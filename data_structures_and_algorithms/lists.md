@@ -14,9 +14,9 @@
 
 :link:
 
-* [*Linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
-* [*Are lists evil?* &ndash; B.Stroustrup (2014)](https://isocpp.org/blog/2014/06/stroustrup-lists)
-* [*Number crunching: Why you should never, ever, EVER use linked-list in your code again* &ndash; K.Hedstr&ouml;m (2012)](https://kjellkod.wordpress.com/2012/02/25/why-you-should-never-ever-ever-use-linked-list-in-your-code-again/)
+* [*Linked list*](https://en.wikipedia.org/wiki/Linked_list) &ndash; Wikipedia
+* B.Stroustrup. [*Are lists evil?*](http://www.stroustrup.com/bs_faq.html#list) &ndash; B.Stroustrup's FAQ
+* K.Hedstr&ouml;m. [*Number crunching: Why you should never, ever, EVER use linked-list in your code again*](https://kjellkod.wordpress.com/2012/02/25/why-you-should-never-ever-ever-use-linked-list-in-your-code-again/) (2012)
 
 ---
 
@@ -26,7 +26,7 @@
 
 :page_facing_up:
 
-* [*Unrolling lists* &ndash; Z.Shao, J.H.Reppy, A.W.Appel. @ ACM conference on LISP and functional programming, 185 (1994)](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz)
+* Z.Shao, J.H.Reppy, A.W.Appel. [*Unrolling lists*](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz) &ndash; [ACM conference on LISP and functional programming, 185 (1994)](https://doi.org/10.1145/182409.182453)
 
 ---
 
@@ -42,8 +42,8 @@
 
 :link:
 
-* [*XOR linked list* &ndash; Wikipedia](https://en.wikipedia.org/wiki/XOR_linked_list)
-* [*A memory-efficient doubly linked list* &ndash; P.Sinha, Linux Journal](https://www.linuxjournal.com/article/6828)
+* [*XOR linked list*](https://en.wikipedia.org/wiki/XOR_linked_list) &ndash; Wikipedia
+* P.Sinha. [*A memory-efficient doubly linked list*](https://www.linuxjournal.com/article/6828) &ndash; Linux Journal
 
 ---
 
@@ -51,8 +51,8 @@
 
 :movie_camera:
 
-* [*Randomization: Skip lists* &ndash; MIT OCW 6.046J/18.410J: Design and analysis of algorithms (2015)](https://www.youtube.com/watch?v=2g9OSRKJuzM)
+* [*Randomization: Skip lists*](https://www.youtube.com/watch?v=2g9OSRKJuzM) &ndash; MIT OCW 6.046J/18.410J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/) (2015)
 
 :page_facing_up:
 
-* [*A skip list cookbook* &ndash; W.Pugh, Tech. Rep. UMIACS-TR-89-72.1 (1990)](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf)
+* W.Pugh. [*A skip list cookbook*](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf) &ndash; Tech. Rep. UMIACS-TR-89-72.1 (1990)

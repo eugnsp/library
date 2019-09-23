@@ -13,7 +13,7 @@
 
 ## Permutations
 
-https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-with-constant-extra-space
+<!-- https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-with-constant-extra-space -->
 
 ### Generating permutations
 
@@ -31,8 +31,7 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :book:
 
-* Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. *The art of computer programming. Vol. 4A: Combinatorial algorithms, Part 1*. Addison-Wesley (2011)\
-[Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+* Sec. 7.2.1.2: *Generating all permutations* &ndash; [*The art of computer programming. Vol. 4A: Combinatorial algorithms, Part 1*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) (2011) &ndash; D.E.Knuth
 
 #### Heap's algorithm
 
@@ -40,8 +39,8 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :link:
 
-* [*Heap's algorithm* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Heap%27s_algorithm)
-* [*Heap algorithm for permutations* &ndash; Stack Overflow](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations)
+* [*Heap's algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
+* [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) &ndash; Stack Overflow
 
 ### Generating random permutations
 
@@ -53,5 +52,5 @@ https://stackoverflow.com/questions/31773203/is-it-possible-to-invert-an-array-w
 
 :link:
 
-* [*Fisher&ndash;Yates shuffle* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
-* [*Knuth shuffle* &ndash; Rosetta Code](https://www.rosettacode.org/wiki/Knuth_shuffle)
+* [*Fisher&ndash;Yates shuffle*](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) &ndash; Wikipedia
+* [*Knuth shuffle*](https://www.rosettacode.org/wiki/Knuth_shuffle) &ndash; Rosetta Code

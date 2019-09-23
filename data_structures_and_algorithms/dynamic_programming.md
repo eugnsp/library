@@ -12,17 +12,11 @@
 
 :movie_camera:
 
-* *Dynamic programming* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
-[Part II](https://www.youtube.com/watch?v=ENyox7kNKeY),
-[Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY),
-[Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* *Dynamic programming:* [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY), [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY), [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) &ndash; MIT OCW 6.006: [Introduction to algorithms (2011)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
 
 :book:
 
-* Ch. 8: *Dynamic programming* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
+* Ch. 8: *Dynamic programming* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
 
 ---
 
@@ -36,10 +30,8 @@ Watch at YouTube: [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M),
 
 :book:
 
-* Sec. 8.5: *The partition problem* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
-* Sec. 8.4.1: *Two components: binary search the answer and other* &ndash; S.Halim, F.Halim. *Competitive Programming*. 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
+* Sec. 8.5: *The partition problem* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+* Sec. 8.4.1: *Two components: binary search the answer and other* &ndash; S.Halim, F.Halim. [*Competitive Programming*](https://cpbook.net/) (2013)
 
 ---
 
