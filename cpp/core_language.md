@@ -176,10 +176,6 @@ See [Templates](templates.md).
 
 ## Types
 
-:movie_camera:
-
-* [*The C++ type system is your friend* &ndash; H.Matthews @ ACCU (2017)](https://www.youtube.com/watch?v=MCiVdu7gScs)
-
 ### Floating-point types
 
 :memo:

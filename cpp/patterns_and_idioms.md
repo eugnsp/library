@@ -5,6 +5,7 @@
 * [Introduction](#introduction)
 * [Adapter](#adapter)
 * [Bridge and pimpl](#bridge-and-pimpl)
+* [Curiously recurring template](#curiously-recurring-template)
 * [Double-checked locking](#double-checked-locking)
 * [Execute-around](#execute-around)
 	* [Execute-around object](execute-around-object)
@@ -49,6 +50,15 @@
 
 * [*The composite and bridge patterns* &ndash; D.Schmidt](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
 * [*Bridge design pattern* &ndash; D.Banas](https://www.youtube.com/watch?v=qG286LQM6BU)
+
+---
+
+## Curiously recurring template
+
+:link:
+
+* [*Curiously recurring template pattern* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern)
+* [*Curiously recurring template patterns* &ndash; J.Coplien, C++ Report (1995)](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf)
 
 ---
 
@@ -141,16 +151,19 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 ## Whole value
 
-> A minimal example of the *"whole value"* pattern:
 > ```cpp
-> class Value {
+> class Whole_value {
 > public:
->     explicit Value(int v) : v_(v) {}
->     operator int() const { return v_; }
+>     explicit Whole_value(int v) : v_(v) {}
+>     explicit operator int() const { return v_; }
 > private:
 >     int v_;
 > };
 > ```
+
+:movie_camera:
+
+* [*The C++ type system is your friend* &ndash; H.Matthews @ ACCU (2017)](https://www.youtube.com/watch?v=MCiVdu7gScst=975)
 
 ---
 

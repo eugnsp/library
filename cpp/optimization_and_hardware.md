@@ -34,16 +34,12 @@
 
 ## Optimization
 
-<!-- :memo:
-
-* Some optimization tips:
-	* Don't mix hot and cold code -->
-
 :movie_camera:
 
 * [*Optimising a small real-world C++ application* &ndash; H.Matthews @ ACCU (2019)](https://www.youtube.com/watch?v=fDlE93hs_-U)
 * [*Speed is found in the minds of people* &ndash; A.Alexandrescu @ CppCon (2019)](https://www.youtube.com/watch?v=FJJTYQYB1JQ)
 * [*Undefined behavior and compiler optimizations* &ndash; J.Regehr @ C++ Now (2018)](https://www.youtube.com/watch?v=AeEwxtEOgH0)
+* [*Optimising a small real-world C++ application* &ndash; H.Matthews @ NDC (2018)](https://www.youtube.com/watch?v=IGFBCvroXJ8)
 * [*C++ performance and optimisation* &ndash; H.Matthews @ NDC (2017)](https://www.youtube.com/watch?v=eICYHA-eyXM)
 * [*The speed game: Automated trading systems in C++* &ndash; C.Cook @ Meeting C++ (2016)](https://www.youtube.com/watch?v=ulOLGX3HNCI)
 * [*Understanding compiler optimization* &ndash; C.Carruth @ code::dive (2016)](https://www.youtube.com/watch?v=haQ2cijhvhE)
