@@ -108,6 +108,7 @@
 * [*Binary indexed trees*](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) &ndash; Topcoder
 * [*Fenwick tree*](https://brilliant.org/wiki/fenwick-tree/) &ndash; Brilliant
 * [*A JavaScript implementation of binary indexed tree*](https://github.com/Microsoft/fast-binary-indexed-tree-js) &ndash; Microsoft @ GitHub
+* [What are the advantage of binary indexed tree (BIT or Fenwick tree) over segment tree?](https://www.quora.com/What-are-the-advantage-of-binary-indexed-tree-BIT-or-fenwick-tree-over-segment-tree) &ndash; Quora
 
 :movie_camera:
 

@@ -15,6 +15,7 @@
 	* [`std::shared_ptr`](#stdshared_ptr)
 	* [`std::unique_ptr`](#stdunique_ptr)
 * [Strings](#strings)
+	* [Short string optimization](#short-string-optimization)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
@@ -49,7 +50,7 @@
 
 :movie_camera:
 
-* [*If I had my 'druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) &ndash; B.Steagall @ C++Now (2018)
+* B.Steagall. [*If I had my 'druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) &ndash; C++Now (2018)
 
 ### Associative containers
 
@@ -136,6 +137,10 @@
 
 ## Strings
 
+* [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) &ndash; C++ reference
+
+### Short string optimization
+
 :link:
 
 * [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/questions/10315041/meaning-of-acronym-sso-in-the-context-of-stdstring) &ndash; Stack Overflow
@@ -159,6 +164,10 @@
 * S.T.Lavavej. [*`<functional>`: What's new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; CppCon (2015)
 
 ### Pairs and tuples
+
+:link:
+
+* [Why can't `std::tuple<int>` be trivially copyable?](https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -201,5 +210,3 @@
 
 * V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
 * V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)
-
-<!-- https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable -->
