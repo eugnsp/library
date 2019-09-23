@@ -14,8 +14,8 @@
 
 :link:
 
-* [*Confusion on Delaunay triangulation and largest inscribed circle* &ndash; Stack Overflow](https://stackoverflow.com/questions/27872964/confusion-on-delaunay-triangulation-and-largest-inscribed-circle)
-* [*Largest circle inside a non-convex polygon* &ndash; Stack Overflow](https://stackoverflow.com/questions/4279478/largest-circle-inside-a-non-convex-polygon)
+* [*Confusion on Delaunay triangulation and largest inscribed circle*](https://stackoverflow.com/questions/27872964/confusion-on-delaunay-triangulation-and-largest-inscribed-circle) &ndash; Stack Overflow
+* [*Largest circle inside a non-convex polygon*](https://stackoverflow.com/questions/4279478/largest-circle-inside-a-non-convex-polygon) &ndash; Stack Overflow
 
 ---
 
@@ -25,10 +25,9 @@
 
 :link:
 
-* [*Closest pair of points* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
+* [*Closest pair of points*](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem) &ndash; Wikipedia
 
 :book:
 
-* Sec. 33.4: *Finding the closest pair of points* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+* Sec. 33.4: *Finding the closest pair of points* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 

@@ -21,29 +21,24 @@
 
 :movie_camera:
 
-* Stable marriage problem &ndash; Numberphile (2014)
-	* [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg)
-	* [Part II](https://www.youtube.com/watch?v=LtTV6rIxhdo)
-* [*The stable matching algorithm: Examples and implementation* &ndash; The Simple Engineer (2017)](https://www.youtube.com/watch?v=FhRf0j068ZA)
+* *Stable marriage problem:* [Part I](https://www.youtube.com/watch?v=Qcv1IqHWAzg), [Part II](https://www.youtube.com/watch?v=LtTV6rIxhdo) &ndash; Numberphile (2014)
+* [*The stable matching algorithm: Examples and implementation*](https://www.youtube.com/watch?v=FhRf0j068ZA) &ndash; The Simple Engineer (2017)
 
 :book:
 
-* D.E.Knuth. *Stable marriage and its relation to other combinatorial problems: An introduction to the mathematical analysis of algorithms*. American Mathematical Society, 1996.\
-[Book website](https://www-cs-faculty.stanford.edu/~knuth/ms.html)
+* D.E.Knuth. [*Stable marriage and its relation to other combinatorial problems: An introduction to the mathematical analysis of algorithms*](https://www-cs-faculty.stanford.edu/~knuth/ms.html) (1996)
 
 :page_facing_up:
 
-* H.Mairson. *The stable marriage problem*. The Brandeis Review **12**, 38 (1992).\
-[Full text](https://archive.org/details/brandeisreview1214bran/page/n38) |
-[Full text (plain text, abridged)](http://www.cs.columbia.edu/~evs/intro/stable/writeup.html)
+* H.Mairson. [*The stable marriage problem*](https://archive.org/details/brandeisreview1214bran/page/n39) &ndash; The Brandeis Review **12**, 38 (1992)
 
 ### Gale&ndash;Shapley algorithm
 
 :link:
 
-* [*The stable marriage problem and school choice* &ndash; AMS Feature column](http://www.ams.org/publicoutreach/feature-column/fc-2015-03)
-* [*Stable marriage problem* &ndash; Rosetta Code](https://rosettacode.org/wiki/Stable_marriage_problem)
+* D.Austin. [*The stable marriage problem and school choice*](http://www.ams.org/publicoutreach/feature-column/fc-2015-03) &ndash; [AMS Feature column](http://www.ams.org/featurecolumn) (2015)
+* [*Stable marriage problem*](https://rosettacode.org/wiki/Stable_marriage_problem) &ndash; Rosetta Code
 
 :page_facing_up:
 
-* [*College admissions and the stability of marriage* &ndash; D.Gale, L.S.Shapley @ American Mathematical Monthly **69**, 9 (1962)](http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf)
+* D.Gale, L.S.Shapley. [*College admissions and the stability of marriage*](http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf) &ndash; [American Mathematical Monthly **69**, 9](https://dx.doi.org/10.2307/2312726) (1962)

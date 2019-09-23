@@ -41,18 +41,13 @@
 
 :movie_camera:
 
-* *Breadth-first search* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=s-CYnVz-uh4) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Breadth-first search*](https://www.youtube.com/watch?v=s-CYnVz-uh4) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-* Sec. 22.2: *Breadth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* Sec. 5.6: *Breadth-first search* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
-* Sec. 4.2.2: *Breadth first search* &ndash; S.Halim, F.Halim. *Competitive programming.* 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
+* Sec. 22.2: *Breadth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+* Sec. 5.6: *Breadth-first search* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+* Sec. 4.2.2: *Breadth first search* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 <!-- :memo:
 
@@ -70,26 +65,19 @@
 
 :movie_camera:
 
-* *Depth-first search (DFS)* &ndash; MIT OCW 6.006 Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Depth-first search (DFS)*](https://www.youtube.com/watch?v=AfSk24UTFS8) &ndash; MIT OCW 6.006 [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-* Sec. 22.3: *Depth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
-* Sec. 4.2.1: *Depth first search* &ndash; S.Halim, F.Halim. *Competitive programming*. 3<sup>rd</sup> ed., 2013.\
-[Book website](https://cpbook.net/)
+* Sec. 22.3: *Depth-first search* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+* Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+* Sec. 4.2.1: *Depth first search* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 ### Cycle detection
 
 :movie_camera:
 
-* *Depth-first search (DFS)* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/AfSk24UTFS8?t=1093) (from 18:13) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Depth-first search (DFS)*](https://www.youtube.com/AfSk24UTFS8?t=1093) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 ### Topological sorting
 
@@ -97,8 +85,8 @@
 
 :link:
 
-* [*Topological sorting* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
-* [*Topological sorting* &ndash; SB Algorithm Repository](http://www3.cs.stonybrook.edu/~algorith/files/topological-sorting.shtml)
+* [*Topological sorting*](https://en.wikipedia.org/wiki/Topological_sorting) &ndash; Wikipedia
+* [*Topological sorting*](http://www3.cs.stonybrook.edu/~algorith/files/topological-sorting.shtml) &ndash; SB Algorithm Repository
 
 :book:
 
@@ -119,31 +107,26 @@
 
 :movie_camera:
 
-* *Topological Sort* &ndash; MIT OCW 6.006: Introduction to algorithms (2011).\
-[Watch at YouTube](https://www.youtube.com/watch?v=AfSk24UTFS8&t=2515) (from 41:55) |
-[Course website](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm)
+* [*Topological sort*](https://www.youtube.com/watch?v=AfSk24UTFS8&t=2515) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-* Sec. 22.4: *Topological sort* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. *Introduction to algorithms*. The MIT Press, 3<sup>rd</sup> ed., 2009.\
-[Book website](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* Sec. 5.10.1: *Topological sorting* &ndash; S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
+* Sec. 22.4: *Topological sort* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+* Sec. 5.10.1: *Topological sorting* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
 
 #### Kahn's algorithm
 
 :link:
 
-[*`tsort.c` source code* &ndash; M.Kettenis](http://agentzh.org/misc/code/coreutils/tsort.c.html)
+* M.Kettenis. [*`tsort.c` source code*](http://agentzh.org/misc/code/coreutils/tsort.c.html)
 
 :book:
 
-* Sec. 2.2.3: *Linked allocation* &ndash; D.E.Knuth. *The art of computer programming. Vol. 1: Fundamental algorithms*. Addison-Wesley, 3<sup>rd</sup> ed., 1997.\
-[Book website](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+* Sec. 2.2.3: *Linked allocation* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 1: Fundamental algorithms* (1997)
 
 :page_facing_up:
 
-* A.B.Kahn. *Topological sorting of large networks*. Communications of the ACM **5**, [558](https://dx.doi.org/10.1145/368996.369025) (1962).
+* A.B.Kahn. *Topological sorting of large networks* &ndash; [Communications of the ACM **5**, 558](https://dx.doi.org/10.1145/368996.369025) (1962)
 
 <!--
 :memo: *Notes*
@@ -163,15 +146,14 @@
 
 :page_facing_up:
 
-* *Algorithm 447: Efficient algorithms for graph manipulation* &ndash; J.Hopcroft, R.Tarjan. Communications of the ACM **16**, [372](https://doi.org/10.1145/362248.362272) (1973).\
-[Full text](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/06/Hopcroft73.pdf)
+* J.Hopcroft, R.Tarjan. [*Algorithm 447: Efficient algorithms for graph manipulation*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/06/Hopcroft73.pdf) &ndash; [Communications of the ACM **16**, 372](https://doi.org/10.1145/362248.362272) (1973)
 
 ### Biconnectivity
 
 :book:
 
-* Ch. 30: *Connectivity*, Sec.: *Biconnectivity* &ndash; R.Sedgewick. *Algorithms*. Addison-Wesley, 1983.
-* Sec. 6.4: *Biconnected components and DFS* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms*. W.H.Freeman, 1997.
+* Ch. 30: *Connectivity*, Sec.: *Biconnectivity* &ndash; R.Sedgewick. *Algorithms* (1983)
+* Sec. 6.4: *Biconnected components and DFS* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* (1997)
 
 #### Articulation points and bridges
 
@@ -179,7 +161,7 @@
 
 :movie_camera:
 
-* [*Bridges and articulation points algorithm* &ndash; W.Fiset](https://www.youtube.com/watch?v=aZXi1unBdJA)
+* W.Fiset. [*Bridges and articulation points algorithm*](https://www.youtube.com/watch?v=aZXi1unBdJA)
 
 #### Biconnected components
 
@@ -187,4 +169,4 @@
 
 :link:
 
-* [*Biconnected component* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Biconnected_component)
+* [*Biconnected component*](https://en.wikipedia.org/wiki/Biconnected_component) &ndash; Wikipedia

@@ -49,7 +49,7 @@
 
 :movie_camera:
 
-* [*If I had my 'druthers: A proposal for improving the containers in C++2x* &ndash; B.Steagall @ C++Now (2018)](https://www.youtube.com/watch?v=bAE0qteS4Rk)
+* [*If I had my 'druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) &ndash; B.Steagall @ C++Now (2018)
 
 ### Associative containers
 
@@ -57,7 +57,7 @@
 
 :link:
 
-* [*`insert` vs `emplace` vs `operator[]` in C++ `std::map`* &ndash; Stack Overflow](https://stackoverflow.com/questions/17172080/insert-vs-emplace-vs-operator-in-c-map)
+* [*`insert` vs `emplace` vs `operator[]` in C++ `std::map`*](https://stackoverflow.com/questions/17172080/insert-vs-emplace-vs-operator-in-c-map) &ndash; Stack Overflow
 
 ### Sequence containers
 
@@ -81,8 +81,8 @@
 
 :movie_camera:
 
-* [*#Hashing*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; Dietmar K&uuml;hl @ ACCU (2019)
-* [*You can do better than `std::unordered_map`: New improvements to hash table performance*](https://www.youtube.com/watch?v=M2fKMP47slQ) &ndash; M.Skarupke @ C++ Now (2018)
+* D.K&uuml;hl. [*#Hashing*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; ACCU (2019)
+* M.Skarupke. [*You can do better than `std::unordered_map`: New improvements to hash table performance*](https://www.youtube.com/watch?v=M2fKMP47slQ) &ndash; C++ Now (2018)
 
 :anchor:
 
@@ -94,7 +94,7 @@
 
 :link:
 
-* [*Everything you never wanted to know about C++'s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; M.E.O'Neill (2015)
+* M.E.O'Neill. [*Everything you never wanted to know about C++'s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
 * [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
 
 ---
@@ -107,7 +107,7 @@
 
 :movie_camera:
 
-* [*Regular expressions in C++, present and future*](https://www.youtube.com/watch?v=N_rkHzhXueo) &ndash; T.Shen @ CppCon (2016)
+* T.Shen. [*Regular expressions in C++, present and future*](https://www.youtube.com/watch?v=N_rkHzhXueo) &ndash; CppCon (2016)
 
 ---
 
@@ -115,7 +115,7 @@
 
 :link:
 
-* [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; H.Sutter (2013)
+* H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) (2013)
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 
 ### `std::shared_ptr`
@@ -123,7 +123,7 @@
 :link:
 
 * [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
-* [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html) &ndash; A.Williams
+* A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
 
 ### `std::unique_ptr`
 
@@ -156,14 +156,14 @@
 
 :movie_camera:
 
-* [*`<functional>`: What's new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; S.T.Lavavej @ CppCon (2015)
+* S.T.Lavavej. [*`<functional>`: What's new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; CppCon (2015)
 
 ### Pairs and tuples
 
 :movie_camera:
 
-* [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; A.Meredith @ ACCU (2019)
-* [*`tuple<>`: What's new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; S.T.Lavavej @ CppCon (2016)
+* A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
+* S.T.Lavavej. [*`tuple<>`: What's new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; CppCon (2016)
 
 ### `std::launder`
 
@@ -199,7 +199,7 @@
 
 :anchor:
 
-* WG21/P0323R7: [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; V.Botet, J.F.Bastien (2018)
-* WG21/N4109: [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; V.Botet, P.Talbot (2014)
+* V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
+* V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)
 
 <!-- https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable -->

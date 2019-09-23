@@ -48,8 +48,8 @@
 
 :movie_camera:
 
-* [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730) &ndash; D.Schmidt
-* [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU) &ndash; D.Banas
+* D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
+* D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
 
 ---
 
@@ -58,7 +58,7 @@
 :link:
 
 * [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) &ndash; Wikipedia
-* [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) &ndash; J.Coplien, C++ Report (1995)
+* J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) &ndash; C++ Report (1995)
 
 ---
 
@@ -74,7 +74,7 @@
 
 :movie_camera:
 
-* [*Live lock-free or deadlock (practical lock-free programming), Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) &ndash; F.Pikus @ CppCon (2015)
+* F.Pikus. [*Live lock-free or deadlock (practical lock-free programming), Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) &ndash; CppCon (2015)
 
 ---
 
@@ -82,7 +82,7 @@
 
 :link:
 
-* [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) &ndash; K.Henney, EuroPLoP (2000)
+* K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) &ndash; EuroPLoP (2000)
 
 ### Execute-around object
 
@@ -116,7 +116,7 @@
 :link:
 
 * [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) &ndash; WikiBooks
-* [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) &ndash; AlexeyAB, CodeProject (2018)
+* [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) &ndash; CodeProject (2018)
 
 ### Execute-around function
 
@@ -132,8 +132,8 @@
 
 :link:
 
-* [*Empty Scoped Enums as Strong Aliases for Integral Types* &ndash; L.B&ouml;ger, Overload **152**, 9 (2019)](https://accu.org/index.php/journals/2683)
-* [*Tutorial: Emulating strong/opaque typedefs in C++* &ndash; J.Müller, foonathan::blog() (2016)](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
+* L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) &ndash; Overload **152**, 9 (2019)
+* J.Müller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/blog/2016/10/19/strong-typedefs.html) &ndash; foonathan::blog() (2016)
 
 ---
 
@@ -163,7 +163,7 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 :movie_camera:
 
-* [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) &ndash; H.Matthews @ ACCU (2017)
+* H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) &ndash; ACCU (2017)
 
 ---
 
@@ -171,7 +171,7 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 :link:
 
-* [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) &ndash; R.C.Martin (2004)
+* R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) &ndash; Uncle Bob (2004)
 
 ### Class design
 
@@ -186,9 +186,9 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 :link:
 
 * [*SOLID*](https://en.wikipedia.org/wiki/SOLID) &ndash; Wikipedia
-* [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf) &ndash; R.C.Martin (2000)
-* [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf) &ndash; R.C.Martin
-* [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf) &ndash; R.C.Martin
-* [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf) &ndash; R.C.Martin
-* [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf) &ndash; R.C.Martin
-* [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf) &ndash; R.C.Martin
+* R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
+* R.C.Martin. [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf)
+* R.C.Martin. [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf)
+* R.C.Martin. [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf)
+* R.C.Martin. [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf)
+* R.C.Martin. [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)

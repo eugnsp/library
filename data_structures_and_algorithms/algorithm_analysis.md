@@ -21,8 +21,8 @@
 
 :page_facing_up:
 
-* [*Programming pearls: Writing correct programs*](https://www.cs.tufts.edu/~nr/cs257/archive/jon-bentley/correct-programs.pdf) &ndash; J.Bentley, [Communications of the ACM **26**, 1040](https://doi.org/10.1145/358476.358484) (1983)
-* [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; D.Gries, [Science of Computer Programming **2**, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
+* J.Bentley. [*Programming pearls: Writing correct programs*](https://www.cs.tufts.edu/~nr/cs257/archive/jon-bentley/correct-programs.pdf) &ndash; [Communications of the ACM **26**, 1040](https://doi.org/10.1145/358476.358484) (1983)
+* D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; [Science of Computer Programming **2**, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
 
 ### Binary search
 
