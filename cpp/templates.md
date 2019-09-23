@@ -57,7 +57,7 @@
 
 :link:
 
-* [*Two-phase name lookup support comes to MSVC* &ndash; T.Gani, et al. @ C++ team blog](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/)
+* [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; T.Gani, et al. @ C++ team blog
 * [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/)
 
 ---

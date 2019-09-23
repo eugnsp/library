@@ -62,11 +62,11 @@
 
 :link:
 
-* [*What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code?* &ndash; Software Engineering](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c)
+* [*What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) &ndash; Software Engineering
 
 :anchor: **Standards and technical reports**
 
-* [`[[nodiscard]]` in the Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf)
+* WG21/P0600R0: [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; N.Josuttis (2017)
 
 ---
 
@@ -74,15 +74,15 @@
 
 :link:
 
-* [*Exceptions* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/exceptions)
-* [*When and how to use exceptions* &ndash; H.Sutter, Dr.Dobb's Journal (2004)](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836)
+* [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
+* [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; H.Sutter, Dr.Dobb's Journal (2004)
 
 ### Exceptions in destructors
 
 :link:
 
-* [*Destructors that throw* &ndash; A.Krzemie&nacute;ski (2011)](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/)
-* [*Throwing destructors* &ndash; B.Kolpackov (2004)](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml)
+* [*Destructors that throw*](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/) &ndash; A.Krzemie&nacute;ski (2011)
+* [*Throwing destructors*](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml) &ndash; B.Kolpackov (2004)
 
 ---
 
@@ -92,11 +92,11 @@
 
 :link:
 
-* [*Argument-dependent lookup* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/adl)
-* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?* &ndash; Stack Overflow](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup)
-* [*What is ADL?* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/)
-* [*ADL insanity* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/)
-* [*How `hana::type<T>` "disables ADL"* &ndash; A.O'Dwyer (2019)](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/)
+* [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
+* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
+* [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) &ndash; A.O'Dwyer (2019)
+* [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) &ndash; A.O'Dwyer (2019)
+* [*How `hana::type<T>` "disables ADL"*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) &ndash; A.O'Dwyer (2019)
 
 ---
 
@@ -111,7 +111,7 @@
 
 :movie_camera:
 
-* [*You don't know `const` and `mutable`* &ndash; H.Sutter @ C++ and Beyond (2012)](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank)
+* [*You don't know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; H.Sutter @ C++ and Beyond (2012)
 
 ### `friend`
 
@@ -119,11 +119,11 @@
 
 :link:
 
-* [*The power of hidden friends in C++* &ndash; A.Williams (2019)](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html)
+* [*The power of hidden friends in C++*](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html) &ndash; A.Williams (2019)
 
 :anchor:
 
-* [WG21/P1601R0: *Recommendations for specifying "hidden friends"* (2019)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf)
+* WG21/P1601R0: [*Recommendations for specifying "hidden friends"*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) (2019)
 
 ---
 
@@ -137,7 +137,7 @@
 
 :link:
 
-* [*What is the strict aliasing rule?* &ndash; Stack Overflow](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+* [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
 
 ---
 
@@ -147,7 +147,7 @@
 
 :movie_camera:
 
-* [*How C++20 can simplify `std::tuple`* &ndash; A.Meredith @ ACCU (2019)](https://www.youtube.com/watch?v=SvxBvSK4i4k)
+* [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; A.Meredith @ ACCU (2019)
 
 ---
 
@@ -155,7 +155,7 @@
 
 :link:
 
-* [*Structured bindings and tuple of references* &ndash; Stack Overflow](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references)
+* [*Structured bindings and tuple of references*](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references) &ndash; Stack Overflow
 
 ## Templates
 
@@ -169,8 +169,8 @@ See [Templates](templates.md).
 
 :link:
 
-* [*Accessing private members* &ndash; Stack Overflow](https://stackoverflow.com/questions/726096/accessing-private-members)
-* [*Access to private members. That's easy!* &ndash; J.Schaub, litb's Blog](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html)
+* [*Accessing private members*](https://stackoverflow.com/questions/726096/accessing-private-members) &ndash; Stack Overflow
+* [*Access to private members. That's easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) &ndash; J.Schaub, litb's Blog
 
 ---
 
@@ -184,7 +184,7 @@ See [Templates](templates.md).
 
 :link:
 
-* [*Byte swapping floating point types* &ndash; D.Howard](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
+* [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) &ndash; D.Howard
 
 ### Integral types
 
@@ -203,34 +203,34 @@ See [Templates](templates.md).
 
 :anchor: **Standards, technical reports and proposals**
 
-* [WG21/N3741: *Toward opaque typedefs for C++1Y, v2* &ndash; W.E.Brown (2013)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf)
+* WG21/N3741: [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) &ndash; W.E.Brown (2013)
 
 ### References
 
 :link:
 
-* [*Is null reference possible?* &ndash; Stack Overflow](https://stackoverflow.com/questions/4364536/is-null-reference-possible)
+* [*Is null reference possible?*](https://stackoverflow.com/questions/4364536/is-null-reference-possible) &ndash; Stack Overflow
 
 #### Lifetime of a temporary
 
 :link:
 
-* [*Does a `const` reference class member prolong the life of a temporary?* &ndash; Stack Overflow](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary)
-* [*Lifetime of a temporary* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary)
+* [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary) &ndash; Stack Overflow
+* [*Lifetime of a temporary*](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary) &ndash; C++ reference
 
 #### Rvalue references and move semantics
 
 :link:
 
-* [*A brief introduction to rvalue references* &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)](https://www.artima.com/cppsource/rvalue.html)
-* [*C++ rvalue references explained* &ndash; T.Becker (2013)](http://thbecker.net/articles/rvalue_references/section_01.html)
-* [*What is move semantics?* &ndash; Stack Overflow](https://stackoverflow.com/questions/3106110/what-is-move-semantics)
-* [*Rvalues, lvalues and formal definitions* &ndash; Stack Overflow](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions)
-* [*Pass by value vs pass by rvalue reference* &ndash; Stack Overflow](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference)
+* [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)
+* [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) &ndash; T.Becker (2013)
+* [*What is move semantics?*](https://stackoverflow.com/questions/3106110/what-is-move-semantics) &ndash; Stack Overflow
+* [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) &ndash; Stack Overflow
+* [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) &ndash; Stack Overflow
 
 :movie_camera:
 
-* [*The nightmare of move semantics for trivial classes* &ndash; N.Josuttis @ CppCon (2017)](https://www.youtube.com/watch?v=PNRju6_yn3o)
+* [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) &ndash; N.Josuttis @ CppCon (2017)
 
 ### Type conversions
 
@@ -238,9 +238,9 @@ See [Templates](templates.md).
 
 :link:
 
-* [*`dynamic_cast` conversion* &ndash; C++ reference](https://en.cppreference.com/w/cpp/language/dynamic_cast)
+* [*`dynamic_cast` conversion*](https://en.cppreference.com/w/cpp/language/dynamic_cast) &ndash; C++ reference
 
 :movie_camera:
 
-* [*`dynamic_cast` from scratch* &ndash; A.O'Dwyer @ CppCon (2017)](https://www.youtube.com/watch?v=QzJL-8WbpuU)
+* [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; A.O'Dwyer @ CppCon (2017)
 
