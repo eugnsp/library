@@ -30,8 +30,8 @@
 
 :book:
 
-* [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* &ndash; J.Galowicz. Packt Publishing (2017)](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* Ch. 18: *Concurrency* in [*The C++ standard library: A tutorial and reference* &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)](http://www.cppstdlib.com/)
+* [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.*](https://www.packtpub.com/application-development/c17-stl-cookbook) &ndash; J.Galowicz. Packt Publishing (2017)
+* Ch. 18: *Concurrency* in [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)
 
 ---
 
@@ -39,9 +39,9 @@
 
 :movie_camera:
 
-* [*105 STL algorithms in less than an hour* &ndash; J.Boccara @ ACCU (2018)](https://www.youtube.com/watch?v=bXkWuUe9V2I)
-* [*STL algorithms: How to use them and how to write your own* &ndash; M.Clow @ ACCU (2016)](https://www.youtube.com/watch?v=3nXLxMYXgWs)
-* [*STL algorithms in action* &ndash; M.VanLoon @ CppCon (2015)](https://www.youtube.com/watch?v=eidEEmGLQcU)
+* [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) &ndash; J.Boccara @ ACCU (2018)
+* [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) &ndash; M.Clow @ ACCU (2016)
+* [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) &ndash; M.VanLoon @ CppCon (2015)
 
 ---
 
@@ -67,7 +67,7 @@
 
 :link:
 
-* [*On `vector<bool>`* &ndash; H.E.Hinnant (2012)](https://howardhinnant.github.io/onvectorbool.html)
+* [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) &ndash; H.E.Hinnant (2012)
 
 ### Unordered containers
 
@@ -75,18 +75,18 @@
 
 :link:
 
-* [*Why is there no `std::is_transparent` equivalent for unordered containers?* &ndash; Stack Overflow](https://stackoverflow.com/questions/33373228/why-is-there-no-stdis-transparent-equivalent-for-unordered-containers)
-* [*Why is `unordered_map` "`find` + `insert`" faster than "`insert` + check for success"?* &ndash; Stack Overflow](https://stackoverflow.com/questions/31804025/why-is-unordered-map-find-insert-faster-than-insert-check-for-success)
-* [*Performance of `emplace` is worse than check followed by `emplace`* &ndash; Stack Overflow](https://stackoverflow.com/questions/24209592/performance-of-emplace-is-worse-than-check-followed-by-emplace)
+* [*Why is there no `std::is_transparent` equivalent for unordered containers?*](https://stackoverflow.com/questions/33373228/why-is-there-no-stdis-transparent-equivalent-for-unordered-containers) &ndash; Stack Overflow
+* [*Why is `unordered_map` "`find` + `insert`" faster than "`insert` + check for success"?*](https://stackoverflow.com/questions/31804025/why-is-unordered-map-find-insert-faster-than-insert-check-for-success) &ndash; Stack Overflow
+* [*Performance of `emplace` is worse than check followed by `emplace`*](https://stackoverflow.com/questions/24209592/performance-of-emplace-is-worse-than-check-followed-by-emplace) &ndash; Stack Overflow
 
 :movie_camera:
 
-* [*#Hashing* - Dietmar K&uuml;hl @ ACCU (2019)](https://www.youtube.com/watch?v=CJsQSIp7-Ig)
-* [*You can do better than `std::unordered_map`: New improvements to hash table performance* &ndash; M.Skarupke @ C++ Now (2018)](https://www.youtube.com/watch?v=M2fKMP47slQ)
+* [*#Hashing*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; Dietmar K&uuml;hl @ ACCU (2019)
+* [*You can do better than `std::unordered_map`: New improvements to hash table performance*](https://www.youtube.com/watch?v=M2fKMP47slQ) &ndash; M.Skarupke @ C++ Now (2018)
 
 :anchor:
 
-* [WG21/P0919R3: *Heterogeneous lookup for unordered containers* &ndash; M.Pusz (2018)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html)
+* WG21/P0919R3: [*Heterogeneous lookup for unordered containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html) &ndash; M.Pusz (2018)
 
 ---
 
@@ -94,8 +94,8 @@
 
 :link:
 
-* [*Everything you never wanted to know about C++'s `random_device`* &ndash; M.E.O'Neill (2015)](http://www.pcg-random.org/posts/cpps-random_device.html)
-* [*Why not just use `random_device`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device)
+* [*Everything you never wanted to know about C++'s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; M.E.O'Neill (2015)
+* [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
 
 ---
 
@@ -103,11 +103,11 @@
 
 :link:
 
-* [*Regular expressions library* &ndash; C++ reference](https://en.cppreference.com/w/cpp/regex)
+* [*Regular expressions library*](https://en.cppreference.com/w/cpp/regex) &ndash; C++ reference
 
 :movie_camera:
 
-* [*Regular expressions in C++, present and future* &ndash; T.Shen @ CppCon (2016)](https://www.youtube.com/watch?v=N_rkHzhXueo)
+* [*Regular expressions in C++, present and future*](https://www.youtube.com/watch?v=N_rkHzhXueo) &ndash; T.Shen @ CppCon (2016)
 
 ---
 
@@ -115,22 +115,22 @@
 
 :link:
 
-* [GotW #91: *Smart pointer parameters* &ndash; H.Sutter (2013)](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
-* [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?* &ndash; Stack Overflow](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed)
+* [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; H.Sutter (2013)
+* [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 
 ### `std::shared_ptr`
 
 :link:
 
-* [*`std::shared_ptr` thread safety* &ndash; Stack Overflow](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety)
-* [*`std::shared_ptr`'s secret constructor* &ndash; A.Williams](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+* [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
+* [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html) &ndash; A.Williams
 
 ### `std::unique_ptr`
 
 :link:
 
-* [*What to use `std::optional` or `std::unique_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1)
-* [*Should I assign or reset a `unique_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr)
+* [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
+* [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
 
 ---
 
@@ -138,7 +138,7 @@
 
 :link:
 
-* [*Meaning of acronym SSO in the context of `std::string`* &ndash; Stack Overflow](https://stackoverflow.com/questions/10315041/meaning-of-acronym-sso-in-the-context-of-stdstring)
+* [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/questions/10315041/meaning-of-acronym-sso-in-the-context-of-stdstring) &ndash; Stack Overflow
 
 ---
 
@@ -146,24 +146,24 @@
 
 :link:
 
-* [*Utility library* &ndash; C++ reference](https://en.cppreference.com/w/cpp/utility)
+* [*Utility library*](https://en.cppreference.com/w/cpp/utility) &ndash; C++ reference
 
 ### Function objects
 
 :link:
 
-* [*Function objects* &ndash; C++ reference](https://en.cppreference.com/w/cpp/utility/functional)
+* [*Function objects*](https://en.cppreference.com/w/cpp/utility/functional) &ndash; C++ reference
 
 :movie_camera:
 
-* [*`<functional>`: What's new, and proper usage* &ndash; S.T.Lavavej @ CppCon (2015)](https://www.youtube.com/watch?v=zt7ThwVfap0)
+* [*`<functional>`: What's new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; S.T.Lavavej @ CppCon (2015)
 
 ### Pairs and tuples
 
 :movie_camera:
 
-* [*How C++20 can simplify `std::tuple`* &ndash; A.Meredith @ ACCU (2019)](https://www.youtube.com/watch?v=SvxBvSK4i4k)
-* [*`tuple<>`: What's new and how it works* &ndash; S.T.Lavavej @ CppCon (2016)](https://www.youtube.com/watch?v=JhgWFYfdIho)
+* [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; A.Meredith @ ACCU (2019)
+* [*`tuple<>`: What's new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; S.T.Lavavej @ CppCon (2016)
 
 ### `std::launder`
 
@@ -173,9 +173,9 @@
 
 :link:
 
-* [*What is the purpose of `std::launder?`* &ndash; Stack Overflow](https://stackoverflow.com/questions/39382501/what-is-the-purpose-of-stdlaunder)
-* [*Where can I find what `std::launder` really does?* &ndash; Stack Overflow](https://stackoverflow.com/questions/53268089/where-can-i-find-what-stdlaunder-really-does)
-* [*`std::launder`* &ndash; C++ reference](https://en.cppreference.com/w/cpp/utility/launder)
+* [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) &ndash; C++ reference
+* [*What is the purpose of `std::launder?`*](https://stackoverflow.com/questions/39382501/what-is-the-purpose-of-stdlaunder) &ndash; Stack Overflow
+* [*Where can I find what `std::launder` really does?*](https://stackoverflow.com/questions/53268089/where-can-i-find-what-stdlaunder-really-does) &ndash; Stack Overflow
 
 ---
 
@@ -183,13 +183,13 @@
 
 :link:
 
-* [*In `std::exchange`, why is the second template parameter defaulted?* &ndash; Stack Overflow](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted)
+* [*In `std::exchange`, why is the second template parameter defaulted?*](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted) &ndash; Stack Overflow
 
 ---
 
 ## SFINAE
 
-* [*Making `std::get` play nice with SFINAE* &ndash; Stack Overflow](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae)
+* [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) &ndash; Stack Overflow
 
 ---
 
@@ -199,7 +199,7 @@
 
 :anchor:
 
-* [WG21/P0323R7: *`std::expected`* &ndash; V.Botet, J.F.Bastien (2018)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html)
-* [WG21/N4109: *A proposal to add a utility class to represent expected monad* &ndash; V.Botet, P.Talbot (2014)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf)
+* WG21/P0323R7: [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; V.Botet, J.F.Bastien (2018)
+* WG21/N4109: [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; V.Botet, P.Talbot (2014)
 
 <!-- https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable -->

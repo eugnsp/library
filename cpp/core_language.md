@@ -64,7 +64,7 @@
 
 * [*What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) &ndash; Software Engineering
 
-:anchor: **Standards and technical reports**
+:anchor:
 
 * WG21/P0600R0: [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; N.Josuttis (2017)
 
@@ -201,7 +201,7 @@ See [Templates](templates.md).
 * > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.Müller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 * See [*Opaque typedefs* &ndash; Patterns and idioms](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
 
-:anchor: **Standards, technical reports and proposals**
+:anchor:
 
 * WG21/N3741: [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) &ndash; W.E.Brown (2013)
 

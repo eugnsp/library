@@ -14,8 +14,8 @@
 
 :movie_camera:
 
-* [*#Hashing* - D.K&uuml;hl @ ACCU (2019)](https://www.youtube.com/watch?v=CJsQSIp7-Ig)
-* [*Designing a fast, efficient, cache-friendly hash table, step by step* &ndash; M.Kulukundis @ CppCon (2017)](https://www.youtube.com/watch?v=CJsQSIp7-Ig)
+* [*#Hashing*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; D.K&uuml;hl @ ACCU (2019)
+* [*Designing a fast, efficient, cache-friendly hash table, step by step*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; M.Kulukundis @ CppCon (2017)
 
 <!--
 
