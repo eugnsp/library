@@ -12,8 +12,10 @@
 * [Random number generation](#random-number-generation)
 * [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
-	* [`std::shared_ptr`](#stdshared_ptr)
 	* [`std::unique_ptr`](#stdunique_ptr)
+	* [`std::shared_ptr`](#stdshared_ptr)
+	* [`std::weak_ptr`](#stdweak_ptr)
+	* [`std::auto_ptr`](#stdauto_ptr)
 * [Strings](#strings)
 	* [Short string optimization](#short-string-optimization)
 * [Utilities](#utilities)
@@ -114,17 +116,15 @@
 
 ## Smart pointers
 
+> A smart pointer is a class that simulates a raw C++ pointer, and provide automatic exception-safe object lifetime management.
+
 :link:
 
+* [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) &ndash; Wikipedia
+* [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
 * H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) (2013)
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
-
-### `std::shared_ptr`
-
-:link:
-
-* [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
-* A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+* Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
 ### `std::unique_ptr`
 
@@ -133,11 +133,34 @@
 * [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
 * [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
 
+### `std::shared_ptr`
+
+:link:
+
+* [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
+* A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+
+### `std::weak_ptr`
+
+:link:
+
+* [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/questions/12030650/when-is-stdweak-ptr-useful) &ndash; Stack Overflow
+
+### `std::auto_ptr`
+
+> `std::auto_ptr` was deprecated in C++11 and removed in C++17.
+
+:link:
+
+* [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) &ndash; C++ reference
+* H.Sutter. [GotW #25: *`auto_ptr`*](http://www.gotw.ca/gotw/025.htm) &ndash; Guru of the Week (2009)
+
 ---
 
 ## Strings
 
 * [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) &ndash; C++ reference
+* H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) &ndash; Guru of the Week (2009)
 
 ### Short string optimization
 

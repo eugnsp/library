@@ -7,6 +7,7 @@
 	* [Arithmetic means](#arithmetic-means)
 	* [Division algorithms](#division-algorithms)
 		* [Integer division](#integer-division)
+	* [Horner's method](#horners-method)
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
 * [Floating-point numbers](#floating-point-numbers)
 	* [Denormal numbers](#denormal-numbers)
@@ -49,6 +50,14 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * I.Kaplan. [*Integer division*](http://bearcave.com/software/divide.htm) (1996)
+
+### Horner's method
+
+> Horner's method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
+
+:link:
+
+* [Horner's method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
 
 ### Kahan summation algorithm
 

@@ -12,7 +12,7 @@
 
 :link:
 
-* S.E.Anderson. [*Bit twiddling hacks*](http://graphics.stanford.edu/~seander/bithacks.html)
+* S.E.Anderson. [*Bit twiddling hacks*](http://graphics.stanford.edu/~seander/bithacks.html) (2005)
 
 ---
 

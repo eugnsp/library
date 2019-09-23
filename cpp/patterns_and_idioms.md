@@ -17,6 +17,7 @@
 * [Whole value](#whole-value)
 * [Design principles](#design-principles)
 	* [Class design](#class-design)
+	* [Style guidelines](#style-guidelines)
 
 ---
 
@@ -192,3 +193,7 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 * R.C.Martin. [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf)
 * R.C.Martin. [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf)
 * R.C.Martin. [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
+
+### Style guidelines
+
+* [Google C++ style guide](https://google.github.io/styleguide/cppguide.html)

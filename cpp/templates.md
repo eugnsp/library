@@ -36,7 +36,7 @@
 :link:
 
 * [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) &ndash; Stack Overflow
-* [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm) &ndash; H.Sutter
+* H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
 
 ---
 
