@@ -41,7 +41,7 @@
 
 :link:
 
-* [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
+* [*Itanium C++ ABI*](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
 
 ---
 
@@ -66,7 +66,7 @@
 
 :anchor:
 
-* WG21/P0600R0: [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; N.Josuttis (2017)
+* N.Josuttis. [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; WG21/P0600R0 (2017)
 
 ---
 
@@ -75,14 +75,14 @@
 :link:
 
 * [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
-* [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; H.Sutter, Dr.Dobb's Journal (2004)
+* H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb's Journal (2004)
 
 ### Exceptions in destructors
 
 :link:
 
-* [*Destructors that throw*](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/) &ndash; A.Krzemie&nacute;ski (2011)
-* [*Throwing destructors*](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml) &ndash; B.Kolpackov (2004)
+* A.Krzemie&nacute;ski. [*Destructors that throw*](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/) (2011)
+* B.Kolpackov. [*Throwing destructors*](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml) (2004)
 
 ---
 
@@ -94,9 +94,9 @@
 
 * [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
 * [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
-* [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) &ndash; A.O'Dwyer (2019)
-* [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) &ndash; A.O'Dwyer (2019)
-* [*How `hana::type<T>` "disables ADL"*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) &ndash; A.O'Dwyer (2019)
+* A.O'Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
+* A.O'Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
+* A.O'Dwyer. [*How `hana::type<T>` "disables ADL"*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
 
 ---
 
@@ -111,7 +111,7 @@
 
 :movie_camera:
 
-* [*You don't know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; H.Sutter @ C++ and Beyond (2012)
+* H.Sutter. [*You don't know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; C++ and Beyond (2012)
 
 ### `friend`
 
@@ -119,11 +119,11 @@
 
 :link:
 
-* [*The power of hidden friends in C++*](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html) &ndash; A.Williams (2019)
+* A.Williams. [*The power of hidden friends in C++*](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html) (2019)
 
 :anchor:
 
-* WG21/P1601R0: [*Recommendations for specifying "hidden friends"*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) (2019)
+* [*Recommendations for specifying "hidden friends"*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) &ndash; WG21/P1601R0 (2019)
 
 ---
 
@@ -147,7 +147,7 @@
 
 :movie_camera:
 
-* [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; A.Meredith @ ACCU (2019)
+* A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
 
 ---
 
@@ -170,7 +170,7 @@ See [Templates](templates.md).
 :link:
 
 * [*Accessing private members*](https://stackoverflow.com/questions/726096/accessing-private-members) &ndash; Stack Overflow
-* [*Access to private members. That's easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) &ndash; J.Schaub, litb's Blog
+* J.Schaub. [*Access to private members. That's easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) &ndash; litb's Blog
 
 ---
 
@@ -184,13 +184,13 @@ See [Templates](templates.md).
 
 :link:
 
-* [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) &ndash; D.Howard
+* D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
 
 ### Integral types
 
 :link:
 
-* [*SEI CERT C coding standard: Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052)
+* [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) &ndash; SEI CERT C coding standard
 
 ### Opaque typedefs
 
@@ -203,7 +203,7 @@ See [Templates](templates.md).
 
 :anchor:
 
-* WG21/N3741: [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) &ndash; W.E.Brown (2013)
+* W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) &ndash; WG21/N3741 (2013)
 
 ### References
 
@@ -230,7 +230,7 @@ See [Templates](templates.md).
 
 :movie_camera:
 
-* [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) &ndash; N.Josuttis @ CppCon (2017)
+* N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) &ndash; CppCon (2017)
 
 ### Type conversions
 
@@ -242,5 +242,5 @@ See [Templates](templates.md).
 
 :movie_camera:
 
-* [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; A.O'Dwyer @ CppCon (2017)
+* A.O'Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
 

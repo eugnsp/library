@@ -24,41 +24,39 @@
 
 :link:
 
-* [*Introduction to parallel computing* &ndash; B.Barney](https://computing.llnl.gov/tutorials/parallel_comp/)
+* B.Barney. [*Introduction to parallel computing*](https://computing.llnl.gov/tutorials/parallel_comp/) &ndash; Lawrence Livermore National Laboratory
 
 ## GPU computing
 
 :movie_camera:
 
-* [*C++ on GPUs done right?* &ndash; P.Steinbach @ Meeting C++ (2015)](https://www.youtube.com/watch?v=z43l_LaOqnM)
+* P.Steinbach. [*C++ on GPUs done right?*](https://www.youtube.com/watch?v=z43l_LaOqnM) &ndash; Meeting C++ (2015)
 
 ## Multithreading
 
 :movie_camera:
 
-* [*An adventure in race conditions* &ndash; Felix Petriconi @ ACCU (2019)](https://www.youtube.com/watch?v=asgO4P2fhTw)
-* *Multithreading is the answer. What is the question?* &ndash; A.Sermersheim @ CppCon (2017)
-	* [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk)
-	* [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I)
-* [*C++11 multithreading done right?* &ndash; R.Grimm @ Meeting C++ (2014)](https://www.youtube.com/watch?v=paK38WAq8WY)
-* [*The continuing future of C++ concurrency* &ndash; A.Williams @ CppCon (2016)](https://www.youtube.com/watch?v=FaHJOkOrfNo)
+* F.Petriconi. [*An adventure in race conditions*](https://www.youtube.com/watch?v=asgO4P2fhTw) &ndash; ACCU (2019)
+* A.Sermersheim. *Multithreading is the answer. What is the question?* [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I) &ndash; CppCon (2017)
+* R.Grimm. [*C++11 multithreading done right?*](https://www.youtube.com/watch?v=paK38WAq8WY) &ndash; Meeting C++ (2014)
+* A.Williams. [*The continuing future of C++ concurrency*](https://www.youtube.com/watch?v=FaHJOkOrfNo) &ndash; CppCon (2016)
 
 :book:
 
-* [P.E.McKenney. *Is parallel programming hard, and, if so, what can you do about it?* (2018)](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
-* [*C++ concurrency in action: Practical multithreading.* A.Williams. Manning, 2<sup>nd</sup> ed. (2019)](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)
-* [Ch. 9: *Parallelism and concurrency* &ndash; *C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.* J.Galowicz. Packt Publishing (2017)](https://www.packtpub.com/application-development/c17-stl-cookbook)
-* [Ch. 18: *Concurrency* &ndash; *The C++ standard library: A tutorial and reference.* N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)](http://www.cppstdlib.com/)
+* P.E.McKenney. [*Is parallel programming hard, and, if so, what can you do about it?*](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html) (2018)
+* A.Williams. [*C++ concurrency in action: Practical multithreading*](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition) (2019)
+* Ch. 9: *Parallelism and concurrency* &ndash; J.Galowicz. [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions*](https://www.packtpub.com/application-development/c17-stl-cookbook) (2017)
+* Ch. 18: *Concurrency* &ndash; N.M.Josuttis. [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) (2012)
 
 :page_facing_up:
 
-* [*Memory barriers: a hardware view for software hackers* &ndash; P.E.McKenney (2010)](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf)
+* P.E.McKenney. [*Memory barriers: a hardware view for software hackers*](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf) (2010)
 
 ### Data races and race conditions
 
 :link:
 
-* [*Are "data races" and "race condition" actually the same thing in context of concurrent programming* &ndash; Stack Overflow](https://stackoverflow.com/questions/11276259/are-data-races-and-race-condition-actually-the-same-thing-in-context-of-conc)
+* [*Are "data races" and "race condition" actually the same thing in context of concurrent programming*](https://stackoverflow.com/questions/11276259/are-data-races-and-race-condition-actually-the-same-thing-in-context-of-conc) &ndash; Stack Overflow
 
 ### Lock-based
 
@@ -70,60 +68,55 @@
 
 :link:
 
-* [*When should one use a spinlock instead of mutex?* &ndash; Stack Overflow](https://stackoverflow.com/questions/5869825/when-should-one-use-a-spinlock-instead-of-mutex)
-* [*Spinlock versus semaphore* &ndash; Stack Overflow](https://stackoverflow.com/questions/195853/spinlock-versus-semaphore)
+* [*When should one use a spinlock instead of mutex?*](https://stackoverflow.com/questions/5869825/when-should-one-use-a-spinlock-instead-of-mutex) &ndash; Stack Overflow
+* [*Spinlock versus semaphore*](https://stackoverflow.com/questions/195853/spinlock-versus-semaphore) &ndash; Stack Overflow
 
 ### Lock-free
 
-> Lock-free programming is a set of techniques for writing concurrent programs without using
-explicit locks.
+> Lock-free programming is a set of techniques for writing concurrent programs without using explicit locks.
 
 :movie_camera:
 
-* [*C++ atomics, from basic to advanced: What do they really do?* &ndash; F.Pikus @ CppCon (2017)](https://www.youtube.com/watch?v=ZQFzMfHIxng)
-* *Live lock-free or deadlock (practical lock-free programming)* &ndash; F.Pikus @ CppCon (2015)
-	* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y)
-	* [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4)
-* *`atomic<>` weapons* &ndash; H.Sutter @ C++ and Beyond (2012)
-	* [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4)
-	* [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU)
+* F.Pikus. [*C++ atomics, from basic to advanced: What do they really do?*](https://www.youtube.com/watch?v=ZQFzMfHIxng) &ndash; CppCon (2017)
+* F.Pikus. *Live lock-free or deadlock (practical lock-free programming):* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4) &ndash; CppCon (2015)
+* H.Sutter. *`atomic<>` weapons:* [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU) &ndash; C++ and Beyond (2012)
 
 #### Hazard pointers
 
 :link:
 
 * [*Hazard pointer* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
-* [*Lock-free data structures with hazard pointers* &ndash; A.Alexandrescu, M.Michael @ Dr.Dobb's Journal (2004)](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890)
+* A.Alexandrescu, M.Michael. [*Lock-free data structures with hazard pointers*](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890) &ndash; Dr.Dobb's Journal (2004)
 
 #### Read-copy-update (RCU)
 
 :link:
 
-* [*Read-copy-update* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Read-copy-update)
-* [*Introduction to RCU* &ndash; P.E.McKenney](http://www2.rdrop.com/users/paulmck/RCU/)
+* [*Read-copy-update*](https://en.wikipedia.org/wiki/Read-copy-update) &ndash; Wikipedia
+* P.E.McKenney. [*Introduction to RCU*](http://www2.rdrop.com/users/paulmck/RCU/)
 
 :movie_camera:
 
-* [*Read, copy, update, then what? RCU for non-kernel programmers* &ndash; F.Pikus @ CppCon (2017)](https://www.youtube.com/watch?v=rxQ5K9lo034)
-* [*A lock-free concurrency toolkit for deferred reclamation and optimistic speculation* &ndash; P.E.McKenney @ CppCon (2016)](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289)
+* F.Pikus. [*Read, copy, update, then what? RCU for non-kernel programmers*](https://www.youtube.com/watch?v=rxQ5K9lo034) &ndash; CppCon (2017)
+* P.E.McKenney. [*A lock-free concurrency toolkit for deferred reclamation and optimistic speculation*](https://www.youtube.com/watch?v=uhgrD_B1RhQ&t=2289) &ndash; CppCon (2016)
 
 :anchor:
 
-* [WG21/P0461R1: *Proposed RCU C++ API* (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf)
-* [WG21/P0279R1: *Read-copy update (RCU) for C++* (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf)
+* [*Proposed RCU C++ API* (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf) &ndash; WG21/P0461R1
+* [*Read-copy update (RCU) for C++* (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf) &ndash; WG21/P0279R1
 
 ### Concurrency and the standard library
 
 :link:
 
-* [*C++11 standard library extensions: Concurrency* &ndash; Standard C++ Foundation](https://isocpp.org/wiki/faq/cpp11-library-concurrency)
+* [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) &ndash; Standard C++ Foundation
 
 #### `std::atomic_shared_ptr`
 
 :link:
 
-* [*Why do we need `atomic_shared_ptr`?* &ndash; A.Williams (2015)](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html)
-* [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha)
+* A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
+* [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha) &ndash; Stack Overflow
 
 #### `std::condition_variable`
 
@@ -135,7 +128,7 @@ explicit locks.
 
 :link:
 
-* [`std::condition_variable` &ndash; C++ reference](https://en.cppreference.com/w/cpp/thread/condition_variable)
+* [`std::condition_variable`](https://en.cppreference.com/w/cpp/thread/condition_variable) &ndash; C++ reference
 
 #### `std::promise`
 
@@ -143,14 +136,14 @@ explicit locks.
 
 :link:
 
-* [`std::promise` &ndash; C++ reference](https://en.cppreference.com/w/cpp/thread/promise)
-* [*What is `std::promise`?* &ndash; Stack Overflow](https://stackoverflow.com/questions/11004273/what-is-stdpromise)
+* [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) &ndash; C++ reference
+* [*What is `std::promise`?*](https://stackoverflow.com/questions/11004273/what-is-stdpromise) &ndash; Stack Overflow
 
 ### POSIX threads
 
 :link:
 
-* [*POSIX threads programming* &ndash; B.Barney](https://computing.llnl.gov/tutorials/pthreads/)
+* [*POSIX threads programming*](https://computing.llnl.gov/tutorials/pthreads/) &ndash; B.Barney
 
 <!--
 

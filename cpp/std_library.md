@@ -30,8 +30,8 @@
 
 :book:
 
-* [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions.*](https://www.packtpub.com/application-development/c17-stl-cookbook) &ndash; J.Galowicz. Packt Publishing (2017)
-* Ch. 18: *Concurrency* in [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) &ndash; N.M.Josuttis. Addison-Wesley, 2<sup>nd</sup> ed. (2012)
+* J.Galowicz. [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions*](https://www.packtpub.com/application-development/c17-stl-cookbook) (2017)
+* Ch. 18: *Concurrency* &ndash; N.M.Josuttis. [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) (2012)
 
 ---
 
@@ -39,9 +39,9 @@
 
 :movie_camera:
 
-* [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) &ndash; J.Boccara @ ACCU (2018)
-* [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) &ndash; M.Clow @ ACCU (2016)
-* [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) &ndash; M.VanLoon @ CppCon (2015)
+* J.Boccara. [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) &ndash; ACCU (2018)
+* M.Clow. [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) &ndash; ACCU (2016)
+* M.VanLoon. [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) &ndash; CppCon (2015)
 
 ---
 
@@ -67,7 +67,7 @@
 
 :link:
 
-* [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) &ndash; H.E.Hinnant (2012)
+* H.E.Hinnant. [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) (2012)
 
 ### Unordered containers
 
@@ -86,7 +86,7 @@
 
 :anchor:
 
-* WG21/P0919R3: [*Heterogeneous lookup for unordered containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html) &ndash; M.Pusz (2018)
+* M.Pusz. [*Heterogeneous lookup for unordered containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html) &ndash; WG21/P0919R3 (2018)
 
 ---
 

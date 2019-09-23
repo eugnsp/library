@@ -48,7 +48,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Integer division*](http://bearcave.com/software/divide.htm) &ndash; I.Kaplan (1996)
+* I.Kaplan. [*Integer division*](http://bearcave.com/software/divide.htm) (1996)
 
 ### Kahan summation algorithm
 
@@ -63,25 +63,25 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) &ndash; D.Goldberg
-* [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; C.Moler (2019)
-* [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf) &ndash; J.L.Gustafson, I.Yonemoto
+* D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
+* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
+* J.L.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
 
 :movie_camera:
 
-* [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; J.Farrier @ CppCon (2015)
-* [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; J.Gustafson @ HPC Advisory Council Australia Conference (2017)
+* J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; CppCon (2015)
+* J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; HPC Advisory Council Australia Conference (2017)
 
 ### Denormal numbers
 
 :link:
 
 * [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
-* [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; C.Moler (2014)
+* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) (2014)
 
 :movie_camera:
 
-* [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) &ndash; D.Kohlbrenner @ IEEE Symposium on Security and Privacy (2015)
+* D.Kohlbrenner. [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) &ndash; IEEE Symposium on Security and Privacy (2015)
 
 ---
 
@@ -91,11 +91,11 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*Iterative methods*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/readings/am62.pdf) &ndash; G.Strang (2006)
+* G.Strang. [*Iterative methods*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/readings/am62.pdf) (2006)
 
 :book:
 
-* Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; [*Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
+* Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition) (2007)
 
 #### Jacobi method
 
@@ -123,9 +123,9 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :book:
 
-* [Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
-* [Sec. 8.5: *Jacobi methods* &ndash; *Matrix computations.* G.H.Golub, C.F.Van Loan. Johns Hopkins University Press (2013)](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573)
-* [Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; *Handbook for automatic computation. Vol. II: Linear algebra.* H.Rutishause; J.H.Wilkinson, C.Reinsch (eds.). Springer (1971)](https://www.springer.com/gp/book/9783642869426)
+* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition) (2007)
+* Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) (2013)
+* H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
 
 ---
 
@@ -133,12 +133,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-* [Lec. 27: *Multiresolution, wavelet transform and scaling function* &ndash; G.Strang @ MIT 18.085 Computational science and engineering I (2008?)](https://www.youtube.com/watch?v=LtNVodIs1dI)
-* [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction* &ndash; G.Strang @ MIT 18.085 Computational science and engineering I (2008?)](https://www.youtube.com/watch?v=LeafEHx9d0c)
+* G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.085 Computational science and engineering I (2008?)
+* G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) &ndash; MIT 18.085 Computational science and engineering I (2008?)
 
 :book:
 
-* [Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; *Numerical recipes: The art of scientific computing.* W.H.Press, et al. Cambridge University Press, 3rd ed. (2007)](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition)
+* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash;  W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition) (2007)
 
 
 <!--
