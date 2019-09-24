@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Introduction and overview](#introduction-and-overview)
+* [Argument deduction](#argument-deduction)
 * [Function templates](#function-templates)
 * [Parsing](#parsing)
 	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
@@ -16,18 +17,25 @@
 
 :movie_camera:
 
-* [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; H.Matthews @ ACCU (2017)
-* *Modern template metaprogramming: A compendium* &ndash; W.E.Brown @ CppCon (2014)
-	* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY)
-	* [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE)
+* H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; ACCU (2017)
+* W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) &ndash; CppCon (2014)
+* M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) &ndash; C++Now (2012)
 
-:book: *Books*
+:book:
 
-* [*C++ templates: The complete guide*](http://www.tmplbook.com/) &ndash; D.Vandevoorde, N.M.Josuttis, D.Gregor. Addison-Wesley, 2<sup>nd</sup> ed. (2017)
+* D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
 
 ---
 
-## Policies
+## Argument deduction
+
+:link:
+
+* [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) &ndash; C++ reference
+
+:movie_camera:
+
+* S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) &ndash; CppCon (2014)
 
 ---
 
@@ -67,6 +75,10 @@
 :movie_camera:
 
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) &ndash; ACCU (2017)
+
+---
+
+## Policies
 
 ---
 

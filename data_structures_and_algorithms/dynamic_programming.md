@@ -12,7 +12,7 @@
 
 :movie_camera:
 
-* *Dynamic programming:* [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY), [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY), [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+* *Dynamic programming.* [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY), [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY), [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 

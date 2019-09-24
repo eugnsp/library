@@ -4,6 +4,8 @@
 
 * [Build automation](#build-automation)
 	* [CMake](#cmake)
+* [Compilers](#compilers)
+	* [GCC](#gcc)
 * [Debugging, testing, and optimization](#debugging-testing-and-optimization)
 	* [Online compilers](#online-compilers)
 	* [Valgrind](#valgrind)
@@ -34,7 +36,21 @@
 * F.Castelli. [*Introduction to CMake*](https://www.youtube.com/watch?v=jt3meXdP-QI) &ndash; SwedenCpp (2018)
 * D.Pfeifer. [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) &ndash; C++ Now (2017)
 * M.Ropert. [*Using modern CMake patterns to enforce a good modular design*](https://www.youtube.com/watch?v=eC9-iRN2b04) &ndash; CppCon (2017)
-* J.Turner. [*Ep. 78: Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) &ndash; C++ Weekly (2017)
+* J.Turner. [*Episode 78: Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) &ndash; C++ Weekly (2017)
+
+---
+
+## Compilers
+
+:link:
+
+* [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) &ndash; C++ reference
+
+### GCC
+
+:sound:
+
+* M.Deters. [*Episode 61: Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) &ndash; Software Engineering Radio (2007)
 
 ---
 
@@ -54,7 +70,7 @@
 
 :movie_camera:
 
-* J.Turner. [*Ep. 86: Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) &ndash; C++ Weekly (2017)
+* J.Turner. [*Episode 86: Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) &ndash; C++ Weekly (2017)
 
 ---
 

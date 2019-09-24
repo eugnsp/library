@@ -75,7 +75,7 @@
 
 :movie_camera:
 
-* F.Pikus. [*Live lock-free or deadlock (practical lock-free programming), Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) &ndash; CppCon (2015)
+* F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) &ndash; CppCon (2015)
 
 ---
 
@@ -173,6 +173,11 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 :link:
 
 * R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) &ndash; Uncle Bob (2004)
+
+:movie_camera:
+
+* B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) &ndash; CppCon (2015)
+* H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) &ndash; CppCon (2014)
 
 ### Class design
 

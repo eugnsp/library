@@ -19,6 +19,10 @@
 
 ## Hardware
 
+:link:
+
+* U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
+
 :movie_camera:
 
 * M.Godbolt. [*x86 internals for fun & profit*](https://www.youtube.com/watch?v=hgcNM-6wr34) &ndash; GOTO (2014)

@@ -9,7 +9,8 @@
 	* [Sequence containers](#sequence-containers)
 	* [`std::vector<bool>`](#stdvectorbool)
 	* [Unordered containers](#unordered-containers)
-* [Random number generation](#random-number-generation)
+* [Iterators](#iterators)
+* [Random numbers](#random-numbers)
 * [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
 	* [`std::unique_ptr`](#stdunique_ptr)
@@ -18,6 +19,7 @@
 	* [`std::auto_ptr`](#stdauto_ptr)
 * [Strings](#strings)
 	* [Short string optimization](#short-string-optimization)
+	* [`std::string_view`](#stdstring-view)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
@@ -93,7 +95,15 @@
 
 ---
 
-## Random number generation
+## Iterators
+
+:movie_camera:
+
+* C.Carter. [*Iterator haiku*](https://www.youtube.com/watch?v=rZs9ndzGB_8) &ndash; CppCon (2016)
+
+---
+
+## Random numbers
 
 :link:
 
@@ -116,13 +126,13 @@
 
 ## Smart pointers
 
-> A smart pointer is a class that simulates a raw C++ pointer, and provide automatic exception-safe object lifetime management.
+> A smart pointer is a class that simulates a raw C++ pointer, and provides automatic exception-safe object lifetime management.
 
 :link:
 
 * [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) &ndash; Wikipedia
 * [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
-* H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) (2013)
+* H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; Guru of the Week (2013)
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 * Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
@@ -130,6 +140,7 @@
 
 :link:
 
+* [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) &ndash; C++ reference
 * [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
 * [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
 
@@ -137,6 +148,7 @@
 
 :link:
 
+* [`std::shared_ptr`](https://en.cppreference.com/w/cpp/memory/shared_ptr) &ndash; C++ reference
 * [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
 * A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
 
@@ -144,6 +156,7 @@
 
 :link:
 
+* [`std::weak_ptr`](https://en.cppreference.com/w/cpp/memory/weak_ptr) &ndash; C++ reference
 * [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/questions/12030650/when-is-stdweak-ptr-useful) &ndash; Stack Overflow
 
 ### `std::auto_ptr`
@@ -167,6 +180,13 @@
 :link:
 
 * [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/questions/10315041/meaning-of-acronym-sso-in-the-context-of-stdstring) &ndash; Stack Overflow
+
+### `std::string_view`
+
+:movie_camera:
+
+* M.Clow. [*`string_view`: when to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) &ndash; CppCon (2015)
+* N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) &ndash; CppCon (2015)
 
 ---
 

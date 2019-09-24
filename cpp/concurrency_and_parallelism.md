@@ -78,7 +78,7 @@
 :movie_camera:
 
 * F.Pikus. [*C++ atomics, from basic to advanced: What do they really do?*](https://www.youtube.com/watch?v=ZQFzMfHIxng) &ndash; CppCon (2017)
-* F.Pikus. *Live lock-free or deadlock (practical lock-free programming):* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4) &ndash; CppCon (2015)
+* F.Pikus. *Live lock-free or deadlock (practical lock-free programming).* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4) &ndash; CppCon (2015)
 * H.Sutter. *`atomic<>` weapons:* [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU) &ndash; C++ and Beyond (2012)
 
 #### Hazard pointers
