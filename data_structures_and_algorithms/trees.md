@@ -78,7 +78,7 @@
 
 :page_facing_up:
 
-* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information*: [in english](https://zhjwpku.com/assets/pdf/AED2-10-avl-paper.pdf), [in russian](http://mi.mathnet.ru/rus/dan/v146/i2/p263) &ndash; Doklady Akademii Nauk SSSR **146**, 263 (1962)
+* G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information.* [In english](https://zhjwpku.com/assets/pdf/AED2-10-avl-paper.pdf), [In russian](http://mi.mathnet.ru/rus/dan/v146/i2/p263) &ndash; Doklady Akademii Nauk SSSR **146**, 263 (1962)
 
 :movie_camera:
 

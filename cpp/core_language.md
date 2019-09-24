@@ -6,6 +6,7 @@
 	* [Itanium C++ ABI](#itanium-c-abi)
 * [Attributes](#attributes)
 	* [`[[nodiscard]]`](#nodiscard)
+	* [`[[trivially_relocatable]]`](#triviallyrelocatable)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
 * [Functions](#functions)
@@ -68,6 +69,12 @@
 
 * N.Josuttis. [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; WG21/P0600R0 (2017)
 
+### `[[trivially_relocatable]]`
+
+> This attribute specifies that the relocation operation for an object is trivial: moving the object and then immediately destroying the original is equivalent to `memcpy`. This attribute is not yet in the standard.
+
+See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_and_hardware.md#relocation).
+
 ---
 
 ## Exceptions
@@ -93,10 +100,10 @@
 :link:
 
 * [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
-* [*What is "argument-dependent lookup" (aka ADL, or "Koenig Lookup")?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
+* [*What is “argument-dependent lookup” (aka ADL, or “Koenig Lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
 * A.O'Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
 * A.O'Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
-* A.O'Dwyer. [*How `hana::type<T>` "disables ADL"*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
+* A.O'Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
 
 ---
 
@@ -123,7 +130,7 @@
 
 :anchor:
 
-* [*Recommendations for specifying "hidden friends"*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) &ndash; WG21/P1601R0 (2019)
+* [*Recommendations for specifying “hidden friends”*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) &ndash; WG21/P1601R0 (2019)
 
 ---
 

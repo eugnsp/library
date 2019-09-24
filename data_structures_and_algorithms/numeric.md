@@ -73,7 +73,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
-* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
+* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; Cleve's Corner (2019)
 * J.L.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
 
 :movie_camera:
@@ -86,7 +86,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
-* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) (2014)
+* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; Cleve's Corner (2014)
 
 :movie_camera:
 
@@ -147,7 +147,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :book:
 
-* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash;  W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition) (2007)
+* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](https://www.cambridge.org/ru/academic/subjects/mathematics/numerical-recipes/numerical-recipes-art-scientific-computing-3rd-edition) (2007)
 
 
 <!--

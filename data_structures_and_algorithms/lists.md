@@ -16,7 +16,7 @@
 
 * [*Linked list*](https://en.wikipedia.org/wiki/Linked_list) &ndash; Wikipedia
 * B.Stroustrup. [*Are lists evil?*](http://www.stroustrup.com/bs_faq.html#list) &ndash; B.Stroustrup's FAQ
-* K.Hedstr&ouml;m. [*Number crunching: Why you should never, ever, EVER use linked-list in your code again*](https://kjellkod.wordpress.com/2012/02/25/why-you-should-never-ever-ever-use-linked-list-in-your-code-again/) (2012)
+* K.Hedstr&ouml;m. [*Number crunching: Why you should never, ever, **ever** use linked-list in your code again*](https://kjellkod.wordpress.com/2012/02/25/why-you-should-never-ever-ever-use-linked-list-in-your-code-again/) (2012)
 
 ---
 
