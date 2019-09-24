@@ -1,4 +1,4 @@
-# The standard library
+# The standard library and Boost
 
 ## Table of contents
 
@@ -131,12 +131,15 @@
 :link:
 
 * [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) &ndash; Wikipedia
+* [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
 * [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
 * H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; Guru of the Week (2013)
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 * Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
 ### `std::unique_ptr`
+
+> The `std::unique_ptr` class is a smart pointer with unique ownership.
 
 :link:
 
@@ -145,6 +148,8 @@
 * [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
 
 ### `std::shared_ptr`
+
+> The `std::unique_ptr` class is a smart pointer with shared ownership.
 
 :link:
 
@@ -161,12 +166,26 @@
 
 ### `std::auto_ptr`
 
-> `std::auto_ptr` was deprecated in C++11 and removed in C++17.
+> `std::auto_ptr` is a smart pointer with unique ownership that existed before rvalue references and move semantics were introduced into the language. It was deprecated in C++11 and removed in C++17.
 
 :link:
 
 * [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) &ndash; C++ reference
 * H.Sutter. [GotW #25: *`auto_ptr`*](http://www.gotw.ca/gotw/025.htm) &ndash; Guru of the Week (2009)
+
+### `boost::intrusive_ptr`
+
+> The `boost::intrusive_ptr` class is a smart pointer that stores a pointer to an object with an embedded reference count, which is managed somewhere outside the smart pointer.
+
+:link:
+
+* [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) &ndash; Boost.SmartPtr
+* [*Boost intrusive pointer*](https://stackoverflow.com/questions/40137660/boost-intrusive-pointer) &ndash; Stack Overflow
+* B.Wicht. [*Boost `intrusive_ptr`: faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
+
+:anchor:
+
+* I.Muerte. [*An intrusive smart pointer*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0468r1.html) &ndash; WG21/P0468R1 (2018)
 
 ---
 

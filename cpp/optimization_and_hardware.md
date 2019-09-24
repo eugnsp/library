@@ -5,7 +5,7 @@
 * [Introduction and overview](#introduction-and-overview)
 * [CPU](#cpu)
 * [Memory and cache](#memory-and-cache)
-	* [Allocation](#allocation
+	* [Allocation](#allocation)
 	* [Relocation](#relocation)
 
 ---
@@ -46,10 +46,6 @@
 ---
 
 ## Optimization
-
-:memo:
-
-* For memory relocation see also [`[[trivially_relocatable]]` &ndash; Core language](core_language.md#triviallyrelocatable).
 
 ### Allocation
 

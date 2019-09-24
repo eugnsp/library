@@ -27,9 +27,9 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
 	* :hash: [Preprocessor](cpp/preprocessor.md)
 	* :white_square_button: [Templates](cpp/templates.md)
-	* :anchor: [The standard library](cpp/std_library.md)
-	* :wrench: [Tools](cpp/tools.md)
+	* :anchor: [The standard library and Boost](cpp/std_library.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
+	* :wrench: [Tools](cpp/tools.md)
 <!-- * [People](people.md) -->
 
 <!--
