@@ -19,12 +19,6 @@
 
 ## Build automation
 
-### Git
-
-:movie_camera:
-
-* C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
-
 ### CMake
 
 :link:
@@ -84,6 +78,14 @@
 
 ---
 
-## Version-control system](#version-control-system)
+## Version-control system
 
-## Git
+### Git
+
+:link:
+
+* [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore) &ndash; Stack Overflow
+
+:movie_camera:
+
+* C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)

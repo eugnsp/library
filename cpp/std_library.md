@@ -17,17 +17,17 @@
 	* [`std::shared_ptr`](#stdshared_ptr)
 	* [`std::weak_ptr`](#stdweak_ptr)
 	* [`std::auto_ptr`](#stdauto_ptr)
+	* [`boost::intrusive_ptr`](#boostintrusive_ptr)
 * [Strings](#strings)
 	* [Short string optimization](#short-string-optimization)
 	* [`std::string_view`](#stdstring-view)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
-	* [`std::launder`](#std-launder)
-* [Tricks and subtleties](#tricks-and-subtleties)
-	* [SFINAE](#sfinae)
-* [Proposals](#proposals)
+	* [`std::launder`](#stdlaunder)
 	* [`std::expected`](#stdexpected)
+* [Tricks and subtleties](#tricks-and-subtleties)
+* [SFINAE](#sfinae)
 
 ---
 
@@ -132,8 +132,8 @@
 
 * [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) &ndash; Wikipedia
 * [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
-* [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
 * H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; Guru of the Week (2013)
+* [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 * Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
@@ -143,9 +143,12 @@
 
 :link:
 
-* [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) &ndash; C++ reference
 * [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
 * [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
+
+:anchor:
+
+* [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) &ndash; C++ reference
 
 ### `std::shared_ptr`
 
@@ -153,25 +156,34 @@
 
 :link:
 
-* [`std::shared_ptr`](https://en.cppreference.com/w/cpp/memory/shared_ptr) &ndash; C++ reference
 * [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
 * A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+
+:anchor:
+
+* [`std::shared_ptr`](https://en.cppreference.com/w/cpp/memory/shared_ptr) &ndash; C++ reference
 
 ### `std::weak_ptr`
 
 :link:
 
-* [`std::weak_ptr`](https://en.cppreference.com/w/cpp/memory/weak_ptr) &ndash; C++ reference
 * [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/questions/12030650/when-is-stdweak-ptr-useful) &ndash; Stack Overflow
+
+:anchor:
+
+* [`std::weak_ptr`](https://en.cppreference.com/w/cpp/memory/weak_ptr) &ndash; C++ reference
 
 ### `std::auto_ptr`
 
-> `std::auto_ptr` is a smart pointer with unique ownership that existed before rvalue references and move semantics were introduced into the language. It was deprecated in C++11 and removed in C++17.
+> `std::auto_ptr` is a smart pointer with unique ownership that had been designed before rvalue references and move semantics were introduced into the language. It was deprecated in C++11 and removed in C++17.
 
 :link:
 
-* [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) &ndash; C++ reference
 * H.Sutter. [GotW #25: *`auto_ptr`*](http://www.gotw.ca/gotw/025.htm) &ndash; Guru of the Week (2009)
+
+:anchor:
+
+* [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) &ndash; C++ reference
 
 ### `boost::intrusive_ptr`
 
@@ -179,12 +191,12 @@
 
 :link:
 
-* [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) &ndash; Boost.SmartPtr
 * [*Boost intrusive pointer*](https://stackoverflow.com/questions/40137660/boost-intrusive-pointer) &ndash; Stack Overflow
 * B.Wicht. [*Boost `intrusive_ptr`: faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
 
 :anchor:
 
+* [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) &ndash; Boost.SmartPtr
 * I.Muerte. [*An intrusive smart pointer*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0468r1.html) &ndash; WG21/P0468R1 (2018)
 
 ---
@@ -238,15 +250,23 @@
 
 ### `std::launder`
 
-:memo:
-
-* See also: [Core language &ndash; Strict aliasing rule](core_language.md#strict-aliasing-rule)
-
 :link:
 
-* [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) &ndash; C++ reference
 * [*What is the purpose of `std::launder?`*](https://stackoverflow.com/questions/39382501/what-is-the-purpose-of-stdlaunder) &ndash; Stack Overflow
 * [*Where can I find what `std::launder` really does?*](https://stackoverflow.com/questions/53268089/where-can-i-find-what-stdlaunder-really-does) &ndash; Stack Overflow
+
+:anchor:
+
+* [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) &ndash; C++ reference
+
+### `std::expected`
+
+> A utility class to represent expected monad. Not yet in the C++ standard.
+
+:anchor:
+
+* V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
+* V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)
 
 ---
 
@@ -260,15 +280,5 @@
 
 ## SFINAE
 
+<!-- move into Templates -->
 * [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) &ndash; Stack Overflow
-
----
-
-## Proposals
-
-### `std::expected`
-
-:anchor:
-
-* V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
-* V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)

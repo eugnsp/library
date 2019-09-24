@@ -138,12 +138,9 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ### Strict aliasing rule
 
-:memo:
-
-* See also: [*`std::launder`* &ndash; The standard library](std_library.md#stdlaunder)
-
 :link:
 
+* M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
 * [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
 
 ---
