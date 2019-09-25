@@ -145,10 +145,12 @@
 
 * [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
 * [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
+* [*`make_unique` with brace initialization*](https://stackoverflow.com/questions/55141594/make-unique-with-brace-initialization) &ndash; Stack Overflow
 
 :anchor:
 
 * [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) &ndash; C++ reference
+* S.T.Lavavej. [`make_unique`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3588.htm) &ndash; WG21/N3588 (2013)
 
 ### `std::shared_ptr`
 
@@ -203,8 +205,13 @@
 
 ## Strings
 
-* [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) &ndash; C++ reference
+:link:
+
 * H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) &ndash; Guru of the Week (2009)
+
+:anchor:
+
+* [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) &ndash; C++ reference
 
 ### Short string optimization
 

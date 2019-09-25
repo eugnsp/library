@@ -14,16 +14,16 @@
 * [Keywords](#keywords)
 	* [`const` and `mutable`](const-and-mutable)
 	* [`friend`](#friend)
-* [Memory access](#memory-access)
-	* [Strict aliasing rule](#strict-aliasing-rule)
 * [Standards](#standards)
-	* [C++20](#c20)
+	* [C++17](#c17)
+	* [C++2a](#c2a)
 * [Structured bindings](#structured-bindings)
 * [Templates](#templates)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 * [Types](#types)
 	* [Floating-point types](#floating-point-types)
+	* [Function types](#function-types)
 	* [Integral types](#integral-types)
 	* [Opaque typedefs](#opaque-typedefs)
 	* [References](#references)
@@ -134,24 +134,27 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ---
 
-## Memory access
-
-### Strict aliasing rule
-
-:link:
-
-* M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
-* [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
-
----
-
 ## Standards
 
-###	C++20
+### C++17
+
+:movie_camera:
+
+* A.Meredith. *C++17 in breadth.* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) &ndash; CppCon (2016)
+
+:anchor:
+
+* [*C++17 compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp17) &ndash; C++ reference
+
+###	C++2a
 
 :movie_camera:
 
 * A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
+
+:anchor:
+
+* [*C++2a compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp2a) &ndash; C++ reference
 
 ---
 
@@ -189,6 +192,12 @@ See [Templates](templates.md).
 :link:
 
 * D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
+
+### Function types
+
+:anchor:
+
+* A.Meredith. [*Abominable function types*](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2015/p0172r0.html) &ndash; WG21/P0172R0 (2015)
 
 ### Integral types
 

@@ -7,6 +7,7 @@
 * [Memory and cache](#memory-and-cache)
 	* [Allocation](#allocation)
 	* [Relocation](#relocation)
+	* [Strict aliasing rule](#strict-aliasing-rule)
 
 ---
 
@@ -38,14 +39,12 @@
 
 * U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
 
+<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
+
 :movie_camera:
 
 * T.Doumler. [*Want fast C++? Know your hardware!*](https://www.youtube.com/watch?v=BP6NxVxDQIs) &ndash; CppCon (2016)
 * S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
-
----
-
-## Optimization
 
 ### Allocation
 
@@ -66,6 +65,16 @@
 :anchor:
 
 * A.O'Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
+
+### Strict aliasing rule
+
+:link:
+
+* S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
+* M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
+* [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
+
+<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 
 <!-- https://www.airs.com/blog/archives/120
 https://www.agner.org/optimize/optimizing_cpp.pdf
