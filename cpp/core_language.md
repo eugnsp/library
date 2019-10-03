@@ -6,7 +6,7 @@
 	* [Itanium C++ ABI](#itanium-c-abi)
 * [Attributes](#attributes)
 	* [`[[nodiscard]]`](#nodiscard)
-	* [`[[trivially_relocatable]]`](#triviallyrelocatable)
+	* [`[[trivially_relocatable]]`](#trivially_relocatable)
 * [Exceptions](#exceptions)
 	* [Exceptions in destructors](#exceptions-in-destructors)
 * [Functions](#functions)
@@ -18,10 +18,10 @@
 	* [C++17](#c17)
 	* [C++2a](#c2a)
 * [Structured bindings](#structured-bindings)
-* [Templates](#templates)
 * [Tricks](#tricks)
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 * [Types](#types)
+	* [Aggregate and POD types](#aggregate-and-pod-types)
 	* [Floating-point types](#floating-point-types)
 	* [Function types](#function-types)
 	* [Integral types](#integral-types)
@@ -140,7 +140,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 :movie_camera:
 
-* A.Meredith. *C++17 in breadth.* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) &ndash; CppCon (2016)
+* A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) &ndash; CppCon (2016)
 
 :anchor:
 
@@ -164,10 +164,6 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 * [*Structured bindings and tuple of references*](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references) &ndash; Stack Overflow
 
-## Templates
-
-See [Templates](templates.md).
-
 ---
 
 ## Tricks
@@ -183,11 +179,17 @@ See [Templates](templates.md).
 
 ## Types
 
+### Aggregate, trivial and POD types
+
+:link:
+
+* [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) &ndash; Visual C++ language reference (2018)
+* [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special) &ndash; Stack Overflow
+* [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/questions/6496545/trivial-vs-standard-layout-vs-pod) &ndash; Stack Overflow
+
 ### Floating-point types
 
-:memo:
-
-* See also [*Floating-point numbers* &ndash; Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md).
+See also [*Floating-point numbers* &ndash; Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md).
 
 :link:
 
@@ -257,3 +259,8 @@ See [Templates](templates.md).
 
 * A.O'Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
 
+
+<!-- https://stackoverflow.com/questions/1613341/what-do-the-following-phrases-mean-in-c-zero-default-and-value-initializat
+
+https://stackoverflow.com/questions/37618213/when-is-a-private-constructor-not-a-private-constructor
+-->

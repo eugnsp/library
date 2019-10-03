@@ -17,10 +17,13 @@
 	* [`std::shared_ptr`](#stdshared_ptr)
 	* [`std::weak_ptr`](#stdweak_ptr)
 	* [`std::auto_ptr`](#stdauto_ptr)
+	* [`std::observer_ptr`](#stdobserver_ptr)
 	* [`boost::intrusive_ptr`](#boostintrusive_ptr)
 * [Strings](#strings)
 	* [Short string optimization](#short-string-optimization)
 	* [`std::string_view`](#stdstring-view)
+* [Type traits](#type-traits)
+	* [`std::is_trivial*`](#stdis_trivial)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
@@ -137,6 +140,10 @@
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
 * Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
+:movie_camera:
+
+* M.Fleming. [The smart pointers I wish I had](https://www.youtube.com/watch?v=CKCR5eFVrmc) &ndash; CppCon (2019)
+
 ### `std::unique_ptr`
 
 > The `std::unique_ptr` class is a smart pointer with unique ownership.
@@ -187,6 +194,16 @@
 
 * [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) &ndash; C++ reference
 
+### `std::observer_ptr`
+
+> `std::observer_ptr` is a smart pointer that takes no ownership responsibility for its pointees (non-owning pointer).
+
+:anchor:
+
+* [`std::experimental::observer_ptr`](https://en.cppreference.com/w/cpp/experimental/observer_ptr) &ndash; C++ reference
+* B.Stroustrup. [Abandon `observer_ptr`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1408r0.pdf) &ndash; WG21/P1408R0 (2018)
+* W.E.Brown. [A proposal for the world’s dumbest smart pointer](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4282.pdf) &ndash; WG21/N4282 (2014)
+
 ### `boost::intrusive_ptr`
 
 > The `boost::intrusive_ptr` class is a smart pointer that stores a pointer to an object with an embedded reference count, which is managed somewhere outside the smart pointer.
@@ -225,6 +242,22 @@
 
 * M.Clow. [*`string_view`: when to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) &ndash; CppCon (2015)
 * N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) &ndash; CppCon (2015)
+
+---
+
+## Type traits
+
+See also [*Type traits* &ndash; Templates](templates.md#type-traits).
+
+:movie_camera:
+
+* M.Clow. [*Type traits: what are they and why should I use them?*](https://www.youtube.com/watch?v=VvbTP_k_Df4) &ndash; CppCon (2015)
+
+:anchor:
+
+* [*Standard library header `<type_traits>`*](https://en.cppreference.com/w/cpp/header/type_traits) &ndash; C++ reference
+
+### `std::is_trivial*`
 
 ---
 

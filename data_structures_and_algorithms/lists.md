@@ -40,6 +40,10 @@
 
 ### XOR doubly linked lists
 
+:memo:
+
+* If garbage collection is enabled, XOR linked list needs to declare its nodes reachable. For C++, see [`std::declare_reachable`](https://en.cppreference.com/w/cpp/memory/gc/declare_reachable) &ndash; C++ reference.
+
 :link:
 
 * [*XOR linked list*](https://en.wikipedia.org/wiki/XOR_linked_list) &ndash; Wikipedia

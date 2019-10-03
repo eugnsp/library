@@ -65,9 +65,7 @@
 
 ## Double-checked locking
 
-:memo:
-
-* See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
+See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
 :link:
 
@@ -127,9 +125,7 @@
 
 ## Opaque typedefs
 
-:memo:
-
-* See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
+See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
 
 :link:
 

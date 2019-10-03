@@ -84,9 +84,10 @@
 
 ## Type traits
 
+See also [*Type traits* &ndash; The standard library and Boost](std_library.md#type-traits).
+
 :link:
 
-* [*Type support*](https://en.cppreference.com/w/cpp/types) &ndash; C++ reference
 * J.Maddock, S.Cleary. [*C++ type traits*](http://www.drdobbs.com/cpp/c-type-traits/184404270) &ndash; Dr. Dobb's Journal
 * T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU
 
@@ -94,7 +95,6 @@
 
 * A.O'Dwyer. [*The best type traits that C++ doesn't have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
-* M.Clow. [*Type traits: what are they and why should I use them?*](https://www.youtube.com/watch?v=VvbTP_k_Df4) &ndash; CppCon (2015)
 
 
 <!--

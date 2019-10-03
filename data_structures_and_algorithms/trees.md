@@ -141,13 +141,11 @@
 
 ## Traversal
 
+See also: [Graphs &ndash; Traversal](graphs.md#traversal)
+
 :link:
 
-[*Tree traversal*](https://en.wikipedia.org/wiki/Tree_traversal) &ndash; Wikipedia
-
-:memo:
-
-* See also: [Graphs &ndash; Traversal](graphs.md#traversal)
+* [*Tree traversal*](https://en.wikipedia.org/wiki/Tree_traversal) &ndash; Wikipedia
 
 ---
 
