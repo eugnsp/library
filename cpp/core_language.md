@@ -22,6 +22,7 @@
 	* [Accessing private and protected members](#accessing-private-and-protected-members)
 * [Types](#types)
 	* [Aggregate and POD types](#aggregate-and-pod-types)
+	* [Const-correctness](#const-correctness)
 	* [Floating-point types](#floating-point-types)
 	* [Function types](#function-types)
 	* [Integral types](#integral-types)
@@ -47,6 +48,10 @@
 ---
 
 ## Attributes
+
+:movie_camera:
+
+* B.Saks. [*Better code with C++ attributes*](https://www.youtube.com/watch?v=teUA5U6eYQY) &ndash; CppCon (2019)
 
 ### `[[nodiscard]]`
 
@@ -186,6 +191,15 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 * [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) &ndash; Visual C++ language reference (2018)
 * [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special) &ndash; Stack Overflow
 * [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/questions/6496545/trivial-vs-standard-layout-vs-pod) &ndash; Stack Overflow
+
+### Const-correctness
+
+:link:
+
+* [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) &ndash; C++ FAQ
+* H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
+* [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
+* [*C++ `const` keyword - use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
 
 ### Floating-point types
 

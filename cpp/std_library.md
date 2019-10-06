@@ -222,6 +222,10 @@
 
 ## Strings
 
+:memo:
+
+* `std::basic_string<T, ...>` is the only container in the standard library that requires `T` to be a trivial standard-layout type.
+
 :link:
 
 * H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) &ndash; Guru of the Week (2009)
@@ -259,6 +263,10 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 ### `std::is_trivial*`
 
+:movie_camera:
+
+* J.Turner. [*Great C++ `is_trivial`*](https://www.youtube.com/watch?v=ZxWjii99yao) &ndash; CppCon (2019)
+
 ---
 
 ## Utilities
@@ -285,6 +293,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :movie_camera:
 
+* J.Brown. [Reducing template compilation overhead, using C++11, 14, 17, and 20](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
 * A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
 * S.T.Lavavej. [*`tuple<>`: What's new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; CppCon (2016)
 

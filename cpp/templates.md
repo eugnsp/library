@@ -5,8 +5,9 @@
 * [Introduction and overview](#introduction-and-overview)
 * [Argument deduction](#argument-deduction)
 * [Function templates](#function-templates)
-* [Parsing](#parsing)
+* [Parsing and compilation](#parsing-and-compilation)
 	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
+	* [Optimization](#optimization)
 	* [Two-phase lookup](#two-phase-lookup)
 * [Policies](#policies)
 * [Type traits](#type-traits)
@@ -48,9 +49,22 @@
 
 ---
 
-## Parsing
+## Parsing and compilation
 
 ### Keywords `template` and `typename` as disambiguators
+
+> ```cpp
+> struct S {
+>     template<typename T> using type = T;
+> };
+>
+> template<class T> void foo() {
+>     // T::type<int> x;    <- doesn't work, should be
+>     typename T::template type<int> x;
+> }
+>
+> foo<S>();
+> ```
 
 :link:
 
@@ -61,12 +75,21 @@
 
 * A.Stepanov. [*Efficient programming with components* (part of lecture 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
 
+### Optimization
+
+:movie_camera:
+
+* J.Brown. [Reducing template compilation overhead, using C++11, 14, 17, and 20](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
+
 ### Two-phase lookup
+
+> Names are resolved in two steps: first, non-dependent names are resolved at the time of template definition and, second, dependent names are resolved at the time of template instantiation.
 
 :link:
 
-* T.Gani, et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash;  C++ team blog
-* [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/)
+* T.Gani, et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
+* [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
+* E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
 
 ---
 
@@ -78,10 +101,6 @@
 
 ---
 
-## Policies
-
----
-
 ## Type traits
 
 See also [*Type traits* &ndash; The standard library and Boost](std_library.md#type-traits).
@@ -89,7 +108,7 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 :link:
 
 * J.Maddock, S.Cleary. [*C++ type traits*](http://www.drdobbs.com/cpp/c-type-traits/184404270) &ndash; Dr. Dobb's Journal
-* T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU
+* T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
 
 :movie_camera:
 
