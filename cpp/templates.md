@@ -54,14 +54,8 @@
 ### Keywords `template` and `typename` as disambiguators
 
 > ```cpp
-> struct S {
->     template<typename T> using type = T;
-> };
->
-> template<class T> void foo() {
->     // T::type<int> x;    <- doesn't work, should be
->     typename T::template type<int> x;
-> }
+> struct S { template<typename T> using type = T; };
+> template<class T> void foo() { typename T::template type<int> x; }
 >
 > foo<S>();
 > ```
@@ -76,6 +70,11 @@
 * A.Stepanov. [*Efficient programming with components* (part of lecture 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
 
 ### Optimization
+
+:link:
+
+* L.Dionne. [*Efficient parameter pack indexing*](https://ldionne.com/2015/11/29/efficient-parameter-pack-indexing/) (2015)
+* A.Berg&eacute;. [*True story: Efficient packing*](http://talesofcpp.fusionfenix.com/post-22/true-story-efficient-packing) (2015)
 
 :movie_camera:
 

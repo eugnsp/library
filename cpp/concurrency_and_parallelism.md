@@ -3,6 +3,8 @@
 ## Table of contents
 
 * [Introduction and overview](#introduction-and-overview)
+<!-- * [Algorithms](#algorithms)
+	* [Inclusive scan](#algorithms) -->
 * [GPU computing](#gpu-computing)
 * [Multithreading](#multithreading)
 	* [Data races and race conditions](#data-races-and-race-conditions)
@@ -15,8 +17,6 @@
 		* [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
 		* [`std::condition_variable`](#stdconditionvariable)
 		* [`std::promise`](#stdpromise)
-	<!-- * [Patterns and idioms](#patterns-and-idioms)
-		* [Execute-around pointer](#execute-around pointer) -->
 	* [POSIX threads](#posix-threads)
 ---
 
@@ -25,6 +25,14 @@
 :link:
 
 * B.Barney. [*Introduction to parallel computing*](https://computing.llnl.gov/tutorials/parallel_comp/) &ndash; Lawrence Livermore National Laboratory
+
+---
+
+<!-- ## Algorithms
+
+### Inclusive scan
+
+--- -->
 
 ## GPU computing
 

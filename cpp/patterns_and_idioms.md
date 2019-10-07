@@ -56,10 +56,22 @@
 
 ## Curiously recurring template
 
+> The curiously recurring template pattern (CRTP) is an idiom in which a class `X` derives from a class template using `X` itself as template parameter:
+> ```cpp
+> template<class Derived> struct Base {
+>     void foo() { static_cast<Derived*>(this)->foo(); }
+> };
+>
+> struct X : Base<X> {
+>     void foo();
+> }
+> ```
+
 :link:
 
 * [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) &ndash; Wikipedia
 * J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) &ndash; C++ Report (1995)
+* [*What is the curiously recurring template pattern?*](https://stackoverflow.com/questions/4173254/what-is-the-curiously-recurring-template-pattern-crtp) &ndash; Stack Overflow
 
 ---
 
@@ -130,7 +142,7 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 :link:
 
 * L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) &ndash; Overload **152**, 9 (2019)
-* J.Müller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/blog/2016/10/19/strong-typedefs.html) &ndash; foonathan::blog() (2016)
+* J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/blog/2016/10/19/strong-typedefs.html) (2016)
 
 ---
 
@@ -197,4 +209,5 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 
 ### Style guidelines
 
-* [Google C++ style guide](https://google.github.io/styleguide/cppguide.html)
+* [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
+* [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)

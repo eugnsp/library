@@ -142,6 +142,7 @@
 
 :movie_camera:
 
+* A.O'Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) &ndash; CppCon (2019)
 * M.Fleming. [The smart pointers I wish I had](https://www.youtube.com/watch?v=CKCR5eFVrmc) &ndash; CppCon (2019)
 
 ### `std::unique_ptr`
@@ -171,6 +172,18 @@
 :anchor:
 
 * [`std::shared_ptr`](https://en.cppreference.com/w/cpp/memory/shared_ptr) &ndash; C++ reference
+
+#### `std::enable_shared_from_this`
+
+> `std::enable_shared_from_this` allows a member function of an object that is currently managed by a `std::shared_ptr` to extend the lifetime of that object dynamically by generating additional `std::shared_ptr` instances.
+
+:link:
+
+* [*What is the usefulness of `enable_shared_from_this`?*](https://stackoverflow.com/questions/712279/what-is-the-usefulness-of-enable-shared-from-this) &ndash; Stack Overflow
+
+:anchor:
+
+* [`std::enable_shared_from_this`](https://en.cppreference.com/w/cpp/memory/enable_shared_from_this) &ndash; C++ reference
 
 ### `std::weak_ptr`
 
