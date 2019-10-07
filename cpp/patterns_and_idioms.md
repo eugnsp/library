@@ -57,7 +57,8 @@
 
 #### Rule of zero/three/five
 
-> The rule of zero: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them. The rule of three/five: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
+> The rule of zero: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them.\
+> The rule of three/five: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
 
 :link:
 
