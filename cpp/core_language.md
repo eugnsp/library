@@ -8,7 +8,6 @@
 	* [`[[nodiscard]]`](#nodiscard)
 	* [`[[trivially_relocatable]]`](#trivially_relocatable)
 * [Exceptions](#exceptions)
-	* [Exceptions in destructors](#exceptions-in-destructors)
 * [Functions](#functions)
 	* [Argument-dependent lookup](#argument-dependent-lookup)
 * [Keywords](#keywords)
@@ -88,13 +87,6 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 * [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
 * H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb's Journal (2004)
-
-### Exceptions in destructors
-
-:link:
-
-* A.Krzemie&nacute;ski. [*Destructors that throw*](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/) (2011)
-* B.Kolpackov. [*Throwing destructors*](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml) (2004)
 
 ---
 

@@ -15,6 +15,7 @@
 * [Smart pointers](#smart-pointers)
 	* [`std::unique_ptr`](#stdunique_ptr)
 	* [`std::shared_ptr`](#stdshared_ptr)
+		* [`std::enable_shared_from_this`](#stdenable_shared_from_this)
 	* [`std::weak_ptr`](#stdweak_ptr)
 	* [`std::auto_ptr`](#stdauto_ptr)
 	* [`std::observer_ptr`](#stdobserver_ptr)
@@ -143,7 +144,7 @@
 :movie_camera:
 
 * A.O'Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) &ndash; CppCon (2019)
-* M.Fleming. [The smart pointers I wish I had](https://www.youtube.com/watch?v=CKCR5eFVrmc) &ndash; CppCon (2019)
+* M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) &ndash; CppCon (2019)
 
 ### `std::unique_ptr`
 
