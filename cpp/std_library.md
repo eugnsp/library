@@ -23,8 +23,10 @@
 * [Strings](#strings)
 	* [Short string optimization](#short-string-optimization)
 	* [`std::string_view`](#stdstring-view)
-* [Type traits](#type-traits)
-	* [`std::is_trivial*`](#stdis_trivial)
+* [Type support](#type-support)
+	* [Fixed-width integer types](#fixed-width-integer-types)
+	* [Type traits](#type-traits)
+		* [`std::is_trivial*`](#stdis_trivial)
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
@@ -263,7 +265,15 @@
 
 ---
 
-## Type traits
+## Type support
+
+### Fixed-width integer types
+
+:memo:
+
+* `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2's complement for negative values.
+
+### Type traits
 
 See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 

@@ -53,7 +53,7 @@
 
 :movie_camera:
 
-* P.Isensee [*Destructor case studies: Best practices for safe and efficient teardown*](https://www.youtube.com/watch?v=XvWyLAW_U0Q) &ndash; CppCon (2019)
+* P.Isensee. [*Destructor case studies: Best practices for safe and efficient teardown*](https://www.youtube.com/watch?v=XvWyLAW_U0Q) &ndash; CppCon (2019)
 
 #### Rule of zero/three/five
 

@@ -3,11 +3,14 @@
 ## Table of contents
 
 * [Introduction and overview](#introduction-and-overview)
+* [Compiler optimizations](#compiler-optimizations)
+	* [Integral division](#integral-division)
+	* [Undefined behavior](#undefined-behavior)
+		* [Strict aliasing rule](#strict-aliasing-rule)
 * [CPU](#cpu)
 * [Memory and cache](#memory-and-cache)
 	* [Allocation](#allocation)
 	* [Relocation](#relocation)
-	* [Strict aliasing rule](#strict-aliasing-rule)
 
 ---
 
@@ -17,12 +20,43 @@
 
 * H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
 * A.Alexandrescu. [*Speed is found in the minds of people*](https://www.youtube.com/watch?v=FJJTYQYB1JQ) &ndash; CppCon (2019)
-* J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) &ndash; C++ Now (2018)
 * H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=IGFBCvroXJ8) &ndash; NDC (2018)
 * H.Matthews. [*C++ performance and optimisation*](https://www.youtube.com/watch?v=eICYHA-eyXM) &ndash; NDC (2017)
 * C.Cook. [*The speed game: Automated trading systems in C++*](https://www.youtube.com/watch?v=ulOLGX3HNCI) &ndash; Meeting C++ (2016)
-* C.Carruth. [*Understanding compiler optimization*](https://www.youtube.com/watch?v=haQ2cijhvhE) &ndash; code::dive (2016)
 * A.Alexandrescu. [*Optimization tips*](https://www.youtube.com/watch?v=Qq_WaiwzOtI) &ndash; CppCon (2014)
+
+---
+
+## Compiler optimizations
+
+:link
+
+* [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
+
+:movie_camera:
+
+* C.Carruth. [*Understanding compiler optimization*](https://www.youtube.com/watch?v=haQ2cijhvhE) &ndash; code::dive (2016)
+
+### Integeral division
+
+* [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/questions/41183935/why-does-gcc-use-multiplication-by-a-strange-number-in-implementing-integer-divi) &ndash; Stack Overflow
+* D.W.Jones. [*Reciprocal multiplication, a tutorial*](https://homepage.divms.uiowa.edu/~jones/bcd/divide.html) (1999)
+* T.Granlund, P.L.Montgomery. [*Division by invariant integers using multiplication*](https://gmplib.org/~tege/divcnst-pldi94.pdf) (1994)
+
+### Undefined behavior
+
+:link
+
+* K.Walfridsson. [*How undefined signed overflow enables optimizations in GCC*](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html) (2016)
+* J.Regehr. [*Finding undefined behavior bugs by finding dead code*](https://blog.regehr.org/archives/970) (2013)
+
+:movie_camera:
+
+* J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) &ndash; C++ Now (2018)
+
+#### Strict aliasing rule
+
+See [*Type-punning* &ndash; Core language][core_language.md#type-punning).
 
 ---
 
@@ -65,14 +99,6 @@
 :anchor:
 
 * A.O'Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
-
-### Strict aliasing rule
-
-:link:
-
-* S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
-* M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
-* [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 

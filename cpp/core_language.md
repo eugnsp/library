@@ -31,6 +31,7 @@
 		* [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
 	* [Type conversions](#type-conversions)
 		* [`dynamic_cast`](dynamiccast)
+	* [Type punning](#type-punning)
 
 ---
 
@@ -211,7 +212,18 @@ See also [*Floating-point numbers* &ndash; Numeric data structures and algorithm
 
 :link:
 
+* W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) &ndash; Proc. ICSE (2012)
+* [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/questions/7682477/why-does-integer-overflow-on-x86-with-gcc-cause-an-infinite-loop) &ndash; Stack Overflow
+* [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
 * [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) &ndash; SEI CERT C coding standard
+
+:movie_camera:
+
+* J.Bastien. [*Signed integers are two’s complement*](https://www.youtube.com/watch?v=JhUxIVf1qok) &ndash; CppCon (2018)
+
+:anchor:
+
+* J.Bastien. [*Signed integers are two’s complement*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0907r1.html) &ndash; WG21/P0907R1 (2018)
 
 ### Opaque typedefs
 
@@ -265,6 +277,20 @@ See also [*Floating-point numbers* &ndash; Numeric data structures and algorithm
 
 * A.O'Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
 
+### Type punning
+
+:link:
+
+* [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) &ndash; Wikipedia
+* L.Torvalds. [*... What's the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) &ndash; Linux kernel mailing list (2018)
+* S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
+* M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
+* [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
+* [*gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) &ndash; Stack Overflow
+
+:anchor:
+
+* [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) &ndash; GCC
 
 <!-- https://stackoverflow.com/questions/1613341/what-do-the-following-phrases-mean-in-c-zero-default-and-value-initializat
 
