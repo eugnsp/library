@@ -150,6 +150,7 @@
 
 :book:
 
+
 * Ch. 30: *Connectivity*, Sec.: *Biconnectivity* &ndash; R.Sedgewick. *Algorithms* (1983)
 * Sec. 6.4: *Biconnected components and DFS* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* (1997)
 

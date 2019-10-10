@@ -16,6 +16,10 @@
 
 ## Introduction and overview
 
+:link:
+
+* [*Optimizing C++*](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B) &ndash; WikiBooks
+
 :movie_camera:
 
 * H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
@@ -49,6 +53,9 @@
 
 * K.Walfridsson. [*How undefined signed overflow enables optimizations in GCC*](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html) (2016)
 * J.Regehr. [*Finding undefined behavior bugs by finding dead code*](https://blog.regehr.org/archives/970) (2013)
+* C.Lattner. *What every C programmer should know about undefined behavior.* [Part I](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html), [Part II](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html), [Part III](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_21.html) &ndash; LLVM project (2013)
+
+<!-- http://blog.regehr.org/archives/213 -->
 
 :movie_camera:
 

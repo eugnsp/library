@@ -10,6 +10,8 @@
 	* [`std::vector<bool>`](#stdvectorbool)
 	* [Unordered containers](#unordered-containers)
 * [Iterators](#iterators)
+* [Numerics](#numerics)
+	* [`std::bit_cast`](#stdbit_cast)
 * [Random numbers](#random-numbers)
 * [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
@@ -30,6 +32,8 @@
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
+	* [Sum types](#sum_types)
+		* [`std::variant`](#stdvariant)
 	* [`std::launder`](#stdlaunder)
 	* [`std::expected`](#stdexpected)
 * [Tricks and subtleties](#tricks-and-subtleties)
@@ -60,7 +64,7 @@
 
 :movie_camera:
 
-* B.Steagall. [*If I had my 'druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) &ndash; C++Now (2018)
+* B.Steagall. [*If I had my ’druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) &ndash; C++Now (2018)
 
 ### Associative containers
 
@@ -109,11 +113,23 @@
 
 ---
 
+## Numerics
+
+### `std::bit_cast`
+
+:anchor:
+
+* [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) &ndash; C++ reference
+
+
+
+---
+
 ## Random numbers
 
 :link:
 
-* M.E.O'Neill. [*Everything you never wanted to know about C++'s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
+* M.E.O'Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
 * [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
 
 ---
@@ -170,7 +186,7 @@
 :link:
 
 * [*`std::shared_ptr` thread safety*](https://stackoverflow.com/questions/14482830/stdshared-ptr-thread-safety) &ndash; Stack Overflow
-* A.Williams. [*`std::shared_ptr`'s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+* A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
 
 :anchor:
 
@@ -279,7 +295,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :movie_camera:
 
-* M.Clow. [*Type traits: what are they and why should I use them?*](https://www.youtube.com/watch?v=VvbTP_k_Df4) &ndash; CppCon (2015)
+* M.Clow. [*Type traits: What are they and why should I use them?*](https://www.youtube.com/watch?v=VvbTP_k_Df4) &ndash; CppCon (2015)
 
 :anchor:
 
@@ -307,19 +323,31 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :movie_camera:
 
-* S.T.Lavavej. [*`<functional>`: What's new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; CppCon (2015)
+* S.T.Lavavej. [*`<functional>`: What’s new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; CppCon (2015)
 
 ### Pairs and tuples
 
 :link:
 
-* [Why can't `std::tuple<int>` be trivially copyable?](https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable) &ndash; Stack Overflow
+* [Why can’t `std::tuple<int>` be trivially copyable?](https://stackoverflow.com/questions/38779985/why-cant-stdtupleint-be-trivially-copyable) &ndash; Stack Overflow
 
 :movie_camera:
 
 * J.Brown. [Reducing template compilation overhead, using C++11, 14, 17, and 20](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
 * A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
-* S.T.Lavavej. [*`tuple<>`: What's new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; CppCon (2016)
+* S.T.Lavavej. [*`tuple<>`: What’s new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; CppCon (2016)
+
+### Sum types
+
+#### `std::variant`
+
+:movie_camera:
+
+* N.Liber. [*The many variants of `std::variant`*](https://www.youtube.com/watch?v=JUxhwf7gYLg) &ndash; C++Now (2019)
+
+:anchor:
+
+* [`std::variant`](https://en.cppreference.com/w/cpp/utility/variant) &ndash; C++ reference
 
 ### `std::launder`
 

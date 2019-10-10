@@ -67,7 +67,7 @@
 
 :movie_camera:
 
-* A.Stepanov. [*Efficient programming with components* (part of lecture 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
+* A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
 
 ### Optimization
 
@@ -106,12 +106,12 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 :link:
 
-* J.Maddock, S.Cleary. [*C++ type traits*](http://www.drdobbs.com/cpp/c-type-traits/184404270) &ndash; Dr. Dobb's Journal
+* J.Maddock, S.Cleary. [*C++ type traits*](http://www.drdobbs.com/cpp/c-type-traits/184404270) &ndash; Dr. Dobb’s Journal
 * T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
 
 :movie_camera:
 
-* A.O'Dwyer. [*The best type traits that C++ doesn't have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
+* A.O'Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
 
 

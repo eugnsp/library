@@ -58,13 +58,13 @@
 
 :page_facing_up:
 
-* P.E.McKenney. [*Memory barriers: a hardware view for software hackers*](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf) (2010)
+* P.E.McKenney. [*Memory barriers: A hardware view for software hackers*](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf) (2010)
 
 ### Data races and race conditions
 
 :link:
 
-* [*Are "data races" and "race condition" actually the same thing in context of concurrent programming*](https://stackoverflow.com/questions/11276259/are-data-races-and-race-condition-actually-the-same-thing-in-context-of-conc) &ndash; Stack Overflow
+* [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/questions/11276259/are-data-races-and-race-condition-actually-the-same-thing-in-context-of-conc) &ndash; Stack Overflow
 
 ### Lock-based
 

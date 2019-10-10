@@ -30,7 +30,7 @@
 		* [Lifetime of a temporary](#lifetime-of-a-temporary)
 		* [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
 	* [Type conversions](#type-conversions)
-		* [`dynamic_cast`](dynamiccast)
+		* [`dynamic_cast`](#dynamiccast)
 	* [Type punning](#type-punning)
 
 ---
@@ -61,10 +61,10 @@
 
 * Conservative approach suggested by N.Josuttis:
 	* Should be added:
-		* *existing APIs*: not using the return value always is a "huge mistake"; not using the return value is a source of trouble and easily can happen;
+		* *existing APIs*: not using the return value always is a “huge mistake”; not using the return value is a source of trouble and easily can happen;
 		* *new APIs*: not using the return value is usually an error.
 	* Should not be added:
-		* *existing APIs*: not using the return value is a possible/common way of programming at least for some input; not using the return value makes no sense but doesn't hurt.
+		* *existing APIs*: not using the return value is a possible/common way of programming at least for some input; not using the return value makes no sense but doesn’t hurt.
 
 :link:
 
@@ -87,7 +87,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 :link:
 
 * [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
-* H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb's Journal (2004)
+* H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
 
 ---
 
@@ -111,12 +111,12 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 :memo:
 
-* In C++98: `const` means "logically `const`", in C++11 `const` means "thread safe" (bitwise `const` or internally synchronized).
-* In C++98: `mutable` means "not observably non-`const`", in C++11 `mutable` means "thread safe" (bitwise `const` or internally synchronized).
+* In C++98: `const` means “logically `const`”, in C++11 `const` means “thread safe” (bitwise `const` or internally synchronized).
+* In C++98: `mutable` means “not observably non-`const`”, in C++11 `mutable` means “thread safe” (bitwise `const` or internally synchronized).
 
 :movie_camera:
 
-* H.Sutter. [*You don't know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; C++ and Beyond (2012)
+* H.Sutter. [*You don’t know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; C++ and Beyond (2012)
 
 ### `friend`
 
@@ -171,7 +171,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 :link:
 
 * [*Accessing private members*](https://stackoverflow.com/questions/726096/accessing-private-members) &ndash; Stack Overflow
-* J.Schaub. [*Access to private members. That's easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) &ndash; litb's Blog
+* J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
 
 ---
 
@@ -231,7 +231,7 @@ See also [*Floating-point numbers* &ndash; Numeric data structures and algorithm
 
 :memo:
 
-* > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.Müller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
+* > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.M&uuml;ller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 * See [*Opaque typedefs* &ndash; Patterns and idioms](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
 
 :anchor:
@@ -275,22 +275,32 @@ See also [*Floating-point numbers* &ndash; Numeric data structures and algorithm
 
 :movie_camera:
 
-* A.O'Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
+* A.O’Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
 
 ### Type punning
+
+:memo:
+
+* Since C++20, some of type punning can be done using `std::bit_cast`, see [*`std::bit_cast`* &ndash; The standard library and Boost](#std_library.md#stdbit_cast).
 
 :link:
 
 * [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) &ndash; Wikipedia
-* L.Torvalds. [*... What's the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) &ndash; Linux kernel mailing list (2018)
+* L.Torvalds. [*... What’s the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) &ndash; Linux kernel mailing list (2018)
 * S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
 * M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
 * [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
-* [*gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) &ndash; Stack Overflow
+* [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) &ndash; Stack Overflow
+
+:movie_camera:
+
+* T.Doumler. [*(How not to do) Type punning in modern C++*](https://www.youtube.com/watch?v=_qzMpk-22cc) &ndash; CppCon (2019)
 
 :anchor:
 
-* [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) &ndash; GCC
+* [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) &ndash; GCC documentation
+
+<!-- P1839R0 -->
 
 <!-- https://stackoverflow.com/questions/1613341/what-do-the-following-phrases-mean-in-c-zero-default-and-value-initializat
 

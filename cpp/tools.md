@@ -53,6 +53,7 @@
 :movie_camera:
 
 * H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
+* G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) &ndash; CppCon (2018)
 
 ### Online compilers
 

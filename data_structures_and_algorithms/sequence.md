@@ -33,7 +33,7 @@
 
 :link:
 
-* [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb's Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
+* [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb’s Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
 
 :book:
 
