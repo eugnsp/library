@@ -94,7 +94,7 @@
 :link:
 
 * [*Hazard pointer* &ndash; Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
-* A.Alexandrescu, M.Michael. [*Lock-free data structures with hazard pointers*](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890) &ndash; Dr.Dobb's Journal (2004)
+* A.Alexandrescu, M.Michael. [*Lock-free data structures with hazard pointers*](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890) &ndash; Dr.Dobb’s Journal (2004)
 
 #### Read-copy-update (RCU)
 
@@ -151,7 +151,7 @@
 
 :link:
 
-* [*POSIX threads programming*](https://computing.llnl.gov/tutorials/pthreads/) &ndash; B.Barney
+* B.Barney. [*POSIX threads programming*](https://computing.llnl.gov/tutorials/pthreads/)
 
 <!--
 

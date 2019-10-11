@@ -5,6 +5,7 @@
 * [Introduction and overview](#introduction-and-overview)
 * [Compiler optimizations](#compiler-optimizations)
 	* [Integral division](#integral-division)
+	* [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	* [Undefined behavior](#undefined-behavior)
 		* [Strict aliasing rule](#strict-aliasing-rule)
 * [CPU](#cpu)
@@ -43,9 +44,21 @@
 
 ### Integeral division
 
+:link:
+
 * [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/questions/41183935/why-does-gcc-use-multiplication-by-a-strange-number-in-implementing-integer-divi) &ndash; Stack Overflow
 * D.W.Jones. [*Reciprocal multiplication, a tutorial*](https://homepage.divms.uiowa.edu/~jones/bcd/divide.html) (1999)
 * T.Granlund, P.L.Montgomery. [*Division by invariant integers using multiplication*](https://gmplib.org/~tege/divcnst-pldi94.pdf) (1994)
+
+### Return value optimization and copy elision
+
+:camera:
+
+* J.Kalb. [*Copy elision*](https://www.youtube.com/watch?v=fSB57PiXpRw) &ndash; C++Now (2018)
+
+:anchor:
+
+* [*Copy alision*](https://en.cppreference.com/w/cpp/language/copy_elision) &ndash; C++ reference
 
 ### Undefined behavior
 

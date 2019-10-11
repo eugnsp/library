@@ -12,6 +12,7 @@
 * [Iterators](#iterators)
 * [Numerics](#numerics)
 	* [`std::bit_cast`](#stdbit_cast)
+	* [`std::iota`](#stdiota)
 * [Random numbers](#random-numbers)
 * [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
@@ -32,12 +33,14 @@
 * [Utilities](#utilities)
 	* [Function objects](#function-objects)
 	* [Pairs and tuples](#pairs-and-tuples)
-	* [Sum types](#sum_types)
+	* [Sum types](#sum-types)
+		<!-- * [`std::optional`](#stdoptional) -->
 		* [`std::variant`](#stdvariant)
+		* [`(std::)expected`](#stdexpected)
 	* [`std::launder`](#stdlaunder)
-	* [`std::expected`](#stdexpected)
 * [Tricks and subtleties](#tricks-and-subtleties)
-* [SFINAE](#sfinae)
+* [The Standard Template Library (STL)](#the-standard-template-library-stl)
+<!-- * [SFINAE](#sfinae) -->
 
 ---
 
@@ -121,7 +124,11 @@
 
 * [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) &ndash; C++ reference
 
+### `std::iota`
 
+:link:
+
+* S.Parent [*#iotashaming*](https://sean-parent.stlab.cc/2019/01/04/iota.html) (2019)
 
 ---
 
@@ -276,7 +283,7 @@
 
 :movie_camera:
 
-* M.Clow. [*`string_view`: when to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) &ndash; CppCon (2015)
+* M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) &ndash; CppCon (2015)
 * N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) &ndash; CppCon (2015)
 
 ---
@@ -349,6 +356,15 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 * [`std::variant`](https://en.cppreference.com/w/cpp/utility/variant) &ndash; C++ reference
 
+#### `(std::)expected`
+
+> A proposed utility class to represent expected monad.
+
+:anchor:
+
+* V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
+* V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)
+
 ### `std::launder`
 
 :link:
@@ -360,15 +376,6 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 * [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) &ndash; C++ reference
 
-### `std::expected`
-
-> A utility class to represent expected monad. Not yet in the C++ standard.
-
-:anchor:
-
-* V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) &ndash; WG21/P0323R7 (2018)
-* V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) &ndash; WG21/N4109 (2014)
-
 ---
 
 ## Tricks and subtleties
@@ -379,7 +386,25 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 ---
 
-## SFINAE
+## The Standard Template Library (STL)
+
+:link:
+
+* [*Standard Template Library*](https://en.wikipedia.org/wiki/Standard_Template_Library) &ndash; Wikipedia
+* [*History of the Standard Template Library*](https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library) &ndash; Wikipedia
+* A.Stevens [*Interviews Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.pdf) &ndash; Dr.Dobb's Journal (1995)
+
+:page_facing_up:
+
+* D.R.Musser, A.A.Stepanov. [*A library of generic algorithms in Ada*](http://stepanovpapers.com/p216-musser.pdf) &ndash; [Proc. ACM SIGAda, 216](https://doi.org/10.1145/317500.317529) (1987)
+
+:movie_camera:
+
+* A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
+
+<!-- ## SFINAE
 
 <!-- move into Templates -->
-* [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) &ndash; Stack Overflow
+* [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) &ndash; Stack Overflow -->
+
+<!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) &ndash; C++ and Beyond (2012) -->

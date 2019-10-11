@@ -12,6 +12,7 @@
 	* [Argument-dependent lookup](#argument-dependent-lookup)
 * [Keywords](#keywords)
 	* [`const` and `mutable`](const-and-mutable)
+	* [`constexpr`](#constexpr)
 	* [`friend`](#friend)
 * [Standards](#standards)
 	* [C++17](#c17)
@@ -117,6 +118,13 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 :movie_camera:
 
 * H.Sutter. [*You don’t know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; C++ and Beyond (2012)
+
+### `constexpr`
+
+:movie_camera:
+
+* S.Schurr. [*`constexpr`: Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc) &ndash; CppCon (2015)
+* S.Schurr. [*`constexpr`: Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) &ndash; CppCon (2015)
 
 ### `friend`
 
