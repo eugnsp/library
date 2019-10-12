@@ -8,7 +8,7 @@
 	* [Arithmetic means](#arithmetic-means)
 	* [Division algorithms](#division-algorithms)
 		* [Integer division](#integer-division)
-	* [Horner's method](#horners-method)
+	* [Horner’s method](#horners-method)
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
 * [Floating-point numbers](#floating-point-numbers)
 	* [Denormal numbers](#denormal-numbers)
@@ -25,7 +25,7 @@
 
 :movie_camera:
 
-* P.Roe. [Colorful fluid dynamics: Behind the scenes](https://www.youtube.com/watch?v=uaH91P665PI) (2014)
+* P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) (2014)
 
 ---
 
@@ -46,8 +46,8 @@
 
 :link:
 
-* [*Numerically stable computation of arithmetic means*](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59) &ndash; D.Assencio (2015)
-* [*Incremental calculation of weighted mean and variance*](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf) &ndash; T.Finch (2009)
+* D.Assencio. [*Numerically stable computation of arithmetic means*](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59) (2015)
+* T.Finch. [*Incremental calculation of weighted mean and variance*](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf) (2009)
 
 ### Division algorithms
 
@@ -60,9 +60,9 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 * I.Kaplan. [*Integer division*](http://bearcave.com/software/divide.htm) (1996)
 
-### Horner's method
+### Horner’s method
 
-> Horner's method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
+> Horner’s method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
 
 :link:
 
@@ -86,20 +86,20 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
 * [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) &ndash; Wikipedia
+* [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
 * D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
 * [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
-* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; Cleve’s Corner (2019)
-* J.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
+* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
 
 :page_facing_up:
 
-* C.Allison. [Where did all my decimals go?](http://uvu.freshsources.com/decimals.pdf) (2006)
+* C.Allison. [*Where did all my decimals go?*](http://uvu.freshsources.com/decimals.pdf) (2006)
+* J.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
 
 :book:
 
-* C.Allison. *Floating-point numbers aren’t real* &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
+* C.Allison. [*Floating-point numbers aren’t real*](http://freshsources.com/FPNotReal.pdf) &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
 
 :movie_camera:
 
@@ -111,7 +111,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
-* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; Cleve’s Corner (2014)
+* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) (2014)
 
 :movie_camera:
 
@@ -142,7 +142,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-* G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.086 [Mathematical methods for engineers II](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
+* G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.086 [*Mathematical methods for engineers II*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
 
 ---
 
@@ -157,7 +157,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :book:
 
-* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 * Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) (2013)
 * H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
 
@@ -167,12 +167,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-* G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.085 Computational science and engineering I (2008?)
-* G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) &ndash; MIT 18.085 Computational science and engineering I (2008?)
+* G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.085 *Computational science and engineering I* (2008?)
+* G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) &ndash; MIT 18.085 *Computational science and engineering I* (2008?)
 
 :book:
 
-* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+* Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 
 
 <!--
