@@ -7,12 +7,12 @@
 	* [Gries&ndash;Mills algorithm](#gries-mills-algorithm)
 	* [Dolphin algoirithm](#dolphin-algoirithm)
 	* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
-		* [Duval's based algorithm](#duvals-based-algorithm)
+		* [Duval’s based algorithm](#duvals-based-algorithm)
 * [Longest increasing subsequence](#longest-increasing-subsequence)
 * [Lyndon factorization](#lyndon-factorization)
-	* [Duval's algorithm](#duvals-algorithm)
+	* [Duval’s algorithm](#duvals-algorithm)
 * [Maximum subsequence](#maximum-subsequence)
-	* [Kadane's algorithm](#kadanes-algorithm)
+	* [Kadane’s algorithm](#kadanes-algorithm)
 * [Majority element](#majority-element)
 	* [Boyer&ndash;Moore majority vote algorithm](#boyer-moore-majority-vote-algorithm)
 * [Permutations](#permutations)
@@ -89,11 +89,11 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 * [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
 
-#### Duval's based algorithm
+#### Duval’s based algorithm
 
 :memo:
 
-* This algorithm is also known as the Zhou Yuan's minimal expression algorithm.
+* This algorithm is also known as the Zhou Yuan’s minimal expression algorithm.
 
 :link:
 
@@ -123,7 +123,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 :book:
 
 * Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
-* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive Programming*](https://cpbook.net/) (2013)
+* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 * Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
@@ -146,7 +146,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 * [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) &ndash; Wikipedia
 
-### Duval's algorithm
+### Duval’s algorithm
 
 :link:
 
@@ -167,7 +167,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 * J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) &ndash; [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
 
-### Kadane's algorithm
+### Kadane’s algorithm
 
 * D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
 

@@ -10,6 +10,7 @@
 	* [Optimization](#optimization)
 	* [Two-phase lookup](#two-phase-lookup)
 * [Policies](#policies)
+* [Tuples](#tuples)
 * [Type traits](#type-traits)
 
 ---
@@ -20,6 +21,7 @@
 
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; ACCU (2017)
 * W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) &ndash; CppCon (2014)
+* A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) &ndash; Tech Talk (2014)
 * M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) &ndash; C++Now (2012)
 
 :book:
@@ -78,7 +80,7 @@
 
 :movie_camera:
 
-* J.Brown. [Reducing template compilation overhead, using C++11, 14, 17, and 20](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
+* J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
 
 ### Two-phase lookup
 
@@ -100,6 +102,13 @@
 
 ---
 
+## Tuples
+
+:movie_camera:
+
+* J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
+* A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) &ndash; Tech Talk (2014)
+
 ## Type traits
 
 See also [*Type traits* &ndash; The standard library and Boost](std_library.md#type-traits).
@@ -111,9 +120,8 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 :movie_camera:
 
-* A.O'Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
+* A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
-
 
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm

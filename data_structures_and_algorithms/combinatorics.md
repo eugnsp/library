@@ -39,7 +39,7 @@
 
 :link:
 
-* [*Heap's algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
+* [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
 * [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) &ndash; Stack Overflow
 
 ### Generating random permutations

@@ -58,7 +58,7 @@
 
 :anchor:
 
-* [*Copy alision*](https://en.cppreference.com/w/cpp/language/copy_elision) &ndash; C++ reference
+* [*Copy elision*](https://en.cppreference.com/w/cpp/language/copy_elision) &ndash; C++ reference
 
 ### Undefined behavior
 
@@ -76,7 +76,7 @@
 
 #### Strict aliasing rule
 
-See [*Type-punning* &ndash; Core language][core_language.md#type-punning).
+See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 
 ---
 
@@ -110,15 +110,15 @@ See [*Type-punning* &ndash; Core language][core_language.md#type-punning).
 
 :link:
 
-* A.O'Dwyer. [Announcing “trivially relocatable”](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
+* A.O’Dwyer. [Announcing “trivially relocatable”](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
 
 :movie_camera:
 
-* A.O'Dwyer. [Trivially relocatable](https://www.youtube.com/watch?v=SGdfPextuAU) &ndash; C++Now (2019)
+* A.O’Dwyer. [Trivially relocatable](https://www.youtube.com/watch?v=SGdfPextuAU) &ndash; C++Now (2019)
 
 :anchor:
 
-* A.O'Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
+* A.O’Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 

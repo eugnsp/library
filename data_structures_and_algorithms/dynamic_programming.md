@@ -31,7 +31,7 @@
 :book:
 
 * Sec. 8.5: *The partition problem* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
-* Sec. 8.4.1: *Two components: binary search the answer and other* &ndash; S.Halim, F.Halim. [*Competitive Programming*](https://cpbook.net/) (2013)
+* Sec. 8.4.1: *Two components: Binary search the answer and other* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 ---
 

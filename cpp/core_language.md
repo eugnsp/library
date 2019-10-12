@@ -2,6 +2,7 @@
 
 ## Table of contents
 
+* [Introduction and overview](#introduction-and-overview)
 * [ABI](#abi)
 	* [Itanium C++ ABI](#itanium-c-abi)
 * [Attributes](#attributes)
@@ -36,6 +37,11 @@
 
 ---
 
+## Introduction and overview
+
+* [The C++ Standards Committee](http://www.open-std.org/jtc1/sc22/wg21/)
+* [C++ Standards Committee Papers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
+
 ## ABI
 
 ### Itanium C++ ABI
@@ -69,11 +75,11 @@
 
 :link:
 
-* [*What's the reason for not using C++17's `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) &ndash; Software Engineering
+* [*What's the reason for not using C++17’s `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) &ndash; Software Engineering
 
 :anchor:
 
-* N.Josuttis. [*`[[nodiscard]]` in the Library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; WG21/P0600R0 (2017)
+* N.Josuttis. [*`[[nodiscard]]` in the library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) &ndash; WG21/P0600R0 (2017)
 
 ### `[[trivially_relocatable]]`
 
@@ -98,11 +104,18 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 :link:
 
-* [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
 * [*What is “argument-dependent lookup” (aka ADL, or “Koenig Lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
 * A.O'Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
 * A.O'Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
 * A.O'Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
+
+:movie:
+
+* J.Turner. [Episode 160: *Argument dependent lookup*](https://www.youtube.com/watch?v=agS-h_eaLj8) &ndash; C++ Weekly
+
+:anchor:
+
+* [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
 
 ---
 
@@ -200,7 +213,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 * [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) &ndash; C++ FAQ
 * H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
 * [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
-* [*C++ `const` keyword - use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
+* [*C++ `const` keyword &ndash; use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
 
 ### Floating-point types
 
@@ -263,8 +276,8 @@ See also [*Floating-point numbers* &ndash; Numeric data structures and algorithm
 
 :link:
 
-* [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) &ndash; H.E.Hinnant, B.Stroustrup, B.Kozicki (2008)
-* [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) &ndash; T.Becker (2013)
+* H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
+* T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 * [*What is move semantics?*](https://stackoverflow.com/questions/3106110/what-is-move-semantics) &ndash; Stack Overflow
 * [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) &ndash; Stack Overflow
 * [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) &ndash; Stack Overflow

@@ -79,14 +79,27 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 ## Floating-point numbers
 
+:memo:
+
+* The relative error due to rounding is uniform, i.e. it is independent of the magnitude of the number.
+* The binary-based floating-point system has the smallest possible wobble (a range of relative errors).
+
 :link:
 
 * [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
 * [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) &ndash; Wikipedia
 * D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
 * [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
-* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; Cleve's Corner (2019)
+* C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) &ndash; Cleve’s Corner (2019)
 * J.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
+
+:page_facing_up:
+
+* C.Allison. [Where did all my decimals go?](http://uvu.freshsources.com/decimals.pdf) (2006)
+
+:book:
+
+* C.Allison. *Floating-point numbers aren’t real* &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
 
 :movie_camera:
 
@@ -98,7 +111,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
-* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; Cleve's Corner (2014)
+* C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) &ndash; Cleve’s Corner (2014)
 
 :movie_camera:
 

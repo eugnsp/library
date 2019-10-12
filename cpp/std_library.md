@@ -4,6 +4,7 @@
 
 * [General information](#general-information)
 * [Algorithms](#algorithms)
+	* [`std::iota`](#stdiota)
 * [Containers](#containers)
 	* [Associative containers](#associative-containers)
 	* [Sequence containers](#sequence-containers)
@@ -12,7 +13,6 @@
 * [Iterators](#iterators)
 * [Numerics](#numerics)
 	* [`std::bit_cast`](#stdbit_cast)
-	* [`std::iota`](#stdiota)
 * [Random numbers](#random-numbers)
 * [Regular expressions](#regular-expressions)
 * [Smart pointers](#smart-pointers)
@@ -57,9 +57,17 @@
 
 :movie_camera:
 
+* C.Hoekstra. *Algorithm intuition.* [Part I](https://www.youtube.com/watch?v=pUEnO6SvAMo), [Part II](https://www.youtube.com/watch?v=sEvYmb3eKsw) &ndash; CppCon (2019)
 * J.Boccara. [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) &ndash; ACCU (2018)
 * M.Clow. [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) &ndash; ACCU (2016)
 * M.VanLoon. [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) &ndash; CppCon (2015)
+
+### `std::iota`
+
+:link:
+
+* S.Parent. [*#iotashaming*](https://sean-parent.stlab.cc/2019/01/04/iota.html) (2019)
+* [*What does iota of `std::iota` stand for?*](https://stackoverflow.com/questions/9244879/what-does-iota-of-stdiota-stand-for) &ndash; Stack Overflow
 
 ---
 
@@ -124,19 +132,13 @@
 
 * [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) &ndash; C++ reference
 
-### `std::iota`
-
-:link:
-
-* S.Parent [*#iotashaming*](https://sean-parent.stlab.cc/2019/01/04/iota.html) (2019)
-
 ---
 
 ## Random numbers
 
 :link:
 
-* M.E.O'Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
+* M.E.O’Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
 * [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
 
 ---
@@ -162,13 +164,13 @@
 * [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) &ndash; Wikipedia
 * [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
 * H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) &ndash; Guru of the Week (2013)
+* Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 * [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) &ndash; Stack Overflow
 * [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/questions/39288891/why-is-shared-ptrvoid-legal-while-unique-ptrvoid-is-ill-formed) &ndash; Stack Overflow
-* Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
 :movie_camera:
 
-* A.O'Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) &ndash; CppCon (2019)
+* A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) &ndash; CppCon (2019)
 * M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) &ndash; CppCon (2019)
 
 ### `std::unique_ptr`
@@ -249,8 +251,8 @@
 
 :link:
 
+* B.Wicht. [*Boost `intrusive_ptr`: Faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
 * [*Boost intrusive pointer*](https://stackoverflow.com/questions/40137660/boost-intrusive-pointer) &ndash; Stack Overflow
-* B.Wicht. [*Boost `intrusive_ptr`: faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
 
 :anchor:
 
@@ -294,7 +296,7 @@
 
 :memo:
 
-* `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2's complement for negative values.
+* `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement for negative values.
 
 ### Type traits
 
@@ -340,7 +342,6 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :movie_camera:
 
-* J.Brown. [Reducing template compilation overhead, using C++11, 14, 17, and 20](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
 * A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) &ndash; ACCU (2019)
 * S.T.Lavavej. [*`tuple<>`: What’s new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) &ndash; CppCon (2016)
 
@@ -392,7 +393,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 * [*Standard Template Library*](https://en.wikipedia.org/wiki/Standard_Template_Library) &ndash; Wikipedia
 * [*History of the Standard Template Library*](https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library) &ndash; Wikipedia
-* A.Stevens [*Interviews Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.pdf) &ndash; Dr.Dobb's Journal (1995)
+* A.Stevens [*An interview with Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.html) &ndash; Dr.Dobb's Journal (1995)
 
 :page_facing_up:
 
@@ -402,9 +403,13 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 * A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
 
+:anchor:
+
+* A.Stepanov et al. [*SGI STL: Source code and documentation*](https://web.archive.org/web/20171202101253/http://www.sgi.com:80/tech/stl/)
+
 <!-- ## SFINAE
 
-<!-- move into Templates -->
+<!-- move into Templates
 * [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) &ndash; Stack Overflow -->
 
 <!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) &ndash; C++ and Beyond (2012) -->

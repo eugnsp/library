@@ -162,7 +162,7 @@
 
 :movie_camera:
 
-* M.Skarupke. [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort* &ndash; C++ Now (2017)](https://www.youtube.com/watch?v=zqs87a_7zxw)
+* M.Skarupke. [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort*](https://www.youtube.com/watch?v=zqs87a_7zxw) &ndash; C++ Now (2017)
 
 ---
 

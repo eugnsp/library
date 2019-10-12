@@ -19,7 +19,7 @@
 		* [Execute-around proxy](execute-around-proxy)
 		* [Execute-around pointer](execute-around-pointer)
 		* [Execute-around function](execute-around-function)
-	* [Opaque typedefs](#opaque-typedefs)
+	* [Opaque typedef (whole value)](#opaque-typedefs-whole-value)
 	* [Passkey](#passkey)
 	* [Whole value](#whole-value)
 
@@ -84,11 +84,7 @@
 
 * [*SOLID*](https://en.wikipedia.org/wiki/SOLID) &ndash; Wikipedia
 * R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
-* R.C.Martin. [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf)
-* R.C.Martin. [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf)
-* R.C.Martin. [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf)
-* R.C.Martin. [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf)
-* R.C.Martin. [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
+* R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
 
 ### Style guidelines
 
@@ -141,7 +137,7 @@
 
 ### Double-checked locking
 
-See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
+See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
 :link:
 
@@ -159,11 +155,10 @@ See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_pa
 
 #### Execute-around object
 
-> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence.
+> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of Resource acquisition is initialization (RAII).
 
 :memo:
 
-* This idiom is also known by the name of Resource acquisition is initialization (RAII).
 * An example of this idiom is provided by smart pointers, e.g. by `std::unique_ptr`. See [The standard library &ndash; Smart pointers](std_library.md#smart-pointers).
 
 :link:
@@ -184,7 +179,7 @@ See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_pa
 
 :memo:
 
-* This idiom can be used to "convert" a non-thread-safe class into a thread-safe one by automatically locking and unlocking a mutex when member functions are called.
+* This idiom can be used to “convert” a non-thread-safe class into a thread-safe one by automatically locking and unlocking a mutex when member functions are called.
 
 :link:
 
@@ -195,27 +190,7 @@ See also [Multithreading &ndash; Concurrency and parallelism](concurrency_and_pa
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
-### Opaque typedefs
-
-See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
-
-:link:
-
-* L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) &ndash; Overload **152**, 9 (2019)
-* J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/blog/2016/10/19/strong-typedefs.html) (2016)
-
-
-### Passkey
-
-:link:
-
-<!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
-
-https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern
-
-* [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) &ndash; Stack Overflow
-
-### Whole value
+### Opaque typedef (whole value)
 
 > ```cpp
 > class Whole_value {
@@ -227,6 +202,23 @@ https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access
 > };
 > ```
 
+See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
+
+:link:
+
+* L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) &ndash; Overload **152**, 9 (2019)
+* J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
+
 :movie_camera:
 
 * H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) &ndash; ACCU (2017)
+
+### Passkey
+
+:link:
+
+<!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
+
+https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern
+
+* [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) &ndash; Stack Overflow
