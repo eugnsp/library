@@ -10,8 +10,9 @@
 		* [Integer division](#integer-division)
 	* [Horner’s method](#horners-method)
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
-* [Floating-point numbers](#floating-point-numbers)
-	* [Denormal numbers](#denormal-numbers)
+* [Floating-point arithmetic](#floating-point-arithmetic)
+	* [IEEE 754](#ieee-754)
+		* [Denormal numbers](#denormal-numbers)
 * [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	* [Iterative methods](#iterative-methods)
 		* [Jacobi method](#jacobi-method)
@@ -66,7 +67,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-* [Horner's method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
+* [Horner’s method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
 
 ### Kahan summation algorithm
 
@@ -77,7 +78,9 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 ---
 
-## Floating-point numbers
+## Floating-point arithmetic
+
+> Floating-point arithmetic is arithmetic in which real numbers are represented approximately to a fixed number of significant digits and scaled using an exponent in some fixed base: <code>r = significand &times; base<sup>exponent</sup></code>.
 
 :memo:
 
@@ -87,15 +90,33 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 * [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) &ndash; Wikipedia
-* [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
-* D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
-* [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
 * C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
 
 :page_facing_up:
 
-* C.Allison. [*Where did all my decimals go?*](http://uvu.freshsources.com/decimals.pdf) (2006)
 * J.Gustafson, I.Yonemoto. [*Beating floating point at its own game: Posit arithmetic*](http://www.johngustafson.net/pdfs/BeatingFloatingPoint.pdf)
+
+### IEEE 754
+
+> IEEE 754 is a technical standard for floating-point arithmetic established in 1985 by the Institute of Electrical and Electronics Engineers (IEEE).
+
+:memo:
+
+* If two (non-extended) floating-point numbers in the same format are ordered, then they are ordered the same way when their bits are reinterpreted as signed integers.
+* NaNs are endowed with a field of bits into which software can record, say, how and/or where the NaN came into existence; no software exists now to exploit this feature.
+
+:link:
+
+* [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
+* D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
+* W.Kahan. [*Lecture notes on the status of IEEE standard 754 for binary floating-point arithmetic*](https://people.eecs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF) (1997)
+* [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
+* [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/questions/19800415/why-does-ieee-754-reserve-so-many-nan-values) &ndash; Stack Overflow
+* [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/questions/12558780/how-many-normalized-numbers-can-be-represented-using-ieee-754-single-precision) &ndash; Stack Overflow
+
+:page_facing_up:
+
+* C.Allison. [*Where did all my decimals go?*](http://uvu.freshsources.com/decimals.pdf) (2006)
 
 :book:
 
@@ -106,7 +127,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 * J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; CppCon (2015)
 * J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; HPC Advisory Council Australia Conference (2017)
 
-### Denormal numbers
+#### Denormal numbers
 
 :link:
 
@@ -129,7 +150,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :book:
 
-* Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; W.H.Press, et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+* Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 
 #### Jacobi method
 

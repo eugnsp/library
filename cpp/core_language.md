@@ -217,7 +217,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ### Floating-point types
 
-See also [*Floating-point numbers* &ndash; Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md).
+See also [*Floating-point arithmetic* &ndash; Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md#floating-point-arithmetic).
 
 :link:
 

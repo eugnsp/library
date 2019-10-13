@@ -88,7 +88,7 @@
 
 :link:
 
-* T.Gani, et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
+* T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
 * [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
 * E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
 
@@ -115,7 +115,7 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 :link:
 
-* J.Maddock, S.Cleary. [*C++ type traits*](http://www.drdobbs.com/cpp/c-type-traits/184404270) &ndash; Dr. Dobb’s Journal
+* J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal
 * T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
 
 :movie_camera:
