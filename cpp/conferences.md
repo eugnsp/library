@@ -1,5 +1,7 @@
 # C++ conferences
 
+:link:
+
 * [CppCon](https://www.youtube.com/channel/UCMlGfpWw-RUdWX_JbLCukXg)
 * [C++Now / BoostCon](https://www.youtube.com/channel/UC5e__RG9K3cHrPotPABnrwg)
 * [Meeting C++](https://www.youtube.com/user/MeetingCPP)

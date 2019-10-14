@@ -1,4 +1,4 @@
-# Algorithm analysis
+# General reviews
 
 ## Table of contents
 
