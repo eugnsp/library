@@ -30,6 +30,8 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :anchor: [The standard library and Boost](cpp/std_library.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
 	* :wrench: [Tools](cpp/tools.md)
+* [General reviews](general_reviews.md)
+* [C++ conferences](cpp/conferences.md)
 
 <!-- * [People](people.md) -->
 

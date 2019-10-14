@@ -17,8 +17,6 @@
 		* [Jacobi method](#jacobi-method)
 * [Matrix diagonalization](#matrix-diagonalization)
 	* [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
-* [Finite elements method](#finite-elements-method)
-* [Fluid dynamics](#fluid-dynamics)
 * [Wavelets](#wavelets)
 
 ---
@@ -173,22 +171,6 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 * Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 * Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) &ndash; SIAM (2013)
 * H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
-
----
-
-## Finite elements method
-
-:movie_camera:
-
-* D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) &ndash; Annual Conference of the Great Lakes Section of the SIAM (2015)
-
----
-
-## Fluid dynamics
-
-:movie_camera:
-
-* P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) (2014)
 
 ---
 
