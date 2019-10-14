@@ -397,7 +397,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :page_facing_up:
 
-* D.R.Musser, A.A.Stepanov. [*A library of generic algorithms in Ada*](http://stepanovpapers.com/p216-musser.pdf) &ndash; [Proc. ACM SIGAda, 216](https://doi.org/10.1145/317500.317529) (1987)
+* D.R.Musser, A.A.Stepanov. [*A library of generic algorithms in Ada*](http://stepanovpapers.com/p216-musser.pdf) &ndash; [Proceedings of ACM SIGAda, 216](https://doi.org/10.1145/317500.317529) (1987)
 
 :movie_camera:
 

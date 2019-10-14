@@ -21,6 +21,8 @@
 
 * [*Sort* &ndash; Boost libraries](https://www.boost.org/doc/libs/release/libs/sort/)
 
+---
+
 ## Comparison sorting
 
 > In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed.

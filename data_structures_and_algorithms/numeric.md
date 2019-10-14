@@ -2,79 +2,24 @@
 
 ## Table of contents
 
-* [Introduction and overview](#introduction-and-overview)
-* [Binomial coefficient](#binomial-coefficient)
+* [Floating-point arithmetic](#floating-point-arithmetic)
+	* [IEEE 754](#ieee-754)
+		* [Denormal numbers](#denormal-numbers)
 * [Arithmetic algorithms](#arithmetic-algorithms)
 	* [Arithmetic means](#arithmetic-means)
+	* [Binomial coefficient](#binomial-coefficient)
 	* [Division algorithms](#division-algorithms)
 		* [Integer division](#integer-division)
 	* [Horner’s method](#horners-method)
 	* [Kahan summation algorithm](#kahan-summation-algorithm)
-* [Floating-point arithmetic](#floating-point-arithmetic)
-	* [IEEE 754](#ieee-754)
-		* [Denormal numbers](#denormal-numbers)
 * [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	* [Iterative methods](#iterative-methods)
 		* [Jacobi method](#jacobi-method)
 * [Matrix diagonalization](#matrix-diagonalization)
 	* [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
+* [Finite elements method](#finite-elements-method)
+* [Fluid dynamics](#fluid-dynamics)
 * [Wavelets](#wavelets)
-
----
-
-## Introduction and overview
-
-:movie_camera:
-
-* P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) (2014)
-
----
-
-## Binomial coefficient
-
-:link:
-
-* M.Dominus. [*How to calculate binomial coefficients*](https://blog.plover.com/math/choose.html)
-* M.Dominus. [*How to calculate binomial coefficients, again*](https://blog.plover.com/math/choose-2.html)
-
----
-
-## Arithmetic algorithms
-
-### Arithmetic means
-
-> To compute the arithmetic mean <code>&mu; = 1 / n &sum; x<sub>i</sub></code> in a numerically stable way, use the following recurrence relation: <code>&mu;<sub>n</sub> = &mu;<sub>n - 1</sub> + 1 / n (x<sub>n</sub> - &mu;<sub>n - 1</sub>)</code>.
-
-:link:
-
-* D.Assencio. [*Numerically stable computation of arithmetic means*](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59) (2015)
-* T.Finch. [*Incremental calculation of weighted mean and variance*](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf) (2009)
-
-### Division algorithms
-
-<!-- https://en.wikipedia.org/wiki/Division_algorithm
-https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
-
-#### Integer division
-
-:link:
-
-* I.Kaplan. [*Integer division*](http://bearcave.com/software/divide.htm) (1996)
-
-### Horner’s method
-
-> Horner’s method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
-
-:link:
-
-* [Horner’s method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
-
-### Kahan summation algorithm
-
-:link:
-
-* [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) &ndash; Wikipedia
-* [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) &ndash; Stack Overflow
 
 ---
 
@@ -102,24 +47,25 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :memo:
 
-* If two (non-extended) floating-point numbers in the same format are ordered, then they are ordered the same way when their bits are reinterpreted as signed integers.
+* If two (non-extended) floating-point numbers in the same format are ordered, then they are ordered the same way when their bits are reinterpreted as sign-magnitude integers.
 * NaNs are endowed with a field of bits into which software can record, say, how and/or where the NaN came into existence; no software exists now to exploit this feature.
 
 :link:
 
 * [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
 * D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
-* W.Kahan. [*Lecture notes on the status of IEEE standard 754 for binary floating-point arithmetic*](https://people.eecs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF) (1997)
 * [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
 * [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/questions/19800415/why-does-ieee-754-reserve-so-many-nan-values) &ndash; Stack Overflow
 * [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/questions/12558780/how-many-normalized-numbers-can-be-represented-using-ieee-754-single-precision) &ndash; Stack Overflow
 
 :page_facing_up:
 
+* W.Kahan. [*Lecture notes on the status of IEEE standard 754 for binary floating-point arithmetic*](https://people.eecs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF) (1997)
 * C.Allison. [*Where did all my decimals go?*](http://uvu.freshsources.com/decimals.pdf) (2006)
 
 :book:
 
+* M.L.Overton. [*Numerical computing with IEEE floating point arithmetic*](https://doi.org/10.1137/1.9780898718072) &ndash; SIAM (2001)
 * C.Allison. [*Floating-point numbers aren’t real*](http://freshsources.com/FPNotReal.pdf) &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
 
 :movie_camera:
@@ -137,6 +83,52 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :movie_camera:
 
 * D.Kohlbrenner. [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) &ndash; IEEE Symposium on Security and Privacy (2015)
+
+---
+
+## Arithmetic algorithms
+
+### Arithmetic means
+
+> To compute the arithmetic mean <code>&mu; = 1 / n &sum; x<sub>i</sub></code> in a numerically stable way, use the following recurrence relation: <code>&mu;<sub>n</sub> = &mu;<sub>n - 1</sub> + 1 / n (x<sub>n</sub> - &mu;<sub>n - 1</sub>)</code>.
+
+:link:
+
+* D.Assencio. [*Numerically stable computation of arithmetic means*](https://diego.assencio.com/?index=c34d06f4f4de2375658ed41f70177d59) (2015)
+* T.Finch. [*Incremental calculation of weighted mean and variance*](https://fanf2.user.srcf.net/hermes/doc/antiforgery/stats.pdf) (2009)
+
+### Binomial coefficient
+
+:link:
+
+* M.Dominus. [*How to calculate binomial coefficients*](https://blog.plover.com/math/choose.html)
+* M.Dominus. [*How to calculate binomial coefficients, again*](https://blog.plover.com/math/choose-2.html)
+
+### Division algorithms
+
+<!-- https://en.wikipedia.org/wiki/Division_algorithm
+https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
+
+#### Integer division
+
+:link:
+
+* I.Kaplan. [*Integer division*](http://bearcave.com/software/divide.htm) (1996)
+
+### Horner’s method
+
+> Horner’s method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
+
+:link:
+
+* [Horner’s method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
+
+### Kahan summation algorithm
+
+:link:
+
+* [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) &ndash; Wikipedia
+* [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) &ndash; Stack Overflow
 
 ---
 
@@ -179,8 +171,24 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :book:
 
 * Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
-* Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) (2013)
+* Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) &ndash; SIAM (2013)
 * H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
+
+---
+
+## Finite elements method
+
+:movie_camera:
+
+* D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) &ndash; Annual Conference of the Great Lakes Section of the SIAM (2015)
+
+---
+
+## Fluid dynamics
+
+:movie_camera:
+
+* P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) (2014)
 
 ---
 
@@ -194,7 +202,6 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :book:
 
 * Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
-
 
 <!--
 https://www.math.wustl.edu/~wick/teaching/Math2605Notes/chap3.pdf
