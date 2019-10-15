@@ -1,17 +1,17 @@
-# Templates
+# Templates <!-- omit in toc -->
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-* [Introduction and overview](#introduction-and-overview)
-* [Argument deduction](#argument-deduction)
-* [Function templates](#function-templates)
-* [Parsing and compilation](#parsing-and-compilation)
-	* [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
-	* [Optimization](#optimization)
-	* [Two-phase lookup](#two-phase-lookup)
-* [Policies](#policies)
-* [Tuples](#tuples)
-* [Type traits](#type-traits)
+- [Introduction and overview](#introduction-and-overview)
+- [Argument deduction](#argument-deduction)
+- [Function templates](#function-templates)
+- [Parsing and compilation](#parsing-and-compilation)
+	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
+	- [Optimization](#optimization)
+	- [Two-phase lookup](#two-phase-lookup)
+- [Policies](#policies)
+- [Tuples](#tuples)
+- [Type traits](#type-traits)
 
 ---
 
@@ -19,14 +19,14 @@
 
 :movie_camera:
 
-* H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; ACCU (2017)
-* W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) &ndash; CppCon (2014)
-* A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) &ndash; Tech Talk (2014)
-* M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) &ndash; C++Now (2012)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; ACCU (2017)
+- W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) &ndash; CppCon (2014)
+- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) &ndash; Tech Talk (2014)
+- M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) &ndash; C++Now (2012)
 
 :book:
 
-* D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
+- D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
 
 ---
 
@@ -34,11 +34,11 @@
 
 :link:
 
-* [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) &ndash; C++ reference
+- [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) &ndash; C++ reference
 
 :movie_camera:
 
-* S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) &ndash; CppCon (2014)
+- S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) &ndash; CppCon (2014)
 
 ---
 
@@ -46,8 +46,8 @@
 
 :link:
 
-* [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) &ndash; Stack Overflow
-* H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
+- [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) &ndash; Stack Overflow
+- H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
 
 ---
 
@@ -64,23 +64,23 @@
 
 :link:
 
-* [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/a/613132/1625187) &ndash; Stack Overflow
-* H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) &ndash; Guru of the Week (2009)
+- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/a/613132/1625187) &ndash; Stack Overflow
+- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) &ndash; Guru of the Week (2009)
 
 :movie_camera:
 
-* A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
+- A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
 
 ### Optimization
 
 :link:
 
-* L.Dionne. [*Efficient parameter pack indexing*](https://ldionne.com/2015/11/29/efficient-parameter-pack-indexing/) (2015)
-* A.Berg&eacute;. [*True story: Efficient packing*](http://talesofcpp.fusionfenix.com/post-22/true-story-efficient-packing) (2015)
+- L.Dionne. [*Efficient parameter pack indexing*](https://ldionne.com/2015/11/29/efficient-parameter-pack-indexing/) (2015)
+- A.Berg&eacute;. [*True story: Efficient packing*](http://talesofcpp.fusionfenix.com/post-22/true-story-efficient-packing) (2015)
 
 :movie_camera:
 
-* J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
+- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
 
 ### Two-phase lookup
 
@@ -88,9 +88,9 @@
 
 :link:
 
-* T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
-* [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
-* E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
+- T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
+- [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
+- E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
 
 ---
 
@@ -98,7 +98,7 @@
 
 :movie_camera:
 
-* H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) &ndash; ACCU (2017)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) &ndash; ACCU (2017)
 
 ---
 
@@ -106,8 +106,8 @@
 
 :movie_camera:
 
-* J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
-* A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) &ndash; Tech Talk (2014)
+- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
+- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) &ndash; Tech Talk (2014)
 
 ## Type traits
 
@@ -115,13 +115,13 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 :link:
 
-* J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal
-* T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
+- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal
+- T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
 
 :movie_camera:
 
-* A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
-* H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
+- A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
 
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm

@@ -1,8 +1,8 @@
-# Tools
+# Tools <!-- omit in toc -->
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-* [Visualization](#visualization)
+- [Visualization](#visualization)
 
 ---
 
@@ -10,5 +10,5 @@
 
 :link:
 
-* D.Galles. [*Data structure visualizations*](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-* [*VisuAlgo: visualising data structures and algorithms through animation*](https://visualgo.net/)
+- D.Galles. [*Data structure visualizations*](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [*VisuAlgo: visualising data structures and algorithms through animation*](https://visualgo.net/)

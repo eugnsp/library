@@ -1,13 +1,13 @@
-# Combinatorial algorithms
+# Combinatorial algorithms <!-- omit in toc -->
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-* [Permutations](#permutations)
-	* [Generating permutations](#generating-permutations)
-		* [Algorithm L](#algorithm-l)
-		* [Heap's algorithm](#heaps-algorithm)
-	* [Generating random permutations](#generating-random-permutations)
-		* [Fisher&ndash;Yates algorithm](#fisheryates-algoritm)
+- [Permutations](#permutations)
+	- [Generating permutations](#generating-permutations)
+		- [Algorithm L](#algorithm-l)
+		- [Heap's algorithm](#heaps-algorithm)
+	- [Generating random permutations](#generating-random-permutations)
+		- [Fisher&ndash;Yates algorithm](#fisherndashyates-algorithm)
 
 ---
 
@@ -23,15 +23,15 @@
 
 :memo:
 
-* This algorithm is used in some implementations of `std::next_permutation` in the standard library.
+- This algorithm is used in some implementations of `std::next_permutation` in the standard library.
 
 :link:
 
-* [*`std::next_permutation` implementation explanation* &ndash; Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
+- [*`std::next_permutation` implementation explanation* &ndash; Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
 
 :book:
 
-* Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
+- Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
 
 #### Heap's algorithm
 
@@ -39,8 +39,8 @@
 
 :link:
 
-* [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
-* [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) &ndash; Stack Overflow
+- [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
+- [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) &ndash; Stack Overflow
 
 ### Generating random permutations
 
@@ -48,9 +48,9 @@
 
 :memo:
 
-* This algorithm is also known as the Knuth shuffle algorithm or algorithm P.
+- This algorithm is also known as the Knuth shuffle algorithm or algorithm P.
 
 :link:
 
-* [*Fisher&ndash;Yates shuffle*](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) &ndash; Wikipedia
-* [*Knuth shuffle*](https://www.rosettacode.org/wiki/Knuth_shuffle) &ndash; Rosetta Code
+- [*Fisher&ndash;Yates shuffle*](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) &ndash; Wikipedia
+- [*Knuth shuffle*](https://www.rosettacode.org/wiki/Knuth_shuffle) &ndash; Rosetta Code

@@ -1,26 +1,24 @@
-# Sequence algorithms
+# Sequence algorithms <!-- omit in toc -->
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-* [Rotation (cyclic shift)](#rotation-cyclic-shift)
-	* [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
-	* [Gries&ndash;Mills algorithm](#gries-mills-algorithm)
-	* [Dolphin algoirithm](#dolphin-algoirithm)
-	* [Lexicographically minimal rotation](#lexicographically-minimal-string-rotation)
-		* [Duval’s based algorithm](#duvals-based-algorithm)
-* [Longest increasing subsequence](#longest-increasing-subsequence)
-* [Lyndon factorization](#lyndon-factorization)
-	* [Duval’s algorithm](#duvals-algorithm)
-* [Maximum subsequence](#maximum-subsequence)
-	* [Kadane’s algorithm](#kadanes-algorithm)
-* [Majority element](#majority-element)
-	* [Boyer&ndash;Moore majority vote algorithm](#boyer-moore-majority-vote-algorithm)
-* [Permutations](#permutations)
-	* [Random permutations](#random-permutations)
-		* [Fisher&ndash;Yates AKA Knuth shuffle algoritm](#fisheryates-aka-knuth-shuffle-algoritm)
-* [String searching](#string-searching)
-	* [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthmorrispratt-algorithm)
-* [Sqrt decomposition]
+- [Rotation (cyclic shift)](#rotation-cyclic-shift)
+	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
+	- [Gries&ndash;Mills algorithm](#griesndashmills-algorithm)
+	- [Dolphin algoirithm](#dolphin-algoirithm)
+	- [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation)
+		- [Duval’s based algorithm](#duvals-based-algorithm)
+- [Longest increasing subsequence](#longest-increasing-subsequence)
+- [Lyndon factorization](#lyndon-factorization)
+	- [Duval’s algorithm](#duvals-algorithm)
+- [Maximum subsequence](#maximum-subsequence)
+	- [Kadane’s algorithm](#kadanes-algorithm)
+- [Majority element](#majority-element)
+	- [Boyer&ndash;Moore majority vote algorithm](#boyerndashmoore-majority-vote-algorithm)
+- [String searching](#string-searching)
+	- [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
+- [Sqrt decomposition](#sqrt-decomposition)
+
 ---
 
 ## Rotation (cyclic shift)
@@ -29,23 +27,23 @@
 
 :memo:
 
-* Any non-zero rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
+- Any non-zero rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
 
 :link:
 
-* [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb’s Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
+- [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb’s Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
 
 :book:
 
-* Sec. 11.3: *Rotation* &ndash; A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
-* Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
-* Sec. 2.3: *The power of primitives* &ndash; J.Bentley. *Programming pearls* (1999)
+- Sec. 11.3: *Rotation* &ndash; A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
+- Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
+- Sec. 2.3: *The power of primitives* &ndash; J.Bentley. *Programming pearls* (1999)
 
 :page_facing_up:
 
-* C.A.Furia. *Rotation of sequences: Algorithms and proofs*. Preprint (2014).\
+- C.A.Furia. *Rotation of sequences: Algorithms and proofs*. Preprint (2014).\
 [Full text](https://arxiv.org/abs/1406.5453)
-* D.Gries, H.Mills. *Swapping sections*. Technical report 81-452, Department of computer science, Cornell University, 1981.\
+- D.Gries, H.Mills. *Swapping sections*. Technical report 81-452, Department of computer science, Cornell University, 1981.\
 [Full text](https://hdl.handle.net/1813/6292)
 
 ### Three reverses rotation algorithm
@@ -54,8 +52,8 @@
 
 :memo:
 
-* The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>.
-* This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
+- The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>.
+- This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
 
 ### Gries&ndash;Mills algorithm
 
@@ -63,9 +61,9 @@
 
 :memo:
 
-* The section sizes `(k, n - k)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(k, n)`.
-* The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
-* The Gries&ndash;Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
+- The section sizes `(k, n - k)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(k, n)`.
+- The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
+- The Gries&ndash;Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
 
 ### Dolphin algoirithm
 
@@ -73,9 +71,9 @@
 
 :memo:
 
-* This algorithm is also known as the juggling algorithm.
-* The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses.
-* This algorithm is sometimes used to implement `std::rotate` for random access iterators.
+- This algorithm is also known as the juggling algorithm.
+- The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses.
+- This algorithm is sometimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up:
 
@@ -87,18 +85,18 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-* [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
+- [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
 
 #### Duval’s based algorithm
 
 :memo:
 
-* This algorithm is also known as the Zhou Yuan’s minimal expression algorithm.
+- This algorithm is also known as the Zhou Yuan’s minimal expression algorithm.
 
 :link:
 
-* [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
-* [*How does the minimum expression algorithm by Zhou Yuan work?*](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work) &ndash; Quora
+- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
+- [*How does the minimum expression algorithm by Zhou Yuan work?*](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work) &ndash; Quora
 
 ---
 
@@ -108,27 +106,27 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :memo:
 
-* The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time.
-* Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
+- The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time.
+- Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
 
 :link:
 
-* [*Longest increasing subsequence*](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) &ndash; Wikipedia
-* [*Longest increasing subsequence*](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html) &ndash; CP-Algorithms
+- [*Longest increasing subsequence*](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) &ndash; Wikipedia
+- [*Longest increasing subsequence*](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html) &ndash; CP-Algorithms
 
 :movie_camera:
 
-* [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-* Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
-* Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
-* Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
+- Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+- Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
 
-* M.L.Fredman. [*On computing the length of longest increasing subsequences*](https://core.ac.uk/download/pdf/82290717.pdf) &ndash; [Discrete Mathematics **11**, 29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)
+- M.L.Fredman. [*On computing the length of longest increasing subsequences*](https://core.ac.uk/download/pdf/82290717.pdf) &ndash; [Discrete Mathematics **11**, 29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)
 
 <!--### Counting the number of longest increasing subsequences-->
 
@@ -140,22 +138,22 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :memo:
 
-* An algorithm for Lyndon factorization can be used to find the lexicographically minimal string rotation. See [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation).
+- An algorithm for Lyndon factorization can be used to find the lexicographically minimal string rotation. See [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation).
 
 :link:
 
-* [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) &ndash; Wikipedia
+- [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) &ndash; Wikipedia
 
 ### Duval’s algorithm
 
 :link:
 
-* [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
+- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
 
 :page_facing_up:
 
-* J.P.Duval. *Factorizing words over an ordered alphabet* &ndash; [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
-* S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) &ndash; arXiv preprint (2014)
+- J.P.Duval. *Factorizing words over an ordered alphabet* &ndash; [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
+- S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) &ndash; arXiv preprint (2014)
 
 ---
 
@@ -165,11 +163,11 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :page_facing_up:
 
-* J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) &ndash; [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
+- J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) &ndash; [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
 
 ### Kadane’s algorithm
 
-* D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
+- D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
 
 ---
 
@@ -179,7 +177,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-* [*Boyer&ndash;Moore majority vote algorithm*](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) &ndash; Wikipedia
+- [*Boyer&ndash;Moore majority vote algorithm*](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) &ndash; Wikipedia
 
 ---
 
@@ -189,11 +187,11 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-* [*Knuth&ndash;Morris&ndash;Pratt algorithm*](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) &ndash; Wikipedia
+- [*Knuth&ndash;Morris&ndash;Pratt algorithm*](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) &ndash; Wikipedia
 
 :movie_camera:
 
-* W.Brinkman. [*KMP searching algorithm*](https://www.youtube.com/watch?v=y2b94AxPlF8) (2017)
+- W.Brinkman. [*KMP searching algorithm*](https://www.youtube.com/watch?v=y2b94AxPlF8) (2017)
 
 ---
 
@@ -201,5 +199,5 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-* [*Sqrt decomposition*](https://cp-algorithms.com/data_structures/sqrt_decomposition.html) &ndash; CP-Algorithms
-* S.Kopeliovich. [*Sqrt decomposition*](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf) &ndash; MIPT (2016)
+- [*Sqrt decomposition*](https://cp-algorithms.com/data_structures/sqrt_decomposition.html) &ndash; CP-Algorithms
+- S.Kopeliovich. [*Sqrt decomposition*](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf) &ndash; MIPT (2016)

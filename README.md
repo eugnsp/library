@@ -4,7 +4,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 
 ## Table of contents
 
-* Data structures and algorithms
+- Data structures and algorithms
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :arrow_heading_up: [Backtracking](data_structures_and_algorithms/backtracking.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
@@ -21,7 +21,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
-* C++
+- C++
 	* :chestnut: [Core language](cpp/core_language.md)
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
@@ -30,13 +30,13 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :anchor: [The standard library and Boost](cpp/std_library.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
 	* :wrench: [Tools](cpp/tools.md)
-* [General reviews](general_reviews.md)
-* [C++ conferences](cpp/conferences.md)
+- [General reviews](general_reviews.md)
+- [C++ conferences](cpp/conferences.md)
 
 <!-- * [People](people.md) -->
 
 <!--
-* Miscellaneous funny stuff:
+- Miscellaneous funny stuff:
 http://www.cs.columbia.edu/~evs/songs/
 -->
 

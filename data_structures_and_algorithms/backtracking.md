@@ -1,9 +1,9 @@
-# Backtracking
+# Backtracking <!-- omit in toc -->
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-* [Exact cover](#exact_cover)
-	* [Algorithm X and dancing links](#algorithms_x_and_dancing_links)
+- [Exact cover](#exact-cover)
+	- [Algorithm X and dancing links](#algorithm-x-and-dancing-links)
 ---
 
 ## Exact cover
@@ -12,7 +12,7 @@
 
 https://www-cs-faculty.stanford.edu/~knuth/fasc5c.ps.gz
 
-* D.E.Knuth. [*Dancing links*](https://www.youtube.com/watch?v=_cR9zDlvP88) &ndash; Stanford Lecture: Donald Knuth’s 24th annual Christmas lecture (2018)
+- D.E.Knuth. [*Dancing links*](https://www.youtube.com/watch?v=_cR9zDlvP88) &ndash; Stanford Lecture: Donald Knuth’s 24th annual Christmas lecture (2018)
 
 <!--
 https://www.cl.cam.ac.uk/~mr10/backtrk.pdf
