@@ -26,7 +26,8 @@
 
 :book:
 
-- D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
+- D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
+- A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ---
 
@@ -100,14 +101,36 @@
 
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) &ndash; ACCU (2017)
 
+:book:
+
+- Ch. 1: *Policy-based class design* &ndash; A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+
 ---
 
 ## Tuples
+
+:link:
+
+- N.Deppe. [*Template metaprogramming. Part 3: Tuple iteration with recursion*](https://nilsdeppe.com/posts/tmpl-part3) (2017)
+- N.Deppe. [*Template metaprogramming. Part 4: Recursion free tuple iteration*](https://nilsdeppe.com/posts/tmpl-part4) (2017)
 
 :movie_camera:
 
 - J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
 - A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) &ndash; Tech Talk (2014)
+
+## Type lists
+
+:link:
+
+- N.Deppe. [*Template metaprogramming. Part 2: Typelist*](https://nilsdeppe.com/posts/tmpl-part2) (2017)
+- J.Galowicz. [*Type lists*](https://blog.galowicz.de/2016/05/08/compile_time_type_lists/) (2016)
+- J.Galowicz. [*Type list compile time performance*](https://blog.galowicz.de/2016/06/25/cpp_template_type_list_performance/) (2016)
+- J.Galowicz. [*Transformations between user input/output and type lists*](https://blog.galowicz.de/2016/05/14/converting_between_c_strings_and_type_lists/) (2016)
+
+:book:
+
+- Ch. 3: *Typelists* &ndash; A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ## Type traits
 
@@ -117,6 +140,7 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 - J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal
 - T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
+- N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 
 :movie_camera:
 
