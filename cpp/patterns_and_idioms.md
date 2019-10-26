@@ -12,6 +12,7 @@
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Adapter](#adapter)
 	- [Bridge and pimpl](#bridge-and-pimpl)
+	- [Builder](#builder)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Double-checked locking](#double-checked-locking)
 	- [Execute-around](#execute-around)
@@ -21,6 +22,8 @@
 		- [Execute-around function](#execute-around-function)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
+	- [Strategy](#strategy)
+	- [Visitor](#visitor)
 
 ---
 
@@ -94,6 +97,12 @@
 
 ## Patterns and idioms
 
+> A design pattern is a general technique used to solve a class of related problems.
+
+:movie_camera:
+
+* F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) &ndash; CppCon (2019)
+
 ### Adapter
 
 :link:
@@ -114,6 +123,22 @@
 
 - D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
 - D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
+
+### Builder
+
+> The builder pattern separates the creation of an object from its representation. It is used to create complex objects that are built in multiple stages:
+> ```cpp
+> struct Builder {
+>     Builder(...);
+>     Builder& add(...) { ...; return *this; }
+>     operator Product() const;
+> };
+>
+> Product pr = Builder(...).add(...).add(...).add(...);
+
+:link:
+
+* [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) &ndash; Wikipedia
 
 ### Curiously recurring template
 
@@ -154,7 +179,7 @@ See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_
 
 #### Execute-around object
 
-> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of Resource acquisition is initialization (RAII).
+> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII).
 
 :memo:
 
@@ -194,8 +219,8 @@ See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_
 > ```cpp
 > class Whole_value {
 > public:
->     explicit Whole_value(int v) : v_(v) {}
->     explicit operator int() const { return v_; }
+>     Whole_value(int v) : v_(v) {}
+>     operator int() const { return v_; }
 > private:
 >     int v_;
 > };
@@ -218,6 +243,19 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 
 <!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
 
-https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern
+<!-- https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern -->
 
 - [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) &ndash; Stack Overflow
+
+### Strategy
+
+> The strategy pattern enables run-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
+
+### Visitor
+
+> The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm.
+
+:link:
+
+* [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) &ndash; Wikipedia
+* [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) &ndash; Stack Overflow

@@ -17,8 +17,9 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
-	* :abc: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
+	* :1234: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
+	* :abc: [String algorithms](data_structures_and_algorithms/string.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
 - C++

@@ -11,6 +11,7 @@
 	- [Two-phase lookup](#two-phase-lookup)
 - [Policies](#policies)
 - [Tuples](#tuples)
+- [Type lists](#type-lists)
 - [Type traits](#type-traits)
 
 ---
@@ -40,6 +41,22 @@
 :movie_camera:
 
 - S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) &ndash; CppCon (2014)
+
+---
+
+## Concepts
+
+:link:
+
+* [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) &ndash; Stack Overflow
+
+:movie_camera:
+
+* B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) &ndash; CppCon (2018)
+
+:anchor:
+
+* W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) &ndash; WG21/P0552R0 (2017)
 
 ---
 
@@ -138,7 +155,7 @@ See also [*Type traits* &ndash; The standard library and Boost](std_library.md#t
 
 :link:
 
-- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal
+- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal (2000)
 - T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 

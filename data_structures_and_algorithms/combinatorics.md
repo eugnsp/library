@@ -5,7 +5,7 @@
 - [Permutations](#permutations)
 	- [Generating permutations](#generating-permutations)
 		- [Algorithm L](#algorithm-l)
-		- [Heap's algorithm](#heaps-algorithm)
+		- [Heap’s algorithm](#heaps-algorithm)
 	- [Generating random permutations](#generating-random-permutations)
 		- [Fisher&ndash;Yates algorithm](#fisherndashyates-algorithm)
 
@@ -33,9 +33,9 @@
 
 - Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
 
-#### Heap's algorithm
+#### Heap’s algorithm
 
-> Heap's algorithm generates all possible permutations of `n` objects. The algorithm minimizes movement: it generates each permutation from the previous one by interchanging a single pair of elements; the other `n - 2` elements are not disturbed.
+> Heap’s algorithm generates all possible permutations of `n` objects. The algorithm minimizes movement: it generates each permutation from the previous one by interchanging a single pair of elements; the other `n - 2` elements are not disturbed.
 
 :link:
 

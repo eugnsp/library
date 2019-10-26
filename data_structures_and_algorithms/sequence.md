@@ -6,17 +6,11 @@
 	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
 	- [Gries&ndash;Mills algorithm](#griesndashmills-algorithm)
 	- [Dolphin algoirithm](#dolphin-algoirithm)
-	- [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation)
-		- [Duval’s based algorithm](#duvals-based-algorithm)
 - [Longest increasing subsequence](#longest-increasing-subsequence)
-- [Lyndon factorization](#lyndon-factorization)
-	- [Duval’s algorithm](#duvals-algorithm)
 - [Maximum subsequence](#maximum-subsequence)
 	- [Kadane’s algorithm](#kadanes-algorithm)
 - [Majority element](#majority-element)
 	- [Boyer&ndash;Moore majority vote algorithm](#boyerndashmoore-majority-vote-algorithm)
-- [String searching](#string-searching)
-	- [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
 - [Sqrt decomposition](#sqrt-decomposition)
 
 ---
@@ -79,25 +73,6 @@
 
 W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash; [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
 
-### Lexicographically minimal string rotation
-
-> Lexicographically minimal rotation if the rotation of a string possessing the lowest lexicographical order of all its rotations.
-
-:link:
-
-- [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
-
-#### Duval’s based algorithm
-
-:memo:
-
-- This algorithm is also known as the Zhou Yuan’s minimal expression algorithm.
-
-:link:
-
-- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
-- [*How does the minimum expression algorithm by Zhou Yuan work?*](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work) &ndash; Quora
-
 ---
 
 ## Longest increasing subsequence
@@ -132,31 +107,6 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 ---
 
-## Lyndon factorization
-
-> Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, such that <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
-
-:memo:
-
-- An algorithm for Lyndon factorization can be used to find the lexicographically minimal string rotation. See [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation).
-
-:link:
-
-- [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) &ndash; Wikipedia
-
-### Duval’s algorithm
-
-:link:
-
-- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
-
-:page_facing_up:
-
-- J.P.Duval. *Factorizing words over an ordered alphabet* &ndash; [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
-- S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) &ndash; arXiv preprint (2014)
-
----
-
 ## Maximum subsequence
 
 > Problem: find a contiguous subsequence with the largest sum within a given one-dimensional sequence.
@@ -178,20 +128,6 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 :link:
 
 - [*Boyer&ndash;Moore majority vote algorithm*](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) &ndash; Wikipedia
-
----
-
-## String searching
-
-### Knuth&ndash;Morris&ndash;Pratt algorithm
-
-:link:
-
-- [*Knuth&ndash;Morris&ndash;Pratt algorithm*](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) &ndash; Wikipedia
-
-:movie_camera:
-
-- W.Brinkman. [*KMP searching algorithm*](https://www.youtube.com/watch?v=y2b94AxPlF8) (2017)
 
 ---
 

@@ -138,8 +138,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 :movie_camera:
 
-- S.Schurr. [*`constexpr`: Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc) &ndash; CppCon (2015)
-- S.Schurr. [*`constexpr`: Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) &ndash; CppCon (2015)
+- S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) &ndash; CppCon (2015)
 
 ### `friend`
 
@@ -292,13 +291,13 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 
 #### `dynamic_cast`
 
-:link:
-
-- [*`dynamic_cast` conversion*](https://en.cppreference.com/w/cpp/language/dynamic_cast) &ndash; C++ reference
-
 :movie_camera:
 
 - A.O’Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
+
+:anchor:
+
+- [*`dynamic_cast` conversion*](https://en.cppreference.com/w/cpp/language/dynamic_cast) &ndash; C++ reference
 
 ### Type punning
 

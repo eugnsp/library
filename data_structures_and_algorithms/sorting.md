@@ -30,7 +30,7 @@
 :memo:
 
 - Any comparison-based algorithm of sorting an array of size `n` requires <code>&Omega;(n log n)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `n`. No simple formula for the solution is known.
-- For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn't exceed `16` elements, and Microsoft's implementation uses the value `32`.
+- For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn’t exceed `16` elements, and Microsoft’s implementation uses the value `32`.
 
 :link:
 

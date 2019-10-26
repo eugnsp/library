@@ -41,6 +41,10 @@
 
 ### GCC
 
+:link:
+
+* [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/questions/1936719/what-are-the-gcc-predefined-macros-for-the-compilers-version-number) &ndash; Stack Overflow
+
 :sound:
 
 - M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) &ndash; Software Engineering Radio (2007)
