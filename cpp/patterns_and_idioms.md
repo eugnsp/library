@@ -8,7 +8,7 @@
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 		- [SOLID principles](#solid-principles)
-	- [Style guidelines](#style-guidelines)
+	- [Guidelines](#guidelines)
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Adapter](#adapter)
 	- [Bridge and pimpl](#bridge-and-pimpl)
@@ -35,16 +35,23 @@
 
 ## Design principles
 
+:movie_camera:
+
+- F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) &ndash; CppCon (2018)
+
+### Class design
+
 :link:
 
 - R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) &ndash; Uncle Bob (2004)
 
 :movie_camera:
 
-- B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) &ndash; CppCon (2015)
-- H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) &ndash; CppCon (2014)
+- J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) &ndash; CppCon (2018)
 
-### Class design
+:book:
+
+- Sec.: *Class design and inheritance* &ndash; H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) &ndash; [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
 
 #### Destructors
 
@@ -88,10 +95,16 @@
 - R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
 - R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
 
-### Style guidelines
+### Guidelines
 
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
+- [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
+
+:movie_camera:
+
+- B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) &ndash; CppCon (2015)
+- H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) &ndash; CppCon (2014)
 
 ---
 
