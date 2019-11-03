@@ -27,7 +27,7 @@
 :movie_camera:
 
 - F.Castelli. [*Introduction to CMake*](https://www.youtube.com/watch?v=jt3meXdP-QI) &ndash; SwedenCpp (2018)
-- D.Pfeifer. [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) &ndash; C++ Now (2017)
+- D.Pfeifer. [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) &ndash; C++Now (2017)
 - M.Ropert. [*Using modern CMake patterns to enforce a good modular design*](https://www.youtube.com/watch?v=eC9-iRN2b04) &ndash; CppCon (2017)
 - J.Turner. [Episode 78: *Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) &ndash; C++ Weekly (2017)
 

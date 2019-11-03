@@ -9,8 +9,10 @@
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
 	- [Sequence containers](#sequence-containers)
+		- [`std:deque`](#stddeque)
 		- [`std::vector<bool>`](#stdvectorbool)
 	- [Unordered containers](#unordered-containers)
+- [Input/output](#inputoutput)
 - [Iterators](#iterators)
 - [Numerics](#numerics)
 	- [`std::bit_cast`](#stdbit_cast)
@@ -130,11 +132,23 @@
 :movie_camera:
 
 - D.K&uuml;hl. [*#Hashing*](https://www.youtube.com/watch?v=CJsQSIp7-Ig) &ndash; ACCU (2019)
-- M.Skarupke. [*You can do better than `std::unordered_map`: New improvements to hash table performance*](https://www.youtube.com/watch?v=M2fKMP47slQ) &ndash; C++ Now (2018)
+- M.Skarupke. [*You can do better than `std::unordered_map`: New improvements to hash table performance*](https://www.youtube.com/watch?v=M2fKMP47slQ) &ndash; C++Now (2018)
 
 :anchor:
 
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html) &ndash; WG21/P0919R3 (2018)
+
+---
+
+## Input/output
+
+:link:
+
+* [`tellg()` function give wrong size of file?](https://stackoverflow.com/questions/22984956/tellg-function-give-wrong-size-of-file) &ndash; Stack Overflow
+
+:anchor:
+
+* [*Input/output library*](https://en.cppreference.com/w/cpp/io) &ndash; C++ reference
 
 ---
 

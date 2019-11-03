@@ -4,12 +4,14 @@
 
 - [Introduction and overview](#introduction-and-overview)
 - [Argument deduction](#argument-deduction)
+- [Concepts](#concepts)
 - [Function templates](#function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
 - [Policies](#policies)
+- [Specialization](#specialization)
 - [Tuples](#tuples)
 - [Type lists](#type-lists)
 - [Type traits](#type-traits)
@@ -121,6 +123,14 @@
 :book:
 
 - Ch. 1: *Policy-based class design* &ndash; A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+
+---
+
+## Specialization
+
+:link:
+
+* [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) &ndash; Stack Overflow
 
 ---
 

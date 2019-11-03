@@ -37,6 +37,10 @@
 
 - [*Binary search trees*](https://www.youtube.com/watch?v=9Jry5-82I68) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
+:book:
+
+- Sec. 2.3.1: *Binary search trees*, Sec: *Selection sort* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* &ndash; W.H.Freeman (1997)
+
 ### Self-balancing binary search trees
 
 > A self-balancing binary search tree is a binary search tree that automatically keeps its height small during arbitrary insertions and deletions.

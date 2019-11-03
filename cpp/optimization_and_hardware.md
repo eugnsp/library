@@ -38,6 +38,7 @@
 
 :link
 
+- A.O’Dwyer. [*`[[trivial_abi]]` 101*](https://quuxplusone.github.io/blog/2018/05/02/trivial-abi-101/)
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
 
 :movie_camera:
@@ -78,7 +79,7 @@
 
 :movie_camera:
 
-- J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) &ndash; C++ Now (2018)
+- J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) &ndash; C++Now (2018)
 
 #### Strict aliasing rule
 
@@ -107,6 +108,10 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 - S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
 
 #### Allocation
+
+:link:
+
+* N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
 
 :movie_camera:
 

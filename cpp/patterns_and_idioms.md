@@ -272,3 +272,7 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 
 * [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) &ndash; Wikipedia
 * [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) &ndash; Stack Overflow
+
+:movie_camera:
+
+* B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) &ndash; CppCon (2019)
