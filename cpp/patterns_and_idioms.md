@@ -13,6 +13,7 @@
 	- [Adapter](#adapter)
 	- [Bridge and pimpl](#bridge-and-pimpl)
 	- [Builder](#builder)
+	- [Copy-and-swap](#copy-and-swap)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Double-checked locking](#double-checked-locking)
 	- [Execute-around](#execute-around)
@@ -151,7 +152,13 @@
 
 :link:
 
-* [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) &ndash; Wikipedia
+- [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) &ndash; Wikipedia
+
+### Copy-and-swap
+
+:link:
+
+- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom) &ndash; Stack Overflow
 
 ### Curiously recurring template
 
@@ -270,9 +277,9 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 
 :link:
 
-* [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) &ndash; Wikipedia
-* [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) &ndash; Stack Overflow
+- [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) &ndash; Wikipedia
+- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) &ndash; Stack Overflow
 
 :movie_camera:
 
-* B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) &ndash; CppCon (2019)
+- B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) &ndash; CppCon (2019)

@@ -111,7 +111,7 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 
 :link:
 
-* N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
+- N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
 
 :movie_camera:
 

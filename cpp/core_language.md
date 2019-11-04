@@ -215,6 +215,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 - H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
 - [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
 - [*C++ `const` keyword &ndash; use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
+- [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) &ndash; C++ Core Guidelines
 
 ### Floating-point types
 
