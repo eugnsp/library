@@ -156,6 +156,10 @@
 
 ### Copy-and-swap
 
+:memo:
+
+- The copy-and-swap idiom is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
+
 :link:
 
 - [*What is the copy-and-swap idiom?*](https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom) &ndash; Stack Overflow

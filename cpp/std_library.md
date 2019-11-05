@@ -111,7 +111,7 @@
 
 :link:
 
-* [*What really is a deque in STL?*](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl) &ndash; Stack Overflow
+- [*What really is a deque in STL?*](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl) &ndash; Stack Overflow
 
 #### `std::vector<bool>`
 

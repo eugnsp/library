@@ -152,6 +152,16 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 - [*Recommendations for specifying “hidden friends”*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) &ndash; WG21/P1601R0 (2019)
 
+### `inline`
+
+:link:
+
+- [*One Definition Rule &ndash; multiple definition of `inline` functions*](https://stackoverflow.com/questions/39652884/one-definition-rule-multiple-definition-of-inline-functions) &ndash; Stack Overflow
+
+:anchor:
+
+- [`inline` specifier](https://en.cppreference.com/w/cpp/language/inline) &ndash; C++ reference
+
 ---
 
 ## Standards

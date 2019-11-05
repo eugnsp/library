@@ -10,9 +10,11 @@
 	- [Undefined behavior](#undefined-behavior)
 		- [Strict aliasing rule](#strict-aliasing-rule)
 - [CPU](#cpu)
-	- [Memory and cache](#memory-and-cache)
-		- [Allocation](#allocation)
-		- [Relocation](#relocation)
+- [Memory and cache](#memory-and-cache)
+	- [Access](#access)
+		- [Nested `std::vector`s](#nested-stdvectors)
+	- [Allocation](#allocation)
+	- [Relocation](#relocation)
 
 ---
 
@@ -94,11 +96,12 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 - C.Bay. [*The CPU cache: Instruction re-ordering made obvious*](https://www.youtube.com/watch?v=tNkVUIv2gEE) &ndash; C++Now (2016)
 - M.Godbolt. [*x86 internals for fun & profit*](https://www.youtube.com/watch?v=hgcNM-6wr34) &ndash; GOTO (2014)
 
-### Memory and cache
+## Memory and cache
 
 :link:
 
 - U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
+- D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) &ndash; [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 
@@ -106,8 +109,19 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 
 - T.Doumler. [*Want fast C++? Know your hardware!*](https://www.youtube.com/watch?v=BP6NxVxDQIs) &ndash; CppCon (2016)
 - S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
+- C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) &ndash; MIT 6.004: Computation structures (2013)
 
-#### Allocation
+### Access
+
+#### Nested `std::vector`s
+
+:link:
+
+- [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/questions/45747848/performance-impact-of-nested-vectors-vs-contiguous-arrays) &ndash; Stack Overflow
+- [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/questions/33093860/using-nested-vectors-vs-a-flatten-vector-wrapper-strange-behaviour) &ndash; Stack Overflow
+- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) &ndash; Computational Science
+
+### Allocation
 
 :link:
 
@@ -117,7 +131,7 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 
 - A.Alexandrescu [`std::allocator` is to allocation what `std::vector` is to vexation](https://www.youtube.com/watch?v=LIb3L4vKZ7U) &ndash; CppCon (2015)
 
-#### Relocation
+### Relocation
 
 :link:
 

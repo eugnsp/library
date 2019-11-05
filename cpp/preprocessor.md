@@ -6,7 +6,7 @@
 
 :link:
 
-* [*What is the value of an undefined constant used in `#if`?*](https://stackoverflow.com/questions/5085392/what-is-the-value-of-an-undefined-constant-used-in-if) &ndash; Stack Overflow
+- [*What is the value of an undefined constant used in `#if`?*](https://stackoverflow.com/questions/5085392/what-is-the-value-of-an-undefined-constant-used-in-if) &ndash; Stack Overflow
 
 ## Variadic macros
 
