@@ -8,14 +8,22 @@
 - [Attributes](#attributes)
 	- [`[[nodiscard]]`](#nodiscard)
 	- [`[[trivially_relocatable]]`](#trivially_relocatable)
-- [Exceptions](#exceptions)
-- [Functions](#functions)
-	- [Argument-dependent lookup](#argument-dependent-lookup)
-- [Keywords](#keywords)
+- [Declarations](#declarations)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 	- [`friend`](#friend)
 		- [Hidden friends](#hidden-friends)
+	- [`inline`](#inline)
+	- [Storage class specifiers](#storage-class-specifiers)
+- [Exceptions](#exceptions)
+- [Expressions](#expressions)
+	- [Order of evaluation](#order-of-evaluation)
+	- [Type conversions](#type-conversions)
+		- [`dynamic_cast`](#dynamic_cast)
+	- [Type punning](#type-punning)
+- [Functions](#functions)
+	- [Argument-dependent lookup](#argument-dependent-lookup)
+	- [Lambda expressions](#lambda-expressions)
 - [Standards](#standards)
 	- [C++17](#c17)
 - [Structured bindings](#structured-bindings)
@@ -31,20 +39,38 @@
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
 		- [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
-	- [Type conversions](#type-conversions)
-		- [`dynamic_cast`](#dynamic_cast)
-	- [Type punning](#type-punning)
 
 ---
 
 ## Introduction and overview
 
-- [The C++ Standards Committee](http://www.open-std.org/jtc1/sc22/wg21/)
-- [C++ Standards Committee Papers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
+:link:
+
+- [*The definitive C++ book guide and list*](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list) &ndash; Stack Overflow
+
+:anchor:
+
+- [*Standard C++*](https://isocpp.org/)
+- [*The C++ standards committee*](http://www.open-std.org/jtc1/sc22/wg21/)
+- [*C++ standards committee papers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
 
 ---
 
 ## ABI
+
+:link:
+
+- [*Binary compatibility issues with C++*](https://community.kde.org/Policies/Binary_Compatibility_Issues_With_C%2B%2B) &ndash; KDE wiki
+- [*ABI stability*](https://source.android.com/devices/architecture/vndk/abi-stability) &ndash; Android Open Source Project
+
+:movie_camera:
+
+- L.Dionne. [*The C++ ABI from the ground up*](https://www.youtube.com/watch?v=DZ93lP1I7wU) &ndash; CppCon (2019)
+
+:anchor:
+
+- [*The ABI generic analysis and instrumentation library*](https://sourceware.org/libabigail/)
+- L.Dionne. [*Controlling the instantiation of vtables and RTTI*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1263r0.pdf) &ndash; WG21/P1263R0 (2018)
 
 ### Itanium C++ ABI
 
@@ -91,37 +117,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ---
 
-## Exceptions
-
-:link:
-
-- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
-- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
-
----
-
-## Functions
-
-### Argument-dependent lookup
-
-:link:
-
-- [*What is “argument-dependent lookup” (aka ADL, or “Koenig Lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
-- A.O'Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
-- A.O'Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
-- A.O'Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
-
-:movie:
-
-- J.Turner. [Episode 160: *Argument dependent lookup*](https://www.youtube.com/watch?v=agS-h_eaLj8) &ndash; C++ Weekly
-
-:anchor:
-
-- [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
-
----
-
-## Keywords
+## Declarations
 
 ### `const` and `mutable`
 
@@ -160,7 +156,111 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 :anchor:
 
-- [`inline` specifier](https://en.cppreference.com/w/cpp/language/inline) &ndash; C++ reference
+- [*`inline` specifier*](https://en.cppreference.com/w/cpp/language/inline) &ndash; C++ reference
+
+### Storage class specifiers
+
+:link:
+
+- [*What is external linkage and internal linkage?*](https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage) &ndash; Stack Overflow
+- P.Goldsborough. [*Internal and external linkage in C++*](http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/) (2016)
+
+:anchor:
+
+- [*Storage class specifiers*](https://en.cppreference.com/w/cpp/language/storage_duration) &ndash; C++ reference
+
+---
+
+## Exceptions
+
+:link:
+
+- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
+- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
+
+---
+
+## Expressions
+
+### Order of evaluation
+
+:link:
+
+- [*Undefined behavior and sequence points*](https://stackoverflow.com/questions/4176328/undefined-behavior-and-sequence-points) &ndash; Stack Overflow
+
+:anchor:
+
+- [*Order of evaluation*](https://en.cppreference.com/w/cpp/language/eval_order) &ndash; C++ reference
+
+### Type conversions
+
+#### `dynamic_cast`
+
+:movie_camera:
+
+- A.O’Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
+
+:anchor:
+
+- [*`dynamic_cast` conversion*](https://en.cppreference.com/w/cpp/language/dynamic_cast) &ndash; C++ reference
+
+### Type punning
+
+:memo:
+
+- Since C++20, some of type punning can be done using `std::bit_cast`, see [*`std::bit_cast`* &ndash; The standard library and Boost](#std_library.md#stdbit_cast).
+
+:link:
+
+- [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) &ndash; Wikipedia
+- L.Torvalds. [*... What’s the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) &ndash; Linux kernel mailing list (2018)
+- S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
+- M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
+- [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
+- [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) &ndash; Stack Overflow
+- [*Can I safely convert struct of floats into float array in C++?*](https://stackoverflow.com/questions/45898184/can-i-safely-convert-struct-of-floats-into-float-array-in-c) &ndash; Stack Overflow
+- [*Reinterpret struct with members of the same type as an array in a standard compliant way*](https://stackoverflow.com/questions/41419164/reinterpret-struct-with-members-of-the-same-type-as-an-array-in-a-standard-compl) &ndash; Stack Overflow
+
+:movie_camera:
+
+- T.Doumler. [*(How not to do) Type punning in modern C++*](https://www.youtube.com/watch?v=_qzMpk-22cc) &ndash; CppCon (2019)
+
+:anchor:
+
+- [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) &ndash; GCC documentation
+
+---
+
+## Functions
+
+### Argument-dependent lookup
+
+:link:
+
+- [*What is “argument-dependent lookup” (aka ADL, or “Koenig Lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
+- A.O’Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
+- A.O’Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
+- A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
+
+:movie:
+
+- J.Turner. [Episode 160: *Argument dependent lookup*](https://www.youtube.com/watch?v=agS-h_eaLj8) &ndash; C++ Weekly
+
+:anchor:
+
+- [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
+
+### Lambda expressions
+
+:link:
+
+- R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
+- A.Allain. [*Lambda functions in C++11 &ndash; the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
+- [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/questions/22232164/why-are-lambda-expressions-not-allowed-in-an-unevaluated-operands-but-allowed-in) &ndash; Stack Overflow
+
+:anchor:
+
+- L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) &ndash; WG21/P0315R4 (2017)
 
 ---
 
@@ -290,48 +390,15 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
+- [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) &ndash; Microsoft Visual C++ (2016)
 - [*What is move semantics?*](https://stackoverflow.com/questions/3106110/what-is-move-semantics) &ndash; Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) &ndash; Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) &ndash; Stack Overflow
+- [*Advantages of using `forward`*](https://stackoverflow.com/questions/3582001/advantages-of-using-forward) &ndash; Stack Overflow
 
 :movie_camera:
 
 - N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) &ndash; CppCon (2017)
-
-### Type conversions
-
-#### `dynamic_cast`
-
-:movie_camera:
-
-- A.O’Dwyer. [*`dynamic_cast` from scratch*](https://www.youtube.com/watch?v=QzJL-8WbpuU) &ndash; CppCon (2017)
-
-:anchor:
-
-- [*`dynamic_cast` conversion*](https://en.cppreference.com/w/cpp/language/dynamic_cast) &ndash; C++ reference
-
-### Type punning
-
-:memo:
-
-- Since C++20, some of type punning can be done using `std::bit_cast`, see [*`std::bit_cast`* &ndash; The standard library and Boost](#std_library.md#stdbit_cast).
-
-:link:
-
-- [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) &ndash; Wikipedia
-- L.Torvalds. [*... What’s the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) &ndash; Linux kernel mailing list (2018)
-- S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
-- M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
-- [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) &ndash; Stack Overflow
-- [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) &ndash; Stack Overflow
-
-:movie_camera:
-
-- T.Doumler. [*(How not to do) Type punning in modern C++*](https://www.youtube.com/watch?v=_qzMpk-22cc) &ndash; CppCon (2019)
-
-:anchor:
-
-- [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) &ndash; GCC documentation
 
 <!-- P1839R0 -->
 

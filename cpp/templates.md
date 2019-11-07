@@ -7,9 +7,9 @@
 - [Concepts](#concepts)
 - [Function templates](#function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
-	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
+	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [Policies](#policies)
 - [Specialization](#specialization)
 - [Tuples](#tuples)
@@ -73,24 +73,6 @@
 
 ## Parsing and compilation
 
-### Keywords `template` and `typename` as disambiguators
-
-> ```cpp
-> struct S { template<typename T> using type = T; };
-> template<class T> void foo() { typename T::template type<int> x; }
->
-> foo<S>();
-> ```
-
-:link:
-
-- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/a/613132/1625187) &ndash; Stack Overflow
-- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) &ndash; Guru of the Week (2009)
-
-:movie_camera:
-
-- A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
-
 ### Optimization
 
 :link:
@@ -111,6 +93,25 @@
 - T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
 - [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
 - E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
+- [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/questions/4643074/why-do-i-have-to-access-template-base-class-members-through-the-this-pointer) &ndash; Stack Overflow
+
+### Keywords `template` and `typename` as disambiguators
+
+> ```cpp
+> struct S { template<typename T> using type = T; };
+> template<class T> void foo() { typename T::template type<int> x; }
+>
+> foo<S>();
+> ```
+
+:link:
+
+- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) &ndash; Stack Overflow
+- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) &ndash; Guru of the Week (2009)
+
+:movie_camera:
+
+- A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
 
 ---
 

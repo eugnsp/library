@@ -287,3 +287,5 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 :movie_camera:
 
 - B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) &ndash; CppCon (2019)
+
+<!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->

@@ -9,7 +9,8 @@
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
 	- [Sequence containers](#sequence-containers)
-		- [`std:deque`](#stddeque)
+		- [`std::array`](#stdarray)
+		- [`std::deque`](#stddeque)
 		- [`std::vector<bool>`](#stdvectorbool)
 	- [Unordered containers](#unordered-containers)
 - [Input/output](#inputoutput)
@@ -42,13 +43,6 @@
 	- [`std::launder`](#stdlaunder)
 - [Tricks and subtleties](#tricks-and-subtleties)
 - [The Standard Template Library (STL)](#the-standard-template-library-stl)
-		<!-- * [`std::optional`](#stdoptional) -->
-		* [`std::variant`](#stdvariant)
-		* [`(std::)expected`](#stdexpected)
-	* [`std::launder`](#stdlaunder)
-- [Tricks and subtleties](#tricks-and-subtleties)
-- [The Standard Template Library (STL)](#the-standard-template-library-stl)
-<!-- * [SFINAE](#sfinae) -->
 
 ---
 
@@ -107,7 +101,13 @@
 
 > Sequence containers are: `std::array` (static contiguous array), `std::vector` (dynamic contiguous array), `std::deque` (double-ended queue), `std::forward_list` (singly-linked list), and `std::list` (doubly-linked list).
 
-#### `std:deque`
+#### `std::array`
+
+:link:
+
+- [*Create `N`-element `constexpr` array in C++11*](https://stackoverflow.com/questions/19019252/create-n-element-constexpr-array-in-c11) &ndash; Stack Overflow
+
+#### `std::deque`
 
 :link:
 
@@ -154,6 +154,11 @@
 
 ## Iterators
 
+:link:
+
+- [*Why use iterators instead of array indices?*](https://stackoverflow.com/questions/131241/why-use-iterators-instead-of-array-indices) &ndash; Stack Overflow
+- [*Iterator loop vs index loop*](https://stackoverflow.com/questions/14373934/iterator-loop-vs-index-loop) &ndash; Stack Overflow
+
 :movie_camera:
 
 - C.Carter. [*Iterator haiku*](https://www.youtube.com/watch?v=rZs9ndzGB_8) &ndash; CppCon (2016)
@@ -167,6 +172,7 @@
 :anchor:
 
 - [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) &ndash; C++ reference
+- J.Bastien. [*Bit-casting object representations*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0476r2.html) &ndash; WG21/P0476R2 (2017)
 
 ---
 
@@ -218,6 +224,7 @@
 - [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) &ndash; Stack Overflow
 - [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/questions/16061407/should-i-assign-or-reset-a-unique-ptr) &ndash; Stack Overflow
 - [*`make_unique` with brace initialization*](https://stackoverflow.com/questions/55141594/make-unique-with-brace-initialization) &ndash; Stack Overflow
+- [*How do I pass a `unique_ptr` argument to a constructor or a function?*](https://stackoverflow.com/questions/8114276/how-do-i-pass-a-unique-ptr-argument-to-a-constructor-or-a-function) &ndash; Stack Overflow
 
 :anchor:
 
@@ -419,7 +426,9 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 :link:
 
+- A.O’Dwyer. [*Don’t inherit from standard types*](https://quuxplusone.github.io/blog/2018/12/11/dont-inherit-from-std-types/) (2018)
 - [*In `std::exchange`, why is the second template parameter defaulted?*](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted) &ndash; Stack Overflow
+- [*Why does the C++ standard algorithm `count` return a `difference_type` instead of `size_t`?*](https://stackoverflow.com/questions/7505083/why-does-the-c-standard-algorithm-count-return-a-difference-type-instead-of) &ndash; Stack Overflow
 
 ---
 

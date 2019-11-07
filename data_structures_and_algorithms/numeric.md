@@ -64,6 +64,8 @@
 :book:
 
 - M.L.Overton. [*Numerical computing with IEEE floating point arithmetic*](https://doi.org/10.1137/1.9780898718072) &ndash; SIAM (2001)
+- Sec. 2.5: *Floating-point arithmetic* &ndash; D.H.Eberly. [*GPGPU
+programming for games and science*](https://www.crcpress.com/GPGPU-Programming-for-Games-and-Science/Eberly/p/book/9781466595354) &ndash; CRC Press (2014)
 - C.Allison. [*Floating-point numbers aren’t real*](http://freshsources.com/FPNotReal.pdf) &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
 
 :movie_camera:
