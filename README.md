@@ -31,7 +31,7 @@ This is a library of usefull and interesting references &ndash; web pages, video
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
 	* :wrench: [Tools](cpp/tools.md)
-- [General reviews](general_reviews.md)
+- [General reviews and interviews](general_reviews.md)
 - [C++ conferences](cpp/conferences.md)
 
 <!-- * [People](people.md) -->

@@ -118,6 +118,7 @@
 :link:
 
 - H.E.Hinnant. [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) (2012)
+- [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/questions/17794569/why-is-vectorbool-not-a-stl-container) &ndash; Stack Overflow
 
 ### Unordered containers
 
