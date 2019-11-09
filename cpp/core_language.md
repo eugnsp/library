@@ -12,11 +12,13 @@
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 	- [`friend`](#friend)
+		- [Friend function templates](#friend-function-templates)
 		- [Hidden friends](#hidden-friends)
 	- [`inline`](#inline)
 	- [Storage class specifiers](#storage-class-specifiers)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
+	- [Canonical implementations of operators](#canonical-implementations-of-operators)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
 		- [`dynamic_cast`](#dynamic_cast)
@@ -39,7 +41,7 @@
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
 		- [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
-
+z
 ---
 
 ## Introduction and overview
@@ -138,6 +140,10 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ### `friend`
 
+#### Friend function templates
+
+See [*Friend function templates* &ndash; Function templates &ndash; Templates](templates.md#friend-function-templates).
+
 #### Hidden friends
 
 :link:
@@ -153,6 +159,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 :link:
 
 - [*One Definition Rule &ndash; multiple definition of `inline` functions*](https://stackoverflow.com/questions/39652884/one-definition-rule-multiple-definition-of-inline-functions) &ndash; Stack Overflow
+- [*Does it make any sense to use `inline` keyword with templates?*](https://stackoverflow.com/questions/10535667/does-it-make-any-sense-to-use-inline-keyword-with-templates) &ndash; Stack Overflow
 
 :anchor:
 
@@ -181,6 +188,12 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 ---
 
 ## Expressions
+
+### Canonical implementations of operators
+
+:anchor:
+
+- [Canonical implementations](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) &ndash; C++ reference
 
 ### Order of evaluation
 
@@ -296,7 +309,15 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ---
 
-## Tricks
+## Tricks and subtleties
+
+:link:
+
+- [*Hidden features of C++?*](https://stackoverflow.com/questions/75538/hidden-features-of-c) &ndash; Stack Overflow
+
+:movie_camera:
+
+- M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) &ndash; CppCon (2019)
 
 ### Accessing private and protected members
 
@@ -333,7 +354,7 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 
 :link:
 
-- D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml)
+- D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) (2007)
 
 ### Function types
 
@@ -346,9 +367,9 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 :link:
 
 - W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) &ndash; Proc. ICSE (2012)
+- [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) &ndash; SEI CERT C coding standard
 - [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/questions/7682477/why-does-integer-overflow-on-x86-with-gcc-cause-an-infinite-loop) &ndash; Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
-- [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) &ndash; SEI CERT C coding standard
 
 :movie_camera:
 
@@ -382,6 +403,9 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 :link:
 
 - [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary) &ndash; Stack Overflow
+
+:anchor:
+
 - [*Lifetime of a temporary*](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary) &ndash; C++ reference
 
 #### Rvalue references and move semantics

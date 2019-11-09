@@ -6,6 +6,7 @@
 - [Argument deduction](#argument-deduction)
 - [Concepts](#concepts)
 - [Function templates](#function-templates)
+	- [Friend function templates](#friend-function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
@@ -19,6 +20,10 @@
 ---
 
 ## Introduction and overview
+
+:link:
+
+- [*Templates*](https://isocpp.org/wiki/faq/templates) &ndash; C++ FAQ
 
 :movie_camera:
 
@@ -68,6 +73,12 @@
 
 - [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) &ndash; Stack Overflow
 - H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
+
+### Friend function templates
+
+:link:
+
+- [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) &ndash; C++ FAQ
 
 ---
 

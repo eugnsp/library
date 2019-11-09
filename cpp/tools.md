@@ -4,11 +4,14 @@
 
 - [Build automation](#build-automation)
 	- [CMake](#cmake)
-- [Compilers](#compilers)
-	- [GCC](#gcc)
-- [Debugging, testing, and optimization](#debugging-testing-and-optimization)
+- [Code analysis and optimization tools](#code-analysis-and-optimization-tools)
 	- [Online compilers](#online-compilers)
 	- [Valgrind](#valgrind)
+- [Compilers](#compilers)
+	- [GCC](#gcc)
+- [Debuggers](#debuggers)
+	- [GDB](#gdb)
+		- [Pretty printing](#pretty-printing)
 - [IDE](#ide)
 	- [Visual Studio Code](#visual-studio-code)
 - [Version-control system](#version-control-system)
@@ -33,30 +36,11 @@
 
 ---
 
-## Compilers
-
-:link:
-
-- [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) &ndash; C++ reference
-
-### GCC
-
-:link:
-
-* [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/questions/1936719/what-are-the-gcc-predefined-macros-for-the-compilers-version-number) &ndash; Stack Overflow
-
-:sound:
-
-- M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) &ndash; Software Engineering Radio (2007)
-
----
-
-## Debugging, testing, and optimization
+## Code analysis and optimization tools
 
 :movie_camera:
 
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
-- G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) &ndash; CppCon (2018)
 
 ### Online compilers
 
@@ -72,13 +56,61 @@
 
 ---
 
+## Compilers
+
+:link:
+
+- [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) &ndash; C++ reference
+
+### GCC
+
+:link:
+
+- M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
+- [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/questions/49481217/linux-kernels-is-constexpr-macro) &ndash; Stack Overflow
+- [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/questions/1936719/what-are-the-gcc-predefined-macros-for-the-compilers-version-number) &ndash; Stack Overflow
+
+:sound:
+
+- M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) &ndash; Software Engineering Radio (2007)
+
+---
+
+## Debuggers
+
+:movie_camera:
+
+- H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
+- G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) &ndash; CppCon (2018)
+
+### GDB
+
+:link:
+
+- [*Debugging with GDB*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html)
+
+#### Pretty printing
+
+:link:
+
+- [Sec. 10.9: *Pretty printing*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html) &ndash; Debugging with GDB
+- [Sec. 23.2.2: *Python API*](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html) &ndash; Debugging with GDB
+- D.Haguenauer. [*Writing custom GDB pretty-printers*](http://www.kurokatta.org/grumble/2018/05/gdb-pretty) (2018)
+- *Pretty printing.* [Part I](http://tromey.com/blog/?p=524), [Part II](http://tromey.com/blog/?p=546) (2008)
+- [*Make debugging easier with custom pretty-printers*](https://rethinkdb.com/blog/make-debugging-easier-with-custom-pretty-printers) (2010)
+- R.Sonderfeld. [*GDB pretty printers for Boost*](https://github.com/ruediger/Boost-Pretty-Printer)
+
+---
+
 ## IDE
 
 ### Visual Studio Code
 
 :link:
 
-- [Home page](https://code.visualstudio.com/)
+- [*Visual Studio Code*](https://code.visualstudio.com/)
+- [*Visual Studio Code: Getting started*](https://code.visualstudio.com/docs)
+- [*C/C++ for Visual Studio Code*](https://code.visualstudio.com/docs/languages/cpp)
 
 ---
 
