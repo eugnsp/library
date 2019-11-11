@@ -327,6 +327,10 @@
 
 ### `std::string_view`
 
+:link:
+
+- J.Miller. [C++ `std::string_view` for better performance: An example use case](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
+
 :movie_camera:
 
 - M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) &ndash; CppCon (2015)
@@ -430,6 +434,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 - A.O’Dwyer. [*Don’t inherit from standard types*](https://quuxplusone.github.io/blog/2018/12/11/dont-inherit-from-std-types/) (2018)
 - [*In `std::exchange`, why is the second template parameter defaulted?*](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted) &ndash; Stack Overflow
 - [*Why does the C++ standard algorithm `count` return a `difference_type` instead of `size_t`?*](https://stackoverflow.com/questions/7505083/why-does-the-c-standard-algorithm-count-return-a-difference-type-instead-of) &ndash; Stack Overflow
+- [*Why standard container iterators don’t overload `->*`?*](https://stackoverflow.com/questions/48626039/why-standard-container-iterators-dont-overload) &ndash; Stack Overflow
 
 :movie_camera:
 

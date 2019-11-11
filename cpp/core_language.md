@@ -184,6 +184,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) &ndash; Stack Overflow
 
 ---
 
@@ -250,10 +251,11 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 :link:
 
-- [*What is “argument-dependent lookup” (aka ADL, or “Koenig Lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
+- [*What is “argument-dependent lookup” (aka ADL, or “Koenig lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) &ndash; Stack Overflow
 - A.O’Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
 - A.O’Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
 - A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
+- [*Why doesn’t ADL find function templates?*](https://stackoverflow.com/questions/2953684/why-doesnt-adl-find-function-templates) &ndash; Stack Overflow
 
 :movie:
 
@@ -262,6 +264,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 :anchor:
 
 - [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
+- J.Spicer. [*ADL and function templates that are not visible*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) &ndash; WG21/P0846R0 (2017)
 
 ### Lambda expressions
 
@@ -385,7 +388,7 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 
 :memo:
 
-- > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won't get strong typedefs as core language feature. [[J.M&uuml;ller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
+- > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won’t get strong typedefs as core language feature. [[J.M&uuml;ller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 - See [*Opaque typedefs* &ndash; Patterns and idioms](patterns_and_idioms.md#opaque-typedefs) for implementations at the library level.
 
 :anchor:

@@ -5,17 +5,19 @@
 - [Introduction and overview](#introduction-and-overview)
 - [GPU computing](#gpu-computing)
 - [Multithreading](#multithreading)
+	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
+		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
+		- [`std::condition_variable`](#stdcondition_variable)
+		- [`std::promise`](#stdpromise)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
 		- [Spin locks](#spin-locks)
 	- [Lock-free](#lock-free)
 		- [Hazard pointers](#hazard-pointers)
 		- [Read-copy-update (RCU)](#read-copy-update-rcu)
-	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
-		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
-		- [`std::condition_variable`](#stdcondition_variable)
-		- [`std::promise`](#stdpromise)
+	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
+
 ---
 
 ## Introduction and overview
@@ -57,6 +59,40 @@
 :page_facing_up:
 
 - P.E.McKenney. [*Memory barriers: A hardware view for software hackers*](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf) (2010)
+
+### Concurrency and the standard library
+
+:link:
+
+- [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) &ndash; Standard C++ Foundation
+
+#### `std::atomic_shared_ptr`
+
+:link:
+
+- A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
+- [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha) &ndash; Stack Overflow
+
+#### `std::condition_variable`
+
+> The `std::condition_variable` is a synchronization primitive that can be used to block a thread, or multiple threads at the same time, until another thread both modifies a shared variable (the condition), and notifies the `std::condition_variable`.
+
+:memo:
+
+- Even if the shared variable is atomic, it must be modified under the mutex in order to correctly publish the modification to the waiting thread.
+
+:link:
+
+- [`std::condition_variable`](https://en.cppreference.com/w/cpp/thread/condition_variable) &ndash; C++ reference
+
+#### `std::promise`
+
+> The `std::promise` provides a facility to store a value or an exception that is later acquired asynchronously via a `std::future` object created by the `std::promise` object.
+
+:link:
+
+- [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) &ndash; C++ reference
+- [*What is `std::promise`?*](https://stackoverflow.com/questions/11004273/what-is-stdpromise) &ndash; Stack Overflow
 
 ### Data races and race conditions
 
@@ -111,39 +147,15 @@
 - [*Proposed RCU C++ API* (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf) &ndash; WG21/P0461R1
 - [*Read-copy update (RCU) for C++* (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf) &ndash; WG21/P0279R1
 
-### Concurrency and the standard library
+### Memory model
 
 :link:
 
-- [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) &ndash; Standard C++ Foundation
+- [*C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?*](https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g?rq=1) &ndash; Stack Overflow
 
-#### `std::atomic_shared_ptr`
+:anchor:
 
-:link:
-
-- A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
-- [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha) &ndash; Stack Overflow
-
-#### `std::condition_variable`
-
-> The `std::condition_variable` is a synchronization primitive that can be used to block a thread, or multiple threads at the same time, until another thread both modifies a shared variable (the condition), and notifies the `std::condition_variable`.
-
-:memo:
-
-- Even if the shared variable is atomic, it must be modified under the mutex in order to correctly publish the modification to the waiting thread.
-
-:link:
-
-- [`std::condition_variable`](https://en.cppreference.com/w/cpp/thread/condition_variable) &ndash; C++ reference
-
-#### `std::promise`
-
-> The `std::promise` provides a facility to store a value or an exception that is later acquired asynchronously via a `std::future` object created by the `std::promise` object.
-
-:link:
-
-- [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) &ndash; C++ reference
-- [*What is `std::promise`?*](https://stackoverflow.com/questions/11004273/what-is-stdpromise) &ndash; Stack Overflow
+- [*Memory model*](https://en.cppreference.com/w/cpp/language/memory_model) &ndash; C++ reference
 
 ### POSIX threads
 

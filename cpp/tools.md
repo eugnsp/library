@@ -9,9 +9,9 @@
 	- [Valgrind](#valgrind)
 - [Compilers](#compilers)
 	- [GCC](#gcc)
-- [Debuggers](#debuggers)
+- [Debugging](#debugging)
 	- [GDB](#gdb)
-		- [Pretty printing](#pretty-printing)
+		- [Pretty printers](#pretty-printers)
 - [IDE](#ide)
 	- [Visual Studio Code](#visual-studio-code)
 - [Version-control system](#version-control-system)
@@ -76,12 +76,14 @@
 
 ---
 
-## Debuggers
+## Debugging
 
 :movie_camera:
 
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)
 - G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) &ndash; CppCon (2018)
+- [*Unusual memory bit patterns*](https://www.softwareverify.com/memory-bit-patterns.php)
+- [*When and why will an OS initialise memory to `0xCD`, `0xDD`, etc. on `malloc`/`free`/`new`/`delete`?*](https://stackoverflow.com/questions/370195/when-and-why-will-an-os-initialise-memory-to-0xcd-0xdd-etc-on-malloc-free-new) &ndash; Stack Overflow
 
 ### GDB
 
@@ -89,7 +91,7 @@
 
 - [*Debugging with GDB*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html)
 
-#### Pretty printing
+#### Pretty printers
 
 :link:
 

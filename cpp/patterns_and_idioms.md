@@ -28,13 +28,12 @@
 
 ---
 
-## Introduction
+## Design principles
 
 :link:
 
-- [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) &ndash; Wikipedia
-
-## Design principles
+- [*What is a magic number, and why is it bad?*](https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad) &ndash; Stack Overflow
+- [*Are global variables bad?*](https://stackoverflow.com/questions/484635/are-global-variables-bad) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -112,6 +111,10 @@
 ## Patterns and idioms
 
 > A design pattern is a general technique used to solve a class of related problems.
+
+:link:
+
+- [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) &ndash; Wikipedia
 
 :movie_camera:
 

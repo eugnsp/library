@@ -12,6 +12,7 @@
 - [CPU](#cpu)
 - [Memory and cache](#memory-and-cache)
 	- [Access](#access)
+		- [Copying](#copying)
 		- [Nested `std::vector`s](#nested-stdvectors)
 	- [Allocation](#allocation)
 	- [Relocation](#relocation)
@@ -34,6 +35,10 @@
 - C.Cook. [*The speed game: Automated trading systems in C++*](https://www.youtube.com/watch?v=ulOLGX3HNCI) &ndash; Meeting C++ (2016)
 - A.Alexandrescu. [*Optimization tips*](https://www.youtube.com/watch?v=Qq_WaiwzOtI) &ndash; CppCon (2014)
 
+:anchor:
+
+- [*Intel 64 and IA-32 architectures optimization reference manual*](https://www-ssl.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-optimization-manual.html)
+
 ---
 
 ## Compiler optimizations
@@ -46,6 +51,10 @@
 :movie_camera:
 
 - C.Carruth. [*Understanding compiler optimization*](https://www.youtube.com/watch?v=haQ2cijhvhE) &ndash; code::dive (2016)
+
+### Floating-point arithmetic
+
+- [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/questions/7420665/what-does-gccs-ffast-math-actually-do) &ndash; Stack Overflow
 
 ### Heap allocation
 
@@ -102,6 +111,7 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 
 - U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
 - D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) &ndash; [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
+- [*Simple benchmark for memory throughput and latency*](https://github.com/ssvb/tinymembench)
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 
@@ -112,6 +122,15 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 - C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) &ndash; MIT 6.004: Computation structures (2013)
 
 ### Access
+
+#### Copying
+
+:link:
+
+- [*Time to revisit `REP MOVS`*](https://software.intel.com/en-us/forums/intel-fortran-compiler/topic/275765) &ndash; Intel Developer Zone (2006)
+- [*Enhanced `REP MOVSB` for `memcpy`*](https://stackoverflow.com/questions/43343231/enhanced-rep-movsb-for-memcpy) &ndash; Stack Overflow
+- [*What setup does `REP` do?*](https://stackoverflow.com/questions/33902068/what-setup-does-rep-do/45123049) &ndash; Stack Overflow
+- [*Why are complicated memcpy/memset superior?*](https://stackoverflow.com/questions/8858778/why-are-complicated-memcpy-memset-superior) &ndash; Stack Overflow
 
 #### Nested `std::vector`s
 
