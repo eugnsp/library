@@ -46,6 +46,7 @@
 :link
 
 - A.O’Dwyer. [*`[[trivial_abi]]` 101*](https://quuxplusone.github.io/blog/2018/05/02/trivial-abi-101/)
+- [*Can `const`-correctness improve performance?*](https://stackoverflow.com/questions/3435026/can-const-correctness-improve-performance) &ndash; Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
 
 :movie_camera:

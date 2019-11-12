@@ -29,8 +29,9 @@
 - [Standards](#standards)
 	- [C++17](#c17)
 - [Structured bindings](#structured-bindings)
-- [Tricks](#tricks)
+- [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
+	- [Embedding binary data](#embedding-binary-data)
 - [Types](#types)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
 	- [Const-correctness](#const-correctness)
@@ -41,7 +42,7 @@
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
 		- [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
-z
+
 ---
 
 ## Introduction and overview
@@ -274,6 +275,10 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 - A.Allain. [*Lambda functions in C++11 &ndash; the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/questions/22232164/why-are-lambda-expressions-not-allowed-in-an-unevaluated-operands-but-allowed-in) &ndash; Stack Overflow
 
+:movie_camera:
+
+- A.O’Dwyer. [*Back to basics: Lambdas from scratch*](https://www.youtube.com/watch?v=3jCOwajNch0) &ndash; CppCon (2019)
+
 :anchor:
 
 - L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) &ndash; WG21/P0315R4 (2017)
@@ -317,6 +322,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 :link:
 
 - [*Hidden features of C++?*](https://stackoverflow.com/questions/75538/hidden-features-of-c) &ndash; Stack Overflow
+- [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/questions/53421279/why-compilers-test-the-least-significant-bit-in-an-address) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -328,6 +334,18 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 - [*Accessing private members*](https://stackoverflow.com/questions/726096/accessing-private-members) &ndash; Stack Overflow
 - J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
+
+### Embedding binary data
+
+:link:
+
+- D.Weiler. [incbin &ndash; Include binary files in C/C++](https://github.com/graphitemaster/incbin)
+- H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
+- [*Embedding resources in executable using GCC*](https://stackoverflow.com/questions/4158900/embedding-resources-in-executable-using-gcc) &ndash; Stack Overflow
+
+:anchor:
+
+- J. Meneide. [`std::embed`](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p1040r0.html) &ndash; WG21/P1040R0 (2018)
 
 ---
 
