@@ -2,7 +2,6 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Introduction](#introduction)
 - [Design principles](#design-principles)
 	- [Class design](#class-design)
 		- [Destructors](#destructors)
@@ -263,6 +262,10 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 :movie_camera:
 
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) &ndash; ACCU (2017)
+
+:anchor:
+
+- [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) &ndash; Boost.Serialization
 
 ### Passkey
 

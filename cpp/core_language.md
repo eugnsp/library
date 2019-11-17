@@ -3,6 +3,7 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
+	- [`main()`](#main)
 - [ABI](#abi)
 	- [Itanium C++ ABI](#itanium-c-abi)
 - [Attributes](#attributes)
@@ -25,6 +26,8 @@
 	- [Type punning](#type-punning)
 - [Functions](#functions)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
+	- [Function wrappers](#function-wrappers)
+		- [`std::function`](#stdfunction)
 	- [Lambda expressions](#lambda-expressions)
 - [Standards](#standards)
 	- [C++17](#c17)
@@ -56,6 +59,16 @@
 - [*Standard C++*](https://isocpp.org/)
 - [*The C++ standards committee*](http://www.open-std.org/jtc1/sc22/wg21/)
 - [*C++ standards committee papers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
+
+### `main()`
+
+:movie_camera:
+
+- M.Godbolt. [*The bits between the bits: How we get to `main()`*](https://www.youtube.com/watch?v=dOfucXtyEsU) &ndash; CppCon (2018)
+
+:anchor:
+
+- [Main function](https://en.cppreference.com/w/cpp/language/main_function) &ndash; C++ reference
 
 ---
 
@@ -267,6 +280,19 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 - [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) &ndash; C++ reference
 - J.Spicer. [*ADL and function templates that are not visible*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) &ndash; WG21/P0846R0 (2017)
 
+### Function wrappers
+
+#### `std::function`
+
+:link:
+
+- [*Move-only version of `std::function`*](https://stackoverflow.com/questions/25330716/move-only-version-of-stdfunction) &ndash; Stack Overflow
+- [*How to create an `std::function` from a move-capturing lambda expression?*](https://stackoverflow.com/questions/25421346/how-to-create-an-stdfunction-from-a-move-capturing-lambda-expression) &ndash; Stack Overflow
+
+:anchor:
+
+- [*`std::function`*](https://en.cppreference.com/w/cpp/utility/functional/function) &ndash; C++ reference
+
 ### Lambda expressions
 
 :link:
@@ -436,6 +462,7 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) &ndash; Microsoft Visual C++ (2016)
+- S.Meyers. [*Universal references in C++11*](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers) &ndash; [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
 - [*What is move semantics?*](https://stackoverflow.com/questions/3106110/what-is-move-semantics) &ndash; Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) &ndash; Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) &ndash; Stack Overflow

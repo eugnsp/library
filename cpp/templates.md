@@ -79,6 +79,7 @@
 :link:
 
 - [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) &ndash; C++ FAQ
+- [*Correct syntax for friend template function*](https://stackoverflow.com/questions/42692050/correct-syntax-for-friend-template-function) &ndash; Stack Overflow
 
 ---
 

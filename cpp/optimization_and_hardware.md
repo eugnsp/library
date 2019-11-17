@@ -4,6 +4,7 @@
 
 - [Introduction and overview](#introduction-and-overview)
 - [Compiler optimizations](#compiler-optimizations)
+	- [Floating-point arithmetic](#floating-point-arithmetic)
 	- [Heap allocation](#heap-allocation)
 	- [Integeral division](#integeral-division)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
@@ -48,6 +49,7 @@
 - A.O’Dwyer. [*`[[trivial_abi]]` 101*](https://quuxplusone.github.io/blog/2018/05/02/trivial-abi-101/)
 - [*Can `const`-correctness improve performance?*](https://stackoverflow.com/questions/3435026/can-const-correctness-improve-performance) &ndash; Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) &ndash; Stack Overflow
+- [*What is tail call optimization?*](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -121,6 +123,7 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 - T.Doumler. [*Want fast C++? Know your hardware!*](https://www.youtube.com/watch?v=BP6NxVxDQIs) &ndash; CppCon (2016)
 - S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
 - C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) &ndash; MIT 6.004: Computation structures (2013)
+<!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) &ndash; - Comp. Arch. 2015 -->
 
 ### Access
 

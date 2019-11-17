@@ -1,4 +1,4 @@
-# The standard library and Boost <!-- omit in toc -->
+# The standard library, Boost and proposals <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -15,9 +15,12 @@
 	- [Unordered containers](#unordered-containers)
 - [Input/output](#inputoutput)
 - [Iterators](#iterators)
+- [Memory](#memory)
+	- [Allocators](#allocators)
 - [Numerics](#numerics)
 	- [`std::bit_cast`](#stdbit_cast)
-- [Random numbers](#random-numbers)
+	- [Linear algebra support](#linear-algebra-support)
+	- [Random numbers](#random-numbers)
 - [Regular expressions](#regular-expressions)
 - [Smart pointers](#smart-pointers)
 	- [`std::unique_ptr`](#stdunique_ptr)
@@ -166,6 +169,21 @@
 
 ---
 
+## Memory
+
+See also [*Memory and cache* &ndash; Optimization and hardware](optimization_and_hardware.md#memory-and-cache).
+
+### Allocators
+
+- [*What does (template) `rebind<>` do?*](https://stackoverflow.com/questions/14148756/what-does-template-rebind-do) &ndash; Stack Overflow
+- [*Why is `allocator::rebind` necessary when we have template template parameters?*](https://stackoverflow.com/questions/12362363/why-is-allocatorrebind-necessary-when-we-have-template-template-parameters) &ndash; Stack Overflow
+
+:anchor:
+
+- [`std::allocator`](https://en.cppreference.com/w/cpp/memory/allocator) &ndash; C++ reference
+
+---
+
 ## Numerics
 
 ### `std::bit_cast`
@@ -175,13 +193,19 @@
 - [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) &ndash; C++ reference
 - J.Bastien. [*Bit-casting object representations*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0476r2.html) &ndash; WG21/P0476R2 (2017)
 
----
+### Linear algebra support
 
-## Random numbers
+:anchor:
+
+- G.Davidson, ​B.Steagall. [*A proposal to add linear algebra support to the C++ standard library*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p1385r3.pdf) &ndash; WG21/P1385R3 (2019)
+- G.Davidson, ​B.Steagall. [*What do we need from a linear algebra library?*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf) &ndash; WG21/P1166R0 (2019)
+
+### Random numbers
 
 :link:
 
 - M.E.O’Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
+- [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/questions/53040940/why-is-the-new-random-library-better-than-stdrand) &ndash; Stack Overflow
 - [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
 
 ---
@@ -435,6 +459,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 - [*In `std::exchange`, why is the second template parameter defaulted?*](https://stackoverflow.com/questions/34876969/in-stdexchange-why-is-the-second-template-parameter-defaulted) &ndash; Stack Overflow
 - [*Why does the C++ standard algorithm `count` return a `difference_type` instead of `size_t`?*](https://stackoverflow.com/questions/7505083/why-does-the-c-standard-algorithm-count-return-a-difference-type-instead-of) &ndash; Stack Overflow
 - [*Why standard container iterators don’t overload `->*`?*](https://stackoverflow.com/questions/48626039/why-standard-container-iterators-dont-overload) &ndash; Stack Overflow
+- [*Why does `numeric_limits` work on types it does not know?*](https://stackoverflow.com/questions/47520847/c-why-does-numeric-limits-work-on-types-it-does-not-know) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -449,6 +474,7 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 - [*Standard Template Library*](https://en.wikipedia.org/wiki/Standard_Template_Library) &ndash; Wikipedia
 - [*History of the Standard Template Library*](https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library) &ndash; Wikipedia
 - A.Stevens [*An interview with Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.html) &ndash; Dr.Dobb's Journal (1995)
+- [*What’s the difference between “STL” and “C++ standard library”?*](https://stackoverflow.com/questions/5205491/whats-the-difference-between-stl-and-c-standard-library) &ndash; Stack Overflow
 
 :page_facing_up:
 

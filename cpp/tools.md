@@ -90,6 +90,7 @@
 :link:
 
 - [*Debugging with GDB*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html)
+- [*Identify source file name for a symbol in gdb debugger*](https://stackoverflow.com/questions/58826430/identify-source-file-name-for-a-symbol-in-gdb-debugger) &ndash; Stack Overflow
 
 #### Pretty printers
 
