@@ -78,6 +78,10 @@
 
 ## Debugging
 
+:link:
+
+- [*Debugging stack traces from crash dumps*](https://github.com/microsoft/WinObjC/wiki/Debugging-Stack-Traces-from-Crash-Dumps) &ndash; Microsoft
+
 :movie_camera:
 
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) &ndash; ACCU (2019)

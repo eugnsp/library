@@ -38,7 +38,7 @@
 :movie_camera:
 
 - G.Booch. [*John Backus*](https://www.youtube.com/watch?v=dDsWTyLEgbk) (2013)
-- [*Alexander Stepanov* introduces Bjarne Stroustrup](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
+- [*Alexander Stepanov* introduces B.Stroustrup](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
 - P.McJones. [Oral history of *Bjarne Stroustrup*](https://www.youtube.com/watch?v=ZO0PXYMVGSU) (2015)
 - *Alexander Tomilin* about BESM-6. [Part I](https://www.youtube.com/watch?v=66VBKeGAmfs), [Part II](https://www.youtube.com/watch?v=pL4wGV_ui4o), [Part III](https://www.youtube.com/watch?v=F9IQ357YwdU) (in Russian)
 - [*Alexander Tomilin* about BESM-6 and AS-6](https://www.youtube.com/watch?v=VvDl9HmVx5U) (in Russian)

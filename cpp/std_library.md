@@ -3,6 +3,7 @@
 ## Table of contents <!-- omit in toc -->
 
 - [General information](#general-information)
+	- [Implementations](#implementations)
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
 	- [`std::midpoint`](#stdmidpoint)
@@ -55,6 +56,14 @@
 
 - J.Galowicz. [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions*](https://www.packtpub.com/application-development/c17-stl-cookbook) (2017)
 - Ch. 18: *Concurrency* &ndash; N.M.Josuttis. [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) (2012)
+
+### Implementations
+
+:link:
+
+- [*libstdc++*](https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3)
+- [*libc++*](https://github.com/llvm-mirror/libcxx)
+- [*Microsoft*](https://github.com/microsoft/STL)
 
 ---
 
@@ -109,12 +118,19 @@
 :link:
 
 - [*Create `N`-element `constexpr` array in C++11*](https://stackoverflow.com/questions/19019252/create-n-element-constexpr-array-in-c11) &ndash; Stack Overflow
+- [*Why isn’t `std::array::size` static?*](https://stackoverflow.com/questions/21936507/why-isnt-stdarraysize-static) &ndash; Stack Overflow
 
 #### `std::deque`
 
 :link:
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl) &ndash; Stack Overflow
+
+#### `std::vector`
+
+:link:
+
+- [*How to enforce move semantics when a vector grows?*](https://stackoverflow.com/questions/8001823/how-to-enforce-move-semantics-when-a-vector-grows) &ndash; Stack Overflow
 
 #### `std::vector<bool>`
 
@@ -194,6 +210,14 @@ See also [*Memory and cache* &ndash; Optimization and hardware](optimization_and
 - J.Bastien. [*Bit-casting object representations*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0476r2.html) &ndash; WG21/P0476R2 (2017)
 
 ### Linear algebra support
+
+:link:
+
+V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1770r0.pdf)
+
+:movie_camera:
+
+- G.Davidson. [*Standardizing a linear algebra library*](https://www.youtube.com/watch?v=cIPmhIiY68U) &ndash; Meeting C++ (2018)
 
 :anchor:
 
@@ -368,7 +392,11 @@ See also [*Memory and cache* &ndash; Optimization and hardware](optimization_and
 
 :memo:
 
-- `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement for negative values.
+- `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement to represent negative values.
+
+:link:
+
+- [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/questions/16138237/when-is-uint8-t-%E2%89%A0-unsigned-char) &ndash; Stack Overflow
 
 ### Type traits
 
@@ -432,6 +460,10 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 #### `(std::)expected`
 
 > A proposed utility class to represent expected monad.
+
+:link:
+
+- S.Brand. [C++11/14/17 `std::expected` with functional-style extensions](https://github.com/TartanLlama/expected)
 
 :anchor:
 

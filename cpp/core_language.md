@@ -37,7 +37,6 @@
 	- [Embedding binary data](#embedding-binary-data)
 - [Types](#types)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
-	- [Const-correctness](#const-correctness)
 	- [Floating-point types](#floating-point-types)
 	- [Function types](#function-types)
 	- [Integral types](#integral-types)
@@ -142,9 +141,21 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 - In C++98: `const` means “logically `const`”, in C++11 `const` means “thread safe” (bitwise `const` or internally synchronized).
 - In C++98: `mutable` means “not observably non-`const`”, in C++11 `mutable` means “thread safe” (bitwise `const` or internally synchronized).
 
+:link:
+
+- [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) &ndash; C++ FAQ
+- H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
+- S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
+- [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
+- [*C++ `const` keyword &ndash; use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
+
 :movie_camera:
 
 - H.Sutter. [*You don’t know `const` and `mutable`*](https://channel9.msdn.com/posts/C-and-Beyond-2012-Herb-Sutter-You-dont-know-blank-and-blank) &ndash; C++ and Beyond (2012)
+
+:anchor:
+
+- [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) &ndash; C++ Core Guidelines
 
 ### `constexpr`
 
@@ -300,6 +311,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
 - A.Allain. [*Lambda functions in C++11 &ndash; the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/questions/22232164/why-are-lambda-expressions-not-allowed-in-an-unevaluated-operands-but-allowed-in) &ndash; Stack Overflow
+- [*Can we get the type of a lambda argument?*](https://stackoverflow.com/questions/6512019/can-we-get-the-type-of-a-lambda-argument) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -349,6 +361,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 - [*Hidden features of C++?*](https://stackoverflow.com/questions/75538/hidden-features-of-c) &ndash; Stack Overflow
 - [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/questions/53421279/why-compilers-test-the-least-significant-bit-in-an-address) &ndash; Stack Overflow
+- [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/questions/58960303/why-does-the-size-of-class-in-c-depend-on-the-public-private-status-of-data-me#58960555) &ndash; Stack Overflow
 
 :movie_camera:
 
@@ -384,16 +397,6 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 - [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) &ndash; Visual C++ language reference (2018)
 - [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special) &ndash; Stack Overflow
 - [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/questions/6496545/trivial-vs-standard-layout-vs-pod) &ndash; Stack Overflow
-
-### Const-correctness
-
-:link:
-
-- [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) &ndash; C++ FAQ
-- H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
-- [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
-- [*C++ `const` keyword &ndash; use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
-- [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) &ndash; C++ Core Guidelines
 
 ### Floating-point types
 
