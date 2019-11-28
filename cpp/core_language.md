@@ -19,7 +19,7 @@
 	- [Storage class specifiers](#storage-class-specifiers)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
-	- [Canonical implementations of operators](#canonical-implementations-of-operators)
+	- [Operators](#operators)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
 		- [`dynamic_cast`](#dynamic_cast)
@@ -38,6 +38,7 @@
 - [Types](#types)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
 	- [Floating-point types](#floating-point-types)
+		- [`__float128`](#__float128)
 	- [Function types](#function-types)
 	- [Integral types](#integral-types)
 	- [Opaque typedefs](#opaque-typedefs)
@@ -159,6 +160,10 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ### `constexpr`
 
+:link:
+
+- [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/questions/54124899/why-is-a-constexpr-function-on-a-reference-not-constexpr) &ndash; Stack Overflow
+
 :movie_camera:
 
 - S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) &ndash; CppCon (2015)
@@ -215,11 +220,16 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 ## Expressions
 
-### Canonical implementations of operators
+### Operators
+
+:link:
+
+- [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/questions/4421706/what-are-the-basic-rules-and-idioms-for-operator-overloading) &ndash; Stack Overflow
 
 :anchor:
 
-- [Canonical implementations](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) &ndash; C++ reference
+- [*`operator` overloading*](https://en.cppreference.com/w/cpp/language/operators) &ndash; C++ reference
+- [*Canonical implementations*](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) &ndash; C++ reference
 
 ### Order of evaluation
 
@@ -310,6 +320,7 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
 - A.Allain. [*Lambda functions in C++11 &ndash; the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
+- [*What is a lambda expression in C++11?*](https://stackoverflow.com/questions/7627098/what-is-a-lambda-expression-in-c11) &ndash; Stack Overflow
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/questions/22232164/why-are-lambda-expressions-not-allowed-in-an-unevaluated-operands-but-allowed-in) &ndash; Stack Overflow
 - [*Can we get the type of a lambda argument?*](https://stackoverflow.com/questions/6512019/can-we-get-the-type-of-a-lambda-argument) &ndash; Stack Overflow
 
@@ -406,6 +417,17 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 
 - D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) (2007)
 
+#### `__float128`
+
+:link:
+
+- [*`long double` (GCC specific) and `__float128`*](https://stackoverflow.com/questions/13516476/long-double-gcc-specific-and-float128) &ndash; Stack Overflow
+- [*How to use GCC 4.6.0 libquadmath and `__float128` on x86 and x86_64*](https://stackoverflow.com/questions/6457385/how-to-use-gcc-4-6-0-libquadmath-and-float128-on-x86-and-x86-64) &ndash; Stack Overflow
+
+:anchor:
+
+- [*Additional floating types*](https://gcc.gnu.org/onlinedocs/gcc/Floating-Types.html) &ndash; GCC documentation
+
 ### Function types
 
 :anchor:
@@ -480,4 +502,10 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 <!-- https://stackoverflow.com/questions/1613341/what-do-the-following-phrases-mean-in-c-zero-default-and-value-initializat
 
 https://stackoverflow.com/questions/37618213/when-is-a-private-constructor-not-a-private-constructor
+-->
+
+
+<!-- https://medium.com/@barryrevzin/value-categories-in-c-17-f56ae54bccbe
+http://www.stroustrup.com/terminology.pdf
+https://stackoverflow.com/questions/20717180/in-c-what-categories-lvalue-rvalue-xvalue-etc-can-expressions-that-prod
 -->

@@ -7,6 +7,7 @@
 	- [Floating-point arithmetic](#floating-point-arithmetic)
 	- [Heap allocation](#heap-allocation)
 	- [Integeral division](#integeral-division)
+	- [Memory access](#memory-access)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Undefined behavior](#undefined-behavior)
 		- [Strict aliasing rule](#strict-aliasing-rule)
@@ -71,6 +72,12 @@
 - D.W.Jones. [*Reciprocal multiplication, a tutorial*](https://homepage.divms.uiowa.edu/~jones/bcd/divide.html) (1999)
 - T.Granlund, P.L.Montgomery. [*Division by invariant integers using multiplication*](https://gmplib.org/~tege/divcnst-pldi94.pdf) (1994)
 
+### Memory access
+
+:link:
+
+- [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/questions/40303182/why-dont-c-compilers-optimize-this-conditional-boolean-assignment-as-an-uncon) &ndash; Stack Overflow
+
 ### Return value optimization and copy elision
 
 :camera:
@@ -115,6 +122,7 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 - U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
 - D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) &ndash; [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
 - [*Simple benchmark for memory throughput and latency*](https://github.com/ssvb/tinymembench)
+- L.Maranget, S.Sarkar, P.Sewell. [*A tutorial introduction to the ARM and POWER relaxed memory models*](https://www.cl.cam.ac.uk/~pes20/ppc-supplemental/test7.pdf) (2012)
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 
@@ -126,6 +134,10 @@ See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
 <!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) &ndash; - Comp. Arch. 2015 -->
 
 ### Access
+
+:link:
+
+- [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/questions/11413855/why-is-transposing-a-matrix-of-512x512-much-slower-than-transposing-a-matrix-of) &ndash; Stack Overflow
 
 #### Copying
 

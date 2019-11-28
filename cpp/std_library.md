@@ -12,6 +12,7 @@
 	- [Sequence containers](#sequence-containers)
 		- [`std::array`](#stdarray)
 		- [`std::deque`](#stddeque)
+		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
 	- [Unordered containers](#unordered-containers)
 - [Input/output](#inputoutput)
@@ -221,6 +222,7 @@ V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-
 
 :anchor:
 
+- M.Hoemmen et al. [*Historical lessons for C++ linear algebra library standardization*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1417r0.pdf) &ndash; WG21/P1417R0 (2019)
 - G.Davidson, ​B.Steagall. [*A proposal to add linear algebra support to the C++ standard library*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p1385r3.pdf) &ndash; WG21/P1385R3 (2019)
 - G.Davidson, ​B.Steagall. [*What do we need from a linear algebra library?*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf) &ndash; WG21/P1166R0 (2019)
 
@@ -231,6 +233,10 @@ V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-
 - M.E.O’Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) &ndash; PCG (2015)
 - [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/questions/53040940/why-is-the-new-random-library-better-than-stdrand) &ndash; Stack Overflow
 - [*Why not just use `random_device`?*](https://stackoverflow.com/questions/39288595/why-not-just-use-random-device) &ndash; Stack Overflow
+
+:movie_camera:
+
+- A.Weis. [*Random numbers are hard*](https://www.youtube.com/watch?v=WDScnjQwEK8) &ndash; Meeting C++ (2019)
 
 ---
 
@@ -362,6 +368,8 @@ V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-
 :link:
 
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) &ndash; Guru of the Week (2009)
+- [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/questions/59076004/why-stdstring-does-not-have-const-char-cast) &ndash; Stack Overflow
+- [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/questions/492061/why-doesnt-stdstring-provide-implicit-conversion-to-char) &ndash; Stack Overflow
 
 :anchor:
 
