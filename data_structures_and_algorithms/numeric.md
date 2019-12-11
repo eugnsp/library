@@ -73,6 +73,13 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 - J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; CppCon (2015)
 - J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; HPC Advisory Council Australia Conference (2017)
 
+#### Division
+
+:link:
+
+- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) &ndash; Wikipedia
+- T.R.Halfhill. [*The truth behind the pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) &ndash; BYTE.com (1995)
+
 #### Denormal numbers
 
 :link:

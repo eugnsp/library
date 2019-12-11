@@ -2,6 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Exceptions](#exceptions)
 - [Design principles](#design-principles)
 	- [Class design](#class-design)
 		- [Destructors](#destructors)
@@ -27,6 +28,21 @@
 
 ---
 
+## Exceptions
+
+:link:
+
+- H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
+- H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
+- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) &ndash; Stack Overflow
+
+:anchor:
+
+- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
+
+---
+
 ## Design principles
 
 :link:
@@ -37,6 +53,7 @@
 :movie_camera:
 
 - F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) &ndash; CppCon (2018)
+- L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) &ndash; CppCon (2017)
 
 ### Class design
 

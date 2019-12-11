@@ -41,6 +41,7 @@
 	- [`std::is_trivial*`](#stdis_trivial)
 - [Utilities](#utilities)
 	- [Function objects](#function-objects)
+	- [`std::initializer_list`](#stdinitializer_list)
 	- [Pairs and tuples](#pairs-and-tuples)
 	- [Sum types](#sum-types)
 		- [`std::variant`](#stdvariant)
@@ -194,6 +195,7 @@ See also [*Memory and cache* &ndash; Optimization and hardware](optimization_and
 
 - [*What does (template) `rebind<>` do?*](https://stackoverflow.com/questions/14148756/what-does-template-rebind-do) &ndash; Stack Overflow
 - [*Why is `allocator::rebind` necessary when we have template template parameters?*](https://stackoverflow.com/questions/12362363/why-is-allocatorrebind-necessary-when-we-have-template-template-parameters) &ndash; Stack Overflow
+- [*Why is `std::allocator` a template?*](https://stackoverflow.com/questions/45267275/why-is-stdallocator-a-template) &ndash; Stack Overflow
 
 :anchor:
 
@@ -214,7 +216,8 @@ See also [*Memory and cache* &ndash; Optimization and hardware](optimization_and
 
 :link:
 
-V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1770r0.pdf)
+- M.Hoemmen et al. [*Historical lessons for C++ linear algebra library standardization*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1417r0.pdf) (2019)
+- V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1770r0.pdf) (2019)
 
 :movie_camera:
 
@@ -222,7 +225,6 @@ V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-
 
 :anchor:
 
-- M.Hoemmen et al. [*Historical lessons for C++ linear algebra library standardization*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1417r0.pdf) &ndash; WG21/P1417R0 (2019)
 - G.Davidson, ​B.Steagall. [*A proposal to add linear algebra support to the C++ standard library*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p1385r3.pdf) &ndash; WG21/P1385R3 (2019)
 - G.Davidson, ​B.Steagall. [*What do we need from a linear algebra library?*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf) &ndash; WG21/P1166R0 (2019)
 
@@ -442,6 +444,18 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 - S.T.Lavavej. [*`<functional>`: What’s new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) &ndash; CppCon (2015)
 
+### `std::initializer_list`
+
+> An object of type `std::initializer_list<T>` is a lightweight proxy object that provides access to an array of objects of type `const T`.
+
+:link:
+
+- [`std::initializer_list` and move semantics](https://stackoverflow.com/questions/8193102/initializer-list-and-move-semantics) &ndash; Stack Overflow
+
+:anchor:
+
+- [`std::initializer_list`](https://en.cppreference.com/w/cpp/utility/initializer_list) &ndash; C++ reference
+
 ### Pairs and tuples
 
 :link:
@@ -513,7 +527,6 @@ See also [*Type traits* &ndash; Templates](templates.md#type-traits).
 
 - [*Standard Template Library*](https://en.wikipedia.org/wiki/Standard_Template_Library) &ndash; Wikipedia
 - [*History of the Standard Template Library*](https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library) &ndash; Wikipedia
-- A.Stevens [*An interview with Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.html) &ndash; Dr.Dobb's Journal (1995)
 - [*What’s the difference between “STL” and “C++ standard library”?*](https://stackoverflow.com/questions/5205491/whats-the-difference-between-stl-and-c-standard-library) &ndash; Stack Overflow
 
 :page_facing_up:

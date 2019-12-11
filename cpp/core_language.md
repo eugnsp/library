@@ -9,14 +9,19 @@
 - [Attributes](#attributes)
 	- [`[[nodiscard]]`](#nodiscard)
 	- [`[[trivially_relocatable]]`](#trivially_relocatable)
+- [Concepts](#concepts)
 - [Declarations](#declarations)
+	- [Alignment](#alignment)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 	- [`friend`](#friend)
 		- [Friend function templates](#friend-function-templates)
 		- [Hidden friends](#hidden-friends)
 	- [`inline`](#inline)
+	- [Flexible array member](#flexible-array-member)
+	- [Most vexing parse](#most-vexing-parse)
 	- [Storage class specifiers](#storage-class-specifiers)
+- [Dynamic memory](#dynamic-memory)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
 	- [Operators](#operators)
@@ -59,6 +64,8 @@
 - [*Standard C++*](https://isocpp.org/)
 - [*The C++ standards committee*](http://www.open-std.org/jtc1/sc22/wg21/)
 - [*C++ standards committee papers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
+- [*C++ standard core language closed issues*](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html)
+- [*C++ standard draft sources*](https://github.com/cplusplus/draft)
 
 ### `main()`
 
@@ -133,7 +140,30 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 
 ---
 
+## Concepts
+
+:movie_camera:
+
+H.Matthews. [*C++ concepts for developers*](https://www.youtube.com/watch?v=ut40iShzqEY) &ndash; NDC (2019)
+
+---
+
 ## Declarations
+
+:movie_camera:
+
+- H.Hinnant. [*How to initialize `x` from expression `y`*](https://www.youtube.com/watch?v=hobFOAehwio) &ndash; Meeting C++ (2019)
+
+### Alignment
+
+:link:
+
+- E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
+- [*Structure padding and packing*](https://stackoverflow.com/questions/4306186/structure-padding-and-packing) &ndash; Stack Overflow
+
+:anchor:
+
+- [*`alignas` specifier*](https://en.cppreference.com/w/cpp/language/alignas) &ndash; C++ reference
 
 ### `const` and `mutable`
 
@@ -145,7 +175,7 @@ See [Relocation &ndash; Memory &ndash; Optimization and hardware](optimization_a
 :link:
 
 - [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) &ndash; C++ FAQ
-- H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm) &ndash; Guru of the Week (2009)
+- H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm)
 - S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
 - [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) &ndash; Stack Overflow
 - [*C++ `const` keyword &ndash; use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) &ndash; Stack Overflow
@@ -195,6 +225,20 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 - [*`inline` specifier*](https://en.cppreference.com/w/cpp/language/inline) &ndash; C++ reference
 
+### Flexible array member
+
+:link:
+
+- [*Flexible array member*](https://en.wikipedia.org/wiki/Flexible_array_member) &ndash; Wikipedia
+- [*Are flexible array members valid in C++?*](https://stackoverflow.com/questions/4412749/are-flexible-array-members-valid-in-c) &ndash; Stack Overflow
+- [*Is using flexible array members in C bad practice?*](https://stackoverflow.com/questions/246977/is-using-flexible-array-members-in-c-bad-practice) &ndash; Stack Overflow
+
+### Most vexing parse
+
+:link:
+
+- D.Kalev. [*Overcoming the “most vexing parse” problem*](http://www.devx.com/cplus/10MinuteSolution/43032/0/page/2) (2009)
+
 ### Storage class specifiers
 
 :link:
@@ -208,17 +252,40 @@ See [*Friend function templates* &ndash; Function templates &ndash; Templates](t
 
 ---
 
-## Exceptions
+## Dynamic memory
 
 :link:
 
-- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
-- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
-- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) &ndash; Stack Overflow
+- B.Filipek. [*New `new()`: The C++17’s alignment parameter for `operator new()`*](https://www.bfilipek.com/2019/08/newnew-align.html) (2019)
+- [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/questions/53451770/treating-memory-returned-by-operator-newsizeoft-n-as-an-array) &ndash; Stack Overflow
+
+:anchor:
+
+- [*Low level memory management*](https://en.cppreference.com/w/cpp/memory/new) &ndash; C++ reference
+- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) &ndash; C++ Core Guidelines
+- [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) &ndash; C++ Core Guidelines
+- C.Nelson. [*Dynamic memory allocation for over-aligned data*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html) &ndash; WG21/P0035R4 (2016)
+
+---
+
+## Exceptions
+
+See [*Exceptions* &ndash; Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
 
 ---
 
 ## Expressions
+
+### Compound literals
+
+:link:
+
+- R.Meyers. [*The new C: Compound literals*](https://www.drdobbs.com/the-new-c-compound-literals/184401404) &ndash; Dr.Dobb’s Journal (2001)
+- [*Are compound literals standard C++?*](https://stackoverflow.com/questions/28116467/are-compound-literals-standard-c) &ndash; Stack Overflow
+
+:anchor:
+
+[*Compound literals*](https://en.cppreference.com/w/c/language/compound_literal) &ndash; C++ reference
 
 ### Operators
 
@@ -416,6 +483,7 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 :link:
 
 - D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) (2007)
+- [*Handling overflow when casting doubles to integers in C*](https://stackoverflow.com/questions/526070/handling-overflow-when-casting-doubles-to-integers-in-c/30424410#30424410) &ndash; Stack Overflow
 
 #### `__float128`
 
@@ -492,10 +560,16 @@ See also [*Floating-point arithmetic* &ndash; Numeric data structures and algori
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) &ndash; Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) &ndash; Stack Overflow
 - [*Advantages of using `forward`*](https://stackoverflow.com/questions/3582001/advantages-of-using-forward) &ndash; Stack Overflow
+- [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/questions/4938875/do-rvalue-references-to-const-have-any-use) &ndash; Stack Overflow
 
 :movie_camera:
 
+- K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) &ndash; CppCon (2019)
 - N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) &ndash; CppCon (2017)
+
+:anchor:
+
+- B.Stroustrup. [*“New” value terminology*](http://www.stroustrup.com/terminology.pdf)
 
 <!-- P1839R0 -->
 

@@ -3,21 +3,20 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
-- [Compiler optimizations](#compiler-optimizations)
+- [Hardware](#hardware)
+	- [Memory addressing](#memory-addressing)
+- [Optimizations](#optimizations)
 	- [Floating-point arithmetic](#floating-point-arithmetic)
-	- [Heap allocation](#heap-allocation)
+	- [Memory copying](#memory-copying)
+		- [Nested `std::vector`s](#nested-stdvectors)
+	- [Memory allocation](#memory-allocation)
+	- [Memory relocation](#memory-relocation)
+	- [Integral multiplication](#integral-multiplication)
 	- [Integeral division](#integeral-division)
 	- [Memory access](#memory-access)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Undefined behavior](#undefined-behavior)
 		- [Strict aliasing rule](#strict-aliasing-rule)
-- [CPU](#cpu)
-- [Memory and cache](#memory-and-cache)
-	- [Access](#access)
-		- [Copying](#copying)
-		- [Nested `std::vector`s](#nested-stdvectors)
-	- [Allocation](#allocation)
-	- [Relocation](#relocation)
 
 ---
 
@@ -43,7 +42,43 @@
 
 ---
 
-## Compiler optimizations
+## Hardware
+
+:link:
+
+- B.Wagstaff. [*A journey through the CPU pipeline*](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/a-journey-through-the-cpu-pipeline-r3115/) (2013)
+- U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
+- [*Simple benchmark for memory throughput and latency*](https://github.com/ssvb/tinymembench)
+- L.Maranget, S.Sarkar, P.Sewell. [*A tutorial introduction to the ARM and POWER relaxed memory models*](https://www.cl.cam.ac.uk/~pes20/ppc-supplemental/test7.pdf) (2012)
+
+:movie_camera:
+
+- C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) &ndash; MIT 6.004: Computation structures (2013)
+
+<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
+<!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) &ndash; - Comp. Arch. 2015 -->
+
+### Memory addressing
+
+:link:
+
+- Y.-H.Hung. [*Linux kernel: Memory addressing*](https://medium.com/hungys-blog/linux-kernel-memory-addressing-a0d304283af3) (2016)
+- D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) &ndash; [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
+
+<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
+
+<!-- https://www.airs.com/blog/archives/120
+https://www.agner.org/optimize/optimizing_cpp.pdf
+http://www.reedbeta.com/blog/data-oriented-hash-table/
+ -->
+<!-- History:
+
+https://stackoverflow.com/questions/3575592/what-are-near-far-and-huge-pointers
+-->
+
+---
+
+## Optimizations
 
 :link
 
@@ -55,27 +90,83 @@
 :movie_camera:
 
 - C.Carruth. [*Understanding compiler optimization*](https://www.youtube.com/watch?v=haQ2cijhvhE) &ndash; code::dive (2016)
+- C.Bay. [*The CPU cache: Instruction re-ordering made obvious*](https://www.youtube.com/watch?v=tNkVUIv2gEE) &ndash; C++Now (2016)
+- T.Doumler. [*Want fast C++? Know your hardware!*](https://www.youtube.com/watch?v=BP6NxVxDQIs) &ndash; CppCon (2016)
+- M.Godbolt. [*x86 internals for fun & profit*](https://www.youtube.com/watch?v=hgcNM-6wr34) &ndash; GOTO (2014)
+- S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
 
 ### Floating-point arithmetic
 
 - [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/questions/7420665/what-does-gccs-ffast-math-actually-do) &ndash; Stack Overflow
 
-### Heap allocation
+### Memory copying
 
+:link:
+
+- [*Time to revisit `REP MOVS`*](https://software.intel.com/en-us/forums/intel-fortran-compiler/topic/275765) &ndash; Intel Developer Zone (2006)
+- [*Enhanced `REP MOVSB` for `memcpy`*](https://stackoverflow.com/questions/43343231/enhanced-rep-movsb-for-memcpy) &ndash; Stack Overflow
+- [*What setup does `REP` do?*](https://stackoverflow.com/questions/33902068/what-setup-does-rep-do/45123049) &ndash; Stack Overflow
+- [*Why are complicated memcpy/memset superior?*](https://stackoverflow.com/questions/8858778/why-are-complicated-memcpy-memset-superior) &ndash; Stack Overflow
+
+#### Nested `std::vector`s
+
+:link:
+
+- [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/questions/45747848/performance-impact-of-nested-vectors-vs-contiguous-arrays) &ndash; Stack Overflow
+- [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/questions/33093860/using-nested-vectors-vs-a-flatten-vector-wrapper-strange-behaviour) &ndash; Stack Overflow
+- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) &ndash; Computational Science
+
+### Memory alignment
+
+:link:
+
+
+### Memory allocation
+
+:link:
+
+- N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
 - [*Is the compiler allowed to optimize out heap memory allocations?*](https://stackoverflow.com/questions/31873616/is-the-compiler-allowed-to-optimize-out-heap-memory-allocations) &ndash; Stack Overflow
+
+:movie_camera:
+
+- A.Alexandrescu [`std::allocator` is to allocation what `std::vector` is to vexation](https://www.youtube.com/watch?v=LIb3L4vKZ7U) &ndash; CppCon (2015)
+
+### Memory relocation
+
+:link:
+
+- A.O’Dwyer. [Announcing “trivially relocatable”](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
+
+:movie_camera:
+
+- A.O’Dwyer. [Trivially relocatable](https://www.youtube.com/watch?v=SGdfPextuAU) &ndash; C++Now (2019)
+
+:anchor:
+
+- A.O’Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
+
+### Integral multiplication
+
+:link:
+
+- [*Why is `imul` used for multiplying unsigned numbers?*](https://stackoverflow.com/questions/42587607/why-is-imul-used-for-multiplying-unsigned-numbers) &ndash; Stack Overflow
 
 ### Integeral division
 
 :link:
 
-- [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/questions/41183935/why-does-gcc-use-multiplication-by-a-strange-number-in-implementing-integer-divi) &ndash; Stack Overflow
 - D.W.Jones. [*Reciprocal multiplication, a tutorial*](https://homepage.divms.uiowa.edu/~jones/bcd/divide.html) (1999)
 - T.Granlund, P.L.Montgomery. [*Division by invariant integers using multiplication*](https://gmplib.org/~tege/divcnst-pldi94.pdf) (1994)
+- [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/questions/41183935/why-does-gcc-use-multiplication-by-a-strange-number-in-implementing-integer-divi) &ndash; Stack Overflow
+- [*Why does the compiler generate a right-shift by 31 bits when dividing by 2?*](https://stackoverflow.com/questions/40638335/why-does-the-compiler-generate-a-right-shift-by-31-bits-when-dividing-by-2) &ndash; Stack Overflow
 
 ### Memory access
 
 :link:
 
+- [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/questions/11413855/why-is-transposing-a-matrix-of-512x512-much-slower-than-transposing-a-matrix-of) &ndash; Stack Overflow
+- [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/questions/8547778/why-are-elementwise-additions-much-faster-in-separate-loops-than-in-a-combined-l) &ndash; Stack Overflow
 - [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/questions/40303182/why-dont-c-compilers-optimize-this-conditional-boolean-assignment-as-an-uncon) &ndash; Stack Overflow
 
 ### Return value optimization and copy elision
@@ -105,84 +196,3 @@
 #### Strict aliasing rule
 
 See [*Type-punning* &ndash; Core language](core_language.md#type-punning).
-
----
-
-## CPU
-
-:movie_camera:
-
-- C.Bay. [*The CPU cache: Instruction re-ordering made obvious*](https://www.youtube.com/watch?v=tNkVUIv2gEE) &ndash; C++Now (2016)
-- M.Godbolt. [*x86 internals for fun & profit*](https://www.youtube.com/watch?v=hgcNM-6wr34) &ndash; GOTO (2014)
-
-## Memory and cache
-
-:link:
-
-- U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
-- D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) &ndash; [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
-- [*Simple benchmark for memory throughput and latency*](https://github.com/ssvb/tinymembench)
-- L.Maranget, S.Sarkar, P.Sewell. [*A tutorial introduction to the ARM and POWER relaxed memory models*](https://www.cl.cam.ac.uk/~pes20/ppc-supplemental/test7.pdf) (2012)
-
-<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
-
-:movie_camera:
-
-- T.Doumler. [*Want fast C++? Know your hardware!*](https://www.youtube.com/watch?v=BP6NxVxDQIs) &ndash; CppCon (2016)
-- S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) &ndash; code::dive (2014)
-- C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) &ndash; MIT 6.004: Computation structures (2013)
-<!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) &ndash; - Comp. Arch. 2015 -->
-
-### Access
-
-:link:
-
-- [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/questions/11413855/why-is-transposing-a-matrix-of-512x512-much-slower-than-transposing-a-matrix-of) &ndash; Stack Overflow
-
-#### Copying
-
-:link:
-
-- [*Time to revisit `REP MOVS`*](https://software.intel.com/en-us/forums/intel-fortran-compiler/topic/275765) &ndash; Intel Developer Zone (2006)
-- [*Enhanced `REP MOVSB` for `memcpy`*](https://stackoverflow.com/questions/43343231/enhanced-rep-movsb-for-memcpy) &ndash; Stack Overflow
-- [*What setup does `REP` do?*](https://stackoverflow.com/questions/33902068/what-setup-does-rep-do/45123049) &ndash; Stack Overflow
-- [*Why are complicated memcpy/memset superior?*](https://stackoverflow.com/questions/8858778/why-are-complicated-memcpy-memset-superior) &ndash; Stack Overflow
-
-#### Nested `std::vector`s
-
-:link:
-
-- [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/questions/45747848/performance-impact-of-nested-vectors-vs-contiguous-arrays) &ndash; Stack Overflow
-- [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/questions/33093860/using-nested-vectors-vs-a-flatten-vector-wrapper-strange-behaviour) &ndash; Stack Overflow
-- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) &ndash; Computational Science
-
-### Allocation
-
-:link:
-
-- N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
-
-:movie_camera:
-
-- A.Alexandrescu [`std::allocator` is to allocation what `std::vector` is to vexation](https://www.youtube.com/watch?v=LIb3L4vKZ7U) &ndash; CppCon (2015)
-
-### Relocation
-
-:link:
-
-- A.O’Dwyer. [Announcing “trivially relocatable”](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
-
-:movie_camera:
-
-- A.O’Dwyer. [Trivially relocatable](https://www.youtube.com/watch?v=SGdfPextuAU) &ndash; C++Now (2019)
-
-:anchor:
-
-- A.O’Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) &ndash; WG21/P1144R2 (2019)
-
-<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
-
-<!-- https://www.airs.com/blog/archives/120
-https://www.agner.org/optimize/optimizing_cpp.pdf
-http://www.reedbeta.com/blog/data-oriented-hash-table/
- -->
