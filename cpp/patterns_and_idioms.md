@@ -4,13 +4,15 @@
 
 - [Exceptions](#exceptions)
 - [Design principles](#design-principles)
+	- [Guidelines](#guidelines)
 	- [Class design](#class-design)
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 		- [SOLID principles](#solid-principles)
-	- [Guidelines](#guidelines)
+	- [Interface design](#interface-design)
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Adapter](#adapter)
+	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Bridge and pimpl](#bridge-and-pimpl)
 	- [Builder](#builder)
 	- [Copy-and-swap](#copy-and-swap)
@@ -34,12 +36,12 @@
 
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
-- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) &ndash; Dr.Dobb’s Journal (2004)
-- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) &ndash; Stack Overflow
+- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) – Stack Overflow
 
 :anchor:
 
-- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) &ndash; C++ reference
+- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 
 ---
 
@@ -47,27 +49,38 @@
 
 :link:
 
-- [*What is a magic number, and why is it bad?*](https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad) &ndash; Stack Overflow
-- [*Are global variables bad?*](https://stackoverflow.com/questions/484635/are-global-variables-bad) &ndash; Stack Overflow
+- [*What is a magic number, and why is it bad?*](https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad) – Stack Overflow
+- [*Are global variables bad?*](https://stackoverflow.com/questions/484635/are-global-variables-bad) – Stack Overflow
 
 :movie_camera:
 
-- F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) &ndash; CppCon (2018)
-- L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) &ndash; CppCon (2017)
+- F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) – CppCon (2018)
+- L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
+
+### Guidelines
+
+- [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
+- [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
+- [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
+
+:movie_camera:
+
+- B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
+- H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
 
 ### Class design
 
 :link:
 
-- R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) &ndash; Uncle Bob (2004)
+- R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) – Uncle Bob (2004)
 
 :movie_camera:
 
-- J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) &ndash; CppCon (2018)
+- J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2018)
 
 :book:
 
-- Sec.: *Class design and inheritance* &ndash; H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) &ndash; [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
+- Sec.: *Class design and inheritance* – H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
 
 #### Destructors
 
@@ -78,7 +91,7 @@
 
 :movie_camera:
 
-- P.Isensee. [*Destructor case studies: Best practices for safe and efficient teardown*](https://www.youtube.com/watch?v=XvWyLAW_U0Q) &ndash; CppCon (2019)
+- P.Isensee. [*Destructor case studies: Best practices for safe and efficient teardown*](https://www.youtube.com/watch?v=XvWyLAW_U0Q) – CppCon (2019)
 
 #### Rule of zero/three/five
 
@@ -87,13 +100,13 @@
 
 :link:
 
-- [*Rule of three*](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) &ndash; Wikipedia
+- [*Rule of three*](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) – Wikipedia
 - S.Meyers. [*A concern about the rule of zero*](https://scottmeyers.blogspot.com/2014/03/a-concern-about-rule-of-zero.html) (2014)
 - R.M.Fernandes. [*Rule of zero*](https://web.archive.org/web/20121127171954/http://rmartinho.github.com/cxx11/2012/08/15/rule-of-zero.html) (2012)
 
 :anchor:
 
-- [*The rule of three/five/zero*](https://en.cppreference.com/w/cpp/language/rule_of_three) &ndash; C++ reference
+- [*The rule of three/five/zero*](https://en.cppreference.com/w/cpp/language/rule_of_three) – C++ reference
 
 #### SOLID principles
 
@@ -107,20 +120,15 @@
 
 :link:
 
-- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) &ndash; Wikipedia
+- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
 - R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
 - R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
 
-### Guidelines
+### Interface design
 
-- [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
-- [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
-- [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
+:link:
 
-:movie_camera:
-
-- B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) &ndash; CppCon (2015)
-- H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) &ndash; CppCon (2014)
+- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) – Stack Overflow
 
 ---
 
@@ -130,27 +138,38 @@
 
 :link:
 
-- [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) &ndash; Wikipedia
+- [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) – Wikipedia
 
 :movie_camera:
 
-* F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) &ndash; CppCon (2019)
+* F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 
 ### Adapter
 
 :link:
 
-- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) &ndash; Wikipedia
+- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) – Wikipedia
 
 :movie_camera:
 
-- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) &ndash; D.Banas
+- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
+
+### Barton–Nackman trick
+
+:link:
+
+- [*Barton–Nackman trick*](https://en.wikipedia.org/wiki/Barton%E2%80%93Nackman_trick) – Wikipedia
+- [*Barton–Nackman trick*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Barton-Nackman_trick) – WikiBooks
+
+:book:
+
+- Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
 
 ### Bridge and pimpl
 
 :link:
 
-- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) &ndash; Wikipedia
+- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
 
 :movie_camera:
 
@@ -171,7 +190,7 @@
 
 :link:
 
-- [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) &ndash; Wikipedia
+- [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) – Wikipedia
 
 ### Copy-and-swap
 
@@ -181,7 +200,7 @@
 
 :link:
 
-- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom) &ndash; Stack Overflow
+- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom) – Stack Overflow
 
 ### Curiously recurring template
 
@@ -198,27 +217,27 @@
 
 :link:
 
-- [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) &ndash; Wikipedia
-- J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) &ndash; C++ Report (1995)
-- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/questions/4173254/what-is-the-curiously-recurring-template-pattern-crtp) &ndash; Stack Overflow
+- [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
+- J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
+- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/questions/4173254/what-is-the-curiously-recurring-template-pattern-crtp) – Stack Overflow
 
 ### Double-checked locking
 
-See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
+See also [*Multithreading* – Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
 :link:
 
-- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) &ndash; Wikipedia
+- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) – Wikipedia
 
 :movie_camera:
 
-- F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) &ndash; CppCon (2015)
+- F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) – CppCon (2015)
 
 ### Execute-around
 
 :link:
 
-- K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) &ndash; EuroPLoP (2000)
+- K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) – EuroPLoP (2000)
 
 #### Execute-around object
 
@@ -226,13 +245,13 @@ See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_
 
 :memo:
 
-- An example of this idiom is provided by smart pointers, e.g. by `std::unique_ptr`. See [The standard library &ndash; Smart pointers](std_library.md#smart-pointers).
+- An example of this idiom is provided by smart pointers, e.g. by `std::unique_ptr`. See [The standard library – Smart pointers](std_library.md#smart-pointers).
 
 :link:
 
-- [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) &ndash; Wikipedia
-- [*RAII*](https://en.cppreference.com/w/cpp/language/raii) &ndash; C++ reference
-- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/questions/2321511/what-is-meant-by-resource-acquisition-is-initialization-raii) &ndash; Stack Overflow
+- [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
+- [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
+- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/questions/2321511/what-is-meant-by-resource-acquisition-is-initialization-raii) – Stack Overflow
 
 <!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
 
@@ -250,8 +269,8 @@ See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_
 
 :link:
 
-- [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) &ndash; WikiBooks
-- [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) &ndash; CodeProject (2018)
+- [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) – WikiBooks
+- [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) – CodeProject (2018)
 
 #### Execute-around function
 
@@ -259,30 +278,34 @@ See also [*Multithreading* &ndash; Concurrency and parallelism](concurrency_and_
 
 ### Opaque typedef (whole value)
 
+> An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
 > ```cpp
-> class Whole_value {
+> template<class T> class Whole_value {
 > public:
->     Whole_value(int v) : v_(v) {}
->     operator int() const { return v_; }
+>     Whole_value(T v) : v_(v) {}
+>     operator T() const { return v_; }
 > private:
->     int v_;
+>     T v_;
 > };
 > ```
 
-See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typedefs).
+:memo:
+
+- > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won’t get strong typedefs as core language feature. [[J.M&uuml;ller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
 
 :link:
 
-- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) &ndash; Overload **152**, 9 (2019)
+- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) – Overload **152**, 9 (2019)
 - J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
 
 :movie_camera:
 
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) &ndash; ACCU (2017)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)
 
 :anchor:
 
-- [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) &ndash; Boost.Serialization
+- W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) – WG21/N3741 (2013)
+- [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) – Boost.Serialization
 
 ### Passkey
 
@@ -292,7 +315,7 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 
 <!-- https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern -->
 
-- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) &ndash; Stack Overflow
+- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) – Stack Overflow
 
 ### Strategy
 
@@ -304,11 +327,12 @@ See also [*Opaque typedefs* &ndash; Core language](core-language.md#opaque-typed
 
 :link:
 
-- [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) &ndash; Wikipedia
-- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) &ndash; Stack Overflow
+- [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
+- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) – Stack Overflow
 
 :movie_camera:
 
-- B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) &ndash; CppCon (2019)
+- B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) – CppCon (2019)
 
 <!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
+<!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->

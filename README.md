@@ -1,6 +1,6 @@
 # Data structures, algorithms, and C++ reference library
 
-This is a library of usefull and interesting references &ndash; web pages, videos, books, research papers &ndash; on common data structures and algorithms with an emphasis on C++ when it comes to their implementation.
+This is a library of usefull and interesting references – web pages, videos, books, research papers – on common data structures and algorithms with an emphasis on C++ when it comes to their implementation.
 
 ## Table of contents
 

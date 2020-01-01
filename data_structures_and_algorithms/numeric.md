@@ -32,7 +32,7 @@
 
 :link:
 
-- [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) &ndash; Wikipedia
+- [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) – Wikipedia
 - C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
 
 :page_facing_up:
@@ -50,11 +50,11 @@
 
 :link:
 
-- [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) &ndash; Wikipedia
+- [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
 - D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
-- [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) &ndash; Stack Overflow
-- [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/questions/19800415/why-does-ieee-754-reserve-so-many-nan-values) &ndash; Stack Overflow
-- [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/questions/12558780/how-many-normalized-numbers-can-be-represented-using-ieee-754-single-precision) &ndash; Stack Overflow
+- [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) – Stack Overflow
+- [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/questions/19800415/why-does-ieee-754-reserve-so-many-nan-values) – Stack Overflow
+- [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/questions/12558780/how-many-normalized-numbers-can-be-represented-using-ieee-754-single-precision) – Stack Overflow
 
 :page_facing_up:
 
@@ -63,33 +63,33 @@
 
 :book:
 
-- M.L.Overton. [*Numerical computing with IEEE floating point arithmetic*](https://doi.org/10.1137/1.9780898718072) &ndash; SIAM (2001)
-- Sec. 2.5: *Floating-point arithmetic* &ndash; D.H.Eberly. [*GPGPU
-programming for games and science*](https://www.crcpress.com/GPGPU-Programming-for-Games-and-Science/Eberly/p/book/9781466595354) &ndash; CRC Press (2014)
-- C.Allison. [*Floating-point numbers aren’t real*](http://freshsources.com/FPNotReal.pdf) &ndash; K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
+- M.L.Overton. [*Numerical computing with IEEE floating point arithmetic*](https://doi.org/10.1137/1.9780898718072) – SIAM (2001)
+- Sec. 2.5: *Floating-point arithmetic* – D.H.Eberly. [*GPGPU
+programming for games and science*](https://www.crcpress.com/GPGPU-Programming-for-Games-and-Science/Eberly/p/book/9781466595354) – CRC Press (2014)
+- C.Allison. [*Floating-point numbers aren’t real*](http://freshsources.com/FPNotReal.pdf) – K.Henney. [*97 things every programmer should know*](https://www.oreilly.com/library/view/97-things-every/9780596809515/) (2010)
 
 :movie_camera:
 
-- J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) &ndash; CppCon (2015)
-- J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) &ndash; HPC Advisory Council Australia Conference (2017)
+- J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) – CppCon (2015)
+- J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) – HPC Advisory Council Australia Conference (2017)
 
 #### Division
 
 :link:
 
-- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) &ndash; Wikipedia
-- T.R.Halfhill. [*The truth behind the pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) &ndash; BYTE.com (1995)
+- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) – Wikipedia
+- T.R.Halfhill. [*The truth behind the pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) – BYTE.com (1995)
 
 #### Denormal numbers
 
 :link:
 
-- [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) &ndash; Wikipedia
+- [*Denormal number*](https://en.wikipedia.org/wiki/Denormal_number) – Wikipedia
 - C.Moler. [*Floating point denormals, insignificant but controversial*](https://blogs.mathworks.com/cleve/2014/07/21/floating-point-denormals-insignificant-but-controversial-2/) (2014)
 
 :movie_camera:
 
-- D.Kohlbrenner. [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) &ndash; IEEE Symposium on Security and Privacy (2015)
+- D.Kohlbrenner. [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) – IEEE Symposium on Security and Privacy (2015)
 
 ---
 
@@ -128,14 +128,14 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-- [Horner’s method](https://en.wikipedia.org/wiki/Horner%27s_method) &ndash; Wikipedia
+- [Horner’s method](https://en.wikipedia.org/wiki/Horner%27s_method) – Wikipedia
 
 ### Kahan summation algorithm
 
 :link:
 
-- [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) &ndash; Wikipedia
-- [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) &ndash; Stack Overflow
+- [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) – Wikipedia
+- [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) – Stack Overflow
 
 ---
 
@@ -149,7 +149,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :book:
 
-- Sec. 20.5: *Relaxation methods for boundary value problems* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+- Sec. 20.5: *Relaxation methods for boundary value problems* – W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 
 #### Jacobi method
 
@@ -157,12 +157,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-- [*Jacobi method*](https://en.wikipedia.org/wiki/Jacobi_method) &ndash; Wikipedia
-- [*Jacobi method*](http://mathworld.wolfram.com/JacobiMethod.html) &ndash; Wolfram MathWorld
+- [*Jacobi method*](https://en.wikipedia.org/wiki/Jacobi_method) – Wikipedia
+- [*Jacobi method*](http://mathworld.wolfram.com/JacobiMethod.html) – Wolfram MathWorld
 
 :movie_camera:
 
-- G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.086 [*Mathematical methods for engineers II*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
+- G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.086 [*Mathematical methods for engineers II*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
 
 ---
 
@@ -172,14 +172,14 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :link:
 
-- [*Jacobi eigenvalue algorithm*](https://en.wikipedia.org/wiki/Jacobi_eigenvalue_algorithm) &ndash; Wikipedia
-- J.Lambers. [*Jacobi methods*](https://web.stanford.edu/class/cme335/lecture7.pdf) &ndash; CME 335 (2010)
+- [*Jacobi eigenvalue algorithm*](https://en.wikipedia.org/wiki/Jacobi_eigenvalue_algorithm) – Wikipedia
+- J.Lambers. [*Jacobi methods*](https://web.stanford.edu/class/cme335/lecture7.pdf) – CME 335 (2010)
 
 :book:
 
-- Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
-- Sec. 8.5: *Jacobi methods* &ndash; G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) &ndash; SIAM (2013)
-- H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* &ndash; J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
+- Sec. 11.1: *Jacobi transformations of a symmetric matrix* – W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+- Sec. 8.5: *Jacobi methods* – G.H.Golub, C.F.Van Loan. [*Matrix computations*](https://my.siam.org/Store/Product/viewproduct/?ProductId=23915573) – SIAM (2013)
+- H.Rutishause. Contrib. II/1: *The Jacobi method for real symmetric matrices* – J.H.Wilkinson, C.Reinsch. [*Handbook for automatic computation. Vol. II: Linear algebra*](https://www.springer.com/gp/book/9783642869426) (1971)
 
 ---
 
@@ -187,12 +187,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-- G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) &ndash; MIT 18.085 *Computational science and engineering I* (2008?)
-- G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) &ndash; MIT 18.085 *Computational science and engineering I* (2008?)
+- G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.085 *Computational science and engineering I* (2008?)
+- G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) – MIT 18.085 *Computational science and engineering I* (2008?)
 
 :book:
 
-- Sec. 11.1: *Jacobi transformations of a symmetric matrix* &ndash; W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
+- Sec. 11.1: *Jacobi transformations of a symmetric matrix* – W.H.Press et al. [*Numerical recipes: The art of scientific computing*](http://numerical.recipes/) (2007)
 
 <!--
 https://www.math.wustl.edu/~wick/teaching/Math2605Notes/chap3.pdf

@@ -10,8 +10,9 @@
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
-	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
+	- [Keywords template and typename as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [Policies](#policies)
+- [SFINAE](#sfinae)
 - [Specialization](#specialization)
 - [Tuples](#tuples)
 - [Type lists](#type-lists)
@@ -23,19 +24,19 @@
 
 :link:
 
-- [*Templates*](https://isocpp.org/wiki/faq/templates) &ndash; C++ FAQ
+- [*Templates*](https://isocpp.org/wiki/faq/templates) – C++ FAQ
 
 :movie_camera:
 
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) &ndash; ACCU (2017)
-- W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) &ndash; CppCon (2014)
-- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) &ndash; Tech Talk (2014)
-- M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) &ndash; C++Now (2012)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) – ACCU (2017)
+- W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) – CppCon (2014)
+- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) – Tech Talk (2014)
+- M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) – C++Now (2012)
 
 :book:
 
-- D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
-- A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
+- A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ---
 
@@ -43,11 +44,11 @@
 
 :link:
 
-- [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) &ndash; C++ reference
+- [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
 
 :movie_camera:
 
-- S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) &ndash; CppCon (2014)
+- S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) – CppCon (2014)
 
 ---
 
@@ -55,15 +56,15 @@
 
 :link:
 
-* [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) &ndash; Stack Overflow
+* [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) – Stack Overflow
 
 :movie_camera:
 
-* B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) &ndash; CppCon (2018)
+* B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) – CppCon (2018)
 
 :anchor:
 
-* W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) &ndash; WG21/P0552R0 (2017)
+* W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) – WG21/P0552R0 (2017)
 
 ---
 
@@ -71,15 +72,15 @@
 
 :link:
 
-- [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) &ndash; Stack Overflow
+- [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) – Stack Overflow
 - H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
 
 ### Friend function templates
 
 :link:
 
-- [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) &ndash; C++ FAQ
-- [*Correct syntax for friend template function*](https://stackoverflow.com/questions/42692050/correct-syntax-for-friend-template-function) &ndash; Stack Overflow
+- [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) – C++ FAQ
+- [*Correct syntax for friend template function*](https://stackoverflow.com/questions/42692050/correct-syntax-for-friend-template-function) – Stack Overflow
 
 ---
 
@@ -94,7 +95,7 @@
 
 :movie_camera:
 
-- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) &ndash; CppCon (2019)
+- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) – CppCon (2019)
 
 ### Two-phase lookup
 
@@ -102,10 +103,10 @@
 
 :link:
 
-- T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) &ndash; Microsoft C++ team blog (2017)
+- T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) – Microsoft C++ team blog (2017)
 - [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
 - E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
-- [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/questions/4643074/why-do-i-have-to-access-template-base-class-members-through-the-this-pointer) &ndash; Stack Overflow
+- [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/questions/4643074/why-do-i-have-to-access-template-base-class-members-through-the-this-pointer) – Stack Overflow
 
 ### Keywords `template` and `typename` as disambiguators
 
@@ -118,12 +119,12 @@
 
 :link:
 
-- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) &ndash; Stack Overflow
-- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) &ndash; Guru of the Week (2009)
+- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) – Stack Overflow
+- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) – Guru of the Week (2009)
 
 :movie_camera:
 
-- A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) &ndash; A9 (2013)
+- A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) – A9 (2013)
 
 ---
 
@@ -131,11 +132,28 @@
 
 :movie_camera:
 
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) &ndash; ACCU (2017)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) – ACCU (2017)
 
 :book:
 
-- Ch. 1: *Policy-based class design* &ndash; A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+
+---
+
+## SFINAE
+
+> "Substitution Failure Is Not An Error" – when substituting the explicitly specified or deduced type for the template parameter fails, the specialization is discarded from the overload set instead of causing a compile error.
+
+:link:
+
+- [*Substitution failure is not an error*](http://blog.olivierlanglois.net/index.php/2007/09/01/what_is_the_c_sfinae_principle) – Wikipedia
+- [*What is “Expression SFINAE”?*](https://stackoverflow.com/questions/12654067/what-is-expression-sfinae) – Stack Overflow
+- [*How does `std::void_t` work*](https://stackoverflow.com/questions/27687389/how-does-void-t-work) – Stack Overflow
+- [*SFINAE examples?*](https://stackoverflow.com/questions/982808/c-sfinae-examples) – Stack Overflow
+
+:anchor:
+
+- [*SFINAE*](https://en.cppreference.com/w/cpp/language/sfinae) – C++ reference
 
 ---
 
@@ -143,7 +161,7 @@
 
 :link:
 
-* [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) &ndash; Stack Overflow
+* [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) – Stack Overflow
 
 ---
 
@@ -156,8 +174,10 @@
 
 :movie_camera:
 
-- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) &ndash; CppCon (2019)
-- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) &ndash; Tech Talk (2014)
+- J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk&t=872) – CppCon (2019)
+- A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak&t=2112) – Tech Talk (2014)
+
+---
 
 ## Type lists
 
@@ -170,22 +190,24 @@
 
 :book:
 
-- Ch. 3: *Typelists* &ndash; A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) &ndash; [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- Ch. 3: *Typelists* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+
+---
 
 ## Type traits
 
-See also [*Type traits* &ndash; The standard library and Boost](std_library.md#type-traits).
+See also [*Type traits* – The standard library and Boost](std_library.md#type-traits).
 
 :link:
 
-- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) &ndash; Dr. Dobb’s Journal (2000)
-- T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) &ndash; ACCU (2001)
+- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) – Dr. Dobb’s Journal (2000)
+- T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) – ACCU (2001)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 
 :movie_camera:
 
-- A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) &ndash; C++Now (2018)
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) &ndash; ACCU (2017)
+- A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) – C++Now (2018)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) – ACCU (2017)
 
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm
@@ -197,3 +219,5 @@ https://www.hackcraft.net/cpp/templateinheritance/
 
 https://stackoverflow.com/questions/55396786/check-if-class-is-a-template-specialization/55398444#55398444
  -->
+
+<!-- https://stackoverflow.com/questions/59252363/why-is-my-class-non-default-constructible -->

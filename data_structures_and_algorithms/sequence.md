@@ -4,13 +4,13 @@
 
 - [Rotation (cyclic shift)](#rotation-cyclic-shift)
 	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
-	- [Gries&ndash;Mills algorithm](#griesndashmills-algorithm)
+	- [Gries–Mills algorithm](#griesndashmills-algorithm)
 	- [Dolphin algoirithm](#dolphin-algoirithm)
 - [Longest increasing subsequence](#longest-increasing-subsequence)
 - [Maximum subsequence](#maximum-subsequence)
 	- [Kadane’s algorithm](#kadanes-algorithm)
 - [Majority element](#majority-element)
-	- [Boyer&ndash;Moore majority vote algorithm](#boyerndashmoore-majority-vote-algorithm)
+	- [Boyer–Moore majority vote algorithm](#boyerndashmoore-majority-vote-algorithm)
 - [Sqrt decomposition](#sqrt-decomposition)
 
 ---
@@ -25,13 +25,13 @@
 
 :link:
 
-- [*Benchmarking block-swapping algorithms* &ndash; Dr. Dobb’s Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
+- [*Benchmarking block-swapping algorithms* – Dr. Dobb’s Journal](http://www.drdobbs.com/parallel/benchmarking-block-swapping-algorithms/232900395)
 
 :book:
 
-- Sec. 11.3: *Rotation* &ndash; A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
-- Sec. 10.4: *Rotate algorithms* &ndash; A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
-- Sec. 2.3: *The power of primitives* &ndash; J.Bentley. *Programming pearls* (1999)
+- Sec. 11.3: *Rotation* – A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
+- Sec. 10.4: *Rotate algorithms* – A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
+- Sec. 2.3: *The power of primitives* – J.Bentley. *Programming pearls* (1999)
 
 :page_facing_up:
 
@@ -49,7 +49,7 @@
 - The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>.
 - This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
 
-### Gries&ndash;Mills algorithm
+### Gries–Mills algorithm
 
 > Gist of the algorithm: if `k = n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>; if `k < n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>2k-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>0</sub>...a<sub>k-1</sub>a<sub>2k</sub>...a<sub>n-1</sub>}</code> with `k' = k`; if `k > n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>n-k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>n-k</sub>...a<sub>k-1</sub>a<sub>0</sub>...a<sub>n-k-1</sub>}</code> with `k' = 2k - n`.
 
@@ -57,7 +57,7 @@
 
 - The section sizes `(k, n - k)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(k, n)`.
 - The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
-- The Gries&ndash;Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
+- The Gries–Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
 
 ### Dolphin algoirithm
 
@@ -71,7 +71,7 @@
 
 :page_facing_up:
 
-W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash; [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
+W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* – [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
 
 ---
 
@@ -86,22 +86,22 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-- [*Longest increasing subsequence*](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) &ndash; Wikipedia
-- [*Longest increasing subsequence*](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html) &ndash; CP-Algorithms
+- [*Longest increasing subsequence*](https://en.wikipedia.org/wiki/Longest_increasing_subsequence) – Wikipedia
+- [*Longest increasing subsequence*](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html) – CP-Algorithms
 
 :movie_camera:
 
-- [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-- Sec. 8.3: *Longest increasing sequence* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
-- Sec. 3.5.2 *Classical examples* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
-- Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
+- Sec. 8.3: *Longest increasing sequence* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+- Sec. 3.5.2 *Classical examples* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.1: *Longest increasing subsequence* – U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
 
-- M.L.Fredman. [*On computing the length of longest increasing subsequences*](https://core.ac.uk/download/pdf/82290717.pdf) &ndash; [Discrete Mathematics **11**, 29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)
+- M.L.Fredman. [*On computing the length of longest increasing subsequences*](https://core.ac.uk/download/pdf/82290717.pdf) – [Discrete Mathematics **11**, 29](https://dx.doi.org/10.1016/0012-365X(75)90103-X) (1975)
 
 <!--### Counting the number of longest increasing subsequences-->
 
@@ -113,21 +113,21 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :page_facing_up:
 
-- J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) &ndash; [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
+- J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) – [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
 
 ### Kadane’s algorithm
 
-- D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) &ndash; [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
+- D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) – [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
 
 ---
 
 ## Majority element
 
-### Boyer&ndash;Moore majority vote algorithm
+### Boyer–Moore majority vote algorithm
 
 :link:
 
-- [*Boyer&ndash;Moore majority vote algorithm*](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) &ndash; Wikipedia
+- [*Boyer–Moore majority vote algorithm*](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) – Wikipedia
 
 ---
 
@@ -135,5 +135,5 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* &ndash;
 
 :link:
 
-- [*Sqrt decomposition*](https://cp-algorithms.com/data_structures/sqrt_decomposition.html) &ndash; CP-Algorithms
-- S.Kopeliovich. [*Sqrt decomposition*](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf) &ndash; MIPT (2016)
+- [*Sqrt decomposition*](https://cp-algorithms.com/data_structures/sqrt_decomposition.html) – CP-Algorithms
+- S.Kopeliovich. [*Sqrt decomposition*](http://acm.math.spbu.ru/~sk1/mm/lections/mipt2016-sqrt/mipt-2016-burunduk1-sqrt.en.pdf) – MIPT (2016)

@@ -5,7 +5,7 @@
 - [Binary trees](#binary-trees)
 	- [Binary search trees](#binary-search-trees)
 	- [Self-balancing binary search trees](#self-balancing-binary-search-trees)
-		- [AVL (Adelson-Velskiĭ&ndash;Landis) trees](#avl-adelson-velskiĭndashlandis-trees)
+		- [AVL (Adelson-Velskiĭ–Landis) trees](#avl-adelson-velskiĭndashlandis-trees)
 	- [Other binary trees](#other-binary-trees)
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
 - [B-trees](#b-trees)
@@ -35,11 +35,11 @@
 
 :movie_camera:
 
-- [*Binary search trees*](https://www.youtube.com/watch?v=9Jry5-82I68) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- [*Binary search trees*](https://www.youtube.com/watch?v=9Jry5-82I68) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-- Sec. 2.3.1: *Binary search trees*, Sec: *Selection sort* &ndash; E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* &ndash; W.H.Freeman (1997)
+- Sec. 2.3.1: *Binary search trees*, Sec: *Selection sort* – E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* – W.H.Freeman (1997)
 
 ### Self-balancing binary search trees
 
@@ -53,9 +53,9 @@
 
 :link:
 
-- [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) &ndash; Wikipedia
+- [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) – Wikipedia
 
-#### AVL (Adelson-Velskiĭ&ndash;Landis) trees
+#### AVL (Adelson-Velskiĭ–Landis) trees
 
 > An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
 
@@ -69,7 +69,7 @@
 
 :link:
 
-- [AVL tree](https://en.wikipedia.org/wiki/AVL_tree) &ndash; Wikipedia
+- [AVL tree](https://en.wikipedia.org/wiki/AVL_tree) – Wikipedia
 - [C++ AVL tree template](https://www.codeproject.com/Articles/2839/C-AVL-Tree-Template)
 - [AVL trees: Tutorial and C++ implementation](https://www.bradapp.com/ftp/src/libs/C++/AvlTrees.html)
 - [Simple AVL tree in C++](http://somethingk.com/main/?p=1127)
@@ -77,17 +77,17 @@
 
 :book:
 
-- Sec. 6.2.3: *Balanced trees* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 3: Sorting and searching* (1998)
-- Sec. 4.4: *AVL trees* &ndash; M.A.Weiss. [*Data structures and algorithm analysis in C++*](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html) (2014)
-- Sec. 4.3.4: *AVL trees* &ndash; U.Manber. *Introduction to algorithms: A creative approach* (1989)
+- Sec. 6.2.3: *Balanced trees* – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 3: Sorting and searching* (1998)
+- Sec. 4.4: *AVL trees* – M.A.Weiss. [*Data structures and algorithm analysis in C++*](https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html) (2014)
+- Sec. 4.3.4: *AVL trees* – U.Manber. *Introduction to algorithms: A creative approach* (1989)
 
 :page_facing_up:
 
-- G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information.* [In english](https://zhjwpku.com/assets/pdf/AED2-10-avl-paper.pdf), [In russian](http://mi.mathnet.ru/rus/dan/v146/i2/p263) &ndash; Doklady Akademii Nauk SSSR **146**, 263 (1962)
+- G.M.Adelson-Velskiĭ, E.M.Landis. *An algorithm for organization of information.* [In english](https://zhjwpku.com/assets/pdf/AED2-10-avl-paper.pdf), [In russian](http://mi.mathnet.ru/rus/dan/v146/i2/p263) – Doklady Akademii Nauk SSSR **146**, 263 (1962)
 
 :movie_camera:
 
-- [*AVL trees, AVL sort*](https://www.youtube.com/watch?v=FNeL18KsWPc) &ndash; MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- [*AVL trees, AVL sort*](https://www.youtube.com/watch?v=FNeL18KsWPc) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :dizzy: **Visualizations**
 
@@ -109,24 +109,24 @@
 
 :link:
 
-- [*Fenwick tree*](https://en.wikipedia.org/wiki/Fenwick_tree) &ndash; Wikipedia
-- [*Binary indexed trees*](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) &ndash; Topcoder
-- [*Fenwick tree*](https://brilliant.org/wiki/fenwick-tree/) &ndash; Brilliant
-- [*A JavaScript implementation of binary indexed tree*](https://github.com/Microsoft/fast-binary-indexed-tree-js) &ndash; Microsoft @ GitHub
-- [What are the advantage of binary indexed tree (BIT or Fenwick tree) over segment tree?](https://www.quora.com/What-are-the-advantage-of-binary-indexed-tree-BIT-or-fenwick-tree-over-segment-tree) &ndash; Quora
+- [*Fenwick tree*](https://en.wikipedia.org/wiki/Fenwick_tree) – Wikipedia
+- [*Binary indexed trees*](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) – Topcoder
+- [*Fenwick tree*](https://brilliant.org/wiki/fenwick-tree/) – Brilliant
+- [*A JavaScript implementation of binary indexed tree*](https://github.com/Microsoft/fast-binary-indexed-tree-js) – Microsoft @ GitHub
+- [What are the advantage of binary indexed tree (BIT or Fenwick tree) over segment tree?](https://www.quora.com/What-are-the-advantage-of-binary-indexed-tree-BIT-or-fenwick-tree-over-segment-tree) – Quora
 
 :movie_camera:
 
-- [*Fenwick trees*](https://www.youtube.com/watch?v=kPaJfAUwViY) &ndash; Algorithms Live!
+- [*Fenwick trees*](https://www.youtube.com/watch?v=kPaJfAUwViY) – Algorithms Live!
 - W.Fiset. [*Fenwick tree/Binary indexed tree*](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsCvoyP-bztk6uXAYoyZg_U9)
 
 :book:
 
-- Sec. 2.4.4: *Binary indexed (Fenwick) tree* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 2.4.4: *Binary indexed (Fenwick) tree* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 :page_facing_up:
 
-- P.M.Fenwick. [*A new data structure for cumulative frequency tables*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf) &ndash; [Software: Practice and Experience **24**, 327](https://dx.doi.org/10.1002/spe.4380240306) (1994)
+- P.M.Fenwick. [*A new data structure for cumulative frequency tables*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf) – [Software: Practice and Experience **24**, 327](https://dx.doi.org/10.1002/spe.4380240306) (1994)
 
 ---
 
@@ -134,11 +134,11 @@
 
 :movie_camera:
 
-- [*2-3 Trees and B-Trees*](https://www.youtube.com/watch?v=TOb1tuEZ2X4) &ndash; MIT OCW 6.046J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm) (2015)
+- [*2-3 Trees and B-Trees*](https://www.youtube.com/watch?v=TOb1tuEZ2X4) – MIT OCW 6.046J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm) (2015)
 
 :book:
 
-- Ch. 18: *B-trees* &ndash; T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+- Ch. 18: *B-trees* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
 ### 2-3 trees
 
@@ -146,11 +146,11 @@
 
 ## Traversal
 
-See also: [Graphs &ndash; Traversal](graphs.md#traversal)
+See also: [Graphs – Traversal](graphs.md#traversal)
 
 :link:
 
-- [*Tree traversal*](https://en.wikipedia.org/wiki/Tree_traversal) &ndash; Wikipedia
+- [*Tree traversal*](https://en.wikipedia.org/wiki/Tree_traversal) – Wikipedia
 
 ---
 
@@ -161,5 +161,5 @@ See also: [Graphs &ndash; Traversal](graphs.md#traversal)
 :link:
 
 - [OpenVDB](https://www.openvdb.org/)
-- K.Museth. [*OpenVDB: An open source data structure and toolkit for high-resolution volumes*](https://www.youtube.com/watch?v=7hUH92xwODg) &ndash; BIDS (2015)
+- K.Museth. [*OpenVDB: An open source data structure and toolkit for high-resolution volumes*](https://www.youtube.com/watch?v=7hUH92xwODg) – BIDS (2015)
 <!-- http://www.museth.org/Ken/Publications_files/Nielsen-Museth_JSC05.pdf -->

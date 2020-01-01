@@ -7,7 +7,7 @@
 - [Lyndon factorization](#lyndon-factorization)
 	- [Duval’s algorithm](#duvals-algorithm)
 - [String searching](#string-searching)
-	- [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
+	- [Knuth–Morris–Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
 
 ---
 
@@ -17,7 +17,7 @@
 
 :link:
 
-- [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) &ndash; Wikipedia
+- [*Lexicographically minimal string rotation*](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation) – Wikipedia
 
 ### Duval’s based algorithm
 
@@ -27,8 +27,8 @@
 
 :link:
 
-- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
-- [*How does the minimum expression algorithm by Zhou Yuan work?*](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work) &ndash; Quora
+- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) – CP-Algorithms
+- [*How does the minimum expression algorithm by Zhou Yuan work?*](https://www.quora.com/How-does-the-minimum-expression-algorithm-by-Zhou-Yuan-work) – Quora
 
 ---
 
@@ -43,32 +43,32 @@
 - [Lyndon factorization](#lyndon-factorization)
 	- [Duval’s algorithm](#duvals-algorithm)
 - [String searching](#string-searching)
-	- [Knuth&ndash;Morris&ndash;Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
+	- [Knuth–Morris–Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
 
 :link:
 
-- [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) &ndash; Wikipedia
+- [*Lyndon word*](https://en.wikipedia.org/wiki/Lyndon_word) – Wikipedia
 
 ### Duval’s algorithm
 
 :link:
 
-- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) &ndash; CP-Algorithms
+- [*Lyndon factorization*](https://cp-algorithms.com/string/lyndon_factorization.html) – CP-Algorithms
 
 :page_facing_up:
 
-- J.P.Duval. *Factorizing words over an ordered alphabet* &ndash; [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
-- S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) &ndash; arXiv preprint (2014)
+- J.P.Duval. *Factorizing words over an ordered alphabet* – [Journal of algorithms **8**, 363](https://dx.doi.org/10.1016/0196-6774(83)90017-2) (1983)
+- S.S.Ghuman, E.Giaquinta, J.Tarhio. [*Alternative algorithms for Lyndon factorization*](https://arxiv.org/abs/1405.4892) – arXiv preprint (2014)
 
 ---
 
 ## String searching
 
-### Knuth&ndash;Morris&ndash;Pratt algorithm
+### Knuth–Morris–Pratt algorithm
 
 :link:
 
-- [*Knuth&ndash;Morris&ndash;Pratt algorithm*](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) &ndash; Wikipedia
+- [*Knuth–Morris–Pratt algorithm*](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm) – Wikipedia
 
 :movie_camera:
 

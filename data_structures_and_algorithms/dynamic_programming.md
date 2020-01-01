@@ -12,11 +12,11 @@
 
 :movie_camera:
 
-- *Dynamic programming.* [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY), [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY), [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) &ndash; MIT 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- *Dynamic programming.* [Part I](https://www.youtube.com/watch?v=OQ5jsbhAv_M), [Part II](https://www.youtube.com/watch?v=ENyox7kNKeY), [Part III](https://www.youtube.com/watch?v=ocZMDMZwhCY), [Part IV](https://www.youtube.com/watch?v=tp4_UXaVyx8) – MIT 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 
-- Ch. 8: *Dynamic programming* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+- Ch. 8: *Dynamic programming* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
 
 ---
 
@@ -30,14 +30,14 @@
 
 :book:
 
-- Sec. 8.5: *The partition problem* &ndash; S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
-- Sec. 8.4.1: *Two components: Binary search the answer and other* &ndash; S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 8.5: *The partition problem* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+- Sec. 8.4.1: *Two components: Binary search the answer and other* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
 ---
 
 ## Longest increasing subsequence
 
-See [Sequence algorithms &ndash; Longest increasing subsequence](sequence_algorithms.md#longest-increasing-subsequence).
+See [Sequence algorithms – Longest increasing subsequence](sequence_algorithms.md#longest-increasing-subsequence).
 
 
 <!--

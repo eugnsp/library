@@ -23,11 +23,11 @@
 
 :link:
 
-- [*`std::next_permutation` implementation explanation* &ndash; Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
+- [*`std::next_permutation` implementation explanation* – Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
 
 :book:
 
-- Sec. 7.2.1.2: *Generating all permutations* &ndash; D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
+- Sec. 7.2.1.2: *Generating all permutations* – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
 
 ### Heap’s algorithm
 
@@ -35,9 +35,9 @@
 
 :link:
 
-- [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) &ndash; Wikipedia
-- [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) &ndash; Stack Overflow
+- [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) – Wikipedia
+- [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) – Stack Overflow
 
 ### Random permutations
 
-See [*Random shuffling* &ndash; Randomized algorithms](random.md#random-shuffling).
+See [*Random shuffling* – Randomized algorithms](random.md#random-shuffling).

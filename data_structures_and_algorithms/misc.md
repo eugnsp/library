@@ -1,6 +1,6 @@
 # Miscellaneous datastructures <!-- omit in toc -->
 
-- [*Colonies, performance and why you should care* &ndash; M.Bentley @ CppCon (2016)](https://www.youtube.com/watch?v=wBER1R8YyGY)
+- [*Colonies, performance and why you should care* – M.Bentley @ CppCon (2016)](https://www.youtube.com/watch?v=wBER1R8YyGY)
 
 ## Volumetric data structures
 
