@@ -3,14 +3,13 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
-	- [C vs C++](#c-vs-c)
-- [ABI](#abi)
+- [ABI and implementation](#abi-and-implementation)
 	- [Itanium C++ ABI](#itanium-c-abi)
+	- [Inheritance](#inheritance)
 - [Attributes](#attributes)
 	- [[[likely]] / [[unlikely]]](#likely--unlikely)
 	- [[[nodiscard]]](#nodiscard)
 	- [[[trivially_relocatable]]](#trivially_relocatable)
-- [Concepts](#concepts)
 - [Declarations](#declarations)
 	- [Alignment](#alignment)
 	- [const and mutable](#const-and-mutable)
@@ -25,10 +24,13 @@
 	- [Storage class specifiers](#storage-class-specifiers)
 	- [Structured binding](#structured-binding)
 - [Dynamic memory](#dynamic-memory)
+	- [Alignment](#alignment-1)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
 	- [Compound literals](#compound-literals)
 	- [Operators](#operators)
+		- [Comparisons](#comparisons)
+		- [sizeof](#sizeof)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
 		- [dynamic_cast](#dynamic_cast)
@@ -40,8 +42,6 @@
 	- [Lambda expressions](#lambda-expressions)
 	- [main()](#main)
 - [Initialization](#initialization)
-- [Standards](#standards)
-	- [C++17](#c17)
 - [Structured bindings](#structured-bindings)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
@@ -52,11 +52,15 @@
 		- [__float128](#__float128)
 	- [Integral types](#integral-types)
 	- [Class types](#class-types)
+		- [Inheritance](#inheritance-1)
 	- [Function types](#function-types)
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
 		- [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
 	- [Opaque typedefs](#opaque-typedefs)
+- [Standards](#standards)
+	- [C++17](#c17)
+- [C vs C++](#c-vs-c)
 
 ---
 
@@ -74,15 +78,9 @@
 - [*C++ standard core language closed issues*](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html)
 - [*C++ standard draft sources*](https://github.com/cplusplus/draft)
 
-### C vs C++
-
-:link:
-
-- D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
-
 ---
 
-## ABI
+## ABI and implementation
 
 :link:
 
@@ -105,6 +103,16 @@
 :link:
 
 - [*Itanium C++ ABI*](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
+
+### Inheritance
+
+:link:
+
+- [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/questions/15921372/c-virtual-table-layout-of-mimultiple-inheritance) – Stack Overflow
+
+:book:
+
+- Ch. 1: *Inheritance*, Sec.: *Inheritance implementation*; Ch. 2: *Multiple inheritance*, Sec.: *Multiple inheritance implementation* – N.Llopis. *C++ for game programmers* – Charles River Media (2003)
 
 ---
 
@@ -141,7 +149,7 @@
 
 :link:
 
-- [*What's the reason for not using C++17’s `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) – Software Engineering
+- [*What’s the reason for not using C++17’s `[[nodiscard]]` almost everywhere in new code?*](https://softwareengineering.stackexchange.com/questions/363169/whats-the-reason-for-not-using-c17s-nodiscard-almost-everywhere-in-new-c) – Software Engineering
 
 :anchor:
 
@@ -152,16 +160,6 @@
 > This attribute specifies that the relocation operation for an object is trivial: moving the object and then immediately destroying the original is equivalent to `memcpy`. This attribute is not yet in the standard.
 
 See [Relocation – Memory – Optimization and hardware](optimization_and_hardware.md#relocation).
-
----
-
-## Concepts
-
-See also [*Concepts* – The standard library, Boost and proposals](core_language.md#concepts).
-
-:movie_camera:
-
-H.Matthews. [*C++ concepts for developers*](https://www.youtube.com/watch?v=ut40iShzqEY) – NDC (2019)
 
 ---
 
@@ -258,9 +256,30 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Most vexing parse
 
+> There is an ambiguity in the grammar involving *expression-statements* and *declarations*: An *expression-statement* with a function-style explicit type conversion as its leftmost subexpression can be indistinguishable from a *declaration* where the first *declarator* starts with a `(`. In those cases the *statement* is a *declaration*.
+
 :link:
 
+- H.Sutter. [GotW #75: *Istream initialization?*](http://www.gotw.ca/gotw/006.htm)
 - D.Kalev. [*Overcoming the “most vexing parse” problem*](http://www.devx.com/cplus/10MinuteSolution/43032/0/page/2) (2009)
+
+:book:
+
+- Item 6: *Be alert for C++’s most vexing parse* – S.Meyers. *Effective STL: 50 Specific ways to improve your use of the standard template library* – [Addison-Wesley Professional](https://www.informit.com/store/effective-stl-50-specific-ways-to-improve-your-use-9780201749625) (2001)
+
+:anchor:
+
+- [[stmt.ambig] *Statements: Ambiguity resolution*](http://eel.is/c++draft/stmt.ambig) – C++ standard draft
+
+### Namespaces
+
+:link:
+
+- [*Why are anonymous namespaces not a sufficient replacement for namespace-static, according to the standards committee?*](https://stackoverflow.com/q/8460327/1625187)
+
+:anchor:
+
+- [*Namespaces*](https://en.cppreference.com/w/cpp/language/namespace) – C++ reference
 
 ### Storage class specifiers
 
@@ -287,17 +306,31 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
-- B.Filipek. [*New `new()`: The C++17’s alignment parameter for `operator new()`*](https://www.bfilipek.com/2019/08/newnew-align.html) (2019)
 - [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
 - [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) – C++ Core Guidelines
 - [*How do compilers use “over-allocation” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-overalloc) – C++ FAQ
 - [*How do compilers use an “associative array” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-assocarray) – C++ FAQ
-- [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/questions/53451770/treating-memory-returned-by-operator-newsizeoft-n-as-an-array) – Stack Overflow
-- [*Difference between `new` and `operator new`?*](https://stackoverflow.com/questions/1885849/difference-between-new-operator-and-operator-new) – Stack Overflow
+- [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/q/53451770/1625187) – Stack Overflow
+- [*Difference between `new` and `operator new`?*](https://stackoverflow.com/q/1885849) – Stack Overflow
+
+:book:
+
+- Sec. 19.2.5: *Allocation and deallocation* – B.Stroustrup. [*The C++ programming language*](http://www.stroustrup.com/4th.html) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Stroustrup-C-Programming-Language-The-4th-Edition/PGM326200.html) (2013)
+- Item 8: *Understand the different meanings of `new` and `delete`* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+- Ch. 10: *Memory management* – B.Stroustrup. [*The design and evolution of C++*](http://www.stroustrup.com/dne.html) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Stroustrup-Design-and-Evolution-of-C-The/PGM287667.html) (1994)
 
 :anchor:
 
 - [*Low level memory management*](https://en.cppreference.com/w/cpp/memory/new) – C++ reference
+
+### Alignment
+
+:link:
+
+- B.Filipek. [*New `new()`: The C++17’s alignment parameter for `operator new()`*](https://www.bfilipek.com/2019/08/newnew-align.html) (2019)
+
+:anchor:
+
 - C.Nelson. [*Dynamic memory allocation for over-aligned data*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html) – WG21/P0035R4 (2016)
 
 ---
@@ -332,6 +365,25 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - [*`operator` overloading*](https://en.cppreference.com/w/cpp/language/operators) – C++ reference
 - [*Canonical implementations*](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) – C++ reference
 
+#### Comparisons
+
+:link:
+
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+
+:anchor:
+
+- [*Comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison) – C++ reference
+- [*Default comparisons*](https://en.cppreference.com/w/cpp/language/default_comparisons) – C++ reference
+
+#### `sizeof`
+
+> The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array.
+
+:anchor:
+
+[*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
+
 ### Order of evaluation
 
 :link:
@@ -343,6 +395,10 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - [*Order of evaluation*](https://en.cppreference.com/w/cpp/language/eval_order) – C++ reference
 
 ### Type conversions
+
+:book:
+
+- Item 2: *Prefer C++-style casts* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 #### `dynamic_cast`
 
@@ -393,7 +449,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
 - [*Why doesn’t ADL find function templates?*](https://stackoverflow.com/questions/2953684/why-doesnt-adl-find-function-templates) – Stack Overflow
 
-:movie:
+:movie_camera:
 
 - J.Turner. [Episode 160: *Argument dependent lookup*](https://www.youtube.com/watch?v=agS-h_eaLj8) – C++ Weekly
 
@@ -451,36 +507,13 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
 - B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
-- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/2379), 9 (2017)
+- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
 - E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
+- A.Demin. [*The difference between `new T()` and `new T`* (in Russian)](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (2009)
 
 :anchor:
 
 - [*Initialization*](https://en.cppreference.com/w/cpp/language/initialization) – C++ reference
-
----
-
-## Standards
-
-### C++17
-
-:movie_camera:
-
-- A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) – CppCon (2016)
-
-:anchor:
-
-- [*C++17 compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp17) – C++ reference
-
-###	C++2a
-
-:movie_camera:
-
-- A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
-
-:anchor:
-
-- [*C++2a compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp2a) – C++ reference
 
 ---
 
@@ -582,6 +615,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - [*Class declaration*](https://en.cppreference.com/w/cpp/language/class) – C++ reference
 
+#### Inheritance
+
+:book:
+
+- Ch. 1: *Inheritance*, Ch. 2: *Multiple inheritance* – N.Llopis. *C++ for game programmers* – Charles River Media (2003)
+
 ### Function types
 
 :anchor:
@@ -629,7 +668,43 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 ### Opaque typedefs
 
-See [*Opaque typedefs* – Patterns, idioms, and design principles](patterns_and_idioms.md#opaque-typedefs).
+See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_idioms.md#opaque-typedef-whole-value).
+
+---
+
+## Standards
+
+### C++17
+
+:movie_camera:
+
+- A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) – CppCon (2016)
+
+:anchor:
+
+- [*C++17 compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp17) – C++ reference
+
+###	C++2a
+
+:movie_camera:
+
+- A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
+
+:anchor:
+
+- [*C++2a compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp2a) – C++ reference
+
+---
+
+## C vs C++
+
+:link:
+
+- D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
+- [*Size of character (`'a'`) in C/C++*](https://stackoverflow.com/questions/2172943/size-of-character-a-in-c-c)
+
+
+<!-- https://sites.google.com/site/grprakash2/confusion -->
 
 <!-- P1839R0 -->
 

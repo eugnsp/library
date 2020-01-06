@@ -33,6 +33,10 @@
 - A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) – Tech Talk (2014)
 - M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) – C++Now (2012)
 
+:page_facing_up:
+
+- B.Stroustrup. [*Parameterized types for C++*](https://www.usenix.org/legacy/publications/compsystems/1989/win_stroustrup.pdf) – Computing System **2**, 55 (1989)
+
 :book:
 
 - D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
@@ -44,27 +48,36 @@
 
 :link:
 
-- [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
+- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/), 13 (2019)
 
 :movie_camera:
 
 - S.Meyers. [*Type deduction and why you care*](https://www.youtube.com/watch?v=wQxj20X-tIU) – CppCon (2014)
 
+:anchor:
+
+- [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
+- M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html) – WG21/P0091R3 (2017)
+- M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0091r4.html) – WG21/P0091R4 (2017)
+
 ---
 
 ## Concepts
 
+See also [*Concepts* – The standard library, Boost and proposals](core_language.md#concepts).
+
 :link:
 
-* [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) – Stack Overflow
+- [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) – Stack Overflow
 
 :movie_camera:
 
-* B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) – CppCon (2018)
+- H.Matthews. [*C++ concepts for developers*](https://www.youtube.com/watch?v=ut40iShzqEY) – NDC (2019)
+- B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) – CppCon (2018)
 
 :anchor:
 
-* W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) – WG21/P0552R0 (2017)
+- W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) – WG21/P0552R0 (2017)
 
 ---
 
@@ -85,6 +98,16 @@
 ---
 
 ## Parsing and compilation
+
+:link:
+
+- [*C++ keyword of the day: `export`*](https://blogs.msmvps.com/vandooren/2008/09/24/c-keyword-of-the-day-export/) (2008)
+- [*Why do templates use the angle bracket syntax?*](https://stackoverflow.com/questions/43254027/why-do-c-templates-use-the-angle-bracket-syntax) – Stack Overflow
+- [*How do compilers eliminate the need to write white spaces between closing angle brackets, when using template classes since C++ 11 standard?*](https://www.quora.com/How-do-C++-compilers-eliminate-the-need-to-write-white-spaces-between-closing-angle-brackets-when-using-template-classes-since-C++-11-standard) – Quora
+
+:anchor:
+
+- D.Vandevoorde. [*Right angle brackets*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html) – WG21/N1757 (2005)
 
 ### Optimization
 
@@ -120,7 +143,7 @@
 :link:
 
 - [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) – Stack Overflow
-- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm) – Guru of the Week (2009)
+- H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm)
 
 :movie_camera:
 
@@ -161,7 +184,7 @@
 
 :link:
 
-* [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) – Stack Overflow
+- [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) – Stack Overflow
 
 ---
 

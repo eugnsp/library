@@ -2,7 +2,6 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Exceptions](#exceptions)
 - [Design principles](#design-principles)
 	- [Guidelines](#guidelines)
 	- [Class design](#class-design)
@@ -10,6 +9,8 @@
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 		- [SOLID principles](#solid-principles)
 	- [Interface design](#interface-design)
+	- [Error handling](#error-handling)
+		- [Exceptions](#exceptions)
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Adapter](#adapter)
 	- [Barton–Nackman trick](#bartonnackman-trick)
@@ -23,25 +24,11 @@
 		- [Execute-around proxy](#execute-around-proxy)
 		- [Execute-around pointer](#execute-around-pointer)
 		- [Execute-around function](#execute-around-function)
+	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
 	- [Strategy](#strategy)
 	- [Visitor](#visitor)
-
----
-
-## Exceptions
-
-:link:
-
-- H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
-- H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
-- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
-- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) – Stack Overflow
-
-:anchor:
-
-- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 
 ---
 
@@ -129,6 +116,39 @@
 :link:
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) – Stack Overflow
+- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/questions/270408/is-it-better-in-c-to-pass-by-value-or-pass-by-constant-reference) – Stack Overflow
+
+### Error handling
+
+:link:
+
+- J.M&uuml;ller. [*Exceptions vs expected: Let’s find a compromise*](https://foonathan.net/2017/12/exceptions-vs-expected/) (2017)
+- J.M&uuml;ller. [*How to handle errors in constructors without exceptions?*](https://foonathan.net/2017/01/exceptions-constructor/) (2017) <!-- which pattern is this? -->
+- V.Romeo. [*Why choose sum types over exceptions?*](https://vittorioromeo.info/index/blog/adts_over_exceptions.html) (2017)
+
+<!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) – C++ and Beyond (2012) -->
+
+:anchor:
+
+- L.Crowl. [*Handling disappointment in C++*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0157r0.html) – WG21/P0157R0 (2015)
+
+:anchor:
+
+- [*Error handling*](https://en.cppreference.com/w/cpp/error) – C++ reference
+
+#### Exceptions
+
+:link:
+
+- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/index.php/journals/2422) – [Overload **141**](https://accu.org/index.php/journals/c378/), 24 (2017)
+- H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
+- H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
+- H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) – Stack Overflow
+
+:anchor:
+
+- [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 
 ---
 
@@ -276,6 +296,12 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
+### In-place factory, typed in-place factory
+
+:link:
+
+- [*Boost.Optional: In-place factories*](https://www.boost.org/doc/libs/1_72_0/libs/optional/doc/html/boost_optional/tutorial/in_place_factories.html)
+
 ### Opaque typedef (whole value)
 
 > An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
@@ -336,3 +362,4 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 <!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
 <!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
+

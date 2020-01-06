@@ -5,12 +5,15 @@
 - [Finite elements method](#finite-elements-method)
 - [Fluid dynamics](#fluid-dynamics)
 - [Spacecrafts dynamics](#spacecrafts-dynamics)
-- [Interviews, historical talks, etc.](#interviews-historical-talks-etc)
+- [People](#people)
 	- [Howard Aiken](#howard-aiken)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Alexander Tomilin](#alexander-tomilin)
 	- [Linus Torvalds](#linus-torvalds)
+- [Programming languages](#programming-languages)
+	- [Algol](#algol)
+- [Blogs](#blogs)
 - [Journals](#journals)
 
 ---
@@ -39,7 +42,7 @@
 
 ---
 
-## Interviews, historical talks, etc.
+## People
 
 :link:
 
@@ -75,11 +78,24 @@
 
 :link:
 
+- [*Collected papers*](http://stepanovpapers.com/)
+- [*The short canon: A short list of materials for civilizing programmers*](https://psoberoi.github.io/stepanov-civilization/canon.html)
 - A.Stevens. [*An interview with Alex Stepanov*](http://stepanovpapers.com/drdobbs-interview.html) – Dr.Dobb’s Journal (1995)
+- G.L.Russo. [*An interview with Alex Stepanov*](http://www.stlport.org/resources/StepanovUSA.html)
 
 :movie_camera:
 
+- [*Programming conversations*](https://www.youtube.com/watch?v=k-meLQaYP5Y) – A9 (2014)
+- [*Efficient programming with components*](https://www.youtube.com/watch?v=aIHAEYyoTUc) – A9 (2013)
+- [*Elements of programming*](https://www.youtube.com/watch?v=Ih9gpJga4Vc) – Stanford (2010)
+- *Transformations and their orbits.* [Part I](https://www.youtube.com/watch?v=QmuMHtbO4ug), [Part II](https://www.youtube.com/watch?v=uCGifwlgAQg) (in Russian) – Yandex (2010)
+- *Greatest common measure: The last 2500 years.* [Part I](https://www.youtube.com/watch?v=NfGeVRebiio), [Part II](https://www.youtube.com/watch?v=zwucsB2EfXc) (in Russian) – Yandex (2010)
 - [*Alexander Stepanov introduces B.Stroustrup*](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
+
+:book:
+
+- A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) – Addison-Wesley (2009)
+- A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) – Addison-Wesley (2014)
 
 ### Alexander Tomilin
 
@@ -97,12 +113,41 @@
 :movie_camera:
 
 - W.Cardwell. [*A talk with Linus Torvalds*](https://www.youtube.com/watch?v=MShbP3OpASA) – Aalto Center for Entrepreneurship (2012)
-- [*Do you see any other language othen than C for OS development?*](https://www.youtube.com/watch?v=CYvJPra7Ebk)
+- [*Do you see any other language other than C for OS development?*](https://www.youtube.com/watch?v=CYvJPra7Ebk)
+
+---
+
+## Programming languages
+
+### Algol
+
+:link:
+
+- D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/), 20 (2018)
+
+---
+
+## Blogs
+
+- [Simon Brand](https://blog.tartanllama.xyz/)
+- [Eli Bendersky](http://eli.thegreenplace.net/)
+- [Jonathan Boccara](http://www.fluentcpp.com/)
+- [Bartlomiej Filipek](http://www.bfilipek.com/)
+- [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)
+- [KrzaQ](https://dev.krzaq.cc/)
+- [Arne Mertz](http://arne-mertz.de/)
+- [Jonathan Müller](http://foonathan.net/)
+- [Vittorio Romeo](https://vittorioromeo.info/)
+- [Filip Roséen](http://b.atch.se/)
+- [Adi Shavit](https://adishavit.github.io/#blog)
 
 ---
 
 ## Journals
 
-:link:
-
+- [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
 - [*Informatics and education* (in Russian)](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (1986–2013)
+
+<!-- ## Fun
+
+https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->

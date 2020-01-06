@@ -7,17 +7,23 @@
 - [Algorithms](#algorithms)
 	- [std::iota](#stdiota)
 	- [std::midpoint](#stdmidpoint)
+	- [std::*sort](#stdsort)
 - [Concepts](#concepts)
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
 	- [Sequence containers](#sequence-containers)
 		- [std::array](#stdarray)
 		- [std::deque](#stddeque)
+		- [std::list](#stdlist)
 		- [std::vector](#stdvector)
 		- [std::vector&lt;bool&gt;](#stdvectorltboolgt)
 	- [Unordered containers](#unordered-containers)
 	- [Transparent comparators](#transparent-comparators)
+- [Exceptions](#exceptions)
 - [Input/output](#inputoutput)
+	- [Input/output manipulators](#inputoutput-manipulators)
+		- [std::endl](#stdendl)
+	- [Output formatting](#output-formatting)
 - [Iterators](#iterators)
 - [Memory](#memory)
 	- [Allocators](#allocators)
@@ -40,12 +46,14 @@
 - [Type support](#type-support)
 	- [Fixed-width integer types](#fixed-width-integer-types)
 	- [Type traits](#type-traits)
-	- [std::is_trivial*](#stdis_trivial)
+		- [std::is_base_of](#stdis_base_of)
+		- [std::is_trivial*](#stdis_trivial)
 - [Utilities](#utilities)
 	- [Function objects](#function-objects)
 	- [std::initializer_list](#stdinitializer_list)
 	- [Pairs and tuples](#pairs-and-tuples)
 	- [Sum types](#sum-types)
+		- [std::optional](#stdoptional)
 		- [std::variant](#stdvariant)
 		- [(std::)expected](#stdexpected)
 	- [std::launder](#stdlaunder)
@@ -101,11 +109,17 @@
 
 - S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0811r3.html) – WG21/P0811R3 (2019)
 
+### `std::*sort`
+
+:link:
+
+- A.Demin. [*How sorting is implemented in the standard library* (in Russian)](http://demin.ws/blog/russian/2009/06/18/sort-implementation-in-stl/) (2009)
+
 ---
 
 ## Concepts
 
-See also [*Concepts* – Core language](std_library.md#concepts).
+See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
@@ -145,6 +159,19 @@ See also [*Concepts* – Core language](std_library.md#concepts).
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl) – Stack Overflow
 
+#### `std::list`
+
+:link:
+
+- H.Hinnant. [*On `std::list::size`*](https://howardhinnant.github.io/On_list_size.html)
+- [*Is `list::size()` really `O(n)`?*](https://stackoverflow.com/questions/228908/is-listsize-really-on) – Stack Overflow
+- [*Why is `std::list` bigger on C++11?*](https://stackoverflow.com/questions/10065055/why-is-stdlist-bigger-on-c11) – Stack Overflow
+
+:anchor:
+
+- [*`std::list`*](https://en.cppreference.com/w/cpp/container/list) – C++ reference
+- [*`std::list`*](https://web.archive.org/web/20171122174457/http://www.sgi.com/tech/stl/List.html) – SGI STL
+
 #### `std::vector`
 
 :link:
@@ -155,7 +182,7 @@ See also [*Concepts* – Core language](std_library.md#concepts).
 
 :link:
 
-- H.E.Hinnant. [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) (2012)
+- H.Hinnant. [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) (2012)
 - [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/questions/17794569/why-is-vectorbool-not-a-stl-container) – Stack Overflow
 
 ### Unordered containers
@@ -191,15 +218,49 @@ See also [*Concepts* – Core language](std_library.md#concepts).
 
 ---
 
+## Exceptions
+
+See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+
+---
+
 ## Input/output
 
 :link:
 
-* [`tellg()` function give wrong size of file?](https://stackoverflow.com/questions/22984956/tellg-function-give-wrong-size-of-file) – Stack Overflow
+- [`tellg()` function give wrong size of file?](https://stackoverflow.com/questions/22984956/tellg-function-give-wrong-size-of-file) – Stack Overflow
 
 :anchor:
 
-* [*Input/output library*](https://en.cppreference.com/w/cpp/io) – C++ reference
+- [*Input/output via `<iostream>` and `<cstdio>`*](https://isocpp.org/wiki/faq/input-output) – C++ FAQ
+- [*Input/output library*](https://en.cppreference.com/w/cpp/io) – C++ reference
+
+### Input/output manipulators
+
+#### `std::endl`
+
+:link:
+
+- C.Sharpe. [*Don’t use `std::endl`*](https://accu.org/index.php/journals/2619) – [Overload **149**](https://accu.org/index.php/journals/c395/), 34 (2019)
+- D.K&uuml;hl. [*Stop excessive use of `std::endl`*](https://kuhllib.com/2012/01/14/stop-excessive-use-of-stdendl/) (2012)
+
+:anchor:
+
+- [*std::endl*](https://en.cppreference.com/w/cpp/io/manip/endl) – C++ reference
+
+### Output formatting
+
+:link:
+
+- S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/index.php/journals/2486) – [Overload **143**](https://accu.org/index.php/journals/c384/), 16 (2018)
+- D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
+- [{fmt}: a modern formatting library](https://github.com/fmtlib/fmt)
+- [*`std::printf` vs. `std::cout`*](https://stackoverflow.com/questions/2872543/printf-vs-cout-in-c) – Stack Overflow
+- [*Is `std::cout` synchronized/thread-safe?*](https://stackoverflow.com/questions/6374264/is-cout-synchronized-thread-safe) – Stack Overflow
+
+:anchor:
+
+- V.Zverovich, L.Howes. [*Text formatting*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0645r1.html) – WG21/P0645R1
 
 ---
 
@@ -291,7 +352,6 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :link:
 
 - [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
-- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
 - H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
 - Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 - [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one) – Stack Overflow
@@ -301,6 +361,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
 - M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
+
+:anchor:
+
+- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
 
 ### `std::unique_ptr`
 
@@ -505,6 +569,32 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 ### Sum types
 
+#### `std::optional`
+
+> The class template `std::optional<T>` is a type that may or may not store a value of type `T` in its storage space. It is recommended to be used in situations where there is exactly one and clear reason for having no value of type `T`, and where the lack of value is as natural as having any regular value of `T`. It is not recommended to use optional to indicate that we were not able to compute a value because of a failure.
+
+:link:
+
+- B.Filipek. [*Using C++17 `std::optional`*](https://www.bfilipek.com/2018/05/using-optional.html) (2018)
+- B.Filipek. [*Error handling and `std::optional`*](https://www.bfilipek.com/2018/05/errors-and-optional.html) (2018)
+- B.Filipek. [*In-place construction for `std::any`, `std::variant` and `std::optional`*](https://www.bfilipek.com/2018/07/in-place-cpp17.html) (2018)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/), 21 (2018)
+- S.Brand. [*Functional exceptionless error-handling with optional and expected*](https://blog.tartanllama.xyz/optional-expected/) (2017)
+- S.Brand. [*Implementation with functional-style extensions and reference support*](https://github.com/TartanLlama/optional)
+- A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
+- A.Krzemieński. [*Efficient optional values*](https://akrzemi1.wordpress.com/2015/07/15/efficient-optional-values/) (2015)
+- [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/questions/44856701/what-to-use-stdoptional-or-stdunique-ptr?rq=1) – Stack Overflow
+- [*Implementing `operator<=>` for `optional<T>`*](https://stackoverflow.com/questions/47315539/implementing-operator-for-optionalt) – Stack Overflow
+
+:anchor:
+
+- [*`std::optional`*](https://en.cppreference.com/w/cpp/utility/optional) – C++ reference
+- [*Boost.Optional: The optional wrapper library*](https://www.boost.org/doc/libs/release/libs/optional/doc/html/index.html)
+- F.Cacciola, A.Krzemieński. [*A proposal to add a utility class to represent optional objects*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3793.html) – WG21/N3793 (2013)
+- [* libstdc++’s implementation*](https://github.com/gcc-mirror/gcc/blob/master/libstdc%2B%2B-v3/include/std/optional)
+- A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
+
 #### `std::variant`
 
 :movie_camera:
@@ -521,11 +611,17 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :link:
 
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/), 21 (2018)
 - S.Brand. [C++11/14/17 `std::expected` with functional-style extensions](https://github.com/TartanLlama/expected)
+
+:movie_camera:
+
+- N.Douglas. [*Introduction to proposed `std::expected`*](https://www.youtube.com/watch?v=JfMBLx7qE0I) – Meeting C++ (2017)
 
 :anchor:
 
-- V.Botet, J.F.Bastien. [*`std::expected`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) – WG21/P0323R7 (2018)
+- V.Botet, J.Bastien. *`std::expected`*. [R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) (2017), [R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0323r4.html) (2018) – WG21/P0323
+- N.Douglas. [*Concerns about `expected<T, E>` from the Boost.Outcome peer review*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0762r0.pdf) – WG21/P0762R0 (2017)
 - V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) – WG21/N4109 (2014)
 
 ### `std::launder`
@@ -550,6 +646,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - [*Why does the C++ standard algorithm `count` return a `difference_type` instead of `size_t`?*](https://stackoverflow.com/questions/7505083/why-does-the-c-standard-algorithm-count-return-a-difference-type-instead-of) – Stack Overflow
 - [*Why standard container iterators don’t overload `->*`?*](https://stackoverflow.com/questions/48626039/why-standard-container-iterators-dont-overload) – Stack Overflow
 - [*Why does `numeric_limits` work on types it does not know?*](https://stackoverflow.com/questions/47520847/c-why-does-numeric-limits-work-on-types-it-does-not-know) – Stack Overflow
+- [*Why is swap called by `std::sort` only if my container has more than 32 elements?*](https://stackoverflow.com/questions/59473178/why-is-swap-called-by-stdsort-only-if-my-container-has-more-than-32-elements/59473324#59473324) – Stack Overflow
 
 :movie_camera:
 
@@ -582,4 +679,4 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 <!-- move into Templates
 - [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/questions/41708491/making-stdget-play-nice-with-sfinae) – Stack Overflow -->
 
-<!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) – C++ and Beyond (2012) -->
+
