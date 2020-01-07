@@ -20,15 +20,17 @@
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Double-checked locking](#double-checked-locking)
 	- [Execute-around](#execute-around)
-		- [Execute-around object](#execute-around-object)
+		- [Execute-around object (RAII)](#execute-around-object-raii)
 		- [Execute-around proxy](#execute-around-proxy)
 		- [Execute-around pointer](#execute-around-pointer)
 		- [Execute-around function](#execute-around-function)
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
+	- [Infinite loop](#infinite-loop)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
 	- [Strategy](#strategy)
 	- [Visitor](#visitor)
+- [Antipatterns](#antipatterns)
 
 ---
 
@@ -36,13 +38,12 @@
 
 :link:
 
-- [*What is a magic number, and why is it bad?*](https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad) – Stack Overflow
-- [*Are global variables bad?*](https://stackoverflow.com/questions/484635/are-global-variables-bad) – Stack Overflow
+- [*What is a magic number, and why is it bad?*](https://stackoverflow.com/q/47882) – Stack Overflow
+- [*Are global variables bad?*](https://stackoverflow.com/q/484635) – Stack Overflow
 
 :movie_camera:
 
 - F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) – CppCon (2018)
-- L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
 
 ### Guidelines
 
@@ -115,8 +116,8 @@
 
 :link:
 
-- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) – Stack Overflow
-- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/questions/270408/is-it-better-in-c-to-pass-by-value-or-pass-by-constant-reference) – Stack Overflow
+- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
 
 ### Error handling
 
@@ -144,7 +145,7 @@
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
-- [*When should I really use `noexcept`?*](https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept) – Stack Overflow
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
 
 :anchor:
 
@@ -220,7 +221,7 @@
 
 :link:
 
-- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom) – Stack Overflow
+- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
 
 ### Curiously recurring template
 
@@ -239,7 +240,7 @@
 
 - [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
-- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/questions/4173254/what-is-the-curiously-recurring-template-pattern-crtp) – Stack Overflow
+- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
 
 ### Double-checked locking
 
@@ -259,19 +260,19 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) – EuroPLoP (2000)
 
-#### Execute-around object
+#### Execute-around object (RAII)
 
-> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII).
-
-:memo:
-
-- An example of this idiom is provided by smart pointers, e.g. by `std::unique_ptr`. See [The standard library – Smart pointers](std_library.md#smart-pointers).
+> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII). An example of this idiom is provided by standard library [smart pointers](std_library.md#smart-pointers), e.g. by `std::unique_ptr`.
 
 :link:
 
 - [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
+- P.Grenyer. [*RAII is not garbage*](https://accu.org/index.php/journals/1945) – [Overload **106**](https://accu.org/index.php/journals/c303/), 14 (2011)
+- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
+
+:anchor:
+
 - [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
-- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/questions/2321511/what-is-meant-by-resource-acquisition-is-initialization-raii) – Stack Overflow
 
 <!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
 
@@ -301,6 +302,19 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Boost.Optional: In-place factories*](https://www.boost.org/doc/libs/1_72_0/libs/optional/doc/html/boost_optional/tutorial/in_place_factories.html)
+
+### Infinite loop
+
+> ```cpp
+> for (;;) { ... }
+> while (true) { ... }
+> do { ... } while (true);
+> ```
+
+:link:
+
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/), 21 (2016)
+- [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
 
 ### Opaque typedef (whole value)
 
@@ -341,7 +355,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 <!-- https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern -->
 
-- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/questions/3220009/is-this-key-oriented-access-protection-pattern-a-known-idiom) – Stack Overflow
+- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
 
 ### Strategy
 
@@ -354,7 +368,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
-- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/questions/255214/when-should-i-use-the-visitor-design-pattern) – Stack Overflow
+- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/q/255214) – Stack Overflow
 
 :movie_camera:
 
@@ -362,4 +376,16 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 <!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
 <!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
+
+---
+
+## Antipatterns
+
+:link:
+
+- J.Wakely. [*C++ antipatterns*](https://accu.org/index.php/journals/2271) – [Overload **134**](https://accu.org/index.php/journals/c364/), 14 (2016)
+
+:movie_camera:
+
+- L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
 

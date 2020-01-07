@@ -11,13 +11,17 @@
 
 ## Complexity analysis
 
+- S.Ignatchenko. [*Some big-Os are bigger than others*](https://accu.org/index.php/journals/2268) – [Overload **134**](https://accu.org/index.php/journals/c364/), 4 (2016)
+
 ### Amortized analysis
 
 :link:
 
-* [Lecture 21: *Amortized analysis*](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec21-amortized/lec21.html) – Cornell University CS 3110: [Data structures and functional programming](https://www.cs.cornell.edu/courses/cs3110/2012sp/index.php) (2012)
-* [Amortized complexity in layman’s terms?](https://stackoverflow.com/questions/15079327/amortized-complexity-in-laymans-terms) – Stack Overflow
-* [Difference between average case and amortized analysis](https://stackoverflow.com/questions/7333376/difference-between-average-case-and-amortized-analysis) – Stack Overflow
+- [Lecture 21: *Amortized analysis*](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec21-amortized/lec21.html) – Cornell University CS 3110: [Data structures and functional programming](https://www.cs.cornell.edu/courses/cs3110/2012sp/index.php) (2012)
+- [Amortized complexity in layman’s terms?](https://stackoverflow.com/q/15079327) – Stack Overflow
+- [Difference between average case and amortized analysis](https://stackoverflow.com/q/7333376) – Stack Overflow
+
+---
 
 ## Loop invariants
 
@@ -29,7 +33,7 @@
 
 :book:
 
-- Col.4: *Writing correct programs* – J.Bentley, [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+- Col.4: *Writing correct programs* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 
 :page_facing_up:
 

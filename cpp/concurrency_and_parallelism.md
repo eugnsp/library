@@ -71,7 +71,7 @@
 :link:
 
 - A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
-- [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/questions/40223599/what-is-the-difference-between-stdshared-ptr-and-stdexperimentalatomic-sha) – Stack Overflow
+- [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/q/40223599) – Stack Overflow
 
 #### `std::condition_variable`
 
@@ -92,13 +92,13 @@
 :link:
 
 - [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) – C++ reference
-- [*What is `std::promise`?*](https://stackoverflow.com/questions/11004273/what-is-stdpromise) – Stack Overflow
+- [*What is `std::promise`?*](https://stackoverflow.com/q/11004273) – Stack Overflow
 
 ### Data races and race conditions
 
 :link:
 
-- [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/questions/11276259/are-data-races-and-race-condition-actually-the-same-thing-in-context-of-conc) – Stack Overflow
+- [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow
 
 ### Lock-based
 
@@ -110,8 +110,8 @@
 
 :link:
 
-- [*When should one use a spinlock instead of mutex?*](https://stackoverflow.com/questions/5869825/when-should-one-use-a-spinlock-instead-of-mutex) – Stack Overflow
-- [*Spinlock versus semaphore*](https://stackoverflow.com/questions/195853/spinlock-versus-semaphore) – Stack Overflow
+- [*When should one use a spinlock instead of mutex?*](https://stackoverflow.com/q/5869825) – Stack Overflow
+- [*Spinlock versus semaphore*](https://stackoverflow.com/q/195853) – Stack Overflow
 
 ### Lock-free
 
@@ -151,7 +151,7 @@
 
 :link:
 
-- [*C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?*](https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g?rq=1) – Stack Overflow
+- [*C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?*](https://stackoverflow.com/q/6319146) – Stack Overflow
 
 :anchor:
 

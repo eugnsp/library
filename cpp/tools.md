@@ -67,8 +67,8 @@
 :link:
 
 - M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
-- [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/questions/49481217/linux-kernels-is-constexpr-macro) – Stack Overflow
-- [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/questions/1936719/what-are-the-gcc-predefined-macros-for-the-compilers-version-number) – Stack Overflow
+- [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/q/49481217) – Stack Overflow
+- [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/q/1936719) – Stack Overflow
 
 :sound:
 
@@ -87,14 +87,14 @@
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) – ACCU (2019)
 - G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) – CppCon (2018)
 - [*Unusual memory bit patterns*](https://www.softwareverify.com/memory-bit-patterns.php)
-- [*When and why will an OS initialise memory to `0xCD`, `0xDD`, etc. on `malloc`/`free`/`new`/`delete`?*](https://stackoverflow.com/questions/370195/when-and-why-will-an-os-initialise-memory-to-0xcd-0xdd-etc-on-malloc-free-new) – Stack Overflow
+- [*When and why will an OS initialise memory to `0xCD`, `0xDD`, etc. on `malloc`/`free`/`new`/`delete`?*](https://stackoverflow.com/q/370195) – Stack Overflow
 
 ### GDB
 
 :link:
 
 - [*Debugging with GDB*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html)
-- [*Identify source file name for a symbol in gdb debugger*](https://stackoverflow.com/questions/58826430/identify-source-file-name-for-a-symbol-in-gdb-debugger) – Stack Overflow
+- [*Identify source file name for a symbol in gdb debugger*](https://stackoverflow.com/q/58826430) – Stack Overflow
 
 #### Pretty printers
 
@@ -127,7 +127,7 @@
 
 :link:
 
-- [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore) – Stack Overflow
+- [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/q/1274057) – Stack Overflow
 
 :movie_camera:
 

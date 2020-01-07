@@ -23,7 +23,7 @@
 
 :link:
 
-- [*`std::next_permutation` implementation explanation* – Stack Overflow](https://stackoverflow.com/questions/11483060/stdnext-permutation-implementation-explanation)
+- [*`std::next_permutation` implementation explanation* – Stack Overflow](https://stackoverflow.com/q/11483060)
 
 :book:
 
@@ -36,7 +36,7 @@
 :link:
 
 - [*Heap’s algorithm*](https://en.wikipedia.org/wiki/Heap%27s_algorithm) – Wikipedia
-- [*Heap algorithm for permutations*](https://stackoverflow.com/questions/31425531/heap-algorithm-for-permutations) – Stack Overflow
+- [*Heap algorithm for permutations*](https://stackoverflow.com/q/31425531) – Stack Overflow
 
 ### Random permutations
 

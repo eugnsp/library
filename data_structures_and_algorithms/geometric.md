@@ -14,8 +14,8 @@
 
 :link:
 
-- [*Confusion on Delaunay triangulation and largest inscribed circle*](https://stackoverflow.com/questions/27872964/confusion-on-delaunay-triangulation-and-largest-inscribed-circle) – Stack Overflow
-- [*Largest circle inside a non-convex polygon*](https://stackoverflow.com/questions/4279478/largest-circle-inside-a-non-convex-polygon) – Stack Overflow
+- [*Confusion on Delaunay triangulation and largest inscribed circle*](https://stackoverflow.com/q/27872964) – Stack Overflow
+- [*Largest circle inside a non-convex polygon*](https://stackoverflow.com/q/4279478) – Stack Overflow
 
 ---
 

@@ -68,7 +68,9 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 
 :link:
 
-- [*How will concepts lite interact with universal references?*](https://stackoverflow.com/questions/29182279/how-will-concepts-lite-interact-with-universal-references) – Stack Overflow
+- A.Sutton. [*Introducing concepts*](https://accu.org/index.php/journals/2157) – [Overload **129**](https://accu.org/index.php/journals/c354/), 4 (2015)
+- A.Sutton. [*Defining concepts*](https://accu.org/index.php/journals/2198) – [Overload **131**](https://accu.org/index.php/journals/c358/), 4 (2016)
+- [*How will concepts lite interact with universal references?*](https://stackoverflow.com/q/29182279) – Stack Overflow
 
 :movie_camera:
 
@@ -85,7 +87,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 
 :link:
 
-- [*Necessity of forward-declaring template functions*](https://stackoverflow.com/questions/7255281/necessity-of-forward-declaring-template-functions) – Stack Overflow
+- [*Necessity of forward-declaring template functions*](https://stackoverflow.com/q/7255281) – Stack Overflow
 - H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
 
 ### Friend function templates
@@ -93,7 +95,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 :link:
 
 - [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) – C++ FAQ
-- [*Correct syntax for friend template function*](https://stackoverflow.com/questions/42692050/correct-syntax-for-friend-template-function) – Stack Overflow
+- [*Correct syntax for friend template function*](https://stackoverflow.com/q/42692050) – Stack Overflow
 
 ---
 
@@ -102,7 +104,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 :link:
 
 - [*C++ keyword of the day: `export`*](https://blogs.msmvps.com/vandooren/2008/09/24/c-keyword-of-the-day-export/) (2008)
-- [*Why do templates use the angle bracket syntax?*](https://stackoverflow.com/questions/43254027/why-do-c-templates-use-the-angle-bracket-syntax) – Stack Overflow
+- [*Why do templates use the angle bracket syntax?*](https://stackoverflow.com/q/43254027) – Stack Overflow
 - [*How do compilers eliminate the need to write white spaces between closing angle brackets, when using template classes since C++ 11 standard?*](https://www.quora.com/How-do-C++-compilers-eliminate-the-need-to-write-white-spaces-between-closing-angle-brackets-when-using-template-classes-since-C++-11-standard) – Quora
 
 :anchor:
@@ -129,7 +131,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 - T.Gani et al. [*Two-phase name lookup support comes to MSVC*](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/) – Microsoft C++ team blog (2017)
 - [*Two-phase lookup in C++ templates*](https://www.gonwan.com/2014/12/12/two-phase-lookup-in-c-templates/) (2014)
 - E.Bendersky. [*Dependent name lookup for C++ templates*](https://eli.thegreenplace.net/2012/02/06/dependent-name-lookup-for-c-templates) (2012)
-- [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/questions/4643074/why-do-i-have-to-access-template-base-class-members-through-the-this-pointer) – Stack Overflow
+- [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/q/4643074) – Stack Overflow
 
 ### Keywords `template` and `typename` as disambiguators
 
@@ -142,7 +144,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 
 :link:
 
-- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords) – Stack Overflow
+- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/q/610245) – Stack Overflow
 - H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm)
 
 :movie_camera:
@@ -170,9 +172,9 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 :link:
 
 - [*Substitution failure is not an error*](http://blog.olivierlanglois.net/index.php/2007/09/01/what_is_the_c_sfinae_principle) – Wikipedia
-- [*What is “Expression SFINAE”?*](https://stackoverflow.com/questions/12654067/what-is-expression-sfinae) – Stack Overflow
-- [*How does `std::void_t` work*](https://stackoverflow.com/questions/27687389/how-does-void-t-work) – Stack Overflow
-- [*SFINAE examples?*](https://stackoverflow.com/questions/982808/c-sfinae-examples) – Stack Overflow
+- [*What is “Expression SFINAE”?*](https://stackoverflow.com/q/12654067) – Stack Overflow
+- [*How does `std::void_t` work*](https://stackoverflow.com/q/27687389) – Stack Overflow
+- [*SFINAE examples?*](https://stackoverflow.com/q/982808) – Stack Overflow
 
 :anchor:
 
@@ -184,7 +186,7 @@ See also [*Concepts* – The standard library, Boost and proposals](core_languag
 
 :link:
 
-- [*Partial specialization of template class copy constructor*](https://stackoverflow.com/questions/16575257/partial-specialization-of-template-class-copy-constructor) – Stack Overflow
+- [*Partial specialization of template class copy constructor*](https://stackoverflow.com/q/16575257) – Stack Overflow
 
 ---
 

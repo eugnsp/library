@@ -52,9 +52,9 @@
 
 - [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
 - D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
-- [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/questions/17949796/how-many-unique-values-are-there-between-0-and-1-of-a-standard-float) – Stack Overflow
-- [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/questions/19800415/why-does-ieee-754-reserve-so-many-nan-values) – Stack Overflow
-- [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/questions/12558780/how-many-normalized-numbers-can-be-represented-using-ieee-754-single-precision) – Stack Overflow
+- [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/q/17949796) – Stack Overflow
+- [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/q/19800415) – Stack Overflow
+- [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/q/12558780) – Stack Overflow
 
 :page_facing_up:
 
@@ -135,7 +135,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 - [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) – Wikipedia
-- [*Kahan summation*](https://stackoverflow.com/questions/4940072/kahan-summation) – Stack Overflow
+- [*Kahan summation*](https://stackoverflow.com/q/4940072) – Stack Overflow
 
 ---
 

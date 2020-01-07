@@ -21,6 +21,7 @@
 	- [inline](#inline)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
+	- [Namespaces](#namespaces)
 	- [Storage class specifiers](#storage-class-specifiers)
 	- [Structured binding](#structured-binding)
 - [Dynamic memory](#dynamic-memory)
@@ -68,7 +69,7 @@
 
 :link:
 
-- [*The definitive C++ book guide and list*](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list) – Stack Overflow
+- [*The definitive C++ book guide and list*](https://stackoverflow.com/q/388242) – Stack Overflow
 
 :anchor:
 
@@ -94,7 +95,7 @@
 :anchor:
 
 - [*The ABI generic analysis and instrumentation library*](https://sourceware.org/libabigail/)
-- L.Dionne. [*Controlling the instantiation of vtables and RTTI*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1263r0.pdf) – WG21/P1263R0 (2018)
+- L.Dionne. *Controlling the instantiation of vtables and RTTI.* [P1263R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1263r0.pdf) (2018)
 
 ### Itanium C++ ABI
 
@@ -108,7 +109,7 @@
 
 :link:
 
-- [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/questions/15921372/c-virtual-table-layout-of-mimultiple-inheritance) – Stack Overflow
+- [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/q/15921372) – Stack Overflow
 
 :book:
 
@@ -128,7 +129,7 @@
 
 :link:
 
-- [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/questions/51797959/how-to-use-c20s-likely-unlikely-attribute-in-if-else-statement) – Stack Overflow
+- [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/q/51797959) – Stack Overflow
 
 :anchor:
 
@@ -153,7 +154,7 @@
 
 :anchor:
 
-- N.Josuttis. [*`[[nodiscard]]` in the library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) – WG21/P0600R0 (2017)
+- N.Josuttis. *`[[nodiscard]]` in the library.* [P0600R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) (2017)
 
 ### `[[trivially_relocatable]]`
 
@@ -174,7 +175,7 @@ See [Relocation – Memory – Optimization and hardware](optimization_and_hardw
 :link:
 
 - E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
-- [*Structure padding and packing*](https://stackoverflow.com/questions/4306186/structure-padding-and-packing) – Stack Overflow
+- [*Structure padding and packing*](https://stackoverflow.com/q/4306186) – Stack Overflow
 
 :anchor:
 
@@ -192,8 +193,8 @@ See [Relocation – Memory – Optimization and hardware](optimization_and_hardw
 - [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) – C++ FAQ
 - H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm)
 - S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
-- [*Use of `const` for function parameters*](https://stackoverflow.com/questions/117293/use-of-const-for-function-parameters) – Stack Overflow
-- [*C++ `const` keyword – use liberally?*](https://stackoverflow.com/questions/1554750/c-const-keyword-use-liberally) – Stack Overflow
+- [*Use of `const` for function parameters*](https://stackoverflow.com/q/117293) – Stack Overflow
+- [*C++ `const` keyword – use liberally?*](https://stackoverflow.com/q/1554750) – Stack Overflow
 
 :movie_camera:
 
@@ -207,7 +208,8 @@ See [Relocation – Memory – Optimization and hardware](optimization_and_hardw
 
 :link:
 
-- [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/questions/54124899/why-is-a-constexpr-function-on-a-reference-not-constexpr) – Stack Overflow
+- [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/q/54124899) – Stack Overflow
+- [*Why do we need to mark functions as `constexpr`?*](https://stackoverflow.com/q/14472359) – Stack Overflow
 
 :movie_camera:
 
@@ -239,8 +241,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
-- [*One Definition Rule – multiple definition of `inline` functions*](https://stackoverflow.com/questions/39652884/one-definition-rule-multiple-definition-of-inline-functions) – Stack Overflow
-- [*Does it make any sense to use `inline` keyword with templates?*](https://stackoverflow.com/questions/10535667/does-it-make-any-sense-to-use-inline-keyword-with-templates) – Stack Overflow
+- [*One Definition Rule – multiple definition of `inline` functions*](https://stackoverflow.com/q/39652884) – Stack Overflow
+- [*Does it make any sense to use `inline` keyword with templates?*](https://stackoverflow.com/q/10535667) – Stack Overflow
 
 :anchor:
 
@@ -251,8 +253,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 :link:
 
 - [*Flexible array member*](https://en.wikipedia.org/wiki/Flexible_array_member) – Wikipedia
-- [*Are flexible array members valid in C++?*](https://stackoverflow.com/questions/4412749/are-flexible-array-members-valid-in-c) – Stack Overflow
-- [*Is using flexible array members in C bad practice?*](https://stackoverflow.com/questions/246977/is-using-flexible-array-members-in-c-bad-practice) – Stack Overflow
+- [*Are flexible array members valid in C++?*](https://stackoverflow.com/q/4412749) – Stack Overflow
+- [*Is using flexible array members in C bad practice?*](https://stackoverflow.com/q/246977) – Stack Overflow
 
 ### Most vexing parse
 
@@ -275,7 +277,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
-- [*Why are anonymous namespaces not a sufficient replacement for namespace-static, according to the standards committee?*](https://stackoverflow.com/q/8460327/1625187)
+- [*Wherefore inline unnamed namespaces?*](https://stackoverflow.com/q/20208591) – Stack Overflow
 
 :anchor:
 
@@ -285,7 +287,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
-- [*What is external linkage and internal linkage?*](https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage) – Stack Overflow
+- [*What is external linkage and internal linkage?*](https://stackoverflow.com/q/1358400) – Stack Overflow
 - P.Goldsborough. [*Internal and external linkage in C++*](http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/) (2016)
 
 :anchor:
@@ -297,8 +299,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Structured binding declaration*](https://en.cppreference.com/w/cpp/language/structured_binding) – C++ reference
-- B.Revzin, J.Wakely. [*Structured bindings can introduce a pack*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1061r1.html) – WG21/P1061R1 (2019)
-- N.Lesser. [*Extending structured bindings to be more like variable declarations*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html) – WG21/P1091R3 (2019)
+- B.Revzin, J.Wakely. *Structured bindings can introduce a pack.* [P1061R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1061r1.html) (2019)
+- N.Lesser. *Extending structured bindings to be more like variable declarations.* [P1091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html) (2019)
 
 ---
 
@@ -331,7 +333,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :anchor:
 
-- C.Nelson. [*Dynamic memory allocation for over-aligned data*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html) – WG21/P0035R4 (2016)
+- C.Nelson. *Dynamic memory allocation for over-aligned data.* [P0035R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html) (2016)
 
 ---
 
@@ -348,7 +350,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :link:
 
 - R.Meyers. [*The new C: Compound literals*](https://www.drdobbs.com/the-new-c-compound-literals/184401404) – Dr.Dobb’s Journal (2001)
-- [*Are compound literals standard C++?*](https://stackoverflow.com/questions/28116467/are-compound-literals-standard-c) – Stack Overflow
+- [*Are compound literals standard C++?*](https://stackoverflow.com/q/28116467) – Stack Overflow
 
 :anchor:
 
@@ -358,7 +360,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/questions/4421706/what-are-the-basic-rules-and-idioms-for-operator-overloading) – Stack Overflow
+- [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/q/4421706) – Stack Overflow
 
 :anchor:
 
@@ -388,7 +390,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*Undefined behavior and sequence points*](https://stackoverflow.com/questions/4176328/undefined-behavior-and-sequence-points) – Stack Overflow
+- [*Undefined behavior and sequence points*](https://stackoverflow.com/q/4176328) – Stack Overflow
 
 :anchor:
 
@@ -422,10 +424,10 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - L.Torvalds. [*... What’s the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) – Linux kernel mailing list (2018)
 - S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
 - M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
-- [*What is the strict aliasing rule?*](https://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule) – Stack Overflow
-- [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/questions/2906365/gcc-strict-aliasing-and-casting-through-a-union) – Stack Overflow
-- [*Can I safely convert struct of floats into float array in C++?*](https://stackoverflow.com/questions/45898184/can-i-safely-convert-struct-of-floats-into-float-array-in-c) – Stack Overflow
-- [*Reinterpret struct with members of the same type as an array in a standard compliant way*](https://stackoverflow.com/questions/41419164/reinterpret-struct-with-members-of-the-same-type-as-an-array-in-a-standard-compl) – Stack Overflow
+- [*What is the strict aliasing rule?*](https://stackoverflow.com/q/98650) – Stack Overflow
+- [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/q/2906365) – Stack Overflow
+- [*Can I safely convert struct of floats into float array in C++?*](https://stackoverflow.com/q/45898184) – Stack Overflow
+- [*Reinterpret struct with members of the same type as an array in a standard compliant way*](https://stackoverflow.com/q/41419164) – Stack Overflow
 
 :movie_camera:
 
@@ -443,11 +445,11 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*What is “argument-dependent lookup” (aka ADL, or “Koenig lookup”)?*](https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup) – Stack Overflow
+- [*What is “argument-dependent lookup” (aka ADL, or “Koenig lookup”)?*](https://stackoverflow.com/q/8111677) – Stack Overflow
 - A.O’Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
 - A.O’Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
 - A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
-- [*Why doesn’t ADL find function templates?*](https://stackoverflow.com/questions/2953684/why-doesnt-adl-find-function-templates) – Stack Overflow
+- [*Why doesn’t ADL find function templates?*](https://stackoverflow.com/q/2953684) – Stack Overflow
 
 :movie_camera:
 
@@ -456,7 +458,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :anchor:
 
 - [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) – C++ reference
-- J.Spicer. [*ADL and function templates that are not visible*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) – WG21/P0846R0 (2017)
+- J.Spicer. *ADL and function templates that are not visible.* [P0846R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) (2017)
 
 ### Function wrappers
 
@@ -464,8 +466,8 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*Move-only version of `std::function`*](https://stackoverflow.com/questions/25330716/move-only-version-of-stdfunction) – Stack Overflow
-- [*How to create an `std::function` from a move-capturing lambda expression?*](https://stackoverflow.com/questions/25421346/how-to-create-an-stdfunction-from-a-move-capturing-lambda-expression) – Stack Overflow
+- [*Move-only version of `std::function`*](https://stackoverflow.com/q/25330716) – Stack Overflow
+- [*How to create an `std::function` from a move-capturing lambda expression?*](https://stackoverflow.com/q/25421346) – Stack Overflow
 
 :anchor:
 
@@ -477,9 +479,9 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
 - A.Allain. [*Lambda functions in C++11 – the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
-- [*What is a lambda expression in C++11?*](https://stackoverflow.com/questions/7627098/what-is-a-lambda-expression-in-c11) – Stack Overflow
-- [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/questions/22232164/why-are-lambda-expressions-not-allowed-in-an-unevaluated-operands-but-allowed-in) – Stack Overflow
-- [*Can we get the type of a lambda argument?*](https://stackoverflow.com/questions/6512019/can-we-get-the-type-of-a-lambda-argument) – Stack Overflow
+- [*What is a lambda expression in C++11?*](https://stackoverflow.com/q/7627098) – Stack Overflow
+- [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/q/22232164) – Stack Overflow
+- [*Can we get the type of a lambda argument?*](https://stackoverflow.com/q/6512019) – Stack Overflow
 
 :movie_camera:
 
@@ -487,7 +489,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :anchor:
 
-- L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) – WG21/P0315R4 (2017)
+- L.Dionne, H.Tong. *Wording for lambdas in unevaluated contexts.* [P0315R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) (2017)
 
 ### `main()`
 
@@ -521,7 +523,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*Structured bindings and tuple of references*](https://stackoverflow.com/questions/49628401/structured-bindings-and-tuple-of-references) – Stack Overflow
+- [*Structured bindings and tuple of references*](https://stackoverflow.com/q/49628401) – Stack Overflow
 
 ---
 
@@ -529,9 +531,9 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*Hidden features of C++?*](https://stackoverflow.com/questions/75538/hidden-features-of-c) – Stack Overflow
-- [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/questions/53421279/why-compilers-test-the-least-significant-bit-in-an-address) – Stack Overflow
-- [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/questions/58960303/why-does-the-size-of-class-in-c-depend-on-the-public-private-status-of-data-me#58960555) – Stack Overflow
+- [*Hidden features of C++?*](https://stackoverflow.com/q/75538) – Stack Overflow
+- [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
+- [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
 
 :movie_camera:
 
@@ -541,7 +543,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- [*Accessing private members*](https://stackoverflow.com/questions/726096/accessing-private-members) – Stack Overflow
+- [*Accessing private members*](https://stackoverflow.com/q/726096) – Stack Overflow
 - J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
 
 ### Embedding binary data
@@ -550,11 +552,11 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - D.Weiler. [incbin – Include binary files in C/C++](https://github.com/graphitemaster/incbin)
 - H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
-- [*Embedding resources in executable using GCC*](https://stackoverflow.com/questions/4158900/embedding-resources-in-executable-using-gcc) – Stack Overflow
+- [*Embedding resources in executable using GCC*](https://stackoverflow.com/q/4158900) – Stack Overflow
 
 :anchor:
 
-- J. Meneide. [`std::embed`](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p1040r0.html) – WG21/P1040R0 (2018)
+- J. Meneide. *`std::embed`.* [P1040R0](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p1040r0.html) (2018)
 
 ---
 
@@ -565,24 +567,30 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :link:
 
 - [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) – Visual C++ language reference (2018)
-- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special) – Stack Overflow
-- [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/questions/6496545/trivial-vs-standard-layout-vs-pod) – Stack Overflow
+- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
+- [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/q/6496545) – Stack Overflow
 
 ### Floating-point types
+
+> There are three floating point types: `float`, `double`, and `long double`. The type `double` provides at least as much precision as `float`, and the type `long double` provides at least as much precision as `double`. The set of values of the type `float` is a subset of the set of values of the type `double`; the set of values of the type `double` is a subset of the set of values of the type `long double`. The value representation of floating-point types is implementation-defined.
 
 See also [*Floating-point arithmetic* – Numeric data structures and algorithms](../data_structures_and_algorithms/numeric.md#floating-point-arithmetic).
 
 :link:
 
 - D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) (2007)
-- [*Handling overflow when casting doubles to integers in C*](https://stackoverflow.com/questions/526070/handling-overflow-when-casting-doubles-to-integers-in-c/30424410#30424410) – Stack Overflow
+- [*Handling overflow when casting doubles to integers in C*](https://stackoverflow.com/q/526070) – Stack Overflow
+
+:anchor:
+
+- P.A.Bristow, C.Kormanyos, J.Maddock. *Floating-point typedefs having specified widths.* [N1703](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1703.pdf), [N3626](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3626.pdf) (2013)
 
 #### `__float128`
 
 :link:
 
-- [*`long double` (GCC specific) and `__float128`*](https://stackoverflow.com/questions/13516476/long-double-gcc-specific-and-float128) – Stack Overflow
-- [*How to use GCC 4.6.0 libquadmath and `__float128` on x86 and x86_64*](https://stackoverflow.com/questions/6457385/how-to-use-gcc-4-6-0-libquadmath-and-float128-on-x86-and-x86-64) – Stack Overflow
+- [*`long double` (GCC specific) and `__float128`*](https://stackoverflow.com/q/13516476) – Stack Overflow
+- [*How to use GCC 4.6.0 libquadmath and `__float128` on x86 and x86_64*](https://stackoverflow.com/q/6457385) – Stack Overflow
 
 :anchor:
 
@@ -594,8 +602,8 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) – Proc. ICSE (2012)
 - [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) – SEI CERT C coding standard
-- [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/questions/7682477/why-does-integer-overflow-on-x86-with-gcc-cause-an-infinite-loop) – Stack Overflow
-- [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/questions/24296571/why-does-this-loop-produce-warning-iteration-3u-invokes-undefined-behavior-an) – Stack Overflow
+- [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
+- [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
 
 :movie_camera:
 
@@ -609,7 +617,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 :link:
 
-- [*Is C++ allowed to increase the derived class size if there are no new member variables compared to the base class?*](https://stackoverflow.com/questions/19949737/is-c-allowed-to-increase-the-derived-class-size-if-therere-no-new-member-vari) – Stack Overflow
+- [*Is C++ allowed to increase the derived class size if there are no new member variables compared to the base class?*](https://stackoverflow.com/q/19949737) – Stack Overflow
 
 :anchor:
 
@@ -625,19 +633,19 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 :anchor:
 
-- A.Meredith. [*Abominable function types*](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2015/p0172r0.html) – WG21/P0172R0 (2015)
+- A.Meredith. *Abominable function types.* [P0172R0](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2015/p0172r0.html) (2015)
 
 ### References
 
 :link:
 
-- [*Is null reference possible?*](https://stackoverflow.com/questions/4364536/is-null-reference-possible) – Stack Overflow
+- [*Is null reference possible?*](https://stackoverflow.com/q/4364536) – Stack Overflow
 
 #### Lifetime of a temporary
 
 :link:
 
-- [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/questions/2784262/does-a-const-reference-class-member-prolong-the-life-of-a-temporary) – Stack Overflow
+- [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/q/2784262) – Stack Overflow
 
 :anchor:
 
@@ -650,12 +658,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
-- S.Meyers. [*Universal references in C++11*](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers) – [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
-- [*What is move semantics?*](https://stackoverflow.com/questions/3106110/what-is-move-semantics) – Stack Overflow
-- [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/questions/56716647/rvalues-lvalues-and-formal-definitions) – Stack Overflow
-- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/questions/37935393/pass-by-value-vs-pass-by-rvalue-reference) – Stack Overflow
-- [*Advantages of using `forward`*](https://stackoverflow.com/questions/3582001/advantages-of-using-forward) – Stack Overflow
-- [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/questions/4938875/do-rvalue-references-to-const-have-any-use) – Stack Overflow
+- S.Meyers. [*Universal references in C++11*](https://accu.org/index.php/journals/1887) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
+- [*What is move semantics?*](https://stackoverflow.com/q/3106110) – Stack Overflow
+- [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
+- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*Advantages of using `forward`*](https://stackoverflow.com/q/3582001) – Stack Overflow
+- [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/q/4938875) – Stack Overflow
 
 :movie_camera:
 
@@ -701,7 +709,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :link:
 
 - D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
-- [*Size of character (`'a'`) in C/C++*](https://stackoverflow.com/questions/2172943/size-of-character-a-in-c-c)
+- [*Size of character (`'a'`) in C/C++*](https://stackoverflow.com/q/2172943)
 
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
