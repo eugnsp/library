@@ -7,50 +7,55 @@
 	- [Itanium C++ ABI](#itanium-c-abi)
 	- [Inheritance](#inheritance)
 - [Attributes](#attributes)
-	- [[[likely]] / [[unlikely]]](#likely--unlikely)
-	- [[[nodiscard]]](#nodiscard)
-	- [[[trivially_relocatable]]](#trivially_relocatable)
+	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
+	- [`[[nodiscard]]`](#nodiscard)
+	- [`[[noreturn]]`](#noreturn)
+	- [`[[trivially_relocatable]]`](#trivially_relocatable)
 - [Declarations](#declarations)
 	- [Alignment](#alignment)
-	- [const and mutable](#const-and-mutable)
-	- [constexpr](#constexpr)
+	- [`const` and `mutable`](#const-and-mutable)
+	- [`constexpr`](#constexpr)
 	- [Elaborated type specifier](#elaborated-type-specifier)
-	- [friend](#friend)
+	- [`friend`](#friend)
 		- [Friend function templates](#friend-function-templates)
 		- [Hidden friends](#hidden-friends)
-	- [inline](#inline)
+	- [`inline`](#inline)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
 	- [Namespaces](#namespaces)
 	- [Storage class specifiers](#storage-class-specifiers)
 	- [Structured binding](#structured-binding)
+- [Initialization](#initialization)
 - [Dynamic memory](#dynamic-memory)
 	- [Alignment](#alignment-1)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
 	- [Compound literals](#compound-literals)
-	- [Operators](#operators)
-		- [Comparisons](#comparisons)
-		- [sizeof](#sizeof)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
-		- [dynamic_cast](#dynamic_cast)
+		- [`dynamic_cast`](#dynamic_cast)
 	- [Type punning](#type-punning)
-- [Functions](#functions)
+- [Functions and functional objects](#functions-and-functional-objects)
+	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
 	- [Function wrappers](#function-wrappers)
-		- [std::function](#stdfunction)
+		- [`std::function`](#stdfunction)
 	- [Lambda expressions](#lambda-expressions)
-	- [main()](#main)
-- [Initialization](#initialization)
-- [Structured bindings](#structured-bindings)
+		- [Recursive lambdas](#recursive-lambdas)
+	- [Member functions](#member-functions)
+		- [Member function poiners](#member-function-poiners)
+	- [`main()`](#main)
+- [Operators](#operators)
+	- [Comparisons](#comparisons)
+		- [Pointer comparisons](#pointer-comparisons)
+	- [`sizeof`](#sizeof)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
 	- [Embedding binary data](#embedding-binary-data)
 - [Types](#types)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
 	- [Floating-point types](#floating-point-types)
-		- [__float128](#__float128)
+		- [`__float128`](#__float128)
 	- [Integral types](#integral-types)
 	- [Class types](#class-types)
 		- [Inheritance](#inheritance-1)
@@ -137,16 +142,13 @@
 
 ### `[[nodiscard]]`
 
-> This attribute encourages the compiler to issue a warning if the return value is discarded.
-
-:memo:
-
-- Conservative approach suggested by N.Josuttis:
-	- Should be added:
-		- *existing APIs*: not using the return value always is a “huge mistake”; not using the return value is a source of trouble and easily can happen;
-		- *new APIs*: not using the return value is usually an error.
-	- Should not be added:
-		- *existing APIs*: not using the return value is a possible/common way of programming at least for some input; not using the return value makes no sense but doesn’t hurt.
+> This attribute encourages the compiler to issue a warning if the return value is discarded. Conservative approach suggested by N.Josuttis:
+>
+>	- Should be added:
+>		- *existing APIs*: not using the return value always is a “huge mistake”; not using the return value is a source of trouble and easily can happen;
+>		- *new APIs*: not using the return value is usually an error.
+>	- Should not be added:
+>		- *existing APIs*: not using the return value is a possible/common way of programming at least for some input; not using the return value makes no sense but doesn’t hurt.
 
 :link:
 
@@ -155,6 +157,18 @@
 :anchor:
 
 - N.Josuttis. *`[[nodiscard]]` in the library.* [P0600R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) (2017)
+
+### `[[noreturn]]`
+
+> This attribute indicates that the function does not return.
+
+:link:
+
+- [*What is the point of `[[noreturn]]`?*](https://stackoverflow.com/q/10538291) – Stack Overflow
+
+:anchor:
+
+- [*C++ attribute: `noreturn`*](https://en.cppreference.com/w/cpp/language/attributes/noreturn) – C++ reference
 
 ### `[[trivially_relocatable]]`
 
@@ -165,6 +179,10 @@ See [Relocation – Memory – Optimization and hardware](optimization_and_hardw
 ---
 
 ## Declarations
+
+:link:
+
+- D.Anderson. [*The “clockwise/spiral rule”*](http://c-faq.com/decl/spiral.anderson.html)
 
 :movie_camera:
 
@@ -296,11 +314,32 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Structured binding
 
+:link:
+
+- S.Brand. [*Adding C++17 structured bindings support to your classes*](https://blog.tartanllama.xyz/structured-bindings/) (2016)
+- [*Structured bindings and tuple of references*](https://stackoverflow.com/q/49628401) – Stack Overflow
+
 :anchor:
 
 - [*Structured binding declaration*](https://en.cppreference.com/w/cpp/language/structured_binding) – C++ reference
 - B.Revzin, J.Wakely. *Structured bindings can introduce a pack.* [P1061R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1061r1.html) (2019)
 - N.Lesser. *Extending structured bindings to be more like variable declarations.* [P1091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html) (2019)
+
+---
+
+## Initialization
+
+:link:
+
+- C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
+- B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
+- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
+- E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
+- A.Demin. [*The difference between `new T()` and `new T`* (in Russian)](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (2009)
+
+:anchor:
+
+- [*Initialization*](https://en.cppreference.com/w/cpp/language/initialization) – C++ reference
 
 ---
 
@@ -356,36 +395,6 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 [*Compound literals*](https://en.cppreference.com/w/c/language/compound_literal) – C++ reference
 
-### Operators
-
-:link:
-
-- [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/q/4421706) – Stack Overflow
-
-:anchor:
-
-- [*`operator` overloading*](https://en.cppreference.com/w/cpp/language/operators) – C++ reference
-- [*Canonical implementations*](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) – C++ reference
-
-#### Comparisons
-
-:link:
-
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
-
-:anchor:
-
-- [*Comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison) – C++ reference
-- [*Default comparisons*](https://en.cppreference.com/w/cpp/language/default_comparisons) – C++ reference
-
-#### `sizeof`
-
-> The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array.
-
-:anchor:
-
-[*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
-
 ### Order of evaluation
 
 :link:
@@ -439,7 +448,13 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ---
 
-## Functions
+## Functions and functional objects
+
+### Overload resolution
+
+:link:
+
+- [*Overload resolution between object, rvalue reference, const reference*](https://stackoverflow.com/q/17961719) – Stack Overflow
 
 ### Argument-dependent lookup
 
@@ -491,7 +506,31 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - L.Dionne, H.Tong. *Wording for lambdas in unevaluated contexts.* [P0315R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) (2017)
 
+#### Recursive lambdas
+
+:link:
+
+- P.Melendez. [*Recursive lambdas in C++(14)*](http://pedromelendez.com/blog/2015/07/16/recursive-lambdas-in-c14/) (2015)
+- [*Recursive lambda functions in C++11*](https://stackoverflow.com/q/2067988) – Stack Overflow
+
+### Member functions
+
+#### Member function poiners
+
+:link:
+
+- V.Lazarenko. [*Why C++ member function pointers are 16 bytes wide*](http://lazarenko.me/wide-pointers/) (2013)
+- R.Chen. [*Pointers to member functions are very strange animals*](https://devblogs.microsoft.com/oldnewthing/?p=40713) (2004)
+
+:anchor:
+
+- [*Pointers to member functions*](https://isocpp.org/wiki/faq/pointers-to-members) – C++ FAQ
+
 ### `main()`
+
+:link:
+
+- E.Bendersky. [*How statically linked programs run on Linux*](https://eli.thegreenplace.net/2012/08/13/how-statically-linked-programs-run-on-linux) (2012)
 
 :movie_camera:
 
@@ -503,27 +542,46 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ---
 
-## Initialization
+## Operators
 
 :link:
 
-- C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
-- B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
-- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
-- E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
-- A.Demin. [*The difference between `new T()` and `new T`* (in Russian)](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (2009)
+- [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/q/4421706) – Stack Overflow
 
 :anchor:
 
-- [*Initialization*](https://en.cppreference.com/w/cpp/language/initialization) – C++ reference
+- [*`operator` overloading*](https://en.cppreference.com/w/cpp/language/operators) – C++ reference
+- [*Canonical implementations*](https://en.cppreference.com/w/cpp/language/operators#Canonical_implementations) – C++ reference
 
----
-
-## Structured bindings
+### Comparisons
 
 :link:
 
-- [*Structured bindings and tuple of references*](https://stackoverflow.com/q/49628401) – Stack Overflow
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+
+:anchor:
+
+- [*Comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison) – C++ reference
+- [*Default comparisons*](https://en.cppreference.com/w/cpp/language/default_comparisons) – C++ reference
+
+#### Pointer comparisons
+
+:link:
+
+- A.O’Dwyer. [*Pointer comparisons with `std::less<void>`: a horror story*](https://quuxplusone.github.io/blog/2019/01/20/std-less-nightmare/) (2019)
+- K.Walfridsson. [*C pointers are not hardware pointers*](https://kristerw.blogspot.com/2016/03/c-pointers-are-not-hardware-pointers.html) (2016)
+
+:anchor:
+
+- [*Pointer comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison#Pointer_comparison_operators) – C++ reference
+
+### `sizeof`
+
+> The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array.
+
+:anchor:
+
+[*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
 
 ---
 
@@ -579,6 +637,8 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :link:
 
 - D.Howard. [*Byte swapping floating point types*](https://web.archive.org/web/20100125081223/http://www.dmh2000.com/cpp/dswap.shtml) (2007)
+- [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
+- [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
 - [*Handling overflow when casting doubles to integers in C*](https://stackoverflow.com/q/526070) – Stack Overflow
 
 :anchor:

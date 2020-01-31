@@ -3,12 +3,13 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
-- [GPU computing](#gpu-computing)
+- [SIMD](#simd)
+	- [SIMD within a register (SWAR)](#simd-within-a-register-swar)
 - [Multithreading](#multithreading)
 	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
-		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
-		- [`std::condition_variable`](#stdcondition_variable)
-		- [`std::promise`](#stdpromise)
+		- [std::atomic_shared_ptr](#stdatomic_shared_ptr)
+		- [std::condition_variable](#stdcondition_variable)
+		- [std::promise](#stdpromise)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
 		- [Spin locks](#spin-locks)
@@ -17,6 +18,7 @@
 		- [Read-copy-update (RCU)](#read-copy-update-rcu)
 	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
+- [GPU computing](#gpu-computing)
 
 ---
 
@@ -34,11 +36,19 @@
 
 --- -->
 
-## GPU computing
+---
 
-:movie_camera:
+## SIMD
 
-- P.Steinbach. [*C++ on GPUs done right?*](https://www.youtube.com/watch?v=z43l_LaOqnM) – Meeting C++ (2015)
+### SIMD within a register (SWAR)
+
+:link:
+
+- [*SWAR*](https://en.wikipedia.org/wiki/SWAR) – Wikipedia
+- H.Dietz. [Ch. 4: *SIMD within a register (e.g., using MMX)*](https://www.tldp.org/HOWTO/Parallel-Processing-HOWTO-4.html) – Linux parallel processing HOWTO
+- [*SIMD and SWAR techniques*](https://www.chessprogramming.org/SIMD_and_SWAR_Techniques) – Chess Programming Wiki
+
+---
 
 ## Multithreading
 
@@ -64,6 +74,7 @@
 
 :link:
 
+- A.Williams. [*Multi-threading in C++0x*](https://accu.org/index.php/journals/1584) – [Overload **93**](https://accu.org/index.php/journals/c257/), 11 (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
 
 #### `std::atomic_shared_ptr`
@@ -170,3 +181,11 @@ https://stackoverflow.com/questions/5002046/atomicity-in-c-myth-or-reality
 
 http://www.drdobbs.com/parallel/volatile-vs-volatile/212701484
 -->
+
+---
+
+## GPU computing
+
+:movie_camera:
+
+- P.Steinbach. [*C++ on GPUs done right?*](https://www.youtube.com/watch?v=z43l_LaOqnM) – Meeting C++ (2015)

@@ -3,7 +3,7 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Design principles](#design-principles)
-	- [Guidelines](#guidelines)
+	- [Style and guidelines](#style-and-guidelines)
 	- [Class design](#class-design)
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
@@ -45,7 +45,7 @@
 
 - F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) – CppCon (2018)
 
-### Guidelines
+### Style and guidelines
 
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
 - [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
@@ -357,6 +357,12 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
 
+### Singleton
+
+:link:
+
+- F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/index.php/journals/c288/), 13 (1998)
+
 ### Strategy
 
 > The strategy pattern enables run-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
@@ -388,4 +394,5 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :movie_camera:
 
 - L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
+- B.Kernighan. [*Elements of programming style*](https://www.youtube.com/watch?v=8SUkrR7ZfTA) – Princeton University (2009)
 

@@ -1,4 +1,4 @@
-# Optimization and hardware <!-- omit in toc -->
+# Hardware, optimization and OS internals <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -18,6 +18,8 @@
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Undefined behavior](#undefined-behavior)
 		- [Strict aliasing rule](#strict-aliasing-rule)
+- [OS internals](#os-internals)
+	- [Shared libraries](#shared-libraries)
 
 ---
 
@@ -49,6 +51,8 @@
 
 - Y.-H.Hung. [*Linux kernel: Memory addressing*](https://medium.com/hungys-blog/linux-kernel-memory-addressing-a0d304283af3) (2016)
 - D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) – [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
+- C.Santili. [*x86 paging tutorial*](https://cirosantilli.com/x86-paging)
+- [*How does x86 paging work?*](https://stackoverflow.com/q/18431261) – Stack Overflow
 - [*What are near, far and huge pointers?*](https://stackoverflow.com/q/3575592) – Stack Overflow
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
@@ -92,6 +96,10 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 ### Floating-point arithmetic
 
 - [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/q/7420665) – Stack Overflow
+
+:anchor:
+
+- [Bug 323: *Optimized code gives strange floating point results*](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=323) – GCC Bugzilla
 
 ### Memory copying
 
@@ -201,6 +209,8 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 :link
 
 - K.Walfridsson. [*How undefined signed overflow enables optimizations in GCC*](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html) (2016)
+- K.Walfridsson. [*Dangling pointers and undefined behavior*](https://kristerw.blogspot.com/2016/04/dangling-pointers-and-undefined-behavior.html) (2016)
+- K.Walfridsson. [*Pointer comparison — an invalid optimization in GCC*](https://kristerw.blogspot.com/2016/12/pointer-comparison-invalid-optimization.html) (2016)
 - J.Regehr. [*Finding undefined behavior bugs by finding dead code*](https://blog.regehr.org/archives/970) (2013)
 - C.Lattner. *What every C programmer should know about undefined behavior.* [Part I](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html), [Part II](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html), [Part III](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_21.html) – LLVM project (2013)
 
@@ -213,3 +223,15 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 #### Strict aliasing rule
 
 See [*Type-punning* – Core language](core_language.md#type-punning).
+
+---
+
+## OS internals
+
+### Shared libraries
+
+:link:
+
+- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries/) (2011)
+- E.Bendersky. [*Position Independent Code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/) (2011)
+- E.Bendersky. [*Position Independent Code (PIC) in shared libraries on x64*](https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64) (2011)

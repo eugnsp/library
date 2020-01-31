@@ -35,6 +35,10 @@
 
 ## Random shuffling
 
+:link:
+
+- J.Atwood. [*The danger of naïveté*](https://blog.codinghorror.com/the-danger-of-naivete/) (2007)
+
 :book:
 
 - Sec. 3.4.2: *Random sampling and shuffling* – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 2: Seminumerical algorithms* (1997)

@@ -13,8 +13,9 @@
 	- [Linus Torvalds](#linus-torvalds)
 - [Programming languages](#programming-languages)
 	- [Algol](#algol)
-- [Blogs](#blogs)
+- [Algorithms](#algorithms)
 - [Journals](#journals)
+- [Blogs](#blogs)
 
 ---
 
@@ -66,6 +67,12 @@
 :movie_camera:
 
 - H.Lewis. [*Harvard Mark I computer*](https://www.youtube.com/watch?v=4ObouwCHk8w)
+
+### Brian Kernighan
+
+:movie_camera:
+
+
 
 ### Bjarne Stroustrup
 
@@ -127,6 +134,21 @@
 
 ---
 
+## Algorithms
+
+:link:
+
+- [The aggregate magic algorithms](http://aggregate.org/MAGIC/)
+
+---
+
+## Journals
+
+- [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
+- [*Informatics and education* (in Russian)](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (1986–2013)
+
+---
+
 ## Blogs
 
 - [Simon Brand](https://blog.tartanllama.xyz/)
@@ -140,14 +162,9 @@
 - [Vittorio Romeo](https://vittorioromeo.info/)
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
+- [Krister Walfridsson](https://kristerw.blogspot.com/)
+- [Eli Bendersky](https://eli.thegreenplace.net/)
 
----
+<!-- Fun -->
 
-## Journals
-
-- [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
-- [*Informatics and education* (in Russian)](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (1986–2013)
-
-<!-- ## Fun
-
-https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->
+<!-- https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->

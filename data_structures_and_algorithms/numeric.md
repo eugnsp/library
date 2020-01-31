@@ -91,6 +91,12 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 - D.Kohlbrenner. [*On subnormal floating point and abnormal timing*](https://www.youtube.com/watch?v=DftejgRgmc8) – IEEE Symposium on Security and Privacy (2015)
 
+#### NaNs
+
+:link:
+
+- [*What is the rationale for all comparisons returning false for IEEE754 NaN values?*](https://stackoverflow.com/q/1565164) – Stack Overflow
+
 ---
 
 ## Arithmetic algorithms

@@ -6,6 +6,7 @@
 	- [CMake](#cmake)
 - [Code analysis and optimization tools](#code-analysis-and-optimization-tools)
 	- [Online compilers](#online-compilers)
+	- [Intel Architecture Code Analyzer (IACA)](#intel-architecture-code-analyzer-iaca)
 	- [Valgrind](#valgrind)
 - [Compilers](#compilers)
 	- [GCC](#gcc)
@@ -48,6 +49,10 @@
 
 - [*Compiler explorer*](https://godbolt.org/)
 
+### Intel Architecture Code Analyzer (IACA)
+
+- [*What is IACA and how do I use it?*](https://stackoverflow.com/q/26021337) – Stack Overflow
+
 ### Valgrind
 
 :movie_camera:
@@ -73,6 +78,24 @@
 :sound:
 
 - M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) – Software Engineering Radio (2007)
+
+:anchor:
+
+- [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
+
+## MSVC
+
+:anchor:
+
+- [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
+
+---
+
+## Linkers
+
+:link:
+
+- E.Bendersky. [*Library order in static linking*](https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking) (2013)
 
 ---
 

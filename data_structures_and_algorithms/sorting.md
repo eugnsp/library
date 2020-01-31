@@ -71,6 +71,8 @@
 :link:
 
 - [*Selection sort* – Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)
+- N.A.Alechina. [*Selection sort: Loop invariants*](http://www.cs.nott.ac.uk/~psznza/G5BADS04/ans3.html) – Algorithms and data structures (2004)
+- R.Jenke. [*Supplemental handout on selection sort*](http://pages.cs.wisc.edu/~dieter/Courses/2011s-CS240/scribes/selectsort.pdf) – [CS 240: Intro to discrete mathematics](http://pages.cs.wisc.edu/~dieter/Courses/2011s-CS240/) (2011)
 
 :book:
 

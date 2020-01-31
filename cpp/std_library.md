@@ -8,6 +8,7 @@
 	- [std::iota](#stdiota)
 	- [std::midpoint](#stdmidpoint)
 	- [std::*sort](#stdsort)
+	- [std::[stable_]partition](#stdstable_partition)
 - [Concepts](#concepts)
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
@@ -64,10 +65,14 @@
 
 ## General information
 
+:link:
+
+- S.Love. [*Are you afraid of the dark? – Making ense of the STL*](https://accu.org/index.php/journals/443) – [Overload **43**](https://accu.org/index.php/journals/c161/) (2001)
+
 :book:
 
 - J.Galowicz. [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions*](https://www.packtpub.com/application-development/c17-stl-cookbook) (2017)
-- Ch. 18: *Concurrency* – N.M.Josuttis. [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) (2012)
+- N.M.Josuttis. [*The C++ standard library: A tutorial and reference*](http://www.cppstdlib.com/) (2012)
 
 :anchor:
 
@@ -109,11 +114,19 @@
 
 - S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0811r3.html) – WG21/P0811R3 (2019)
 
-### `std::*sort`
+### `std::[stable_]sort`
 
 :link:
 
 - A.Demin. [*How sorting is implemented in the standard library* (in Russian)](http://demin.ws/blog/russian/2009/06/18/sort-implementation-in-stl/) (2009)
+
+### `std::[stable_]partition`
+
+:link:
+
+- A.A.Stepanov, M.A.Marcus. [Sec. 3: *Partition algorithms*](http://stepanovpapers.com/PAM3-partition_notes.pdf) – Notes for the Foundations of programming course (2004–2005)
+- [*`stable_partition` on forward iterators*](https://stackoverflow.com/q/59642958) – Stack Overflow
+- [*How is `stable_partition` an adaptive algorithm?*](https://stackoverflow.com/q/21554635) – Stack Overflow
 
 ---
 
@@ -158,6 +171,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :link:
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/q/6292332) – Stack Overflow
+- [*How can references be valid while iterators become invalidated in a deque*](https://stackoverflow.com/q/32800138) – Stack Overflow
 
 #### `std::list`
 
@@ -257,6 +271,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - [{fmt}: a modern formatting library](https://github.com/fmtlib/fmt)
 - [*`std::printf` vs. `std::cout`*](https://stackoverflow.com/q/2872543) – Stack Overflow
 - [*Is `std::cout` synchronized/thread-safe?*](https://stackoverflow.com/q/6374264) – Stack Overflow
+- [*How can I use C++20 `std::format`?*](https://stackoverflow.com/q/59024390) – Stack Overflow
 
 :anchor:
 
@@ -379,8 +394,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) – C++ reference
-- S.T.Lavavej. [`make_unique`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3588.htm) – WG21/N3588 (2013)
+- [*`std::unique_ptr`*](https://en.cppreference.com/w/cpp/memory/unique_ptr) – C++ reference
+- S.T.Lavavej. [*`make_unique`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3588.htm) – WG21/N3588 (2013)
 
 ### `std::shared_ptr`
 
@@ -390,10 +405,11 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
 - A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+- [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
 
 :anchor:
 
-- [`std::shared_ptr`](https://en.cppreference.com/w/cpp/memory/shared_ptr) – C++ reference
+- [*`std::shared_ptr`*](https://en.cppreference.com/w/cpp/memory/shared_ptr) – C++ reference
 
 #### `std::enable_shared_from_this`
 
@@ -415,7 +431,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::weak_ptr`](https://en.cppreference.com/w/cpp/memory/weak_ptr) – C++ reference
+- [*`std::weak_ptr`*](https://en.cppreference.com/w/cpp/memory/weak_ptr) – C++ reference
 
 ### `std::auto_ptr`
 
@@ -435,9 +451,9 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::experimental::observer_ptr`](https://en.cppreference.com/w/cpp/experimental/observer_ptr) – C++ reference
-- B.Stroustrup. [Abandon `observer_ptr`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1408r0.pdf) – WG21/P1408R0 (2018)
-- W.E.Brown. [A proposal for the world’s dumbest smart pointer](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4282.pdf) – WG21/N4282 (2014)
+- [*`std::experimental::observer_ptr`*](https://en.cppreference.com/w/cpp/experimental/observer_ptr) – C++ reference
+- B.Stroustrup. [*Abandon `observer_ptr`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1408r0.pdf) – WG21/P1408R0 (2018)
+- W.E.Brown. [*A proposal for the world’s dumbest smart pointer*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4282.pdf) – WG21/N4282 (2014)
 
 ### `boost::intrusive_ptr`
 
@@ -550,17 +566,18 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :link:
 
-- [`std::initializer_list` and move semantics](https://stackoverflow.com/q/8193102) – Stack Overflow
+- [*`std::initializer_list` and move semantics*](https://stackoverflow.com/q/8193102) – Stack Overflow
 
 :anchor:
 
-- [`std::initializer_list`](https://en.cppreference.com/w/cpp/utility/initializer_list) – C++ reference
+- [*`std::initializer_list`*](https://en.cppreference.com/w/cpp/utility/initializer_list) – C++ reference
 
 ### Pairs and tuples
 
 :link:
 
-- [Why can’t `std::tuple<int>` be trivially copyable?](https://stackoverflow.com/q/38779985) – Stack Overflow
+- [*Why can’t `std::tuple<int>` be trivially copyable?*](https://stackoverflow.com/q/38779985) – Stack Overflow
+- [*Replace `N`-th element of a `std::tuple`*](https://stackoverflow.com/q/59670539) – Stack Overflow
 
 :movie_camera:
 
@@ -672,7 +689,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :anchor:
 
-- A.Stepanov et al. [*SGI STL: Source code and documentation*](https://web.archive.org/web/20171202101253/http://www.sgi.com:80/tech/stl/)
+- [*SGI STL: Programmer’s guide*](https://www.boost.org/sgi/stl/)
 
 <!-- ## SFINAE
 
