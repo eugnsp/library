@@ -4,13 +4,13 @@
 
 - [Rotation (cyclic shift)](#rotation-cyclic-shift)
 	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
-	- [Gries–Mills algorithm](#griesndashmills-algorithm)
-	- [Dolphin algoirithm](#dolphin-algoirithm)
+	- [Gries–Mills algorithm](#griesmills-algorithm)
+	- [Dolphin (juggling) algoirithm](#dolphin-juggling-algoirithm)
 - [Longest increasing subsequence](#longest-increasing-subsequence)
 - [Maximum subsequence](#maximum-subsequence)
 	- [Kadane’s algorithm](#kadanes-algorithm)
 - [Majority element](#majority-element)
-	- [Boyer–Moore majority vote algorithm](#boyerndashmoore-majority-vote-algorithm)
+	- [Boyer–Moore majority vote algorithm](#boyermoore-majority-vote-algorithm)
 - [Sqrt decomposition](#sqrt-decomposition)
 
 ---
@@ -42,12 +42,7 @@
 
 ### Three reverses rotation algorithm
 
-> Gist of the algorithm: reverse the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then reverse the whole sequence <code>{a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>}</code>.
-
-:memo:
-
-- The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>.
-- This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
+> Gist of the algorithm: reverse the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then reverse the whole sequence <code>{a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>}</code>. The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>. This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
 
 ### Gries–Mills algorithm
 
@@ -59,30 +54,19 @@
 - The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
 - The Gries–Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
 
-### Dolphin algoirithm
+### Dolphin (juggling) algoirithm
 
-> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>{a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...}</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>{a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>}</code>.
-
-:memo:
-
-- This algorithm is also known as the juggling algorithm.
-- The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses.
-- This algorithm is sometimes used to implement `std::rotate` for random access iterators.
+> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>{a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...}</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>{a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>}</code>. The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses. This algorithm is sometimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up:
 
-W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* – [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
+- W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* – [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
 
 ---
 
 ## Longest increasing subsequence
 
-> Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence.
-
-:memo:
-
-- The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time.
-- Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
+> Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence. The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time. Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
 
 :link:
 
@@ -91,7 +75,7 @@ W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* – [Co
 
 :movie_camera:
 
-- [*Dynamic programming*]https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570 – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- [*Dynamic programming*](https://www.youtube.com/watch?v=1ivFSH0ijOM&t=2570) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
 :book:
 

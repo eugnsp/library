@@ -4,7 +4,9 @@
 
 - [Floating-point arithmetic](#floating-point-arithmetic)
 	- [IEEE 754](#ieee-754)
+		- [Division](#division)
 		- [Denormal numbers](#denormal-numbers)
+		- [NaNs](#nans)
 - [Arithmetic algorithms](#arithmetic-algorithms)
 	- [Arithmetic means](#arithmetic-means)
 	- [Binomial coefficient](#binomial-coefficient)
@@ -12,6 +14,7 @@
 		- [Integer division](#integer-division)
 	- [Horner’s method](#horners-method)
 	- [Kahan summation algorithm](#kahan-summation-algorithm)
+	- [Powers and logarithms](#powers-and-logarithms)
 - [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	- [Iterative methods](#iterative-methods)
 		- [Jacobi method](#jacobi-method)
@@ -142,6 +145,12 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 - [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) – Wikipedia
 - [*Kahan summation*](https://stackoverflow.com/q/4940072) – Stack Overflow
+
+### Powers and logarithms
+
+:link:
+
+- [*How to check if an integer is a power of `3`?*](https://stackoverflow.com/q/1804311) – Stack Overflow
 
 ---
 

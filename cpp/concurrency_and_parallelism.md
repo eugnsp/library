@@ -74,7 +74,7 @@
 
 :link:
 
-- A.Williams. [*Multi-threading in C++0x*](https://accu.org/index.php/journals/1584) – [Overload **93**](https://accu.org/index.php/journals/c257/), 11 (2009)
+- A.Williams. [*Multi-threading in C++0x*](https://accu.org/index.php/journals/1584) – [Overload **93**](https://accu.org/index.php/journals/c257/) (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
 
 #### `std::atomic_shared_ptr`
@@ -82,6 +82,9 @@
 :link:
 
 - A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
+
+:question:
+
 - [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/q/40223599) – Stack Overflow
 
 #### `std::condition_variable`
@@ -100,14 +103,17 @@
 
 > The `std::promise` provides a facility to store a value or an exception that is later acquired asynchronously via a `std::future` object created by the `std::promise` object.
 
-:link:
+:question:
+
+- [*What is `std::promise`?*](https://stackoverflow.com/q/11004273) – Stack Overflow
+
+:anchor:
 
 - [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) – C++ reference
-- [*What is `std::promise`?*](https://stackoverflow.com/q/11004273) – Stack Overflow
 
 ### Data races and race conditions
 
-:link:
+1
 
 - [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow
 

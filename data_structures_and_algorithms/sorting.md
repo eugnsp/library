@@ -8,13 +8,16 @@
 	- [Heap sort](#heap-sort)
 	- [Merge sort](#merge-sort)
 		- [Inversions counting](#inversions-counting)
+	- [Quick sort](#quick-sort)
 	- [Order statistics](#order-statistics)
+		- [Quick select](#quick-select)
 - [Linear-time sorting](#linear-time-sorting)
 	- [Count sort](#count-sort)
 	- [Radix sort](#radix-sort)
 - [Other algorithms](#other-algorithms)
 	- [Pancake sorting](#pancake-sorting)
 	- [Spreadsort](#spreadsort)
+
 ---
 
 :link:
@@ -116,15 +119,11 @@
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
 
+### Quick sort
+
 ### Order statistics
 
-> The `k`<sup>th</sup> order statistic of an array is its `k`<sup>th</sup> smallest element.
-
-:memo:
-
-- Any comparison-based algorithm of finding the smallest element in an array of size `n` requires at least `n - 1` comparisons in the worst case.
-- Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `n` requires at least `⌈3n / 2⌉ - 1` comparisons in the worst case.
-- Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `n` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
+> The `k`<sup>th</sup> order statistic of an array is its `k`<sup>th</sup> smallest element. Any comparison-based algorithm of finding the smallest element in an array of size `n` requires at least `n - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `n` requires at least `⌈3n / 2⌉ - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `n` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
 
 :link:
 
@@ -146,6 +145,8 @@
 :page_facing_up:
 
 - S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) (in russian) – Sibirsky Matematichesky Zhurnal **5**, 557 (1964)
+
+#### Quick select
 
 ---
 

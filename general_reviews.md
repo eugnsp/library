@@ -47,7 +47,7 @@
 
 :link:
 
-- [*Mikhail Donskoy: programmer’s course of life* (in Russian)](https://polit.ru/article/2008/08/20/programmist/) (2008)
+- [*Mikhail Donskoy: Programmer’s course of life* (in Russian)](https://polit.ru/article/2008/08/20/programmist/) (2008)
 
 :movie_camera:
 
@@ -68,18 +68,34 @@
 
 - H.Lewis. [*Harvard Mark I computer*](https://www.youtube.com/watch?v=4ObouwCHk8w)
 
+### John Conway
+
+:movie_camera:
+
+- [*Inventing Game of Life*](https://www.youtube.com/watch?v=R9Plq-D1gEk) – Numberphile
+
 ### Brian Kernighan
 
 :movie_camera:
 
+### Donald Knuth
 
+:movie_camera:
+
+- L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming](https://www.youtube.com/watch?v=2BdBfsXbST8)
+
+:book:
+
+- D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) – Addison-Wesley
 
 ### Bjarne Stroustrup
 
 :movie_camera:
 
+- L.Fridman. [*An interview with Bjarne Stroustrup: C++*](https://www.youtube.com/watch?v=uTxRF5ag27A)
 - P.McJones. [*Oral history of Bjarne Stroustrup*](https://www.youtube.com/watch?v=ZO0PXYMVGSU) (2015)
 - [*What is the difference between C and C++? Is C obsolete?*](https://www.youtube.com/watch?v=KlPC3O1DVcg) (2011)
+- A.Stepanov. [*A.Stepanov introduces Bjarne Stroustrup*](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
 
 ### Alexander Stepanov
 
@@ -97,7 +113,6 @@
 - [*Elements of programming*](https://www.youtube.com/watch?v=Ih9gpJga4Vc) – Stanford (2010)
 - *Transformations and their orbits.* [Part I](https://www.youtube.com/watch?v=QmuMHtbO4ug), [Part II](https://www.youtube.com/watch?v=uCGifwlgAQg) (in Russian) – Yandex (2010)
 - *Greatest common measure: The last 2500 years.* [Part I](https://www.youtube.com/watch?v=NfGeVRebiio), [Part II](https://www.youtube.com/watch?v=zwucsB2EfXc) (in Russian) – Yandex (2010)
-- [*Alexander Stepanov introduces B.Stroustrup*](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
 
 :book:
 
@@ -163,7 +178,6 @@
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
-- [Eli Bendersky](https://eli.thegreenplace.net/)
 
 <!-- Fun -->
 

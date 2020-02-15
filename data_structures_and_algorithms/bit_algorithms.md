@@ -32,3 +32,11 @@
 :link:
 
 - C.Nicholson. [*Reversing bits in C*](https://medium.com/square-corner-blog/reversing-bits-in-c-48a772dc02d7) – Square Corner Blog (2013)
+
+<!--
+population count
+
+The Preparation of Programs for an Electronic Digital Computer, Maurice V. Wilkes, David
+J. Wheeler, Stanley Gill. Addison Wesley (1951), in 1957.
+
+ -->

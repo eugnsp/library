@@ -28,6 +28,7 @@
 	- [Infinite loop](#infinite-loop)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
+	- [Singleton](#singleton)
 	- [Strategy](#strategy)
 	- [Visitor](#visitor)
 - [Antipatterns](#antipatterns)
@@ -36,7 +37,7 @@
 
 ## Design principles
 
-:link:
+:question:
 
 - [*What is a magic number, and why is it bad?*](https://stackoverflow.com/q/47882) – Stack Overflow
 - [*Are global variables bad?*](https://stackoverflow.com/q/484635) – Stack Overflow
@@ -83,8 +84,8 @@
 
 #### Rule of zero/three/five
 
-> The rule of zero: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them.\
-> The rule of three/five: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
+> - *The rule of zero*: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them.
+> - *The rule of three/five*: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
 
 :link:
 
@@ -100,11 +101,11 @@
 
 > SOLID are the five principles of class design:
 >
-> 1. Single responsibility principle: a class should have one, and only one, reason to change.
-> 2. Open-closed principle: you should be able to extend a class behavior, without modifying it.
-> 3. Liskov substitution principle: derived classes must be substitutable for their base classes.
-> 4. Interface segregation principle: make fine grained interfaces that are client specific.
-> 5. Dependency inversion principle: depend on abstractions, not on concretions.
+> - single responsibility principle: a class should have one, and only one, reason to change;
+> - open-closed principle: you should be able to extend a class behavior, without modifying it;
+> - Liskov substitution principle: derived classes must be substitutable for their base classes;
+> - interface segregation principle: make fine grained interfaces that are client specific;
+> - dependency inversion principle: depend on abstractions, not on concretions.
 
 :link:
 
@@ -114,7 +115,7 @@
 
 ### Interface design
 
-:link:
+:question:
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
@@ -139,17 +140,30 @@
 
 #### Exceptions
 
+> Levels of exception guarantee:
+> - *nothrow exception guarantee*: the function never throws exceptions;
+> - *strong exception guarantee*: if the function throws an exception, the state of the program is rolled back to the state just before the function call (commit-or-rollback semantics);
+> - *basic exception guarantee*: if the function throws an exception, the program is in a valid state, no resources are leaked, and all objects’ invariants are intact;
+> - *no exception guarantee*: if the function throws an exception, the program may not be in a valid state, resource leaks, memory corruption, or other invariant-destroying errors may have occurred.
+
 :link:
 
 - R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/index.php/journals/2422) – [Overload **141**](https://accu.org/index.php/journals/c378/), 24 (2017)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
+- H.Sutter. [*Exception-safe generic containers*](http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/aw/meyerscddemo/DEMO/MAGAZINE/SU_FRAME.HTM) (1997)
+- T.Cargill. [*Exception handling: A false sense of security*](http://ptgmedia.pearsoncmg.com/images/020163371x/supplements/Exception_Handling_Article.html) (1994)
+
+:question:
+
+- B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
 
 :anchor:
 
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
+- [*`std::move_if_noexcept`](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
 
 ---
 
@@ -215,11 +229,18 @@
 
 ### Copy-and-swap
 
-:memo:
+> The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
+> ```cpp
+> struct Object {
+>     Object& operator=(const Object& obj) {
+>         auto tmp{obj};
+>         tmp.swap(*this);
+>         return *this;
+>     }
+> };
+> ```
 
-- The copy-and-swap idiom is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
-
-:link:
+:question:
 
 - [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
 
@@ -239,7 +260,11 @@
 :link:
 
 - [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
+- A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/index.php/journals/296) – [Overload **70**](https://accu.org/index.php/journals/c142/) (2005)
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
+
+:question:
+
 - [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
 
 ### Double-checked locking
@@ -267,7 +292,10 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
-- P.Grenyer. [*RAII is not garbage*](https://accu.org/index.php/journals/1945) – [Overload **106**](https://accu.org/index.php/journals/c303/), 14 (2011)
+- P.Grenyer. [*RAII is not garbage*](https://accu.org/index.php/journals/1945) – [Overload **106**](https://accu.org/index.php/journals/c303/) (2011)
+
+:question:
+
 - [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
 
 :anchor:
@@ -313,7 +341,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/), 21 (2016)
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
 - [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
 
 ### Opaque typedef (whole value)
@@ -335,7 +363,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) – Overload **152**, 9 (2019)
+- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) – [Overload **152**](https://accu.org/index.php/journals/c401/) (2019)
 - J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
 
 :movie_camera:
@@ -349,7 +377,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ### Passkey
 
-:link:
+:question:
 
 <!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
 
@@ -359,9 +387,35 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ### Singleton
 
+> The singleton pattern ensures that a class has one instance and provides a global point of access to that instance. It is useful when exactly one object is needed to coordinate actions across the system.
+> ```cpp
+> class Singleton {
+> public:
+>     static Singleton& instance() {
+>         static Singleton inst;
+>         return inst;
+>     }
+>
+> private:  // protected:
+>     Singleton();
+>     Singleton(const Singleton&) = delete;
+>     Singleton& operator=(const Singleton&) = delete;
+> };
+
 :link:
 
-- F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/index.php/journals/c288/), 13 (1998)
+- [*Singleton*](https://en.wikipedia.org/wiki/Singleton_pattern) – Wikipedia
+- F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/index.php/journals/c288/) (1998)
+- R.Nystrom. [*Singleton*](https://gameprogrammingpatterns.com/singleton.html) – Game programming patterns
+<!-- https://wiki.c2.com/?SingletonPattern -->
+
+:question:
+
+- [*Is Meyers’ implementation of the Singleton pattern thread safe?*](https://stackoverflow.com/q/1661529) – Stack Overflow
+
+:book:
+
+- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ### Strategy
 
@@ -374,6 +428,9 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
+
+:question:
+
 - [*When should I use the Visitor design pattern?*](https://stackoverflow.com/q/255214) – Stack Overflow
 
 :movie_camera:
@@ -389,7 +446,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- J.Wakely. [*C++ antipatterns*](https://accu.org/index.php/journals/2271) – [Overload **134**](https://accu.org/index.php/journals/c364/), 14 (2016)
+- J.Wakely. [*C++ antipatterns*](https://accu.org/index.php/journals/2271) – [Overload **134**](https://accu.org/index.php/journals/c364/) (2016)
 
 :movie_camera:
 

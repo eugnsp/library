@@ -70,6 +70,9 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - [*Optimizing C++*](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B) – WikiBooks
 - A.O’Dwyer. [*`[[trivial_abi]]` 101*](https://quuxplusone.github.io/blog/2018/05/02/trivial-abi-101/)
+
+:question:
+
 - [*Can `const`-correctness improve performance?*](https://stackoverflow.com/q/3435026) – Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
 - [*What is tail call optimization?*](https://stackoverflow.com/q/310974) – Stack Overflow
@@ -95,6 +98,8 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 ### Floating-point arithmetic
 
+:question:
+
 - [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/q/7420665) – Stack Overflow
 
 :anchor:
@@ -106,23 +111,29 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 :link:
 
 - [*Time to revisit `REP MOVS`*](https://software.intel.com/en-us/forums/intel-fortran-compiler/topic/275765) – Intel Developer Zone (2006)
+
+:question:
+
 - [*Enhanced `REP MOVSB` for `memcpy`*](https://stackoverflow.com/q/43343231) – Stack Overflow
 - [*What setup does `REP` do?*](https://stackoverflow.com/q/33902068) – Stack Overflow
-- [*Why are complicated memcpy/memset superior?*](https://stackoverflow.com/q/8858778) – Stack Overflow
+- [*Why are complicated `memcpy`/`memset` superior?*](https://stackoverflow.com/q/8858778) – Stack Overflow
 
 #### Nested `std::vector`s
 
-:link:
+:question:
 
+- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) – Computational Science
 - [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/q/45747848) – Stack Overflow
 - [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/q/33093860) – Stack Overflow
-- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) – Computational Science
 
 ### Memory allocation
 
 :link:
 
 - N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
+
+:question:
+
 - [*Is the compiler allowed to optimize out heap memory allocations?*](https://stackoverflow.com/q/31873616) – Stack Overflow
 
 :movie_camera:
@@ -145,7 +156,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 ### Integral multiplication
 
-:link:
+:question:
 
 - [*Why is `imul` used for multiplying unsigned numbers?*](https://stackoverflow.com/q/42587607) – Stack Overflow
 
@@ -155,12 +166,15 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - D.W.Jones. [*Reciprocal multiplication, a tutorial*](https://homepage.divms.uiowa.edu/~jones/bcd/divide.html) (1999)
 - T.Granlund, P.L.Montgomery. [*Division by invariant integers using multiplication*](https://gmplib.org/~tege/divcnst-pldi94.pdf) (1994)
+
+:question:
+
 - [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/q/41183935) – Stack Overflow
 - [*Why does the compiler generate a right-shift by 31 bits when dividing by 2?*](https://stackoverflow.com/q/40638335) – Stack Overflow
 
 ### Memory access
 
-:link:
+:question:
 
 - [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/q/11413855) – Stack Overflow
 - [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/q/8547778) – Stack Overflow
