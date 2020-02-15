@@ -37,7 +37,7 @@
 
 ## Design principles
 
-:question:
+:grey_question:
 
 - [*What is a magic number, and why is it bad?*](https://stackoverflow.com/q/47882) – Stack Overflow
 - [*Are global variables bad?*](https://stackoverflow.com/q/484635) – Stack Overflow
@@ -115,7 +115,7 @@
 
 ### Interface design
 
-:question:
+:grey_question:
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
@@ -155,7 +155,7 @@
 - H.Sutter. [*Exception-safe generic containers*](http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/aw/meyerscddemo/DEMO/MAGAZINE/SU_FRAME.HTM) (1997)
 - T.Cargill. [*Exception handling: A false sense of security*](http://ptgmedia.pearsoncmg.com/images/020163371x/supplements/Exception_Handling_Article.html) (1994)
 
-:question:
+:grey_question:
 
 - B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
@@ -240,7 +240,7 @@
 > };
 > ```
 
-:question:
+:grey_question:
 
 - [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
 
@@ -263,7 +263,7 @@
 - A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/index.php/journals/296) – [Overload **70**](https://accu.org/index.php/journals/c142/) (2005)
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
 
-:question:
+:grey_question:
 
 - [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
 
@@ -294,7 +294,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 - [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
 - P.Grenyer. [*RAII is not garbage*](https://accu.org/index.php/journals/1945) – [Overload **106**](https://accu.org/index.php/journals/c303/) (2011)
 
-:question:
+:grey_question:
 
 - [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
 
@@ -377,7 +377,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ### Passkey
 
-:question:
+:grey_question:
 
 <!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
 
@@ -409,7 +409,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 - R.Nystrom. [*Singleton*](https://gameprogrammingpatterns.com/singleton.html) – Game programming patterns
 <!-- https://wiki.c2.com/?SingletonPattern -->
 
-:question:
+:grey_question:
 
 - [*Is Meyers’ implementation of the Singleton pattern thread safe?*](https://stackoverflow.com/q/1661529) – Stack Overflow
 
@@ -429,7 +429,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
 
-:question:
+:grey_question:
 
 - [*When should I use the Visitor design pattern?*](https://stackoverflow.com/q/255214) – Stack Overflow
 

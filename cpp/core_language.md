@@ -72,7 +72,7 @@
 
 ## Introduction and overview
 
-:question:
+:grey_question:
 
 - [*The definitive C++ book guide and list*](https://stackoverflow.com/q/388242) – Stack Overflow
 
@@ -112,7 +112,7 @@
 
 ### Inheritance
 
-:question:
+:grey_question:
 
 - [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/q/15921372) – Stack Overflow
 
@@ -132,7 +132,7 @@
 
 > These attributes allow the compiler to optimize for the case where paths of execution are more or less likely than any alternative path of execution.
 
-:question:
+:grey_question:
 
 - [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/q/51797959) – Stack Overflow
 
@@ -162,7 +162,7 @@
 
 > This attribute indicates that the function does not return.
 
-:question:
+:grey_question:
 
 - [*What is the point of `[[noreturn]]`?*](https://stackoverflow.com/q/10538291) – Stack Overflow
 
@@ -194,7 +194,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 - E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
 
-:question:
+:grey_question:
 
 - [*Structure padding and packing*](https://stackoverflow.com/q/4306186) – Stack Overflow
 
@@ -215,7 +215,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 - H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm)
 - S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
 
-:question:
+:grey_question:
 
 - [*Use of `const` for function parameters*](https://stackoverflow.com/q/117293) – Stack Overflow
 - [*C++ `const` keyword – use liberally?*](https://stackoverflow.com/q/1554750) – Stack Overflow
@@ -230,7 +230,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 ### `constexpr`
 
-:question:
+:grey_question:
 
 - [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/q/54124899) – Stack Overflow
 - [*Why do we need to mark functions as `constexpr`?*](https://stackoverflow.com/q/14472359) – Stack Overflow
@@ -263,7 +263,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### `inline`
 
-:question:
+:grey_question:
 
 - [*One Definition Rule – multiple definition of `inline` functions*](https://stackoverflow.com/q/39652884) – Stack Overflow
 - [*Does it make any sense to use `inline` keyword with templates?*](https://stackoverflow.com/q/10535667) – Stack Overflow
@@ -278,7 +278,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*Flexible array member*](https://en.wikipedia.org/wiki/Flexible_array_member) – Wikipedia
 
-:question:
+:grey_question:
 
 - [*Are flexible array members valid in C++?*](https://stackoverflow.com/q/4412749) – Stack Overflow
 - [*Is using flexible array members in C bad practice?*](https://stackoverflow.com/q/246977) – Stack Overflow
@@ -302,7 +302,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Namespaces
 
-:question:
+:grey_question:
 
 - [*Wherefore inline unnamed namespaces?*](https://stackoverflow.com/q/20208591) – Stack Overflow
 
@@ -327,7 +327,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - S.Brand. [*Adding C++17 structured bindings support to your classes*](https://blog.tartanllama.xyz/structured-bindings/) (2016)
 
-:question:
+:grey_question:
 
 - [*Structured bindings and tuple of references*](https://stackoverflow.com/q/49628401) – Stack Overflow
 
@@ -364,7 +364,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 - [*How do compilers use “over-allocation” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-overalloc) – C++ FAQ
 - [*How do compilers use an “associative array” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-assocarray) – C++ FAQ
 
-:question:
+:grey_question:
 
 - [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/q/53451770/1625187) – Stack Overflow
 - [*Difference between `new` and `operator new`?*](https://stackoverflow.com/q/1885849) – Stack Overflow
@@ -405,7 +405,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - R.Meyers. [*The new C: Compound literals*](https://www.drdobbs.com/the-new-c-compound-literals/184401404) – Dr.Dobb’s Journal (2001)
 
-:question:
+:grey_question:
 
 - [*Are compound literals standard C++?*](https://stackoverflow.com/q/28116467) – Stack Overflow
 
@@ -415,7 +415,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ### Order of evaluation
 
-:question:
+:grey_question:
 
 - [*Undefined behavior and sequence points*](https://stackoverflow.com/q/4176328) – Stack Overflow
 
@@ -452,7 +452,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
 - M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
 
-:question:
+:grey_question:
 
 - [*What is the strict aliasing rule?*](https://stackoverflow.com/q/98650) – Stack Overflow
 - [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/q/2906365) – Stack Overflow
@@ -486,7 +486,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - A.O’Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
 - A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
 
-:question:
+:grey_question:
 
 - [*Why doesn’t ADL find function templates?*](https://stackoverflow.com/q/2953684) – Stack Overflow
 
@@ -503,7 +503,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 #### `std::function`
 
-:question:
+:grey_question:
 
 - [*Move-only version of `std::function`*](https://stackoverflow.com/q/25330716) – Stack Overflow
 - [*How to create an `std::function` from a move-capturing lambda expression?*](https://stackoverflow.com/q/25421346) – Stack Overflow
@@ -519,7 +519,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
 - A.Allain. [*Lambda functions in C++11 – the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
 
-:question:
+:grey_question:
 
 - [*What is a lambda expression in C++11?*](https://stackoverflow.com/q/7627098) – Stack Overflow
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/q/22232164) – Stack Overflow
@@ -539,7 +539,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - P.Melendez. [*Recursive lambdas in C++(14)*](http://pedromelendez.com/blog/2015/07/16/recursive-lambdas-in-c14/) (2015)
 
-:question:
+:grey_question:
 
 - [*Recursive lambda functions in C++11*](https://stackoverflow.com/q/2067988) – Stack Overflow
 
@@ -574,7 +574,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ## Operators
 
-:question:
+:grey_question:
 
 - [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/q/4421706) – Stack Overflow
 
@@ -617,7 +617,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ## Tricks and subtleties
 
-:question:
+:grey_question:
 
 - [*Hidden features of C++?*](https://stackoverflow.com/q/75538) – Stack Overflow
 - [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
@@ -633,7 +633,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
 
-:question:
+:grey_question:
 
 - [*Accessing private members*](https://stackoverflow.com/q/726096) – Stack Overflow
 
@@ -644,7 +644,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - D.Weiler. [incbin – Include binary files in C/C++](https://github.com/graphitemaster/incbin)
 - H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
 
-:question:
+:grey_question:
 
 - [*Embedding resources in executable using GCC*](https://stackoverflow.com/q/4158900) – Stack Overflow
 

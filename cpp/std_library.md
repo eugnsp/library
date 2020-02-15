@@ -129,7 +129,7 @@
 
 - A.A.Stepanov, M.A.Marcus. [Sec. 3: *Partition algorithms*](http://stepanovpapers.com/PAM3-partition_notes.pdf) – Notes for the Foundations of programming course (2004–2005)
 
-:question:
+:grey_question:
 
 - [*`stable_partition` on forward iterators*](https://stackoverflow.com/q/59642958) – Stack Overflow
 - [*How is `stable_partition` an adaptive algorithm?*](https://stackoverflow.com/q/21554635) – Stack Overflow
@@ -140,7 +140,7 @@
 
 See also [*Concepts* – Templates](templates.md#concepts).
 
-:question:
+:grey_question:
 
 [*Why does `same_as` concept check type equality twice?*](https://stackoverflow.com/q/58509147) – Stack Overflow
 
@@ -167,14 +167,14 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### `std::array`
 
-:question:
+:grey_question:
 
 - [*Create `N`-element `constexpr` array in C++11*](https://stackoverflow.com/q/19019252) – Stack Overflow
 - [*Why isn’t `std::array::size` static?*](https://stackoverflow.com/q/21936507) – Stack Overflow
 
 #### `std::deque`
 
-:question:
+:grey_question:
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/q/6292332) – Stack Overflow
 - [*How can references be valid while iterators become invalidated in a deque*](https://stackoverflow.com/q/32800138) – Stack Overflow
@@ -185,7 +185,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - H.Hinnant. [*On `std::list::size`*](https://howardhinnant.github.io/On_list_size.html)
 
-:question:
+:grey_question:
 
 - [*Is `list::size()` really `O(n)`?*](https://stackoverflow.com/q/228908) – Stack Overflow
 - [*Why is `std::list` bigger on C++11?*](https://stackoverflow.com/q/10065055) – Stack Overflow
@@ -197,7 +197,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### `std::vector`
 
-:question:
+:grey_question:
 
 - [*How to enforce move semantics when a vector grows?*](https://stackoverflow.com/q/8001823) – Stack Overflow
 
@@ -211,7 +211,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - H.Hinnant. [*On `vector<bool>`*](https://howardhinnant.github.io/onvectorbool.html) (2012)
 
-:question:
+:grey_question:
 
 - [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/q/17794569) – Stack Overflow
 
@@ -219,7 +219,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Unordered containers are: `std::unordered_set` (collection of unique keys, hashed by keys), `std::unordered_map` (collection of key-value pairs, hashed by keys, keys are unique), `std::unordered_multiset` (collection of keys, hashed by keys), and `std::unordered_multimap` (collection of key-value pairs, hashed by keys).
 
-:question:
+:grey_question:
 
 - [*Why is `unordered_map` “`find` + `insert`” faster than “`insert` + check for success”?*](https://stackoverflow.com/q/31804025) – Stack Overflow
 - [*Performance of `emplace` is worse than check followed by `emplace`*](https://stackoverflow.com/q/24209592) – Stack Overflow
@@ -244,7 +244,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### `std::queue`
 
-:question:
+:grey_question:
 
 - [*Why doesn’t `std::queue::pop` return value?*](https://stackoverflow.com/q/25035691) – Stack Overflow
 
@@ -252,7 +252,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Transparent comparators make it possible to avoid constructing an object of the type `key_type` to do the lookup using member functions like `find`, `lower_bound`, etc.
 
-:question:
+:grey_question:
 
 - [*What are transparent comparators?*](https://stackoverflow.com/q/20317413) – Stack Overflow
 - [*Why is there no `std::is_transparent` equivalent for unordered containers?*](https://stackoverflow.com/q/33373228) – Stack Overflow
@@ -271,7 +271,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ## Input/output
 
-:question:
+:grey_question:
 
 - [`tellg()` function give wrong size of file?](https://stackoverflow.com/q/22984956) – Stack Overflow
 
@@ -301,7 +301,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 - D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
 - [{fmt}: a modern formatting library](https://github.com/fmtlib/fmt)
 
-:question:
+:grey_question:
 
 - [*`std::printf` vs. `std::cout`*](https://stackoverflow.com/q/2872543) – Stack Overflow
 - [*Is `std::cout` synchronized/thread-safe?*](https://stackoverflow.com/q/6374264) – Stack Overflow
@@ -315,7 +315,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ## Iterators
 
-:question:
+:grey_question:
 
 - [*Why use iterators instead of array indices?*](https://stackoverflow.com/q/131241) – Stack Overflow
 - [*Iterator loop vs index loop*](https://stackoverflow.com/q/14373934) – Stack Overflow
@@ -333,7 +333,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ### Allocators
 
-:question:
+:grey_question:
 
 - [*What does (template) `rebind<>` do?*](https://stackoverflow.com/q/14148756) – Stack Overflow
 - [*Why is `allocator::rebind` necessary when we have template template parameters?*](https://stackoverflow.com/q/12362363) – Stack Overflow
@@ -376,7 +376,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - M.E.O’Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) – PCG (2015)
 
-:question:
+:grey_question:
 
 - [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/q/53040940) – Stack Overflow
 - [*Why not just use `random_device`?*](https://stackoverflow.com/q/39288595) – Stack Overflow
@@ -409,7 +409,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 - H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
 - Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
-:question:
+:grey_question:
 
 - [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/q/106508) – Stack Overflow
 - [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/q/39288891) – Stack Overflow
@@ -427,7 +427,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 > The `std::unique_ptr` class is a smart pointer with unique ownership.
 
-:question:
+:grey_question:
 
 - [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
 - [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/q/16061407) – Stack Overflow
@@ -447,7 +447,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
 
-:question:
+:grey_question:
 
 - [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
 - [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
@@ -471,7 +471,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ### `std::weak_ptr`
 
-:question:
+:grey_question:
 
 - [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/q/12030650) – Stack Overflow
 
@@ -509,7 +509,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - B.Wicht. [*Boost `intrusive_ptr`: Faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
 
-:question:
+:grey_question:
 
 - [*Boost intrusive pointer*](https://stackoverflow.com/q/40137660) – Stack Overflow
 
@@ -530,7 +530,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
 
-:question:
+:grey_question:
 
 - [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
 - [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
@@ -541,7 +541,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ### Short string optimization
 
-:question:
+:grey_question:
 
 - [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/q/10315041) – Stack Overflow
 
@@ -564,7 +564,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 > `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement to represent negative values. They are provided only if the implementation directly supports the type.
 
-:question:
+:grey_question:
 
 - [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/q/16138237) – Stack Overflow
 
@@ -582,7 +582,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 #### `std::is_base_of`
 
-:question:
+:grey_question:
 
 - [*How does `is_base_of` work?*](https://stackoverflow.com/q/2910979) – Stack Overflow
 
@@ -614,7 +614,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 > An object of type `std::initializer_list<T>` is a lightweight proxy object that provides access to an array of objects of type `const T`.
 
-:question:
+:grey_question:
 
 - [*`std::initializer_list` and move semantics*](https://stackoverflow.com/q/8193102) – Stack Overflow
 
@@ -624,7 +624,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 ### Pairs and tuples
 
-:question:
+:grey_question:
 
 - [*Why can’t `std::tuple<int>` be trivially copyable?*](https://stackoverflow.com/q/38779985) – Stack Overflow
 - [*Replace `N`-th element of a `std::tuple`*](https://stackoverflow.com/q/59670539) – Stack Overflow
@@ -652,7 +652,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
 - A.Krzemieński. [*Efficient optional values*](https://akrzemi1.wordpress.com/2015/07/15/efficient-optional-values/) (2015)
 
-:question:
+:grey_question:
 
 - [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
 - [*Implementing `operator<=>` for `optional<T>`*](https://stackoverflow.com/q/47315539) – Stack Overflow
@@ -696,7 +696,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 ### `std::launder`
 
-:question:
+:grey_question:
 
 - [*What is the purpose of `std::launder?`*](https://stackoverflow.com/q/39382501) – Stack Overflow
 - [*Where can I find what `std::launder` really does?*](https://stackoverflow.com/q/53268089) – Stack Overflow
@@ -713,7 +713,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - A.O’Dwyer. [*Don’t inherit from standard types*](https://quuxplusone.github.io/blog/2018/12/11/dont-inherit-from-std-types/) (2018)
 
-:question:
+:grey_question:
 
 - [*In `std::exchange`, why is the second template parameter defaulted?*](https://stackoverflow.com/q/34876969) – Stack Overflow
 - [*Why does the C++ standard algorithm `count` return a `difference_type` instead of `size_t`?*](https://stackoverflow.com/q/7505083) – Stack Overflow
@@ -734,7 +734,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - [*Standard Template Library*](https://en.wikipedia.org/wiki/Standard_Template_Library) – Wikipedia
 - [*History of the Standard Template Library*](https://en.wikipedia.org/wiki/History_of_the_Standard_Template_Library) – Wikipedia
 
-:question:
+:grey_question:
 
 - [*What’s the difference between “STL” and “C++ standard library”?*](https://stackoverflow.com/q/5205491) – Stack Overflow
 

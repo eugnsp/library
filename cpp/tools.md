@@ -73,7 +73,7 @@
 
 - M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
 
-:question:
+:grey_question:
 
 - [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/q/49481217) – Stack Overflow
 - [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/q/1936719) – Stack Overflow
@@ -108,7 +108,7 @@
 
 - [*Debugging stack traces from crash dumps*](https://github.com/microsoft/WinObjC/wiki/Debugging-Stack-Traces-from-Crash-Dumps) – Microsoft
 
-:question:
+:grey_question:
 
 - [*When and why will an OS initialise memory to `0xCD`, `0xDD`, etc. on `malloc`/`free`/`new`/`delete`?*](https://stackoverflow.com/q/370195) – Stack Overflow
 
@@ -124,7 +124,7 @@
 
 - [*Debugging with GDB*](https://sourceware.org/gdb/onlinedocs/gdb/Pretty-Printing.html)
 
-:question:
+:grey_question:
 
 - [*Identify source file name for a symbol in gdb debugger*](https://stackoverflow.com/q/58826430) – Stack Overflow
 
@@ -157,7 +157,7 @@
 
 ### Git
 
-:question:
+:grey_question:
 
 - [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/q/1274057) – Stack Overflow
 

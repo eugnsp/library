@@ -83,7 +83,7 @@
 
 - A.Williams. [*Why do we need `atomic_shared_ptr`?*](https://www.justsoftwaresolutions.co.uk/threading/why-do-we-need-atomic_shared_ptr.html) (2015)
 
-:question:
+:grey_question:
 
 - [*What is the difference between `std::shared_ptr` and `std::experimental::atomic_shared_ptr`?*](https://stackoverflow.com/q/40223599) – Stack Overflow
 
@@ -103,7 +103,7 @@
 
 > The `std::promise` provides a facility to store a value or an exception that is later acquired asynchronously via a `std::future` object created by the `std::promise` object.
 
-:question:
+:grey_question:
 
 - [*What is `std::promise`?*](https://stackoverflow.com/q/11004273) – Stack Overflow
 
