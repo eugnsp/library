@@ -2,6 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Introduction and overview](#introduction-and-overview)
 - [Comparison sorting](#comparison-sorting)
 	- [Insertion sort](#insertion-sort)
 	- [Selection sort](#selection-sort)
@@ -14,11 +15,16 @@
 - [Linear-time sorting](#linear-time-sorting)
 	- [Count sort](#count-sort)
 	- [Radix sort](#radix-sort)
+	- [Sorting by swapping](#sorting-by-swapping)
+		- [Adjacent swaps](#adjacent-swaps)
+		- [Arbitrary swaps](#arbitrary-swaps)
 - [Other algorithms](#other-algorithms)
 	- [Pancake sorting](#pancake-sorting)
 	- [Spreadsort](#spreadsort)
 
 ---
+
+## Introduction and overview
 
 :link:
 
@@ -101,10 +107,6 @@
 
 > Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>n</sub>)</code>, i.e. the number of pairs <code>(a<sub>i</sub></code>, <code>a<sub>j</sub>)</code> with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
 
-:memo:
-
-- The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert it into the identity one) is equal to the number of inversions in `P`.
-
 :link:
 
 - [*Counting inversions in a permutation*](https://web.cs.ucdavis.edu/~gusfield/cs122/inversioncount.pdf) – CS 122A: [Algorithm design and analysis](https://web.cs.ucdavis.edu/~gusfield/cs122f10/) (2010)
@@ -168,6 +170,20 @@
 :movie_camera:
 
 - M.Skarupke. [*Sorting in less than `O(n log n)`: Generalizing and optimizing radix sort*](https://www.youtube.com/watch?v=zqs87a_7zxw) – C++Now (2017)
+
+### Sorting by swapping
+
+#### Adjacent swaps
+
+> The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert it into the identity one) is equal to the number of inversions in `P`.
+
+#### Arbitrary swaps
+
+> The minimum number of arbitrary swaps required to sort a permutation `P` (i.e. convert it into the identity one) is equal to the size of `P` minus the number of cycles in `P`.
+
+:link:
+
+- [*Compute the minimal number of swaps to order a sequence*](https://stackoverflow.com/q/15152322) – Stack Overflow
 
 ---
 

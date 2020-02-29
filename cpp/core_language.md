@@ -20,6 +20,7 @@
 		- [Friend function templates](#friend-function-templates)
 		- [Hidden friends](#hidden-friends)
 	- [`inline`](#inline)
+	- [`static`](#static)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
 	- [Namespaces](#namespaces)
@@ -271,6 +272,12 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*`inline` specifier*](https://en.cppreference.com/w/cpp/language/inline) – C++ reference
+
+### `static`
+
+:grey_question:
+
+- [*Static variables in an inlined function*](https://stackoverflow.com/q/185624) – Stack Overflow
 
 ### Flexible array member
 

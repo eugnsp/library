@@ -12,6 +12,7 @@
 - [Concepts](#concepts)
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
+		- [`std::map`](#stdmap)
 	- [Sequence containers](#sequence-containers)
 		- [`std::array`](#stdarray)
 		- [`std::deque`](#stddeque)
@@ -157,9 +158,12 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Associative containers are: `std::set` (collection of unique keys, sorted by keys), `std::map` (collection of key-value pairs, sorted by keys, keys are unique), `std::multiset` (collection of keys, sorted by keys), and `std::multimap` (collection of key-value pairs, sorted by keys).
 
+#### `std::map`
+
 :link:
 
 - [*`insert` vs `emplace` vs `operator[]` in C++ `std::map`*](https://stackoverflow.com/q/17172080) – Stack Overflow
+- [*Is there any reason to use `std::map::emplace()` instead of `try_emplace()` in C++1z?*](https://stackoverflow.com/q/46046828) – Stack Overflow
 
 ### Sequence containers
 
@@ -286,7 +290,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- C.Sharpe. [*Don’t use `std::endl`*](https://accu.org/index.php/journals/2619) – [Overload **149**](https://accu.org/index.php/journals/c395/), 34 (2019)
+- C.Sharpe. [*Don’t use `std::endl`*](https://accu.org/index.php/journals/2619) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
 - D.K&uuml;hl. [*Stop excessive use of `std::endl`*](https://kuhllib.com/2012/01/14/stop-excessive-use-of-stdendl/) (2012)
 
 :anchor:
@@ -297,7 +301,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/index.php/journals/2486) – [Overload **143**](https://accu.org/index.php/journals/c384/), 16 (2018)
+- S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/index.php/journals/2486) – [Overload **143**](https://accu.org/index.php/journals/c384/) (2018)
 - D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
 - [{fmt}: a modern formatting library](https://github.com/fmtlib/fmt)
 
@@ -645,8 +649,8 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - B.Filipek. [*Using C++17 `std::optional`*](https://www.bfilipek.com/2018/05/using-optional.html) (2018)
 - B.Filipek. [*Error handling and `std::optional`*](https://www.bfilipek.com/2018/05/errors-and-optional.html) (2018)
 - B.Filipek. [*In-place construction for `std::any`, `std::variant` and `std::optional`*](https://www.bfilipek.com/2018/07/in-place-cpp17.html) (2018)
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
-- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/), 21 (2018)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/) (2018)
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2018)
 - S.Brand. [*Functional exceptionless error-handling with optional and expected*](https://blog.tartanllama.xyz/optional-expected/) (2017)
 - S.Brand. [*Implementation with functional-style extensions and reference support*](https://github.com/TartanLlama/optional)
 - A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
@@ -681,7 +685,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :link:
 
-- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/), 21 (2018)
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2018)
 - S.Brand. [C++11/14/17 `std::expected` with functional-style extensions](https://github.com/TartanLlama/expected)
 
 :movie_camera:

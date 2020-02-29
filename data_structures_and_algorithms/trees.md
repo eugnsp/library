@@ -5,9 +5,11 @@
 - [Binary trees](#binary-trees)
 	- [Binary search trees](#binary-search-trees)
 	- [Self-balancing binary search trees](#self-balancing-binary-search-trees)
-		- [AVL (Adelson-Velskiĭ–Landis) trees](#avl-adelson-velskiĭndashlandis-trees)
+		- [AVL (Adelson-Velskiĭ–Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	- [Other binary trees](#other-binary-trees)
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
+	- [Generation](#generation)
+		- [Generation of random binary trees](#generation-of-random-binary-trees)
 - [B-trees](#b-trees)
 	- [2-3 trees](#2-3-trees)
 - [Traversal](#traversal)
@@ -127,6 +129,16 @@
 :page_facing_up:
 
 - P.M.Fenwick. [*A new data structure for cumulative frequency tables*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf) – [Software: Practice and Experience **24**, 327](https://dx.doi.org/10.1002/spe.4380240306) (1994)
+
+### Generation
+
+- Sec. 7.2.1.6: [*Generating all trees*](http://www.cs.utsa.edu/~wagner/knuth/fasc4a.pdf) – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
+
+#### Generation of random binary trees
+
+:link:
+
+- E.Mäkinen [*Generating random binary trees – a survey*](https://www.sis.uta.fi/cs/reports/pdf/A-1998-3.pdf) (1998)
 
 ---
 

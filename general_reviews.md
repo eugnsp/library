@@ -2,11 +2,19 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Finite elements method](#finite-elements-method)
-- [Fluid dynamics](#fluid-dynamics)
-- [Spacecrafts dynamics](#spacecrafts-dynamics)
+- [Numerical analysis](#numerical-analysis)
+	- [Finite elements and finite volume methods](#finite-elements-and-finite-volume-methods)
+	- [Spacecrafts dynamics](#spacecrafts-dynamics)
+- [Scalable systems design](#scalable-systems-design)
+	- [Distributed datastore](#distributed-datastore)
+	- [Examples](#examples)
+		- [Message exchange systems](#message-exchange-systems)
+		- [Twitter](#twitter)
 - [People](#people)
 	- [Howard Aiken](#howard-aiken)
+	- [John Conway](#john-conway)
+	- [Brian Kernighan](#brian-kernighan)
+	- [Donald Knuth](#donald-knuth)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Alexander Tomilin](#alexander-tomilin)
@@ -19,27 +27,48 @@
 
 ---
 
-## Finite elements method
+## Numerical analysis
+
+### Finite elements and finite volume methods
 
 :movie_camera:
 
 - D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) – Annual conference of the Great Lakes section of the SIAM (2015)
-
----
-
-## Fluid dynamics
-
-:movie_camera:
-
 - P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) – AE585 Seminar lecture series (2014)
 
----
-
-## Spacecrafts dynamics
+### Spacecrafts dynamics
 
 :movie_camera:
 
 - J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)
+
+---
+
+## Scalable systems design
+
+:movie_camera:
+
+- D.Malan. [*Scalability*](https://www.youtube.com/watch?v=-W9F__D3oY4) – Harvard CS75: [Building dynamic websites](http://cs75.tv/2012/summer/)gh (2012)
+
+### Distributed datastore
+
+:movie_camera:
+
+- M.Fowler. [*Introduction to NoSQL*](https://www.youtube.com/watch?v=qI_g07C_Q5I) – GOTO (2012)
+- N.L.Gowda. *How distributed datastore works: scaling problems and CAP theorem.* [Part I](https://www.youtube.com/watch?v=l9JSK9OBzA4), [Part II](https://www.youtube.com/watch?v=ZbyYvTfBlE0)
+
+### Examples
+
+#### Message exchange systems
+
+- N.L.Gowda. [*Whatsapp system design*](https://www.youtube.com/watch?v=L7LtmfFYjc4)
+
+#### Twitter
+
+:movie_camera:
+
+- N.L.Gowda. [*Twitter system design ans architecture*](https://www.youtube.com/watch?v=wYk0xPP_P_8) (2018)
+- R.Lopez. [*System design: How to design Twitter?*](https://www.youtube.com/watch?v=KmAyPUv9gOY) (2017)
 
 ---
 
@@ -77,6 +106,12 @@
 ### Brian Kernighan
 
 :movie_camera:
+
+- B.Kernighan. *Questions and answers.* [Part I](https://www.youtube.com/watch?v=zmYhR8cUX90), [Part II](https://www.youtube.com/watch?v=VVpRj3Po6K4), [Part III](https://www.youtube.com/watch?v=E6vtRm5M8I0) – Computerphile
+- B.Kernighan. [*“C” programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
+- B.Kernighan. [*Where `grep` came from*](https://www.youtube.com/watch?v=NTfOnGZUZDk) – Computerphile
+- B.Kernighan. [*Associative arrays*](https://www.youtube.com/watch?v=qTZJLJ3Gm6Q) – Computerphile
+- B.Kernighan. [*The factory of ideas: Working at Bell Labs*](https://www.youtube.com/watch?v=QFK6RG47bww) – Computerphile
 
 ### Donald Knuth
 
@@ -145,7 +180,7 @@
 
 :link:
 
-- D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/), 20 (2018)
+- D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/) (2018)
 
 ---
 
@@ -182,3 +217,4 @@
 <!-- Fun -->
 
 <!-- https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->
+

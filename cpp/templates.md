@@ -48,7 +48,7 @@
 
 :link:
 
-- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/), 13 (2019)
+- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2019)
 
 :movie_camera:
 

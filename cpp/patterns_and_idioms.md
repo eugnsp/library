@@ -163,7 +163,7 @@
 :anchor:
 
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
-- [*`std::move_if_noexcept`](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
+- [*`std::move_if_noexcept`*](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
 
 ---
 
@@ -400,6 +400,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 >     Singleton();
 >     Singleton(const Singleton&) = delete;
 >     Singleton& operator=(const Singleton&) = delete;
+>     ~Singleton() = default;
 > };
 
 :link:
@@ -416,6 +417,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :book:
 
 - Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- Item 26: *Limiting the number of objects of a class* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 ### Strategy
 
@@ -423,11 +425,29 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ### Visitor
 
-> The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm.
+> The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm. It lets one define a new operation without changing the classes of the elements on which it operates.
+> ```cpp
+> class Visitor {
+> public:
+>     void visit(A&);
+>     void visit(B&);
+> };
+>
+> class A {
+> public:
+>     void accept(Visitor& v) { v.visit(*this); }
+> };
+>
+> class B {
+> public:
+>     void accept(Visitor& v) { v.visit(*this); }
+> };
+> ```
 
 :link:
 
 - [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
+- F.Glassborow. [*Exploring patterns: Part 2*](https://accu.org/index.php/journals/593) – [Overload **27**](https://accu.org/index.php/journals/c176/) (1998)
 
 :grey_question:
 

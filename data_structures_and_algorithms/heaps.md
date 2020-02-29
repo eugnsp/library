@@ -20,8 +20,12 @@
 :link:
 
 - [*Binary heap*](https://en.wikipedia.org/wiki/Binary_heap) – Wikipedia
+
+:grey_question:
+
 - [*Argument for `O(1)` average-case complexity of heap insertion*](https://stackoverflow.com/q/39514469) – Stack Overflow
 - [*Amortized analysis on min-heap?*](https://stackoverflow.com/q/29103659) – Stack Overflow
+- [*How to implement `O(log n)` decrease-key operation for min-heap-based priority queue?*](https://stackoverflow.com/q/17009056) – Stack Overflow
 
 <!-- https://webdocs.cs.ualberta.ca/~hayward/papers/heap.pdf
  -->

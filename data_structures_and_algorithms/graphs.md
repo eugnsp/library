@@ -9,11 +9,17 @@
 	- [Cycle detection](#cycle-detection)
 	- [Topological sorting](#topological-sorting)
 		- [DFS-based topological sorting](#dfs-based-topological-sorting)
-		- [Kahn's algorithm](#kahns-algorithm)
+		- [Kahn’s algorithm](#kahns-algorithm)
 - [Connectivity](#connectivity)
 	- [Biconnectivity](#biconnectivity)
 		- [Articulation points and bridges](#articulation-points-and-bridges)
 		- [Biconnected components](#biconnected-components)
+- [Shortest path](#shortest-path)
+	- [Single source shortest path](#single-source-shortest-path)
+		- [Dijsktra’s algorithm](#dijsktras-algorithm)
+		- [Bellman–Ford’s algorithm](#bellmanfords-algorithm)
+		- [A* algorithm](#a-algorithm)
+
 ---
 
 ## Data structures
@@ -53,22 +59,7 @@
 
 ### Depth-first search (DFS)
 
-> Depth-first search is an algorithm for traversing or searching a graph that explores as far as possible along each branch before backtracking.
-
-:memo:
-
-- [Data structures](#data-structures)
-- [Traversal](#traversal)
-	- [Breadth-first search (BFS)](#breadth-first-search-bfs)
-	- [Depth-first search (DFS)](#depth-first-search-dfs)
-	- [Cycle detection](#cycle-detection)
-	- [Topological sorting](#topological-sorting)
-		- [DFS-based topological sorting](#dfs-based-topological-sorting)
-		- [Kahn's algorithm](#kahns-algorithm)
-- [Connectivity](#connectivity)
-	- [Biconnectivity](#biconnectivity)
-		- [Articulation points and bridges](#articulation-points-and-bridges)
-		- [Biconnected components](#biconnected-components)
+> Depth-first search is an algorithm for traversing or searching a graph that explores as far as possible along each branch before backtracking. It can be used for [cycle detection](#cycle-detection), [topological sorting](#dfs-based-topological-sorting), finding [articulation points and bridges](#articulation-points-and-bridges), finding [biconnected components](#biconnected-components).
 
 :movie_camera:
 
@@ -119,7 +110,7 @@
 - Sec. 22.4: *Topological sort* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 - Sec. 5.10.1: *Topological sorting* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
 
-#### Kahn's algorithm
+#### Kahn’s algorithm
 
 :link:
 
@@ -176,3 +167,43 @@
 :link:
 
 - [*Biconnected component*](https://en.wikipedia.org/wiki/Biconnected_component) – Wikipedia
+
+---
+
+## Shortest path
+
+### Single source shortest path
+
+:movie_camera:
+
+- S.Devadas. [*Single-source shortest paths problem*](https://www.youtube.com/watch?v=Aa2sqUhIn-E) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+
+#### Dijsktra’s algorithm
+
+:link:
+
+- [*Dijkstra’s algorithm*](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) – Wikipedia
+
+:grey_question:
+
+- [*Why does Dijkstra’s algorithm use decrease-key?*](https://stackoverflow.com/q/9255620) – Stack Overflow
+- [*How to implement `O(log n)` decrease-key operation for min-heap-based priority queue?*](https://stackoverflow.com/q/17009056) – Stack Overflow
+
+:movie_camera:
+
+- S.Devadas. [*SSSP on DAGs and Dijkstra’s algorithm*](https://www.youtube.com/watch?v=2E7MmKv0Y24), [*Speeding up Dijkstra*](https://www.youtube.com/watch?v=CHvQ3q_gJ7E) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+- M.Pound. [*Dijkstra’s algorithm*](https://www.youtube.com/watch?v=GazC3A4OQTE) – Computerphile
+
+#### Bellman–Ford’s algorithm
+
+:movie_camera:
+
+- S.Devadas. [*SSSP on DAGs and Dijkstra’s algorithm*](https://www.youtube.com/watch?v=2E7MmKv0Y24) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
+
+#### A* algorithm
+
+:movie_camera:
+
+- M.Pound. [*A* search algorithm*](https://www.youtube.com/watch?v=ySN5Wnu88nE) – Computerphile
+
+

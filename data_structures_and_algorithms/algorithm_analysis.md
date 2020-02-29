@@ -11,7 +11,7 @@
 
 ## Complexity analysis
 
-- S.Ignatchenko. [*Some big-Os are bigger than others*](https://accu.org/index.php/journals/2268) – [Overload **134**](https://accu.org/index.php/journals/c364/), 4 (2016)
+- S.Ignatchenko. [*Some big-Os are bigger than others*](https://accu.org/index.php/journals/2268) – [Overload **134**](https://accu.org/index.php/journals/c364/) (2016)
 
 ### Amortized analysis
 

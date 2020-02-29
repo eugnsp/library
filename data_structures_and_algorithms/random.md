@@ -2,11 +2,23 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Random numbers generation](#random-numbers-generation)
+	- [Pseudorandom numbers generation](#pseudorandom-numbers-generation)
 - [Random sampling](#random-sampling)
 	- [Selection sampling](#selection-sampling)
 	- [Reservoir sampling](#reservoir-sampling)
 - [Random shuffling](#random-shuffling)
-	- [Fisher–Yates algorithm](#fisherndashyates-algorithm)
+	- [Fisher–Yates algorithm](#fisheryates-algorithm)
+
+---
+
+## Random numbers generation
+
+### Pseudorandom numbers generation
+
+:link:
+
+- [*Xorshift*](https://en.wikipedia.org/wiki/Xorshift) – Wikipedia
 
 ---
 
