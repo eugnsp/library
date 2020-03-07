@@ -4,6 +4,7 @@
 
 - [General information](#general-information)
 - [Consistent hashing](#consistent-hashing)
+- [Bloom filter](#bloom-filter)
 
 ---
 
@@ -14,6 +15,10 @@
 :link:
 
 - [*Hash table*](https://en.wikipedia.org/wiki/Hash_table) – Wikipedia
+
+:grey_question:
+
+- [*Why is XOR the default way to combine hashes?*](https://stackoverflow.com/q/5889238) – Stack Overflow
 
 :movie_camera:
 
@@ -34,3 +39,7 @@ http://codecapsule.com/2013/11/11/robin-hood-hashing/
 https://arxiv.org/pdf/1809.04339.pdf
 
 -->
+
+## Bloom filter
+
+See [*Bloom filter* – Randomized algorithms and probabilistic datastructures](random.md#bloom-filter)

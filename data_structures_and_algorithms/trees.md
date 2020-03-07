@@ -8,10 +8,11 @@
 		- [AVL (Adelson-Velskiĭ–Landis) trees](#avl-adelson-velskiĭlandis-trees)
 	- [Other binary trees](#other-binary-trees)
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
-	- [Generation](#generation)
-		- [Generation of random binary trees](#generation-of-random-binary-trees)
+	- [Generation of binary trees](#generation-of-binary-trees)
+		- [Random binary trees](#random-binary-trees)
 - [B-trees](#b-trees)
 	- [2-3 trees](#2-3-trees)
+	- [Range trees](#range-trees)
 - [Traversal](#traversal)
 - [Volumetric trees](#volumetric-trees)
 	- [OpenVDB](#openvdb)
@@ -99,13 +100,7 @@
 
 #### Binary indexed trees (Fenwick trees)
 
-> A binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums.
-
-:memo:
-
-- Both `0`-based and `1`-based indexing can be used in equally elegant ways.
-- A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for <code>min(&bullet;, &bullet;)</code>), a segment tree can be used.
-- Applications: arithmetic coding, Monte-Carlo simulations
+> A binary indexed tree (Fenwick tree) is a data structure that can efficiently update elements and calculate prefix sums. A Fenwick tree can be built for any cancellative semigroup (e.g. for the set of integers under addition or multiplication); if the cancellation property doesn't hold (e.g. for <code>min(&bullet;, &bullet;)</code>), a segment tree can be used. Both `0`-based and `1`-based indexing can be used in equally elegant ways. Applications: arithmetic coding, Monte–Carlo simulations.
 
  <!-- TODO : add links -->
 
@@ -115,6 +110,9 @@
 - [*Binary indexed trees*](https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/) – Topcoder
 - [*Fenwick tree*](https://brilliant.org/wiki/fenwick-tree/) – Brilliant
 - [*A JavaScript implementation of binary indexed tree*](https://github.com/Microsoft/fast-binary-indexed-tree-js) – Microsoft @ GitHub
+
+:grey_question:
+
 - [What are the advantage of binary indexed tree (BIT or Fenwick tree) over segment tree?](https://www.quora.com/What-are-the-advantage-of-binary-indexed-tree-BIT-or-fenwick-tree-over-segment-tree) – Quora
 
 :movie_camera:
@@ -130,11 +128,11 @@
 
 - P.M.Fenwick. [*A new data structure for cumulative frequency tables*](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.8917&rep=rep1&type=pdf) – [Software: Practice and Experience **24**, 327](https://dx.doi.org/10.1002/spe.4380240306) (1994)
 
-### Generation
+### Generation of binary trees
 
 - Sec. 7.2.1.6: [*Generating all trees*](http://www.cs.utsa.edu/~wagner/knuth/fasc4a.pdf) – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 4A: Combinatorial algorithms, Part 1* (2011)
 
-#### Generation of random binary trees
+#### Random binary trees
 
 :link:
 
@@ -153,6 +151,14 @@
 - Ch. 18: *B-trees* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
 ### 2-3 trees
+
+---
+
+### Range trees
+
+:movie_camera:
+
+- E.Demaine. [*Augmentation: Range trees*](https://www.youtube.com/watch?v=xVka6z1hu-I&t=3553) – MIT OCW 6.046J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm) (2015)
 
 ---
 

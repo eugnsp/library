@@ -27,7 +27,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
-	* :game_die: [Randomized algorithms](data_structures_and_algorithms/random.md)
+	* :game_die: [Randomized algorithms and probabilistic data structures](data_structures_and_algorithms/random.md)
 	* :1234: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
 	* :abc: [String algorithms](data_structures_and_algorithms/string.md)
@@ -37,11 +37,6 @@ This is a library of usefull and interesting references – web pages, videos, b
 - [C++ conferences](cpp/conferences.md)
 
 <!-- * [People](people.md) -->
-
-<!--
-- Miscellaneous funny stuff:
-http://www.cs.columbia.edu/~evs/songs/
--->
 
 :construction: Currently is under construction, and will always be. Please report broken links.
 

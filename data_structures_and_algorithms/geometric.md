@@ -5,6 +5,10 @@
 - [Polygons](#polygons)
 	- [Inscribed circle](#inscribed-circle)
 - [Closest pair of points](#closest-pair-of-points)
+- [Points generation](#points-generation)
+	- [Random points generation](#random-points-generation)
+		- [Random points in triangles](#random-points-in-triangles)
+		- [Random points in polygons](#random-points-in-polygons)
 
 ---
 
@@ -31,3 +35,28 @@
 
 - Sec. 33.4: *Finding the closest pair of points* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
+---
+
+## Points generation
+
+### Random points generation
+
+:book:
+
+- Sec. 1.5: G.Turk. *Generating random points in triangles* – A.S.Glassner. [*Graphics gems*](https://www.glassner.com/portfolio/graphics-gems/) (1990)
+
+#### Random points in triangles
+
+> Problem: given three points `A`, `B` and `C` that describe a triangle, pick a random point in it with uniform probability.
+
+:grey_question:
+
+- [*Uniform random point in triangle*](https://math.stackexchange.com/q/18686) – Mathematics
+
+#### Random points in polygons
+
+> Problem: given `N` points <code>A<sub>1</sub></code>, <code>A<sub>2</sub></code>, ..., <code>A<sub>N</sub></code> that describe a polygon, pick a random point in it with uniform probability.
+
+:grey_question:
+
+- [*How to get a random point on the interior of an irregular polygon?*](https://stackoverflow.com/q/19481514) – Stack Overflow

@@ -2,12 +2,16 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Automated theorem proving](#automated-theorem-proving)
 - [Numerical analysis](#numerical-analysis)
 	- [Finite elements and finite volume methods](#finite-elements-and-finite-volume-methods)
 	- [Spacecrafts dynamics](#spacecrafts-dynamics)
+- [Natural language processing](#natural-language-processing)
+	- [Spelling correction](#spelling-correction)
 - [Scalable systems design](#scalable-systems-design)
 	- [Distributed datastore](#distributed-datastore)
 	- [Examples](#examples)
+		- [Autocompletion](#autocompletion)
 		- [Message exchange systems](#message-exchange-systems)
 		- [Twitter](#twitter)
 - [People](#people)
@@ -24,6 +28,15 @@
 - [Algorithms](#algorithms)
 - [Journals](#journals)
 - [Blogs](#blogs)
+- [Folklore](#folklore)
+
+---
+
+## Automated theorem proving
+
+:movie_camera:
+
+- W.T.Gowers. [*What are the prospects for automatic theorem proving?*](https://www.youtube.com/watch?v=VamEGCJozgU) – Microsoft Research (2016)
 
 ---
 
@@ -44,6 +57,16 @@
 
 ---
 
+## Natural language processing
+
+### Spelling correction
+
+:link:
+
+- P.Norvig. [*How to write a spelling corrector*](https://norvig.com/spell-correct.html) (2007–2016)
+
+---
+
 ## Scalable systems design
 
 :movie_camera:
@@ -58,6 +81,11 @@
 - N.L.Gowda. *How distributed datastore works: scaling problems and CAP theorem.* [Part I](https://www.youtube.com/watch?v=l9JSK9OBzA4), [Part II](https://www.youtube.com/watch?v=ZbyYvTfBlE0)
 
 ### Examples
+
+#### Autocompletion
+
+- [*Building Prefixy*](https://prefixy.github.io/)
+
 
 #### Message exchange systems
 
@@ -105,25 +133,38 @@
 
 ### Brian Kernighan
 
+:link:
+
+- [*Quotes by Brian Kernighan*](https://www.azquotes.com/author/38835-Brian_Kernighan) – AZQuotes
+
 :movie_camera:
 
-- B.Kernighan. *Questions and answers.* [Part I](https://www.youtube.com/watch?v=zmYhR8cUX90), [Part II](https://www.youtube.com/watch?v=VVpRj3Po6K4), [Part III](https://www.youtube.com/watch?v=E6vtRm5M8I0) – Computerphile
-- B.Kernighan. [*“C” programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
-- B.Kernighan. [*Where `grep` came from*](https://www.youtube.com/watch?v=NTfOnGZUZDk) – Computerphile
-- B.Kernighan. [*Associative arrays*](https://www.youtube.com/watch?v=qTZJLJ3Gm6Q) – Computerphile
-- B.Kernighan. [*The factory of ideas: Working at Bell Labs*](https://www.youtube.com/watch?v=QFK6RG47bww) – Computerphile
+- *Questions and answers.* [Part I](https://www.youtube.com/watch?v=zmYhR8cUX90), [Part II](https://www.youtube.com/watch?v=VVpRj3Po6K4), [Part III](https://www.youtube.com/watch?v=E6vtRm5M8I0) – Computerphile
+- [*“C” programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
+- [*Where `grep` came from*](https://www.youtube.com/watch?v=NTfOnGZUZDk) – Computerphile
+- [*Associative arrays*](https://www.youtube.com/watch?v=qTZJLJ3Gm6Q) – Computerphile
+- [*The factory of ideas: Working at Bell Labs*](https://www.youtube.com/watch?v=QFK6RG47bww) – Computerphile
 
 ### Donald Knuth
 
+:link:
+
+- [*Twenty questions for Donald Knuth*](https://www.informit.com/articles/article.aspx?p=2213858) (2014)
+
 :movie_camera:
 
-- L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming](https://www.youtube.com/watch?v=2BdBfsXbST8)
+- L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming](https://www.youtube.com/watch?v=2BdBfsXbST8) (2019)
+- [*Donald Knuth on P=NP*](https://www.youtube.com/watch?v=Ph4hlOzq_pE) (2014)
 
 :book:
 
 - D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) – Addison-Wesley
 
 ### Bjarne Stroustrup
+
+:link:
+
+- [*Quotes by Bjarne Stroustrup*](https://www.azquotes.com/author/14260-Bjarne_Stroustrup) – AZQuotes
 
 :movie_camera:
 
@@ -165,7 +206,9 @@
 
 :link:
 
+- R.A.Ghosh. [*Interview with Linus Torvalds: What motivates software developers*](https://firstmonday.org/ojs/index.php/fm/article/view/1475/1390) – First Monday (1998)
 - [*Linus Torvalds on C++*](http://harmful.cat-v.org/software/c++/linus) (2007)
+- [*Quotes by Linus Torvalds*](https://www.azquotes.com/author/14737-Linus_Torvalds) – AZQuotes
 
 :movie_camera:
 
@@ -213,6 +256,13 @@
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
+
+---
+
+## Folklore
+
+- [*Greenspun’s tenth rule*](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule) – Wikipedia
+- E.Siegel. [*Educational computer science songs*](http://www.cs.columbia.edu/~evs/songs/)
 
 <!-- Fun -->
 

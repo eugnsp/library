@@ -54,7 +54,7 @@
 
 - J.L.Bentley, M.D.McIlroy. [*Engineering a sort function*](https://cs.fit.edu/~pkc/classes/writing/samples/bentley93engineering.pdf) – [Software: Practice and experience **23**, 1249](https://doi.org/10.1002/spe.4380231105) (1993)
 
-:dizzy: **Visualizations**
+:dizzy:
 
 - [Comparison sorting algorithms visualization](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
 
@@ -89,7 +89,7 @@
 
 ### Heap sort
 
-:wrench: **Applications**
+:wrench:
 
 - Implementation of `std::partial_sort` that rearranges a given range such that `k` smallest elements become the first `k` elements of the range, in sorted order.
 

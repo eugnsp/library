@@ -1,4 +1,4 @@
-# Randomized algorithms <!-- omit in toc -->
+# Randomized algorithms and probabilistic data structures <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -9,6 +9,8 @@
 	- [Reservoir sampling](#reservoir-sampling)
 - [Random shuffling](#random-shuffling)
 	- [Fisher–Yates algorithm](#fisheryates-algorithm)
+- [Probabilistic datastructures](#probabilistic-datastructures)
+	- [Bloom filter](#bloom-filter)
 
 ---
 
@@ -61,3 +63,28 @@
 
 - [*Fisher–Yates shuffle*](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) – Wikipedia
 - [*Knuth shuffle*](https://www.rosettacode.org/wiki/Knuth_shuffle) – Rosetta Code
+
+---
+
+## Probabilistic datastructures
+
+### Bloom filter
+
+> Bloom filter is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not.
+
+:link:
+
+- [*Bloom filter*](https://en.wikipedia.org/wiki/Bloom_filter) – Wikipedia
+- [*Bloom filter calculator*](https://hur.st/bloomfilter/)
+- M.Majkowski. [*When Bloom filters don’t bloom*](https://blog.cloudflare.com/when-bloom-filters-dont-bloom/) (2020)
+- J.Talbot. [*What are Bloom filters?*](https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff) (2015)
+
+:movie_camera:
+
+- A.Deutsch. [*Esoteric data structures and where to find them*](https://www.youtube.com/watch?v=-8UZhDjgeZU&t=603) – CppCon (2017)
+- R.Edwards. [*Bloom filters*](https://www.youtube.com/watch?v=heEDL9usFgs)
+- N.L.Gowda. [*Bloom filter for system design*](https://www.youtube.com/watch?v=Bay3X9PAX5k)
+
+:dizzy:
+
+- J.Davies. [*Bloom filters*](https://www.jasondavies.com/bloomfilter/)
