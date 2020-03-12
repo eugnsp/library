@@ -6,6 +6,7 @@
 - [Traversal](#traversal)
 	- [Breadth-first search (BFS)](#breadth-first-search-bfs)
 	- [Depth-first search (DFS)](#depth-first-search-dfs)
+		- [Morris traversal](#morris-traversal)
 	- [Cycle detection](#cycle-detection)
 	- [Topological sorting](#topological-sorting)
 		- [DFS-based topological sorting](#dfs-based-topological-sorting)
@@ -18,7 +19,7 @@
 	- [Single source shortest path](#single-source-shortest-path)
 		- [Dijsktra’s algorithm](#dijsktras-algorithm)
 		- [Bellman–Ford’s algorithm](#bellmanfords-algorithm)
-		- [A* algorithm](#a-algorithm)
+		- [A\* algorithm](#a-algorithm)
 
 ---
 
@@ -26,12 +27,15 @@
 
 :book:
 
-- Sec. 5.2: *Data structures for graphs* – S.S.Skiena. *The algorithm design manual*. Springer, 2<sup>nd</sup> ed., 2008.\
-[Book website](http://www.algorist.com/)
+- Sec. 5.2: *Data structures for graphs* – S.S.Skiena. *The algorithm design manual* – Springer (2008)
 
 ---
 
 ## Traversal
+
+:book:
+
+- Sec. 6.4: *Tree traversal* – Drozdek A. [*Data structures and algorithms in C++*] – Cengage Learning (2012)
 
 ### Breadth-first search (BFS)
 
@@ -71,6 +75,25 @@
 - Sec. 5.8: *Depth-first search*, Sec. 5.10: *Depth-first search on directed graphs* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
 - Sec. 4.2.1: *Depth first search* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
 
+#### Morris traversal
+
+:link:
+
+- [*Morris in-order traversal using threading*](https://en.wikipedia.org/wiki/Tree_traversal#Morris_in-order_traversal_using_threading) – Wikipedia
+
+:grey_question:
+
+- [*Explain Morris inorder tree traversal without using stacks or recursion*](https://stackoverflow.com/q/5502916) – Stack Overflow
+
+:movie_camera:
+
+- N.Ormrod. [*Fantastic algorithms and where to find them*: Morris traversal](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=703) – CppCon (2017)
+
+:page_facing_up:
+
+- P.Mateti, R.Manghirmalani. *Morris’ tree traversal algorithm reconsidered* – [Science of Computer Programming **11**, 29](https://doi.org/10.1016/0167-6423%2888%2990063-9) (1988)
+- J.M.Morris. *Traversing binary trees simply and cheaply* – [Information Processing Letters **9**, 197](https://doi.org/10.1016/0020-0190%2879%2990068-1) (1979)
+
 ### Cycle detection
 
 :movie_camera:
@@ -89,6 +112,7 @@
 :book:
 
 - Sec. 4.2.5: *Topological sort* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 3.6: *Directed acyclic graphs and topological ordering* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
 
 :memo:
 
@@ -148,7 +172,6 @@
 
 :book:
 
-
 - Ch. 30: *Connectivity*, Sec.: *Biconnectivity* – R.Sedgewick. *Algorithms* (1983)
 - Sec. 6.4: *Biconnected components and DFS* – E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* (1997)
 
@@ -194,13 +217,17 @@
 - S.Devadas. [*SSSP on DAGs and Dijkstra’s algorithm*](https://www.youtube.com/watch?v=2E7MmKv0Y24), [*Speeding up Dijkstra*](https://www.youtube.com/watch?v=CHvQ3q_gJ7E) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 - M.Pound. [*Dijkstra’s algorithm*](https://www.youtube.com/watch?v=GazC3A4OQTE) – Computerphile
 
+:book:
+
+- Ch. 9: *Dijkstra’s shortest-path algorithm* – Roughgarden T. [*Algorithms illuminated (Part 2): Graph algorithms and data structures*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2018)
+
 #### Bellman–Ford’s algorithm
 
 :movie_camera:
 
 - S.Devadas. [*SSSP on DAGs and Dijkstra’s algorithm*](https://www.youtube.com/watch?v=2E7MmKv0Y24) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) (2011)
 
-#### A* algorithm
+#### A\* algorithm
 
 :movie_camera:
 

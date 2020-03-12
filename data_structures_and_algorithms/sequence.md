@@ -17,11 +17,7 @@
 
 ## Rotation (cyclic shift)
 
-> A `k`-rotation (or a `k`-cyclic shift) of a sequence <code>{a<sub>0</sub>a<sub>2</sub>...a<sub>n-1</sub>}</code> is a sequence <code>{a<sub>P(1)</sub>a<sub>P(2)</sub>...a<sub>P(n-1)</sub>}</code>, where the index permutation is `P(i) = (i + k) % n`.
-
-:memo:
-
-- Any non-zero rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(k, n)`.
+> A `K`-rotation (or a `K`-cyclic shift) of a sequence <code>{a<sub>0</sub>a<sub>2</sub>...a<sub>N-1</sub>}</code> is a sequence <code>{a<sub>P(1)</sub>a<sub>P(2)</sub>...a<sub>P(N-1)</sub>}</code>, where the index permutation is `P(i) = (i + K) % N`. Any non-zero rotation has no trivial cycles. The number of (non-trivial) cycles is `gcd(K, N)`.
 
 :link:
 
@@ -42,21 +38,15 @@
 
 ### Three reverses rotation algorithm
 
-> Gist of the algorithm: reverse the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then reverse the whole sequence <code>{a<sub>k-1</sub>...a<sub>0</sub>a<sub>n-1</sub>...a<sub>k</sub>}</code>. The total number of swaps is <code>&lfloor;n/2&rfloor; + &lfloor;k/2&rfloor; + &lfloor;(n-k)/2&rfloor; &sim; n</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3n</code>. This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
+> Gist of the algorithm: reverse the subsequences <code>{a<sub>0</sub>...a<sub>K-1</sub>}</code> and <code>{a<sub>K</sub>...a<sub>N-1</sub>}</code>, then reverse the whole sequence <code>{a<sub>K-1</sub>...a<sub>0</sub>a<sub>N-1</sub>...a<sub>K</sub>}</code>. The total number of swaps is <code>&lfloor;N/2&rfloor; + &lfloor;K/2&rfloor; + &lfloor;(N-K)/2&rfloor; &sim; N</code>. With 3 assignments per swap, the total number of assignments is <code>&sim; 3N</code>. This algorithm is typically used to implement `std::rotate` for bidirectional iterators.
 
 ### Gries–Mills algorithm
 
-> Gist of the algorithm: if `k = n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>; if `k < n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>2k-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>0</sub>...a<sub>k-1</sub>a<sub>2k</sub>...a<sub>n-1</sub>}</code> with `k' = k`; if `k > n - k`, swap the subsequences <code>{a<sub>0</sub>...a<sub>n-k-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>n-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>n-k</sub>...a<sub>k-1</sub>a<sub>0</sub>...a<sub>n-k-1</sub>}</code> with `k' = 2k - n`.
-
-:memo:
-
-- The section sizes `(k, n - k)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(k, n)`.
-- The total number of swaps is `n - gcd(k, n)`. With 3 assignments per swap, the total number of assignments is `3[n - gcd(k, n)]`.
-- The Gries–Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
+> Gist of the algorithm: if `K = N - K`, swap the subsequences <code>{a<sub>0</sub>...a<sub>K-1</sub>}</code> and <code>{a<sub>K</sub>...a<sub>N-1</sub>}</code>; if `K < N - K`, swap the subsequences <code>{a<sub>0</sub>...a<sub>K-1</sub>}</code> and <code>{a<sub>K</sub>...a<sub>2K-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>0</sub>...a<sub>K-1</sub>a<sub>2K</sub>...a<sub>N-1</sub>}</code> with `K' = K`; if `K > N - K`, swap the subsequences <code>{a<sub>0</sub>...a<sub>N-K-1</sub>}</code> and <code>{a<sub>k</sub>...a<sub>N-1</sub>}</code>, then proceed recursively for the suffix subsequence <code>{a<sub>N-K</sub>...a<sub>K-1</sub>a<sub>0</sub>...a<sub>N-K-1</sub>}</code> with `K' = 2K - N`. The section sizes `(K, N - K)` form the same sequence as that obtained if the subtraction-based Euclidean algorithm is employed to calculate `gcd(K, N)`. The total number of swaps is `N - gcd(K, N)`. With 3 assignments per swap, the total number of assignments is `3[N - gcd(K, N)]`. The Gries–Mills algorithm can be implemented such that it only requires to move one step forward, so this algorithm is typically used to implement `std::rotate` for forward and random access iterators.
 
 ### Dolphin (juggling) algoirithm
 
-> Gist of the algorithm: compute the number of cycles, `nc = gcd(k, n - k)`; for each cycle <code>{a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...}</code> with `Ci(j) = (i + jk) % n, i = 0, ..., nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>{a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>}</code>. The total number of assignments is `n + gcd(k, n)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses. This algorithm is sometimes used to implement `std::rotate` for random access iterators.
+> Gist of the algorithm: compute the number of cycles, `Nc = gcd(K, N - K)`; for each cycle <code>{a<sub>Ci(0)</sub>a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...}</code> with `Ci(j) = (i + jK) % N, i = 0, ..., Nc - 1`, make a cyclic shift of all the elements by one position to obtain <code>{a<sub>Ci(1)</sub>a<sub>Ci(2)</sub>...a<sub>Ci(0)</sub>}</code>. The total number of assignments is `N + gcd(K, N)`. However, this algorithm is not cache-friendly and can have poor performance in practice, although it makes much fewer (~2-3 times) memory accesses. This algorithm is sometimes used to implement `std::rotate` for random access iterators.
 
 :page_facing_up:
 
@@ -66,7 +56,7 @@
 
 ## Longest increasing subsequence
 
-> Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence. The dynamic programming solution (without additional tricks) has running time <code>O(n<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(n log n)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `k` of a subsequence, is taken into account, it requires `O(n log k)` time. Any comparison-based algorithm requires at least <code>n log<sub>2</sub> n - n log<sub>2</sub> log<sub>2</sub> n + O(n)</code> comparisons in the worst case.
+> Problem: find the longest monotonically increasing subsequence (not necessarily contiguous) within a given sequence. The dynamic programming solution (without additional tricks) has running time <code>O(N<sup>2</sup>)</code>, and is not the most efficient one. The problem can be solved in `O(N log N)` time using an algorithm based on binary search. This algorithm is output-sensitive: if the size of the output, the length `K` of a subsequence, is taken into account, it requires `O(N log K)` time. Any comparison-based algorithm requires at least <code>N log<sub>2</sub> N - N log<sub>2</sub> log<sub>2</sub> N + O(N)</code> comparisons in the worst case.
 
 :link:
 

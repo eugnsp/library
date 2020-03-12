@@ -115,6 +115,20 @@
 
 - S.Tempus. *Programmers at work: Interviews with 19 programmers who shaped the computer industry* – Tempus (1989)
 
+### Georgy Adelson-Velsky
+
+:link:
+
+- [*Georgy Adelson-Velsky*](https://en.wikipedia.org/wiki/Georgy_Adelson-Velsky) – Wikipedia
+
+:movie_camera:
+
+- [*An interview with Georgy Adelson-Velsky*](https://www.youtube.com/watch?v=cE4Zb9wWf7g) (2002, in Russian)
+
+:book:
+
+- G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) – Science (1983, in Russian)
+
 ### Howard Aiken
 
 :link:
@@ -153,7 +167,7 @@
 
 :movie_camera:
 
-- L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming](https://www.youtube.com/watch?v=2BdBfsXbST8) (2019)
+- L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming*](https://www.youtube.com/watch?v=2BdBfsXbST8) (2019)
 - [*Donald Knuth on P=NP*](https://www.youtube.com/watch?v=Ph4hlOzq_pE) (2014)
 
 :book:
@@ -170,8 +184,8 @@
 
 - L.Fridman. [*An interview with Bjarne Stroustrup: C++*](https://www.youtube.com/watch?v=uTxRF5ag27A)
 - P.McJones. [*Oral history of Bjarne Stroustrup*](https://www.youtube.com/watch?v=ZO0PXYMVGSU) (2015)
-- [*What is the difference between C and C++? Is C obsolete?*](https://www.youtube.com/watch?v=KlPC3O1DVcg) (2011)
 - A.Stepanov. [*A.Stepanov introduces Bjarne Stroustrup*](https://www.youtube.com/watch?v=-n8FP7Ncq8A) (2014)
+- [*What is the difference between C and C++? Is C obsolete?*](https://www.youtube.com/watch?v=KlPC3O1DVcg) (2011)
 
 ### Alexander Stepanov
 
@@ -231,7 +245,7 @@
 
 :link:
 
-- [The aggregate magic algorithms](http://aggregate.org/MAGIC/)
+- [*The aggregate magic algorithms*](http://aggregate.org/MAGIC/)
 
 ---
 

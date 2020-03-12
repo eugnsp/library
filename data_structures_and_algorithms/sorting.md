@@ -10,8 +10,7 @@
 	- [Merge sort](#merge-sort)
 		- [Inversions counting](#inversions-counting)
 	- [Quick sort](#quick-sort)
-	- [Order statistics](#order-statistics)
-		- [Quick select](#quick-select)
+	- [Order statistics and quick select](#order-statistics-and-quick-select)
 - [Linear-time sorting](#linear-time-sorting)
 	- [Count sort](#count-sort)
 	- [Radix sort](#radix-sort)
@@ -34,12 +33,7 @@
 
 ## Comparison sorting
 
-> In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed.
-
-:memo:
-
-- Any comparison-based algorithm of sorting an array of size `n` requires <code>&Omega;(n log n)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `n`. No simple formula for the solution is known.
-- For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(n<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(n log n)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn’t exceed `16` elements, and Microsoft’s implementation uses the value `32`.
+> In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed. Any comparison-based algorithm of sorting an array of size `N` requires <code>&Omega;(N log N)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `N`. No simple formula for the solution is known. For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(N<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(N log N)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn’t exceed `16` elements, and Microsoft’s implementation uses the value `32`.
 
 :link:
 
@@ -48,7 +42,11 @@
 
 :movie_camera:
 
-- [*Lower bounds for sorting*](https://www.youtube.com/watch?v=Nz1KZXbghj8) – MIT OCW 6.006: Introduction to algorithms (2011)
+- [*Lower bounds for sorting*](https://www.youtube.com/watch?v=Nz1KZXbghj8) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) (2011)
+
+:book:
+
+- Sec. 5.6: *Sorting requires <code>&Omega;(n log n)</code> comparisons* – Roughgarden T. [*Algorithms illuminated (Part 1): The basics*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2017)
 
 :page_facing_up:
 
@@ -60,11 +58,7 @@
 
 ### Insertion sort
 
-> At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
-
-:memo:
-
-- Insertion sort is commonly used to sort a small number of elements. It is employed in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
+> At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain. Insertion sort is commonly used to sort a small number of elements. It is employed in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
 
 :book:
 
@@ -75,7 +69,7 @@
 
 :memo:
 
-- Selection sort makes only `O(n)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
+- Selection sort makes only `O(N)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
 
 :link:
 
@@ -97,7 +91,7 @@
 
 :memo:
 
-- Merge sort is useful for sorting linked lists and for external sorting of data that doesn't fit into main memory.
+- Merge sort is useful for sorting linked lists and for external sorting of data that doesn’t fit into main memory.
 
 :link:
 
@@ -105,7 +99,7 @@
 
 #### Inversions counting
 
-> Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>n</sub>)</code>, i.e. the number of pairs <code>(a<sub>i</sub></code>, <code>a<sub>j</sub>)</code> with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
+> Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>N</sub>)</code>, i.e. the number of pairs <code>(a<sub>i</sub></code>, <code>a<sub>j</sub>)</code> with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
 
 :link:
 
@@ -117,15 +111,23 @@
 
 :book:
 
-- Sec. 5.3.: *Counting inversions* – J.Kleinberg, E.Tardos. [*Algorithm design*](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
+- Sec. 5.3.: *Counting inversions* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
 
 ### Quick sort
 
-### Order statistics
+:book:
 
-> The `k`<sup>th</sup> order statistic of an array is its `k`<sup>th</sup> smallest element. Any comparison-based algorithm of finding the smallest element in an array of size `n` requires at least `n - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `n` requires at least `⌈3n / 2⌉ - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `n` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
+- Ch. 5: *QuickSort* – Roughgarden T. [*Algorithms illuminated (Part 1): The basics*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2017)
+
+:dizzy:
+
+- [*Quick-sort with Hungarian folk dance*](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+
+### Order statistics and quick select
+
+> The `K`<sup>th</sup> order statistic of an array is its `K`<sup>th</sup> smallest element. Any comparison-based algorithm of finding the smallest element in an array of size `N` requires at least `N - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `N` requires at least `⌈3N / 2⌉ - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `N` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.
 
 :link:
 
@@ -135,20 +137,20 @@
 
 :movie_camera:
 
-- [*Order statistics, median*](https://www.youtube.com/watch?v=mR_RUjsJnV8) – MIT OCW 6.046J/18.410J: Introduction to algorithms (2005)
+- [*Order statistics, median*](https://www.youtube.com/watch?v=mR_RUjsJnV8) – MIT OCW 6.046J/18.410J: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/) (2005)
 - [Lectures 6-10: *Finding the smallest and second smallest elements*](https://www.youtube.com/watch?v=lWSYE-hRw0s&list=PLHxtyCq_WDLXryyw91lahwdtpZsmo4BGD) – Alexander Stepanov: Efficient programming with components (2013)
 
 :book:
 
+- Ch. 6: *Linear-time selection* – Roughgarden T. [*Algorithms illuminated (Part 1): The basics*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2017)
 - Ch. 9: *Medians and order statistics* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 - Sec. 6.5.2: *Finding the k<sup>th</sup> smallest element*, Sec. 6.11.2: *Finding the two largest elements in a set* – U.Manber. *Introduction to algorithms: A creative approach* (1989)
 - Sec. 3.6: *Order statistics*, Sec. 3.7: *Expected time for order statistics* – A.V.Aho, J.E.Hopcroft, J.D.Ullman. *The design and analysis of computer algorithms* (1974)
 
 :page_facing_up:
 
+- K.Chen, A.Dumitrescu. [*Selection algorithms with small groups*](https://arxiv.org/abs/1409.3600) (2019)
 - S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) (in russian) – Sibirsky Matematichesky Zhurnal **5**, 557 (1964)
-
-#### Quick select
 
 ---
 
@@ -156,7 +158,7 @@
 
 :movie_camera:
 
-- [*Counting sort and radix sort*](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) – MIT OCW 6.006: Introduction to algorithms (2011)
+- [*Counting sort and radix sort*](https://www.youtube.com/watch?v=Nz1KZXbghj8&t=1966) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) (2011)
 
 ### Count sort
 

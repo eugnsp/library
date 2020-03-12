@@ -3,12 +3,24 @@
 ## Table of contents <!-- omit in toc -->
 
 - [General information](#general-information)
+- [Knapsack](#knapsack)
 - [Linear partition](#linear-partition)
 - [Longest increasing subsequence](#longest-increasing-subsequence)
 
 ---
 
 ## General information
+
+> Dynamic programming is a method of solving optimization problems by breaking them into sub-problems and then recursively finding the optimal solutions to the sub-problems. All problems amenable to dynamic programming solution share the following two properties: *optimal substructure* (the optimal solution can be obtained given the optimal solutions of subproblems), and *overlapping subproblems* (sub-problems share sub-sub-problems).
+
+:link:
+
+- [*Dynamic programming*](https://en.wikipedia.org/wiki/Dynamic_programming) – Wikipedia
+- [*Weak NP-completeness*](https://en.wikipedia.org/wiki/Weak_NP-completeness) – Wikipedia
+
+:grey_question:
+
+- [*Knapsack problem — NP-complete despite dynamic programming solution?*](https://cs.stackexchange.com/q/909) – Computer Science
 
 :movie_camera:
 
@@ -17,6 +29,14 @@
 :book:
 
 - Ch. 8: *Dynamic programming* – S.S.Skiena. [*The algorithm design manual*](http://www.algorist.com/) (2008)
+
+---
+
+## Knapsack
+
+
+
+
 
 ---
 

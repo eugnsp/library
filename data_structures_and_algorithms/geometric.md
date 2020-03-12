@@ -9,6 +9,10 @@
 	- [Random points generation](#random-points-generation)
 		- [Random points in triangles](#random-points-in-triangles)
 		- [Random points in polygons](#random-points-in-polygons)
+- [Drawing algorithms](#drawing-algorithms)
+	- [Bresenham’s-type algorithms](#bresenhams-type-algorithms)
+		- [Bresenham’s line algorithm](#bresenhams-line-algorithm)
+		- [Bresenham’s circle algorithm](#bresenhams-circle-algorithm)
 
 ---
 
@@ -60,3 +64,26 @@
 :grey_question:
 
 - [*How to get a random point on the interior of an irregular polygon?*](https://stackoverflow.com/q/19481514) – Stack Overflow
+
+---
+
+## Drawing algorithms
+
+### Bresenham’s-type algorithms
+
+#### Bresenham’s line algorithm
+
+:link:
+
+- [*Bresenham’s line algorithm*](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm) – Wikipedia
+
+:page_facing_up:
+
+- R.F.Sproull. [*Using program transformations to derive line-drawing algorithms*](http://public.callutheran.edu/~reinhart/CSC505/Week1/BresenhamLines.pdf) – [ACM Transactions on Graphics **1**, 259](https://doi.org/10.1145/357311.357312) (1982)
+
+#### Bresenham’s circle algorithm
+
+:link:
+
+- [*Midpoint circle algorithm*](https://en.wikipedia.org/wiki/Midpoint_circle_algorithm) – Wikipedia
+- J.Kennedy. [*A fast Bresenham type algorithm for drawing circles*](https://web.engr.oregonstate.edu/~sllu/bcircle.pdf)

@@ -2,6 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Probability theory](#probability-theory)
 - [Random numbers generation](#random-numbers-generation)
 	- [Pseudorandom numbers generation](#pseudorandom-numbers-generation)
 - [Random sampling](#random-sampling)
@@ -11,6 +12,16 @@
 	- [Fisher–Yates algorithm](#fisheryates-algorithm)
 - [Probabilistic datastructures](#probabilistic-datastructures)
 	- [Bloom filter](#bloom-filter)
+	- [Skip lists](#skip-lists)
+- [HyperLogLog](#hyperloglog)
+
+---
+
+## Probability theory
+
+:movie_camera:
+
+- E.Lawrence. *Why use measure theory for probability?* [Part I](https://www.youtube.com/watch?v=RjPXfUT7Odo), [Part II](https://www.youtube.com/watch?v=Q9KOeP-nrYQ), [Part III](https://www.youtube.com/watch?v=rAYA2Mu51bw) (2012)
 
 ---
 
@@ -46,6 +57,10 @@
 :link:
 
 - [*Reservoir sampling*](https://en.wikipedia.org/wiki/Reservoir_sampling) – Wikipedia
+
+:movie_camera:
+
+- N.Ormrod. [*Fantastic algorithms and where to find them*: Reservoir sampling](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1268) – CppCon (2017)
 
 ## Random shuffling
 
@@ -85,6 +100,37 @@
 - R.Edwards. [*Bloom filters*](https://www.youtube.com/watch?v=heEDL9usFgs)
 - N.L.Gowda. [*Bloom filter for system design*](https://www.youtube.com/watch?v=Bay3X9PAX5k)
 
+:page_facing_up:
+
+- A.Broder, M.Mitzenmacher. [*Network applications of Bloom filters: A survey*](https://www.cs.princeton.edu/courses/archive/spring05/cos598E/bib/broder-survey.pdf) – [Internet Mathematics **1**, 485](https://doi.org/10.1080/15427951.2004.10129096) (2004)
+- B.H.Bloom. [*Space/time trade-offs in hash coding with allowable errors*](https://www.cs.princeton.edu/courses/archive/spring05/cos598E/bib/p422-bloom.pdf) – [Communications of the ACM **13**, 422](https://doi.org/10.1145/362686.362692) (1970)
+
+:book:
+
+- Sec. 12.5: *Bloom filters: The basics*, Sec. 12.6: *Bloom filters: Heuristic analysis* – Roughgarden T. [*Algorithms illuminated (Part 2): Graph algorithms and data structures*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2018)
+
 :dizzy:
 
 - J.Davies. [*Bloom filters*](https://www.jasondavies.com/bloomfilter/)
+
+### Skip lists
+
+:movie_camera:
+
+- [*Randomization: Skip lists*](https://www.youtube.com/watch?v=2g9OSRKJuzM) – MIT OCW 6.046J/18.410J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/) (2015)
+
+:page_facing_up:
+
+- W.Pugh. [*A skip list cookbook*](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf) – Tech. Rep. UMIACS-TR-89-72.1 (1990)
+
+---
+
+## HyperLogLog
+
+:link:
+
+- [*HyperLogLog*](https://en.wikipedia.org/wiki/HyperLogLog) – Wikipedia
+
+:movie_camera:
+
+- N.Ormrod. [*Fantastic algorithms and where to find them*: HyperLogLog](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1653) – CppCon (2017)

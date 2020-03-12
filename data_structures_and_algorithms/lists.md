@@ -57,10 +57,4 @@
 
 ## Skip lists
 
-:movie_camera:
-
-- [*Randomization: Skip lists*](https://www.youtube.com/watch?v=2g9OSRKJuzM) – MIT OCW 6.046J/18.410J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/) (2015)
-
-:page_facing_up:
-
-- W.Pugh. [*A skip list cookbook*](http://cglab.ca/~morin/teaching/5408/refs/p90b.pdf) – Tech. Rep. UMIACS-TR-89-72.1 (1990)
+See [*Skip lists* – Randomized algorithms and probabilistic data structures](random.md#skip-lists)

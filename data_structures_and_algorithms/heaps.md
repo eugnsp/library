@@ -27,5 +27,9 @@
 - [*Amortized analysis on min-heap?*](https://stackoverflow.com/q/29103659) – Stack Overflow
 - [*How to implement `O(log n)` decrease-key operation for min-heap-based priority queue?*](https://stackoverflow.com/q/17009056) – Stack Overflow
 
+:book:
+
+- Ch. 10: *The heap data structure* – Roughgarden T. [*Algorithms illuminated (Part 2): Graph algorithms and data structures*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2018)
+
 <!-- https://webdocs.cs.ualberta.ca/~hayward/papers/heap.pdf
  -->

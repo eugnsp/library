@@ -21,20 +21,15 @@
 
 ## Binary trees
 
-> A binary tree is a tree in which no node can have more than two children.
+> A binary tree is a tree in which no node can have more than two children. The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically <code>C(N) &sim; 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>.
 
-:memo:
+:grey_question:
 
-- The total number of binary trees with `N` different keys is given by `N! C(N)`, where `C(N)` is the `N`<sup>th</sup> Catalan number. Asymptotically <code>C(N) &sim; 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>.
-- The average height of a randomly built binary search tree is `O(log n)`.
+- [*Why does a complete binary tree of `n` leaves have `2n−1` nodes?*](https://math.stackexchange.com/q/180005) – Mathematics
 
 ### Binary search trees
 
-> A binary search tree is a binary tree that satisfies the binary search property: the key in each node must be greater than or equal to any key stored in the left subtree, and less than or equal to any key stored in the right subtree.
-
-:memo:
-
-- The total number of binary search trees with `N` different keys is given by the `N`<sup>th</sup> Catalan number `C(N)`. Asymptotically <code>C(N) &sim; 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>.
+> A binary search tree is a binary tree that satisfies the binary search property: the key in each node must be greater than or equal to any key stored in the left subtree, and less than or equal to any key stored in the right subtree. The total number of binary search trees with `N` different keys is given by the `N`<sup>th</sup> Catalan number `C(N)`. Asymptotically <code>C(N) &sim; 4<sup>N</sup> / [N<sup>3/2</sup> sqrt &pi;]</code>. The average height of a randomly built binary search tree wuth `N` nodes is `O(log N)`.
 
 :movie_camera:
 
