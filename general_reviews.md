@@ -71,7 +71,6 @@
 
 :movie_camera:
 
-- D.Malan. [*Scalability*](https://www.youtube.com/watch?v=-W9F__D3oY4) – Harvard CS75: [Building dynamic websites](http://cs75.tv/2012/summer/)gh (2012)
 
 ### Distributed datastore
 

@@ -60,7 +60,7 @@
 
 :movie_camera:
 
-- N.Ormrod. [*Fantastic algorithms and where to find them*: Reservoir sampling](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1268) – CppCon (2017)
+- N.Ormrod. [*Fantastic algorithms and where to find them: Reservoir sampling*](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1268) – CppCon (2017)
 
 ## Random shuffling
 
@@ -96,7 +96,7 @@
 
 :movie_camera:
 
-- A.Deutsch. [*Esoteric data structures and where to find them*](https://www.youtube.com/watch?v=-8UZhDjgeZU&t=603) – CppCon (2017)
+- A.Deutsch. [*Esoteric data structures and where to find them: Bloom filter*](https://www.youtube.com/watch?v=-8UZhDjgeZU&t=603) – CppCon (2017)
 - R.Edwards. [*Bloom filters*](https://www.youtube.com/watch?v=heEDL9usFgs)
 - N.L.Gowda. [*Bloom filter for system design*](https://www.youtube.com/watch?v=Bay3X9PAX5k)
 
@@ -115,9 +115,17 @@
 
 ### Skip lists
 
+:grey_question:
+
+- [*How does a skip list work?*](https://softwareengineering.stackexchange.com/q/287254) – Software Engineering
+
 :movie_camera:
 
 - [*Randomization: Skip lists*](https://www.youtube.com/watch?v=2g9OSRKJuzM) – MIT OCW 6.046J/18.410J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/) (2015)
+
+:book:
+
+- Sec. 3.4: *Skip lists* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
 
 :page_facing_up:
 
@@ -133,4 +141,4 @@
 
 :movie_camera:
 
-- N.Ormrod. [*Fantastic algorithms and where to find them*: HyperLogLog](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1653) – CppCon (2017)
+- N.Ormrod. [*Fantastic algorithms and where to find them: HyperLogLog*](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1653) – CppCon (2017)

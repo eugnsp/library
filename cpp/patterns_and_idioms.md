@@ -69,7 +69,7 @@
 
 :book:
 
-- Sec.: *Class design and inheritance* – H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
+- Sec.: *Class design and inheritance* – H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
 
 #### Destructors
 
@@ -198,7 +198,7 @@
 
 :book:
 
-- Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
+- Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
 
 ### Bridge and pimpl
 
@@ -416,8 +416,8 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :book:
 
-- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley Professional](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
-- Item 26: *Limiting the number of objects of a class* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- Item 26: *Limiting the number of objects of a class* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 ### Strategy
 

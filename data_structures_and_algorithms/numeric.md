@@ -26,12 +26,7 @@
 
 ## Floating-point arithmetic
 
-> Floating-point arithmetic is arithmetic in which real numbers are represented approximately to a fixed number of significant digits and scaled using an exponent in some fixed base: <code>r = significand &times; base<sup>exponent</sup></code>.
-
-:memo:
-
-- The relative error due to rounding is uniform, i.e. it is independent of the magnitude of the number.
-- The binary-based floating-point system has the smallest possible wobble (a range of relative errors).
+> Floating-point arithmetic is arithmetic in which real numbers are represented approximately to a fixed number of significant digits and scaled using an exponent in some fixed base: <code>r = significand &times; base<sup>exponent</sup></code>. The relative error due to rounding is uniform, i.e. it is independent of the magnitude of the number. The binary-based floating-point system has the smallest possible wobble (a range of relative errors).
 
 :link:
 
@@ -44,12 +39,7 @@
 
 ### IEEE 754
 
-> IEEE 754 is a technical standard for floating-point arithmetic established in 1985 by the Institute of Electrical and Electronics Engineers (IEEE).
-
-:memo:
-
-- If two (non-extended) floating-point numbers in the same format are ordered, then they are ordered the same way when their bits are reinterpreted as sign-magnitude integers.
-- NaNs are endowed with a field of bits into which software can record, say, how and/or where the NaN came into existence; no software exists now to exploit this feature.
+> IEEE 754 is a technical standard for floating-point arithmetic established in 1985 by the Institute of Electrical and Electronics Engineers (IEEE). If two (non-extended) floating-point numbers in the same format are ordered, then they are ordered the same way when their bits are reinterpreted as sign-magnitude integers. NaNs are endowed with a field of bits into which software can record, say, how and/or where the NaN came into existence; no software exists now to exploit this feature.
 
 :link:
 
@@ -106,7 +96,7 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 ### Arithmetic means
 
-> To compute the arithmetic mean <code>&mu; = 1 / n &sum; x<sub>i</sub></code> in a numerically stable way, use the following recurrence relation: <code>&mu;<sub>n</sub> = &mu;<sub>n - 1</sub> + 1 / n (x<sub>n</sub> - &mu;<sub>n - 1</sub>)</code>.
+> To compute the arithmetic mean <code>&mu; = 1 / N &sum; x<sub>i</sub></code> in a numerically stable way, the following recurrence relation can be used: <code>&mu;<sub>N</sub> = &mu;<sub>N - 1</sub> + 1 / N (x<sub>N</sub> - &mu;<sub>N - 1</sub>)</code>.
 
 :link:
 
@@ -133,7 +123,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 ### Horner’s method
 
-> Horner’s method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>n</sub> x<sup>n</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>n</sub>) ... ))</code>.
+> Horner’s method is a polynomial evaluation method expressed by <code>p(x) = a<sub>0</sub> + a<sub>1</sub> x + a<sub>2</sub> x<sup>2</sup> + ... + a<sub>N</sub> x<sup>N</sup> = a<sub>0</sub> + x (a<sub>1</sub> + x (a<sub>2</sub> + ... + x (a<sub>N</sub>) ... ))</code>.
 
 :link:
 
@@ -168,7 +158,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 #### Jacobi method
 
-> A recurrence relation: <code>x<sub>k+1</sub> = D<sup>-1</sup> (D - A) x<sub>k</sub> + D<sup>-1</sup> b</code>, where the preconditioner `D` is the diagonal part of `A`: `D = diag(A)`.
+> A recurrence relation: <code>x<sub>K+1</sub> = D<sup>-1</sup> (D - A) x<sub>K</sub> + D<sup>-1</sup> b</code>, where the preconditioner `D` is the diagonal part of `A`: `D = diag(A)`.
 
 :link:
 

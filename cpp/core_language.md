@@ -301,7 +301,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :book:
 
-- Item 6: *Be alert for C++’s most vexing parse* – S.Meyers. *Effective STL: 50 Specific ways to improve your use of the standard template library* – [Addison-Wesley Professional](https://www.informit.com/store/effective-stl-50-specific-ways-to-improve-your-use-9780201749625) (2001)
+- Item 6: *Be alert for C++’s most vexing parse* – S.Meyers. *Effective STL: 50 Specific ways to improve your use of the standard template library* – [Addison-Wesley](https://www.informit.com/store/effective-stl-50-specific-ways-to-improve-your-use-9780201749625) (2001)
 
 :anchor:
 
@@ -378,9 +378,9 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :book:
 
-- Sec. 19.2.5: *Allocation and deallocation* – B.Stroustrup. [*The C++ programming language*](http://www.stroustrup.com/4th.html) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Stroustrup-C-Programming-Language-The-4th-Edition/PGM326200.html) (2013)
-- Item 8: *Understand the different meanings of `new` and `delete`* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
-- Ch. 10: *Memory management* – B.Stroustrup. [*The design and evolution of C++*](http://www.stroustrup.com/dne.html) – [Addison-Wesley Professional](https://www.pearson.com/us/higher-education/program/Stroustrup-Design-and-Evolution-of-C-The/PGM287667.html) (1994)
+- Sec. 19.2.5: *Allocation and deallocation* – B.Stroustrup. [*The C++ programming language*](http://www.stroustrup.com/4th.html) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Stroustrup-C-Programming-Language-The-4th-Edition/PGM326200.html) (2013)
+- Item 8: *Understand the different meanings of `new` and `delete`* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+- Ch. 10: *Memory management* – B.Stroustrup. [*The design and evolution of C++*](http://www.stroustrup.com/dne.html) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Stroustrup-Design-and-Evolution-of-C-The/PGM287667.html) (1994)
 
 :anchor:
 
@@ -434,7 +434,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :book:
 
-- Item 2: *Prefer C++-style casts* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [*Addison-Wesley Professional*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+- Item 2: *Prefer C++-style casts* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 #### `dynamic_cast`
 
@@ -705,8 +705,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) – Proc. ICSE (2012)
 - [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) – SEI CERT C coding standard
+
+:grey_question:
+
 - [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
+- [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
 
 :movie_camera:
 

@@ -202,7 +202,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :book:
 
-- Sec. 21.1: *The empty base class optimization*, Sec. 25.5.1: *Tuples and the EBCO* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley Professional](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
+- Sec. 21.1: *The empty base class optimization*, Sec. 25.5.1: *Tuples and the EBCO* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
 
 :anchor:
 

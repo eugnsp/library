@@ -62,9 +62,21 @@
 
 ---
 
-## String searching
+## String matching
 
-### Knuth–Morris–Pratt algorithm
+:book:
+
+- Ch. 32. *String matching* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+- Ch. 19: *String searching* – R.Sedgewick. *Algorithms* (1983)
+- Ch. 13: *String matching* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+
+### Exact string matching
+
+:book:
+
+- Sec. 13.1: *Exact string matching* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+
+#### Knuth–Morris–Pratt algorithm
 
 :link:
 
@@ -73,3 +85,11 @@
 :movie_camera:
 
 - W.Brinkman. [*KMP searching algorithm*](https://www.youtube.com/watch?v=y2b94AxPlF8) (2017)
+
+:book:
+
+- Ch. 32. *String matching* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+- Ch. 19: *String searching*, Sec.: *Knuth–Morris–Pratt algorithm* – R.Sedgewick. *Algorithms* (1983)
+- Sec. 6.4.2: *Knuth–Morris–Pratt’s (KMP) algorithm* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+- Sec. 13.1.2: *The Knuth–Morris–Pratt algorithm* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+

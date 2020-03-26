@@ -16,10 +16,14 @@
 		- [Articulation points and bridges](#articulation-points-and-bridges)
 		- [Biconnected components](#biconnected-components)
 - [Shortest path](#shortest-path)
-	- [Single source shortest path](#single-source-shortest-path)
+	- [Single source shortest paths](#single-source-shortest-paths)
 		- [Dijsktra’s algorithm](#dijsktras-algorithm)
 		- [Bellman–Ford’s algorithm](#bellmanfords-algorithm)
 		- [A\* algorithm](#a-algorithm)
+	- [All pairs shortest paths](#all-pairs-shortest-paths)
+		- [Floyd–Warshall’s algorithm](#floydwarshalls-algorithm)
+- [Minimum spanning tree](#minimum-spanning-tree)
+	- [Kruskal’s algorithm](#kruskals-algorithm)
 
 ---
 
@@ -35,7 +39,7 @@
 
 :book:
 
-- Sec. 6.4: *Tree traversal* – Drozdek A. [*Data structures and algorithms in C++*] – Cengage Learning (2012)
+- Sec. 6.4: *Tree traversal* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
 
 ### Breadth-first search (BFS)
 
@@ -87,7 +91,7 @@
 
 :movie_camera:
 
-- N.Ormrod. [*Fantastic algorithms and where to find them*: Morris traversal](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=703) – CppCon (2017)
+- N.Ormrod. [*Fantastic algorithms and where to find them: Morris traversal*](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=703) – CppCon (2017)
 
 :page_facing_up:
 
@@ -195,7 +199,7 @@
 
 ## Shortest path
 
-### Single source shortest path
+### Single source shortest paths
 
 :movie_camera:
 
@@ -220,6 +224,8 @@
 :book:
 
 - Ch. 9: *Dijkstra’s shortest-path algorithm* – Roughgarden T. [*Algorithms illuminated (Part 2): Graph algorithms and data structures*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2018)
+- Sec. 4.4: *Shortest paths in a graph* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
+- Sec. 6.3: *The single source shortest paths problem* – A.V.Aho, J.E.Hopcroft, J.D.Ullman. *Data structures and algorithms* – Addison-Wesley (1983)
 
 #### Bellman–Ford’s algorithm
 
@@ -233,4 +239,30 @@
 
 - M.Pound. [*A\* search algorithm*](https://www.youtube.com/watch?v=ySN5Wnu88nE) – Computerphile
 
+### All pairs shortest paths
 
+#### Floyd–Warshall’s algorithm
+
+:book:
+
+- Sec. 4.5: *All-pairs shortest paths* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+
+---
+
+## Minimum spanning tree
+
+> A minimum spanning tree is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight.
+
+:link:
+
+- [*Minimum spanning tree*](https://en.wikipedia.org/wiki/Minimum_spanning_tree) – Wikipedia
+
+:book:
+
+- Sec. 4.5: *The minimum spanning tree problem* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
+
+### Kruskal’s algorithm
+
+:book:
+
+- Sec. 4.6: *Implementing Kruskal’s algorithm: The union-find data structure* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)

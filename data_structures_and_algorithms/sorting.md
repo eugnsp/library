@@ -97,6 +97,10 @@
 
 - [Merge sort – Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 
+:book:
+
+- Sec. 5.1.: *A first recurrence: The mergesort algorithm* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
+
 #### Inversions counting
 
 > Problem: count the number of inversions in a permutation <code>P = (a<sub>1</sub>, ..., a<sub>N</sub>)</code>, i.e. the number of pairs <code>(a<sub>i</sub></code>, <code>a<sub>j</sub>)</code> with `i < j` and <code>a<sub>i</sub> &gt; a<sub>j</sub></code>.
@@ -111,7 +115,7 @@
 
 :book:
 
-- Sec. 5.3.: *Counting inversions* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
+- Sec. 5.3: *Counting inversions* – J.Kleinberg, É.Tardos. [*Algorithm design*](https://www.cs.cornell.edu/home/kleinber/) – [Pearson](https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html) (2005)
 
 <!--* The minimum number of adjacent swaps required to sort a permutation `P` (i.e. convert into the identity one) is equal to the number of inversions in `P`. The minimum number of swaps, not necessarily adjacent, is equal to the size of `P` minus the number of cycles in `P`.-->
 

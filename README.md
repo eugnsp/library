@@ -31,8 +31,10 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :1234: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
 	* :abc: [String algorithms](data_structures_and_algorithms/string.md)
+	* :satellite: [Distributed algorithms](data_structures_and_algorithms/distributed.md)
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
+- [Distributed systems and computer networks](#distributed_systems.md)
 - [General reviews and interviews](general_reviews.md)
 - [C++ conferences](cpp/conferences.md)
 

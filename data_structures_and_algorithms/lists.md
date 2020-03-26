@@ -22,15 +22,27 @@
 
 - B.Stroustrup. [*Why you should avoid linked lists*](https://www.youtube.com/watch?v=YQs6IC-vgmo) – Going Native (2012)
 
+:book:
+
+- Ch. 3: *Linked lists* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+
 ---
 
 ## Singly linked lists
 
 > A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list.
 
+:book:
+
+- Sec. 3.1: *Singly linked lists* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+
 :page_facing_up:
 
 - Z.Shao, J.H.Reppy, A.W.Appel. [*Unrolling lists*](http://flint.cs.yale.edu/flint/publications/listrep.ps.gz) – [ACM conference on LISP and functional programming, 185](https://doi.org/10.1145/182409.182453) (1994)
+
+:anchor:
+
+- [*`std::forward_list`*](https://en.cppreference.com/w/cpp/container/forward_list) – C++ reference
 
 ---
 
@@ -42,6 +54,14 @@
 
 - [*Doubly linked list*](https://en.wikipedia.org/wiki/Doubly_linked_list) – Wikipedia
 
+:book:
+
+- Sec. 3.2: *Doubly linked lists* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
+
+:anchor:
+
+- [*`std::list`*](https://en.cppreference.com/w/cpp/container/list) – C++ reference
+
 ### XOR doubly linked lists
 
 :memo:
@@ -52,6 +72,10 @@
 
 - [*XOR linked list*](https://en.wikipedia.org/wiki/XOR_linked_list) – Wikipedia
 - P.Sinha. [*A memory-efficient doubly linked list*](https://www.linuxjournal.com/article/6828) – Linux Journal
+
+### Circular lists
+
+- Sec. 3.3: *Circular lists* – Drozdek A. *Data structures and algorithms in C++* – Cengage Learning (2012)
 
 ---
 
