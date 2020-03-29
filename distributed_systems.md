@@ -5,13 +5,25 @@
 - [Introduction and overview](#introduction-and-overview)
 - [CDN](#cdn)
 - [DNS](#dns)
-- [Storage: filesystems and databases](#storage-filesystems-and-databases)
-	- [GFS](#gfs)
+- [Big storage: file systems](#big-storage-file-systems)
+	- [GFS – Google file system](#gfs--google-file-system)
+- [Big storage: databases](#big-storage-databases)
+	- [NoSQL databases](#nosql-databases)
+		- [Redis](#redis)
 - [Computation](#computation)
 	- [MapReduce](#mapreduce)
+	- [Unique ID generation](#unique-id-generation)
 - [Distributed systems](#distributed-systems)
+	- [Stack Overflow](#stack-overflow)
+	- [Twitter](#twitter)
 	- [YouTube](#youtube)
-- [Documents synchronization](#documents-synchronization)
+	- [Instagram](#instagram)
+- [Protocols](#protocols)
+	- [TCP](#tcp)
+	- [HTTP](#http)
+		- [History](#history)
+	- [WebSocket](#websocket)
+- [Web APIs](#web-apis)
 
 ---
 
@@ -54,19 +66,50 @@
 
 ---
 
-## Storage: filesystems and databases
+## Big storage: file systems
 
-### GFS
+### GFS – Google file system
+
+:link:
+
+- [*GFS FAQ*](https://pdos.csail.mit.edu/6.824/papers/gfs-faq.txt) – MIT 6.824: [Distributed systems](https://pdos.csail.mit.edu/6.824/) (2020)
+
+:movie_camera:
+
+- R.Morris. [*GFS*](https://www.youtube.com/watch?v=EpIgvowZr00) ([Notes](https://pdos.csail.mit.edu/6.824/notes/l-gfs.txt)) – MIT 6.824: [Distributed systems](https://pdos.csail.mit.edu/6.824/) (2020)
 
 :page_facing_up:
 
-- S.Ghemawat, H.Gobioff, S.-T. Leung. [*The Google File System*](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf) – [ACM SIGOPS Operating Systems Review **37**, 29](https://doi.org/10.1145/1165389.945450) (2003)
+- K.McKusick, S.Quinlan. [*GFS: Evolution on fast-forward*](https://queue.acm.org/detail.cfm?id=1594206) – [ACM Queue **7**](https://doi.org/10.1145/1594204.1594206) (2009)
+- S.Ghemawat, H.Gobioff, S.-T. Leung. [*The Google file system*](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf) – [ACM SIGOPS Operating Systems Review **37**, 29](https://doi.org/10.1145/1165389.945450) (2003)
+
+---
+
+## Big storage: databases
+
+### NoSQL databases
+
+#### Redis
+
+:link:
+
+- [*Redis documentation*](https://redis.io/documentation)
+- S.Sanfilippo. [*Redis persistence demystified*](http://oldblog.antirez.com/post/redis-persistence-demystified.html) (2012)
 
 ---
 
 ## Computation
 
 ### MapReduce
+
+
+### Unique ID generation
+
+:link:
+
+- [*Sharding & IDs at Instagram*](https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c) – Instagram Engineering (2012)
+
+<!-- https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/ -->
 
 ---
 
@@ -93,20 +136,77 @@
 - M.Cecconi. [*The architecture of Stack Overflow*](https://www.youtube.com/watch?v=t6kM2EM6so4) – Dev Day (2013)
 - S.Hanselman. [*StackExchange*](https://channel9.msdn.com/Events/Ch9Live/MIX11/C9L105) – MIX11 (2011)
 
+### Twitter
+
+:link:
+
+- [*Tutorial: Design and implementation of a simple Twitter clone using PHP and the Redis key-value store*](https://redis.io/topics/twitter-clone)
+
 ### YouTube
 
 :movie_camera:
 
 - C.Do. [*YouTube scalability*](https://www.youtube.com/watch?v=w5WVu624fY8) – Seattle Conference on Scalability (2007)
 
----
+### Instagram
 
-## Documents synchronization
+:link:
 
-:page_facing_up:
-
-- N.Fraser. [*Differential synchronization*](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf) – [ACM Symposium on Document Engineering, 13](https://research.google/pubs/pub35605/) (2009)
+- [*What powers Instagram: Hundreds of instances, dozens of technologies*](https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad) – Instagram Engineering (2011)
 
 :movie_camera:
 
-- N.Fraser. [*Differential synchronization*](https://www.youtube.com/watch?v=S2Hp_1jqpY8) – Google Tech Talks (2009)
+- L.Guo. [*Scaling Instagram infrastructure*](https://www.youtube.com/watch?v=hnpzNAPiC0E) – QCon (2017)
+- P.Hunt. [*How Instagram.com works*](https://www.youtube.com/watch?v=VkTCL6Nqm6Y) – OSCON (2014)
+- R.Branson. [*Messaging at scale at Instagram (Async tasks at Instagram)*](https://www.youtube.com/watch?v=E708csv4XgY) – PyCon (2013)
+
+---
+
+## Protocols
+
+### TCP
+
+:link:
+
+- [*Transmission Control Protocol*](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) – Wikipedia
+
+### HTTP
+
+:book:
+
+- Sec.: *HTTP* – I.Grigorik. [*High performance browser networking*](https://hpbn.co/)
+
+
+#### History
+
+:link:
+
+- [*Evolution of HTTP*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP) – MDN
+
+### WebSocket
+
+:link:
+
+- [*WebSocket*](https://en.wikipedia.org/wiki/WebSocket) – Wikipedia
+- [*When to use a HTTP call instead of a WebSocket (or HTTP 2.0)*](https://blogs.windows.com/windowsdeveloper/2016/03/14/when-to-use-a-http-call-instead-of-a-websocket-or-http-2-0/) – Windows Apps Team (2016)
+
+<!-- https://samsaffron.com/archive/2015/12/29/websockets-caution-required -->
+
+:grey_question:
+
+- [*Does HTTP/2 make websockets obsolete?*](https://stackoverflow.com/q/28582935) – Stack Overflow
+- [*WebSockets protocol vs HTTP*](https://stackoverflow.com/q/14703627) – Stack Overflow
+
+
+<!--
+
+https://developer.mozilla.org/en-US/docs/Web
+
+server-sent events
+
+## Web APIs
+
+https://en.wikipedia.org/wiki/Server-sent_events
+https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#Event_stream_format -->
+
+<!-- https://www.infoq.com/articles/Web-Sockets-Proxy-Servers/ -->
