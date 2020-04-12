@@ -59,7 +59,7 @@
 		- [`__float128`](#__float128)
 	- [Integral types](#integral-types)
 	- [Class types](#class-types)
-		- [Inheritance](#inheritance-1)
+		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
 	- [Function types](#function-types)
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
@@ -722,7 +722,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 ### Class types
 
-:link:
+:grey_question:
 
 - [*Is C++ allowed to increase the derived class size if there are no new member variables compared to the base class?*](https://stackoverflow.com/q/19949737) – Stack Overflow
 
@@ -730,7 +730,13 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - [*Class declaration*](https://en.cppreference.com/w/cpp/language/class) – C++ reference
 
-#### Inheritance
+#### Polymorphism and inheritance
+
+See also [*Inheritance* – ABI and implementation](#inheritance).
+
+:link:
+
+- S.Pamudurthy. [*Polymorphism in C++ – A type compatibility view*](https://accu.org/index.php/journals/2586) – [Overload **141**](https://accu.org/index.php/journals/c378/) (2017)
 
 :book:
 

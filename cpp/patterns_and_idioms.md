@@ -37,6 +37,10 @@
 
 ## Design principles
 
+:link:
+
+- [*The architecture of open source applications*](https://www.aosabook.org/en/index.html)
+
 :grey_question:
 
 - [*What is a magic number, and why is it bad?*](https://stackoverflow.com/q/47882) – Stack Overflow

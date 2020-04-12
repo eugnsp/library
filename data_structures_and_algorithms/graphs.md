@@ -22,10 +22,19 @@
 		- [A\* algorithm](#a-algorithm)
 	- [All pairs shortest paths](#all-pairs-shortest-paths)
 		- [Floyd–Warshall’s algorithm](#floydwarshalls-algorithm)
+	- [Route planning](#route-planning)
 - [Minimum spanning tree](#minimum-spanning-tree)
 	- [Kruskal’s algorithm](#kruskals-algorithm)
 
 ---
+
+<!-- ## Introduction and overview
+
+:movie_camera:
+
+
+
+--- -->
 
 ## Data structures
 
@@ -246,6 +255,14 @@
 :book:
 
 - Sec. 4.5: *All-pairs shortest paths* – S.Halim, F.Halim. [*Competitive programming*](https://cpbook.net/) (2013)
+
+### Route planning
+
+<!-- https://en.wikipedia.org/wiki/Journey_planner -->
+
+:page_facing_up:
+
+- H.Bast et al. [*Route planning in transportation networks*](https://arxiv.org/abs/1504.05140) – Technical report MSR-TR-2014-4, Microsoft Research (2015)
 
 ---
 

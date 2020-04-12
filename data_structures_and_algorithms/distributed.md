@@ -19,15 +19,15 @@
 - D.Wang, A.Mah, S.Lassen. [*Google Wave operational transformation*](https://svn.apache.org/repos/asf/incubator/wave/whitepapers/operational-transform/operational-transform.html) (2010)
 - [*Apache Wave project* (retired)](https://incubator.apache.org/projects/wave.html)
 
-:movie_camera:
+<!-- :movie_camera: -->
 
-- [*Real time collaboration: Operational transformation*]
+<!-- - [*Real time collaboration: Operational transformation*] -->
 
 ### Differential synchronization
 
 :page_facing_up:
 
-- N.Fraser. [*Differential synchronization*](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf) – [ACM Symposium on Document Engineering, 13](https://research.google/pubs/pub35605/) (2009)
+- N.Fraser. [*Differential synchronization*](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf) ([Mirror](https://neil.fraser.name/writing/sync/eng047-fraser.pdf)) – [ACM Symposium on Document Engineering, 13](https://research.google/pubs/pub35605/) (2009)
 
 :movie_camera:
 

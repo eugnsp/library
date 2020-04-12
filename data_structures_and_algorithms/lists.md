@@ -21,6 +21,7 @@
 :movie_camera:
 
 - B.Stroustrup. [*Why you should avoid linked lists*](https://www.youtube.com/watch?v=YQs6IC-vgmo) – Going Native (2012)
+- S.Bagley. [*Arrays vs linked lists*](https://www.youtube.com/watch?v=DyG9S9nAlUM) – Computerphile (2017)
 
 :book:
 

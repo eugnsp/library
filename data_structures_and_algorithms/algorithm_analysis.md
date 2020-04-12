@@ -17,7 +17,7 @@
 
 :link:
 
-- [Lecture 21: *Amortized analysis*](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec21-amortized/lec21.html) – Cornell University CS 3110: [Data structures and functional programming](https://www.cs.cornell.edu/courses/cs3110/2012sp/index.php) (2012)
+- [*Amortized analysis*](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec21-amortized/lec21.html) – Cornell University CS 3110: [Data structures and functional programming](https://www.cs.cornell.edu/courses/cs3110/2012sp/index.php) (2012)
 - [Amortized complexity in layman’s terms?](https://stackoverflow.com/q/15079327) – Stack Overflow
 - [Difference between average case and amortized analysis](https://stackoverflow.com/q/7333376) – Stack Overflow
 

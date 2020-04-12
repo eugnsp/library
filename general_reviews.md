@@ -8,20 +8,14 @@
 	- [Spacecrafts dynamics](#spacecrafts-dynamics)
 - [Natural language processing](#natural-language-processing)
 	- [Spelling correction](#spelling-correction)
-- [Scalable systems design](#scalable-systems-design)
-	- [Distributed datastore](#distributed-datastore)
-	- [Examples](#examples)
-		- [Autocompletion](#autocompletion)
-		- [Message exchange systems](#message-exchange-systems)
-		- [Twitter](#twitter)
 - [People](#people)
+	- [Georgy Adelson-Velsky](#georgy-adelson-velsky)
 	- [Howard Aiken](#howard-aiken)
 	- [John Conway](#john-conway)
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
-	- [Alexander Tomilin](#alexander-tomilin)
 	- [Linus Torvalds](#linus-torvalds)
 - [Programming languages](#programming-languages)
 	- [Algol](#algol)
@@ -29,6 +23,9 @@
 - [Journals](#journals)
 - [Blogs](#blogs)
 - [Folklore](#folklore)
+- [Hardware history](#hardware-history)
+	- [BESM-6](#besm-6)
+	- [BBC B](#bbc-b)
 
 ---
 
@@ -41,6 +38,11 @@
 ---
 
 ## Numerical analysis
+
+:movie_camera:
+
+- S.Strogatz. [*The beauty of calculus*](https://www.youtube.com/watch?v=1r6893ga_So) (2019)
+- S.Strogatz. [*The joy of `x`: A guided tour of math*](https://www.youtube.com/watch?v=lmL8RKB7mlE) (2014)
 
 ### Finite elements and finite volume methods
 
@@ -64,38 +66,6 @@
 :link:
 
 - P.Norvig. [*How to write a spelling corrector*](https://norvig.com/spell-correct.html) (2007–2016)
-
----
-
-## Scalable systems design
-
-:movie_camera:
-
-
-### Distributed datastore
-
-:movie_camera:
-
-- M.Fowler. [*Introduction to NoSQL*](https://www.youtube.com/watch?v=qI_g07C_Q5I) – GOTO (2012)
-- N.L.Gowda. *How distributed datastore works: scaling problems and CAP theorem.* [Part I](https://www.youtube.com/watch?v=l9JSK9OBzA4), [Part II](https://www.youtube.com/watch?v=ZbyYvTfBlE0)
-
-### Examples
-
-#### Autocompletion
-
-- [*Building Prefixy*](https://prefixy.github.io/)
-
-
-#### Message exchange systems
-
-- N.L.Gowda. [*Whatsapp system design*](https://www.youtube.com/watch?v=L7LtmfFYjc4)
-
-#### Twitter
-
-:movie_camera:
-
-- N.L.Gowda. [*Twitter system design ans architecture*](https://www.youtube.com/watch?v=wYk0xPP_P_8) (2018)
-- R.Lopez. [*System design: How to design Twitter?*](https://www.youtube.com/watch?v=KmAyPUv9gOY) (2017)
 
 ---
 
@@ -142,7 +112,7 @@
 
 :movie_camera:
 
-- [*Inventing Game of Life*](https://www.youtube.com/watch?v=R9Plq-D1gEk) – Numberphile
+- [*Inventing Game of Life*](https://www.youtube.com/watch?v=R9Plq-D1gEk) – Numberphile (2014)
 
 ### Brian Kernighan
 
@@ -172,6 +142,12 @@
 :book:
 
 - D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) – Addison-Wesley
+
+### Peter Norvig
+
+:movie_camera:
+
+- L.Fridman. [*Artificial intelligence: A modern approach*](https://www.youtube.com/watch?v=_VPxEcT_Adc) (2019)
 
 ### Bjarne Stroustrup
 
@@ -207,13 +183,6 @@
 
 - A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) – Addison-Wesley (2009)
 - A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) – Addison-Wesley (2014)
-
-### Alexander Tomilin
-
-:movie_camera:
-
-- *Alexander Tomilin about BESM-6*. [Part I](https://www.youtube.com/watch?v=66VBKeGAmfs), [Part II](https://www.youtube.com/watch?v=pL4wGV_ui4o), [Part III](https://www.youtube.com/watch?v=F9IQ357YwdU) (in Russian)
-- [*Alexander Tomilin about BESM-6 and AS-6*](https://www.youtube.com/watch?v=VvDl9HmVx5U) (in Russian)
 
 ### Linus Torvalds
 
@@ -281,3 +250,19 @@
 
 <!-- https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->
 
+---
+
+## Hardware history
+
+### BESM-6
+
+:movie_camera:
+
+- A.Tomilin. *About BESM-6*. [Part I](https://www.youtube.com/watch?v=66VBKeGAmfs), [Part II](https://www.youtube.com/watch?v=pL4wGV_ui4o), [Part III](https://www.youtube.com/watch?v=F9IQ357YwdU) (in Russian)
+- A.Tomilin. [*About BESM-6 and AS-6*](https://www.youtube.com/watch?v=VvDl9HmVx5U) (in Russian)
+
+### BBC B
+
+:movie_camera:
+
+- R.Hill. [*BBC B microcomputer*](https://www.youtube.com/watch?v=do6xydtcVPk), [*Original Elite on the BBC B*](https://www.youtube.com/watch?v=owz7XExO-Wk) – Computerphile (2013)

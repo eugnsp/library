@@ -15,6 +15,7 @@
 	- [Horner’s method](#horners-method)
 	- [Kahan summation algorithm](#kahan-summation-algorithm)
 	- [Powers and logarithms](#powers-and-logarithms)
+- [Prime numbers](#prime-numbers)
 - [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	- [Iterative methods](#iterative-methods)
 		- [Jacobi method](#jacobi-method)
@@ -141,6 +142,14 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 - [*How to check if an integer is a power of `3`?*](https://stackoverflow.com/q/1804311) – Stack Overflow
+
+---
+
+## Prime numbers
+
+:grey_question:
+
+- [*How many prime numbers are there (available for RSA encryption)?*](https://stackoverflow.com/q/16091581) – Stack Overflow
 
 ---
 
