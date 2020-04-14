@@ -52,6 +52,10 @@
 
 ## Introduction and overview
 
+:link:
+
+- S.Kozlovski. [*A thorough introduction to distributed systems*](https://accu.org/index.php/journals/2620) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
+
 :movie_camera:
 
 - T.Berglund. [*Distributed systems in one lesson*](https://www.youtube.com/watch?v=Y6Ev8GIlbxc) – Devoxx Poland (2017)
@@ -74,7 +78,7 @@
 
 :movie_camera:
 
-- S.Keshav. [Lec. 4: *DNS and CDN*](https://www.youtube.com/watch?v=7-rxE636opw&t=2172) – CS 436: Distributed Computer Systems (2013)
+- S.Keshav. [*DNS and CDN*](https://www.youtube.com/watch?v=7-rxE636opw&t=2172) – CS 436: Distributed Computer Systems (2013)
 - A.Bergman. [*What is a CDN and why developers should care about using one*](https://www.youtube.com/watch?v=farO15_0NUQ) – GOTO (2016)
 
 :page_facing_up:
@@ -195,7 +199,7 @@
 :movie_camera:
 
 - H.Howard. [*Paxos agreement*](https://www.youtube.com/watch?v=s8JqcZtvnsM) – Computerphile (2016)
-- C.Colohan. [Lec. 9: *Paxos simplified*](https://www.youtube.com/watch?v=SRsK-ZXTeZ0) – Distributed Systems Design (2017)
+- C.Colohan. [*Paxos simplified*](https://www.youtube.com/watch?v=SRsK-ZXTeZ0) – Distributed Systems Design (2017)
 
 <!-- https://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/papers/paper2-1.pdf
 https://www.microsoft.com/en-us/research/uploads/prod/2004/01/twophase-revised.pdf
@@ -237,7 +241,7 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-96.p
 
 :movie_camera:
 
-- C.Colohan. [Lec. 15: *Unique ID*](https://www.youtube.com/watch?v=W6qURtqrldc) – Distributed Systems Design (2019)
+- C.Colohan. [*Unique ID*](https://www.youtube.com/watch?v=W6qURtqrldc) – Distributed Systems Design (2019)
 
 ---
 
@@ -284,10 +288,10 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-96.p
 
 :link:
 
-- [*Stack Overflow: How we do app caching – 2019 edition*](https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/) – Stack Overflow blog (2019)
-- [*Stack Overflow: The hardware – 2016 edition*](https://nickcraver.com/blog/2016/03/29/stack-overflow-the-hardware-2016-edition/) – Stack Overflow blog (2016)
-- [*Stack Overflow: The architecture – 2016 edition*](https://stackoverflow.blog/2016/02/17/stack-overflow-the-architecture-2016-edition/) – Stack Overflow blog (2016)
-- [*Stack Overflow: A technical deconstruction*](https://nickcraver.com/blog/2016/02/03/stack-overflow-a-technical-deconstruction/) – Stack Overflow blog (2016)
+- [*How we do app caching – 2019 edition*](https://nickcraver.com/blog/2019/08/06/stack-overflow-how-we-do-app-caching/) – Stack Overflow blog (2019)
+- [*The hardware – 2016 edition*](https://nickcraver.com/blog/2016/03/29/stack-overflow-the-hardware-2016-edition/) – Stack Overflow blog (2016)
+- [*The architecture – 2016 edition*](https://stackoverflow.blog/2016/02/17/stack-overflow-the-architecture-2016-edition/) – Stack Overflow blog (2016)
+- [*A technical deconstruction*](https://nickcraver.com/blog/2016/02/03/stack-overflow-a-technical-deconstruction/) – Stack Overflow blog (2016)
 - [*What it takes to run Stack Overflow*](https://nickcraver.com/blog/2013/11/22/what-it-takes-to-run-stack-overflow/) – Stack Overflow blog (2013)
 - [*Stack Exchange Data explorer*](https://data.stackexchange.com/)
 
@@ -334,6 +338,7 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-96.p
 :link:
 
 - S.Ignatchenko. [*Once again on TCP vs UDP*](https://accu.org/index.php/journals/2180) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
+- S.Ignatchenko. [*TCP/IP explained. A bit*](https://accu.org/index.php/journals/1858) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
 
 #### TCP
 
@@ -421,7 +426,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server
 
 :movie_camera:
 
-- C.Colohan. [Lec. 12: *What is a blockchain*](https://www.youtube.com/watch?v=Jp7T9qtuRIE) – Distributed Systems Design (2018)
+- C.Colohan. [*What is a blockchain*](https://www.youtube.com/watch?v=Jp7T9qtuRIE) – Distributed Systems Design (2018)
 
 ## Distributed graphs
 

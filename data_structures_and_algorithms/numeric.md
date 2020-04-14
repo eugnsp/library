@@ -15,6 +15,8 @@
 	- [Horner’s method](#horners-method)
 	- [Kahan summation algorithm](#kahan-summation-algorithm)
 	- [Powers and logarithms](#powers-and-logarithms)
+		- [Square root](#square-root)
+		- [Inverse square root](#inverse-square-root)
 - [Prime numbers](#prime-numbers)
 - [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	- [Iterative methods](#iterative-methods)
@@ -45,7 +47,11 @@
 :link:
 
 - [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
+- R.Harris. [*You’re going to have to think!*](https://accu.org/index.php/journals/1702) – [Overload **99**](https://accu.org/index.php/journals/c275/) (2010)
 - D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
+
+:grey_question:
+
 - [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/q/17949796) – Stack Overflow
 - [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/q/19800415) – Stack Overflow
 - [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/q/12558780) – Stack Overflow
@@ -135,6 +141,9 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 - [*Kahan summation algorithm*](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) – Wikipedia
+
+:grey_question:
+
 - [*Kahan summation*](https://stackoverflow.com/q/4940072) – Stack Overflow
 
 ### Powers and logarithms
@@ -142,6 +151,24 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 - [*How to check if an integer is a power of `3`?*](https://stackoverflow.com/q/1804311) – Stack Overflow
+
+#### Square root
+
+:link:
+
+- [*Methods of computing square roots*](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) – Wikipedia
+- P.Martin. [*Eight rooty pieces*](https://accu.org/index.php/journals/2294) – [Overload **135**](https://accu.org/index.php/journals/c366/) (2016)
+
+#### Inverse square root
+
+- [*Fast inverse square root*](https://en.wikipedia.org/wiki/Fast_inverse_square_root) – Wikipedia
+- C.Lomont. [*Fast inverse square root*](http://www.lomont.org/papers/2003/InvSqrt.pdf) (2003)
+
+<!-- https://web.archive.org/web/20030426190503/http://www.magic-software.com/Documentation/FastInverseSqrt.pdf
+https://www.beyond3d.com/content/articles/8/
+David Eberly, Fast inverse square root (revisited), 2010.
+http://www.azillionmonkeys.com/qed/sqroot.html
+ -->
 
 ---
 
@@ -176,7 +203,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-- G.Strang. [Lec. 15: *Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.086 [*Mathematical methods for engineers II*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
+- G.Strang. [*Iterative methods and preconditioners*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.086 [*Mathematical methods for engineers II*](https://ocw.mit.edu/courses/mathematics/18-086-mathematical-methods-for-engineers-ii-spring-2006/) (2006)
 
 ---
 
@@ -201,8 +228,8 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 
 :movie_camera:
 
-- G.Strang. [Lec. 27: *Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.085 *Computational science and engineering I* (2008?)
-- G.Strang. [Lec. 28: *Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) – MIT 18.085 *Computational science and engineering I* (2008?)
+- G.Strang. [*Multiresolution, wavelet transform and scaling function*](https://www.youtube.com/watch?v=LtNVodIs1dI) – MIT 18.085 *Computational science and engineering I* (2008?)
+- G.Strang. [*Splines and orthogonal wavelets: Daubechies construction*](https://www.youtube.com/watch?v=LeafEHx9d0c) – MIT 18.085 *Computational science and engineering I* (2008?)
 
 :book:
 

@@ -3,17 +3,19 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Hardware](#hardware)
+	- [CPU](#cpu)
+		- [CPU word size](#cpu-word-size)
 	- [Memory](#memory)
 		- [Memory addressing](#memory-addressing)
 - [Optimizations](#optimizations)
 	- [Floating-point arithmetic](#floating-point-arithmetic)
 	- [Memory copying](#memory-copying)
-		- [Nested std::vectors](#nested-stdvectors)
+		- [Nested `std::vector`s](#nested-stdvectors)
 	- [Memory allocation](#memory-allocation)
 	- [Memory relocation](#memory-relocation)
+	- [Memory access](#memory-access)
 	- [Integral multiplication](#integral-multiplication)
 	- [Integeral division](#integeral-division)
-	- [Memory access](#memory-access)
 	- [Empty base class optimization](#empty-base-class-optimization)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Undefined behavior](#undefined-behavior)
@@ -38,6 +40,14 @@
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 <!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) – - Comp. Arch. 2015 -->
+
+### CPU
+
+#### CPU word size
+
+:link:
+
+- S.Ignatchenko. [*Size matters*](https://accu.org/index.php/journals/1895) – [Overload **120**](https://accu.org/index.php/journals/c336/) (2014)
 
 ### Memory
 
@@ -154,6 +164,14 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - A.O’Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) – WG21/P1144R2 (2019)
 
+### Memory access
+
+:grey_question:
+
+- [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/q/11413855) – Stack Overflow
+- [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/q/8547778) – Stack Overflow
+- [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/q/40303182) – Stack Overflow
+
 ### Integral multiplication
 
 :grey_question:
@@ -171,14 +189,6 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/q/41183935) – Stack Overflow
 - [*Why does the compiler generate a right-shift by 31 bits when dividing by 2?*](https://stackoverflow.com/q/40638335) – Stack Overflow
-
-### Memory access
-
-:grey_question:
-
-- [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/q/11413855) – Stack Overflow
-- [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/q/8547778) – Stack Overflow
-- [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/q/40303182) – Stack Overflow
 
 ### Empty base class optimization
 

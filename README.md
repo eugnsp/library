@@ -32,6 +32,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :file_folder: [Data compression algorithms](data_structures_and_algorithms/compression.md)
 	* :spades: [Game theory](data_structures_and_algorithms/game_theory.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
+	* :lock: [Cryptographic algorithms and data structures](data_structures_and_algorithms/cryptographic.md)
 	* :game_die: [Randomized algorithms and probabilistic data structures](data_structures_and_algorithms/random.md)
 	* :satellite: [Distributed algorithms](data_structures_and_algorithms/distributed.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)

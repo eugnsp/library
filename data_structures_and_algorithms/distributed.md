@@ -27,7 +27,7 @@
 
 :page_facing_up:
 
-- N.Fraser. [*Differential synchronization*](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf) ([Mirror](https://neil.fraser.name/writing/sync/eng047-fraser.pdf)) – [ACM Symposium on Document Engineering, 13](https://research.google/pubs/pub35605/) (2009)
+- N.Fraser. [*Differential synchronization*](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf) ([mirror](https://neil.fraser.name/writing/sync/eng047-fraser.pdf)) – [ACM Symposium on Document Engineering, 13](https://research.google/pubs/pub35605/) (2009)
 
 :movie_camera:
 

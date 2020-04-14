@@ -12,7 +12,8 @@
 	- [`[[noreturn]]`](#noreturn)
 	- [`[[trivially_relocatable]]`](#trivially_relocatable)
 - [Declarations](#declarations)
-	- [Alignment](#alignment)
+	- [`alignas` and alignment](#alignas-and-alignment)
+	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 	- [Elaborated type specifier](#elaborated-type-specifier)
@@ -28,7 +29,7 @@
 	- [Structured binding](#structured-binding)
 - [Initialization](#initialization)
 - [Dynamic memory](#dynamic-memory)
-	- [Alignment](#alignment-1)
+	- [Alignment](#alignment)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
 	- [Compound literals](#compound-literals)
@@ -36,6 +37,7 @@
 	- [Type conversions](#type-conversions)
 		- [`dynamic_cast`](#dynamic_cast)
 	- [Type punning](#type-punning)
+	- [Value categories](#value-categories)
 - [Functions and functional objects](#functions-and-functional-objects)
 	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
@@ -189,7 +191,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 - H.Hinnant. [*How to initialize `x` from expression `y`*](https://www.youtube.com/watch?v=hobFOAehwio) – Meeting C++ (2019)
 
-### Alignment
+### `alignas` and alignment
 
 :link:
 
@@ -202,6 +204,15 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 :anchor:
 
 - [*`alignas` specifier*](https://en.cppreference.com/w/cpp/language/alignas) – C++ reference
+
+### `auto`
+
+> For variables, specifies that the type of the variable will be automatically deduced from its initializer. For functions, specifies that the return type will be deduced from its `return` statements. For non-type template parameters, specifies that the type will be deduced from the argument.
+
+:link:
+
+- R.Orr. [*`auto` – A necessary evil?* (Part II)](https://accu.org/index.php/journals/1840) – [Overload **116**](https://accu.org/index.php/journals/c328/) (2013)
+- R.Orr. [*`auto` – A necessary evil?*](https://accu.org/index.php/journals/1859) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
 
 ### `const` and `mutable`
 
@@ -473,6 +484,21 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :anchor:
 
 - [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) – GCC documentation
+
+### Value categories
+
+- A.S.Knatten. [*lvalues, rvalues, glvalues, prvalues, xvalues, help!*](https://accu.org/index.php/journals/2641) – [Overload **150**](https://accu.org/index.php/journals/c397/) (2019)
+- B.Revzin. [*Value categories in C++17*](https://medium.com/@barryrevzin/value-categories-in-c-17-f56ae54bccbe) (2017)
+
+:grey_question:
+
+- [*What categories (lvalue, rvalue, xvalue, etc.) can expressions that produce temporaries of class type fall into?*](https://stackoverflow.com/q/20717180) – Stack Overflow
+- [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
+
+:anchor:
+
+- [*Value categories*](https://en.cppreference.com/w/cpp/language/value_category) – C++ reference
+- B.Stroustrup. [*“New” value terminology*](http://www.stroustrup.com/terminology.pdf)
 
 ---
 
@@ -750,7 +776,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 ### References
 
-:link:
+:grey_question:
 
 - [*Is null reference possible?*](https://stackoverflow.com/q/4364536) – Stack Overflow
 
@@ -772,6 +798,9 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
 - S.Meyers. [*Universal references in C++11*](https://accu.org/index.php/journals/1887) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
+
+:grey_question:
+
 - [*What is move semantics?*](https://stackoverflow.com/q/3106110) – Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
@@ -835,9 +864,5 @@ https://stackoverflow.com/questions/37618213/when-is-a-private-constructor-not-a
 -->
 
 
-<!-- https://medium.com/@barryrevzin/value-categories-in-c-17-f56ae54bccbe
-http://www.stroustrup.com/terminology.pdf
-https://stackoverflow.com/questions/20717180/in-c-what-categories-lvalue-rvalue-xvalue-etc-can-expressions-that-prod
--->
 
 <!-- https://stackoverflow.com/questions/81870/is-it-possible-to-print-a-variables-type-in-standard-c/56766138#56766138 -->

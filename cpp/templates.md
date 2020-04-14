@@ -22,6 +22,11 @@
 
 ## Introduction and overview
 
+:link:
+
+- S.Golodetz. [*Functional programming using C++ templates (Part I)*](https://accu.org/index.php/journals/1422) – [Overload **81**](https://accu.org/index.php/journals/c232/) (2007)
+- S.Golodetz. [*Functional programming using C++ templates (Part II)*](https://accu.org/index.php/journals/1616) – [Overload **82**](https://accu.org/index.php/journals/c235/) (2007)
+
 :grey_question:
 
 - [*Templates*](https://isocpp.org/wiki/faq/templates) – C++ FAQ

@@ -101,6 +101,10 @@
 - M.Clow. [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) – ACCU (2016)
 - M.VanLoon. [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) – CppCon (2015)
 
+<!-- ### `std::accumulate`
+
+ -->
+
 ### `std::iota`
 
 :link:

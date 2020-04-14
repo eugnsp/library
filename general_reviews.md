@@ -14,6 +14,7 @@
 	- [John Conway](#john-conway)
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
+	- [Peter Norvig](#peter-norvig)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Linus Torvalds](#linus-torvalds)
@@ -38,6 +39,10 @@
 ---
 
 ## Numerical analysis
+
+:link:
+
+- R.Munafo. [*Notable properties of specific numbers*](https://mrob.com/pub/math/numbers.html)
 
 :movie_camera:
 
@@ -137,7 +142,7 @@
 :movie_camera:
 
 - L.Fridman. [*An interview with Donald Knuth: Algorithms, complexity, life, and The art of computer programming*](https://www.youtube.com/watch?v=2BdBfsXbST8) (2019)
-- [*Donald Knuth on P=NP*](https://www.youtube.com/watch?v=Ph4hlOzq_pE) (2014)
+- [*Donald Knuth on P = NP*](https://www.youtube.com/watch?v=Ph4hlOzq_pE) (2014)
 
 :book:
 

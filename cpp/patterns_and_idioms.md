@@ -88,18 +88,19 @@
 
 #### Rule of zero/three/five
 
-> - *The rule of zero*: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them.
-> - *The rule of three/five*: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
+> *The rule of zero*: if a class requires no user-defined constructors, no user-defined assignment operators and no user-defined destructor, avoid defining them. *The rule of three/five*: if a class requires a user-defined destructor, a user-defined copy (and move) constructor, or a user-defined copy (and move) assignment operator, it almost certainly requires all three (five).
 
 :link:
 
 - [*Rule of three*](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) – Wikipedia
 - S.Meyers. [*A concern about the rule of zero*](https://scottmeyers.blogspot.com/2014/03/a-concern-about-rule-of-zero.html) (2014)
+- J.Alday. [*Enforcing the rule of zero*](https://accu.org/index.php/journals/1896) – [Overload **120**](https://accu.org/index.php/journals/c336/) (2014)
 - R.M.Fernandes. [*Rule of zero*](https://web.archive.org/web/20121127171954/http://rmartinho.github.com/cxx11/2012/08/15/rule-of-zero.html) (2012)
 
 :anchor:
 
 - [*The rule of three/five/zero*](https://en.cppreference.com/w/cpp/language/rule_of_three) – C++ reference
+- W.E.Brown. [*Proposing the rule of five, v2*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3839.pdf) – WG21/N3839 (2014)
 
 #### SOLID principles
 
@@ -178,6 +179,7 @@
 :link:
 
 - [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) – Wikipedia
+- S.Ignatchenko. [*“No Bugs” top five C++ cooking recipes*](https://accu.org/index.php/journals/1874) – [Overload **113**](https://accu.org/index.php/journals/c320/) (2013)
 
 :movie_camera:
 
@@ -306,6 +308,8 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
 
+
+<!--Scoped Resource - Generic RAII Wrapper for theStandard Library  https://isocpp.org/files/papers/N3949.pdf -->
 <!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
 
 #### Execute-around proxy

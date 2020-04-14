@@ -7,11 +7,12 @@
 	- [SIMD within a register (SWAR)](#simd-within-a-register-swar)
 - [Multithreading](#multithreading)
 	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
-		- [std::atomic_shared_ptr](#stdatomic_shared_ptr)
-		- [std::condition_variable](#stdcondition_variable)
-		- [std::promise](#stdpromise)
+		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
+		- [`std::condition_variable`](#stdcondition_variable)
+		- [`std::promise`](#stdpromise)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
+		- [Mutex locks](#mutex-locks)
 		- [Spin locks](#spin-locks)
 	- [Lock-free](#lock-free)
 		- [Hazard pointers](#hazard-pointers)
@@ -118,6 +119,12 @@
 - [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow
 
 ### Lock-based
+
+#### Mutex locks
+
+:link:
+
+- S.Ignatchenko. [*5 big fat reasons why mutexes suck big time*](https://accu.org/index.php/journals/2623) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
 
 #### Spin locks
 
