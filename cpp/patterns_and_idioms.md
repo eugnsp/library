@@ -5,10 +5,10 @@
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
 	- [Class design](#class-design)
+		- [Liskov substitution principle](#liskov-substitution-principle)
+	- [Interface design](#interface-design)
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
-		- [SOLID principles](#solid-principles)
-	- [Interface design](#interface-design)
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
 - [Patterns and idioms](#patterns-and-idioms)
@@ -16,6 +16,7 @@
 	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Bridge and pimpl](#bridge-and-pimpl)
 	- [Builder](#builder)
+	- [Chain-of-responsibility](#chain-of-responsibility)
 	- [Copy-and-swap](#copy-and-swap)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Double-checked locking](#double-checked-locking)
@@ -24,8 +25,10 @@
 		- [Execute-around proxy](#execute-around-proxy)
 		- [Execute-around pointer](#execute-around-pointer)
 		- [Execute-around function](#execute-around-function)
+	- [Flyweight](#flyweight)
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Infinite loop](#infinite-loop)
+	- [Observer](#observer)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
 	- [Singleton](#singleton)
@@ -52,9 +55,16 @@
 
 ### Style and guidelines
 
+:link:
+
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
 - [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
+- M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/index.php/journals/2249) – [Overload **133**](https://accu.org/index.php/journals/c362/) (2016)
+- M.Wilson. [*QM bites: The two sides of boolean parameters*](https://accu.org/index.php/journals/2183) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
+- S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/index.php/journals/2066) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
+- B.Schmidt. [*I like whitespace*](https://accu.org/index.php/journals/2063) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
+- J.Wakely. [*Stop the constant shouting*](https://accu.org/index.php/journals/1923) – [Overload **121**](https://accu.org/index.php/journals/c338/) (2014)
 
 :movie_camera:
 
@@ -63,17 +73,50 @@
 
 ### Class design
 
+<!-- > SOLID are the five principles of class design:
+>
+> - single responsibility principle: a class should have one, and only one, reason to change;
+> - open-closed principle: you should be able to extend a class behavior, without modifying it;
+> - interface segregation principle: make fine grained interfaces that are client specific;
+> - dependency inversion principle: depend on abstractions, not on concretions. -->
+
 :link:
 
+- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
+- R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
+- R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
+- C.Oldwood. [*KISSing SOLID goodbye*](https://accu.org/index.php/journals/1957) – [Overload **122*](https://accu.org/index.php/journals/c340/) (2014)
 - R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) – Uncle Bob (2004)
+- H.Sutter. [*What’s in a class? The interface principle*](http://www.gotw.ca/publications/mill02.htm) (1998)
 
 :movie_camera:
 
 - J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2018)
+- K.Henney. [*The SOLID design principles deconstructed*](https://www.youtube.com/watch?v=tMW08JkFrBA) – YOW! (2013)
 
 :book:
 
 - Sec.: *Class design and inheritance* – H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
+
+#### Liskov substitution principle
+
+> Liskov substitution principle states that, in a computer program, if `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` (i.e. an object of type `T` may be substituted with any object of a subtype `S`) without altering any of the desirable properties of the program (correctness, task performed, etc.).
+
+:link:
+
+- [*Liskov substitution principle*](https://en.wikipedia.org/wiki/Liskov_substitution_principle) – Wikipedia
+- R.C.Martin. [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf)
+
+:grey_question:
+
+- [*What is an example of the Liskov substitution principle?*](https://stackoverflow.com/q/56860) – Stack Overflow
+
+### Interface design
+
+:grey_question:
+
+- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
 
 #### Destructors
 
@@ -81,6 +124,10 @@
 
 - A.Krzemie&nacute;ski. [*Destructors that throw*](https://akrzemi1.wordpress.com/2011/09/21/destructors-that-throw/) (2011)
 - B.Kolpackov. [*Throwing destructors*](https://www.kolpackov.net/projects/c++/eh/dtor-1.xhtml) (2004)
+
+:grey_question:
+
+- [*Throwing exceptions out of a destructor*](https://stackoverflow.com/q/130117) – Stack Overflow
 
 :movie_camera:
 
@@ -101,29 +148,6 @@
 
 - [*The rule of three/five/zero*](https://en.cppreference.com/w/cpp/language/rule_of_three) – C++ reference
 - W.E.Brown. [*Proposing the rule of five, v2*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3839.pdf) – WG21/N3839 (2014)
-
-#### SOLID principles
-
-> SOLID are the five principles of class design:
->
-> - single responsibility principle: a class should have one, and only one, reason to change;
-> - open-closed principle: you should be able to extend a class behavior, without modifying it;
-> - Liskov substitution principle: derived classes must be substitutable for their base classes;
-> - interface segregation principle: make fine grained interfaces that are client specific;
-> - dependency inversion principle: depend on abstractions, not on concretions.
-
-:link:
-
-- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
-- R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
-- R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Liskov substitution principle*](https://web.archive.org/web/20150905081111/http://www.objectmentor.com/resources/articles/lsp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
-
-### Interface design
-
-:grey_question:
-
-- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
-- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
 
 ### Error handling
 
@@ -151,6 +175,8 @@
 > - *basic exception guarantee*: if the function throws an exception, the program is in a valid state, no resources are leaked, and all objects’ invariants are intact;
 > - *no exception guarantee*: if the function throws an exception, the program may not be in a valid state, resource leaks, memory corruption, or other invariant-destroying errors may have occurred.
 
+For exceptions in destructors, see [*Destructors*](#destructors).
+
 :link:
 
 - R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/index.php/journals/2422) – [Overload **141**](https://accu.org/index.php/journals/c378/), 24 (2017)
@@ -164,6 +190,7 @@
 
 - B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
+- [*Is there any difference between noexcept and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
 
 :anchor:
 
@@ -233,14 +260,28 @@
 
 - [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) – Wikipedia
 
-### Copy-and-swap
+### Chain-of-responsibility
+
+> The chain-of-responsibility is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.
+
+:link:
+
+- [*Chain-of-responsibility pattern*](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern) – Wikipedia
+
+
+
+### Copy-and-swap / Move-and-swap
 
 > The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
 > ```cpp
 > struct Object {
 >     Object& operator=(const Object& obj) {
->         auto tmp{obj};
->         tmp.swap(*this);
+>         Object{obj}.swap(*this);
+>         return *this;
+>     }
+>
+>     Object& operator=(Object&& obj) {
+>         Object{std::move(obj)}.swap(*this);
 >         return *this;
 >     }
 > };
@@ -249,6 +290,7 @@
 :grey_question:
 
 - [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
+- [*Using `swap` to implement move assignment*](https://stackoverflow.com/q/32234623) – Stack Overflow
 
 ### Curiously recurring template
 
@@ -272,6 +314,7 @@
 :grey_question:
 
 - [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
+- [*CRTP with protected derived member*](https://stackoverflow.com/q/8523762) – Stack Overflow
 
 ### Double-checked locking
 
@@ -333,6 +376,12 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
+### Flyweight
+
+:link:
+
+- [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
+
 ### In-place factory, typed in-place factory
 
 :link:
@@ -351,6 +400,13 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
 - [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
+
+### Observer
+
+:link:
+
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
+
 
 ### Opaque typedef (whole value)
 

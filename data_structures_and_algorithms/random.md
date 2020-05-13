@@ -4,7 +4,6 @@
 
 - [Probability theory](#probability-theory)
 - [Random numbers generation](#random-numbers-generation)
-	- [Pseudorandom numbers generation](#pseudorandom-numbers-generation)
 - [Random sampling](#random-sampling)
 	- [Selection sampling](#selection-sampling)
 	- [Reservoir sampling](#reservoir-sampling)
@@ -27,7 +26,7 @@
 
 ## Random numbers generation
 
-### Pseudorandom numbers generation
+For cryptographically secure random number generation see [*Random numbers generation* – Cryptographic algorithms and data structures](cryptographic.md#random-numbers-generation).
 
 :link:
 

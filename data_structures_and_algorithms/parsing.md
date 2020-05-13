@@ -2,14 +2,41 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Bottom-up](#bottom-up)
-	- [Shunting yard algorithm](#shunting-yard-algorithm)
+- [Introduction and overview](#introduction-and-overview)
+	- [Implementations](#implementations)
+- [Lexical analysis](#lexical-analysis)
+- [Parsing algorithms](#parsing-algorithms)
+	- [Bottom-up](#bottom-up)
+		- [Shunting yard algorithm](#shunting-yard-algorithm)
 
 ---
 
-## Bottom-up
+## Introduction and overview
 
-### Shunting yard algorithm
+:link:
+
+- A.Balaam. [*How to write a programming language: Part 1, The lexer*](https://accu.org/index.php/journals/2510) – [Overload **145**](https://accu.org/index.php/journals/c386/) (2018)
+- A.Balaam. [*How to write a programming language: Part 2, The parser*](https://accu.org/index.php/journals/2532) – [Overload **146**](https://accu.org/index.php/journals/c389/) (2018)
+- A.Balaam. [*How to write a programming language: Part 3, The evaluator*](https://accu.org/index.php/journals/2565) – [Overload **147**](https://accu.org/index.php/journals/c391/) (2018)
+
+
+### Implementations
+
+:link:
+
+- A.Kapoulkine. [*Parsing XML at the speed of light*](https://www.aosabook.org/en/posa/parsing-xml-at-the-speed-of-light.html) – The Performance of Open Source Applications
+
+---
+
+## Lexical analysis
+
+---
+
+## Parsing algorithms
+
+### Bottom-up
+
+#### Shunting yard algorithm
 
 :link:
 

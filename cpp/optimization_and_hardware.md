@@ -18,6 +18,7 @@
 	- [Integeral division](#integeral-division)
 	- [Empty base class optimization](#empty-base-class-optimization)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
+	- [Tail call optimisation](#tail-call-optimisation)
 	- [Undefined behavior](#undefined-behavior)
 		- [Strict aliasing rule](#strict-aliasing-rule)
 - [OS internals](#os-internals)
@@ -76,7 +77,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 ## Optimizations
 
-:link
+:link:
 
 - [*Optimizing C++*](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B) – WikiBooks
 - A.O’Dwyer. [*`[[trivial_abi]]` 101*](https://quuxplusone.github.io/blog/2018/05/02/trivial-abi-101/)
@@ -228,15 +229,23 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - [*Copy elision*](https://en.cppreference.com/w/cpp/language/copy_elision) – C++ reference
 
+### Tail call optimisation
+
+:link:
+
+- A.Balaam. [*Tail call optimisation in C++*](https://accu.org/index.php/journals/1914) – [Overload **109**](https://accu.org/index.php/journals/c310/) (2012)
+
 ### Undefined behavior
 
-:link
+:link:
 
 - K.Walfridsson. [*How undefined signed overflow enables optimizations in GCC*](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html) (2016)
 - K.Walfridsson. [*Dangling pointers and undefined behavior*](https://kristerw.blogspot.com/2016/04/dangling-pointers-and-undefined-behavior.html) (2016)
 - K.Walfridsson. [*Pointer comparison — an invalid optimization in GCC*](https://kristerw.blogspot.com/2016/12/pointer-comparison-invalid-optimization.html) (2016)
 - J.Regehr. [*Finding undefined behavior bugs by finding dead code*](https://blog.regehr.org/archives/970) (2013)
 - C.Lattner. *What every C programmer should know about undefined behavior.* [Part I](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html), [Part II](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html), [Part III](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_21.html) – LLVM project (2013)
+- O.Maudel. [*Demons may fly out of your nose*](https://accu.org/index.php/journals/1857) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
+- M.Shroyer. [*Both true and false: A Zen moment with C*](https://markshroyer.com/2012/06/c-both-true-and-false/) (2012)
 
 <!-- http://blog.regehr.org/archives/213 -->
 

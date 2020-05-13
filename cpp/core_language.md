@@ -32,6 +32,7 @@
 	- [Alignment](#alignment)
 - [Exceptions](#exceptions)
 - [Expressions](#expressions)
+	- [`nullptr`](#nullptr)
 	- [Compound literals](#compound-literals)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
@@ -78,6 +79,7 @@
 :grey_question:
 
 - [*The definitive C++ book guide and list*](https://stackoverflow.com/q/388242) – Stack Overflow
+- [*Undefined, unspecified and implementation-defined behavior*](https://stackoverflow.com/q/2397984) – Stack Overflow
 
 :anchor:
 
@@ -289,6 +291,13 @@ See [*Friend function templates* – Function templates – Templates](templates
 :grey_question:
 
 - [*Static variables in an inlined function*](https://stackoverflow.com/q/185624) – Stack Overflow
+- [*What is a `static` function in C?*](https://stackoverflow.com/q/558122) – Stack Overflow
+
+### `using`
+
+:grey_question
+
+- [*A `using` statement compiles with g++, fails compilation with clang*](https://stackoverflow.com/q/27954940) – Stack Overflow
 
 ### Flexible array member
 
@@ -416,6 +425,12 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 ---
 
 ## Expressions
+
+### `nullptr`
+
+> The keyword `nullptr` denotes the pointer literal. It is a prvalue of type `std::nullptr_t`.
+
+See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_library.md#stdnullptr_t).
 
 ### Compound literals
 
@@ -550,6 +565,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :link:
 
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
+- S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
 - A.Allain. [*Lambda functions in C++11 – the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
 
 :grey_question:
@@ -652,7 +668,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :grey_question:
 
-- [*Hidden features of C++?*](https://stackoverflow.com/q/75538) – Stack Overflow
+- [*Hidden features of C++*](https://stackoverflow.com/q/75538) – Stack Overflow
 - [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
 - [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
 
@@ -797,6 +813,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
+- S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
 - S.Meyers. [*Universal references in C++11*](https://accu.org/index.php/journals/1887) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
 
 :grey_question:
@@ -853,6 +870,12 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
 - [*Size of character (`'a'`) in C/C++*](https://stackoverflow.com/q/2172943)
 
+:grey_question:
+
+- [*Call a C function from C++ code*](https://stackoverflow.com/q/16850992) – Stack Overflow
+- [*What kinds of C++ functions can be placed in a C function pointer?*](https://stackoverflow.com/q/36941866) – Stack Overflow
+- [*Passing lambdas as callbacks to C functions*](https://stackoverflow.com/questions/55395717) – Stack Overflow
+- [*How to make a function with C-linkage from template?*](https://stackoverflow.com/q/26174510) – Stack Overflow
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 

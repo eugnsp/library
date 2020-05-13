@@ -7,7 +7,8 @@
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
 	- [`std::midpoint`](#stdmidpoint)
-	- [`std::[stable_]sort`](#stdstable_sort)
+	- [`std::next_permutation` / `std::prev_permutation` / `std::is_permutation`](#stdnext_permutation--stdprev_permutation--stdis_permutation)
+	- [`std::[stable_]sort` / `std::is_sorted`](#stdstable_sort--stdis_sorted)
 	- [`std::[stable_]partition`](#stdstable_partition)
 - [Concepts](#concepts)
 - [Containers](#containers)
@@ -49,6 +50,8 @@
 	- [Short string optimization](#short-string-optimization)
 	- [`std::string_view`](#stdstring_view)
 - [Type support](#type-support)
+	- [Additional basic types](#additional-basic-types)
+		- [`std::nullptr_t`](#stdnullptr_t)
 	- [Fixed-width integer types](#fixed-width-integer-types)
 	- [Type traits](#type-traits)
 		- [`std::is_base_of`](#stdis_base_of)
@@ -122,7 +125,19 @@
 
 - S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0811r3.html) – WG21/P0811R3 (2019)
 
-### `std::[stable_]sort`
+### `std::next_permutation` / `std::prev_permutation` / `std::is_permutation`
+
+:grey_question:
+
+- [*How to create a permutation using STL for number of places lower than the total length?*](https://stackoverflow.com/q/61392431) – Stack Overflow
+
+:anchor:
+
+- [*`std::next_permutation`*](https://en.cppreference.com/w/cpp/algorithm/next_permutation) – C++ reference
+- [*`std::prev_permutation`*](https://en.cppreference.com/w/cpp/algorithm/prev_permutation) – C++ reference
+- [*`std::is_permutation`*](https://en.cppreference.com/w/cpp/algorithm/is_permutation) – C++ reference
+
+### `std::[stable_]sort` / `std::is_sorted`
 
 :link:
 
@@ -152,6 +167,11 @@ See also [*Concepts* – Templates](templates.md#concepts).
 ---
 
 ## Containers
+
+:grey_question:
+
+- [*Nesting `std::` containers of movable objects*](https://stackoverflow.com/q/61269785) – Stack Overflow
+- [*Does C++11 allow `vector<const T>`?*](https://stackoverflow.com/q/6954906) – Stack Overflow
 
 :movie_camera:
 
@@ -186,6 +206,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/q/6292332) – Stack Overflow
 - [*How can references be valid while iterators become invalidated in a deque*](https://stackoverflow.com/q/32800138) – Stack Overflow
+- [*STL deque accessing by index is `O(1)`?*](https://stackoverflow.com/q/2297164) – Stack Overflow
 
 #### `std::list`
 
@@ -282,6 +303,8 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :grey_question:
 
 - [`tellg()` function give wrong size of file?](https://stackoverflow.com/q/22984956) – Stack Overflow
+- [*Why does `std::getline()` skip input after a formatted extraction?*](https://stackoverflow.com/q/21567291) – Stack Overflow
+- [*Who architected/designed C++’s IO Streams, and would it still be considered well-designed by today’s standards?*](https://stackoverflow.com/q/2753060) – Stack Overflow
 
 :anchor:
 
@@ -386,8 +409,9 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :grey_question:
 
-- [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/q/53040940) – Stack Overflow
+- [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
 - [*Why not just use `random_device`?*](https://stackoverflow.com/q/39288595) – Stack Overflow
+- [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/q/53040940) – Stack Overflow
 
 :movie_camera:
 
@@ -459,7 +483,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
 - [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
-- [*How do I call `std::make_shared` on a class with only protected or private constructors?*](https://stackoverflow.com/q/8147027)
+- [*How do I call `std::make_shared` on a class with only protected or private constructors?*](https://stackoverflow.com/q/8147027) – Stack Overflow
+- [*What is the difference between an empty and a null `std::shared_ptr` in C++?*](https://stackoverflow.com/q/25920681) – Stack Overflow
 
 :anchor:
 
@@ -568,6 +593,23 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ## Type support
 
+### Additional basic types
+
+#### `std::nullptr_t`
+
+> `std::nullptr_t` is the type of the null pointer literal `nullptr`. It is a distinct type that is not itself a pointer type or a pointer to member type. An object of this type can be converted to any pointer or pointer-to-member type by a standard conversion.
+
+:grey_question:
+
+- [*How does `nullptr` implementation work?*](https://stackoverflow.com/q/61283569) – Stack Overflow
+- [*Why is `nullptr` a part of the core language, but `nullptr_t` is a part of STL?*](https://stackoverflow.com/q/57628496) – Stack Overflow
+- [*Is `nullptr` falsy?*](https://stackoverflow.com/q/57527189) – Stack Overflow
+
+:anchor:
+
+- [`std::nullptr_t`](https://en.cppreference.com/w/cpp/types/nullptr_t) – C++ reference
+- H.Sutter, B.Stroustrup. [A name for the null pointer: `nullptr`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2431.pdf) – WG21/N2431 (2007)
+
 ### Fixed-width integer types
 
 > `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement to represent negative values. They are provided only if the implementation directly supports the type.
@@ -624,6 +666,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :grey_question:
 
+- [*`initializer_list` and template type deduction*](https://stackoverflow.com/q/12431495) – Stack Overflow
 - [*`std::initializer_list` and move semantics*](https://stackoverflow.com/q/8193102) – Stack Overflow
 
 :anchor:
@@ -674,6 +717,10 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
 
 #### `std::variant`
+
+:grey_question:
+
+- [*How do I move the value of a `variant<Ts...>` into a `variant<T,Ts...>`?*](https://stackoverflow.com/q/61290807) – Stack Overflow
 
 :movie_camera:
 

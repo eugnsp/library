@@ -74,6 +74,16 @@
 
 ---
 
+### Neural networks
+
+#### Graph neural networks
+
+:movie_camera:
+
+- M.Allamanis. [*An introduction to graph neural networks: Models and applications*](https://www.youtube.com/watch?v=zCEYiCxrL_0) – MSR Cambridge Lecture Series (2019)
+
+---
+
 ## People
 
 :link:

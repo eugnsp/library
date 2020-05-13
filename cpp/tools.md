@@ -72,6 +72,7 @@
 :link:
 
 - M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
+- M.Davis. [*An introduction to creating GCC plugins*](https://lwn.net/Articles/457543/) (2011)
 
 :grey_question:
 

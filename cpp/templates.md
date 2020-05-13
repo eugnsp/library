@@ -51,9 +51,9 @@
 
 ## Argument deduction
 
-:link:
+:grey_question:
 
-- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2019)
+- [*What is a nondeduced context?*](https://stackoverflow.com/q/25245453) – Stack Overflow
 
 :movie_camera:
 
@@ -62,8 +62,27 @@
 :anchor:
 
 - [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
+
+### Class template argument deduction
+
+:link:
+
+- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2019)
+
+:anchor:
+
 - M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html) – WG21/P0091R3 (2017)
 - M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0091r4.html) – WG21/P0091R4 (2017)
+
+#### Deduction guides
+
+:grey_question:
+
+- [*What are template deduction guides and when should we use them?*](https://stackoverflow.com/q/40951697) – Stack Overflow
+
+:anchor:
+
+- [*Deduction for class templates*](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction#Deduction_for_class_templates) – C++ reference
 
 ---
 
@@ -242,7 +261,7 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 
 :link:
 
-- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) – Dr. Dobb’s Journal (2000)
+- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) ([mirror](https://www.drdobbs.com/cpp/c-type-traits/184404270)) – Dr. Dobb’s Journal (2000)
 - T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) – ACCU (2001)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 

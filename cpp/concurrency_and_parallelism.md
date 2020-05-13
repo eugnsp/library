@@ -19,6 +19,7 @@
 		- [Read-copy-update (RCU)](#read-copy-update-rcu)
 	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
+	- [Coroutines](#coroutines)
 - [GPU computing](#gpu-computing)
 
 ---
@@ -100,21 +101,34 @@
 
 - [`std::condition_variable`](https://en.cppreference.com/w/cpp/thread/condition_variable) – C++ reference
 
-#### `std::promise`
+#### `std::mutex`
+
+> The `std::mutex` class is a synchronization primitive that can be used to protect shared data from being simultaneously accessed by multiple threads.
+
+:grey_question:
+
+- [*Move constructor for `std::mutex`*](https://stackoverflow.com/q/7557179) – Stack Overflow
+- [*Why is `std::mutex::unlock()` not `noexcept`*](https://stackoverflow.com/q/38450189) – Stack Overflow
+
+:anchor:
+
+- [*`std::mutex`*](https://en.cppreference.com/w/cpp/thread/mutex) – C++ reference
+
+#### `std::promise` / `std::future`
 
 > The `std::promise` provides a facility to store a value or an exception that is later acquired asynchronously via a `std::future` object created by the `std::promise` object.
 
 :grey_question:
 
 - [*What is `std::promise`?*](https://stackoverflow.com/q/11004273) – Stack Overflow
+- [*Futures vs. promises*](https://stackoverflow.com/q/12620186) – Stack Overflow
+- [*Why we need both `std::promise` and `std::future`?*](https://stackoverflow.com/q/34169602) – Stack Overflow
 
 :anchor:
 
 - [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) – C++ reference
 
 ### Data races and race conditions
-
-1
 
 - [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow
 
@@ -187,6 +201,10 @@
 
 - B.Barney. [*POSIX threads programming*](https://computing.llnl.gov/tutorials/pthreads/)
 
+:grey_question:
+
+- [*When to use `pthread_exit()` and when to use `pthread_join()` in Linux?*](https://stackoverflow.com/q/20824229) – Stack Overflow
+
 <!--
 
 https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf
@@ -194,6 +212,12 @@ https://stackoverflow.com/questions/5002046/atomicity-in-c-myth-or-reality
 
 http://www.drdobbs.com/parallel/volatile-vs-volatile/212701484
 -->
+
+### Coroutines
+
+:movie_camera:
+
+- J.McNellis. [*Introduction to C++ coroutines*](https://www.youtube.com/watch?v=ZTqHjjm86Bw) – CppCon (2016)
 
 ---
 
