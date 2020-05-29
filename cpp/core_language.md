@@ -356,6 +356,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :grey_question:
 
+- [*Understand structured binding in C++17 by analogy*](https://stackoverflow.com/q/49795131) – Stack Overflow
+- [*Why are structured bindings defined in terms of a uniquely named variable?*](https://stackoverflow.com/q/49797286) – Stack Overflow
 - [*Structured bindings and tuple of references*](https://stackoverflow.com/q/49628401) – Stack Overflow
 
 :anchor:
@@ -384,15 +386,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ## Dynamic memory
 
-:link:
-
-- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
-- [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) – C++ Core Guidelines
-- [*How do compilers use “over-allocation” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-overalloc) – C++ FAQ
-- [*How do compilers use an “associative array” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-assocarray) – C++ FAQ
-
 :grey_question:
 
+- [*How do compilers use “over-allocation” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-overalloc) – C++ FAQ
+- [*How do compilers use an “associative array” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-assocarray) – C++ FAQ
 - [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/q/53451770/1625187) – Stack Overflow
 - [*Difference between `new` and `operator new`?*](https://stackoverflow.com/q/1885849) – Stack Overflow
 
@@ -405,6 +402,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Low level memory management*](https://en.cppreference.com/w/cpp/memory/new) – C++ reference
+- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
+- [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) – C++ Core Guidelines
 
 ### Alignment
 
@@ -802,6 +801,10 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 - [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/q/2784262) – Stack Overflow
 
+:movie_camera
+
+- A.Schödl. [*The C++ rvalue lifetime disaster*](https://www.youtube.com/watch?v=s9vBk5CxFyY) – CoreHard (2019)
+
 :anchor:
 
 - [*Lifetime of a temporary*](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary) – C++ reference
@@ -827,6 +830,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 :movie_camera:
 
 - K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) – CppCon (2019)
+- A.Schödl. [*The C++ rvalue lifetime disaster*](https://www.youtube.com/watch?v=s9vBk5CxFyY) – CoreHard (2019)
 - N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) – CppCon (2017)
 
 :anchor:

@@ -340,13 +340,25 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-96.p
 - S.Ignatchenko. [*Once again on TCP vs UDP*](https://accu.org/index.php/journals/2180) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
 - S.Ignatchenko. [*TCP/IP explained. A bit*](https://accu.org/index.php/journals/1858) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
 
+#### UDP
+
+:book:
+
+- Ch. 11: *UDP transport* – P.L.Dordal. [*An introduction to computer networks*](http://intronetworks.cs.luc.edu/1/html/index.html)
+
 #### TCP
 
 :link:
 
 - [*Transmission Control Protocol*](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) – Wikipedia
 
-#### UDP
+:grey_question:
+
+- [*Why do we need a 3-way handshake? Why not just 2-way?*](https://networkengineering.stackexchange.com/q/24068) – Network Engineering
+
+:book:
+
+- Ch. 12: *TCP transport* – P.L.Dordal. [*An introduction to computer networks*](http://intronetworks.cs.luc.edu/1/html/index.html)
 
 ### Layer 7 protocols
 

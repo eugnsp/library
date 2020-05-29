@@ -8,6 +8,8 @@
 	- [Spacecrafts dynamics](#spacecrafts-dynamics)
 - [Natural language processing](#natural-language-processing)
 	- [Spelling correction](#spelling-correction)
+	- [Neural networks](#neural-networks)
+		- [Graph neural networks](#graph-neural-networks)
 - [People](#people)
 	- [Georgy Adelson-Velsky](#georgy-adelson-velsky)
 	- [Howard Aiken](#howard-aiken)
@@ -20,6 +22,7 @@
 	- [Linus Torvalds](#linus-torvalds)
 - [Programming languages](#programming-languages)
 	- [Algol](#algol)
+	- [C](#c)
 - [Algorithms](#algorithms)
 - [Journals](#journals)
 - [Blogs](#blogs)
@@ -137,8 +140,8 @@
 
 :movie_camera:
 
+- J.R.Mashey. [*Oral history of Brian Kernighan*](https://www.youtube.com/watch?v=bTWv-l0JhAc) (2017)
 - *Questions and answers.* [Part I](https://www.youtube.com/watch?v=zmYhR8cUX90), [Part II](https://www.youtube.com/watch?v=VVpRj3Po6K4), [Part III](https://www.youtube.com/watch?v=E6vtRm5M8I0) – Computerphile
-- [*“C” programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
 - [*Where `grep` came from*](https://www.youtube.com/watch?v=NTfOnGZUZDk) – Computerphile
 - [*Associative arrays*](https://www.youtube.com/watch?v=qTZJLJ3Gm6Q) – Computerphile
 - [*The factory of ideas: Working at Bell Labs*](https://www.youtube.com/watch?v=QFK6RG47bww) – Computerphile
@@ -221,6 +224,13 @@
 :link:
 
 - D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/) (2018)
+
+### C
+
+:movie_camera:
+
+- B.Kernighan. [*C programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
+- D.Brailsford. [*Why C is so influential*](https://www.youtube.com/watch?v=ci1PJexnfNE) - Computerphile
 
 ---
 

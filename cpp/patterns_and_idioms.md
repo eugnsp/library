@@ -157,6 +157,10 @@
 - J.M&uuml;ller. [*How to handle errors in constructors without exceptions?*](https://foonathan.net/2017/01/exceptions-constructor/) (2017) <!-- which pattern is this? -->
 - V.Romeo. [*Why choose sum types over exceptions?*](https://vittorioromeo.info/index/blog/adts_over_exceptions.html) (2017)
 
+:movie_camera:
+
+- A.Schödl. [*A practical approach to error handling](https://www.youtube.com/watch?v=CFwwBMcuG6U) – Meeting C++ (2014)
+
 <!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) – C++ and Beyond (2012) -->
 
 :anchor:

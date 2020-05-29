@@ -30,8 +30,10 @@
 	- [Input/output manipulators](#inputoutput-manipulators)
 		- [`std::endl`](#stdendl)
 	- [Output formatting](#output-formatting)
+	- [`std::stringstream`](#stdstringstream)
 - [Iterators](#iterators)
 - [Memory](#memory)
+	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
 - [Numerics](#numerics)
 	- [`std::bit_cast`](#stdbit_cast)
@@ -229,6 +231,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :grey_question:
 
 - [*How to enforce move semantics when a vector grows?*](https://stackoverflow.com/q/8001823) – Stack Overflow
+- [*Making `std::vector` allocate aligned memory*](https://stackoverflow.com/q/12942548) – Stack Overflow
 
 :book:
 
@@ -342,6 +345,12 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - V.Zverovich, L.Howes. [*Text formatting*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0645r1.html) – WG21/P0645R1
 
+### `std::stringstream`
+
+:grey_question:
+
+- [`stringstream <<` “overwriting”](https://stackoverflow.com/q/10388032) – Stack Overflow
+
 ---
 
 ## Iterators
@@ -358,9 +367,28 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ---
 
+## Ranges
+
+:movie_camera:
+
+- A.Schödl. [*Why iterators got it all wrong and what we should use instead*](https://www.youtube.com/watch?v=srp9Tie5BYk) – CodeNode (2017)
+
+---
+
 ## Memory
 
 See also [*Memory and cache* – Optimization and hardware](optimization_and_hardware.md#memory-and-cache).
+
+### `std::malloc` / `std::calloc` / `std::free`
+
+:grey_question:
+
+- [*How is `malloc()` implemented internally?*](https://stackoverflow.com/q/3479330) – Stack Overflow
+- [*Difference between `malloc` and `calloc`?*](https://stackoverflow.com/q/1538420) – Stack Overflow
+
+:anchor:
+
+- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
 
 ### Allocators
 
@@ -679,6 +707,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - [*Why can’t `std::tuple<int>` be trivially copyable?*](https://stackoverflow.com/q/38779985) – Stack Overflow
 - [*Replace `N`-th element of a `std::tuple`*](https://stackoverflow.com/q/59670539) – Stack Overflow
+- [*How does `std::tie` work?*](https://stackoverflow.com/q/43762651) – Stack Overflow
 
 :movie_camera:
 

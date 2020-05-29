@@ -40,6 +40,10 @@
 - [*Comparison sort*](https://en.wikipedia.org/wiki/Comparison_sort) – Wikipedia
 - [*Minimal number of comparisons needed to sort `n` elements*](https://oeis.org/A036604) – The OEIS
 
+:grey_question:
+
+- [**What is stability in sorting algorithms and why is it important?*](https://stackoverflow.com/q/1517793) – Stack Overflow
+
 :movie_camera:
 
 - [*Lower bounds for sorting*](https://www.youtube.com/watch?v=Nz1KZXbghj8) – MIT OCW 6.006: [Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) (2011)

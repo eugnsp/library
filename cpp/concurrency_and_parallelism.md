@@ -50,6 +50,11 @@
 - H.Dietz. [Ch. 4: *SIMD within a register (e.g., using MMX)*](https://www.tldp.org/HOWTO/Parallel-Processing-HOWTO-4.html) – Linux parallel processing HOWTO
 - [*SIMD and SWAR techniques*](https://www.chessprogramming.org/SIMD_and_SWAR_Techniques) – Chess Programming Wiki
 
+:grey_question:
+
+- [*Is `reinterpret_cast`ing between hardware SIMD vector pointer and the corresponding type an undefined behavior?*](https://stackoverflow.com/q/52112605) – Stack Overflow
+- [*Is casting to simd-type undefined behaviour in C++?*](https://stackoverflow.com/questions/58910969) – Stack Overflow
+
 ---
 
 ## Multithreading
@@ -78,6 +83,12 @@
 
 - A.Williams. [*Multi-threading in C++0x*](https://accu.org/index.php/journals/1584) – [Overload **93**](https://accu.org/index.php/journals/c257/) (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
+
+#### `std::atomic`
+
+:grey_question:
+
+- [*Does `std::atomic::operator++` really return by value?*](https://stackoverflow.com/q/13231048) – Stack Overflow
 
 #### `std::atomic_shared_ptr`
 
