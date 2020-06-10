@@ -17,7 +17,7 @@
 	- [Bridge and pimpl](#bridge-and-pimpl)
 	- [Builder](#builder)
 	- [Chain-of-responsibility](#chain-of-responsibility)
-	- [Copy-and-swap](#copy-and-swap)
+	- [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Double-checked locking](#double-checked-locking)
 	- [Execute-around](#execute-around)
@@ -57,9 +57,9 @@
 
 :link:
 
-- [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
 - [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
+- D.Kieras. [*C++ header file guidelines*](http://www.umich.edu/~eecs381/handouts/CppHeaderFileGuidelines.pdf)
 - M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/index.php/journals/2249) – [Overload **133**](https://accu.org/index.php/journals/c362/) (2016)
 - M.Wilson. [*QM bites: The two sides of boolean parameters*](https://accu.org/index.php/journals/2183) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
 - S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/index.php/journals/2066) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
@@ -70,6 +70,11 @@
 
 - B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
 - H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
+
+:anchor:
+
+- [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
+- [*Linux kernel coding style*](https://www.kernel.org/doc/html/latest/process/coding-style.html)
 
 ### Class design
 

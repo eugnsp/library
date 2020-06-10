@@ -1,4 +1,4 @@
-# Hardware, optimization and OS internals <!-- omit in toc -->
+# Hardware, optimization, and OS internals <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 

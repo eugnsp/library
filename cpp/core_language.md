@@ -22,6 +22,7 @@
 		- [Hidden friends](#hidden-friends)
 	- [`inline`](#inline)
 	- [`static`](#static)
+	- [`using`](#using)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
 	- [Namespaces](#namespaces)
@@ -66,11 +67,11 @@
 	- [Function types](#function-types)
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
-		- [Rvalue references and move semantics](#rvalue-references-and-move-semantics)
+		- [Rvalue references, universal references, and move semantics](#rvalue-references-universal-references-and-move-semantics)
 	- [Opaque typedefs](#opaque-typedefs)
 - [Standards](#standards)
 	- [C++17](#c17)
-- [C vs C++](#c-vs-c)
+- [C, and C vs C++](#c-and-c-vs-c)
 
 ---
 
@@ -140,6 +141,10 @@
 :grey_question:
 
 - [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/q/51797959) – Stack Overflow
+
+<!-- :movie_camera: -->
+
+
 
 :anchor:
 
@@ -809,7 +814,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 - [*Lifetime of a temporary*](https://en.cppreference.com/w/cpp/language/reference_initialization#Lifetime_of_a_temporary) – C++ reference
 
-#### Rvalue references and move semantics
+#### Rvalue references, universal references, and move semantics
 
 :link:
 
@@ -826,6 +831,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Advantages of using `forward`*](https://stackoverflow.com/q/3582001) – Stack Overflow
 - [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/q/4938875) – Stack Overflow
+- [*What does `auto&&` tell us?*](https://stackoverflow.com/q/13230480/) – Stack Overflow
 
 :movie_camera:
 
@@ -850,6 +856,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) – CppCon (2016)
+- N.Josuttis. [*C++17 – The best features*](https://www.youtube.com/watch?v=e2ZQyYr0Oi0) - ACCU (2018)
 
 :anchor:
 
@@ -859,6 +866,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- B.Stroustrup. [*C++20: C++ at 40*](https://www.youtube.com/watch?v=u_ij0YNkFUs) – CppCon (2019)
 - A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
 
 :anchor:
@@ -867,7 +875,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 ---
 
-## C vs C++
+## C, and C vs C++
 
 :link:
 
@@ -880,6 +888,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*What kinds of C++ functions can be placed in a C function pointer?*](https://stackoverflow.com/q/36941866) – Stack Overflow
 - [*Passing lambdas as callbacks to C functions*](https://stackoverflow.com/questions/55395717) – Stack Overflow
 - [*How to make a function with C-linkage from template?*](https://stackoverflow.com/q/26174510) – Stack Overflow
+- [*Why should we `typedef` a `struct` so often in C?*](https://stackoverflow.com/q/252780) – Stack Overflow
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 

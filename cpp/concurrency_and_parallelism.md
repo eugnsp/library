@@ -7,9 +7,12 @@
 	- [SIMD within a register (SWAR)](#simd-within-a-register-swar)
 - [Multithreading](#multithreading)
 	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
+		- [`std::atomic`](#stdatomic)
 		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
 		- [`std::condition_variable`](#stdcondition_variable)
-		- [`std::promise`](#stdpromise)
+		- [`std::mutex`](#stdmutex)
+		- [`std::promise` / `std::future`](#stdpromise--stdfuture)
+		- [`std::async`](#stdasync)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
 		- [Mutex locks](#mutex-locks)
@@ -138,6 +141,12 @@
 :anchor:
 
 - [`std::promise`](https://en.cppreference.com/w/cpp/thread/promise) – C++ reference
+
+#### `std::async`
+
+:grey_question:
+
+- [*`std::async` won’t spawn a new thread when return value is not stored*](https://stackoverflow.com/q/9490405) – Stack Overflow
 
 ### Data races and race conditions
 

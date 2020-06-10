@@ -1,4 +1,4 @@
-# The standard library, Boost and proposals <!-- omit in toc -->
+# The standard library, Boost, and proposals <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -372,6 +372,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 :movie_camera:
 
 - A.Schödl. [*Why iterators got it all wrong and what we should use instead*](https://www.youtube.com/watch?v=srp9Tie5BYk) – CodeNode (2017)
+- A.Schödl. [*From iterators to ranges: The upcoming evolution of the STL*](https://www.youtube.com/watch?v=vrCtS6FDay8) – Meeting C++ (2015)
 
 ---
 
@@ -437,13 +438,16 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :grey_question:
 
-- [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
-- [*Why not just use `random_device`?*](https://stackoverflow.com/q/39288595) – Stack Overflow
 - [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/q/53040940) – Stack Overflow
+- [*Why not just use `random_device`?*](https://stackoverflow.com/q/39288595) – Stack Overflow
+- [*Random engine differences*](https://stackoverflow.com/q/16536617) – Stack Overflow
+- [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
+- [*If we seed `mt19937` as the same on different machines, will we get the same sequence of random numbers?*](https://stackoverflow.com/q/48730363) – Stack Overflow
 
 :movie_camera:
 
 - A.Weis. [*Random numbers are hard*](https://www.youtube.com/watch?v=WDScnjQwEK8) – Meeting C++ (2019)
+- S.T.Lavavej. [*`rand()` considered harmful*](https://www.youtube.com/watch?v=LDPMpc-ENqY) – GoingNative (2013)
 
 ---
 

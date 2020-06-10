@@ -120,7 +120,7 @@
 
 :link:
 
-- *History of informatics: Howard Aiken* (in Russian) – [Informatics and education]((http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html)) **6**, 3 (1994)
+- *History of informatics: Howard Aiken* (in Russian) – [Informatics and education](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) [**6**](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/%27%27Informatika_i_obrazovanie%27%27%2C1994%2CN06.[djv-fax].zip), 3 (1994)
 
 :movie_camera:
 
@@ -224,6 +224,10 @@
 :link:
 
 - D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/) (2018)
+
+:movie_camera:
+
+- D.Brailsford. [*Algol 60 at 60*](https://www.youtube.com/watch?v=T-NTEc8Ag-I) – Computerphile
 
 ### C
 
