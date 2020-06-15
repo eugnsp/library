@@ -148,6 +148,10 @@
 
 - [*`std::async` won’t spawn a new thread when return value is not stored*](https://stackoverflow.com/q/9490405) – Stack Overflow
 
+:anchor:
+
+- H.Sutter. [*`async` and `~future`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3451.pdf) – WG21/N3451 (2012)
+
 ### Data races and race conditions
 
 - [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow

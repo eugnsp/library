@@ -199,7 +199,8 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
-- [*Is there any difference between noexcept and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
+- [*Is there any difference between `noexcept` and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
+- [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
 
 :anchor:
 

@@ -133,6 +133,53 @@
 
 - [*Quick-sort with Hungarian folk dance*](https://www.youtube.com/watch?v=ywWBy6J5gz8)
 
+#### Lomuto partition
+
+> Gist of the algorithm: choose the `pivot` value (the last element); maintain iterators `i` and `j` such that the elements inside the range `[first, i)` are `< pivot`, and the elements inside the range `[i, j)` are `>= pivot`; terminate when `j` reaches the last (pivot) element.
+> ```cpp
+> template<class Rand_it> Rand_it partition_lomuto(Rand_it first, Rand_it last) {
+>     const auto& pivot = *--last;
+>     auto part = first;
+>     for (; first != last; ++first)
+>         if (*first < pivot)
+>             std::iter_swap(part++, first);
+>     std::iter_swap(part, last);
+>     return part;
+> }
+> ```
+
+:link:
+
+- [*Quicksort: Lomuto partition scheme*](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme) – Wikipedia
+
+#### Hoare partition
+
+> Gist of the algorithm: choose the `pivot` value; initialize two iterators that start at the ends of the array, then move them toward each other until they detect an inversion (a pair of elements, one `>= pivot`, one `<= pivot`, that are in the wrong order relative to each other), swap the inverted elements; terminate when the iterators meet. Hoare’s partition is more efficient than Lomuto’s partition because it does three times fewer swaps on average, and it creates efficient partitions even when all values are equal.
+> ```cpp
+> template<class Rand_it> Rand_it partition_hoare(Rand_it first, Rand_it last) {
+>    const auto pivot = *(first + (last - first) / 2);
+>    while (true) {
+>        while (*first < pivot)
+>            ++first;
+>        --last;
+>        while (pivot < *last)
+>            --last;
+>        if (last <= first)
+>            return first;
+>        std::iter_swap(first, last);
+>        ++first;
+>    }
+> }
+> ```
+
+:link:
+
+- [*Quicksort: Hoare partition scheme*](https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme) – Wikipedia
+
+:page_facing_up:
+
+- Sec. *Algorith datasheets: Partition a range* – D.R.Musser, A.A.Stepanov. [*Algorithm-oriented generic libraries*](http://stepanovpapers.com/HPL-94-13.pdf) – [HP Laboratories technical report 94-13](https://www.hpl.hp.com/techreports/94/HPL-94-13.html) (1994)
+
 ### Order statistics and quick select
 
 > The `K`<sup>th</sup> order statistic of an array is its `K`<sup>th</sup> smallest element. Any comparison-based algorithm of finding the smallest element in an array of size `N` requires at least `N - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the largest elements in an array of size `N` requires at least `⌈3N / 2⌉ - 1` comparisons in the worst case. Any comparison-based algorithm of finding both the smallest and the second smallest element in an array of size `N` requires at least <code>N + &lceil;log<sub>2</sub> N&rceil; - 2</code> comparisons in the worst case.

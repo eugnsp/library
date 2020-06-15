@@ -73,6 +73,7 @@
 
 - M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
 - M.Davis. [*An introduction to creating GCC plugins*](https://lwn.net/Articles/457543/) (2011)
+- F.Aboukhadijeh. [*GCC Easter egg: C++ undefined defined behavior*](https://feross.org/gcc-ownage/) (2010)
 
 :grey_question:
 

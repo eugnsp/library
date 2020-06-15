@@ -40,6 +40,8 @@ This is a library of usefull and interesting references – web pages, videos, b
 - [General reviews and interviews](general_reviews.md)
 - [C++ conferences](cpp/conferences.md)
 
+Note: algorithms are given just to demonstrate the idea, they may not be the most efficient implementations.
+
 :construction: Currently is under construction, and will always be. Please report broken links.
 
 <!-- :hourglass: Optimization -->
