@@ -17,7 +17,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
 	* :1234: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
-	* :signal_strength: [Sorting](data_structures_and_algorithms/sorting.md)
+	* :signal_strength: [Sorting and searching](data_structures_and_algorithms/sorting.md)
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
 	* :hash: [Hash tables](data_structures_and_algorithms/hash_tables.md)
@@ -40,8 +40,10 @@ This is a library of usefull and interesting references – web pages, videos, b
 - [General reviews and interviews](general_reviews.md)
 - [C++ conferences](cpp/conferences.md)
 
-Note: algorithms are given just to demonstrate the idea, they may not be the most efficient implementations.
+Note: algorithm examples are written for clarity rather than optimal performance.
 
 :construction: Currently is under construction, and will always be. Please report broken links.
 
 <!-- :hourglass: Optimization -->
+
+![Analytics](https://mc.yandex.ru/watch/65028301)
