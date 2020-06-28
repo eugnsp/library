@@ -38,6 +38,7 @@
 :book:
 
 - Sec. 2.3.1: *Binary search trees*, Sec: *Selection sort* – E.Horowitz, S.Sahni, S.Rajasekaran. *Computer algorithms* – W.H.Freeman (1997)
+- Sec. 13.3: *Binary search trees* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 
 ### Self-balancing binary search trees
 

@@ -12,4 +12,4 @@
 
 :anchor:
 
--  T.K&ouml;ppe. [*Comma omission and comma deletion*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r2.html) – WG21/P00306R2 (2019)
+- T.K&ouml;ppe. [*Comma omission and comma deletion*](https://wg21.link/p0306) – WG21/P00306

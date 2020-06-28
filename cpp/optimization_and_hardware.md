@@ -103,6 +103,10 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 - M.Godbolt. [*x86 internals for fun & profit*](https://www.youtube.com/watch?v=hgcNM-6wr34) – GOTO (2014)
 - S.Meyers. [*CPU caches and why you care*](https://www.youtube.com/watch?v=WDIkqP4JbkE) – code::dive (2014)
 
+:book:
+
+- Col. 9: *Code tuning* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+
 :anchor:
 
 - [*Intel 64 and IA-32 architectures optimization reference manual*](https://www-ssl.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-optimization-manual.html)
@@ -149,21 +153,21 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :movie_camera:
 
-- A.Alexandrescu [`std::allocator` is to allocation what `std::vector` is to vexation](https://www.youtube.com/watch?v=LIb3L4vKZ7U) – CppCon (2015)
+- A.Alexandrescu. [*`std::allocator` is to allocation what `std::vector` is to vexation*](https://www.youtube.com/watch?v=LIb3L4vKZ7U) – CppCon (2015)
 
 ### Memory relocation
 
 :link:
 
-- A.O’Dwyer. [Announcing “trivially relocatable”](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
+- A.O’Dwyer. [*Announcing “trivially relocatable”*](https://quuxplusone.github.io/blog/2018/07/18/announcing-trivially-relocatable/) (2018)
 
 :movie_camera:
 
-- A.O’Dwyer. [Trivially relocatable](https://www.youtube.com/watch?v=SGdfPextuAU) – C++Now (2019)
+- A.O’Dwyer. [*Trivially relocatable*](https://www.youtube.com/watch?v=SGdfPextuAU) – C++Now (2019)
 
 :anchor:
 
-- A.O’Dwyer. [Object relocation in terms of move plus destroy](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1144r2.html) – WG21/P1144R2 (2019)
+- A.O’Dwyer. [*Object relocation in terms of move plus destroy*](https://wg21.link/p1144) – WG21/P1144
 
 ### Memory access
 
@@ -196,13 +200,12 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 > Empty base class optimization allows the size of an empty base subobject to be zero. Empty base optimization is required for standard layout types.
 > ```cpp
 > struct Empty {};
+> static_assert(sizeof(Empty) >= 1);
 >
 > struct Derived : Empty {
->     int i;
+>     T i;
 > };
->
-> static_assert(sizeof(Empty) >= 1);
-> static_assert(sizeof(Derived) == sizeof(int));
+> static_assert(sizeof(Derived) == sizeof(T));
 > ```
 
 :link:

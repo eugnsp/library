@@ -39,6 +39,7 @@ For cryptographically secure random number generation see [*Random numbers gener
 :book:
 
 - Sec. 3.4.2: *Random sampling and shuffling* – D.E.Knuth. [*The art of computer programming.*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) *Vol. 2: Seminumerical algorithms* (1997)
+- Col. 12: *A sample problem* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 
 ### Selection sampling
 

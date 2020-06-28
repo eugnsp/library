@@ -4,14 +4,15 @@
 
 - [Introduction and overview](#introduction-and-overview)
 - [Argument deduction](#argument-deduction)
+	- [Class template argument deduction](#class-template-argument-deduction)
+		- [Deduction guides](#deduction-guides)
 - [Concepts](#concepts)
 - [Function templates](#function-templates)
 	- [Friend function templates](#friend-function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
-	- [Keywords template and typename as disambiguators](#keywords-template-and-typename-as-disambiguators)
-- [Policies](#policies)
+	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [SFINAE](#sfinae)
 - [Specialization](#specialization)
 - [Tuples](#tuples)
@@ -71,8 +72,7 @@
 
 :anchor:
 
-- M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html) – WG21/P0091R3 (2017)
-- M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0091r4.html) – WG21/P0091R4 (2017)
+- M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](https://wg21.link/p0091) – WG21/P0091
 
 #### Deduction guides
 
@@ -106,7 +106,7 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :anchor:
 
-- W.E.Brown. [*`enable_if` vs.`requires`: A case study*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0552r0.pdf) – WG21/P0552R0 (2017)
+- W.E.Brown. [*`enable_if` vs.`requires`: A case study*](https://wg21.link/p0552) – WG21/P0552
 
 ---
 
@@ -139,7 +139,7 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :anchor:
 
-- D.Vandevoorde. [*Right angle brackets*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html) – WG21/N1757 (2005)
+- D.Vandevoorde. [*Right angle brackets*](https://wg21.link/n1757) – WG21/N1757
 
 ### Optimization
 
@@ -183,18 +183,6 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 :movie_camera:
 
 - A.Stepanov. [*Efficient programming with components* (part of Lec. 12)](https://www.youtube.com/watch?v=revYKQKg-eo&t=138) – A9 (2013)
-
----
-
-## Policies
-
-:movie_camera:
-
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) – ACCU (2017)
-
-:book:
-
-- Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ---
 
@@ -251,7 +239,7 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :book:
 
-- Ch. 3: *Typelists* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+- Ch. 3: *Typelists* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
 
 ---
 

@@ -10,6 +10,8 @@
 	- [Valgrind](#valgrind)
 - [Compilers](#compilers)
 	- [GCC](#gcc)
+- [MSVC](#msvc)
+- [Linkers](#linkers)
 - [Debugging](#debugging)
 	- [GDB](#gdb)
 		- [Pretty printers](#pretty-printers)
@@ -17,6 +19,7 @@
 	- [Visual Studio Code](#visual-studio-code)
 - [Version-control system](#version-control-system)
 	- [Git](#git)
+- [C++ tests and quizes](#c-tests-and-quizes)
 
 ---
 
@@ -166,3 +169,10 @@
 :movie_camera:
 
 - C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
+
+## C++ tests and quizes
+
+:link:
+
+- A.S.Knatten. [*C++ quiz*](http://cppquiz.org/)
+- J.Nieminen. [*Test your C++ knowledge*](http://warp.povusers.org/c++test/)

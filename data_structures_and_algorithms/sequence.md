@@ -85,11 +85,17 @@
 
 > Problem: find a contiguous subsequence with the largest sum within a given one-dimensional sequence.
 
+:book:
+
+- Col. 8: *Searching* – J.Bentley. [*Algorithm design techniques*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+
 :page_facing_up:
 
 - J.Bentley. [*Programming pearls: Algorithm design techniques*](http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/05/Bentley84.pdf) – [Communications of the ACM *27*, 865](https://dx.doi.org/10.1145/358234.381162) (1984)
 
 ### Kadane’s algorithm
+
+:page_facing_up:
 
 - D.Gries. [*A note on a standard strategy for developing loop invariants and loops*](https://core.ac.uk/download/pdf/82596333.pdf) – [Science of computer programming *2*, 207](https://dx.doi.org/10.1016/0167-6423(83)90015-1) (1982)
 

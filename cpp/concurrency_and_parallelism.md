@@ -144,13 +144,27 @@
 
 #### `std::async`
 
+:link:
+
+- M.Nelson. [*C++11’s `async` template*](https://www.drdobbs.com/cpp/c11s-async-template/240001196) – Dr.Dobb’s Journal (2012)
+
 :grey_question:
 
 - [*`std::async` won’t spawn a new thread when return value is not stored*](https://stackoverflow.com/q/9490405) – Stack Overflow
 
 :anchor:
 
-- H.Sutter. [*`async` and `~future`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3451.pdf) – WG21/N3451 (2012)
+- H.Sutter. [*`async` and `~future`*](https://wg21.link/n3451) – WG21/N3451
+
+#### `std::lock_guard`
+
+:grey_question:
+
+- [*Why is `std::lock_guard` not movable?*](https://stackoverflow.com/q/22502606) – Stack Overflow
+
+:anchor:
+
+- [*`std::lock_guard`*](https://en.cppreference.com/w/cpp/thread/lock_guard) – C++ reference
 
 ### Data races and race conditions
 
@@ -166,9 +180,7 @@
 
 #### Spin locks
 
-:memo:
-
-- Spin locks are typically slower if the number of threads is larger than the number of cores.
+<!-- - Spin locks are typically slower if the number of threads is larger than the number of cores. -->
 
 :link:
 
@@ -206,8 +218,8 @@
 
 :anchor:
 
-- [*Proposed RCU C++ API* (2017)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0461r1.pdf) – WG21/P0461R1
-- [*Read-copy update (RCU) for C++* (2016)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0279r1.pdf) – WG21/P0279R1
+- P.E.McKenney et al. [*Proposed RCU C++ API*](https://wg21.link/p0461) – WG21/P0461
+- P.E.McKenney. [*Read-copy update (RCU) for C++*](https://wg21.link/p0279) – WG21/P0279
 
 ### Memory model
 

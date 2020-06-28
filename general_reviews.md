@@ -100,7 +100,7 @@
 
 :book:
 
-- S.Tempus. *Programmers at work: Interviews with 19 programmers who shaped the computer industry* – Tempus (1989)
+- S.Tempus. *Programmers at work: Interviews with 19 programmers who shaped the computer industry* (1989)
 
 ### Georgy Adelson-Velsky
 
@@ -114,7 +114,7 @@
 
 :book:
 
-- G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) – Science (1983, in Russian)
+- G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) (1983, in Russian)
 
 ### Howard Aiken
 
@@ -159,7 +159,7 @@
 
 :book:
 
-- D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) – Addison-Wesley
+- D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 
 ### Peter Norvig
 
@@ -199,8 +199,8 @@
 
 :book:
 
-- A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) – Addison-Wesley (2009)
-- A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) – Addison-Wesley (2014)
+- A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
+- A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
 
 ### Linus Torvalds
 

@@ -36,7 +36,7 @@
 
 :book:
 
-- Col.4: *Writing correct programs* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+- Col. 4: *Writing correct programs* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 
 :page_facing_up:
 

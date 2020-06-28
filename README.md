@@ -45,5 +45,3 @@ Note: algorithm examples are written for clarity rather than optimal performance
 :construction: Currently is under construction, and will always be. Please report broken links.
 
 <!-- :hourglass: Optimization -->
-
-![Analytics](https://mc.yandex.ru/watch/65028301)

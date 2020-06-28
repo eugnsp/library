@@ -12,6 +12,7 @@
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
 - [Patterns and idioms](#patterns-and-idioms)
+	- [Abstract factory](#abstract-factory)
 	- [Adapter](#adapter)
 	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Bridge and pimpl](#bridge-and-pimpl)
@@ -32,7 +33,8 @@
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
 	- [Singleton](#singleton)
-	- [Strategy](#strategy)
+	- [Strategy / Policy](#strategy--policy)
+	- [Type erasure](#type-erasure)
 	- [Visitor](#visitor)
 - [Antipatterns](#antipatterns)
 
@@ -65,6 +67,10 @@
 - S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/index.php/journals/2066) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
 - B.Schmidt. [*I like whitespace*](https://accu.org/index.php/journals/2063) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
 - J.Wakely. [*Stop the constant shouting*](https://accu.org/index.php/journals/1923) – [Overload **121**](https://accu.org/index.php/journals/c338/) (2014)
+
+:grey_question:
+
+- [*Does `auto` make C++ code harder to understand?*](https://softwareengineering.stackexchange.com/q/180216) – Software Engineering
 
 :movie_camera:
 
@@ -122,6 +128,10 @@
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
+
+:anchor:
+
+- [F.16: *For “in” parameters, pass cheaply-copied types by value and others by reference to `const`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-in) – C++ core guidelines
 
 #### Destructors
 
@@ -222,6 +232,14 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 * F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 
+### Abstract factory
+
+> The abstract factory pattern provides a way to encapsulate a group of individual factories without specifying their concrete classes. The client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects.
+
+:book:
+
+- App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004)
+
 ### Adapter
 
 :link:
@@ -241,7 +259,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :book:
 
-- Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
+- Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
 
 ### Bridge and pimpl
 
@@ -278,13 +296,15 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Chain-of-responsibility pattern*](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern) – Wikipedia
 
-
-
 ### Copy-and-swap / Move-and-swap
 
 > The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
 > ```cpp
-> struct Object {
+> class Object {
+> public:
+>     Object(const Object&);
+>     Object(Object&&);
+>
 >     Object& operator=(const Object& obj) {
 >         Object{obj}.swap(*this);
 >         return *this;
@@ -302,15 +322,25 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
 - [*Using `swap` to implement move assignment*](https://stackoverflow.com/q/32234623) – Stack Overflow
 
+:book:
+
+- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
 ### Curiously recurring template
 
 > The curiously recurring template pattern (CRTP) is an idiom in which a class `X` derives from a class template using `X` itself as template parameter:
 > ```cpp
-> template<class Derived> struct Base {
+> template<class Derived>
+> class Base {
+>   private:
+>     friend Derived;
+>     Base();
+>   public:
 >     void foo() { static_cast<Derived*>(this)->foo(); }
 > };
 >
-> struct X : Base<X> {
+> class X : public Base<X> {
+>   public:
 >     void foo();
 > }
 > ```
@@ -325,6 +355,10 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
 - [*CRTP with protected derived member*](https://stackoverflow.com/q/8523762) – Stack Overflow
+
+:book:
+
+- Ch. 8: *The curiously recurring template pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
 ### Double-checked locking
 
@@ -357,10 +391,13 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
 
+:book:
+
+- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
 :anchor:
 
 - [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
-
 
 <!--Scoped Resource - Generic RAII Wrapper for theStandard Library  https://isocpp.org/files/papers/N3949.pdf -->
 <!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
@@ -416,7 +453,6 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
-
 
 ### Opaque typedef (whole value)
 
@@ -490,12 +526,26 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :book:
 
-- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
-- Item 26: *Limiting the number of objects of a class* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+- Ch. 15: *Singleton – A classic OOP pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
+- Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
-### Strategy
+### Strategy / Policy
 
-> The strategy pattern enables run-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
+> The strategy pattern enables run- or compile-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
+
+:movie_camera:
+
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) – ACCU (2017)
+
+:book:
+
+- Ch. 16: *Policy-based design* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+
+### Type erasure
+
+
 
 ### Visitor
 

@@ -1,4 +1,4 @@
-# Sorting algorithms <!-- omit in toc -->
+# Sorting and searching algorithms <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -10,6 +10,9 @@
 	- [Merge sort](#merge-sort)
 		- [Inversions counting](#inversions-counting)
 	- [Quick sort](#quick-sort)
+		- [Lomuto partition](#lomuto-partition)
+		- [Hoare partition](#hoare-partition)
+		- [“Fat pivot” partition / Dutch national flag problem](#fat-pivot-partition--dutch-national-flag-problem)
 	- [Order statistics and quick select](#order-statistics-and-quick-select)
 - [Linear-time sorting](#linear-time-sorting)
 	- [Count sort](#count-sort)
@@ -33,7 +36,7 @@
 
 ## Comparison sorting
 
-> In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed. Any comparison-based algorithm of sorting an array of size `N` requires <code>&Omega;(N log N)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `N`. No simple formula for the solution is known. For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(N<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(N log N)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `stdlibc++` resorts to the insertion sort if the input size doesn’t exceed `16` elements, and Microsoft’s implementation uses the value `32`.
+> In comparison sorting one may compare two element (checking whether <code>a<sub>i</sub> &lt; a<sub>j</sub></code>). Other operations on element (e.g., using them as indices) are not allowed. Any comparison-based algorithm of sorting an array of size `N` requires <code>&Omega;(N log N)</code> comparisons in the worst case. Determining the exact number of comparisons is a computationally hard problem even for small `N`. No simple formula for the solution is known. For practical applications one should always consider constant factors hidden in the big-`O` notation. Typically, <code>O(N<sup>2</sup>)</code> algorithms (e.g., insertion sort) are faster than `O(N log N)` ones (e.g., quick sort) for small inputs. For example, `std::sort` implementation in `libstdc++` resorts to the insertion sort if the input size doesn’t exceed `16` elements, and Microsoft’s implementation uses the value `32`.
 
 :link:
 
@@ -42,7 +45,7 @@
 
 :grey_question:
 
-- [**What is stability in sorting algorithms and why is it important?*](https://stackoverflow.com/q/1517793) – Stack Overflow
+- [*What is stability in sorting algorithms and why is it important?*](https://stackoverflow.com/q/1517793) – Stack Overflow
 
 :movie_camera:
 
@@ -50,6 +53,7 @@
 
 :book:
 
+- Col. 11: *Sorting* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 - Sec. 5.6: *Sorting requires <code>&Omega;(n log n)</code> comparisons* – Roughgarden T. [*Algorithms illuminated (Part 1): The basics*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2017)
 
 :page_facing_up:
@@ -58,11 +62,31 @@
 
 :dizzy:
 
-- [Comparison sorting algorithms visualization](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
+- [*Comparison sorting algorithms visualization*](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
 
 ### Insertion sort
 
-> At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain. Insertion sort is commonly used to sort a small number of elements. It is employed in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
+> Insertion sort iterates, consuming one input element each repetition, and growing a sorted output range. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted range, and inserts it there. It repeats until no input elements remain. Insertion sort is commonly used to sort a small number of elements. It is employed in many `std::sort` implementations as a final step of recursion when a sub-range is small enough.
+> ```cpp
+> template<class Bidir_it>
+> void linear_insert(Bidir_it first, Bidir_it last) {
+>     auto value = std::move(*last);
+>     for (auto curr = std::prev(last); value < *curr; --curr) {
+>         *last = std::move(*curr);
+>         if ((last = curr) == first)
+>             break;
+>     }
+>     *last = std::move(value);
+> }
+>
+> template<class Bidir_it>
+> void insertion_sort(Bidir_it first, Bidir_it last) {
+>     if (first == last)
+>         return;
+>     for (auto next = std::next(first); next != last; ++next)
+>         linear_insert(first, next);
+> }
+> ```
 
 :book:
 
@@ -71,9 +95,23 @@
 
 ### Selection sort
 
-:memo:
-
-- Selection sort makes only `O(N)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
+> Selection sort divides the input range into two parts: a sorted sub-range of items which is built up from left to right at the front of the range and a sub-range of the remaining unsorted items that occupy the rest of the range. The algorithm proceeds by finding the smallest element in the unsorted sub-range, swapping it with the leftmost unsorted element (putting it in sorted order), and moving the sub-range boundaries one element to the right. Selection sort makes only `O(N)` writes in the average and the worst cases, and is useful when writes are significantly more expensive than reads, e.g. when elements have small keys and very large associated data or when elements are stored in flash memory.
+> ```cpp
+> template<class Forward_it>
+> Forward_it min_element(Forward_it first, Forward_it last) {
+>     auto min = first++;
+>     for (; first != last; ++first)
+>         if (*first < *min)
+>             min = first;
+>     return min;
+> }
+>
+> template<class Forward_it>
+> void selection_sort(Forward_it first, Forward_it last) {
+>     for (; first != last; ++first)
+>         std::iter_swap(first, min_element(first, last));
+> }
+> ```
 
 :link:
 
@@ -125,9 +163,34 @@
 
 ### Quick sort
 
+> Gist of the algorithm: choose the `pivot` value; partition the range into two sub-ranges, according to whether they are `< pivot`, `== pivot` or `> pivot`, then sort sub-ranges recursively.
+> ```cpp
+> template<class Rand_it>
+> void quicksort(Rand_it first, Rand_it last) {
+>     if (last - first <= 1)
+>         return;
+>     const auto part = partition_hoare(first, last);
+>     quicksort(first, part);
+>     quicksort(part, last);
+> }
+> ```
+
+:link:
+
+- [*Quicksort*](https://en.wikipedia.org/wiki/Quicksort) – Wikipedia
+
+:grey_question:
+
+- [*Why is quicksort better than other sorting algorithms in practice?*](https://cs.stackexchange.com/q/3) – Computer Science
+
 :book:
 
+- Ch. 7: *Quicksort* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 - Ch. 5: *QuickSort* – Roughgarden T. [*Algorithms illuminated (Part 1): The basics*](http://timroughgarden.org/books.html) – Soundlikeyourself Publishing (2017)
+
+:page_facing_up:
+
+- Sec. *Algorithm datasheets: Sort a range by partitioning (quicksort)* – D.R.Musser, A.A.Stepanov. [*Algorithm-oriented generic libraries*](http://stepanovpapers.com/HPL-94-13.pdf) – [HP Laboratories technical report 94-13](https://www.hpl.hp.com/techreports/94/HPL-94-13.html) (1994)
 
 :dizzy:
 
@@ -135,9 +198,10 @@
 
 #### Lomuto partition
 
-> Gist of the algorithm: choose the `pivot` value (the last element); maintain iterators `i` and `j` such that the elements inside the range `[first, i)` are `< pivot`, and the elements inside the range `[i, j)` are `>= pivot`; terminate when `j` reaches the last (pivot) element.
+> Lomuto partition scheme permutes the range `[first, last)` into `{{< pivot}, pivot, {>= pivot}}`, where `pivot` is the value of some pivotal element.
 > ```cpp
-> template<class Rand_it> Rand_it partition_lomuto(Rand_it first, Rand_it last) {
+> template<class Bidir_it>
+> Bidir_it partition_lomuto(Bidir_it first, Bidir_it last) {
 >     const auto& pivot = *--last;
 >     auto part = first;
 >     for (; first != last; ++first)
@@ -152,11 +216,17 @@
 
 - [*Quicksort: Lomuto partition scheme*](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme) – Wikipedia
 
+:book:
+
+- Sec. 7.1: *Description of quicksort* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
+- Sec. 11.2: *A simple Quicksort* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+
 #### Hoare partition
 
-> Gist of the algorithm: choose the `pivot` value; initialize two iterators that start at the ends of the array, then move them toward each other until they detect an inversion (a pair of elements, one `>= pivot`, one `<= pivot`, that are in the wrong order relative to each other), swap the inverted elements; terminate when the iterators meet. Hoare’s partition is more efficient than Lomuto’s partition because it does three times fewer swaps on average, and it creates efficient partitions even when all values are equal.
+> Hoare partition scheme permutes the range `[first, last)` into `{{<= pivot}, {>= pivot}}`, where `pivot` is the value of some pivotal element. Hoare partition does three times fewer swaps on average than Lomuto’s partition, and it creates efficient partitions even when all values are equal. This partition scheme is used to implement `std::sort` in `libstdc++`.
 > ```cpp
-> template<class Rand_it> Rand_it partition_hoare(Rand_it first, Rand_it last) {
+> template<class Rand_it>
+> Rand_it partition_hoare(Rand_it first, Rand_it last) {
 >    const auto pivot = *(first + (last - first) / 2);
 >    while (true) {
 >        while (*first < pivot)
@@ -164,10 +234,9 @@
 >        --last;
 >        while (pivot < *last)
 >            --last;
->        if (last <= first)
+>        if (!(first < last))
 >            return first;
->        std::iter_swap(first, last);
->        ++first;
+>        std::iter_swap(first++, last);
 >    }
 > }
 > ```
@@ -176,9 +245,45 @@
 
 - [*Quicksort: Hoare partition scheme*](https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme) – Wikipedia
 
+:book:
+
+- Sec. 11.3: *Better Quicksort* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+
 :page_facing_up:
 
-- Sec. *Algorith datasheets: Partition a range* – D.R.Musser, A.A.Stepanov. [*Algorithm-oriented generic libraries*](http://stepanovpapers.com/HPL-94-13.pdf) – [HP Laboratories technical report 94-13](https://www.hpl.hp.com/techreports/94/HPL-94-13.html) (1994)
+- Sec. *Algorithm datasheets: Partition a range* – D.R.Musser, A.A.Stepanov. [*Algorithm-oriented generic libraries*](http://stepanovpapers.com/HPL-94-13.pdf) – [HP Laboratories technical report 94-13](https://www.hpl.hp.com/techreports/94/HPL-94-13.html) (1994)
+
+#### “Fat pivot” partition / Dutch national flag problem
+
+> “Fat pivot” partition scheme permutes the range `[first, last)` into `{{< pivot}, {= pivot}, {> pivot}}`, where `pivot` is the value of some pivotal element.
+> ```cpp
+> template<class Rand_it>
+> std::pair<Rand_it, Rand_it> partition_fat_pivot(Rand_it first, Rand_it last) {
+>     const auto& pivot = *--last;
+>     auto part1 = first, part2 = last;
+>     while (first != part2)
+>         if (*first < pivot)
+>             std::iter_swap(first++, part1++);
+>         else if (pivot < *first)
+>             std::iter_swap(first, --part2);
+>         else
+>             ++first;
+>      std::iter_swap(part2++, last);
+>      return {part1, part2};
+> }
+> ```
+
+:link:
+
+- [*Dutch national flag problem*](https://en.wikipedia.org/wiki/Dutch_national_flag_problem) – Wikipedia
+
+:book:
+
+- Ch. 14: *The problem of the Dutch national flag* – E.W.Dijkstra. [*A discipline of programming*](https://seriouscomputerist.atariverse.com/media/pdf/book/Discipline%20of%20Programming.pdf) (1976)
+
+:page_facing_up:
+
+- E.W.Dijkstra. [*Sequencing primitives revisited*](https://www.cs.utexas.edu/users/EWD/ewd03xx/EWD398.PDF) – EWD398 (1973)
 
 ### Order statistics and quick select
 
@@ -244,7 +349,7 @@
 
 ---
 
-## Other algorithms
+## Other sorting algorithms
 
 ### Pancake sorting
 
@@ -262,3 +367,20 @@
 
 - [*Spreadsort*](https://en.wikipedia.org/wiki/Spreadsort) – Wikipedia
 - [*Spreadsort*](https://www.boost.org/doc/libs/1_71_0/libs/sort/doc/html/sort/single_thread/spreadsort.html) – Boost.Sort library
+
+---
+
+# Searching
+
+:book:
+
+- Col. 13: *Searching* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+
+## Binary search
+
+See also [*Binary search* – Algorithm analysis](algorithm_analysis.md#binary-search).
+
+:book:
+
+- Col. 4: *Writing correct programs*, Sec. 9.4: *Major surgery – binary search* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
+

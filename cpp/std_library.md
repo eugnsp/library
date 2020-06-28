@@ -25,6 +25,7 @@
 		- [`std::stack`](#stdstack)
 		- [`std::queue`](#stdqueue)
 	- [Transparent comparators](#transparent-comparators)
+	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
 - [Exceptions](#exceptions)
 - [Input/output](#inputoutput)
 	- [Input/output manipulators](#inputoutput-manipulators)
@@ -32,22 +33,23 @@
 	- [Output formatting](#output-formatting)
 	- [`std::stringstream`](#stdstringstream)
 - [Iterators](#iterators)
+- [Ranges](#ranges)
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
+	- [Smart pointers](#smart-pointers)
+		- [`std::unique_ptr`](#stdunique_ptr)
+		- [`std::shared_ptr`](#stdshared_ptr)
+		- [`std::enable_shared_from_this`](#stdenable_shared_from_this)
+		- [`std::weak_ptr`](#stdweak_ptr)
+		- [`std::auto_ptr`](#stdauto_ptr)
+		- [`std::observer_ptr`](#stdobserver_ptr)
+		- [`boost::intrusive_ptr`](#boostintrusive_ptr)
 - [Numerics](#numerics)
 	- [`std::bit_cast`](#stdbit_cast)
 	- [Linear algebra support](#linear-algebra-support)
 	- [Random numbers](#random-numbers)
 - [Regular expressions](#regular-expressions)
-- [Smart pointers](#smart-pointers)
-	- [`std::unique_ptr`](#stdunique_ptr)
-	- [`std::shared_ptr`](#stdshared_ptr)
-		- [`std::enable_shared_from_this`](#stdenable_shared_from_this)
-	- [`std::weak_ptr`](#stdweak_ptr)
-	- [`std::auto_ptr`](#stdauto_ptr)
-	- [`std::observer_ptr`](#stdobserver_ptr)
-	- [`boost::intrusive_ptr`](#boostintrusive_ptr)
 - [Strings](#strings)
 	- [Short string optimization](#short-string-optimization)
 	- [`std::string_view`](#stdstring_view)
@@ -85,7 +87,7 @@
 
 :anchor:
 
-- B.Revzin. [*The mothership has landed: Adding `<=>` to the library*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1614r2.html) – WG21/P1614R2 (2019)
+- B.Revzin. [*The mothership has landed: Adding `<=>` to the library*](https://wg21.link/p1614) – WG21/P1614
 
 ### Implementations
 
@@ -125,7 +127,7 @@
 
 :anchor:
 
-- S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0811r3.html) – WG21/P0811R3 (2019)
+- S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](https://wg21.link/p0811) – WG21/P0811
 
 ### `std::next_permutation` / `std::prev_permutation` / `std::is_permutation`
 
@@ -207,6 +209,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :grey_question:
 
 - [*What really is a deque in STL?*](https://stackoverflow.com/q/6292332) – Stack Overflow
+- [*Why is an STL deque not implemented as just a circular vector?*](https://stackoverflow.com/q/39324192) – Stack Overflow
 - [*How can references be valid while iterators become invalidated in a deque*](https://stackoverflow.com/q/32800138) – Stack Overflow
 - [*STL deque accessing by index is `O(1)`?*](https://stackoverflow.com/q/2297164) – Stack Overflow
 
@@ -220,6 +223,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - [*Is `list::size()` really `O(n)`?*](https://stackoverflow.com/q/228908) – Stack Overflow
 - [*Why is `std::list` bigger on C++11?*](https://stackoverflow.com/q/10065055) – Stack Overflow
+- [*Why does `std::list::reverse` have `O(n)` complexity?*](https://stackoverflow.com/q/35612220) – Stack Overflow
 
 :anchor:
 
@@ -228,14 +232,19 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### `std::vector`
 
+:link:
+
+- [*`folly::fbvector`*](https://github.com/facebook/folly/blob/master/folly/docs/FBVector.md)
+
 :grey_question:
 
 - [*How to enforce move semantics when a vector grows?*](https://stackoverflow.com/q/8001823) – Stack Overflow
 - [*Making `std::vector` allocate aligned memory*](https://stackoverflow.com/q/12942548) – Stack Overflow
+- [*What is the ideal growth rate for a dynamically allocated array?*](https://stackoverflow.com/q/1100311) – Stack Overflow
 
 :book:
 
-- B.Stroustrup. *Making a `vector` fit for a standard* – S.B.Lippman. *C++ gems: Programming pearls from The C++ report* – [Cambridge University Press](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+- B.Stroustrup. *Making a `vector` fit for a standard* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 #### `std::vector<bool>`
 
@@ -263,7 +272,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :anchor:
 
-- M.Pusz. [*Heterogeneous lookup for unordered containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0919r3.html) – WG21/P0919R3 (2018)
+- M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
 
 ### Container adaptors
 
@@ -291,7 +300,14 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :anchor:
 
-- J.Wakely, S.T.Lavavej, J.M.L&oacute;pez Mu&ntilde;oz. [*Adding heterogeneous comparison lookup to associative containers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3657.htm) – WG21/N3657 (2013)
+- J.Wakely, S.T.Lavavej, J.M.L&oacute;pez Mu&ntilde;oz. [*Adding heterogeneous comparison lookup to associative containers*](https://wg21.link/n3657) – WG21/N3657
+
+### Signedness vs unsignedness of size
+
+:anchor:
+
+- J.Brown. [*Signed `ssize()` functions, unsigned `size()` functions*](https://wg21.link/p1227) – WG21/P1227
+- R.Douglas, N.Liber, M.Clow. [*Sizes should only `​span`​ unsigned*](https://wg21.link/p1089) – WG21/P1089
 
 ---
 
@@ -343,7 +359,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :anchor:
 
-- V.Zverovich, L.Howes. [*Text formatting*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0645r1.html) – WG21/P0645R1
+- V.Zverovich, L.Howes. [*Text formatting*](https://wg21.link/p0645) – WG21/P0645
 
 ### `std::stringstream`
 
@@ -359,6 +375,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [*Why use iterators instead of array indices?*](https://stackoverflow.com/q/131241) – Stack Overflow
 - [*Iterator loop vs index loop*](https://stackoverflow.com/q/14373934) – Stack Overflow
+- [*Iterator vs reverse iterator*](https://stackoverflow.com/q/889262) – Stack Overflow
 - [*Why is `std::iterator` deprecated?*](https://stackoverflow.com/q/43268146) – Stack Overflow
 
 :movie_camera:
@@ -389,7 +406,11 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
+- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ core guidelines
+
+:book:
+
+- Ch. 3: *Memory ownership* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
 ### Allocators
 
@@ -403,6 +424,127 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - [`std::allocator`](https://en.cppreference.com/w/cpp/memory/allocator) – C++ reference
 
+### Smart pointers
+
+> A smart pointer is a class that simulates a raw C++ pointer, and provides automatic exception-safe object lifetime management.
+
+:link:
+
+- [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
+- H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
+- Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
+
+:grey_question:
+
+- [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/q/106508) – Stack Overflow
+- [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/q/39288891) – Stack Overflow
+- [*Does `unique_ptr` and `shared_ptr` able to convert to each other’s type?*](https://stackoverflow.com/q/37884728) – Stack Overflow
+
+:movie_camera:
+
+- A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
+- M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
+
+:anchor:
+
+- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
+
+#### `std::unique_ptr`
+
+> The `std::unique_ptr` class is a smart pointer with unique ownership.
+
+:grey_question:
+
+- [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
+- [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/q/16061407) – Stack Overflow
+- [*`make_unique` with brace initialization*](https://stackoverflow.com/q/55141594) – Stack Overflow
+- [*How do I pass a `unique_ptr` argument to a constructor or a function?*](https://stackoverflow.com/q/8114276) – Stack Overflow
+
+:anchor:
+
+- [*`std::unique_ptr`*](https://en.cppreference.com/w/cpp/memory/unique_ptr) – C++ reference
+- S.T.Lavavej. [*`make_unique`*](https://wg21.link/n3588) – WG21/N3588
+
+#### `std::shared_ptr`
+
+> The `std::unique_ptr` class is a smart pointer with shared ownership.
+
+:link:
+
+- A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+
+:grey_question:
+
+- [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
+- [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
+- [*How do I call `std::make_shared` on a class with only protected or private constructors?*](https://stackoverflow.com/q/8147027) – Stack Overflow
+- [*What is the difference between an empty and a null `std::shared_ptr` in C++?*](https://stackoverflow.com/q/25920681) – Stack Overflow
+
+:anchor:
+
+- [*`std::shared_ptr`*](https://en.cppreference.com/w/cpp/memory/shared_ptr) – C++ reference
+
+#### `std::enable_shared_from_this`
+
+> `std::enable_shared_from_this` allows a member function of an object that is currently managed by a `std::shared_ptr` to extend the lifetime of that object dynamically by generating additional `std::shared_ptr` instances.
+
+:link:
+
+- [*What is the usefulness of `enable_shared_from_this`?*](https://stackoverflow.com/q/712279) – Stack Overflow
+
+:anchor:
+
+- [`std::enable_shared_from_this`](https://en.cppreference.com/w/cpp/memory/enable_shared_from_this) – C++ reference
+
+#### `std::weak_ptr`
+
+:grey_question:
+
+- [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/q/12030650) – Stack Overflow
+
+:anchor:
+
+- [*`std::weak_ptr`*](https://en.cppreference.com/w/cpp/memory/weak_ptr) – C++ reference
+
+#### `std::auto_ptr`
+
+> `std::auto_ptr` is a smart pointer with unique ownership that had been designed before rvalue references and move semantics were introduced into the language. It was deprecated in C++11 and removed in C++17.
+
+:link:
+
+- H.Sutter. [GotW #25: *`auto_ptr`*](http://www.gotw.ca/gotw/025.htm) – Guru of the Week (2009)
+
+:anchor:
+
+- [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) – C++ reference
+
+#### `std::observer_ptr`
+
+> `std::observer_ptr` is a smart pointer that takes no ownership responsibility for its pointees (non-owning pointer).
+
+:anchor:
+
+- [*`std::experimental::observer_ptr`*](https://en.cppreference.com/w/cpp/experimental/observer_ptr) – C++ reference
+- B.Stroustrup. [*Abandon `observer_ptr`*](https://wg21.link/p1408) – WG21/P1408
+- W.E.Brown. [*A proposal for the world’s dumbest smart pointer*](https://wg21.link/n4282) – WG21/N4282
+
+#### `boost::intrusive_ptr`
+
+> The `boost::intrusive_ptr` class is a smart pointer that stores a pointer to an object with an embedded reference count, which is managed somewhere outside the smart pointer.
+
+:link:
+
+- B.Wicht. [*Boost `intrusive_ptr`: Faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
+
+:grey_question:
+
+- [*Boost intrusive pointer*](https://stackoverflow.com/q/40137660) – Stack Overflow
+
+:anchor:
+
+- [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
+- I.Muerte. [*An intrusive smart pointer*](https://wg21.link/p0468) – WG21/P0468
+
 ---
 
 ## Numerics
@@ -412,14 +554,14 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :anchor:
 
 - [`std::bit_cast`](https://en.cppreference.com/w/cpp/numeric/bit_cast) – C++ reference
-- J.Bastien. [*Bit-casting object representations*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0476r2.html) – WG21/P0476R2 (2017)
+- J.Bastien. [*Bit-casting object representations*](https://wg21.link/p0476) – WG21/P0476
 
 ### Linear algebra support
 
 :link:
 
-- M.Hoemmen et al. [*Historical lessons for C++ linear algebra library standardization*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1417r0.pdf) (2019)
-- V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1770r0.pdf) (2019)
+- V.Reverdy. [*On vectors, tensors, matrices, and hypermatrices*](https://wg21.link/p1770) – WG21/P1770
+- M.Hoemmen et al. [*Historical lessons for C++ linear algebra library standardization*](https://wg21.link/p1417) – WG21/P1417
 
 :movie_camera:
 
@@ -427,8 +569,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- G.Davidson, ​B.Steagall. [*A proposal to add linear algebra support to the C++ standard library*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2019/p1385r3.pdf) – WG21/P1385R3 (2019)
-- G.Davidson, ​B.Steagall. [*What do we need from a linear algebra library?*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1166r0.pdf) – WG21/P1166R0 (2019)
+- G.Davidson, ​B.Steagall. [*A proposal to add linear algebra support to the C++ standard library*](https://wg21.link/p1385) – WG21/P1385
+- G.Davidson, ​B.Steagall. [*What do we need from a linear algebra library?*](https://wg21.link/p1166) – WG21/P1166
 
 ### Random numbers
 
@@ -463,128 +605,6 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ---
 
-## Smart pointers
-
-> A smart pointer is a class that simulates a raw C++ pointer, and provides automatic exception-safe object lifetime management.
-
-:link:
-
-- [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
-- H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
-- Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
-
-:grey_question:
-
-- [*What is a smart pointer and when should I use one?*](https://stackoverflow.com/q/106508) – Stack Overflow
-- [*Why is `shared_ptr<void>` legal, while `unique_ptr<void>` is ill-formed?*](https://stackoverflow.com/q/39288891) – Stack Overflow
-
-:movie_camera:
-
-- A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
-- M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
-
-:anchor:
-
-- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
-
-### `std::unique_ptr`
-
-> The `std::unique_ptr` class is a smart pointer with unique ownership.
-
-:grey_question:
-
-- [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
-- [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/q/16061407) – Stack Overflow
-- [*`make_unique` with brace initialization*](https://stackoverflow.com/q/55141594) – Stack Overflow
-- [*How do I pass a `unique_ptr` argument to a constructor or a function?*](https://stackoverflow.com/q/8114276) – Stack Overflow
-
-:anchor:
-
-- [*`std::unique_ptr`*](https://en.cppreference.com/w/cpp/memory/unique_ptr) – C++ reference
-- S.T.Lavavej. [*`make_unique`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3588.htm) – WG21/N3588 (2013)
-
-### `std::shared_ptr`
-
-> The `std::unique_ptr` class is a smart pointer with shared ownership.
-
-:link:
-
-- A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
-
-:grey_question:
-
-- [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
-- [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
-- [*How do I call `std::make_shared` on a class with only protected or private constructors?*](https://stackoverflow.com/q/8147027) – Stack Overflow
-- [*What is the difference between an empty and a null `std::shared_ptr` in C++?*](https://stackoverflow.com/q/25920681) – Stack Overflow
-
-:anchor:
-
-- [*`std::shared_ptr`*](https://en.cppreference.com/w/cpp/memory/shared_ptr) – C++ reference
-
-#### `std::enable_shared_from_this`
-
-> `std::enable_shared_from_this` allows a member function of an object that is currently managed by a `std::shared_ptr` to extend the lifetime of that object dynamically by generating additional `std::shared_ptr` instances.
-
-:link:
-
-- [*What is the usefulness of `enable_shared_from_this`?*](https://stackoverflow.com/q/712279) – Stack Overflow
-
-:anchor:
-
-- [`std::enable_shared_from_this`](https://en.cppreference.com/w/cpp/memory/enable_shared_from_this) – C++ reference
-
-### `std::weak_ptr`
-
-:grey_question:
-
-- [*When is `std::weak_ptr` useful?*](https://stackoverflow.com/q/12030650) – Stack Overflow
-
-:anchor:
-
-- [*`std::weak_ptr`*](https://en.cppreference.com/w/cpp/memory/weak_ptr) – C++ reference
-
-### `std::auto_ptr`
-
-> `std::auto_ptr` is a smart pointer with unique ownership that had been designed before rvalue references and move semantics were introduced into the language. It was deprecated in C++11 and removed in C++17.
-
-:link:
-
-- H.Sutter. [GotW #25: *`auto_ptr`*](http://www.gotw.ca/gotw/025.htm) – Guru of the Week (2009)
-
-:anchor:
-
-- [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) – C++ reference
-
-### `std::observer_ptr`
-
-> `std::observer_ptr` is a smart pointer that takes no ownership responsibility for its pointees (non-owning pointer).
-
-:anchor:
-
-- [*`std::experimental::observer_ptr`*](https://en.cppreference.com/w/cpp/experimental/observer_ptr) – C++ reference
-- B.Stroustrup. [*Abandon `observer_ptr`*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1408r0.pdf) – WG21/P1408R0 (2018)
-- W.E.Brown. [*A proposal for the world’s dumbest smart pointer*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4282.pdf) – WG21/N4282 (2014)
-
-### `boost::intrusive_ptr`
-
-> The `boost::intrusive_ptr` class is a smart pointer that stores a pointer to an object with an embedded reference count, which is managed somewhere outside the smart pointer.
-
-:link:
-
-- B.Wicht. [*Boost `intrusive_ptr`: Faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
-
-:grey_question:
-
-- [*Boost intrusive pointer*](https://stackoverflow.com/q/40137660) – Stack Overflow
-
-:anchor:
-
-- [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
-- I.Muerte. [*An intrusive smart pointer*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0468r1.html) – WG21/P0468R1 (2018)
-
----
-
 ## Strings
 
 :memo:
@@ -599,6 +619,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
 - [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
+- [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
 
 :anchor:
 
@@ -639,8 +660,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::nullptr_t`](https://en.cppreference.com/w/cpp/types/nullptr_t) – C++ reference
-- H.Sutter, B.Stroustrup. [A name for the null pointer: `nullptr`](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2431.pdf) – WG21/N2431 (2007)
+- [*`std::nullptr_t`*](https://en.cppreference.com/w/cpp/types/nullptr_t) – C++ reference
+- H.Sutter, B.Stroustrup. [*A name for the null pointer: `nullptr`*](https://wg21.link/n2431) – WG21/N2431
 
 ### Fixed-width integer types
 
@@ -745,8 +766,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - [*`std::optional`*](https://en.cppreference.com/w/cpp/utility/optional) – C++ reference
 - [*Boost.Optional: The optional wrapper library*](https://www.boost.org/doc/libs/release/libs/optional/doc/html/index.html)
-- F.Cacciola, A.Krzemieński. [*A proposal to add a utility class to represent optional objects*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3793.html) – WG21/N3793 (2013)
-- [* libstdc++’s implementation*](https://github.com/gcc-mirror/gcc/blob/master/libstdc%2B%2B-v3/include/std/optional)
+- F.Cacciola, A.Krzemieński. [*A proposal to add a utility class to represent optional objects*](https://wg21.link/n3793) – WG21/N3793
 - A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
 
 #### `std::variant`
@@ -778,9 +798,9 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :anchor:
 
-- V.Botet, J.Bastien. *`std::expected`*. [R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0323r7.html) (2017), [R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0323r4.html) (2018) – WG21/P0323
-- N.Douglas. [*Concerns about `expected<T, E>` from the Boost.Outcome peer review*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0762r0.pdf) – WG21/P0762R0 (2017)
-- V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4109.pdf) – WG21/N4109 (2014)
+- V.Botet, J.Bastien. [*`std::expected`*](https://wg21.link/p0323) – WG21/P0323
+- N.Douglas. [*Concerns about `expected<T, E>` from the Boost.Outcome peer review*](https://wg21.link/p0762) – WG21/P0762
+- V.Botet, P.Talbot. [*A proposal to add a utility class to represent expected monad*](https://wg21.link/n4109) – WG21/N4109
 
 ### `std::launder`
 
@@ -828,7 +848,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :book:
 
-- M.J.Vilot. *Standard template library* – S.B.Lippman. *C++ gems: Programming pearls from The C++ report* – [Cambridge University Press](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+- M.J.Vilot. *Standard template library* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 :page_facing_up:
 

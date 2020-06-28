@@ -52,8 +52,9 @@
 	- [`main()`](#main)
 - [Operators](#operators)
 	- [Comparisons](#comparisons)
+		- [Three-ways comparisons](#three-ways-comparisons)
 		- [Pointer comparisons](#pointer-comparisons)
-	- [`sizeof`](#sizeof)
+	- [`sizeof` / `alignof`](#sizeof--alignof)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
 	- [Embedding binary data](#embedding-binary-data)
@@ -62,16 +63,21 @@
 	- [Floating-point types](#floating-point-types)
 		- [`__float128`](#__float128)
 	- [Integral types](#integral-types)
+		- [Integral promotion](#integral-promotion)
 	- [Class types](#class-types)
 		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
+	- [Union types](#union-types)
 	- [Function types](#function-types)
 	- [References](#references)
 		- [Lifetime of a temporary](#lifetime-of-a-temporary)
 		- [Rvalue references, universal references, and move semantics](#rvalue-references-universal-references-and-move-semantics)
 	- [Opaque typedefs](#opaque-typedefs)
 - [Standards](#standards)
+	- [C++11](#c11)
+	- [C++14](#c14)
 	- [C++17](#c17)
-- [C, and C vs C++](#c-and-c-vs-c)
+- [C, C vs C++](#c-c-vs-c)
+	- [Functions](#functions)
 
 ---
 
@@ -106,7 +112,7 @@
 :anchor:
 
 - [*The ABI generic analysis and instrumentation library*](https://sourceware.org/libabigail/)
-- L.Dionne. *Controlling the instantiation of vtables and RTTI.* [P1263R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1263r0.pdf) (2018)
+- L.Dionne. [*Controlling the instantiation of vtables and RTTI*](https://wg21.link/p1263) – WG21/P1263
 
 ### Itanium C++ ABI
 
@@ -166,7 +172,7 @@
 
 :anchor:
 
-- N.Josuttis. *`[[nodiscard]]` in the library.* [P0600R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r0.pdf) (2017)
+- N.Josuttis. [*`[[nodiscard]]` in the library*](https://wg21.link/p0600) – WG21/P0600
 
 ### `[[noreturn]]`
 
@@ -218,8 +224,15 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 :link:
 
+- H.Sutter. [GotW #92: *`auto` variables, Part 1*](https://herbsutter.com/2013/06/07/gotw-92-solution-auto-variables-part-1/) (2013)
+- H.Sutter. [GotW #93: *`auto` variables, Part 2*](https://herbsutter.com/2013/06/13/gotw-93-solution-auto-variables-part-2/) (2013)
+- H.Sutter. [GotW #94: *AAA style (almost always `auto`)*](https://herbsutter.com/2013/08/12/gotw-94-solution-aaa-style-almost-always-auto/) (2013)
 - R.Orr. [*`auto` – A necessary evil?* (Part II)](https://accu.org/index.php/journals/1840) – [Overload **116**](https://accu.org/index.php/journals/c328/) (2013)
 - R.Orr. [*`auto` – A necessary evil?*](https://accu.org/index.php/journals/1859) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
+
+:grey_question:
+
+- [*Does `auto` make C++ code harder to understand?*](https://softwareengineering.stackexchange.com/q/180216) – Software Engineering
 
 ### `const` and `mutable`
 
@@ -245,7 +258,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) – C++ Core Guidelines
+- [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) – C++ core guidelines
 
 ### `constexpr`
 
@@ -278,7 +291,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :anchor:
 
-- [*Recommendations for specifying “hidden friends”*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1601r0.pdf) – WG21/P1601R0 (2019)
+- W.E.Brown, D.Sunderland. [*Recommendations for specifying “hidden friends”*](https://wg21.link/p1601) – WG21/P1601
 
 ### `inline`
 
@@ -368,8 +381,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Structured binding declaration*](https://en.cppreference.com/w/cpp/language/structured_binding) – C++ reference
-- B.Revzin, J.Wakely. *Structured bindings can introduce a pack.* [P1061R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1061r1.html) (2019)
-- N.Lesser. *Extending structured bindings to be more like variable declarations.* [P1091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html) (2019)
+- B.Revzin, J.Wakely. [*Structured bindings can introduce a pack*](https://wg21.link/p1061) – WG21/P1061
+- N.Lesser. [*Extending structured bindings to be more like variable declarations*](https://wg21.link/p1091) – WG21/P1091
 
 ---
 
@@ -382,6 +395,11 @@ See [*Friend function templates* – Function templates – Templates](templates
 - S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
 - E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
 - A.Demin. [*The difference between `new T()` and `new T`* (in Russian)](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (2009)
+
+:grey_question:
+
+- [*Is C++11 uniform initialization a replacement for the old style syntax?*](https://softwareengineering.stackexchange.com/q/133688) – Software Engineering
+- [*Can `T t = {};` and `T t{};` produce different results?*](https://stackoverflow.com/q/62008160) – Stack Overflow
 
 :anchor:
 
@@ -407,8 +425,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Low level memory management*](https://en.cppreference.com/w/cpp/memory/new) – C++ reference
-- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ Core Guidelines
-- [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) – C++ Core Guidelines
+- [R.10: *Avoid `malloc()` and `free()`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-mallocfree) – C++ core guidelines
+- [R.11: *Avoid calling `new` and `delete` explicitly*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rr-newdelete) – C++ core guidelines
 
 ### Alignment
 
@@ -418,7 +436,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :anchor:
 
-- C.Nelson. *Dynamic memory allocation for over-aligned data.* [P0035R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html) (2016)
+- C.Nelson. [*Dynamic memory allocation for over-aligned data*](https://wg21.link/p0035) – WG21/P0035
 
 ---
 
@@ -549,7 +567,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :anchor:
 
 - [*Argument-dependent lookup*](https://en.cppreference.com/w/cpp/language/adl) – C++ reference
-- J.Spicer. *ADL and function templates that are not visible.* [P0846R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) (2017)
+- J.Spicer. [*ADL and function templates that are not visible*](https://wg21.link/p0846) – WG21/P0846
 
 ### Function wrappers
 
@@ -584,7 +602,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :anchor:
 
-- L.Dionne, H.Tong. *Wording for lambdas in unevaluated contexts.* [P0315R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0315r4.pdf) (2017)
+- L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](https://wg21.link/p0315) – WG21/P0315
 
 #### Recursive lambdas
 
@@ -640,12 +658,22 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+- J.M&uuml;ller. [*Mathematics behind comparison*](https://foonathan.net/2018/06/equivalence-relations/) (2018)
 
 :anchor:
 
 - [*Comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison) – C++ reference
+
+#### Three-ways comparisons
+
+:link:
+
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+
+:anchor:
+
 - [*Default comparisons*](https://en.cppreference.com/w/cpp/language/default_comparisons) – C++ reference
+- D.Stone. [*I did not order this! Why is it on my bill?*](https://wg21.link/p1190) – WG21/P1190 <!-- see refs inside! -->
 
 #### Pointer comparisons
 
@@ -658,13 +686,18 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - [*Pointer comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison#Pointer_comparison_operators) – C++ reference
 
-### `sizeof`
+### `sizeof` / `alignof`
 
-> The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array.
+> The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array. The `alignof` operator returns the alignment required for any instance of a type.
+
+:grey_questions:
+
+- [*Is it always the case that `sizeof(T) >= alignof(T)` for all object types `T`?](https://stackoverflow.com/questions/46457449) – Stack Overflow
 
 :anchor:
 
 [*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
+[*`alignof` operator*](https://en.cppreference.com/w/cpp/language/alignof) – C++ reference
 
 ---
 
@@ -703,7 +736,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :anchor:
 
-- J. Meneide. *`std::embed`.* [P1040R0](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p1040r0.html) (2018)
+- J. Meneide. [*`std::embed`*](https://wg21.link/p1040) – WG21/P1040
 
 ---
 
@@ -730,9 +763,14 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 - [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
 - [*Handling overflow when casting doubles to integers in C*](https://stackoverflow.com/q/526070) – Stack Overflow
 
+:grey_question:
+
+- [*When do you use `float` and when do you use `double`*](https://softwareengineering.stackexchange.com/q/188721) – Software Engineering
+
 :anchor:
 
-- P.A.Bristow, C.Kormanyos, J.Maddock. *Floating-point typedefs having specified widths.* [N1703](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1703.pdf), [N3626](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3626.pdf) (2013)
+- P.A.Bristow, C.Kormanyos, J.Maddock. [*Floating-point typedefs having specified widths*](https://wg14.link/n1703) – WG14/N1703
+- P.A.Bristow, C.Kormanyos, J.Maddock. [*Floating-point typedefs having specified widths*](https://wg21.link/n3626) – WG21/N3626
 
 #### `__float128`
 
@@ -755,8 +793,9 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :grey_question:
 
 - [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
-- [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
+- [*Why does this loop produce “warning: iteration `3u` invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
 - [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
+- [*Does a `long` ban make sense?*](https://softwareengineering.stackexchange.com/q/317670) – Software Engineering
 
 :movie_camera:
 
@@ -764,7 +803,18 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 :anchor:
 
-- J.Bastien. [*Signed integers are two’s complement*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0907r1.html) – WG21/P0907R1 (2018)
+- J.Bastien. [*Signed integers are two’s complement*](https://wg21.link/p0907) – WG21/P0907
+
+#### Integral promotion
+
+:grey_question:
+
+- [*Implicit type conversion rules in C++ operators*](https://stackoverflow.com/q/5563000) – Stack Overflow
+- [*Why do unsigned “small” integers promote to `signed int`?*](https://stackoverflow.com/q/56604299) – Stack Overflow
+
+:anchor:
+
+- [*Integral promotion*](https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion) – C++ reference
 
 ### Class types
 
@@ -788,11 +838,21 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 - Ch. 1: *Inheritance*, Ch. 2: *Multiple inheritance* – N.Llopis. *C++ for game programmers* – Charles River Media (2003)
 
+### Union types
+
+:grey_question:
+
+- B.Stroustrup. [*unions (generalized)*](https://www.stroustrup.com/C++11FAQ.html#unions) – C++11 - the new ISO C++ standard
+
+:anchor:
+
+- [*Union declaration*](https://en.cppreference.com/w/cpp/language/union) – C++ reference
+
 ### Function types
 
 :anchor:
 
-- A.Meredith. *Abominable function types.* [P0172R0](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2015/p0172r0.html) (2015)
+- A.Meredith. [*Abominable function types*](https://wg21.link/p0172) – WG21/P0172
 
 ### References
 
@@ -851,6 +911,18 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 ## Standards
 
+### C++11
+
+:grey_question:
+
+- B.Stroustrup. [*C++11 - the new ISO C++ standard*](https://www.stroustrup.com/C++11FAQ.html)
+
+### C++14
+
+:link:
+
+- M.Nelson. [*The C++14 standard: What you need to know*](https://www.drdobbs.com/cpp/the-c14-standard-what-you-need-to-know/240169034) – Dr.Dobb’s Journal (2014)
+
 ### C++17
 
 :movie_camera:
@@ -875,12 +947,24 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 ---
 
-## C, and C vs C++
+## C, C vs C++
 
 :link:
 
 - D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
+- [*Linus Torvalds on C++*](http://harmful.cat-v.org/software/c++/linus) (2007)
+- J.Nieminen. [*A response to Linus Torvalds on C++*](http://warp.povusers.org/OpenLetters/ResponseToTorvalds.html) (2007)
+
+:grey_question:
+
+- [*What are the fundamental differences between C and C++?*](https://softwareengineering.stackexchange.com/q/16390) – Software Engineering
+- [*Why should we `typedef` a `struct` so often in C?*](https://stackoverflow.com/q/252780) – Stack Overflow
 - [*Size of character (`'a'`) in C/C++*](https://stackoverflow.com/q/2172943)
+- [*Is there any reason to use C++ instead of C, Perl, Python, etc.?*](https://softwareengineering.stackexchange.com/q/29109) – Software Engineering
+- [*When to use C over C++, and C++ over C?*](https://softwareengineering.stackexchange.com/q/113295) – Software Engineering
+- [*Is the C programming language still used?*](https://softwareengineering.stackexchange.com/q/103897) – Software Engineering
+
+### Functions
 
 :grey_question:
 
@@ -888,7 +972,6 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*What kinds of C++ functions can be placed in a C function pointer?*](https://stackoverflow.com/q/36941866) – Stack Overflow
 - [*Passing lambdas as callbacks to C functions*](https://stackoverflow.com/questions/55395717) – Stack Overflow
 - [*How to make a function with C-linkage from template?*](https://stackoverflow.com/q/26174510) – Stack Overflow
-- [*Why should we `typedef` a `struct` so often in C?*](https://stackoverflow.com/q/252780) – Stack Overflow
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 
