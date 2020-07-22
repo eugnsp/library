@@ -2,82 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Introduction and overview](#introduction-and-overview)
-- [ABI and implementation](#abi-and-implementation)
-	- [Itanium C++ ABI](#itanium-c-abi)
-	- [Inheritance](#inheritance)
-- [Attributes](#attributes)
-	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
-	- [`[[nodiscard]]`](#nodiscard)
-	- [`[[noreturn]]`](#noreturn)
-	- [`[[trivially_relocatable]]`](#trivially_relocatable)
-- [Declarations](#declarations)
-	- [`alignas` and alignment](#alignas-and-alignment)
-	- [`auto`](#auto)
-	- [`const` and `mutable`](#const-and-mutable)
-	- [`constexpr`](#constexpr)
-	- [Elaborated type specifier](#elaborated-type-specifier)
-	- [`friend`](#friend)
-		- [Friend function templates](#friend-function-templates)
-		- [Hidden friends](#hidden-friends)
-	- [`inline`](#inline)
-	- [`static`](#static)
-	- [`using`](#using)
-	- [Flexible array member](#flexible-array-member)
-	- [Most vexing parse](#most-vexing-parse)
-	- [Namespaces](#namespaces)
-	- [Storage class specifiers](#storage-class-specifiers)
-	- [Structured binding](#structured-binding)
-- [Initialization](#initialization)
-- [Dynamic memory](#dynamic-memory)
-	- [Alignment](#alignment)
-- [Exceptions](#exceptions)
-- [Expressions](#expressions)
-	- [`nullptr`](#nullptr)
-	- [Compound literals](#compound-literals)
-	- [Order of evaluation](#order-of-evaluation)
-	- [Type conversions](#type-conversions)
-		- [`dynamic_cast`](#dynamic_cast)
-	- [Type punning](#type-punning)
-	- [Value categories](#value-categories)
-- [Functions and functional objects](#functions-and-functional-objects)
-	- [Overload resolution](#overload-resolution)
-	- [Argument-dependent lookup](#argument-dependent-lookup)
-	- [Function wrappers](#function-wrappers)
-		- [`std::function`](#stdfunction)
-	- [Lambda expressions](#lambda-expressions)
-		- [Recursive lambdas](#recursive-lambdas)
-	- [Member functions](#member-functions)
-		- [Member function poiners](#member-function-poiners)
-	- [`main()`](#main)
-- [Operators](#operators)
-	- [Comparisons](#comparisons)
-		- [Three-ways comparisons](#three-ways-comparisons)
-		- [Pointer comparisons](#pointer-comparisons)
-	- [`sizeof` / `alignof`](#sizeof--alignof)
-- [Tricks and subtleties](#tricks-and-subtleties)
-	- [Accessing private and protected members](#accessing-private-and-protected-members)
-	- [Embedding binary data](#embedding-binary-data)
-- [Types](#types)
-	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
-	- [Floating-point types](#floating-point-types)
-		- [`__float128`](#__float128)
-	- [Integral types](#integral-types)
-		- [Integral promotion](#integral-promotion)
-	- [Class types](#class-types)
-		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
-	- [Union types](#union-types)
-	- [Function types](#function-types)
-	- [References](#references)
-		- [Lifetime of a temporary](#lifetime-of-a-temporary)
-		- [Rvalue references, universal references, and move semantics](#rvalue-references-universal-references-and-move-semantics)
-	- [Opaque typedefs](#opaque-typedefs)
-- [Standards](#standards)
-	- [C++11](#c11)
-	- [C++14](#c14)
-	- [C++17](#c17)
-- [C, C vs C++](#c-c-vs-c)
-	- [Functions](#functions)
+
 
 ---
 
@@ -438,6 +363,17 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - C.Nelson. [*Dynamic memory allocation for over-aligned data*](https://wg21.link/p0035) – WG21/P0035
 
+### Placement `new`
+
+:grey_question:
+
+- [*Array placement-new requires unspecified overhead in the buffer?*](https://stackoverflow.com/q/8720425) – Stack Overflow
+
+:anchor:
+
+- B.Hutchings. [*Determining the buffer size for placement new*](https://wg21.link/cwg476) – WG21/CWG issue 476 (2004)
+- T.Koeppe. [*C++ DR about global placement array new*](https://wg21.link/ewg68) – WG21/EWG issue 68 (2013)
+
 ---
 
 ## Exceptions
@@ -541,6 +477,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ## Functions and functional objects
 
+:grey_question:
+
+- [*Simplest way to determine return type of function*](https://stackoverflow.com/q/53673442) – Stack Overflow
+
 ### Overload resolution
 
 :link:
@@ -588,6 +528,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
 - S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
+- S.Meyers. [*Lambdas vs. closures*](https://scottmeyers.blogspot.com/2013/05/lambdas-vs-closures.html) (2013)
 - A.Allain. [*Lambda functions in C++11 – the definitive guide*](https://www.cprogramming.com/c++11/c++11-lambda-closures.html) (2011)
 
 :grey_question:
@@ -692,12 +633,12 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :grey_questions:
 
-- [*Is it always the case that `sizeof(T) >= alignof(T)` for all object types `T`?](https://stackoverflow.com/questions/46457449) – Stack Overflow
+- [*Is it always the case that `sizeof(T) >= alignof(T)` for all object types `T`?*](https://stackoverflow.com/questions/46457449) – Stack Overflow
 
 :anchor:
 
-[*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
-[*`alignof` operator*](https://en.cppreference.com/w/cpp/language/alignof) – C++ reference
+- [*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
+- [*`alignof` operator*](https://en.cppreference.com/w/cpp/language/alignof) – C++ reference
 
 ---
 
@@ -833,6 +774,11 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 :link:
 
 - S.Pamudurthy. [*Polymorphism in C++ – A type compatibility view*](https://accu.org/index.php/journals/2586) – [Overload **141**](https://accu.org/index.php/journals/c378/) (2017)
+- E.de Vries. [*Memory layout for multiple and virtual inheritance*](https://web.archive.org/web/20160413064252/http://www.phpcompiler.org/articles/virtualinheritance.html) (2006)
+
+:grey_question:
+
+- [*Inheritance — Multiple and virtual inheritance*](https://isocpp.org/wiki/faq/multiple-inheritance) – C++ FAQ
 
 :book:
 

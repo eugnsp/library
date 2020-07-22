@@ -60,7 +60,6 @@
 
 :link:
 
-- Y.-H.Hung. [*Linux kernel: Memory addressing*](https://medium.com/hungys-blog/linux-kernel-memory-addressing-a0d304283af3) (2016)
 - D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) – [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
 - C.Santili. [*x86 paging tutorial*](https://cirosantilli.com/x86-paging)
 - [*How does x86 paging work?*](https://stackoverflow.com/q/18431261) – Stack Overflow
@@ -213,6 +212,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 - N.C.Myers. [*The “empty member” C++ optimization*](https://www.drdobbs.com/cpp/the-empty-member-c-optimization/184410250) ([mirror](http://www.cantrip.org/emptyopt.html)) – Dr.Dobb’s Journal (1997)
 - [*Empty base optimization*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Empty_Base_Optimization) – WikiBooks
 - [*`boost::compressed_pair`*](https://www.boost.org/doc/libs/release/libs/utility/compressed_pair.htm)
+- [*`boost::empty_value`*](https://www.boost.org/doc/libs/release/libs/core/doc/html/core/empty_value.html)
 
 :book:
 

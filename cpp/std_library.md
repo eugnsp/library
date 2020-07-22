@@ -32,6 +32,7 @@
 		- [`std::endl`](#stdendl)
 	- [Output formatting](#output-formatting)
 	- [`std::stringstream`](#stdstringstream)
+	- [`std::ios_base::Init`](#stdios_baseinit)
 - [Iterators](#iterators)
 - [Ranges](#ranges)
 - [Memory](#memory)
@@ -367,6 +368,10 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [`stringstream <<` “overwriting”](https://stackoverflow.com/q/10388032) – Stack Overflow
 
+### `std::ios_base::Init`
+
+> The class `std::ios_base::Init` is used to ensure that the default C++ streams (`std::cin`, `std::cout`, etc.) are properly initialized and destructed; the class tracks how many instances of it are created and initializes the C++ streams when the first instance is constructed as well as flushes the output streams when the last instance is destructed. [The nifty counter idiom]((patterns_and_idioms.md#nifty-counter) is typically used in implementations.
+
 ---
 
 ## Iterators
@@ -627,6 +632,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 ### Short string optimization
 
+See also [*Local buffer optimization* – Patterns, idioms, and design principles](#local-buffer-optimization).
+
 :grey_question:
 
 - [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/q/10315041) – Stack Overflow
@@ -651,6 +658,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 #### `std::nullptr_t`
 
 > `std::nullptr_t` is the type of the null pointer literal `nullptr`. It is a distinct type that is not itself a pointer type or a pointer to member type. An object of this type can be converted to any pointer or pointer-to-member type by a standard conversion.
+
+:link:
+
+- [*`nullptr`*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/nullptr) – WikiBooks
 
 :grey_question:
 
@@ -759,7 +770,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :grey_question:
 
-- [*What to use `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
+- [*What to use: `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
 - [*Implementing `operator<=>` for `optional<T>`*](https://stackoverflow.com/q/47315539) – Stack Overflow
 
 :anchor:

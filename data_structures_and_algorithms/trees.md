@@ -10,7 +10,7 @@
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
 	- [Generation of binary trees](#generation-of-binary-trees)
 		- [Random binary trees](#random-binary-trees)
-- [B-trees](#b-trees)
+- [B/B+-trees](#bb-trees)
 	- [2-3 trees](#2-3-trees)
 	- [Range trees](#range-trees)
 - [Traversal](#traversal)
@@ -136,7 +136,11 @@
 
 ---
 
-## B-trees
+## B/B+-trees
+
+:grey_question:
+
+- [*Advantage of B+ trees over BSTs?*](https://stackoverflow.com/q/15485220) – Stack Overflow
 
 :movie_camera:
 
@@ -147,8 +151,6 @@
 - Ch. 18: *B-trees* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
 ### 2-3 trees
-
----
 
 ### Range trees
 
