@@ -26,7 +26,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :abc: [String algorithms](data_structures_and_algorithms/string.md)
 	* :exclamation: [Combinatorial algorithms](data_structures_and_algorithms/combinatorics.md)
 	* :arrow_heading_up: [Backtracking](data_structures_and_algorithms/backtracking.md)
-	* :pushpin: [Dynamic programming](data_structures_and_algorithms/dynamic_programming.md)
+	* :rocket: [Optimization algorithms](data_structures_and_algorithms/optimization.md)
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
 	* :file_folder: [Data compression algorithms](data_structures_and_algorithms/compression.md)
