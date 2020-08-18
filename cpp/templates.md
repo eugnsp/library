@@ -259,6 +259,14 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 - A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) – C++Now (2018)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) – ACCU (2017)
 
+---
+
+## Variadic templates
+
+:grey_question:
+
+- [*Variadic template pack expansion*](https://stackoverflow.com/q/25680461) – Stack Overflow
+
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm
 

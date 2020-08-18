@@ -310,7 +310,7 @@
 :page_facing_up:
 
 - K.Chen, A.Dumitrescu. [*Selection algorithms with small groups*](https://arxiv.org/abs/1409.3600) (2019)
-- S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) (in russian) – Sibirsky Matematichesky Zhurnal **5**, 557 (1964)
+- S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) – Sibirsky Matematichesky Zhurnal **5**, 557 (in Russian, 1964)
 
 ---
 

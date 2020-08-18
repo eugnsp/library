@@ -3,7 +3,9 @@
 ## Table of contents <!-- omit in toc -->
 
 - [General information](#general-information)
-	- [Implementations](#implementations)
+	- [The standard library](#the-standard-library)
+		- [Implementations](#implementations)
+	- [Boost](#boost)
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
 	- [`std::midpoint`](#stdmidpoint)
@@ -70,6 +72,7 @@
 		- [`std::variant`](#stdvariant)
 		- [`(std::)expected`](#stdexpected)
 	- [`std::launder`](#stdlaunder)
+- [Filesystem](#filesystem)
 - [Tricks and subtleties](#tricks-and-subtleties)
 - [The Standard Template Library (STL)](#the-standard-template-library-stl)
 
@@ -77,9 +80,11 @@
 
 ## General information
 
+### The standard library
+
 :link:
 
-- S.Love. [*Are you afraid of the dark? – Making ense of the STL*](https://accu.org/index.php/journals/443) – [Overload **43**](https://accu.org/index.php/journals/c161/) (2001)
+- S.Love. [*Are you afraid of the dark? – Making sense of the STL*](https://accu.org/index.php/journals/443) – [Overload **43**](https://accu.org/index.php/journals/c161/) (2001)
 
 :book:
 
@@ -88,15 +93,21 @@
 
 :anchor:
 
-- B.Revzin. [*The mothership has landed: Adding `<=>` to the library*](https://wg21.link/p1614) – WG21/P1614
+- B.Revzin. [*The mothership has landed: Adding `<=>` to the library*](https://wg21.link/p1614) – WG21/P1614 <!-- move -->
 
-### Implementations
+#### Implementations
 
 :link:
 
 - [*libstdc++*](https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3)
 - [*libc++*](https://github.com/llvm-mirror/libcxx)
 - [*Microsoft*](https://github.com/microsoft/STL)
+
+### Boost
+
+:link:
+
+- [Boost library incubator](http://blincubator.com/)
 
 ---
 
@@ -146,7 +157,11 @@
 
 :link:
 
-- A.Demin. [*How sorting is implemented in the standard library* (in Russian)](http://demin.ws/blog/russian/2009/06/18/sort-implementation-in-stl/) (2009)
+- A.Demin. [*How sorting is implemented in the standard library*](http://demin.ws/blog/russian/2009/06/18/sort-implementation-in-stl/) (in Russian, 2009)
+
+:grey_question:
+
+- [*How can I sort two vectors in the same way, with criteria that uses only one of the vectors?*](https://stackoverflow.com/q/17074324) – Stack Overflow
 
 ### `std::[stable_]partition`
 
@@ -457,6 +472,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 #### `std::unique_ptr`
 
 > The `std::unique_ptr` class is a smart pointer with unique ownership.
+
+:link:
+
+- E.Bendersky. [*Using `unique_ptr` with standard library containers*](https://eli.thegreenplace.net/2012/06/20/c11-using-unique_ptr-with-standard-library-containers) (2012)
 
 :grey_question:
 
@@ -823,6 +842,18 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 :anchor:
 
 - [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) – C++ reference
+
+---
+
+## Filesystem
+
+:grey_question:
+
+- [*Native path separator bug in C++17 `std::filesystem::path`?*](https://stackoverflow.com/q/51886072) – Stack Overflow
+
+:anchor:
+
+- [*Filesystem library*](https://en.cppreference.com/w/cpp/filesystem) – C++ reference
 
 ---
 

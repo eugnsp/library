@@ -2,83 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Introduction and overview](#introduction-and-overview)
-- [ABI and implementation](#abi-and-implementation)
-	- [Itanium C++ ABI](#itanium-c-abi)
-	- [Inheritance](#inheritance)
-- [Attributes](#attributes)
-	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
-	- [`[[nodiscard]]`](#nodiscard)
-	- [`[[noreturn]]`](#noreturn)
-	- [`[[trivially_relocatable]]`](#trivially_relocatable)
-- [Declarations](#declarations)
-	- [`alignas` and alignment](#alignas-and-alignment)
-	- [`auto`](#auto)
-	- [`const` and `mutable`](#const-and-mutable)
-	- [`constexpr`](#constexpr)
-	- [Elaborated type specifier](#elaborated-type-specifier)
-	- [`friend`](#friend)
-		- [Friend function templates](#friend-function-templates)
-		- [Hidden friends](#hidden-friends)
-	- [`inline`](#inline)
-	- [`static`](#static)
-	- [`using`](#using)
-	- [Flexible array member](#flexible-array-member)
-	- [Most vexing parse](#most-vexing-parse)
-	- [Namespaces](#namespaces)
-	- [Storage class specifiers](#storage-class-specifiers)
-	- [Structured binding](#structured-binding)
-- [Initialization](#initialization)
-- [Dynamic memory](#dynamic-memory)
-	- [Alignment](#alignment)
-	- [Placement `new`](#placement-new)
-- [Exceptions](#exceptions)
-- [Expressions](#expressions)
-	- [`nullptr`](#nullptr)
-	- [Compound literals](#compound-literals)
-	- [Order of evaluation](#order-of-evaluation)
-	- [Type conversions](#type-conversions)
-		- [`dynamic_cast`](#dynamic_cast)
-	- [Type punning](#type-punning)
-	- [Value categories](#value-categories)
-- [Functions and functional objects](#functions-and-functional-objects)
-	- [Overload resolution](#overload-resolution)
-	- [Argument-dependent lookup](#argument-dependent-lookup)
-	- [Function wrappers](#function-wrappers)
-		- [`std::function`](#stdfunction)
-	- [Lambda expressions](#lambda-expressions)
-		- [Recursive lambdas](#recursive-lambdas)
-	- [Member functions](#member-functions)
-		- [Member function poiners](#member-function-poiners)
-	- [`main()`](#main)
-- [Operators](#operators)
-	- [Comparisons](#comparisons)
-		- [Three-ways comparisons](#three-ways-comparisons)
-		- [Pointer comparisons](#pointer-comparisons)
-	- [`sizeof` / `alignof`](#sizeof--alignof)
-- [Tricks and subtleties](#tricks-and-subtleties)
-	- [Accessing private and protected members](#accessing-private-and-protected-members)
-	- [Embedding binary data](#embedding-binary-data)
-- [Types](#types)
-	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
-	- [Floating-point types](#floating-point-types)
-		- [`__float128`](#__float128)
-	- [Integral types](#integral-types)
-		- [Integral promotion](#integral-promotion)
-	- [Class types](#class-types)
-		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
-	- [Union types](#union-types)
-	- [Function types](#function-types)
-	- [References](#references)
-		- [Lifetime of a temporary](#lifetime-of-a-temporary)
-		- [Rvalue references, universal references, and move semantics](#rvalue-references-universal-references-and-move-semantics)
-	- [Opaque typedefs](#opaque-typedefs)
-- [Standards](#standards)
-	- [C++11](#c11)
-	- [C++14](#c14)
-	- [C++17](#c17)
-- [C, C vs C++](#c-c-vs-c)
-	- [Functions](#functions)
+
 
 ---
 
@@ -263,6 +187,10 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 ### `constexpr`
 
+:link:
+
+- A.Krzemie&nacute;ski. [`constexpr` function is not `const`](https://akrzemi1.wordpress.com/2013/06/20/constexpr-function-is-not-const/) (2013)
+
 :grey_question:
 
 - [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/q/54124899) – Stack Overflow
@@ -395,7 +323,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 - B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
 - S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
 - E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
-- A.Demin. [*The difference between `new T()` and `new T`* (in Russian)](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (2009)
+- A.Demin. [*The difference between `new T()` and `new T`*](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (in Russian, 2009)
 
 :grey_question:
 
@@ -439,14 +367,16 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - C.Nelson. [*Dynamic memory allocation for over-aligned data*](https://wg21.link/p0035) – WG21/P0035
 
-### Placement `new`
+### Object creation and placement `new`
 
 :grey_question:
 
 - [*Array placement-new requires unspecified overhead in the buffer?*](https://stackoverflow.com/q/8720425) – Stack Overflow
+- [*Is using `malloc` for `int` undefined behavior until C++20*](https://stackoverflow.com/q/63379066) – Stack Overflow
 
 :anchor:
 
+- R.Smith. [*Implicit creation of objects for low-level object manipulation*](https://wg21.link/p0593) – WG21/P0593
 - B.Hutchings. [*Determining the buffer size for placement new*](https://wg21.link/cwg476) – WG21/CWG issue 476 (2004)
 - T.Koeppe. [*C++ DR about global placement array new*](https://wg21.link/ewg68) – WG21/EWG issue 68 (2013)
 
@@ -612,6 +542,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 - [*What is a lambda expression in C++11?*](https://stackoverflow.com/q/7627098) – Stack Overflow
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/q/22232164) – Stack Overflow
 - [*Can we get the type of a lambda argument?*](https://stackoverflow.com/q/6512019) – Stack Overflow
+- [*Why is a `const` variable sometimes not required to be captured in a lambda?*](https://stackoverflow.com/q/43467095) – Stack Overflow
 
 :movie_camera:
 
@@ -715,45 +646,6 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - [*`sizeof` operator*](https://en.cppreference.com/w/cpp/language/sizeof) – C++ reference
 - [*`alignof` operator*](https://en.cppreference.com/w/cpp/language/alignof) – C++ reference
-
----
-
-## Tricks and subtleties
-
-:grey_question:
-
-- [*Hidden features of C++*](https://stackoverflow.com/q/75538) – Stack Overflow
-- [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
-- [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
-
-:movie_camera:
-
-- M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
-
-### Accessing private and protected members
-
-:link:
-
-- J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
-
-:grey_question:
-
-- [*Accessing private members*](https://stackoverflow.com/q/726096) – Stack Overflow
-
-### Embedding binary data
-
-:link:
-
-- D.Weiler. [incbin – Include binary files in C/C++](https://github.com/graphitemaster/incbin)
-- H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
-
-:grey_question:
-
-- [*Embedding resources in executable using GCC*](https://stackoverflow.com/q/4158900) – Stack Overflow
-
-:anchor:
-
-- J. Meneide. [*`std::embed`*](https://wg21.link/p1040) – WG21/P1040
 
 ---
 
@@ -944,6 +836,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :link:
 
 - M.Nelson. [*The C++14 standard: What you need to know*](https://www.drdobbs.com/cpp/the-c14-standard-what-you-need-to-know/240169034) – Dr.Dobb’s Journal (2014)
+- A.Krzemie&nacute;ski. [`constexpr` function is not `const`](https://akrzemi1.wordpress.com/2013/06/20/constexpr-function-is-not-const/) (2013)
 
 ### C++17
 
@@ -966,6 +859,46 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :anchor:
 
 - [*C++2a compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp2a) – C++ reference
+
+---
+
+## Tricks and subtleties
+
+:grey_question:
+
+- [*Hidden features of C++*](https://stackoverflow.com/q/75538) – Stack Overflow
+- [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
+- [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
+- [*Difference between `struct` and `typedef struct` in C++?*](https://stackoverflow.com/q/612328) – Stack Overflow
+
+:movie_camera:
+
+- M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
+
+### Accessing private and protected members
+
+:link:
+
+- J.Schaub. [*Access to private members. That’s easy!*](https://bloglitb.blogspot.com/2010/07/access-to-private-members-thats-easy.html) (2010))
+
+:grey_question:
+
+- [*Accessing private members*](https://stackoverflow.com/q/726096) – Stack Overflow
+
+### Embedding binary data
+
+:link:
+
+- D.Weiler. [incbin – Include binary files in C/C++](https://github.com/graphitemaster/incbin)
+- H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
+
+:grey_question:
+
+- [*Embedding resources in executable using GCC*](https://stackoverflow.com/q/4158900) – Stack Overflow
+
+:anchor:
+
+- J. Meneide. [*`std::embed`*](https://wg21.link/p1040) – WG21/P1040
 
 ---
 

@@ -91,7 +91,7 @@
 
 :link:
 
-- [*Mikhail Donskoy: Programmer’s course of life* (in Russian)](https://polit.ru/article/2008/08/20/programmist/) (2008)
+- [*Mikhail Donskoy: Programmer’s course of life*](https://polit.ru/article/2008/08/20/programmist/) (in Russian, 2008)
 
 :movie_camera:
 
@@ -110,11 +110,11 @@
 
 :movie_camera:
 
-- [*An interview with Georgy Adelson-Velsky*](https://www.youtube.com/watch?v=cE4Zb9wWf7g) (2002, in Russian)
+- [*An interview with Georgy Adelson-Velsky*](https://www.youtube.com/watch?v=cE4Zb9wWf7g) (in Russian, 2002)
 
 :book:
 
-- G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) (1983, in Russian)
+- G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) (in Russian, 1983)
 
 ### Howard Aiken
 
@@ -194,8 +194,8 @@
 - [*Programming conversations*](https://www.youtube.com/watch?v=k-meLQaYP5Y) – A9 (2014)
 - [*Efficient programming with components*](https://www.youtube.com/watch?v=aIHAEYyoTUc) – A9 (2013)
 - [*Elements of programming*](https://www.youtube.com/watch?v=Ih9gpJga4Vc) – Stanford (2010)
-- *Transformations and their orbits.* [Part I](https://www.youtube.com/watch?v=QmuMHtbO4ug), [Part II](https://www.youtube.com/watch?v=uCGifwlgAQg) (in Russian) – Yandex (2010)
-- *Greatest common measure: The last 2500 years.* [Part I](https://www.youtube.com/watch?v=NfGeVRebiio), [Part II](https://www.youtube.com/watch?v=zwucsB2EfXc) (in Russian) – Yandex (2010)
+- *Transformations and their orbits.* [Part I](https://www.youtube.com/watch?v=QmuMHtbO4ug), [Part II](https://www.youtube.com/watch?v=uCGifwlgAQg) – Yandex (in Russian, 2010)
+- *Greatest common measure: The last 2500 years.* [Part I](https://www.youtube.com/watch?v=NfGeVRebiio), [Part II](https://www.youtube.com/watch?v=zwucsB2EfXc) – Yandex (in Russian, 2010)
 
 :book:
 
@@ -249,7 +249,7 @@
 ## Journals
 
 - [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
-- [*Informatics and education* (in Russian)](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (1986–2013)
+- [*Informatics and education*](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (in Russian, 1986–2013)
 
 ---
 

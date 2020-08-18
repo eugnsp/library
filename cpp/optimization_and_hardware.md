@@ -49,6 +49,11 @@
 :link:
 
 - S.Ignatchenko. [*Size matters*](https://accu.org/index.php/journals/1895) – [Overload **120**](https://accu.org/index.php/journals/c336/) (2014)
+- E.Musayev. [*A brief history of the road to 64 bits*](https://web.archive.org/web/20191222085303/http://www.eldar.com/node/262) (in Russian, 2009)
+
+:page_facing_up:
+
+- J.Mashey. [*The long road to 64 bits*](https://cacm.acm.org/magazines/2009/1/15667-the-long-road-to-64-bits/fulltext) – [Communications of the ACM **52**, 45-53](https://doi.org/10.1145/1435417.1435431) (2009)
 
 ### Memory
 
@@ -268,6 +273,6 @@ See [*Type-punning* – Core language](core_language.md#type-punning).
 
 :link:
 
-- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries/) (2011)
-- E.Bendersky. [*Position Independent Code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/) (2011)
+- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries) (2011)
+- E.Bendersky. [*Position Independent Code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries) (2011)
 - E.Bendersky. [*Position Independent Code (PIC) in shared libraries on x64*](https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64) (2011)
