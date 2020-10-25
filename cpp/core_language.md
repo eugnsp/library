@@ -2,7 +2,83 @@
 
 ## Table of contents <!-- omit in toc -->
 
-
+- [Introduction and overview](#introduction-and-overview)
+- [ABI and implementation](#abi-and-implementation)
+	- [Itanium C++ ABI](#itanium-c-abi)
+	- [Inheritance](#inheritance)
+- [Attributes](#attributes)
+	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
+	- [`[[nodiscard]]`](#nodiscard)
+	- [`[[noreturn]]`](#noreturn)
+	- [`[[trivially_relocatable]]`](#trivially_relocatable)
+- [Declarations](#declarations)
+	- [`alignas` and alignment](#alignas-and-alignment)
+	- [`auto`](#auto)
+	- [`const` and `mutable`](#const-and-mutable)
+	- [`constexpr`](#constexpr)
+	- [Elaborated type specifier](#elaborated-type-specifier)
+	- [`friend`](#friend)
+		- [Friend function templates](#friend-function-templates)
+		- [Hidden friends](#hidden-friends)
+	- [`inline`](#inline)
+	- [`static`](#static)
+	- [`using`](#using)
+	- [Flexible array member](#flexible-array-member)
+	- [Most vexing parse](#most-vexing-parse)
+	- [Namespaces](#namespaces)
+	- [Storage class specifiers](#storage-class-specifiers)
+	- [Structured binding](#structured-binding)
+- [Initialization](#initialization)
+- [Dynamic memory](#dynamic-memory)
+	- [Alignment](#alignment)
+	- [Object creation and placement `new`](#object-creation-and-placement-new)
+- [Exceptions](#exceptions)
+- [Expressions](#expressions)
+	- [`nullptr`](#nullptr)
+	- [Compound literals](#compound-literals)
+	- [Order of evaluation](#order-of-evaluation)
+	- [Type conversions](#type-conversions)
+		- [`dynamic_cast`](#dynamic_cast)
+	- [Type punning](#type-punning)
+	- [Value categories](#value-categories)
+- [Functions and functional objects](#functions-and-functional-objects)
+	- [Overload resolution](#overload-resolution)
+	- [Argument-dependent lookup](#argument-dependent-lookup)
+	- [Function wrappers](#function-wrappers)
+		- [`std::function`](#stdfunction)
+	- [Lambda expressions](#lambda-expressions)
+		- [Recursive lambdas](#recursive-lambdas)
+	- [Member functions](#member-functions)
+		- [Member function poiners](#member-function-poiners)
+	- [`main()`](#main)
+- [Operators](#operators)
+	- [Comparisons](#comparisons)
+		- [Three-ways comparisons](#three-ways-comparisons)
+		- [Pointer comparisons](#pointer-comparisons)
+	- [`sizeof` / `alignof`](#sizeof--alignof)
+- [Types](#types)
+	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
+	- [Floating-point types](#floating-point-types)
+		- [`__float128`](#__float128)
+	- [Integral types](#integral-types)
+		- [Integral promotion](#integral-promotion)
+	- [Class types](#class-types)
+		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
+	- [Union types](#union-types)
+	- [Function types](#function-types)
+	- [References](#references)
+		- [Lifetime of a temporary](#lifetime-of-a-temporary)
+		- [Rvalue references, universal references, and move semantics](#rvalue-references-universal-references-and-move-semantics)
+	- [Opaque typedefs](#opaque-typedefs)
+- [Standards](#standards)
+	- [C++11](#c11)
+	- [C++14](#c14)
+	- [C++17](#c17)
+- [Tricks and subtleties](#tricks-and-subtleties)
+	- [Accessing private and protected members](#accessing-private-and-protected-members)
+	- [Embedding binary data](#embedding-binary-data)
+- [C, C vs C++](#c-c-vs-c)
+	- [Functions](#functions)
 
 ---
 
@@ -124,6 +200,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 :link:
 
 - D.Anderson. [*The “clockwise/spiral rule”*](http://c-faq.com/decl/spiral.anderson.html)
+- [C gibberish <-> English](https://cdecl.org/)
 
 :movie_camera:
 
@@ -195,6 +272,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 - [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/q/54124899) – Stack Overflow
 - [*Why do we need to mark functions as `constexpr`?*](https://stackoverflow.com/q/14472359) – Stack Overflow
+- [*Detecting `constexpr` with SFINAE*](https://stackoverflow.com/q/15232758) – Stack Overflow
 
 :movie_camera:
 
@@ -927,6 +1005,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*What kinds of C++ functions can be placed in a C function pointer?*](https://stackoverflow.com/q/36941866) – Stack Overflow
 - [*Passing lambdas as callbacks to C functions*](https://stackoverflow.com/questions/55395717) – Stack Overflow
 - [*How to make a function with C-linkage from template?*](https://stackoverflow.com/q/26174510) – Stack Overflow
+- [*What is the difference between `function()` and `function(void)`?*](https://softwareengineering.stackexchange.com/q/286490) – Software Engineering
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 

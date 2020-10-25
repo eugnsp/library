@@ -276,6 +276,10 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Unordered containers are: `std::unordered_set` (collection of unique keys, hashed by keys), `std::unordered_map` (collection of key-value pairs, hashed by keys, keys are unique), `std::unordered_multiset` (collection of keys, hashed by keys), and `std::unordered_multimap` (collection of key-value pairs, hashed by keys).
 
+:link:
+
+- N.Wu. [*Blowing up `unordered_map`, and how to stop getting hacked on it*](https://codeforces.com/blog/entry/62393) (2018)
+
 :grey_question:
 
 - [*Why is `unordered_map` “`find` + `insert`” faster than “`insert` + check for success”?*](https://stackoverflow.com/q/31804025) – Stack Overflow
