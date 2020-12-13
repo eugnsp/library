@@ -4,21 +4,26 @@
 
 - [Build automation](#build-automation)
 	- [CMake](#cmake)
+- [Version control](#version-control)
+	- [Git](#git)
+- [Compilation and compilers](#compilation-and-compilers)
+	- [Linux](#linux)
+		- [GCC](#gcc)
+	- [Windows](#windows)
+		- [MSVC](#msvc)
+- [Linking and linkers](#linking-and-linkers)
+	- [Linux](#linux-1)
+	- [Windows](#windows-1)
+		- [DLLs](#dlls)
+- [IDE](#ide)
+	- [Visual Studio Code](#visual-studio-code)
 - [Code analysis and optimization tools](#code-analysis-and-optimization-tools)
 	- [Online compilers](#online-compilers)
 	- [Intel Architecture Code Analyzer (IACA)](#intel-architecture-code-analyzer-iaca)
 	- [Valgrind](#valgrind)
-- [Compilers](#compilers)
-	- [GCC](#gcc)
-- [MSVC](#msvc)
-- [Linkers](#linkers)
 - [Debugging](#debugging)
 	- [GDB](#gdb)
 		- [Pretty printers](#pretty-printers)
-- [IDE](#ide)
-	- [Visual Studio Code](#visual-studio-code)
-- [Version-control system](#version-control-system)
-	- [Git](#git)
 - [C++ tests and quizes](#c-tests-and-quizes)
 
 ---
@@ -37,6 +42,102 @@
 - D.Pfeifer. [*Effective CMake*](https://www.youtube.com/watch?v=bsXLMQ6WgIk) – C++Now (2017)
 - M.Ropert. [*Using modern CMake patterns to enforce a good modular design*](https://www.youtube.com/watch?v=eC9-iRN2b04) – CppCon (2017)
 - J.Turner. [Episode 78: *Intro to CMake*](https://www.youtube.com/watch?v=HPMvU64RUTY) – C++ Weekly (2017)
+
+---
+
+## Version control
+
+### Git
+
+:grey_question:
+
+- [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/q/1274057) – Stack Overflow
+- [*When should I use `git pull --rebase`?*](https://stackoverflow.com/q/2472254) – Stack Overflow
+
+:movie_camera:
+
+- C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
+
+---
+
+## Compilation and compilers
+
+:link:
+
+- [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) – C++ reference
+
+### Linux
+
+#### GCC
+
+:link:
+
+- M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
+- M.Davis. [*An introduction to creating GCC plugins*](https://lwn.net/Articles/457543/) (2011)
+- F.Aboukhadijeh. [*GCC Easter egg: C++ undefined defined behavior*](https://feross.org/gcc-ownage/) (2010)
+
+:grey_question:
+
+- [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/q/49481217) – Stack Overflow
+- [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/q/1936719) – Stack Overflow
+
+:sound:
+
+- M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) – Software Engineering Radio (2007)
+
+:anchor:
+
+- [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
+
+### Windows
+
+#### MSVC
+
+:anchor:
+
+- [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
+
+---
+
+## Linking and linkers
+
+:link:
+
+- D.Drysdale. [*Beginner’s guide to linkers*](http://www.lurklurk.org/linkers/linkers.html) (2009)
+
+:book:
+
+- J.R.Levine. [*Linkers and loaders*](https://linker.iecc.com/) – Morgan-Kauffman (1999)
+
+### Linux
+
+:link:
+
+- I.Wienand. [*Position independent code and x86-64 libraries*](https://www.technovelty.org/c/position-independent-code-and-x86-64-libraries.html) (2013)
+- E.Bendersky. [*Library order in static linking*](https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking) (2013)
+- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries) (2011)
+- E.Bendersky. [*Position independent code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries) (2011)
+- E.Bendersky. [*Position independent code (PIC) in shared libraries on x64*](https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64) (2011)
+
+### Windows
+
+#### DLLs
+
+:movie_camera:
+
+- J.McNellis. [*Everything you ever wanted to know about DLLs*](https://www.youtube.com/watch?v=JPQWQfDhICA) – CppCon (2017)
+
+---
+
+## IDE
+
+### Visual Studio Code
+
+:link:
+
+- [*Visual Studio Code*](https://code.visualstudio.com/)
+- [*Visual Studio Code: Getting started*](https://code.visualstudio.com/docs)
+- [*C/C++ for Visual Studio Code*](https://code.visualstudio.com/docs/languages/cpp)
 
 ---
 
@@ -63,47 +164,6 @@
 - J.Turner. [Episode 86: *Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) – C++ Weekly (2017)
 
 ---
-
-## Compilers
-
-:link:
-
-- [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) – C++ reference
-
-### GCC
-
-:link:
-
-- M.Jones [*GCC hacks in the Linux kernel*](https://developer.ibm.com/tutorials/l-gcc-hacks/) (2008)
-- M.Davis. [*An introduction to creating GCC plugins*](https://lwn.net/Articles/457543/) (2011)
-- F.Aboukhadijeh. [*GCC Easter egg: C++ undefined defined behavior*](https://feross.org/gcc-ownage/) (2010)
-
-:grey_question:
-
-- [*Linux kernel’s `__is_constexpr` macro*](https://stackoverflow.com/q/49481217) – Stack Overflow
-- [*What are the GCC predefined macros for the compiler’s version number?*](https://stackoverflow.com/q/1936719) – Stack Overflow
-
-:sound:
-
-- M.Deters. [Episode 61: *Internals of GCC*](http://www.se-radio.net/2007/07/episode-61-internals-of-gcc/) – Software Engineering Radio (2007)
-
-:anchor:
-
-- [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
-
-## MSVC
-
-:anchor:
-
-- [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
-
----
-
-## Linkers
-
-:link:
-
-- E.Bendersky. [*Library order in static linking*](https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking) (2013)
 
 ---
 
@@ -145,30 +205,6 @@
 - R.Sonderfeld. [*GDB pretty printers for Boost*](https://github.com/ruediger/Boost-Pretty-Printer)
 
 ---
-
-## IDE
-
-### Visual Studio Code
-
-:link:
-
-- [*Visual Studio Code*](https://code.visualstudio.com/)
-- [*Visual Studio Code: Getting started*](https://code.visualstudio.com/docs)
-- [*C/C++ for Visual Studio Code*](https://code.visualstudio.com/docs/languages/cpp)
-
----
-
-## Version-control system
-
-### Git
-
-:grey_question:
-
-- [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/q/1274057) – Stack Overflow
-
-:movie_camera:
-
-- C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
 
 ## C++ tests and quizes
 

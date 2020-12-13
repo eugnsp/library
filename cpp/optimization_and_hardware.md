@@ -261,18 +261,16 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) – C++Now (2018)
 
+#### Infinite loops
+
+:grey_question:
+
+- [*Optimizing away a `while(1);` in C++0x*](https://stackoverflow.com/q/3592557) – Stack Overflow
+
+:anchor:
+
+- H.-J. Boehm. [*Why undefined behavior for infinite loops?*](https://wg14.link/n1528) – WG14/N1528
+
 #### Strict aliasing rule
 
 See [*Type-punning* – Core language](core_language.md#type-punning).
-
----
-
-## OS internals
-
-### Shared libraries
-
-:link:
-
-- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries) (2011)
-- E.Bendersky. [*Position Independent Code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries) (2011)
-- E.Bendersky. [*Position Independent Code (PIC) in shared libraries on x64*](https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64) (2011)

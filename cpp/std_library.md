@@ -74,6 +74,7 @@
 	- [`std::launder`](#stdlaunder)
 - [Filesystem](#filesystem)
 - [Tricks and subtleties](#tricks-and-subtleties)
+	- [C standard library](#c-standard-library)
 - [The Standard Template Library (STL)](#the-standard-template-library-stl)
 
 ---
@@ -369,7 +370,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/index.php/journals/2486) – [Overload **143**](https://accu.org/index.php/journals/c384/) (2018)
 - D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
-- [{fmt}: a modern formatting library](https://github.com/fmtlib/fmt)
+- [*{fmt}: a modern formatting library*](https://github.com/fmtlib/fmt)
 
 :grey_question:
 
@@ -446,7 +447,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::allocator`](https://en.cppreference.com/w/cpp/memory/allocator) – C++ reference
+- [*`std::allocator`*](https://en.cppreference.com/w/cpp/memory/allocator) – C++ reference
 
 ### Smart pointers
 
@@ -522,7 +523,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::enable_shared_from_this`](https://en.cppreference.com/w/cpp/memory/enable_shared_from_this) – C++ reference
+- [*`std::enable_shared_from_this`*](https://en.cppreference.com/w/cpp/memory/enable_shared_from_this) – C++ reference
 
 #### `std::weak_ptr`
 
@@ -544,7 +545,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :anchor:
 
-- [`std::auto_ptr`](https://en.cppreference.com/w/cpp/memory/auto_ptr) – C++ reference
+- [*`std::auto_ptr`*](https://en.cppreference.com/w/cpp/memory/auto_ptr) – C++ reference
 
 #### `std::observer_ptr`
 
@@ -878,6 +879,16 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 :movie_camera:
 
 - J.Brown. [*This one weird trick: `std::integral_constant`*](https://www.youtube.com/watch?v=MKes-sG3zAU) – CppCon (2019)
+
+### C standard library
+
+:link:
+
+- J.Wakely. [*Why `<cstdlib>` is more complicated than you might think*](https://developers.redhat.com/blog/2016/02/29/why-cstdlib-is-more-complicated-than-you-might-think/) (2016)
+
+:anchor:
+
+- W.E.Brown. [*Deprecate certain declarations in the global namespace*](https://wg21.link/p0657) – WG21/P0657
 
 ---
 
