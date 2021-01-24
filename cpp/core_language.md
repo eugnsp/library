@@ -200,6 +200,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 :link:
 
 - D.Anderson. [*The “clockwise/spiral rule”*](http://c-faq.com/decl/spiral.anderson.html)
+- T.Parr. [*How to read C declarations*](https://parrt.cs.usfca.edu/doc/how-to-read-C-declarations.html)
 - [C gibberish <-> English](https://cdecl.org/)
 
 :movie_camera:
@@ -273,6 +274,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 - [*Why is a `constexpr` function on a reference not `constexpr`?*](https://stackoverflow.com/q/54124899) – Stack Overflow
 - [*Why do we need to mark functions as `constexpr`?*](https://stackoverflow.com/q/14472359) – Stack Overflow
 - [*Detecting `constexpr` with SFINAE*](https://stackoverflow.com/q/15232758) – Stack Overflow
+- [*Should I mark a compiler-generated constructor as `constexpr`?*](https://stackoverflow.com/q/20810378) – Stack Overflow
 
 :movie_camera:
 
@@ -1006,6 +1008,12 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*Passing lambdas as callbacks to C functions*](https://stackoverflow.com/questions/55395717) – Stack Overflow
 - [*How to make a function with C-linkage from template?*](https://stackoverflow.com/q/26174510) – Stack Overflow
 - [*What is the difference between `function()` and `function(void)`?*](https://softwareengineering.stackexchange.com/q/286490) – Software Engineering
+
+### Static variables
+
+:grey_question:
+
+- [*Difference between initialization of static variables in C and C++*](https://stackoverflow.com/q/5921920) – Stack Overflow
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 

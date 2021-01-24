@@ -193,6 +193,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - [*Nesting `std::` containers of movable objects*](https://stackoverflow.com/q/61269785) – Stack Overflow
 - [*Does C++11 allow `vector<const T>`?*](https://stackoverflow.com/q/6954906) – Stack Overflow
+- [*What’s the best way to iterate over two or more containers simultaneously*](https://stackoverflow.com/q/12552277) – Stack Overflow
 
 :movie_camera:
 
@@ -241,6 +242,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*Is `list::size()` really `O(n)`?*](https://stackoverflow.com/q/228908) – Stack Overflow
 - [*Why is `std::list` bigger on C++11?*](https://stackoverflow.com/q/10065055) – Stack Overflow
 - [*Why does `std::list::reverse` have `O(n)` complexity?*](https://stackoverflow.com/q/35612220) – Stack Overflow
+- [*Why does `std::list` have `remove` and `remove_if` functions*](https://stackoverflow.com/q/56571235) – Stack Overflow
 
 :anchor:
 
@@ -258,6 +260,8 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*How to enforce move semantics when a vector grows?*](https://stackoverflow.com/q/8001823) – Stack Overflow
 - [*Making `std::vector` allocate aligned memory*](https://stackoverflow.com/q/12942548) – Stack Overflow
 - [*What is the ideal growth rate for a dynamically allocated array?*](https://stackoverflow.com/q/1100311) – Stack Overflow
+- [*Why would I ever use `push_back` instead of `emplace_back`?*](https://stackoverflow.com/q/10890653) – Stack Overflow
+- [*Can `std::vector` `emplace_back` copy construct from an element of the vector itself?*](https://stackoverflow.com/q/24908718) – Stack Overflow
 
 :book:
 
