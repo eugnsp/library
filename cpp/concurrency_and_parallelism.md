@@ -84,7 +84,7 @@
 
 :link:
 
-- A.Williams. [*Multi-threading in C++0x*](https://accu.org/index.php/journals/1584) – [Overload **93**](https://accu.org/index.php/journals/c257/) (2009)
+- A.Williams. [*Multi-threading in C++0x*](https://accu.org/journals/overload/17/93/williams_1584/) – [Overload **93**](https://accu.org/journals/overload/overload93) (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
 
 #### `std::atomic`
@@ -176,7 +176,7 @@
 
 :link:
 
-- S.Ignatchenko. [*5 big fat reasons why mutexes suck big time*](https://accu.org/index.php/journals/2623) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
+- S.Ignatchenko. [*5 big fat reasons why mutexes suck big time*](https://accu.org/journals/overload/27/149/ignatchenko_2623/) – [Overload **149**](https://accu.org/journals/overload/overload149) (2019)
 
 #### Spin locks
 

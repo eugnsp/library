@@ -54,7 +54,7 @@
 
 :link:
 
-- S.Kozlovski. [*A thorough introduction to distributed systems*](https://accu.org/index.php/journals/2620) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
+- S.Kozlovski. [*A thorough introduction to distributed systems*](https://accu.org/journals/overload/27/149/kozlovski_2620/) – [Overload **149**](https://accu.org/journals/overload/overload149) (2019)
 
 :movie_camera:
 
@@ -66,7 +66,7 @@
 
 :link:
 
-- S.Ignatchenko. [*The importance of back-of-envelope estimates*](https://accu.org/index.php/journals/2341) – [Overload **137**](https://accu.org/index.php/journals/c370/) (2017)
+- S.Ignatchenko. [*The importance of back-of-envelope estimates*](https://accu.org/journals/overload/25/137/ignatchenko_2341/) – [Overload **137**](https://accu.org/journals/overload/overload137) (2017)
 
 ---
 
@@ -337,8 +337,8 @@ https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2003-96.p
 
 :link:
 
-- S.Ignatchenko. [*Once again on TCP vs UDP*](https://accu.org/index.php/journals/2180) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
-- S.Ignatchenko. [*TCP/IP explained. A bit*](https://accu.org/index.php/journals/1858) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
+- S.Ignatchenko. [*Once again on TCP vs UDP*](https://accu.org/journals/overload/23/130/ignatchenko_2180/) – [Overload **130**](https://accu.org/journals/overload/overload130) (2015)
+- S.Ignatchenko. [*TCP/IP explained. A bit*](https://accu.org/journals/overload/21/115/ignatchenko_1858/) – [Overload **115**](https://accu.org/journals/overload/overload115) (2013)
 
 #### UDP
 

@@ -48,7 +48,7 @@
 
 :link:
 
-- S.Ignatchenko. [*Size matters*](https://accu.org/index.php/journals/1895) – [Overload **120**](https://accu.org/index.php/journals/c336/) (2014)
+- S.Ignatchenko. [*Size matters*](https://accu.org/journals/overload/22/120/ignatchenko_1895/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
 - E.Musayev. [*A brief history of the road to 64 bits*](https://web.archive.org/web/20191222085303/http://www.eldar.com/node/262) (in Russian, 2009)
 
 :page_facing_up:
@@ -241,7 +241,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :link:
 
-- A.Balaam. [*Tail call optimisation in C++*](https://accu.org/index.php/journals/1914) – [Overload **109**](https://accu.org/index.php/journals/c310/) (2012)
+- A.Balaam. [*Tail call optimisation in C++*](https://accu.org/journals/overload/20/109/balaam_1914/) – [Overload **109**](https://accu.org/journals/overload/overload109) (2012)
 
 ### Undefined behavior
 
@@ -252,7 +252,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 - K.Walfridsson. [*Pointer comparison — an invalid optimization in GCC*](https://kristerw.blogspot.com/2016/12/pointer-comparison-invalid-optimization.html) (2016)
 - J.Regehr. [*Finding undefined behavior bugs by finding dead code*](https://blog.regehr.org/archives/970) (2013)
 - C.Lattner. *What every C programmer should know about undefined behavior.* [Part I](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html), [Part II](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html), [Part III](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know_21.html) – LLVM project (2013)
-- O.Maudel. [*Demons may fly out of your nose*](https://accu.org/index.php/journals/1857) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
+- O.Maudel. [*Demons may fly out of your nose*](https://accu.org/journals/overload/21/115/maudel_1857/) – [Overload **115**](https://accu.org/journals/overload/overload115) (2013)
 - M.Shroyer. [*Both true and false: A Zen moment with C*](https://markshroyer.com/2012/06/c-both-true-and-false/) (2012)
 
 <!-- http://blog.regehr.org/archives/213 -->

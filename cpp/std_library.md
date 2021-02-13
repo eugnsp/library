@@ -85,7 +85,7 @@
 
 :link:
 
-- S.Love. [*Are you afraid of the dark? – Making sense of the STL*](https://accu.org/index.php/journals/443) – [Overload **43**](https://accu.org/index.php/journals/c161/) (2001)
+- S.Love. [*Are you afraid of the dark? – Making sense of the STL*](https://accu.org/journals/overload/9/43/love_443/) – [Overload **43**](https://accu.org/journals/overload/overload43) (2001)
 
 :book:
 
@@ -361,7 +361,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- C.Sharpe. [*Don’t use `std::endl`*](https://accu.org/index.php/journals/2619) – [Overload **149**](https://accu.org/index.php/journals/c395/) (2019)
+- C.Sharpe. [*Don’t use `std::endl`*](https://accu.org/journals/overload/27/149/sharpe_2619/) – [Overload **149**](https://accu.org/journals/overload/overload149) (2019)
 - D.K&uuml;hl. [*Stop excessive use of `std::endl`*](https://kuhllib.com/2012/01/14/stop-excessive-use-of-stdendl/) (2012)
 
 :anchor:
@@ -372,7 +372,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
-- S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/index.php/journals/2486) – [Overload **143**](https://accu.org/index.php/journals/c384/) (2018)
+- S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/journals/overload/26/144/ignatchenko_2486/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2018)
 - D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
 - [*{fmt}: a modern formatting library*](https://github.com/fmtlib/fmt)
 
@@ -789,8 +789,8 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 - B.Filipek. [*Using C++17 `std::optional`*](https://www.bfilipek.com/2018/05/using-optional.html) (2018)
 - B.Filipek. [*Error handling and `std::optional`*](https://www.bfilipek.com/2018/05/errors-and-optional.html) (2018)
 - B.Filipek. [*In-place construction for `std::any`, `std::variant` and `std::optional`*](https://www.bfilipek.com/2018/07/in-place-cpp17.html) (2018)
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/) (2018)
-- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2018)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) – [Overload **147**](https://accu.org/journals/overload/overload147) (2018)
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/journals/overload/26/143/brand_2462/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2018)
 - S.Brand. [*Functional exceptionless error-handling with optional and expected*](https://blog.tartanllama.xyz/optional-expected/) (2017)
 - S.Brand. [*Implementation with functional-style extensions and reference support*](https://github.com/TartanLlama/optional)
 - A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
@@ -800,6 +800,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - [*What to use: `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
 - [*Implementing `operator<=>` for `optional<T>`*](https://stackoverflow.com/q/47315539) – Stack Overflow
+- [*Difference between Boost.Optional and `std::experimental::optional` assignment*](https://stackoverflow.com/q/40391244) – Stack Overflow
 
 :anchor:
 
@@ -820,7 +821,7 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :anchor:
 
-- [`std::variant`](https://en.cppreference.com/w/cpp/utility/variant) – C++ reference
+- [*`std::variant`*](https://en.cppreference.com/w/cpp/utility/variant) – C++ reference
 
 #### `(std::)expected`
 
@@ -828,8 +829,8 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 :link:
 
-- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/index.php/journals/2462) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2018)
-- S.Brand. [C++11/14/17 `std::expected` with functional-style extensions](https://github.com/TartanLlama/expected)
+- S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/journals/overload/26/143/brand_2462/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2018)
+- S.Brand. [*C++11/14/17 `std::expected` with functional-style extensions*](https://github.com/TartanLlama/expected)
 
 :movie_camera:
 

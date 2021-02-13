@@ -230,8 +230,8 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 - H.Sutter. [GotW #92: *`auto` variables, Part 1*](https://herbsutter.com/2013/06/07/gotw-92-solution-auto-variables-part-1/) (2013)
 - H.Sutter. [GotW #93: *`auto` variables, Part 2*](https://herbsutter.com/2013/06/13/gotw-93-solution-auto-variables-part-2/) (2013)
 - H.Sutter. [GotW #94: *AAA style (almost always `auto`)*](https://herbsutter.com/2013/08/12/gotw-94-solution-aaa-style-almost-always-auto/) (2013)
-- R.Orr. [*`auto` – A necessary evil?* (Part II)](https://accu.org/index.php/journals/1840) – [Overload **116**](https://accu.org/index.php/journals/c328/) (2013)
-- R.Orr. [*`auto` – A necessary evil?*](https://accu.org/index.php/journals/1859) – [Overload **115**](https://accu.org/index.php/journals/c324/) (2013)
+- R.Orr. [*`auto` – A necessary evil?* (Part II)](https://accu.org/journals/overload/21/116/orr_1840/) – [Overload **116**](https://accu.org/journals/overload/overload116) (2013)
+- R.Orr. [*`auto` – A necessary evil?*](https://accu.org/journals/overload/21/115/orr_1859/) – [Overload **115**](https://accu.org/journals/overload/overload115) (2013)
 
 :grey_question:
 
@@ -401,7 +401,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
 - B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
-- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/index.php/journals/2379) – [Overload **139**](https://accu.org/index.php/journals/c374/), 9 (2017)
+- S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/journals/overload/25/139/brand_2379/) – [Overload **139**](https://accu.org/journals/overload/overload139), 9 (2017)
 - E.Martin. [*Static initializers*](http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html) (2011)
 - A.Demin. [*The difference between `new T()` and `new T`*](http://demin.ws/blog/russian/2009/02/20/difference-between-new-and-new-with-brackets/) (in Russian, 2009)
 
@@ -546,7 +546,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ### Value categories
 
-- A.S.Knatten. [*lvalues, rvalues, glvalues, prvalues, xvalues, help!*](https://accu.org/index.php/journals/2641) – [Overload **150**](https://accu.org/index.php/journals/c397/) (2019)
+- A.S.Knatten. [*lvalues, rvalues, glvalues, prvalues, xvalues, help!*](https://accu.org/journals/overload/27/150/knatten_2641/) – [Overload **150**](https://accu.org/journals/overload/overload150) (2019)
 - B.Revzin. [*Value categories in C++17*](https://medium.com/@barryrevzin/value-categories-in-c-17-f56ae54bccbe) (2017)
 
 :grey_question:
@@ -696,7 +696,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/index.php/journals/2563) – [Overload **147**](https://accu.org/index.php/journals/c391/), 10 (2018)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) – [Overload **147**](https://accu.org/journals/overload/overload150), 10 (2018)
 
 :anchor:
 
@@ -821,7 +821,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 :link:
 
-- S.Pamudurthy. [*Polymorphism in C++ – A type compatibility view*](https://accu.org/index.php/journals/2586) – [Overload **141**](https://accu.org/index.php/journals/c378/) (2017)
+- S.Pamudurthy. [*Polymorphism in C++ – A type compatibility view*](https://accu.org/journals/overload/26/148/james_2586/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
 - E.de Vries. [*Memory layout for multiple and virtual inheritance*](https://web.archive.org/web/20160413064252/http://www.phpcompiler.org/articles/virtualinheritance.html) (2006)
 
 :grey_question:
@@ -876,7 +876,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
 - S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
-- S.Meyers. [*Universal references in C++11*](https://accu.org/index.php/journals/1887) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/index.php/journals/c314/), 8 (2012)
+- S.Meyers. [*Universal references in C++11*](https://accu.org/journals/overload/20/111/meyers_1887/) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/journals/overload/overload111), 8 (2012)
 
 :grey_question:
 

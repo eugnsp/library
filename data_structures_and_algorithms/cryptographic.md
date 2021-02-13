@@ -19,7 +19,7 @@
 :link:
 
 - [*Salted password hashing – Doing it right*](https://crackstation.net/hashing-security.htm) – CrackStation
-- S.Ignatchenko. [*Password hashing: Why and how*](https://accu.org/index.php/journals/2159) – [Overload **129**](https://accu.org/index.php/journals/c354/) (2015)
+- S.Ignatchenko. [*Password hashing: Why and how*](https://accu.org/journals/overload/23/129/ignatchenko_2159/) – [Overload **129**](https://accu.org/journals/overload/overload129) (2015)
 
 ## Random numbers generation
 

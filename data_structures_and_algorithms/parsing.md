@@ -15,9 +15,9 @@
 
 :link:
 
-- A.Balaam. [*How to write a programming language: Part 1, The lexer*](https://accu.org/index.php/journals/2510) – [Overload **145**](https://accu.org/index.php/journals/c386/) (2018)
-- A.Balaam. [*How to write a programming language: Part 2, The parser*](https://accu.org/index.php/journals/2532) – [Overload **146**](https://accu.org/index.php/journals/c389/) (2018)
-- A.Balaam. [*How to write a programming language: Part 3, The evaluator*](https://accu.org/index.php/journals/2565) – [Overload **147**](https://accu.org/index.php/journals/c391/) (2018)
+- A.Balaam. [*How to write a programming language: Part 1, The lexer*](https://accu.org/journals/overload/26/145/balaam_2510/) – [Overload **145**](https://accu.org/journals/overload/overload145) (2018)
+- A.Balaam. [*How to write a programming language: Part 2, The parser*](https://accu.org/journals/overload/26/146/balaam_2532/) – [Overload **146**](https://accu.org/journals/overload/overload146) (2018)
+- A.Balaam. [*How to write a programming language: Part 3, The evaluator*](https://accu.org/journals/overload/26/147/balaam_2565/) – [Overload **147**](https://accu.org/journals/overload/overload147) (2018)
 
 
 ### Implementations

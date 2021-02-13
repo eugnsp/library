@@ -223,7 +223,7 @@
 
 :link:
 
-- D.James. [*Algol 68 – a retrospective*](https://accu.org/index.php/journals/2586) – [Overload **148**](https://accu.org/index.php/journals/c393/) (2018)
+- D.James. [*Algol 68 – a retrospective*](https://accu.org/journals/overload/26/148/james_2586/) – [Overload **148**](https://accu.org/journals/overload/overload148) (2018)
 
 :movie_camera:
 

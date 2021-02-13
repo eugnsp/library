@@ -12,12 +12,13 @@
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Optimization](#optimization)
 	- [Two-phase lookup](#two-phase-lookup)
-	- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
+		- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [SFINAE](#sfinae)
 - [Specialization](#specialization)
 - [Tuples](#tuples)
 - [Type lists](#type-lists)
 - [Type traits](#type-traits)
+- [Variadic templates](#variadic-templates)
 
 ---
 
@@ -25,8 +26,8 @@
 
 :link:
 
-- S.Golodetz. [*Functional programming using C++ templates (Part I)*](https://accu.org/index.php/journals/1422) – [Overload **81**](https://accu.org/index.php/journals/c232/) (2007)
-- S.Golodetz. [*Functional programming using C++ templates (Part II)*](https://accu.org/index.php/journals/1616) – [Overload **82**](https://accu.org/index.php/journals/c235/) (2007)
+- S.Golodetz. [*Functional programming using C++ templates (Part I)*](https://accu.org/journals/overload/15/81/golodetz_1422/) – [Overload **81**](https://accu.org/journals/overload/overload81) (2007)
+- S.Golodetz. [*Functional programming using C++ templates (Part II)*](https://accu.org/index.php/journals/1616) – [Overload **82**](https://accu.org/journals/overload/overload82) (2007)
 
 :grey_question:
 
@@ -68,7 +69,7 @@
 
 :link:
 
-- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/index.php/journals/2465) – [Overload **143**](https://accu.org/index.php/journals/c382/) (2019)
+- R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/journals/overload/26/143/orr_2465/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2019)
 
 :anchor:
 
@@ -92,8 +93,8 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :link:
 
-- A.Sutton. [*Introducing concepts*](https://accu.org/index.php/journals/2157) – [Overload **129**](https://accu.org/index.php/journals/c354/) (2015)
-- A.Sutton. [*Defining concepts*](https://accu.org/index.php/journals/2198) – [Overload **131**](https://accu.org/index.php/journals/c358/) (2016)
+- A.Sutton. [*Introducing concepts*](https://accu.org/journals/overload/23/129/sutton_2157/) – [Overload **129**](https://accu.org/journals/overload/overload129) (2015)
+- A.Sutton. [*Defining concepts*](https://accu.org/journals/overload/24/131/sutton_2198/) – [Overload **131**](https://accu.org/journals/overload/overload131) (2016)
 
 :grey_question:
 
@@ -166,7 +167,11 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 - [*Why do I have to access template base class members through the `this` pointer?*](https://stackoverflow.com/q/4643074) – Stack Overflow
 
-### Keywords `template` and `typename` as disambiguators
+:anchor:
+
+- J.Wilkinson, J.Dehnert, M.Austern. [*A proposed new template compilation model*](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/1996/N0906.pdf) – WG21/N0906
+
+#### Keywords `template` and `typename` as disambiguators
 
 > ```cpp
 > struct S { template<typename T> using type = T; };
@@ -208,6 +213,10 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 ---
 
 ## Specialization
+
+:link:
+
+- O.Wigley. [*Alternatives for partial template function specialisation*](https://accu.org/journals/overload/10/50/wigley_385/) – [Overload **50**](https://accu.org/journals/overload/overload50) (2002)
 
 :grey_question:
 
@@ -251,7 +260,7 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 :link:
 
 - J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) ([mirror](https://www.drdobbs.com/cpp/c-type-traits/184404270)) – Dr. Dobb’s Journal (2000)
-- T.Frogley. [*An introduction to C++ traits*](https://accu.org/index.php/journals/442) – ACCU (2001)
+- T.Frogley. [*An introduction to C++ traits*](https://accu.org/journals/overload/9/43/frogley_442/) – ACCU (2001)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 
 :movie_camera:

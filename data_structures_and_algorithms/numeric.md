@@ -47,7 +47,7 @@
 :link:
 
 - [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
-- R.Harris. [*You’re going to have to think!*](https://accu.org/index.php/journals/1702) – [Overload **99**](https://accu.org/index.php/journals/c275/) (2010)
+- R.Harris. [*You’re going to have to think!*](https://accu.org/journals/overload/18/99/harris_1702/) – [Overload **99**](https://accu.org/journals/overload/overload99) (2010)
 - D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
 
 :grey_question:
@@ -157,7 +157,7 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :link:
 
 - [*Methods of computing square roots*](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) – Wikipedia
-- P.Martin. [*Eight rooty pieces*](https://accu.org/index.php/journals/2294) – [Overload **135**](https://accu.org/index.php/journals/c366/) (2016)
+- P.Martin. [*Eight rooty pieces*](https://accu.org/journals/overload/24/135/martin_2294/) – [Overload **135**](https://accu.org/journals/overload/overload135) (2016)
 
 #### Inverse square root
 
