@@ -6,13 +6,21 @@
 	- [Style and guidelines](#style-and-guidelines)
 	- [Class design](#class-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
+		- [Interface segregation principle](#interface-segregation-principle)
 	- [Interface design](#interface-design)
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
 - [Patterns and idioms](#patterns-and-idioms)
+	- [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
+	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
+		- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
+		- [Singleton](#singleton)
+	- [Structural patterns](#structural-patterns)
+	- [Behavioural patterns](#behavioural-patterns)
+		- [Template method](#template-method)
 	- [Adapter](#adapter)
 	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Bridge and pimpl](#bridge-and-pimpl)
@@ -26,16 +34,17 @@
 		- [Execute-around proxy](#execute-around-proxy)
 		- [Execute-around pointer](#execute-around-pointer)
 		- [Execute-around function](#execute-around-function)
+	- [Expression templates](#expression-templates)
 	- [Flyweight](#flyweight)
-	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Infinite loop](#infinite-loop)
 	- [Observer](#observer)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Passkey](#passkey)
-	- [Singleton](#singleton)
 	- [Strategy / Policy](#strategy--policy)
 	- [Type erasure](#type-erasure)
 	- [Visitor](#visitor)
+	- [Local buffer optimization](#local-buffer-optimization)
+	- [Nifty counter](#nifty-counter)
 - [Antipatterns](#antipatterns)
 
 ---
@@ -55,6 +64,10 @@
 
 - F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) – CppCon (2018)
 
+:book:
+
+- Holub A.I. *Enough rope to shoot yourself in the foot* (1995)
+
 ### Style and guidelines
 
 :link:
@@ -62,11 +75,11 @@
 - [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
 - D.Kieras. [*C++ header file guidelines*](http://www.umich.edu/~eecs381/handouts/CppHeaderFileGuidelines.pdf)
-- M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/index.php/journals/2249) – [Overload **133**](https://accu.org/index.php/journals/c362/) (2016)
-- M.Wilson. [*QM bites: The two sides of boolean parameters*](https://accu.org/index.php/journals/2183) – [Overload **130**](https://accu.org/index.php/journals/c356/) (2015)
-- S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/index.php/journals/2066) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
-- B.Schmidt. [*I like whitespace*](https://accu.org/index.php/journals/2063) – [Overload **125**](https://accu.org/index.php/journals/c346/) (2015)
-- J.Wakely. [*Stop the constant shouting*](https://accu.org/index.php/journals/1923) – [Overload **121**](https://accu.org/index.php/journals/c338/) (2014)
+- M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/journals/overload/24/133/wilson_2249/) – [Overload **133**](https://accu.org/journals/overload/overload133) (2016)
+- M.Wilson. [*QM bites: The two sides of boolean parameters*](https://accu.org/journals/overload/23/130/wilson_2183/) – [Overload **130**](https://accu.org/journals/overload/overload130) (2015)
+- S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/journals/overload/23/125/ignatchenko_2066/) – [Overload **125**](https://accu.org/journals/overload/overload125) (2015)
+- B.Schmidt. [*I like whitespace*](https://accu.org/journals/overload/23/125/schmidt_2063/) – [Overload **125**](https://accu.org/journals/overload/overload125) (2015)
+- J.Wakely. [*Stop the constant shouting*](https://accu.org/journals/overload/22/121/wakely_1923/) – [Overload **121**](https://accu.org/journals/overload/overload121) (2014)
 
 :grey_question:
 
@@ -96,7 +109,7 @@
 - [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
 - R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
 - R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
-- C.Oldwood. [*KISSing SOLID goodbye*](https://accu.org/index.php/journals/1957) – [Overload **122*](https://accu.org/index.php/journals/c340/) (2014)
+- C.Oldwood. [*KISSing SOLID goodbye*](https://accu.org/journals/overload/22/122/oldwood_1957/) – [Overload **122**](https://accu.org/journals/overload/overload122) (2014)
 - R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) – Uncle Bob (2004)
 - H.Sutter. [*What’s in a class? The interface principle*](http://www.gotw.ca/publications/mill02.htm) (1998)
 
@@ -121,6 +134,10 @@
 :grey_question:
 
 - [*What is an example of the Liskov substitution principle?*](https://stackoverflow.com/q/56860) – Stack Overflow
+
+#### Interface segregation principle
+
+> The interface segregation principle states that no client should be forced to depend on methods it does not use.
 
 ### Interface design
 
@@ -156,7 +173,7 @@
 
 - [*Rule of three*](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) – Wikipedia
 - S.Meyers. [*A concern about the rule of zero*](https://scottmeyers.blogspot.com/2014/03/a-concern-about-rule-of-zero.html) (2014)
-- J.Alday. [*Enforcing the rule of zero*](https://accu.org/index.php/journals/1896) – [Overload **120**](https://accu.org/index.php/journals/c336/) (2014)
+- J.Alday. [*Enforcing the rule of zero*](https://accu.org/journals/overload/22/120/alday_1896/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
 - R.M.Fernandes. [*Rule of zero*](https://web.archive.org/web/20121127171954/http://rmartinho.github.com/cxx11/2012/08/15/rule-of-zero.html) (2012)
 
 :anchor:
@@ -198,7 +215,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
-- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/index.php/journals/2422) – [Overload **141**](https://accu.org/index.php/journals/c378/), 24 (2017)
+- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141), 24 (2017)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
@@ -211,6 +228,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
 - [*Is there any difference between `noexcept` and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
 - [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
+- [*Losing exception type when rethrowing an exception from a `catch` block*](https://stackoverflow.com/q/12548022) – Stack Overflow
 
 :anchor:
 
@@ -226,19 +244,86 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :link:
 
 - [*Design patterns*](https://en.wikipedia.org/wiki/Design_Patterns) – Wikipedia
-- S.Ignatchenko. [*“No Bugs” top five C++ cooking recipes*](https://accu.org/index.php/journals/1874) – [Overload **113**](https://accu.org/index.php/journals/c320/) (2013)
+- S.Ignatchenko. [*“No Bugs” top five C++ cooking recipes*](https://accu.org/journals/overload/21/113/ignatchenko_1874/) – [Overload **113**](https://accu.org/journals/overload/overload113) (2013)
 
 :movie_camera:
 
 * F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 
+### Creational patterns
+
+:link:
+
+- [*Creational pattern*](https://en.wikipedia.org/wiki/Creational_pattern) – Wikipedia
+
 ### Abstract factory
 
-> The abstract factory pattern provides a way to encapsulate a group of individual factories without specifying their concrete classes. The client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects.
+> The abstract factory pattern provides an interface for creating related or dependent objects without specifying the objects’ concrete classes.
+
+<!-- :book: -->
+
+<!-- - App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004) -->
+
+### Factory method / Virtual constructor
+
+> Factory method pattern allows a class to defer instantiation to subclasses.
 
 :book:
 
-- App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004)
+- Ch. 13: *Virtual constructors and factories* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
+#### In-place factory, typed in-place factory
+
+:link:
+
+- [*Boost.Optional: In-place factories*](https://www.boost.org/doc/libs/1_72_0/libs/optional/doc/html/boost_optional/tutorial/in_place_factories.html)
+
+#### Singleton
+
+> The singleton pattern ensures that a class has one instance and provides a global point of access to that instance. It is useful when exactly one object is needed to coordinate actions across the system.
+> ```cpp
+> class Singleton {
+> public:
+>     static Singleton& instance() {
+>         static Singleton inst;
+>         return inst;
+>     }
+>
+> private:  // protected:
+>     Singleton();
+>     Singleton(const Singleton&) = delete;
+>     Singleton& operator=(const Singleton&) = delete;
+>     ~Singleton() = default;
+> };
+
+:link:
+
+- [*Singleton*](https://en.wikipedia.org/wiki/Singleton_pattern) – Wikipedia
+- F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/journals/overload/overload26) (1998)
+- R.Nystrom. [*Singleton*](https://gameprogrammingpatterns.com/singleton.html) – Game programming patterns
+<!-- https://wiki.c2.com/?SingletonPattern -->
+
+:grey_question:
+
+- [*Is Meyers’ implementation of the Singleton pattern thread safe?*](https://stackoverflow.com/q/1661529) – Stack Overflow
+
+:book:
+
+- Ch. 15: *Singleton – A classic OOP pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
+- Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+
+
+
+
+### Structural patterns
+
+
+### Behavioural patterns
+
+#### Template method
+
+- Ch. 14: *The template method pattern and the non-virtual idiom* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
 ### Adapter
 
@@ -266,6 +351,10 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :link:
 
 - [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
+
+:grey_question:
+
+- [*Is the pImpl idiom really used in practice?*](https://stackoverflow.com/q/8972588) – Stack Overflow
 
 :movie_camera:
 
@@ -348,7 +437,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :link:
 
 - [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
-- A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/index.php/journals/296) – [Overload **70**](https://accu.org/index.php/journals/c142/) (2005)
+- A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/journals/overload/13/70/nasonov_296/) – [Overload **70**](https://accu.org/journals/overload/overload70) (2005)
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
 
 :grey_question:
@@ -359,6 +448,8 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :book:
 
 - Ch. 8: *The curiously recurring template pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- J.O.Coplien. *Curiously recurring template patterns* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
 
 ### Double-checked locking
 
@@ -385,7 +476,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
-- P.Grenyer. [*RAII is not garbage*](https://accu.org/index.php/journals/1945) – [Overload **106**](https://accu.org/index.php/journals/c303/) (2011)
+- P.Grenyer. [*RAII is not garbage*](https://accu.org/journals/overload/19/106/grenyer_1945/) – [Overload **106**](https://accu.org/journals/overload/overload106) (2011)
 
 :grey_question:
 
@@ -423,17 +514,18 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
+### Expression templates
+
+:book:
+
+- T.Veldhuizen. *Expression templates* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
+
 ### Flyweight
 
 :link:
 
 - [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
-
-### In-place factory, typed in-place factory
-
-:link:
-
-- [*Boost.Optional: In-place factories*](https://www.boost.org/doc/libs/1_72_0/libs/optional/doc/html/boost_optional/tutorial/in_place_factories.html)
 
 ### Infinite loop
 
@@ -445,14 +537,14 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
 - [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
 
 ### Observer
 
 :link:
 
-- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/index.php/journals/2227) – [Overload **132**](https://accu.org/index.php/journals/c360/) (2016)
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
 
 ### Opaque typedef (whole value)
 
@@ -473,7 +565,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/index.php/journals/2683) – [Overload **152**](https://accu.org/index.php/journals/c401/) (2019)
+- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/journals/overload/27/152/boger_2683/) – [Overload **152**](https://accu.org/journals/overload/overload152) (2019)
 - J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
 
 :movie_camera:
@@ -495,41 +587,6 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
 
-### Singleton
-
-> The singleton pattern ensures that a class has one instance and provides a global point of access to that instance. It is useful when exactly one object is needed to coordinate actions across the system.
-> ```cpp
-> class Singleton {
-> public:
->     static Singleton& instance() {
->         static Singleton inst;
->         return inst;
->     }
->
-> private:  // protected:
->     Singleton();
->     Singleton(const Singleton&) = delete;
->     Singleton& operator=(const Singleton&) = delete;
->     ~Singleton() = default;
-> };
-
-:link:
-
-- [*Singleton*](https://en.wikipedia.org/wiki/Singleton_pattern) – Wikipedia
-- F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/index.php/journals/c288/) (1998)
-- R.Nystrom. [*Singleton*](https://gameprogrammingpatterns.com/singleton.html) – Game programming patterns
-<!-- https://wiki.c2.com/?SingletonPattern -->
-
-:grey_question:
-
-- [*Is Meyers’ implementation of the Singleton pattern thread safe?*](https://stackoverflow.com/q/1661529) – Stack Overflow
-
-:book:
-
-- Ch. 15: *Singleton – A classic OOP pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
-- Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
-- Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
-
 ### Strategy / Policy
 
 > The strategy pattern enables run- or compile-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
@@ -544,8 +601,6 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 - Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ### Type erasure
-
-
 
 ### Visitor
 
@@ -571,7 +626,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
-- F.Glassborow. [*Exploring patterns: Part 2*](https://accu.org/index.php/journals/593) – [Overload **27**](https://accu.org/index.php/journals/c176/) (1998)
+- F.Glassborow. [*Exploring patterns: Part 2*](https://accu.org/journals/overload/6/27/glassborow_593/) – [Overload **27**](https://accu.org/journals/overload/overload27) (1998)
 
 :grey_question:
 
@@ -584,16 +639,25 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 <!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
 <!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
 
+### Local buffer optimization
+
+
+
+### Nifty counter
+
 ---
 
 ## Antipatterns
 
 :link:
 
-- J.Wakely. [*C++ antipatterns*](https://accu.org/index.php/journals/2271) – [Overload **134**](https://accu.org/index.php/journals/c364/) (2016)
+- J.Wakely. [*C++ antipatterns*](https://accu.org/journals/overload/24/134/wakely_2271/) – [Overload **134**](https://accu.org/journals/overload/overload134) (2016)
 
 :movie_camera:
 
 - L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
 - B.Kernighan. [*Elements of programming style*](https://www.youtube.com/watch?v=8SUkrR7ZfTA) – Princeton University (2009)
 
+:book:
+
+- A.Koenig. *How to write buggy programs* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
