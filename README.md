@@ -5,13 +5,13 @@ This is a library of usefull and interesting references – web pages, videos, b
 ## Table of contents
 
 - C++
-	* :hash: [Preprocessor](cpp/preprocessor.md)
 	* :chestnut: [Core language](cpp/core_language.md)
-	* :white_square_button: [Templates](cpp/templates.md)
 	* :anchor: [The standard library, Boost, and proposals](cpp/std_library.md)
-	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
+	* :white_square_button: [Templates](cpp/templates.md)
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
+	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
+	* :hash: [Modules and preprocessor](cpp/modules_and_preprocessor.md)
 	* :wrench: [Tools](cpp/tools.md)
 - Data structures and algorithms
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)

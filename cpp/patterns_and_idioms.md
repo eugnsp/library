@@ -4,6 +4,7 @@
 
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
+		- [Comments](#comments)
 	- [Class design](#class-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
 		- [Interface segregation principle](#interface-segregation-principle)
@@ -12,6 +13,7 @@
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
+	- [Unit tests](#unit-tests)
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
@@ -95,6 +97,12 @@
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
 - [*Linux kernel coding style*](https://www.kernel.org/doc/html/latest/process/coding-style.html)
 
+#### Comments
+
+:link:
+
+- K.Henney. [*Comment only what the code cannot say*](https://accu.org/journals/overload/28/157/henney_2796/) – [Overload **157**](https://accu.org/journals/overload/overload157) (2020)
+
 ### Class design
 
 <!-- > SOLID are the five principles of class design:
@@ -109,6 +117,7 @@
 - [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
 - R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
 - R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
+- L.R.Teodorescu. [*Deconstructing inheritance*](https://accu.org/journals/overload/28/156/teodorescu_2772/) – [Overload **156**](https://accu.org/journals/overload/overload156) (2020)
 - C.Oldwood. [*KISSing SOLID goodbye*](https://accu.org/journals/overload/22/122/oldwood_1957/) – [Overload **122**](https://accu.org/journals/overload/overload122) (2014)
 - R.C.Martin. [*The principles of OOD*](http://www.butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) – Uncle Bob (2004)
 - H.Sutter. [*What’s in a class? The interface principle*](http://www.gotw.ca/publications/mill02.htm) (1998)
@@ -116,6 +125,7 @@
 :movie_camera:
 
 - J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2018)
+- S.Parent. [*Inheritance is the base class of evil*](https://www.youtube.com/watch?v=bIhUE5uUFOA) – GoingNative (2013)
 - K.Henney. [*The SOLID design principles deconstructed*](https://www.youtube.com/watch?v=tMW08JkFrBA) – YOW! (2013)
 
 :book:
@@ -235,6 +245,12 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 - [*`std::move_if_noexcept`*](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
 
+### Unit tests
+
+:link:
+
+- K.Henney. [*Test precisely and concretely*](https://accu.org/journals/overload/29/161/henney/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
+
 ---
 
 ## Patterns and idioms
@@ -248,7 +264,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
-* F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
+- F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 
 ### Creational patterns
 

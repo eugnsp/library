@@ -84,6 +84,11 @@
 
 ## Introduction and overview
 
+:link:
+
+- K.Henney. [*C++ – an invisible foundation of everything*](https://accu.org/journals/overload/29/161/stroustrup/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
+
+
 :grey_question:
 
 - [*The definitive C++ book guide and list*](https://stackoverflow.com/q/388242) – Stack Overflow

@@ -13,6 +13,7 @@
 		- [`std::mutex`](#stdmutex)
 		- [`std::promise` / `std::future`](#stdpromise--stdfuture)
 		- [`std::async`](#stdasync)
+		- [`std::lock_guard`](#stdlock_guard)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
 		- [Mutex locks](#mutex-locks)
@@ -84,6 +85,7 @@
 
 :link:
 
+- L.R.Teodorescu. [*A case against blind use of C++ parallel algorithms*](https://accu.org/journals/overload/29/161/teodorescu/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
 - A.Williams. [*Multi-threading in C++0x*](https://accu.org/journals/overload/17/93/williams_1584/) – [Overload **93**](https://accu.org/journals/overload/overload93) (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
 
