@@ -27,7 +27,7 @@
 :link:
 
 - S.Golodetz. [*Functional programming using C++ templates (Part I)*](https://accu.org/journals/overload/15/81/golodetz_1422/) – [Overload **81**](https://accu.org/journals/overload/overload81) (2007)
-- S.Golodetz. [*Functional programming using C++ templates (Part II)*](https://accu.org/index.php/journals/1616) – [Overload **82**](https://accu.org/journals/overload/overload82) (2007)
+- S.Golodetz. [*Functional programming using C++ templates (Part II)*](https://members.accu.org/index.php/journals/1616) – [Overload **82**](https://accu.org/journals/overload/overload82) (2007)
 
 :grey_question:
 
@@ -209,6 +209,10 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 :anchor:
 
 - [*SFINAE*](https://en.cppreference.com/w/cpp/language/sfinae) – C++ reference
+
+### Detection idiom
+
+- P.Barber. [*Unit testing compilation failure*](https://accu.org/journals/overload/20/108/barber_1928/) – [Overload **108**](https://accu.org/journals/overload/overload108) (2012)
 
 ---
 

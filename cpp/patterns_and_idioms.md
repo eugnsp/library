@@ -251,6 +251,15 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - K.Henney. [*Test precisely and concretely*](https://accu.org/journals/overload/29/161/henney/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
 
+#### Seams
+
+> A seam is a place where a program behaviour can be altered without modifying it in that place.
+
+:link:
+
+- M.R&uuml;egg. [*Refactoring towards seams in C++*](https://accu.org/journals/overload/20/108/ruegg_1927/) – [Overload **108**](https://accu.org/journals/overload/overload108) (2012)
+- M.Feathers. [*Testing effectively with legacy code*](https://www.informit.com/articles/article.aspx?p=359417) (2005)
+
 ---
 
 ## Patterns and idioms

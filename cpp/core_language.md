@@ -128,6 +128,12 @@
 
 - [*Itanium C++ ABI*](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
 
+### Calling conventions
+
+:link:
+
+- R.Orr. [*Windows 64-bit calling conventions*](https://accu.org/journals/overload/22/120/orr_1897/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
+
 ### Inheritance
 
 :grey_question:
