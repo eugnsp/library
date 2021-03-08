@@ -5,6 +5,7 @@
 - [Hardware](#hardware)
 	- [CPU](#cpu)
 		- [CPU word size](#cpu-word-size)
+		- [x87](#x87)
 	- [Memory](#memory)
 		- [Memory addressing](#memory-addressing)
 - [Optimizations](#optimizations)
@@ -20,9 +21,9 @@
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Tail call optimisation](#tail-call-optimisation)
 	- [Undefined behavior](#undefined-behavior)
+		- [Infinite loops](#infinite-loops)
 		- [Strict aliasing rule](#strict-aliasing-rule)
-- [OS internals](#os-internals)
-	- [Shared libraries](#shared-libraries)
+- [Benchmarking](#benchmarking)
 
 ---
 
@@ -55,6 +56,26 @@
 
 - J.Mashey. [*The long road to 64 bits*](https://cacm.acm.org/magazines/2009/1/15667-the-long-road-to-64-bits/fulltext) – [Communications of the ACM **52**, 45-53](https://doi.org/10.1145/1435417.1435431) (2009)
 
+#### x87
+
+See also [*Numeric data structures and algorithms*](../data_structures_and_algorithms/numeric.md).
+
+:link:
+
+- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) – Wikipedia
+- B.Dawson. [*Intel underestimates error bounds by 1.3 quintillion](https://randomascii.wordpress.com/2014/10/09/intel-underestimates-error-bounds-by-1-3-quintillion/) (2014)
+- S.Duplichan. [*Intel overstates FPU accuracy*](http://notabs.org/fpuaccuracy/index.htm) (2013)
+- T.R.Halfhill. [*The truth behind the Pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) – BYTE.com (1995)
+
+:grey_question:
+
+- [*Extended (80-bit) double floating point in x87, not SSE2 – we don’t miss it?*](https://stackoverflow.com/q/3206101) – Stack Overflow
+- [*Did any compiler fully use Intel x87 80-bit floating point?*](https://retrocomputing.stackexchange.com/q/9751) – Retrocomputing
+
+:anchor:
+
+- [*Programming with the x87 floating-point unit*](http://www.infophysics.net/x87.pdf) – Intel
+
 ### Memory
 
 :link:
@@ -74,6 +95,7 @@
 
 <!-- https://www.airs.com/blog/archives/120
 https://www.agner.org/optimize/optimizing_cpp.pdf
+https://www.agner.org/optimize/
 http://www.reedbeta.com/blog/data-oriented-hash-table/
  -->
 
@@ -263,6 +285,8 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 #### Infinite loops
 
+See also [*Infinite loop* – Patterns, idioms, and design principles](patterns_and_idioms.md#infinite-loop).
+
 :grey_question:
 
 - [*Optimizing away a `while(1);` in C++0x*](https://stackoverflow.com/q/3592557) – Stack Overflow
@@ -274,3 +298,11 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 #### Strict aliasing rule
 
 See [*Type-punning* – Core language](core_language.md#type-punning).
+
+---
+
+## Benchmarking
+
+:link:
+
+- D.Ferenc. [*Contractual loopholes*](https://accu.org/journals/overload/25/138/ferenc_2363/) – [Overload **138**](https://accu.org/journals/overload/overload138) (2017)

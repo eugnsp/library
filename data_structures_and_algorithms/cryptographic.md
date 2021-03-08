@@ -1,4 +1,4 @@
-# Cryptographic algorithms and data structures <!-- omit in toc -->
+# Cryptographic algorithms <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 

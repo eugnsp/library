@@ -5,6 +5,7 @@
 - [Introduction and overview](#introduction-and-overview)
 - [ABI and implementation](#abi-and-implementation)
 	- [Itanium C++ ABI](#itanium-c-abi)
+	- [Calling conventions](#calling-conventions)
 	- [Inheritance](#inheritance)
 - [Attributes](#attributes)
 	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
@@ -79,6 +80,7 @@
 	- [Embedding binary data](#embedding-binary-data)
 - [C, C vs C++](#c-c-vs-c)
 	- [Functions](#functions)
+	- [Static variables](#static-variables)
 
 ---
 

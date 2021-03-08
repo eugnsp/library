@@ -2,11 +2,12 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Introduction and overview](#introduction-and-overview)
 - [Floating-point arithmetic](#floating-point-arithmetic)
 	- [IEEE 754](#ieee-754)
-		- [Division](#division)
 		- [Denormal numbers](#denormal-numbers)
 		- [NaNs](#nans)
+	- [Applications](#applications)
 - [Arithmetic algorithms](#arithmetic-algorithms)
 	- [Arithmetic means](#arithmetic-means)
 	- [Binomial coefficient](#binomial-coefficient)
@@ -24,6 +25,22 @@
 - [Matrix diagonalization](#matrix-diagonalization)
 	- [Jacobi eigenvalue algorithm](#jacobi-eigenvalue-algorithm)
 - [Wavelets](#wavelets)
+- [Applications](#applications-1)
+	- [Finite elements and finite volume methods](#finite-elements-and-finite-volume-methods)
+	- [Spacecrafts dynamics](#spacecrafts-dynamics)
+
+---
+
+## Introduction and overview
+
+:link:
+
+- R.Munafo. [*Notable properties of specific numbers*](https://mrob.com/pub/math/numbers.html)
+
+:movie_camera:
+
+- S.Strogatz. [*The beauty of calculus*](https://www.youtube.com/watch?v=1r6893ga_So) (2019)
+- S.Strogatz. [*The joy of `x`: A guided tour of math*](https://www.youtube.com/watch?v=lmL8RKB7mlE) (2014)
 
 ---
 
@@ -73,13 +90,6 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 - J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) – CppCon (2015)
 - J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) – HPC Advisory Council Australia Conference (2017)
 
-#### Division
-
-:link:
-
-- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) – Wikipedia
-- T.R.Halfhill. [*The truth behind the pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) – BYTE.com (1995)
-
 #### Denormal numbers
 
 :link:
@@ -96,6 +106,12 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 :link:
 
 - [*What is the rationale for all comparisons returning false for IEEE754 NaN values?*](https://stackoverflow.com/q/1565164) – Stack Overflow
+
+### Applications
+
+:link:
+
+- M.Rayman. [*How many decimals of &pi; do we really need?*](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/) – NASA (2016)
 
 ---
 
@@ -240,3 +256,20 @@ https://www.math.wustl.edu/~wick/teaching/Math2605Notes/chap3.pdf
 
 https://www.maths.tcd.ie/~dbennett/js/ising.pdf
 -->
+
+---
+
+## Applications
+
+### Finite elements and finite volume methods
+
+:movie_camera:
+
+- D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) – Annual conference of the Great Lakes section of the SIAM (2015)
+- P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) – AE585 Seminar lecture series (2014)
+
+### Spacecrafts dynamics
+
+:movie_camera:
+
+- J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)

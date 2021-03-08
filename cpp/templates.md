@@ -14,6 +14,7 @@
 	- [Two-phase lookup](#two-phase-lookup)
 		- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [SFINAE](#sfinae)
+	- [Detection idiom](#detection-idiom)
 - [Specialization](#specialization)
 - [Tuples](#tuples)
 - [Type lists](#type-lists)

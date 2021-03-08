@@ -14,10 +14,11 @@
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
 	- [Unit tests](#unit-tests)
+		- [Seams](#seams)
 - [Patterns and idioms](#patterns-and-idioms)
 	- [Creational patterns](#creational-patterns)
-	- [Abstract factory](#abstract-factory)
-	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
+		- [Abstract factory](#abstract-factory)
+		- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
 		- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 		- [Singleton](#singleton)
 	- [Structural patterns](#structural-patterns)
@@ -281,7 +282,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Creational pattern*](https://en.wikipedia.org/wiki/Creational_pattern) – Wikipedia
 
-### Abstract factory
+#### Abstract factory
 
 > The abstract factory pattern provides an interface for creating related or dependent objects without specifying the objects’ concrete classes.
 
@@ -289,7 +290,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 <!-- - App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004) -->
 
-### Factory method / Virtual constructor
+#### Factory method / Virtual constructor
 
 > Factory method pattern allows a class to defer instantiation to subclasses.
 
@@ -560,6 +561,8 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 > do { ... } while (true);
 > ```
 
+See also [*Infinite loops* – Hardware, optimization, and OS internals](optimization_and_hardware.md#infinite-loops).
+
 :link:
 
 - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
@@ -567,9 +570,9 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ### Observer
 
-:link:
+<!-- :link: -->
 
-- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
+<!-- WRONG? - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016) -->
 
 ### Opaque typedef (whole value)
 
