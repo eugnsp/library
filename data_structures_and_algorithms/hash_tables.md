@@ -2,7 +2,9 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [General information](#general-information)
+- [Hash functions](#hash-functions)
+	- [Cryptographic hash functions](#cryptographic-hash-functions)
+- [Hash tables](#hash-tables)
 - [Consistent hashing](#consistent-hashing)
 - [Bloom filter](#bloom-filter)
 

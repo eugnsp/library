@@ -1,15 +1,7 @@
-# General reviews <!-- omit in toc -->
+# General reviews and interviews <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
-- [Automated theorem proving](#automated-theorem-proving)
-- [Numerical analysis](#numerical-analysis)
-	- [Finite elements and finite volume methods](#finite-elements-and-finite-volume-methods)
-	- [Spacecrafts dynamics](#spacecrafts-dynamics)
-- [Natural language processing](#natural-language-processing)
-	- [Spelling correction](#spelling-correction)
-	- [Neural networks](#neural-networks)
-		- [Graph neural networks](#graph-neural-networks)
 - [People](#people)
 	- [Georgy Adelson-Velsky](#georgy-adelson-velsky)
 	- [Howard Aiken](#howard-aiken)
@@ -19,10 +11,18 @@
 	- [Peter Norvig](#peter-norvig)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
+	- [Ken Thompson](#ken-thompson)
 	- [Linus Torvalds](#linus-torvalds)
 - [Programming languages](#programming-languages)
 	- [Algol](#algol)
 	- [C](#c)
+- [Operating systems](#operating-systems)
+	- [Linux](#linux)
+- [Automated theorem proving](#automated-theorem-proving)
+- [Natural language processing](#natural-language-processing)
+	- [Spelling correction](#spelling-correction)
+	- [Neural networks](#neural-networks)
+		- [Graph neural networks](#graph-neural-networks)
 - [Algorithms](#algorithms)
 - [Journals](#journals)
 - [Blogs](#blogs)
@@ -30,62 +30,6 @@
 - [Hardware history](#hardware-history)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
-
----
-
-## Automated theorem proving
-
-:movie_camera:
-
-- W.T.Gowers. [*What are the prospects for automatic theorem proving?*](https://www.youtube.com/watch?v=VamEGCJozgU) – Microsoft Research (2016)
-
----
-
-## Numerical analysis
-
-:link:
-
-- R.Munafo. [*Notable properties of specific numbers*](https://mrob.com/pub/math/numbers.html)
-
-:movie_camera:
-
-- S.Strogatz. [*The beauty of calculus*](https://www.youtube.com/watch?v=1r6893ga_So) (2019)
-- S.Strogatz. [*The joy of `x`: A guided tour of math*](https://www.youtube.com/watch?v=lmL8RKB7mlE) (2014)
-
-### Finite elements and finite volume methods
-
-:movie_camera:
-
-- D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) – Annual conference of the Great Lakes section of the SIAM (2015)
-- P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) – AE585 Seminar lecture series (2014)
-
-### Spacecrafts dynamics
-
-:movie_camera:
-
-- J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)
-
----
-
-## Natural language processing
-
-### Spelling correction
-
-:link:
-
-- P.Norvig. [*How to write a spelling corrector*](https://norvig.com/spell-correct.html) (2007–2016)
-
----
-
-### Neural networks
-
-#### Graph neural networks
-
-:movie_camera:
-
-- M.Allamanis. [*An introduction to graph neural networks: Models and applications*](https://www.youtube.com/watch?v=zCEYiCxrL_0) – MSR Cambridge Lecture Series (2019)
-
----
 
 ## People
 
@@ -202,6 +146,12 @@
 - A.A.Stepanov, P.McJones. [*Elements of programming*](http://elementsofprogramming.com/) (2009)
 - A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
 
+### Ken Thompson
+
+:movie_camera:
+
+- B.Kernighan. [*An interview with Ken Thompson*](https://www.youtube.com/watch?v=EY6q5dv_B-o) – VCF East (2019)
+
 ### Linus Torvalds
 
 :link:
@@ -219,6 +169,10 @@
 
 ## Programming languages
 
+:movie_camera:
+
+- [*The languages*](https://www.youtube.com/watch?v=xnCgoEyz31M) – Unix50 - Unix Today and Tomorrow (2019)
+
 ### Algol
 
 :link:
@@ -235,6 +189,40 @@
 
 - B.Kernighan. [*C programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
 - D.Brailsford. [*Why C is so influential*](https://www.youtube.com/watch?v=ci1PJexnfNE) - Computerphile
+
+---
+
+## Operating systems
+
+### Linux
+
+---
+
+## Automated theorem proving
+
+:movie_camera:
+
+- W.T.Gowers. [*What are the prospects for automatic theorem proving?*](https://www.youtube.com/watch?v=VamEGCJozgU) – Microsoft Research (2016)
+
+---
+
+## Natural language processing
+
+### Spelling correction
+
+:link:
+
+- P.Norvig. [*How to write a spelling corrector*](https://norvig.com/spell-correct.html) (2007–2016)
+
+---
+
+### Neural networks
+
+#### Graph neural networks
+
+:movie_camera:
+
+- M.Allamanis. [*An introduction to graph neural networks: Models and applications*](https://www.youtube.com/watch?v=zCEYiCxrL_0) – MSR Cambridge Lecture Series (2019)
 
 ---
 
@@ -282,6 +270,10 @@
 ---
 
 ## Hardware history
+
+:movie_camera:
+
+- [Vintage Computer Federation](https://www.youtube.com/channel/UCKdBVD2wVUkuJQZhxGvVr0Q) (YouTube channel)
 
 ### BESM-6
 
