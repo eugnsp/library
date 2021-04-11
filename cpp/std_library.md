@@ -287,6 +287,8 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :grey_question:
 
+- [*How `std::unordered_map` is implemented*](https://stackoverflow.com/q/31112852) – Stack Overflow
+- [*How does C++ STL `unordered_map` resolve collisions?*](https://stackoverflow.com/q/21518704) – Stack Overflow
 - [*Why is `unordered_map` “`find` + `insert`” faster than “`insert` + check for success”?*](https://stackoverflow.com/q/31804025) – Stack Overflow
 - [*Performance of `emplace` is worse than check followed by `emplace`*](https://stackoverflow.com/q/24209592) – Stack Overflow
 
@@ -297,7 +299,21 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :anchor:
 
+- M.Austern. [*A proposal to add hash tables to the standard library*](https://wg21.link/n1456) – WG21/N1456
+- J.M.L&oacute;pez Mu&ntilde;oz. [*`erase(iterator)` for unordered containersshould not return an iterator*](https://wg21.link/n2023) – WG21/N2023
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
+- A.Tavory, V.Dreizin, B.Kosnik. [Hash table design](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
+
+#### `std::hash()`
+
+:grey_question:
+
+- [*Does `std::hash` guarantee equal hashes for ”equal” floating point numbers?*](https://stackoverflow.com/questions/14943817) – Stack Overflow
+
+:anchor:
+
+- [*`std::hash`*](https://en.cppreference.com/w/cpp/utility/hash) – C++ reference
+- [*C++ named requirements: Hash*](https://en.cppreference.com/w/cpp/named_req/Hash) – C++ reference
 
 ### Container adaptors
 
@@ -366,7 +382,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :anchor:
 
-- [*std::endl*](https://en.cppreference.com/w/cpp/io/manip/endl) – C++ reference
+- [*`std::endl`*](https://en.cppreference.com/w/cpp/io/manip/endl) – C++ reference
 
 ### Output formatting
 
@@ -709,6 +725,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :grey_question:
 
 - [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/q/16138237) – Stack Overflow
+- [`size_t` vs `uintptr_t`](https://stackoverflow.com/questions/1464174) – Stack Overflow
 
 ### Type traits
 

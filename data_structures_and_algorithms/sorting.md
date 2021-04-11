@@ -190,7 +190,7 @@
 
 :page_facing_up:
 
-- M.D.McIlroy. [*A Killer Adversary for Quicksort*](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf) – [Software: Practice and experience **29**, 341](https://doi.org/10.1002/(SICI)1097-024X(19990410)29:4%3C341::AID-SPE237%3E3.0.CO;2-R) (1999)
+- M.D.McIlroy. [*A killer adversary for quicksort*](https://www.cs.dartmouth.edu/~doug/mdmspe.pdf) – [Software: Practice and experience **29**, 341](https://doi.org/10.1002/(SICI)1097-024X(19990410)29:4%3C341::AID-SPE237%3E3.0.CO;2-R) (1999)
 - Sec. *Algorithm datasheets: Sort a range by partitioning (quicksort)* – D.R.Musser, A.A.Stepanov. [*Algorithm-oriented generic libraries*](http://stepanovpapers.com/HPL-94-13.pdf)
 - [HP Laboratories technical report 94-13](https://www.hpl.hp.com/techreports/94/HPL-94-13.html) (1994)
 
