@@ -56,6 +56,7 @@
 	- [Comparisons](#comparisons)
 		- [Three-ways comparisons](#three-ways-comparisons)
 		- [Pointer comparisons](#pointer-comparisons)
+	- [Conditional operator `?:`](#conditional-operator-)
 	- [`sizeof` / `alignof`](#sizeof--alignof)
 - [Types](#types)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
@@ -726,6 +727,12 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :anchor:
 
 - [*Pointer comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison#Pointer_comparison_operators) – C++ reference
+
+### Conditional operator `?:`
+
+:link:
+
+- K.Pugh. [*Using the conditional operator `?:`*](https://github.com/eugnsp/CUJ/blob/master/10.02/pugh/pugh.md#conditional_operator) – C/C++ Users Journal **10** (1992)
 
 ### `sizeof` / `alignof`
 

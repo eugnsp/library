@@ -13,6 +13,7 @@
 - [B/B+-trees](#bb-trees)
 	- [2-3 trees](#2-3-trees)
 	- [Range trees](#range-trees)
+- [Tries](#tries)
 - [Traversal](#traversal)
 - [Volumetric trees](#volumetric-trees)
 	- [OpenVDB](#openvdb)
@@ -157,6 +158,14 @@
 :movie_camera:
 
 - E.Demaine. [*Augmentation: Range trees*](https://www.youtube.com/watch?v=xVka6z1hu-I&t=3553) – MIT OCW 6.046J: [Design and analysis of algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm) (2015)
+
+---
+
+## Tries
+
+:link:
+
+- J.W.M.Stevens. [*Lexical analysis using search tries*](https://github.com/eugnsp/CUJ/blob/master/10.04/jstevens/jstevens.md) – C/C++ Users Journal **10** (1992)
 
 ---
 

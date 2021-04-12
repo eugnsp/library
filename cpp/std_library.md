@@ -23,6 +23,7 @@
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
 	- [Unordered containers](#unordered-containers)
+		- [`std::hash`](#stdhash)
 	- [Container adaptors](#container-adaptors)
 		- [`std::stack`](#stdstack)
 		- [`std::queue`](#stdqueue)
@@ -304,7 +305,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
 - A.Tavory, V.Dreizin, B.Kosnik. [Hash table design](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
 
-#### `std::hash()`
+#### `std::hash`
 
 :grey_question:
 
@@ -410,7 +411,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ### `std::ios_base::Init`
 
-> The class `std::ios_base::Init` is used to ensure that the default C++ streams (`std::cin`, `std::cout`, etc.) are properly initialized and destructed; the class tracks how many instances of it are created and initializes the C++ streams when the first instance is constructed as well as flushes the output streams when the last instance is destructed. [The nifty counter idiom]((patterns_and_idioms.md#nifty-counter) is typically used in implementations.
+> The class `std::ios_base::Init` is used to ensure that the default C++ streams (`std::cin`, `std::cout`, etc.) are properly initialized and destructed; the class tracks how many instances of it are created and initializes the C++ streams when the first instance is constructed as well as flushes the output streams when the last instance is destructed. [The nifty counter idiom](patterns_and_idioms.md#nifty-counter) is typically used in implementations.
 
 ---
 
