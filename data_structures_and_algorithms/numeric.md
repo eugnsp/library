@@ -117,6 +117,10 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 ## Arithmetic algorithms
 
+:link:
+
+- T.Prince. [*Tuning up math functions*](https://eugnsp.github.io/CUJ/10.12/prince/prince.md) – C/C++ Users Journal **10** (1992)
+
 ### Arithmetic means
 
 > To compute the arithmetic mean <code>&mu; = 1 / N &sum; x<sub>i</sub></code> in a numerically stable way, the following recurrence relation can be used: <code>&mu;<sub>N</sub> = &mu;<sub>N - 1</sub> + 1 / N (x<sub>N</sub> - &mu;<sub>N - 1</sub>)</code>.

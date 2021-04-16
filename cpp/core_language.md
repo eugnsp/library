@@ -732,13 +732,13 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
-- K.Pugh. [*Using the conditional operator `?:`*](https://github.com/eugnsp/CUJ/blob/master/10.02/pugh/pugh.md#conditional_operator) – C/C++ Users Journal **10** (1992)
+- K.Pugh. [*Using the conditional operator `?:`*](https://eugnsp.github.io/CUJ/10.02/pugh/pugh.html#conditional_operator) – C/C++ Users Journal **10** (1992)
 
 ### `sizeof` / `alignof`
 
 > The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array. The `alignof` operator returns the alignment required for any instance of a type.
 
-:grey_questions:
+:grey_question:
 
 - [*Is it always the case that `sizeof(T) >= alignof(T)` for all object types `T`?*](https://stackoverflow.com/questions/46457449) – Stack Overflow
 

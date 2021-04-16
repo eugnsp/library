@@ -133,7 +133,11 @@
 
 :link:
 
-- E.Mäkinen [*Generating random binary trees – a survey*](https://www.sis.uta.fi/cs/reports/pdf/A-1998-3.pdf) (1998)
+- E.M&auml;kinen [*Generating random binary trees – a survey*](https://www.sis.uta.fi/cs/reports/pdf/A-1998-3.pdf) (1998)
+
+### Optimization of binary trees
+
+- D.W.Schwartz. [*An Efficient Method for Optimizing Binary Trees*](https://eugnsp.github.io/CUJ/11.02/schwartz/schwartz.html) – C/C++ Users Journal **11** (1993)
 
 ---
 
@@ -165,7 +169,7 @@
 
 :link:
 
-- J.W.M.Stevens. [*Lexical analysis using search tries*](https://github.com/eugnsp/CUJ/blob/master/10.04/jstevens/jstevens.md) – C/C++ Users Journal **10** (1992)
+- J.W.M.Stevens. [*Lexical analysis using search tries*](https://eugnsp.github.io/CUJ/10.04/jstevens/jstevens.html) – C/C++ Users Journal **10** (1992)
 
 ---
 
