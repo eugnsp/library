@@ -19,6 +19,7 @@
 	- [Sequence containers](#sequence-containers)
 		- [`std::array`](#stdarray)
 		- [`std::deque`](#stddeque)
+		- [`std::forward_list`](#stdforward_list)
 		- [`std::list`](#stdlist)
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
@@ -232,11 +233,20 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*How can references be valid while iterators become invalidated in a deque*](https://stackoverflow.com/q/32800138) – Stack Overflow
 - [*STL deque accessing by index is `O(1)`?*](https://stackoverflow.com/q/2297164) – Stack Overflow
 
+#### `std::forward_list`
+
+> Before this container was standardized, some Standard library implementations provided `std::slist` container as an extention.
+
+:link:
+
+- P.J.Plauger. [*Standard C/C++: A singly linked list*](https://eugnsp.github.io/CUJ/18.02/plauger/plauger.md) – C/C++ Users Journal **18** (2000)
+
 #### `std::list`
 
 :link:
 
 - H.Hinnant. [*On `std::list::size`*](https://howardhinnant.github.io/On_list_size.html)
+- P.J.Plauger. [*Standard C/C++: A better list*](https://eugnsp.github.io/CUJ/17.08/plauger/plauger.md) – C/C++ Users Journal **17** (1999)
 
 :grey_question:
 

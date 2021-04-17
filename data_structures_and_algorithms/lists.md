@@ -6,6 +6,7 @@
 - [Singly linked lists](#singly-linked-lists)
 - [Doubly linked lists](#doubly-linked-lists)
 	- [XOR doubly linked lists](#xor-doubly-linked-lists)
+	- [Circular lists](#circular-lists)
 - [Skip lists](#skip-lists)
 
 ---
@@ -31,7 +32,7 @@
 
 ## Singly linked lists
 
-> A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list.
+> A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list. In the C++ Standard library a singly linked list is implemented in [`std::forward_list`](../cpp/std_library.md#stdforward_list) class template (also known as `std::slist` in some extensions before it was standardized).
 
 :book:
 
@@ -49,7 +50,7 @@
 
 ## Doubly linked lists
 
-> A doubly linked list contains nodes which have a data field, and `next` and `prev` fields, which point to the next and to the previous nodes in the list, respectively.
+> A doubly linked list contains nodes which have a data field, and `next` and `prev` fields, which point to the next and to the previous nodes in the list, respectively. In the C++ Standard library a doubly linked list is implemented in [`std::list`](../cpp/std_library.md#stdlist) class template.
 
 :link:
 
