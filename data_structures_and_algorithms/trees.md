@@ -10,6 +10,7 @@
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
 	- [Generation of binary trees](#generation-of-binary-trees)
 		- [Random binary trees](#random-binary-trees)
+	- [Optimization of binary trees](#optimization-of-binary-trees)
 - [B/B+-trees](#bb-trees)
 	- [2-3 trees](#2-3-trees)
 	- [Range trees](#range-trees)
@@ -137,7 +138,7 @@
 
 ### Optimization of binary trees
 
-- D.W.Schwartz. [*An Efficient Method for Optimizing Binary Trees*](https://eugnsp.github.io/CUJ/11.02/schwartz/schwartz.html) – C/C++ Users Journal **11** (1993)
+- D.W.Schwartz. [*An efficient method for optimizing binary trees*](https://github.com/eugnsp/CUJ/blob/master/11.02/schwartz/schwartz.md) – C/C++ Users Journal **11** (1993)
 
 ---
 
@@ -169,7 +170,7 @@
 
 :link:
 
-- J.W.M.Stevens. [*Lexical analysis using search tries*](https://eugnsp.github.io/CUJ/10.04/jstevens/jstevens.html) – C/C++ Users Journal **10** (1992)
+- J.W.M.Stevens. [*Lexical analysis using search tries*](https://github.com/eugnsp/CUJ/blob/master/10.04/jstevens/jstevens.md) – C/C++ Users Journal **10** (1992)
 
 ---
 

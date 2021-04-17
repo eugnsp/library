@@ -732,7 +732,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
-- K.Pugh. [*Using the conditional operator `?:`*](https://eugnsp.github.io/CUJ/10.02/pugh/pugh.html#conditional_operator) – C/C++ Users Journal **10** (1992)
+- K.Pugh. [*Using the conditional operator `?:`*](https://github.com/eugnsp/CUJ/blob/master/10.02/pugh/pugh.md#conditional_operator) – C/C++ Users Journal **10** (1992)
 
 ### `sizeof` / `alignof`
 

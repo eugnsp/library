@@ -119,7 +119,7 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 :link:
 
-- T.Prince. [*Tuning up math functions*](https://eugnsp.github.io/CUJ/10.12/prince/prince.md) – C/C++ Users Journal **10** (1992)
+- T.Prince. [*Tuning up math functions*](https://github.com/eugnsp/CUJ/blob/master/10.12/prince/prince.md) – C/C++ Users Journal **10** (1992)
 
 ### Arithmetic means
 

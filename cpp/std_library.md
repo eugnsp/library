@@ -239,14 +239,14 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
-- P.J.Plauger. [*Standard C/C++: A singly linked list*](https://eugnsp.github.io/CUJ/18.02/plauger/plauger.md) – C/C++ Users Journal **18** (2000)
+- P.J.Plauger. [*Standard C/C++: A singly linked list*](https://github.com/eugnsp/CUJ/blob/master/18.02/plauger/plauger.md) – C/C++ Users Journal **18** (2000)
 
 #### `std::list`
 
 :link:
 
 - H.Hinnant. [*On `std::list::size`*](https://howardhinnant.github.io/On_list_size.html)
-- P.J.Plauger. [*Standard C/C++: A better list*](https://eugnsp.github.io/CUJ/17.08/plauger/plauger.md) – C/C++ Users Journal **17** (1999)
+- P.J.Plauger. [*Standard C/C++: A better list*](https://github.com/eugnsp/CUJ/blob/master/17.08/plauger/plauger.md) – C/C++ Users Journal **17** (1999)
 
 :grey_question:
 

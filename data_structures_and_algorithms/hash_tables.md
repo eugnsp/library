@@ -17,7 +17,7 @@
 
 :link:
 
-- R.L.Burk. [*Hashing: From good to perfect*](https://eugnsp.github.io/CUJ/10.02/burk/burk.html) – C/C++ Users Journal **10** (1992)
+- R.L.Burk. [*Hashing: From good to perfect*](https://github.com/eugnsp/CUJ/blob/master/10.02/burk/burk.md) – C/C++ Users Journal **10** (1992)
 
 ## Hash functions
 
