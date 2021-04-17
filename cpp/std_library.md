@@ -295,6 +295,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :link:
 
 - N.Wu. [*Blowing up `unordered_map`, and how to stop getting hacked on it*](https://codeforces.com/blog/entry/62393) (2018)
+- P.J.Plauger. [*Standard C/C++: Hash tables*](https://github.com/eugnsp/CUJ/blob/master/16.11/plauger/plauger.md) – C/C++ Users Journal **16** (1998)
 
 :grey_question:
 
