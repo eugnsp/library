@@ -32,7 +32,7 @@
 
 ## Singly linked lists
 
-> A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list. In the C++ Standard library a singly linked list is implemented in [`std::forward_list`](../cpp/std_library.md#stdforward_list) class template (also known as `std::slist` in some extensions before it was standardized).
+> A singly linked list contains nodes which have a data field, and `next` field, which points to the next node in the list. In the C++ standard library a singly linked list is implemented in `std::forward_list` class template (also known as `std::slist` in some extensions before it was standardized). See [*std::forward_list* – The standard library](../cpp/std_library.md#stdforward_list).
 
 :book:
 
@@ -50,7 +50,7 @@
 
 ## Doubly linked lists
 
-> A doubly linked list contains nodes which have a data field, and `next` and `prev` fields, which point to the next and to the previous nodes in the list, respectively. In the C++ Standard library a doubly linked list is implemented in [`std::list`](../cpp/std_library.md#stdlist) class template.
+> A doubly linked list contains nodes which have a data field, and `next` and `prev` fields, which point to the next and to the previous nodes in the list, respectively. In the C++ standard library a doubly linked list is implemented in `std::list` class template. See [*std::list* – The standard library](../cpp/std_library.md#stdlist).
 
 :link:
 

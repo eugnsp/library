@@ -15,6 +15,7 @@
 - [Concepts](#concepts)
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
+		- [`std::set`](#stdset)
 		- [`std::map`](#stdmap)
 	- [Sequence containers](#sequence-containers)
 		- [`std::array`](#stdarray)
@@ -23,6 +24,9 @@
 		- [`std::list`](#stdlist)
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
+	- [Strings](#strings)
+		- [Short string optimization](#short-string-optimization)
+		- [`std::string_view`](#stdstring_view)
 	- [Unordered containers](#unordered-containers)
 		- [`std::hash`](#stdhash)
 	- [Container adaptors](#container-adaptors)
@@ -55,9 +59,6 @@
 	- [Linear algebra support](#linear-algebra-support)
 	- [Random numbers](#random-numbers)
 - [Regular expressions](#regular-expressions)
-- [Strings](#strings)
-	- [Short string optimization](#short-string-optimization)
-	- [`std::string_view`](#stdstring_view)
 - [Type support](#type-support)
 	- [Additional basic types](#additional-basic-types)
 		- [`std::nullptr_t`](#stdnullptr_t)
@@ -206,6 +207,12 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Associative containers are: `std::set` (collection of unique keys, sorted by keys), `std::map` (collection of key-value pairs, sorted by keys, keys are unique), `std::multiset` (collection of keys, sorted by keys), and `std::multimap` (collection of key-value pairs, sorted by keys).
 
+#### `std::set`
+
+:link:
+
+- K.Kreft, A.Langer. [*Effective standard C++ library: Are `set` iterators mutable or immutable*](https://github.com/eugnsp/CUJ/blob/master/18.10/kreft/kreft.md) – C/C++ Users Journal **18** (2000)
+
 #### `std::map`
 
 :link:
@@ -287,6 +294,46 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :grey_question:
 
 - [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/q/17794569) – Stack Overflow
+
+### Strings
+
+:memo:
+
+- `std::basic_string<T, ...>` is the only container in the standard library that requires `T` to be a trivial standard-layout type.
+
+:link:
+
+- H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
+- P.Becker. [*Questions & Answers: The Complex Evolution of `<string>`*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
+
+:grey_question:
+
+- [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
+- [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
+- [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
+
+:anchor:
+
+- [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) – C++ reference
+
+#### Short string optimization
+
+See also [*Local buffer optimization* – Patterns, idioms, and design principles](#local-buffer-optimization).
+
+:grey_question:
+
+- [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/q/10315041) – Stack Overflow
+
+#### `std::string_view`
+
+:link:
+
+- J.Miller. [C++ `std::string_view` for better performance: An example use case](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
+
+:movie_camera:
+
+- M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) – CppCon (2015)
+- N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) – CppCon (2015)
 
 ### Unordered containers
 
@@ -427,6 +474,10 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 ---
 
 ## Iterators
+
+:link:
+
+- K.Kreft, A.Langer. [*Iterators in the Standard C++ library*](https://web.archive.org/web/20050308162147/http://www.langer.camelot.de/Articles/C++Report/IteratorsInStdlib/IteratorsInStdlib.html) – C++ Report (1996)
 
 :grey_question:
 
@@ -663,47 +714,6 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :movie_camera:
 
 - T.Shen. [*Regular expressions in C++, present and future*](https://www.youtube.com/watch?v=N_rkHzhXueo) – CppCon (2016)
-
----
-
-## Strings
-
-:memo:
-
-- `std::basic_string<T, ...>` is the only container in the standard library that requires `T` to be a trivial standard-layout type.
-
-:link:
-
-- H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
-
-:grey_question:
-
-- [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
-- [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
-- [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
-
-:anchor:
-
-- [*`std::basic_string`*](https://en.cppreference.com/w/cpp/string/basic_string) – C++ reference
-
-### Short string optimization
-
-See also [*Local buffer optimization* – Patterns, idioms, and design principles](#local-buffer-optimization).
-
-:grey_question:
-
-- [*Meaning of acronym SSO in the context of `std::string`*](https://stackoverflow.com/q/10315041) – Stack Overflow
-
-### `std::string_view`
-
-:link:
-
-- J.Miller. [C++ `std::string_view` for better performance: An example use case](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
-
-:movie_camera:
-
-- M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) – CppCon (2015)
-- N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) – CppCon (2015)
 
 ---
 

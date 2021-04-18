@@ -506,6 +506,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ### Order of evaluation
 
+:link:
+
+- P.Becker. [*Questions & Answers*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#order-of-evaluation) – C/C++ Users Journal **16** (1998)
+
 :grey_question:
 
 - [*Undefined behavior and sequence points*](https://stackoverflow.com/q/4176328) – Stack Overflow
@@ -1034,6 +1038,16 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :grey_question:
 
 - [*Difference between initialization of static variables in C and C++*](https://stackoverflow.com/q/5921920) – Stack Overflow
+
+### Conditional operator
+
+:link:
+
+- P.Becker. [*Questions & Answers*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
+
+:grey_question:
+
+- [*Conditional operator differences between C and C++*](https://stackoverflow.com/q/1082655) – Stack Overflow
 
 <!-- https://sites.google.com/site/grprakash2/confusion -->
 

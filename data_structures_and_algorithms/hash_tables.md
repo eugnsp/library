@@ -46,7 +46,7 @@ See [*Hashing* – Cryptographic algorithms](cryptographic.md#hashing).
 
 ## Hash tables
 
-> A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Hash tables in the C++ standard library go by the names of `std::unordered_[multi]set` and `std::unordered_[multi]map`. See [The standard library – Unordered containers](../cpp/std_library.md#unordered-containers).
+> A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Hash tables in the C++ standard library go by the names of `std::unordered_[multi]set` and `std::unordered_[multi]map`. See [*Unordered containers* – The standard library](../cpp/std_library.md#unordered-containers).
 
 :link:
 
