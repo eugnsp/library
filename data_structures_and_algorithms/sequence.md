@@ -1,4 +1,4 @@
-# Sequence algorithms <!-- omit in toc -->
+# Sequence data structures and algorithms <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
@@ -6,6 +6,7 @@
 	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
 	- [Gries–Mills algorithm](#griesmills-algorithm)
 	- [Dolphin (juggling) algoirithm](#dolphin-juggling-algoirithm)
+- [Circular buffer](#circular-buffer)
 - [Longest increasing subsequence](#longest-increasing-subsequence)
 - [Maximum subsequence](#maximum-subsequence)
 	- [Kadane’s algorithm](#kadanes-algorithm)
@@ -51,6 +52,21 @@
 :page_facing_up:
 
 - W.Fletcher, R.Silver. *Algorithm 284: Interchange of two blocks of data* – [Communications of the ACM **9**, 326](https://dx.doi.org/10.1145/355592.365609) (1966)
+
+---
+
+## Circular buffer
+
+> A circular buffer (cyclic buffer, ring buffer) is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end. When the buffer is filled, new data is written starting at the beginning of the buffer and overwriting the old.
+
+:link:
+
+- [*Circular buffer*](https://en.wikipedia.org/wiki/Circular_buffer) – Wikipedia
+- B.Stout. [*“Olympic” filtering for noisy data](https://github.com/eugnsp/CUJ/blob/master/13.03/stout/stout.md) – C/C++ Users Journal **13** (1995)
+
+:anchor:
+
+- [*Boost.Circular Buffer: The circular buffer library*](https://www.boost.org/doc/libs/release/libs/circular_buffer/)
 
 ---
 

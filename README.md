@@ -16,7 +16,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 - Data structures and algorithms
 	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
-	* :1234: [Sequence algorithms](data_structures_and_algorithms/sequence.md)
+	* :1234: [Sequence data structures and algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting and searching](data_structures_and_algorithms/sorting.md)
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
@@ -30,6 +30,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
 	* :file_folder: [Data compression algorithms](data_structures_and_algorithms/compression.md)
+	* :chart_with_upwards_trend: [Digital signal processing](data_structures_and_algorithms/signal_processing.md)
 	* :spades: [Game theory](data_structures_and_algorithms/game_theory.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :lock: [Cryptographic algorithms](data_structures_and_algorithms/cryptographic.md)

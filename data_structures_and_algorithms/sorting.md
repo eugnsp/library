@@ -28,9 +28,9 @@
 
 ## Introduction and overview
 
-:link:
+:anchor:
 
-- [*Sort* – Boost libraries](https://www.boost.org/doc/libs/release/libs/sort/)
+- [*Boost.Sort: The sorting library*](https://www.boost.org/doc/libs/release/libs/sort/)
 
 ---
 

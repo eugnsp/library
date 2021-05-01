@@ -82,6 +82,7 @@
 - [C, C vs C++](#c-c-vs-c)
 	- [Functions](#functions)
 	- [Static variables](#static-variables)
+	- [Conditional operator](#conditional-operator)
 
 ---
 
@@ -384,6 +385,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*What is external linkage and internal linkage?*](https://stackoverflow.com/q/1358400) – Stack Overflow
 - P.Goldsborough. [*Internal and external linkage in C++*](http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/) (2016)
+- J.Schilling. [*Extern inlines by default*](https://web.archive.org/web/20060509150105/glenmccl.com/ansi_015.htm) (2001)
 
 :anchor:
 
