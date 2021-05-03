@@ -88,6 +88,10 @@
 > }
 > ```
 
+:link:
+
+- B.B.Cindric. [*When the “best” algorithm isn’t*](https://github.com/eugnsp/CUJ/blob/master/13.03/cindric/cindric.md) – C/C++ Users Journal **13** (1995)
+
 :book:
 
 - Ch. 9: *Medians and order statistics* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)

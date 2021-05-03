@@ -32,10 +32,8 @@
 
 :page_facing_up:
 
-- C.A.Furia. *Rotation of sequences: Algorithms and proofs*. Preprint (2014).\
-[Full text](https://arxiv.org/abs/1406.5453)
-- D.Gries, H.Mills. *Swapping sections*. Technical report 81-452, Department of computer science, Cornell University, 1981.\
-[Full text](https://hdl.handle.net/1813/6292)
+- C.A.Furia. [*Rotation of sequences: Algorithms and proofs*](https://arxiv.org/abs/1406.5453) – Preprint (2014)
+- D.Gries, H.Mills. [*Swapping sections*]((https://hdl.handle.net/1813/6292)) – Technical report 81-452, Department of computer science, Cornell University (1981)
 
 ### Three reverses rotation algorithm
 
@@ -62,7 +60,7 @@
 :link:
 
 - [*Circular buffer*](https://en.wikipedia.org/wiki/Circular_buffer) – Wikipedia
-- B.Stout. [*“Olympic” filtering for noisy data](https://github.com/eugnsp/CUJ/blob/master/13.03/stout/stout.md) – C/C++ Users Journal **13** (1995)
+- B.Stout. [*“Olympic” filtering for noisy data*](https://github.com/eugnsp/CUJ/blob/master/13.03/stout/stout.md) – C/C++ Users Journal **13** (1995)
 
 :anchor:
 

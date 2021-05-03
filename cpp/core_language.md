@@ -59,12 +59,13 @@
 	- [Conditional operator `?:`](#conditional-operator-)
 	- [`sizeof` / `alignof`](#sizeof--alignof)
 - [Types](#types)
-	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
-	- [Floating-point types](#floating-point-types)
-		- [`__float128`](#__float128)
 	- [Integral types](#integral-types)
 		- [Integral promotion](#integral-promotion)
+	- [Floating-point types](#floating-point-types)
+		- [`__float128`](#__float128)
+	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
 	- [Class types](#class-types)
+		- [Layout](#layout)
 		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
 	- [Union types](#union-types)
 	- [Function types](#function-types)
@@ -114,14 +115,17 @@
 
 - [*Binary compatibility issues with C++*](https://community.kde.org/Policies/Binary_Compatibility_Issues_With_C%2B%2B) – KDE wiki
 - [*ABI stability*](https://source.android.com/devices/architecture/vndk/abi-stability) – Android Open Source Project
+- [*The ABI generic analysis and instrumentation library*](https://sourceware.org/libabigail/)
 
 :movie_camera:
 
+- M.Clow. [*What is an ABI, and why is breaking it bad?*](https://www.youtube.com/watch?v=7RoTDjLLXJQ) – CppCon (2020)
 - L.Dionne. [*The C++ ABI from the ground up*](https://www.youtube.com/watch?v=DZ93lP1I7wU) – CppCon (2019)
 
 :anchor:
 
-- [*The ABI generic analysis and instrumentation library*](https://sourceware.org/libabigail/)
+- T.Winters. [*What is ABI, and what should WG21 do about it?*](https://wg21.link/p2028) – WG21/P2028
+- T.Winters. [*ABI – Now or never*](https://wg21.link/p1863) – WG21/P1863
 - L.Dionne. [*Controlling the instantiation of vtables and RTTI*](https://wg21.link/p1263) – WG21/P1263
 
 ### Itanium C++ ABI
@@ -224,13 +228,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 ### `alignas` and alignment
 
-:link:
-
-- E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
-
-:grey_question:
-
-- [*Structure padding and packing*](https://stackoverflow.com/q/4306186) – Stack Overflow
+See also [*Layout* – Class types](#layout).
 
 :anchor:
 
@@ -254,16 +252,14 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 ### `const` and `mutable`
 
-:memo:
-
-- In C++98: `const` means “logically `const`”, in C++11 `const` means “thread safe” (bitwise `const` or internally synchronized).
-- In C++98: `mutable` means “not observably non-`const`”, in C++11 `mutable` means “thread safe” (bitwise `const` or internally synchronized).
+> In C++98: `const` means “logically `const`”, in C++11 `const` means “thread safe” (bitwise `const` or internally synchronized). In C++98: `mutable` means “not observably non-`const`”, in C++11 `mutable` means “thread safe” (bitwise `const` or internally synchronized).
 
 :link:
 
 - [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) – C++ FAQ
 - H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm)
 - S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
+- D.Saks. [*Stepping up to C++: Mutable class members*](https://github.com/eugnsp/CUJ/blob/master/13.04/saks/saks.md) – C/C++ Users Journal **13** (1995)
 
 :grey_question:
 
@@ -670,6 +666,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - V.Lazarenko. [*Why C++ member function pointers are 16 bytes wide*](http://lazarenko.me/wide-pointers/) (2013)
 - R.Chen. [*Pointers to member functions are very strange animals*](https://devblogs.microsoft.com/oldnewthing/?p=40713) (2004)
+- C.Skelly. [*Powerful pointers to member functions*](https://github.com/eugnsp/CUJ/blob/master/12.10/skelly/skelly.md) – C/C++ Users Journal **12** (1994)
 
 :anchor:
 
@@ -757,13 +754,38 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ## Types
 
-### Aggregate, trivial and POD types
+### Integral types
 
 :link:
 
-- [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) – Visual C++ language reference (2018)
-- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
-- [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/q/6496545) – Stack Overflow
+- W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) – Proc. ICSE (2012)
+- [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) – SEI CERT C coding standard
+
+:grey_question:
+
+- [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
+- [*Why does this loop produce “warning: iteration `3u` invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
+- [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
+- [*Does a `long` ban make sense?*](https://softwareengineering.stackexchange.com/q/317670) – Software Engineering
+
+:movie_camera:
+
+- J.Bastien. [*Signed integers are two’s complement*](https://www.youtube.com/watch?v=JhUxIVf1qok) – CppCon (2018)
+
+:anchor:
+
+- J.Bastien. [*Signed integers are two’s complement*](https://wg21.link/p0907) – WG21/P0907
+
+#### Integral promotion
+
+:grey_question:
+
+- [*Implicit type conversion rules in C++ operators*](https://stackoverflow.com/q/5563000) – Stack Overflow
+- [*Why do unsigned “small” integers promote to `signed int`?*](https://stackoverflow.com/q/56604299) – Stack Overflow
+
+:anchor:
+
+- [*Integral promotion*](https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion) – C++ reference
 
 ### Floating-point types
 
@@ -798,38 +820,13 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - [*Additional floating types*](https://gcc.gnu.org/onlinedocs/gcc/Floating-Types.html) – GCC documentation
 
-### Integral types
+### Aggregate, trivial and POD types
 
 :link:
 
-- W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) – Proc. ICSE (2012)
-- [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) – SEI CERT C coding standard
-
-:grey_question:
-
-- [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
-- [*Why does this loop produce “warning: iteration `3u` invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
-- [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
-- [*Does a `long` ban make sense?*](https://softwareengineering.stackexchange.com/q/317670) – Software Engineering
-
-:movie_camera:
-
-- J.Bastien. [*Signed integers are two’s complement*](https://www.youtube.com/watch?v=JhUxIVf1qok) – CppCon (2018)
-
-:anchor:
-
-- J.Bastien. [*Signed integers are two’s complement*](https://wg21.link/p0907) – WG21/P0907
-
-#### Integral promotion
-
-:grey_question:
-
-- [*Implicit type conversion rules in C++ operators*](https://stackoverflow.com/q/5563000) – Stack Overflow
-- [*Why do unsigned “small” integers promote to `signed int`?*](https://stackoverflow.com/q/56604299) – Stack Overflow
-
-:anchor:
-
-- [*Integral promotion*](https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion) – C++ reference
+- [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) – Visual C++ language reference (2018)
+- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
+- [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/q/6496545) – Stack Overflow
 
 ### Class types
 
@@ -840,6 +837,26 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :anchor:
 
 - [*Class declaration*](https://en.cppreference.com/w/cpp/language/class) – C++ reference
+
+#### Layout
+
+:link:
+
+- E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
+
+:grey_question:
+
+- [*Structure padding and packing*](https://stackoverflow.com/q/4306186) – Stack Overflow
+
+:movie_camera:
+
+- S.Dewhurst. [*Back to basics: Class layout*](https://www.youtube.com/watch?v=SShSV_iV1Ko) – CppCon (2020)
+
+:anchor:
+
+- [*C++ named requirements: `StandardLayoutType`*](https://en.cppreference.com/w/cpp/named_req/StandardLayoutType) – C++ reference
+- [*`std::is_standard_layout`*](https://en.cppreference.com/w/cpp/types/is_standard_layout) – C++ reference
+- [*`std::has_unique_object_representations`*](https://en.cppreference.com/w/cpp/types/has_unique_object_representations) – C++ reference
 
 #### Polymorphism and inheritance
 

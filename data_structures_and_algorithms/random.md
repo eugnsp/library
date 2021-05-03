@@ -9,8 +9,7 @@
 	- [Reservoir sampling](#reservoir-sampling)
 - [Random shuffling](#random-shuffling)
 	- [Fisher–Yates algorithm](#fisheryates-algorithm)
-- [Probabilistic datastructures](#probabilistic-datastructures)
-	- [Bloom filter](#bloom-filter)
+- [Probabilistic data structures](#probabilistic-data-structures)
 	- [Skip lists](#skip-lists)
 - [HyperLogLog](#hyperloglog)
 
@@ -81,7 +80,7 @@ For cryptographically secure random number generation see [*Random numbers gener
 
 ---
 
-## Probabilistic datastructures
+## Probabilistic data structures
 
 ### Skip lists
 

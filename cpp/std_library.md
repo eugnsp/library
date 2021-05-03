@@ -133,6 +133,9 @@
 :link:
 
 - S.Parent. [*#iotashaming*](https://sean-parent.stlab.cc/2019/01/04/iota.html) (2019)
+
+:grey_question:
+
 - [*What does iota of `std::iota` stand for?*](https://stackoverflow.com/q/9244879) – Stack Overflow
 
 ### `std::midpoint`
@@ -215,7 +218,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### `std::map`
 
-:link:
+:grey_question:
 
 - [*`insert` vs `emplace` vs `operator[]` in C++ `std::map`*](https://stackoverflow.com/q/17172080) – Stack Overflow
 - [*Is there any reason to use `std::map::emplace()` instead of `try_emplace()` in C++1z?*](https://stackoverflow.com/q/46046828) – Stack Overflow
@@ -297,6 +300,8 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 ### Strings
 
+> The class template `std::basic_string` stores and manipulates sequences of `char`-like objects, which are non-array objects of trivial standard-layout type.
+
 :memo:
 
 - `std::basic_string<T, ...>` is the only container in the standard library that requires `T` to be a trivial standard-layout type.
@@ -304,7 +309,8 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :link:
 
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
-- P.Becker. [*Questions & Answers: The Complex Evolution of `<string>`*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
+- P.Becker. [*Questions & Answers: The complex evolution of `<string>`*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
+- P.J.Plauger. [*Standard C/C++: The header `<string>`*](https://github.com/eugnsp/CUJ/blob/master/13.07/plauger/plauger.md) – C/C++ Users Journal **13** (1995)
 
 :grey_question:
 
@@ -318,7 +324,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 #### Short string optimization
 
-See also [*Local buffer optimization* – Patterns, idioms, and design principles](#local-buffer-optimization).
+See also [*Local buffer optimization* – Patterns, idioms, and design principles](patterns_and_idioms.md#local-buffer-optimization).
 
 :grey_question:
 
@@ -328,7 +334,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
-- J.Miller. [C++ `std::string_view` for better performance: An example use case](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
+- J.Miller. [*C++ `std::string_view` for better performance: An example use case*](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
 
 :movie_camera:
 
@@ -377,6 +383,10 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 ### Container adaptors
 
 #### `std::stack`
+
+:grey_question:
+
+- [*`std::stack` implementation on different containers - What is the actual difference?*](https://stackoverflow.com/questions/63043291) – Stack Overflow
 
 :anchor:
 
@@ -550,6 +560,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 :movie_camera:
 
+- R.Grimm. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=sQCSX7vmmKY) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
 - M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
 
@@ -560,6 +571,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 #### `std::unique_ptr`
 
 > The `std::unique_ptr` class is a smart pointer with unique ownership.
+
+:memo:
+
+- `std::unique_ptr<T>` is *almost* as cheap as a raw pointer `T*`. For the Itanium ABI, any type with a destructor that is passed by value must be passed in memory: the address held in the `std::unique_ptr​` must be written out to memory, rather than passed in registers as it would be for a raw ​`T*`​.
 
 :link:
 
@@ -600,7 +615,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 > `std::enable_shared_from_this` allows a member function of an object that is currently managed by a `std::shared_ptr` to extend the lifetime of that object dynamically by generating additional `std::shared_ptr` instances.
 
-:link:
+:grey_question:
 
 - [*What is the usefulness of `enable_shared_from_this`?*](https://stackoverflow.com/q/712279) – Stack Overflow
 

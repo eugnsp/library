@@ -2,6 +2,8 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Programming paradigms](#programming-paradigms)
+	- [Procedural programming](#procedural-programming)
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
 		- [Comments](#comments)
@@ -48,7 +50,23 @@
 	- [Visitor](#visitor)
 	- [Local buffer optimization](#local-buffer-optimization)
 	- [Nifty counter](#nifty-counter)
-- [Antipatterns](#antipatterns)
+- [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
+	- [Go to](#go-to)
+	- [Duff’s device](#duffs-device)
+
+---
+
+## Programming paradigms
+
+### Procedural programming
+
+:link:
+
+- [*Procedural programming*](https://en.wikipedia.org/wiki/Procedural_programming) – Wikipedia
+
+:movie_camera:
+
+- K.Henney. [*Procedural programming: It’s back? It never went away*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2018)
 
 ---
 
@@ -57,6 +75,7 @@
 :link:
 
 - [*The architecture of open source applications*](https://www.aosabook.org/en/index.html)
+- [*Hyrum’s law*](https://www.hyrumslaw.com/)
 
 :grey_question:
 
@@ -566,6 +585,9 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 :link:
 
 - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
+
+:grey_question:
+
 - [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
 
 ### Observer
@@ -675,7 +697,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 ---
 
-## Antipatterns
+## Antipatterns and uncommon constructs
 
 :link:
 
@@ -689,3 +711,16 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 :book:
 
 - A.Koenig. *How to write buggy programs* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
+### Go to
+
+:page_facing_up:
+
+- E.W.Dijkstra. [*A case against the Go To statement*](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF), [*Go To statement considered harmful*](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf) – EWD215 (1968)
+
+### Duff’s device
+
+:link:
+
+- [*Duff’s device*](https://en.wikipedia.org/wiki/Duff%27s_device) – Wikipedia
+- T.Duff. [*Tom Duff on Duff’s device*](https://www.lysator.liu.se/c/duffs-device.html) (1988)

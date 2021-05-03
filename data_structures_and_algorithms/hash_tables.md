@@ -51,6 +51,7 @@ See [*Hashing* – Cryptographic algorithms](cryptographic.md#hashing).
 :link:
 
 - [*Hash table*](https://en.wikipedia.org/wiki/Hash_table) – Wikipedia
+- [*Hashtable benchmarks*](https://github.com/google/hashtable-benchmarks)
 
 :grey_question:
 
