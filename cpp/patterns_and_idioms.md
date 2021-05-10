@@ -171,6 +171,10 @@
 
 ### Interface design
 
+:link:
+
+- S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html)
+
 :grey_question:
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
@@ -705,6 +709,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 :movie_camera:
 
+- J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=RgTFO1D3bSU) – code::dive (2019)
 - L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
 - B.Kernighan. [*Elements of programming style*](https://www.youtube.com/watch?v=8SUkrR7ZfTA) – Princeton University (2009)
 

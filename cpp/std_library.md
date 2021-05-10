@@ -563,6 +563,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 - R.Grimm. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=sQCSX7vmmKY) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
 - M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
+- U.Drepper. [*C++ and memory: Between correctness and performance*](https://www.youtube.com/watch?v=LXfSXzxDY_M&t=1924) – code::dive (2018)
 
 :anchor:
 
@@ -768,6 +769,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 See also [*Type traits* – Templates](templates.md#type-traits).
 
+:memo:
+
+- There 14 [primary type categories](https://en.cppreference.com/w/cpp/header/type_traits#Primary_type_categories): `is_void`, `is_null_pointer`, `is_integral`, `is_floating_point`, `is_array`, `is_enum`, `is_union`, `is_class`, `is_function`, `is_pointer`, `is_lvalue_reference`, `is_rvalue_reference`, `is_member_object_pointer`, `is_null_pointer`. Each type belongs to exactly one of them.
+
 :movie_camera:
 
 - M.Clow. [*Type traits: What are they and why should I use them?*](https://www.youtube.com/watch?v=VvbTP_k_Df4) – CppCon (2015)
@@ -775,6 +780,12 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 :anchor:
 
 - [*Standard library header `<type_traits>`*](https://en.cppreference.com/w/cpp/header/type_traits) – C++ reference
+
+#### `std::is_class`
+
+:grey_question:
+
+- [*How does this implementation of `std::is_class` work?*](https://stackoverflow.com/questions/35213658/how-does-this-implementation-of-stdis-class-work) – Stack Overflow
 
 #### `std::is_base_of`
 

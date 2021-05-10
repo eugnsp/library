@@ -122,6 +122,10 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 - [*Necessity of forward-declaring template functions*](https://stackoverflow.com/q/7255281) – Stack Overflow
 
+:movie_camera:
+
+- W.E.Brown. [*C++ function templates: How do they really work?*](https://www.youtube.com/watch?v=NIDEjY5ywqU) – CppCon (2018)
+
 ### Friend function templates
 
 :grey_question:
@@ -270,8 +274,15 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 
 :movie_camera:
 
+- J.Hagins. *Template Metaprogramming: Type Traits.* [*Part 1*](https://www.youtube.com/watch?v=tiAVWcjIF6o), [*Part 2*](https://www.youtube.com/watch?v=dLZcocFOb5Q) – CppCon (2020)
 - A.O’Dwyer. [*The best type traits that C++ doesn’t have*](https://www.youtube.com/watch?v=MWBfmmg8-Yo) – C++Now (2018)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2028) – ACCU (2017)
+
+:anchor:
+
+- [*C++ named requirements: `UnaryTypeTrait`*](https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait) – C++ reference
+- [*C++ named requirements: `BinaryTypeTrait`*](https://en.cppreference.com/w/cpp/named_req/BinaryTypeTrait) – C++ reference
+- [*C++ named requirements: `TransformationTrait`*](https://en.cppreference.com/w/cpp/named_req/TransformationTrait) – C++ reference
 
 ---
 

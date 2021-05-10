@@ -3,6 +3,7 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
+	- [Abstract machine](#abstract-machine)
 - [ABI and implementation](#abi-and-implementation)
 	- [Itanium C++ ABI](#itanium-c-abi)
 	- [Calling conventions](#calling-conventions)
@@ -93,11 +94,13 @@
 
 - K.Henney. [*C++ – an invisible foundation of everything*](https://accu.org/journals/overload/29/161/stroustrup/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
 
-
 :grey_question:
 
 - [*The definitive C++ book guide and list*](https://stackoverflow.com/q/388242) – Stack Overflow
-- [*Undefined, unspecified and implementation-defined behavior*](https://stackoverflow.com/q/2397984) – Stack Overflow
+
+:movie_camera:
+
+- C.Carruth, T.Winters. [*What is C++*](https://www.youtube.com/watch?v=LJh5QCV4wDg) – CppCon (2019)
 
 :anchor:
 
@@ -106,6 +109,17 @@
 - [*C++ standards committee papers*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/)
 - [*C++ standard core language closed issues*](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html)
 - [*C++ standard draft sources*](https://github.com/cplusplus/draft)
+- C.Carruth et al. [*Goals and priorities for C++*](https://wg21.link/p2137) – WG21/P2137
+
+### Abstract machine
+
+:grey_question:
+
+- [*Undefined, unspecified and implementation-defined behavior*](https://stackoverflow.com/q/2397984) – Stack Overflow
+
+:movie_camera:
+
+- B.Steagall. [*Back to basics: The abstract machine*](https://www.youtube.com/watch?v=ZAji7PkXaKY) – CppCon (2020)
 
 ---
 
@@ -642,6 +656,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :movie_camera:
 
+- B.Geller, A.Sermersheim. [*Back to basics: Lambda expressions*](https://www.youtube.com/watch?v=ZIPNFcw6V9o) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Lambdas from scratch*](https://www.youtube.com/watch?v=3jCOwajNch0) – CppCon (2019)
 
 :anchor:
@@ -754,6 +769,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ## Types
 
+:movie_camera:
+
+- B.Milewski. [*Why algebraic data types are important*](https://www.youtube.com/watch?v=LkqTLJK2API) – code::dive (2018)
+
 ### Integral types
 
 :link:
@@ -771,6 +790,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :movie_camera:
 
 - J.Bastien. [*Signed integers are two’s complement*](https://www.youtube.com/watch?v=JhUxIVf1qok) – CppCon (2018)
+- D.Saks. [*Choosing the right integer types in C and C++*](https://www.youtube.com/watch?v=IJaa58cfvOw) – code::dive (2018)
 
 :anchor:
 
@@ -932,6 +952,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 :movie_camera:
 
+- N.Josuttis. [*The hidden secrets of move semantics*](https://www.youtube.com/watch?v=TFMKjL38xAI) – CppCon (2020)
 - K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) – CppCon (2019)
 - A.Schödl. [*The C++ rvalue lifetime disaster*](https://www.youtube.com/watch?v=s9vBk5CxFyY) – CoreHard (2019)
 - N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) – CppCon (2017)

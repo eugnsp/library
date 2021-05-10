@@ -21,7 +21,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :left_right_arrow: [Lists](data_structures_and_algorithms/lists.md)
 	* :deciduous_tree: [Trees](data_structures_and_algorithms/trees.md)
 	* :hash: [Hash tables and hashing](data_structures_and_algorithms/hash_tables.md)
-	* :top: [Heaps](data_structures_and_algorithms/heap.md)
+	* :top: [Heaps](data_structures_and_algorithms/heaps.md)
 	* :curly_loop: [Graphs](data_structures_and_algorithms/graphs.md)
 	* :abc: [String algorithms](data_structures_and_algorithms/string.md)
 	* :exclamation: [Combinatorial algorithms](data_structures_and_algorithms/combinatorics.md)

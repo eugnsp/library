@@ -82,6 +82,10 @@ See also [*Numeric data structures and algorithms*](../data_structures_and_algor
 
 - E.Martin. [*Some things I’ve learned about memory*](http://neugierig.org/software/blog/2011/05/memory.html) (2011)
 
+:movie_camera:
+
+- U.Drepper. [*C++ and memory: Between correctness and performance*](https://www.youtube.com/watch?v=LXfSXzxDY_M) – code::dive (2018)
+
 #### Memory addressing
 
 :link:

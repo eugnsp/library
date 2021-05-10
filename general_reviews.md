@@ -190,6 +190,17 @@
 - B.Kernighan. [*C programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
 - D.Brailsford. [*Why C is so influential*](https://www.youtube.com/watch?v=ci1PJexnfNE) - Computerphile
 
+### Pascal
+
+:page_facing_up:
+
+- B.W.Kernighan. [*Why Pascal is not my favorite programming language*](https://www.lysator.liu.se/c/bwk-on-pascal.html) – Computer Science Technical Report **100* (1981)
+- A.N.Habermann. [*Critical comments on the programming language Pascal*](https://figshare.com/articles/journal_contribution/Critical_comments_on_the_programming_language_PASCAL/6604568/files/12094973.pdf) – [Acta Informatica **3**, 47](https://doi.org/10.1007/BF00288652) (1973)
+
+:anchor:
+
+- N.Wirth. [*Recollections about the development of Pascal*](http://www.math.bas.bg/bantchev/place/pascal/recollections.pdf) – History of programming languages II (1996)
+
 ---
 
 ## Operating systems
