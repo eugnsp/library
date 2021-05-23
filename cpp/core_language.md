@@ -25,6 +25,7 @@
 	- [`inline`](#inline)
 	- [`static`](#static)
 	- [`using`](#using)
+		- [`using enum`](#using-enum)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
 	- [Namespaces](#namespaces)
@@ -178,17 +179,7 @@
 
 > These attributes allow the compiler to optimize for the case where paths of execution are more or less likely than any alternative path of execution.
 
-:grey_question:
-
-- [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/q/51797959) – Stack Overflow
-
-<!-- :movie_camera: -->
-
-
-
-:anchor:
-
-- [*C++ attribute: `likely`, `unlikely`*](https://en.cppreference.com/w/cpp/language/attributes/likely) – C++ reference
+See [*`[[likely]]` / `[[unlikely]]` attributes* – Hardware, optimization, and OS internals](optimization_and_hardware.md#likely--unlikely-attributes).
 
 ### `[[nodiscard]]`
 
@@ -351,6 +342,13 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*A `using` statement compiles with g++, fails compilation with clang*](https://stackoverflow.com/q/27954940) – Stack Overflow
 
+#### `using enum`
+
+:anchor:
+
+- [*Using-enum-declaration*](https://en.cppreference.com/w/cpp/language/enum#Using-enum-declaration) – C++ reference
+- G.A&zcaron;man, J.M&uuml;ller. [*Using enum*](https://wg21.link/p1099) – WG21/P1099
+
 ### Flexible array member
 
 :link:
@@ -475,10 +473,16 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Object creation and placement `new`
 
+See also [*Uninitialized storage* – The standard library, Boost, and proposals](std_library.md#uninitialized-storage).
+
 :grey_question:
 
 - [*Array placement-new requires unspecified overhead in the buffer?*](https://stackoverflow.com/q/8720425) – Stack Overflow
 - [*Is using `malloc` for `int` undefined behavior until C++20*](https://stackoverflow.com/q/63379066) – Stack Overflow
+
+:movie_camera:
+
+- C.J.Johnson. [*How to hold a `T`*](https://www.youtube.com/watch?v=WX8FsrUbLjc) – CppCon (2019)
 
 :anchor:
 

@@ -209,6 +209,7 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 - [*What exactly is the “immediate context” mentioned in the C++11 Standard for which SFINAE applies?*](https://stackoverflow.com/q/15260685) – Stack Overflow
 - [*What is “Expression SFINAE”?*](https://stackoverflow.com/q/12654067) – Stack Overflow
 - [*How does `std::void_t` work*](https://stackoverflow.com/q/27687389) – Stack Overflow
+- [*SFINAE and partial class template specializations*](https://stackoverflow.com/q/30676839) – Stack Overflow
 - [*SFINAE examples?*](https://stackoverflow.com/q/982808) – Stack Overflow
 
 :anchor:

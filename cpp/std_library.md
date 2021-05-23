@@ -63,7 +63,9 @@
 	- [Additional basic types](#additional-basic-types)
 		- [`std::nullptr_t`](#stdnullptr_t)
 	- [Fixed-width integer types](#fixed-width-integer-types)
+	- [Uninitialized storage](#uninitialized-storage)
 	- [Type traits](#type-traits)
+		- [`std::is_class`](#stdis_class)
 		- [`std::is_base_of`](#stdis_base_of)
 		- [`std::is_trivial*`](#stdis_trivial)
 - [Utilities](#utilities)
@@ -274,6 +276,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
+- R.Getov. [*Persistent vector iterators*](https://github.com/eugnsp/CUJ/blob/master/17.01/getov/getov.md) – C/C++ Users Journal **17** (1999)
 - [*`folly::fbvector`*](https://github.com/facebook/folly/blob/master/folly/docs/FBVector.md)
 
 :grey_question:
@@ -457,9 +460,10 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :link:
 
+- [*{fmt}: a modern formatting library*](https://github.com/fmtlib/fmt)
 - S.Ignatchenko. [*5 Reasons **not** to use `std::ostream` for human-readable output*](https://accu.org/journals/overload/26/144/ignatchenko_2486/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2018)
 - D.Epp. [*IOStream is hopelessly broken*](https://www.moria.us/articles/iostream-is-hopelessly-broken/) (2017)
-- [*{fmt}: a modern formatting library*](https://github.com/fmtlib/fmt)
+- H.Sutter. [*The string formatters of manor farm*](http://www.gotw.ca/publications/mill19.htm) (2001)
 
 :grey_question:
 
@@ -764,6 +768,19 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/q/16138237) – Stack Overflow
 - [`size_t` vs `uintptr_t`](https://stackoverflow.com/questions/1464174) – Stack Overflow
+
+### Uninitialized storage
+
+> `std::aligned_storage` defines the type suitable for use as uninitialized storage for types of given size, `aligned_union` defines the type suitable for use as uninitialized storage for all given types.
+
+:grey_question:
+
+- [*What is the purpose of `std::aligned_storage`?*](https://stackoverflow.com/q/50271304) – Stack Overflow
+- [*Placement new in `std::aligned_storage`?*](https://stackoverflow.com/q/28187732) – Stack Overflow
+
+:anchor:
+
+- C.J.Johnson. [*Deprecate `std::aligned_storage` and `std::aligned_union`*](https://wg21.link/p1413) – WG21/P1413
 
 ### Type traits
 

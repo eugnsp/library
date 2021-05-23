@@ -9,14 +9,18 @@
 	- [Memory](#memory)
 		- [Memory addressing](#memory-addressing)
 - [Optimizations](#optimizations)
-	- [Floating-point arithmetic](#floating-point-arithmetic)
+	- [Branch prediction](#branch-prediction)
+		- [`[[likely]]` / `[[unlikely]]` attributes](#likely--unlikely-attributes)
+		- [`likely` / `unlikely` Linux kernel macros](#likely--unlikely-linux-kernel-macros)
 	- [Memory copying](#memory-copying)
 		- [Nested `std::vector`s](#nested-stdvectors)
 	- [Memory allocation](#memory-allocation)
 	- [Memory relocation](#memory-relocation)
 	- [Memory access](#memory-access)
-	- [Integral multiplication](#integral-multiplication)
-	- [Integeral division](#integeral-division)
+	- [Floating-point arithmetic](#floating-point-arithmetic)
+	- [Integral arithmetic](#integral-arithmetic)
+		- [Integral multiplication](#integral-multiplication)
+		- [Integeral division](#integeral-division)
 	- [Empty base class optimization](#empty-base-class-optimization)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Tail call optimisation](#tail-call-optimisation)
@@ -141,15 +145,31 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 - [*Intel 64 and IA-32 architectures optimization reference manual*](https://www-ssl.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-optimization-manual.html)
 
-### Floating-point arithmetic
+### Branch prediction
+
+:link:
+
+- [*Branch predictor*](https://en.wikipedia.org/wiki/Branch_predictor) – Wikipedia
+
+#### `[[likely]]` / `[[unlikely]]` attributes
+
+> These attributes allow the compiler to optimize for the case where paths of execution are more or less likely than any alternative path of execution.
 
 :grey_question:
 
-- [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/q/7420665) – Stack Overflow
+- [*How to use C++20’s `likely`/`unlikely` attributes in `if-else` statement*](https://stackoverflow.com/q/51797959) – Stack Overflow
+
+<!-- :movie_camera: -->
 
 :anchor:
 
-- [Bug 323: *Optimized code gives strange floating point results*](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=323) – GCC Bugzilla
+- [*C++ attribute: `likely`, `unlikely`*](https://en.cppreference.com/w/cpp/language/attributes/likely) – C++ reference
+
+#### `likely` / `unlikely` Linux kernel macros
+
+:grey_question:
+
+- [*How do the `likely`/`unlikely` macros in the Linux kernel work and what is their benefit?*](https://stackoverflow.com/q/109710) – Stack Overflow
 
 ### Memory copying
 
@@ -207,13 +227,29 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 - [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/q/8547778) – Stack Overflow
 - [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/q/40303182) – Stack Overflow
 
-### Integral multiplication
+### Floating-point arithmetic
+
+:grey_question:
+
+- [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/q/7420665) – Stack Overflow
+
+:anchor:
+
+- [Bug 323: *Optimized code gives strange floating point results*](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=323) – GCC Bugzilla
+
+### Integral arithmetic
+
+:grey_question:
+
+- [*What is the performance impact of using `int64_t` instead of `int32_t` on 32-bit systems?*](https://stackoverflow.com/q/16841382) – Stack Overflow
+
+#### Integral multiplication
 
 :grey_question:
 
 - [*Why is `imul` used for multiplying unsigned numbers?*](https://stackoverflow.com/q/42587607) – Stack Overflow
 
-### Integeral division
+#### Integeral division
 
 :link:
 

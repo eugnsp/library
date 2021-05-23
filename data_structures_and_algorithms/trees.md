@@ -12,8 +12,7 @@
 		- [Random binary trees](#random-binary-trees)
 	- [Optimization of binary trees](#optimization-of-binary-trees)
 - [B/B+-trees](#bb-trees)
-	- [2-3 trees](#2-3-trees)
-	- [Range trees](#range-trees)
+- [Range trees](#range-trees)
 - [Tries](#tries)
 - [Traversal](#traversal)
 - [Volumetric trees](#volumetric-trees)
@@ -156,9 +155,11 @@
 
 - Ch. 18: *B-trees* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)
 
-### 2-3 trees
+<!-- ## 2-3 trees -->
 
-### Range trees
+---
+
+## Range trees
 
 :movie_camera:
 
@@ -176,7 +177,7 @@
 
 ## Traversal
 
-See also: [Graphs – Traversal](graphs.md#traversal)
+See also: [*Traversal* – Graphs](graphs.md#traversal)
 
 :link:
 
