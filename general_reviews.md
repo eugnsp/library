@@ -115,6 +115,7 @@
 
 :link:
 
+- C.Allison. [*C++: The making of a standard*](https://github.com/eugnsp/CUJ/blob/master/14.10/allison/allison.md) – C/C++ Users Journal **14** (1996)
 - [*Quotes by Bjarne Stroustrup*](https://www.azquotes.com/author/14260-Bjarne_Stroustrup) – AZQuotes
 
 :movie_camera:

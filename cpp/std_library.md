@@ -212,6 +212,10 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Associative containers are: `std::set` (collection of unique keys, sorted by keys), `std::map` (collection of key-value pairs, sorted by keys, keys are unique), `std::multiset` (collection of keys, sorted by keys), and `std::multimap` (collection of key-value pairs, sorted by keys).
 
+:link:
+
+- P.J.Plauger. [*Standard C/C++: Implementing associative containers*](https://github.com/eugnsp/CUJ/blob/master/15.05/plauger/plauger.md) – C/C++ Users Journal **15** (1997)
+
 #### `std::set`
 
 :link:
