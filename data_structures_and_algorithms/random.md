@@ -30,6 +30,7 @@ For cryptographically secure random number generation see [*Random numbers gener
 :link:
 
 - [*Xorshift*](https://en.wikipedia.org/wiki/Xorshift) – Wikipedia
+- M.Marini. [*A class hierarchy for random number generation*](https://github.com/eugnsp/CUJ/blob/master/14.10/marini/marini.md) – C/C++ Users Journal **14** (1996)
 
 ---
 

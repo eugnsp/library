@@ -223,6 +223,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 :link:
 
+- D.Saks. [*The column that needs a name: Understanding C++ declarations*](https://github.com/eugnsp/CUJ/blob/master/14.01/saks/saks.md) – C/C++ Users Journal **14** (1996)
 - D.Anderson. [*The “clockwise/spiral rule”*](http://c-faq.com/decl/spiral.anderson.html)
 - T.Parr. [*How to read C declarations*](https://parrt.cs.usfca.edu/doc/how-to-read-C-declarations.html)
 - [C gibberish <-> English](https://cdecl.org/)

@@ -706,6 +706,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 :link:
 
 - J.Wakely. [*C++ antipatterns*](https://accu.org/journals/overload/24/134/wakely_2271/) – [Overload **134**](https://accu.org/journals/overload/overload134) (2016)
+- R.B.Doe. [*How to leak memory in C++*](https://github.com/eugnsp/CUJ/blob/master/15.03/doe/doe.md) – C/C++ Users Journal **15** (1997)
 
 :movie_camera:
 
