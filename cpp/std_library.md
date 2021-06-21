@@ -42,6 +42,7 @@
 	- [`std::stringstream`](#stdstringstream)
 	- [`std::ios_base::Init`](#stdios_baseinit)
 - [Iterators](#iterators)
+	- [Reverse iterators](#reverse-iterators)
 - [Ranges](#ranges)
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
@@ -493,6 +494,8 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 ## Iterators
 
+See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_idioms.md#iterator).
+
 :link:
 
 - K.Kreft, A.Langer. [*Iterators in the Standard C++ library*](https://web.archive.org/web/20050308162147/http://www.langer.camelot.de/Articles/C++Report/IteratorsInStdlib/IteratorsInStdlib.html) – C++ Report (1996)
@@ -501,12 +504,21 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [*Why use iterators instead of array indices?*](https://stackoverflow.com/q/131241) – Stack Overflow
 - [*Iterator loop vs index loop*](https://stackoverflow.com/q/14373934) – Stack Overflow
-- [*Iterator vs reverse iterator*](https://stackoverflow.com/q/889262) – Stack Overflow
 - [*Why is `std::iterator` deprecated?*](https://stackoverflow.com/q/43268146) – Stack Overflow
 
 :movie_camera:
 
 - C.Carter. [*Iterator haiku*](https://www.youtube.com/watch?v=rZs9ndzGB_8) – CppCon (2016)
+
+:anchor:
+
+- [*Boost.Iterator: The iterator library*](https://www.boost.org/doc/libs/release/libs/iterator/doc/html/index.html)
+
+### Reverse iterators
+
+:grey_question:
+
+- [*Iterator vs reverse iterator*](https://stackoverflow.com/q/889262) – Stack Overflow
 
 ---
 

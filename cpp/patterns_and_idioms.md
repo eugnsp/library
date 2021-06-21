@@ -18,38 +18,40 @@
 	- [Unit tests](#unit-tests)
 		- [Seams](#seams)
 - [Patterns and idioms](#patterns-and-idioms)
-	- [Creational patterns](#creational-patterns)
-		- [Abstract factory](#abstract-factory)
-		- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
-		- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
-		- [Singleton](#singleton)
-	- [Structural patterns](#structural-patterns)
-	- [Behavioural patterns](#behavioural-patterns)
-		- [Template method](#template-method)
-	- [Adapter](#adapter)
-	- [Barton–Nackman trick](#bartonnackman-trick)
-	- [Bridge and pimpl](#bridge-and-pimpl)
-	- [Builder](#builder)
-	- [Chain-of-responsibility](#chain-of-responsibility)
-	- [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
-	- [Curiously recurring template](#curiously-recurring-template)
-	- [Double-checked locking](#double-checked-locking)
-	- [Execute-around](#execute-around)
-		- [Execute-around object (RAII)](#execute-around-object-raii)
-		- [Execute-around proxy](#execute-around-proxy)
-		- [Execute-around pointer](#execute-around-pointer)
-		- [Execute-around function](#execute-around-function)
-	- [Expression templates](#expression-templates)
-	- [Flyweight](#flyweight)
-	- [Infinite loop](#infinite-loop)
-	- [Observer](#observer)
-	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
-	- [Passkey](#passkey)
-	- [Strategy / Policy](#strategy--policy)
-	- [Type erasure](#type-erasure)
-	- [Visitor](#visitor)
-	- [Local buffer optimization](#local-buffer-optimization)
-	- [Nifty counter](#nifty-counter)
+- [Creational patterns](#creational-patterns)
+	- [Abstract factory](#abstract-factory)
+	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
+	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
+	- [Singleton](#singleton)
+- [Structural patterns](#structural-patterns)
+- [Behavioural patterns](#behavioural-patterns)
+	- [Iterator](#iterator)
+		- [Transform iterators](#transform-iterators)
+	- [Template method](#template-method)
+- [Adapter](#adapter)
+- [Barton–Nackman trick](#bartonnackman-trick)
+- [Bridge and pimpl](#bridge-and-pimpl)
+- [Builder](#builder)
+- [Chain-of-responsibility](#chain-of-responsibility)
+- [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
+- [Curiously recurring template](#curiously-recurring-template)
+- [Double-checked locking](#double-checked-locking)
+- [Execute-around](#execute-around)
+	- [Execute-around object (RAII)](#execute-around-object-raii)
+	- [Execute-around proxy](#execute-around-proxy)
+	- [Execute-around pointer](#execute-around-pointer)
+	- [Execute-around function](#execute-around-function)
+- [Expression templates](#expression-templates)
+- [Flyweight](#flyweight)
+- [Infinite loop](#infinite-loop)
+- [Observer](#observer)
+- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
+- [Passkey](#passkey)
+- [Strategy / Policy](#strategy--policy)
+- [Type erasure](#type-erasure)
+- [Visitor](#visitor)
+- [Local buffer optimization](#local-buffer-optimization)
+- [Nifty counter](#nifty-counter)
 - [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
 	- [Go to](#go-to)
 	- [Duff’s device](#duffs-device)
@@ -299,13 +301,15 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 
-### Creational patterns
+---
+
+## Creational patterns
 
 :link:
 
 - [*Creational pattern*](https://en.wikipedia.org/wiki/Creational_pattern) – Wikipedia
 
-#### Abstract factory
+### Abstract factory
 
 > The abstract factory pattern provides an interface for creating related or dependent objects without specifying the objects’ concrete classes.
 
@@ -313,7 +317,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 <!-- - App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004) -->
 
-#### Factory method / Virtual constructor
+### Factory method / Virtual constructor
 
 > Factory method pattern allows a class to defer instantiation to subclasses.
 
@@ -321,13 +325,13 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - Ch. 13: *Virtual constructors and factories* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
-#### In-place factory, typed in-place factory
+### In-place factory, typed in-place factory
 
 :link:
 
 - [*Boost.Optional: In-place factories*](https://www.boost.org/doc/libs/1_72_0/libs/optional/doc/html/boost_optional/tutorial/in_place_factories.html)
 
-#### Singleton
+### Singleton
 
 > The singleton pattern ensures that a class has one instance and provides a global point of access to that instance. It is useful when exactly one object is needed to coordinate actions across the system.
 > ```cpp
@@ -362,19 +366,37 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
 - Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
+---
 
+## Structural patterns
 
+---
 
-### Structural patterns
+## Behavioural patterns
 
+### Iterator
 
-### Behavioural patterns
+See also [*Iterators* – The standard library, Boost, and proposals](std_library.md#iterators).
 
-#### Template method
+#### Transform iterators
+
+> A transform iterator adapts an iterator by modifying the dereference operator to apply a function object to the result of dereferencing the iterator and returning the result.
+
+:link:
+
+- T.Becker. [*Smart iterators and STL*](https://github.com/eugnsp/CUJ/blob/master/16.09/tbecker/tbecker.md) – C/C++ Users Journal **16** (1998)
+
+:anchor:
+
+- [*Transform iterator*](https://www.boost.org/doc/libs/release/libs/iterator/doc/html/iterator/specialized/transform.html) – Boost.Iterator
+
+### Template method
 
 - Ch. 14: *The template method pattern and the non-virtual idiom* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
-### Adapter
+---
+
+## Adapter
 
 :link:
 
@@ -384,7 +406,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
 
-### Barton–Nackman trick
+## Barton–Nackman trick
 
 :link:
 
@@ -395,7 +417,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
 
-### Bridge and pimpl
+## Bridge and pimpl
 
 :link:
 
@@ -410,7 +432,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
 - D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
 
-### Builder
+## Builder
 
 > The builder pattern separates the creation of an object from its representation. It is used to create complex objects that are built in multiple stages:
 > ```cpp
@@ -426,7 +448,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) – Wikipedia
 
-### Chain-of-responsibility
+## Chain-of-responsibility
 
 > The chain-of-responsibility is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.
 
@@ -434,7 +456,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Chain-of-responsibility pattern*](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern) – Wikipedia
 
-### Copy-and-swap / Move-and-swap
+## Copy-and-swap / Move-and-swap
 
 > The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
 > ```cpp
@@ -464,7 +486,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
-### Curiously recurring template
+## Curiously recurring template
 
 > The curiously recurring template pattern (CRTP) is an idiom in which a class `X` derives from a class template using `X` itself as template parameter:
 > ```cpp
@@ -500,7 +522,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - J.O.Coplien. *Curiously recurring template patterns* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 
-### Double-checked locking
+## Double-checked locking
 
 See also [*Multithreading* – Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
@@ -512,13 +534,13 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) – CppCon (2015)
 
-### Execute-around
+## Execute-around
 
 :link:
 
 - K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) – EuroPLoP (2000)
 
-#### Execute-around object (RAII)
+### Execute-around object (RAII)
 
 > Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII). An example of this idiom is provided by standard library [smart pointers](std_library.md#smart-pointers), e.g. by `std::unique_ptr`.
 
@@ -542,11 +564,11 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 <!--Scoped Resource - Generic RAII Wrapper for theStandard Library  https://isocpp.org/files/papers/N3949.pdf -->
 <!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
 
-#### Execute-around proxy
+### Execute-around proxy
 
 > Execute-around proxy idiom applies execute-around object idiom for individual calls on an object.
 
-#### Execute-around pointer
+### Execute-around pointer
 
 > Execute-around pointer idiom defines an execute-around proxy idiom when the actions performed on a target object are the same for all functions.
 
@@ -559,24 +581,23 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 - [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) – WikiBooks
 - [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) – CodeProject (2018)
 
-#### Execute-around function
+### Execute-around function
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
 
-### Expression templates
+## Expression templates
 
 :book:
 
 - T.Veldhuizen. *Expression templates* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
-
-### Flyweight
+## Flyweight
 
 :link:
 
 - [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
 
-### Infinite loop
+## Infinite loop
 
 > ```cpp
 > for (;;) { ... }
@@ -594,13 +615,13 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 - [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
 
-### Observer
+## Observer
 
 <!-- :link: -->
 
 <!-- WRONG? - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016) -->
 
-### Opaque typedef (whole value)
+## Opaque typedef (whole value)
 
 > An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
 > ```cpp
@@ -631,7 +652,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 - W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) – WG21/N3741 (2013)
 - [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) – Boost.Serialization
 
-### Passkey
+## Passkey
 
 :grey_question:
 
@@ -641,7 +662,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 - [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
 
-### Strategy / Policy
+## Strategy / Policy
 
 > The strategy pattern enables run- or compile-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
 
@@ -654,9 +675,9 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 - Ch. 16: *Policy-based design* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 - Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
-### Type erasure
+## Type erasure
 
-### Visitor
+## Visitor
 
 > The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm. It lets one define a new operation without changing the classes of the elements on which it operates.
 > ```cpp
@@ -693,11 +714,9 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 <!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
 <!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
 
-### Local buffer optimization
+## Local buffer optimization
 
-
-
-### Nifty counter
+## Nifty counter
 
 ---
 
