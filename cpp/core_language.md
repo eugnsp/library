@@ -159,6 +159,10 @@
 
 ### Inheritance
 
+:link:
+
+- D.Saks. [*Stepping up to C++: How virtual functions work*](https://github.com/eugnsp/CUJ/blob/master/12.01/saks/saks.md) – C/C++ Users Journal **12** (1994)
+
 :grey_question:
 
 - [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/q/15921372) – Stack Overflow
@@ -442,6 +446,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 ---
 
 ## Dynamic memory
+
+:link:
+
+- D.Saks. [*C++ theory and practice: `new` and `delete`*](https://github.com/eugnsp/CUJ/blob/master/15.01/saks/saks.md) – C/C++ Users Journal **15** (1997)
 
 :grey_question:
 

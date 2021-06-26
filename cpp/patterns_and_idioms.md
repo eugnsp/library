@@ -26,7 +26,7 @@
 - [Structural patterns](#structural-patterns)
 - [Behavioural patterns](#behavioural-patterns)
 	- [Iterator](#iterator)
-		- [Transform iterators](#transform-iterators)
+		- [Transform iterator](#transform-iterator)
 	- [Template method](#template-method)
 - [Adapter](#adapter)
 - [Barton–Nackman trick](#bartonnackman-trick)
@@ -175,6 +175,7 @@
 
 :link:
 
+- S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
 - S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html)
 
 :grey_question:
@@ -251,7 +252,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
-- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141), 24 (2017)
+- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
@@ -378,7 +379,11 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 See also [*Iterators* – The standard library, Boost, and proposals](std_library.md#iterators).
 
-#### Transform iterators
+:link:
+
+- J.M.Curran. [*Creating a word iterator*](https://github.com/eugnsp/CUJ/blob/master/16.08/curran/curran.md) – C/C++ Users Journal **16** (1998)
+
+#### Transform iterator
 
 > A transform iterator adapts an iterator by modifying the dereference operator to apply a function object to the result of dereferencing the iterator and returning the result.
 
@@ -426,6 +431,7 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :grey_question:
 
 - [*Is the pImpl idiom really used in practice?*](https://stackoverflow.com/q/8972588) – Stack Overflow
+- [*Pimpl with smart ptr – Why constructor/destructor needed*](https://stackoverflow.com/q/21699201) – Stack Overflow
 
 :movie_camera:
 

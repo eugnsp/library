@@ -780,6 +780,10 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 > `std::int8_t`, `std::int16_t`, `std::int32_t`, and `std::int64_t` are guaranteed to use 2’s complement to represent negative values. They are provided only if the implementation directly supports the type.
 
+:link:
+
+- S.Ignatchenko. [*C++: On using `int*_t` as overload and template parameters*](http://ithare.com/c-on-using-int_t-as-overload-and-template-parameters/) (2018)
+
 :grey_question:
 
 - [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/q/16138237) – Stack Overflow
