@@ -167,6 +167,14 @@
 
 ---
 
+## Interval trees
+
+:link:
+
+- Y.Dandass. [*Interval trees*](https://github.com/eugnsp/CUJ/blob/master/18.01/dandass/dandass.md) – C/C++ Users Journal **18** (2000)
+
+---
+
 ## Tries
 
 :link:

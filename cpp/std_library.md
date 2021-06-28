@@ -787,7 +787,8 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :grey_question:
 
 - [*When is `uint8_t` ≠ `unsigned char`?*](https://stackoverflow.com/q/16138237) – Stack Overflow
-- [`size_t` vs `uintptr_t`](https://stackoverflow.com/questions/1464174) – Stack Overflow
+- [*`size_t` vs `uintptr_t`*](https://stackoverflow.com/questions/1464174) – Stack Overflow
+- [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
 
 ### Uninitialized storage
 

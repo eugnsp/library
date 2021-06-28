@@ -797,7 +797,6 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
 - [*Why does this loop produce “warning: iteration `3u` invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
-- [*Is `intmax_t` the same as `long long int`?*](https://stackoverflow.com/q/20459513) – Stack Overflow
 - [*Does a `long` ban make sense?*](https://softwareengineering.stackexchange.com/q/317670) – Software Engineering
 
 :movie_camera:

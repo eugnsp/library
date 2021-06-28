@@ -28,20 +28,22 @@
 	- [Iterator](#iterator)
 		- [Transform iterator](#transform-iterator)
 	- [Template method](#template-method)
+- [Metaprogramming patterns](#metaprogramming-patterns)
+	- [Curiously recurring template](#curiously-recurring-template)
+	- [Expression templates](#expression-templates)
+	- [Barton–Nackman trick](#bartonnackman-trick)
+	- [Shim class](#shim-class)
 - [Adapter](#adapter)
-- [Barton–Nackman trick](#bartonnackman-trick)
 - [Bridge and pimpl](#bridge-and-pimpl)
 - [Builder](#builder)
 - [Chain-of-responsibility](#chain-of-responsibility)
 - [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
-- [Curiously recurring template](#curiously-recurring-template)
 - [Double-checked locking](#double-checked-locking)
 - [Execute-around](#execute-around)
 	- [Execute-around object (RAII)](#execute-around-object-raii)
 	- [Execute-around proxy](#execute-around-proxy)
 	- [Execute-around pointer](#execute-around-pointer)
 	- [Execute-around function](#execute-around-function)
-- [Expression templates](#expression-templates)
 - [Flyweight](#flyweight)
 - [Infinite loop](#infinite-loop)
 - [Observer](#observer)
@@ -177,11 +179,16 @@
 
 - S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
 - S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html)
+- S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
 
 :grey_question:
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
+
+:movie_camera:
+
+- K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
 :anchor:
 
@@ -401,17 +408,50 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 
 ---
 
-## Adapter
+## Metaprogramming patterns
+
+### Curiously recurring template
+
+> The curiously recurring template pattern (CRTP) is an idiom in which a class `X` derives from a class template using `X` itself as template parameter:
+> ```cpp
+> template<class Derived>
+> class Base {
+>   private:
+>     friend Derived;
+>     Base();
+>   public:
+>     void foo() { static_cast<Derived*>(this)->foo(); }
+> };
+>
+> class X : public Base<X> {
+>   public:
+>     void foo();
+> }
+> ```
 
 :link:
 
-- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) – Wikipedia
+- [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
+- A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/journals/overload/13/70/nasonov_296/) – [Overload **70**](https://accu.org/journals/overload/overload70) (2005)
+- J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
 
-:movie_camera:
+:grey_question:
 
-- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
+- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
+- [*CRTP with protected derived member*](https://stackoverflow.com/q/8523762) – Stack Overflow
 
-## Barton–Nackman trick
+:book:
+
+- Ch. 8: *The curiously recurring template pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- J.O.Coplien. *Curiously recurring template patterns* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
+### Expression templates
+
+:book:
+
+- T.Veldhuizen. *Expression templates* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
+### Barton–Nackman trick
 
 :link:
 
@@ -421,6 +461,24 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :book:
 
 - Sec. 21.2.1: *The Barton–Nackman trick* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) (2017)
+
+### Shim class
+
+:link:
+
+- D.Reichard. [*Shim classes*](https://github.com/eugnsp/CUJ/blob/master/18.02/reichard/reichard.md) – C/C++ Users Journal **18** (2000)
+
+---
+
+## Adapter
+
+:link:
+
+- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) – Wikipedia
+
+:movie_camera:
+
+- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
 
 ## Bridge and pimpl
 
@@ -492,42 +550,6 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 
 - Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
-## Curiously recurring template
-
-> The curiously recurring template pattern (CRTP) is an idiom in which a class `X` derives from a class template using `X` itself as template parameter:
-> ```cpp
-> template<class Derived>
-> class Base {
->   private:
->     friend Derived;
->     Base();
->   public:
->     void foo() { static_cast<Derived*>(this)->foo(); }
-> };
->
-> class X : public Base<X> {
->   public:
->     void foo();
-> }
-> ```
-
-:link:
-
-- [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
-- A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/journals/overload/13/70/nasonov_296/) – [Overload **70**](https://accu.org/journals/overload/overload70) (2005)
-- J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
-
-:grey_question:
-
-- [*What is the curiously recurring template pattern?*](https://stackoverflow.com/q/4173254) – Stack Overflow
-- [*CRTP with protected derived member*](https://stackoverflow.com/q/8523762) – Stack Overflow
-
-:book:
-
-- Ch. 8: *The curiously recurring template pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
-- J.O.Coplien. *Curiously recurring template patterns* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
-
-
 ## Double-checked locking
 
 See also [*Multithreading* – Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
@@ -590,12 +612,6 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 ### Execute-around function
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
-
-## Expression templates
-
-:book:
-
-- T.Veldhuizen. *Expression templates* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 ## Flyweight
 
