@@ -20,9 +20,11 @@
 	- [Sorting by swapping](#sorting-by-swapping)
 		- [Adjacent swaps](#adjacent-swaps)
 		- [Arbitrary swaps](#arbitrary-swaps)
-- [Other algorithms](#other-algorithms)
+- [Other sorting algorithms](#other-sorting-algorithms)
 	- [Pancake sorting](#pancake-sorting)
 	- [Spreadsort](#spreadsort)
+- [Searching](#searching)
+	- [Binary search](#binary-search)
 
 ---
 
@@ -376,13 +378,13 @@
 
 ---
 
-# Searching
+## Searching
 
 :book:
 
 - Col. 13: *Searching* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
 
-## Binary search
+### Binary search
 
 See also [*Binary search* – Algorithm analysis](algorithm_analysis.md#binary-search).
 

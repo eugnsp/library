@@ -16,6 +16,7 @@
 - [Programming languages](#programming-languages)
 	- [Algol](#algol)
 	- [C](#c)
+	- [Pascal](#pascal)
 - [Operating systems](#operating-systems)
 	- [Linux](#linux)
 - [Automated theorem proving](#automated-theorem-proving)
@@ -195,7 +196,7 @@
 
 :page_facing_up:
 
-- B.W.Kernighan. [*Why Pascal is not my favorite programming language*](https://www.lysator.liu.se/c/bwk-on-pascal.html) – Computer Science Technical Report **100* (1981)
+- B.W.Kernighan. [*Why Pascal is not my favorite programming language*](https://www.lysator.liu.se/c/bwk-on-pascal.html) – Computer Science Technical Report **100** (1981)
 - A.N.Habermann. [*Critical comments on the programming language Pascal*](https://figshare.com/articles/journal_contribution/Critical_comments_on_the_programming_language_PASCAL/6604568/files/12094973.pdf) – [Acta Informatica **3**, 47](https://doi.org/10.1007/BF00288652) (1973)
 
 :anchor:

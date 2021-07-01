@@ -343,7 +343,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### `using`
 
-:grey_question
+:grey_question:
 
 - [*A `using` statement compiles with g++, fails compilation with clang*](https://stackoverflow.com/q/27954940) – Stack Overflow
 
@@ -741,7 +741,11 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) – [Overload **147**](https://accu.org/journals/overload/overload150), 10 (2018)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) – [Overload **147**](https://accu.org/journals/overload/overload147) (2018)
+
+:movie_camera:
+
+- W.E.Brown. [*A C++20 preview: `operator<=>`*](https://www.youtube.com/watch?v=_PKpyD6Ba1s) – CppCon (2017)
 
 :anchor:
 

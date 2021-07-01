@@ -32,6 +32,8 @@
 	- [Container adaptors](#container-adaptors)
 		- [`std::stack`](#stdstack)
 		- [`std::queue`](#stdqueue)
+	- [Views](#views)
+		- [`std::span`](#stdspan)
 	- [Transparent comparators](#transparent-comparators)
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
 - [Exceptions](#exceptions)
@@ -71,6 +73,7 @@
 		- [`std::is_trivial*`](#stdis_trivial)
 - [Utilities](#utilities)
 	- [Function objects](#function-objects)
+		- [`std::reference_wrapper`](#stdreference_wrapper)
 	- [`std::initializer_list`](#stdinitializer_list)
 	- [Pairs and tuples](#pairs-and-tuples)
 	- [Sum types](#sum-types)
@@ -78,6 +81,7 @@
 		- [`std::variant`](#stdvariant)
 		- [`(std::)expected`](#stdexpected)
 	- [`std::launder`](#stdlaunder)
+- [Date and time utilities](#date-and-time-utilities)
 - [Filesystem](#filesystem)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [C standard library](#c-standard-library)
@@ -340,12 +344,22 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 #### `std::string_view`
 
+> The class template `std::basic_string_view` describes an object that can refer to a constant contiguous sequence of `char`-like objects.
+
 :link:
 
+- [TotW #1: *`string_view`*](https://abseil.io/tips/1) – Abseil C++ Tips (2020)
 - J.Miller. [*C++ `std::string_view` for better performance: An example use case*](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
+- A.O’Dwyer. [*`std::string_view` is a borrow type*](https://quuxplusone.github.io/blog/2018/03/27/string-view-is-a-borrow-type/) (2018)
+- J.M&uuml;ller. [*`std::string_view` accepting temporaries: good idea or horrible pitfall?*](https://www.foonathan.net/2017/03/string_view-temporary/) (2017)
+
+:grey_question:
+
+- [*How exactly is `std::string_view` faster than `const std::string&`?*](https://stackoverflow.com/q/40127965) – Stack Overflow
 
 :movie_camera:
 
+- V.Ciura [*Enough `string_view` to hang ourselves*](https://www.youtube.com/watch?v=xwP4YCP_0q0) – CppCon (2018)
 - M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) – CppCon (2015)
 - N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) – CppCon (2015)
 
@@ -406,6 +420,34 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :grey_question:
 
 - [*Why doesn’t `std::queue::pop` return value?*](https://stackoverflow.com/q/25035691) – Stack Overflow
+
+### Views
+
+#### `std::span`
+
+> The class template `std::span` describes an object that can refer to a contiguous sequence of objects with the first element of the sequence at position zero. A span can either have a static extent or a dynamic extent.
+
+:link:
+
+- B.Revzin. [*Should span be regular?*](https://medium.com/@barryrevzin/should-span-be-regular-6d7e828dd44) (2018)
+
+:grey_question:
+
+- [*What is a “span” and when should I use one?*](https://stackoverflow.com/q/45723819) – Stack Overflow
+
+:movie_camera:
+
+- V.Ciura. [*A short life `span<>` for a regular mess*](https://www.youtube.com/watch?v=J02S50z5zEo) – CppCon (2019)
+
+:anchor:
+
+- [*`std::span`*](https://en.cppreference.com/w/cpp/container/span) – C++ reference
+- N.MacIntosh, S.T.Lavavej. [*`span`: bounds-safe views for sequences of objects*](https://wg21.link/p0122) – WG21/P0122
+- C.Jabot, C.Carter. [*Range constructor for `std::span`*](https://wg21.link/p1394) – WG21/P1394
+- T.Van Eerd. [*Should `span` be regular?*](https://wg21.link/p1085) – WG21/P1085
+- T.Brindle. [*Usability enhancements for `std::span`*](https://wg21.link/p1024) – WG21/P1024
+- J.Brown. [*Signed `ssize()` functions, unsigned `size()` functions*](https://wg21.link/p1227) – WG21/P1227
+- R.Douglas, N.Liber, M.Clow. [*Sizes should only `​span​` unsigned*](https://wg21.link/p1089) – WG21/P1089
 
 ### Transparent comparators
 
@@ -725,6 +767,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :link:
 
 - M.E.O’Neill. [*Everything you never wanted to know about C++’s `random_device`*](http://www.pcg-random.org/posts/cpps-random_device.html) – PCG (2015)
+- M.E.O’Neill. [*C++ seeding surprises*](https://www.pcg-random.org/posts/cpp-seeding-surprises.html) – PCG (2015)
 
 :grey_question:
 
@@ -737,7 +780,14 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :movie_camera:
 
 - A.Weis. [*Random numbers are hard*](https://www.youtube.com/watch?v=WDScnjQwEK8) – Meeting C++ (2019)
+- W.E.Brown. [*What C++ programmers need to know about header `<random>`*](https://www.youtube.com/watch?v=6DPkyvkMkk8) – CppCon (2016)
 - S.T.Lavavej. [*`rand()` considered harmful*](https://www.youtube.com/watch?v=LDPMpc-ENqY) – GoingNative (2013)
+
+:anchor:
+
+- M.Klammler. [*Efficient seeding of random number engines*](https://wg21.link/p0205) – WG21/P0205
+- M.Paterno. [*On random-number distributions for C++0x*](https://wg21.link/n1588) – WG21/N1588
+<!-- http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2003/n1452.html -->
 
 ---
 
@@ -855,6 +905,18 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - S.T.Lavavej. [*`<functional>`: What’s new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) – CppCon (2015)
 
+#### `std::reference_wrapper`
+
+`std::reference_wrapper` is a class template that wraps a reference in a copyable, assignable object; it can be used as a mechanism to store references inside standard containers, which cannot normally hold references.
+
+:movie_camera:
+
+- Z.Yuan. [*The many shades of `reference_wrapper`*](https://www.youtube.com/watch?v=EKJMZCL00Ak) - CppCon (2020)
+
+:anchor:
+
+- [*`std::reference_wrapper`*](https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper) – C++ reference
+
 ### `std::initializer_list`
 
 > An object of type `std::initializer_list<T>` is a lightweight proxy object that provides access to an array of objects of type `const T`.
@@ -955,6 +1017,18 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 :anchor:
 
 - [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) – C++ reference
+
+---
+
+## Date and time utilities
+
+:movie_camera:
+
+- H.Hinnant. [*A `<chrono>` tutorial*](https://www.youtube.com/watch?v=P32hvk8b13M) – CppCon (2016)
+
+:anchor:
+
+- [*Date and time utilities*](https://en.cppreference.com/w/cpp/chrono) – C++ reference
 
 ---
 

@@ -7,7 +7,8 @@
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
 		- [Comments](#comments)
-	- [Class design](#class-design)
+	- [Type design](#type-design)
+	- [Object-oriented design](#object-oriented-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
 		- [Interface segregation principle](#interface-segregation-principle)
 	- [Interface design](#interface-design)
@@ -126,8 +127,24 @@
 :link:
 
 - K.Henney. [*Comment only what the code cannot say*](https://accu.org/journals/overload/28/157/henney_2796/) – [Overload **157**](https://accu.org/journals/overload/overload157) (2020)
+- J.Atwood. [*Coding without comments*](https://blog.codinghorror.com/coding-without-comments/) (2008)
 
-### Class design
+:movie_camera:
+
+- W.E.Brown. [*Whitespace <= comments << code*](https://www.youtube.com/watch?v=NLebZ3XT92E) – CppCon (2017)
+
+### Type design
+
+:link:
+
+
+:movie_camera:
+
+- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=h60zqdzIelE) – CppCon (2018)
+- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=OMhzlcBl9Hc) – ACCU (2019)
+- A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
+
+### Object-oriented design
 
 <!-- > SOLID are the five principles of class design:
 >
@@ -235,7 +252,8 @@
 
 :movie_camera:
 
-- A.Schödl. [*A practical approach to error handling](https://www.youtube.com/watch?v=CFwwBMcuG6U) – Meeting C++ (2014)
+- W.E.Brown. [*Communicating via diagnostics: Observations and tips for authors*](https://www.youtube.com/watch?v=GNhwzTlcDp0) – CppCon (2018)
+- A.Sch&ouml;dl. [*A practical approach to error handling](https://www.youtube.com/watch?v=CFwwBMcuG6U) – Meeting C++ (2014)
 
 <!-- * A.Alexandrescu. [*Systematic error handling in C++*](https://www.youtube.com/watch?v=kaI4R0Ng4E8&t=570) – C++ and Beyond (2012) -->
 
@@ -753,6 +771,7 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 - J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=RgTFO1D3bSU) – code::dive (2019)
 - L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
+- V.Ciura. [*10 things junior C++ devs don’t get*](https://www.youtube.com/watch?v=dSSIXKe6iXE) – CppCon (2017)
 - B.Kernighan. [*Elements of programming style*](https://www.youtube.com/watch?v=8SUkrR7ZfTA) – Princeton University (2009)
 
 :book:
