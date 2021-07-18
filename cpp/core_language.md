@@ -18,6 +18,7 @@
 	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
+	- [`decltype`](#decltype)
 	- [Elaborated type specifier](#elaborated-type-specifier)
 	- [`friend`](#friend)
 		- [Friend function templates](#friend-function-templates)
@@ -39,6 +40,7 @@
 - [Expressions](#expressions)
 	- [`nullptr`](#nullptr)
 	- [Compound literals](#compound-literals)
+	- [User-defined literals](#user-defined-literals)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
 		- [`dynamic_cast`](#dynamic_cast)
@@ -296,10 +298,23 @@ See also [*Layout* – Class types](#layout).
 - [*Why do we need to mark functions as `constexpr`?*](https://stackoverflow.com/q/14472359) – Stack Overflow
 - [*Detecting `constexpr` with SFINAE*](https://stackoverflow.com/q/15232758) – Stack Overflow
 - [*Should I mark a compiler-generated constructor as `constexpr`?*](https://stackoverflow.com/q/20810378) – Stack Overflow
+- [*Why disallow `goto` in `constexpr` functions?*](https://stackoverflow.com/q/45266577) – Stack Overflow
 
 :movie_camera:
 
 - S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) – CppCon (2015)
+
+### `decltype`
+
+> The `decltype` specifier inspects the declared type of an entity or the type and value category of an expression.
+
+:link:
+
+- A.O’Dwyer. [*`decltype` of a non-static member*](https://quuxplusone.github.io/blog/2021/02/10/decltype-of-member/) (2021)
+
+:anchor:
+
+- [*`decltype` specifier*](https://en.cppreference.com/w/cpp/language/decltype) – C++ reference
 
 ### Elaborated type specifier
 
@@ -517,6 +532,8 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ### Compound literals
 
+> A compound literal constructs an unnamed object of specified type in-place: `( type ) { initializer-list }`.
+
 :link:
 
 - R.Meyers. [*The new C: Compound literals*](https://www.drdobbs.com/the-new-c-compound-literals/184401404) – Dr.Dobb’s Journal (2001)
@@ -527,7 +544,19 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :anchor:
 
-[*Compound literals*](https://en.cppreference.com/w/c/language/compound_literal) – C++ reference
+- [*Compound literals*](https://en.cppreference.com/w/c/language/compound_literal) – C++ reference
+
+### User-defined literals
+
+> A user-defined literal (UDL) allows integer, floating-point, character, and string literals to produce objects of user-defined type by defining a user-defined suffix.
+
+:link:
+
+- A.O’Dwyer. [*Namespaces for UDLs*](https://quuxplusone.github.io/blog/2018/03/21/namespaces-for-udls/) (2018)
+
+:anchor:
+
+- [*User-defined literals*](https://en.cppreference.com/w/cpp/language/user_literal) – C++ reference
 
 ### Order of evaluation
 
@@ -624,6 +653,8 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 - A.O’Dwyer. [*What is ADL?*](https://quuxplusone.github.io/blog/2019/04/26/what-is-adl/) (2019)
 - A.O’Dwyer. [*ADL insanity*](https://quuxplusone.github.io/blog/2019/04/08/adl-insanity/) (2019)
 - A.O’Dwyer. [*How `hana::type<T>` “disables ADL”*](https://quuxplusone.github.io/blog/2019/04/09/adl-insanity-round-2/) (2019)
+- A.O’Dwyer. [*Avoid ADL calls to functions with common names*](https://quuxplusone.github.io/blog/2018/06/17/std-size/) (2018)
+- A.O’Dwyer. [*WG21: Avoid creating ADL situations on functions with semi-common names*](https://quuxplusone.github.io/blog/2018/11/04/std-hash-value/) (2018)
 
 :grey_question:
 

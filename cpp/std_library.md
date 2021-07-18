@@ -67,11 +67,13 @@
 		- [`std::nullptr_t`](#stdnullptr_t)
 	- [Fixed-width integer types](#fixed-width-integer-types)
 	- [Uninitialized storage](#uninitialized-storage)
+	- [`std::byte`](#stdbyte)
 	- [Type traits](#type-traits)
 		- [`std::is_class`](#stdis_class)
 		- [`std::is_base_of`](#stdis_base_of)
 		- [`std::is_trivial*`](#stdis_trivial)
 - [Utilities](#utilities)
+	- [Integer comparison functions](#integer-comparison-functions)
 	- [Function objects](#function-objects)
 		- [`std::reference_wrapper`](#stdreference_wrapper)
 	- [`std::initializer_list`](#stdinitializer_list)
@@ -81,6 +83,7 @@
 		- [`std::variant`](#stdvariant)
 		- [`(std::)expected`](#stdexpected)
 	- [`std::launder`](#stdlaunder)
+	- [`std::source_location`](#stdsource_location)
 - [Date and time utilities](#date-and-time-utilities)
 - [Filesystem](#filesystem)
 - [Tricks and subtleties](#tricks-and-subtleties)
@@ -401,6 +404,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 - [*`std::hash`*](https://en.cppreference.com/w/cpp/utility/hash) – C++ reference
 - [*C++ named requirements: Hash*](https://en.cppreference.com/w/cpp/named_req/Hash) – C++ reference
+- W.E.Brown. [*Adjuncts to `std::hash`*](https://wg21.link/p0549) – WG21/P0549
 
 ### Container adaptors
 
@@ -464,6 +468,20 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 ### Signedness vs unsignedness of size
 
+:link:
+
+- [*unsigned integers*](https://blog.libtorrent.org/2016/05/unsigned-integers/) – libtorrent blog (2016)
+- D.Crocker. [*Danger – unsigned types used here!*](https://critical.eschertech.com/2010/04/07/danger-unsigned-types-used-here/) (2010)
+
+:grey_question:
+
+- [*Why is `std::ssize()` introduced in C++20?*](https://stackoverflow.com/q/56217283) – Stack Overflow
+- [*Why are unsigned integers error prone?*](https://stackoverflow.com/q/30395205) – Stack Overflow
+
+:movie_camera:
+
+- J.Kalb. [*`unsigned`: A guideline for better code*](https://www.youtube.com/watch?v=wvtFGa6XJDU) – CppCon (2016)
+
 :anchor:
 
 - J.Brown. [*Signed `ssize()` functions, unsigned `size()` functions*](https://wg21.link/p1227) – WG21/P1227
@@ -481,7 +499,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :grey_question:
 
-- [`tellg()` function give wrong size of file?](https://stackoverflow.com/q/22984956) – Stack Overflow
+- [*`tellg()` function give wrong size of file?*](https://stackoverflow.com/q/22984956) – Stack Overflow
 - [*Why does `std::getline()` skip input after a formatted extraction?*](https://stackoverflow.com/q/21567291) – Stack Overflow
 - [*Who architected/designed C++’s IO Streams, and would it still be considered well-designed by today’s standards?*](https://stackoverflow.com/q/2753060) – Stack Overflow
 
@@ -611,6 +629,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 :link:
 
 - [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
+- A.O’Dwyer. [*In praise of `make_unique`*](https://quuxplusone.github.io/blog/2018/05/26/the-versatile-make-unique/) (2018)
 - H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
 - Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
 
@@ -853,6 +872,13 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - C.J.Johnson. [*Deprecate `std::aligned_storage` and `std::aligned_union`*](https://wg21.link/p1413) – WG21/P1413
 
+### `std::byte`
+
+:anchor:
+
+- [*`std::byte`*](https://en.cppreference.com/w/cpp/types/byte) – C++ reference
+- N.MacIntosh. [*A byte type for increased type safety*](https://wg21.link/p0257) – WG21/P0257
+
 ### Type traits
 
 See also [*Type traits* – Templates](templates.md#type-traits).
@@ -894,6 +920,15 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 :link:
 
 - [*Utility library*](https://en.cppreference.com/w/cpp/utility) – C++ reference
+
+### Integer comparison functions
+
+Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_less`, `std::cmp_greater`, `std::cmp_less_equal`, `std::cmp_greater_equal` compare the values of two integers; unlike builtin comparison operators, negative signed integers always compare *less than* (and not *equal to*) unsigned integers: the comparison is safe against lossy integer conversion.
+
+:anchor:
+
+- [*Integer comparison functions*](https://en.cppreference.com/w/cpp/utility/intcmp) – C++ reference
+- F.Kircheis. [*Safe integral comparisons*](https://wg21.link/p0586) – WG21/P0586
 
 ### Function objects
 
@@ -1018,17 +1053,35 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - [*`std::launder`*](https://en.cppreference.com/w/cpp/utility/launder) – C++ reference
 
+### `std::source_location`
+
+:grey_question:
+
+- [*`std::experimental::source_location` at compile time*](https://stackoverflow.com/q/52977593) – Stack Overflow
+- [*How to use source_location in a variadic template function?*](https://stackoverflow.com/q/57547273) – Stack Overflow
+
+:anchor:
+
+- [*`std::source_location`*](https://en.cppreference.com/w/cpp/utility/source_location) – C++ reference
+- R.Douglas, C.Jabot, D.Kr&uuml;gler, P.Sommerlad. [*Adopt `source_location` for C++20*](https://wg21.link/p1208) – WG21/P1208
+
 ---
 
 ## Date and time utilities
 
+:link:
+
+- [*Accepting `std::chrono::duration` of any representation/period*](https://stackoverflow.com/q/22362717) – Stack Overflow
+
 :movie_camera:
 
 - H.Hinnant. [*A `<chrono>` tutorial*](https://www.youtube.com/watch?v=P32hvk8b13M) – CppCon (2016)
+- H.Hinnant. [*A C++14 approach to dates and times*](https://www.youtube.com/watch?v=tzyGjOm8AKo) – CppCon (2015)
 
 :anchor:
 
 - [*Date and time utilities*](https://en.cppreference.com/w/cpp/chrono) – C++ reference
+- H.E.Hinnant, W.E.Brown, J.Garland, M.Paterno. [*A foundation to sleep on: Clocks, points in time, and time durations*](https://wg21.link/n2661) – WG21/N2661
 
 ---
 

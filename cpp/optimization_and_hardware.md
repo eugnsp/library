@@ -24,6 +24,7 @@
 	- [Empty base class optimization](#empty-base-class-optimization)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Tail call optimisation](#tail-call-optimisation)
+	- [Devirtualization](#devirtualization)
 	- [Undefined behavior](#undefined-behavior)
 		- [Infinite loops](#infinite-loops)
 		- [Strict aliasing rule](#strict-aliasing-rule)
@@ -303,7 +304,12 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :link:
 
+- A.O’Dwyer. [*It’s not always obvious when tail-call optimization is allowed*](https://quuxplusone.github.io/blog/2021/01/09/tail-call-optimization/) (2021)
 - A.Balaam. [*Tail call optimisation in C++*](https://accu.org/journals/overload/20/109/balaam_1914/) – [Overload **109**](https://accu.org/journals/overload/overload109) (2012)
+
+### Devirtualization
+
+- A.O’Dwyer. [*When can the C++ compiler devirtualize a call?*](https://quuxplusone.github.io/blog/2021/02/15/devirtualization/) (2021)
 
 ### Undefined behavior
 

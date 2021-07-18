@@ -79,7 +79,8 @@
 
 :link:
 
-- [*The architecture of open source applications*](https://www.aosabook.org/en/index.html)
+- B.Stroustrup. [*Remember the Vasa!*](https://www.stroustrup.com/P0977-remember-the-vasa.pdf) – WG21/P0977
+- A.O’Dwyer. [*Remember the `ifstream`*](https://quuxplusone.github.io/blog/2018/11/26/remember-the-ifstream/) (2018)
 - [*Hyrum’s law*](https://www.hyrumslaw.com/)
 
 :grey_question:
@@ -93,6 +94,7 @@
 
 :book:
 
+- [*The architecture of open source applications*](https://www.aosabook.org/en/index.html)
 - Holub A.I. *Enough rope to shoot yourself in the foot* (1995)
 
 ### Style and guidelines
@@ -114,6 +116,7 @@
 
 :movie_camera:
 
+- A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
 - B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
 - H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
 
@@ -165,6 +168,7 @@
 
 :movie_camera:
 
+- T.Van Eerd. [*Keynote: SOLID, revisited*](https://www.youtube.com/watch?v=glYq-dvgby4) – C++Now (2021)
 - J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2018)
 - S.Parent. [*Inheritance is the base class of evil*](https://www.youtube.com/watch?v=bIhUE5uUFOA) – GoingNative (2013)
 - K.Henney. [*The SOLID design principles deconstructed*](https://www.youtube.com/watch?v=tMW08JkFrBA) – YOW! (2013)
@@ -197,6 +201,7 @@
 - S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
 - S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
+- S.Meyers. [*Signed and unsigned types in interfaces*](https://www.aristeia.com/Papers/C++ReportColumns/sep95.pdf) – C++ Report (1995)
 
 :grey_question:
 
