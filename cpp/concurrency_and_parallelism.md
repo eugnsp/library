@@ -89,6 +89,10 @@
 - A.Williams. [*Multi-threading in C++0x*](https://accu.org/journals/overload/17/93/williams_1584/) – [Overload **93**](https://accu.org/journals/overload/overload93) (2009)
 - [*C++11 standard library extensions: Concurrency*](https://isocpp.org/wiki/faq/cpp11-library-concurrency) – Standard C++ Foundation
 
+:movie_camera:
+
+- A.O’Dwyer. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=F6Ipn7gCOsY) – CppCon (2020)
+
 #### `std::atomic`
 
 :grey_question:
@@ -109,11 +113,11 @@
 
 > The `std::condition_variable` is a synchronization primitive that can be used to block a thread, or multiple threads at the same time, until another thread both modifies a shared variable (the condition), and notifies the `std::condition_variable`.
 
-:memo:
+:grey_question:
 
-- Even if the shared variable is atomic, it must be modified under the mutex in order to correctly publish the modification to the waiting thread.
+- [*Shared atomic variable is not properly published if it is not modified under mutex*](https://stackoverflow.com/q/38147825) – Stack Overflow
 
-:link:
+:anchor:
 
 - [`std::condition_variable`](https://en.cppreference.com/w/cpp/thread/condition_variable) – C++ reference
 

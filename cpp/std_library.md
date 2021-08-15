@@ -331,6 +331,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 - [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
 - [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
+- [*Is it safe to append `std::string` to itself?*](https://stackoverflow.com/q/37074905) – Stack Overflow
 - [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
 
 :anchor:
@@ -501,6 +502,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [*`tellg()` function give wrong size of file?*](https://stackoverflow.com/q/22984956) – Stack Overflow
 - [*Why does `std::getline()` skip input after a formatted extraction?*](https://stackoverflow.com/q/21567291) – Stack Overflow
+- [*Why is `iostream::eof` inside a loop condition (i.e. `while (!stream.eof())`) considered wrong?*](https://stackoverflow.com/q/5605125] – Stack Overflow
 - [*Who architected/designed C++’s IO Streams, and would it still be considered well-designed by today’s standards?*](https://stackoverflow.com/q/2753060) – Stack Overflow
 
 :anchor:

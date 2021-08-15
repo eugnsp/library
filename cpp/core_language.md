@@ -103,6 +103,7 @@
 
 :movie_camera:
 
+- H.Sutter. [*Quantifying accidental complexity: An empirical look at teaching and using C++*](https://www.youtube.com/watch?v=6lurOCdaj0Y) – CppCon (2020)
 - C.Carruth, T.Winters. [*What is C++*](https://www.youtube.com/watch?v=LJh5QCV4wDg) – CppCon (2019)
 
 :anchor:
@@ -816,6 +817,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 ---
 
 ## Types
+
+:grey_question:
+
+- [*What are the 15 classifications of types in C++?*](https://stackoverflow.com/q/27032790) – Stack Overflow
 
 :movie_camera:
 

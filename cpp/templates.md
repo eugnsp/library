@@ -273,6 +273,10 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 - T.Frogley. [*An introduction to C++ traits*](https://accu.org/journals/overload/9/43/frogley_442/) – ACCU (2001)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
 
+:grey_question:
+
+- [*What are the 15 classifications of types in C++?*](https://stackoverflow.com/q/27032790) – Stack Overflow
+
 :movie_camera:
 
 - J.Hagins. *Template Metaprogramming: Type Traits.* [*Part 1*](https://www.youtube.com/watch?v=tiAVWcjIF6o), [*Part 2*](https://www.youtube.com/watch?v=dLZcocFOb5Q) – CppCon (2020)

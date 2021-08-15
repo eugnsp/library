@@ -308,6 +308,13 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - K.Henney. [*Test precisely and concretely*](https://accu.org/journals/overload/29/161/henney/) – [Overload **161**](https://accu.org/journals/overload/overload161) (2021)
 
+:movie_camera:
+
+- D.Steffen. [*The science of unit tests*](https://www.youtube.com/watch?v=FjwayiHNI1w) – CppCon (2020)
+- P.Nash. [*Test driven C++*](https://www.youtube.com/watch?v=N2gTxeIHMP0) – CppCon (2020)
+- K.Henney. [*Test smells and fragrances*](https://www.youtube.com/watch?v=wCx_6kOo99M) – DevWeek (2014)
+- F.Pikus. [*Back to basics: Test-driven development*](https://www.youtube.com/watch?v=RoYljVOj2H8) – CppCon (2019)
+
 #### Seams
 
 > A seam is a place where a program behaviour can be altered without modifying it in that place.

@@ -8,6 +8,7 @@
 		- [x87](#x87)
 	- [Memory](#memory)
 		- [Memory addressing](#memory-addressing)
+	- [Device drivers](#device-drivers)
 - [Optimizations](#optimizations)
 	- [Branch prediction](#branch-prediction)
 		- [`[[likely]]` / `[[unlikely]]` attributes](#likely--unlikely-attributes)
@@ -107,6 +108,12 @@ https://www.agner.org/optimize/optimizing_cpp.pdf
 https://www.agner.org/optimize/
 http://www.reedbeta.com/blog/data-oriented-hash-table/
  -->
+
+### Device drivers
+
+:movie_camera:
+
+- D.Saks. [*Memory-mapped devices as objects*](https://www.youtube.com/watch?v=uwzuAGtAEFk) – CppCon (2020)
 
 ---
 

@@ -26,6 +26,11 @@
 
 - [*What is the value of an undefined constant used in `#if`?*](https://stackoverflow.com/q/5085392) – Stack Overflow
 
+:movie_camera:
+
+- J.Jagger. [*Everything you’ve ever wanted to know about the C/C++ preprocessor but didn’t know you couldn ask!*](https://www.youtube.com/watch?v=OAuRkAAh6Hk) – NDC Techtown (2018)
+- A.Deutsch. [*Preprocessor 101*](https://www.youtube.com/watch?v=qBJaM8ki7bM) – DigiPen Game Engine Architecture Club (2016)
+
 ### Variadic macros
 
 :anchor:
