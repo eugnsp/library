@@ -6,6 +6,7 @@
 	- [Procedural programming](#procedural-programming)
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
+		- [Initialization](#initialization)
 		- [Comments](#comments)
 	- [Type design](#type-design)
 	- [Object-oriented design](#object-oriented-design)
@@ -18,6 +19,7 @@
 		- [Exceptions](#exceptions)
 	- [Unit tests](#unit-tests)
 		- [Seams](#seams)
+- [Working with existing code](#working-with-existing-code)
 - [Patterns and idioms](#patterns-and-idioms)
 - [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
@@ -117,6 +119,7 @@
 :movie_camera:
 
 - A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
+- N.Josuttis. [*When C++ style guides contradict*](https://www.youtube.com/watch?v=WRQ1xqYBKgc) – CppCon (2019)
 - B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
 - H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
 
@@ -124,6 +127,12 @@
 
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
 - [*Linux kernel coding style*](https://www.kernel.org/doc/html/latest/process/coding-style.html)
+
+#### Initialization
+
+:link:
+
+- T.Winters. [TotW #88: *Initialization: `=`, `()`, and `{}*`](https://abseil.io/tips/88) – Abseil C++ Tips
 
 #### Comments
 
@@ -323,6 +332,14 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - M.R&uuml;egg. [*Refactoring towards seams in C++*](https://accu.org/journals/overload/20/108/ruegg_1927/) – [Overload **108**](https://accu.org/journals/overload/overload108) (2012)
 - M.Feathers. [*Testing effectively with legacy code*](https://www.informit.com/articles/article.aspx?p=359417) (2005)
+
+---
+
+## Working with existing code
+
+:movie_camera:
+
+- D.Sankel. [*So, you inherited a large code base...*](https://www.youtube.com/watch?v=B2XtqVZcSdM) – CppCon (2017)
 
 ---
 

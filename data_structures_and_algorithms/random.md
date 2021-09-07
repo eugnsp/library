@@ -4,10 +4,12 @@
 
 - [Probability theory](#probability-theory)
 - [Random numbers generation](#random-numbers-generation)
-- [Random sampling](#random-sampling)
+- [Distributions](#distributions)
+	- [Uniform distribution](#uniform-distribution)
+- [Sampling](#sampling)
 	- [Selection sampling](#selection-sampling)
 	- [Reservoir sampling](#reservoir-sampling)
-- [Random shuffling](#random-shuffling)
+- [Shuffling](#shuffling)
 	- [Fisher–Yates algorithm](#fisheryates-algorithm)
 - [Probabilistic data structures](#probabilistic-data-structures)
 	- [Skip lists](#skip-lists)
@@ -34,7 +36,15 @@ For cryptographically secure random number generation see [*Random numbers gener
 
 ---
 
-## Random sampling
+## Distributions
+
+### Uniform distribution
+
+- D.Lemire. [*Nearly divisionless random integer generation on various systems*](https://lemire.me/blog/2019/06/06/nearly-divisionless-random-integer-generation-on-various-systems/) (2019)
+
+---
+
+## Sampling
 
 :book:
 
@@ -62,7 +72,9 @@ For cryptographically secure random number generation see [*Random numbers gener
 
 - N.Ormrod. [*Fantastic algorithms and where to find them: Reservoir sampling*](https://www.youtube.com/watch?v=YA-nB2wjVcI&t=1268) – CppCon (2017)
 
-## Random shuffling
+---
+
+## Shuffling
 
 :link:
 

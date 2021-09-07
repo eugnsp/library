@@ -40,4 +40,4 @@
 
 ### Random permutations
 
-See [*Random shuffling* – Randomized algorithms](random.md#random-shuffling).
+See [*Shuffling* – Randomized algorithms](random.md#shuffling).

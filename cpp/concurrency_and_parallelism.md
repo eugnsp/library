@@ -13,6 +13,7 @@
 		- [`std::mutex`](#stdmutex)
 		- [`std::promise` / `std::future`](#stdpromise--stdfuture)
 		- [`std::async`](#stdasync)
+		- [`std::thread`](#stdthread)
 		- [`std::lock_guard`](#stdlock_guard)
 	- [Data races and race conditions](#data-races-and-race-conditions)
 	- [Lock-based](#lock-based)
@@ -92,6 +93,8 @@
 :movie_camera:
 
 - A.O’Dwyer. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=F6Ipn7gCOsY) – CppCon (2020)
+- B.A.Lelbach. [*The C++17 parallel algorithms library and beyond*](https://www.youtube.com/watch?v=Vck6kzWjY88) – CppCon (2016)
+- D.K&uuml;hl. [*C++17 parallel algorithms*](https://www.youtube.com/watch?v=Ve8cHE9LNfk) – CppCon (2017)
 
 #### `std::atomic`
 
@@ -152,6 +155,7 @@
 
 :link:
 
+- E.Bendersky. [*The promises and challenges of `std::async` task-based parallelism in C++11 *](https://eli.thegreenplace.net/2016/the-promises-and-challenges-of-stdasync-task-based-parallelism-in-c11/) (2016)
 - M.Nelson. [*C++11’s `async` template*](https://www.drdobbs.com/cpp/c11s-async-template/240001196) – Dr.Dobb’s Journal (2012)
 
 :grey_question:
@@ -160,7 +164,15 @@
 
 :anchor:
 
+- N.Josuttis. [*Why deprecating `async()` is the worst of all options*](https://wg21.link/n3780) – WG21/N3780
+- H.-J.Boehm. [*`async()` future destructors must wait*](https://wg21.link/n3679) – WG21/N3679
 - H.Sutter. [*`async` and `~future`*](https://wg21.link/n3451) – WG21/N3451
+
+#### `std::thread`
+
+:anchor:
+
+- H.-J.Boehm. [*A plea to reconsider detach-on-destruction for thread objects*](https://wg21.link/n2802) – WG21/N2802
 
 #### `std::lock_guard`
 

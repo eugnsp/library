@@ -132,6 +132,7 @@
 - C.Hoekstra. *Algorithm intuition.* [Part I](https://www.youtube.com/watch?v=pUEnO6SvAMo), [Part II](https://www.youtube.com/watch?v=sEvYmb3eKsw) – CppCon (2019)
 - J.Boccara. [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) – ACCU (2018)
 - M.Clow. [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) – ACCU (2016)
+- M.Clow. [*STL algorithms: Why you should use them, and how to write your own*](https://www.youtube.com/watch?v=h4Jl1fk3MkQ) – CppCon (2016)
 - M.VanLoon. [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) – CppCon (2015)
 
 <!-- ### `std::accumulate`
@@ -214,6 +215,8 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :movie_camera:
 
 - B.Steagall. [*If I had my ’druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) – C++Now (2018)
+- D.Higgins. [*Using STL containers efficiently*](https://www.youtube.com/watch?v=oBbGC-sUYVA) – CppCon (2016)
+- M.Clow. [*Customizing the standard containers*](https://www.youtube.com/watch?v=NyivAC3WE6g) – CppCon (2016)
 - B.Stroustrup. [*Why you should avoid linked lists*](https://www.youtube.com/watch?v=YQs6IC-vgmo) – Going Native (2012)
 
 ### Associative containers
@@ -288,6 +291,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
+- G.Romer. [TotW #112: *`emplace` vs. `push_back`*`](https://abseil.io/tips/112) – Abseil C++ Tips
 - R.Getov. [*Persistent vector iterators*](https://github.com/eugnsp/CUJ/blob/master/17.01/getov/getov.md) – C/C++ Users Journal **17** (1999)
 - [*`folly::fbvector`*](https://github.com/facebook/folly/blob/master/folly/docs/FBVector.md)
 
@@ -352,7 +356,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
-- [TotW #1: *`string_view`*](https://abseil.io/tips/1) – Abseil C++ Tips (2020)
+- M.Chastain. [TotW #1: *`string_view`*](https://abseil.io/tips/1) – Abseil C++ Tips
 - J.Miller. [*C++ `std::string_view` for better performance: An example use case*](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
 - A.O’Dwyer. [*`std::string_view` is a borrow type*](https://quuxplusone.github.io/blog/2018/03/27/string-view-is-a-borrow-type/) (2018)
 - J.M&uuml;ller. [*`std::string_view` accepting temporaries: good idea or horrible pitfall?*](https://www.foonathan.net/2017/03/string_view-temporary/) (2017)
@@ -802,6 +806,7 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 - A.Weis. [*Random numbers are hard*](https://www.youtube.com/watch?v=WDScnjQwEK8) – Meeting C++ (2019)
 - W.E.Brown. [*What C++ programmers need to know about header `<random>`*](https://www.youtube.com/watch?v=6DPkyvkMkk8) – CppCon (2016)
+- C.Marks. [*I just wanted a random integer!*](https://www.youtube.com/watch?v=4_QO1nm7uJs) – CppCon (2016)
 - S.T.Lavavej. [*`rand()` considered harmful*](https://www.youtube.com/watch?v=LDPMpc-ENqY) – GoingNative (2013)
 
 :anchor:
@@ -1015,11 +1020,12 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 :grey_question:
 
-- [*How do I move the value of a `variant<Ts...>` into a `variant<T,Ts...>`?*](https://stackoverflow.com/q/61290807) – Stack Overflow
+- [*How do I move the value of a `variant<Ts...>` into a `variant<T, Ts...>`?*](https://stackoverflow.com/q/61290807) – Stack Overflow
 
 :movie_camera:
 
 - N.Liber. [*The many variants of `std::variant`*](https://www.youtube.com/watch?v=JUxhwf7gYLg) – C++Now (2019)
+- D.Sankel. [*Variants: Past, present, and future*](https://www.youtube.com/watch?v=k3O4EKX4z1c) – CppCon (2016)
 
 :anchor:
 

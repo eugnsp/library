@@ -297,6 +297,10 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 
 - [*Variadic template pack expansion*](https://stackoverflow.com/q/25680461) – Stack Overflow
 
+:movie_camera:
+
+- M.Dominiak. [*“Variadic expansion in examples*](https://www.youtube.com/watch?v=Os5YLB5D2BU) – CppCon (2016)
+
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm
 
