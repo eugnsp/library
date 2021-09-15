@@ -81,7 +81,6 @@
 
 :link:
 
-- B.Stroustrup. [*Remember the Vasa!*](https://www.stroustrup.com/P0977-remember-the-vasa.pdf) – WG21/P0977
 - A.O’Dwyer. [*Remember the `ifstream`*](https://quuxplusone.github.io/blog/2018/11/26/remember-the-ifstream/) (2018)
 - [*Hyrum’s law*](https://www.hyrumslaw.com/)
 
@@ -92,12 +91,17 @@
 
 :movie_camera:
 
+- S.Parent. [*Better code: Relationships*](https://www.youtube.com/watch?v=ejF6qqohp3M) – CppCon (2019)
 - F.Pikus. [*Design for performance*](https://www.youtube.com/watch?v=m25p3EtBua4) – CppCon (2018)
 
 :book:
 
 - [*The architecture of open source applications*](https://www.aosabook.org/en/index.html)
 - Holub A.I. *Enough rope to shoot yourself in the foot* (1995)
+
+:anchor:
+
+- B.Stroustrup. [*Remember the Vasa!*](https://www.stroustrup.com/P0977-remember-the-vasa.pdf) – WG21/P0977
 
 ### Style and guidelines
 
@@ -120,6 +124,8 @@
 
 - A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
 - N.Josuttis. [*When C++ style guides contradict*](https://www.youtube.com/watch?v=WRQ1xqYBKgc) – CppCon (2019)
+- M.Price. [*A critical look at the coding standards landscape*](https://www.youtube.com/watch?v=5XfSM-vDYUs) – CppCon (2019)
+- M.Wong. [*Writing safety critical automotive software for high perf AI hardware*](https://www.youtube.com/watch?v=F4GzsA00s5I) – CppCon (2019)
 - B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
 - H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
 
@@ -208,7 +214,8 @@
 :link:
 
 - S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
-- S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html)
+- S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html) (2018)
+- M.Clow. [*Fixing an interface bug*](https://cplusplusmusings.wordpress.com/2013/02/27/fixing-an-interface-bug/) (2013)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
 - S.Meyers. [*Signed and unsigned types in interfaces*](https://www.aristeia.com/Papers/C++ReportColumns/sep95.pdf) – C++ Report (1995)
 
@@ -292,6 +299,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :link:
 
 - R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
+- M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
@@ -306,6 +314,10 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
 - [*Losing exception type when rethrowing an exception from a `catch` block*](https://stackoverflow.com/q/12548022) – Stack Overflow
 
+:movie_camera:
+
+- B.Saks. [*Back to basics: Exception handling and exception safety*](https://www.youtube.com/watch?v=W6jZKibuJpU) – CppCon (2019)
+
 :anchor:
 
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
@@ -319,10 +331,11 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
-- D.Steffen. [*The science of unit tests*](https://www.youtube.com/watch?v=FjwayiHNI1w) – CppCon (2020)
 - P.Nash. [*Test driven C++*](https://www.youtube.com/watch?v=N2gTxeIHMP0) – CppCon (2020)
-- K.Henney. [*Test smells and fragrances*](https://www.youtube.com/watch?v=wCx_6kOo99M) – DevWeek (2014)
+- B.Saks. [*Back to basics: Unit tests*](https://www.youtube.com/watch?v=_OHE33s7EKw) – CppCon (2020)
+- D.Steffen. [*The science of unit tests*](https://www.youtube.com/watch?v=FjwayiHNI1w) – CppCon (2020)
 - F.Pikus. [*Back to basics: Test-driven development*](https://www.youtube.com/watch?v=RoYljVOj2H8) – CppCon (2019)
+- K.Henney. [*Test smells and fragrances*](https://www.youtube.com/watch?v=wCx_6kOo99M) – DevWeek (2014)
 
 #### Seams
 
@@ -799,6 +812,8 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 :movie_camera:
 
 - J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=RgTFO1D3bSU) – code::dive (2019)
+- J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=f_tLQl0wLUM) – CppCon (2019)
+- P.Roy. [*Some programming myths revisited*](https://www.youtube.com/watch?v=KNqRjzSlUVo) – CppCon (2019)
 - L.Brandy. [*Curiously recurring C++ bugs at Facebook*](https://www.youtube.com/watch?v=lkgszkPnV8g) – CppCon (2017)
 - V.Ciura. [*10 things junior C++ devs don’t get*](https://www.youtube.com/watch?v=dSSIXKe6iXE) – CppCon (2017)
 - B.Kernighan. [*Elements of programming style*](https://www.youtube.com/watch?v=8SUkrR7ZfTA) – Princeton University (2009)

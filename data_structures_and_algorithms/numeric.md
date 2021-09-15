@@ -65,6 +65,8 @@
 
 - [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
 - R.Harris. [*You’re going to have to think!*](https://accu.org/journals/overload/18/99/harris_1702/) – [Overload **99**](https://accu.org/journals/overload/overload99) (2010)
+- R.Harris. [*Why fixed point won’t cure your floating point blues*](https://accu.org/journals/overload/18/100/harris_1717/) – [Overload **100**](https://accu.org/journals/overload/overload100) (2011)
+- R.Harris. [*Why rationals won’t cure your floating point blues*](https://accu.org/journals/overload/19/101/harris_1986/) – [Overload **101**](https://accu.org/journals/overload/overload101) (2011)
 - D.Goldberg. [*What every computer scientist should know about floating-point arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) (1991)
 
 :grey_question:

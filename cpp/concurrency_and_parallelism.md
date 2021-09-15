@@ -102,6 +102,10 @@
 
 - [*Does `std::atomic::operator++` really return by value?*](https://stackoverflow.com/q/13231048) – Stack Overflow
 
+:movie_camera:
+
+- H.-J.Boehm. [*Using weakly ordered C++ atomics correctly*](https://www.youtube.com/watch?v=M15UKpNlpeM) – CppCon (2016)
+
 #### `std::atomic_shared_ptr`
 
 :link:
@@ -185,6 +189,8 @@
 - [*`std::lock_guard`*](https://en.cppreference.com/w/cpp/thread/lock_guard) – C++ reference
 
 ### Data races and race conditions
+
+:grey_question:
 
 - [*Are “data races” and “race condition” actually the same thing in context of concurrent programming*](https://stackoverflow.com/q/11276259) – Stack Overflow
 

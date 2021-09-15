@@ -46,6 +46,8 @@
 		- [`dynamic_cast`](#dynamic_cast)
 	- [Type punning](#type-punning)
 	- [Value categories](#value-categories)
+- [Flow control](#flow-control)
+	- [Range-based `for` loop](#range-based-for-loop)
 - [Functions and functional objects](#functions-and-functional-objects)
 	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
@@ -81,6 +83,7 @@
 	- [C++11](#c11)
 	- [C++14](#c14)
 	- [C++17](#c17)
+	- [C++20](#c20)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
 	- [Embedding binary data](#embedding-binary-data)
@@ -634,6 +637,20 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ---
 
+## Flow control
+
+### Range-based `for` loop
+
+:link:
+
+- M.Clow. [*Range based for loops and pairs of iterators*](https://cplusplusmusings.wordpress.com/2013/04/14/range-based-for-loops-and-pairs-of-iterators/) (2013)
+
+:movie_camera:
+
+- D.K&uuml;hl. [*Range `for`*](https://www.youtube.com/watch?v=hGu9XWsOgWQ) – CppCon (2016)
+
+---
+
 ## Functions and functional objects
 
 :grey_question:
@@ -702,6 +719,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :movie_camera:
 
 - B.Geller, A.Sermersheim. [*Back to basics: Lambda expressions*](https://www.youtube.com/watch?v=ZIPNFcw6V9o) – CppCon (2020)
+- B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Lambdas from scratch*](https://www.youtube.com/watch?v=3jCOwajNch0) – CppCon (2019)
 
 :anchor:
@@ -753,6 +771,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :grey_question:
 
 - [*What are the basic rules and idioms for operator overloading?*](https://stackoverflow.com/q/4421706) – Stack Overflow
+
+:movie_camera:
+
+- B.Deane. [*Operator overloading: History, principles and practice*](https://www.youtube.com/watch?v=zh4EgO13Etg) – CppCon (2018)
 
 :anchor:
 
@@ -998,6 +1020,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - [*What is move semantics?*](https://stackoverflow.com/q/3106110) – Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*The implementation of `std::forward`*](https://stackoverflow.com/q/27501400) – Stack Overflow
 - [*Advantages of using `forward`*](https://stackoverflow.com/q/3582001) – Stack Overflow
 - [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/q/4938875) – Stack Overflow
 - [*What does `auto&&` tell us?*](https://stackoverflow.com/q/13230480/) – Stack Overflow
@@ -1005,6 +1028,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 :movie_camera:
 
 - N.Josuttis. [*The hidden secrets of move semantics*](https://www.youtube.com/watch?v=TFMKjL38xAI) – CppCon (2020)
+- D.Olsen. [*Back to basics: Move semantics*](https://www.youtube.com/watch?v=ZG59Bqo7qX4) – CppCon (2020)
 - K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) – CppCon (2019)
 - A.Schödl. [*The C++ rvalue lifetime disaster*](https://www.youtube.com/watch?v=s9vBk5CxFyY) – CoreHard (2019)
 - N.Josuttis. [*The nightmare of move semantics for trivial classes*](https://www.youtube.com/watch?v=PNRju6_yn3o) – CppCon (2017)
@@ -1038,6 +1062,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- B.A.Lelbach. *C++17 features.* [Part I](https://www.youtube.com/watch?v=fI2xiUqqH3Q), [Part II](https://www.youtube.com/watch?v=qjxBKINAWk0) – CppCon (2017)
 - A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) – CppCon (2016)
 - N.Josuttis. [*C++17 – The best features*](https://www.youtube.com/watch?v=e2ZQyYr0Oi0) - ACCU (2018)
 
@@ -1045,16 +1070,17 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 - [*C++17 compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp17) – C++ reference
 
-###	C++2a
+### C++20
 
 :movie_camera:
 
+- B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
 - B.Stroustrup. [*C++20: C++ at 40*](https://www.youtube.com/watch?v=u_ij0YNkFUs) – CppCon (2019)
 - A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
 
 :anchor:
 
-- [*C++2a compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp2a) – C++ reference
+- [*Compiler support for C++20*](https://en.cppreference.com/w/cpp/compiler_support/20) – C++ reference
 
 ---
 
@@ -1070,6 +1096,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
+- J.Wakely, M.Clow. [*These 10 tricks that only library implementors know!*](https://www.youtube.com/watch?v=wYd2V4nPn0E) – ACCU (2018)
 
 ### Accessing private and protected members
 

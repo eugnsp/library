@@ -105,6 +105,14 @@
 
 - D.Drysdale. [*Beginner’s guide to linkers*](http://www.lurklurk.org/linkers/linkers.html) (2009)
 
+:grey_question:
+
+- [*What do linkers actually do with multiply-defined `inline` functions?*](https://stackoverflow.com/q/35233468) – Stack Overflow
+
+:movie_camera:
+
+- N.Friedman. [*What C++ developers should know about globals (and the linker)*](https://www.youtube.com/watch?v=xVT1y0xWgww) – CppCon (2017)
+
 :book:
 
 - J.R.Levine. [*Linkers and loaders*](https://linker.iecc.com/) – Morgan-Kauffman (1999)
@@ -122,6 +130,10 @@
 ### Windows
 
 #### DLLs
+
+:link:
+
+- S.Ignatchenko. [*To DLL or not to DLL*](https://accu.org/journals/overload/18/99/ignatchenko_1704/) – [Overload **163**](https://accu.org/journals/overload/overload99) (2010)
 
 :movie_camera:
 
@@ -153,6 +165,10 @@
 
 - [*Compiler explorer*](https://godbolt.org/)
 
+:movie_camera:
+
+- M.Godbolt [*Compiler explorer: Behind the scenes*](https://www.youtube.com/watch?v=kIoZDUd5DKw) – CppCon (2019)
+
 ### Intel Architecture Code Analyzer (IACA)
 
 - [*What is IACA and how do I use it?*](https://stackoverflow.com/q/26021337) – Stack Overflow
@@ -162,8 +178,6 @@
 :movie_camera:
 
 - J.Turner. [Episode 86: *Valgrind compiler optimization*](https://www.youtube.com/watch?v=3l0BQs2ThTo) – C++ Weekly (2017)
-
----
 
 ---
 

@@ -335,6 +335,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 :movie_camera:
 
 - J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) – C++Now (2018)
+- B.Geller, A.Sermersheim. [*Undefined behavior is not an error*](https://www.youtube.com/watch?v=XEXpwis_deQ) – CppCon (2018)
 - P.Padlewski. [*Undefined behaviour is awesome!*](https://www.youtube.com/watch?v=ehyHyAIa5so) – CppCon (2017)
 - M.Spencer. [*My little optimizer: Undefined behavior is magic*](https://www.youtube.com/watch?v=g7entxbQOCc) – CppCon (2016)
 

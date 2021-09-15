@@ -77,8 +77,8 @@
 	- [Function objects](#function-objects)
 		- [`std::reference_wrapper`](#stdreference_wrapper)
 	- [`std::initializer_list`](#stdinitializer_list)
-	- [Pairs and tuples](#pairs-and-tuples)
-	- [Sum types](#sum-types)
+	- [Algebraic data types](#algebraic-data-types)
+		- [Pairs and tuples](#pairs-and-tuples)
 		- [`std::optional`](#stdoptional)
 		- [`std::variant`](#stdvariant)
 		- [`(std::)expected`](#stdexpected)
@@ -131,6 +131,7 @@
 
 - C.Hoekstra. *Algorithm intuition.* [Part I](https://www.youtube.com/watch?v=pUEnO6SvAMo), [Part II](https://www.youtube.com/watch?v=sEvYmb3eKsw) – CppCon (2019)
 - J.Boccara. [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=bXkWuUe9V2I) – ACCU (2018)
+- J.Boccara. [*105 STL algorithms in less than an hour*](https://www.youtube.com/watch?v=2olsGf6JIkU) – CppCon (2018)
 - M.Clow. [*STL algorithms: How to use them and how to write your own*](https://www.youtube.com/watch?v=3nXLxMYXgWs) – ACCU (2016)
 - M.Clow. [*STL algorithms: Why you should use them, and how to write your own*](https://www.youtube.com/watch?v=h4Jl1fk3MkQ) – CppCon (2016)
 - M.VanLoon. [*STL algorithms in action*](https://www.youtube.com/watch?v=eidEEmGLQcU) – CppCon (2015)
@@ -590,8 +591,15 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 ## Ranges
 
+:link:
+
+- T.Brindle. [*Rvalue ranges and views in C++20*](https://tristanbrindle.com/posts/rvalue-ranges-and-views) (2020)
+
 :movie_camera:
 
+- T.Brindle. [*An overview of standard ranges*](https://www.youtube.com/watch?v=d9qDEEJFwNc) – ACCU (2021)
+- T.Brindle. [*C++20 ranges in practice*](https://www.youtube.com/watch?v=d_E-VLyUnzc) – CppCon (2020)
+- T.Brindle. [*An overview of standard ranges*](https://www.youtube.com/watch?v=SYLgG7Q5Zws) – CppCon (2019)
 - A.Schödl. [*Why iterators got it all wrong and what we should use instead*](https://www.youtube.com/watch?v=srp9Tie5BYk) – CodeNode (2017)
 - A.Schödl. [*From iterators to ranges: The upcoming evolution of the STL*](https://www.youtube.com/watch?v=vrCtS6FDay8) – Meeting C++ (2015)
 
@@ -658,14 +666,11 @@ See also [*Memory and cache* – Optimization and hardware](optimization_and_har
 
 #### `std::unique_ptr`
 
-> The `std::unique_ptr` class is a smart pointer with unique ownership.
-
-:memo:
-
-- `std::unique_ptr<T>` is *almost* as cheap as a raw pointer `T*`. For the Itanium ABI, any type with a destructor that is passed by value must be passed in memory: the address held in the `std::unique_ptr​` must be written out to memory, rather than passed in registers as it would be for a raw ​`T*`​.
+> The `std::unique_ptr` class is a smart pointer with unique ownership. `std::unique_ptr<T>` is *almost* as cheap as a raw pointer `T*`. For the Itanium ABI, any type with a destructor that is passed by value must be passed in memory: the address held in the `std::unique_ptr​` must be written out to memory, rather than passed in registers as it would be for a raw ​`T*`​.
 
 :link:
 
+- M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - E.Bendersky. [*Using `unique_ptr` with standard library containers*](https://eli.thegreenplace.net/2012/06/20/c11-using-unique_ptr-with-standard-library-containers) (2012)
 
 :grey_question:
@@ -972,7 +977,13 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 - [*`std::initializer_list`*](https://en.cppreference.com/w/cpp/utility/initializer_list) – C++ reference
 
-### Pairs and tuples
+### Algebraic data types
+
+:movie_camera:
+
+- A.O’Dwyer. [*Back to basics: Algebraic data types*](https://www.youtube.com/watch?v=OJzmWqCCZaM) – CppCon (2020)
+
+#### Pairs and tuples
 
 :grey_question:
 
@@ -984,8 +995,6 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 - A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
 - S.T.Lavavej. [*`tuple<>`: What’s new and how it works*](https://www.youtube.com/watch?v=JhgWFYfdIho) – CppCon (2016)
-
-### Sum types
 
 #### `std::optional`
 
@@ -1030,6 +1039,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 :anchor:
 
 - [*`std::variant`*](https://en.cppreference.com/w/cpp/utility/variant) – C++ reference
+- Y.Zhihao. [*A sane `variant` converting constructor*](https://wg21.link/p0608) – WG21/P0608
 
 #### `(std::)expected`
 
