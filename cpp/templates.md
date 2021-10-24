@@ -72,6 +72,13 @@
 
 - R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/journals/overload/26/143/orr_2465/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2019)
 
+:movie_camera:
+
+- T.Doumler. [*Class template argument deduction in C++17*](https://www.youtube.com/watch?v=UDs90b0yjjQ) – CppCon (2018)
+- T.Doumler. [*Class template argument deduction in C++17*](https://www.youtube.com/watch?v=STJExxBU54M) – ACCU (2018)
+- S.T.Lavavej. [*Class template argument deduction for everyone*](https://www.youtube.com/watch?v=-H-ut6j1BYU) – CppCon (2018)
+- Z.Yuan. [*Class template argument deduction: A new abstraction*](https://www.youtube.com/watch?v=4X8gXzi8bx8) – CppCon (2017)
+
 :anchor:
 
 - M.Spertus, F.Vali, R.Smith. [*Template argument deduction for class templates*](https://wg21.link/p0091) – WG21/P0091

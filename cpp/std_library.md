@@ -378,6 +378,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
+- P.Trettner. [*Measuring `std::unordered_map` badness*](https://artificial-mind.net/blog/2021/10/09/unordered-map-badness) (2021)
 - N.Wu. [*Blowing up `unordered_map`, and how to stop getting hacked on it*](https://codeforces.com/blog/entry/62393) (2018)
 - P.J.Plauger. [*Standard C/C++: Hash tables*](https://github.com/eugnsp/CUJ/blob/master/16.11/plauger/plauger.md) – C/C++ Users Journal **16** (1998)
 
@@ -396,9 +397,9 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :anchor:
 
 - M.Austern. [*A proposal to add hash tables to the standard library*](https://wg21.link/n1456) – WG21/N1456
-- J.M.L&oacute;pez Mu&ntilde;oz. [*`erase(iterator)` for unordered containersshould not return an iterator*](https://wg21.link/n2023) – WG21/N2023
+- J.M.L&oacute;pez Mu&ntilde;oz. [*`erase(iterator)` for unordered containers should not return an iterator*](https://wg21.link/n2023) – WG21/N2023
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
-- A.Tavory, V.Dreizin, B.Kosnik. [Hash table design](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
+- A.Tavory, V.Dreizin, B.Kosnik. [*Hash table design*](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
 
 #### `std::hash`
 
@@ -439,6 +440,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
+- A.O’Dwyer. [*`std::span` should have a converting constructor from `initializer_list`*](https://quuxplusone.github.io/blog/2021/10/03/p2447-span-from-initializer-list/) (2021)
 - B.Revzin. [*Should span be regular?*](https://medium.com/@barryrevzin/should-span-be-regular-6d7e828dd44) (2018)
 
 :grey_question:
@@ -507,7 +509,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [*`tellg()` function give wrong size of file?*](https://stackoverflow.com/q/22984956) – Stack Overflow
 - [*Why does `std::getline()` skip input after a formatted extraction?*](https://stackoverflow.com/q/21567291) – Stack Overflow
-- [*Why is `iostream::eof` inside a loop condition (i.e. `while (!stream.eof())`) considered wrong?*](https://stackoverflow.com/q/5605125] – Stack Overflow
+- [*Why is `iostream::eof` inside a loop condition (i.e. `while (!stream.eof())`) considered wrong?*](https://stackoverflow.com/q/5605125) – Stack Overflow
 - [*Who architected/designed C++’s IO Streams, and would it still be considered well-designed by today’s standards?*](https://stackoverflow.com/q/2753060) – Stack Overflow
 
 :anchor:
@@ -551,7 +553,7 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 :grey_question:
 
-- [`stringstream <<` “overwriting”](https://stackoverflow.com/q/10388032) – Stack Overflow
+- [*`stringstream <<` “overwriting”*](https://stackoverflow.com/q/10388032) – Stack Overflow
 
 ### `std::ios_base::Init`
 
@@ -607,7 +609,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 ## Memory
 
-See also [*Memory and cache* – Optimization and hardware](optimization_and_hardware.md#memory-and-cache).
+See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#memory).
 
 ### `std::malloc` / `std::calloc` / `std::free`
 
@@ -1034,6 +1036,8 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 :movie_camera:
 
 - N.Liber. [*The many variants of `std::variant`*](https://www.youtube.com/watch?v=JUxhwf7gYLg) – C++Now (2019)
+- M.Pusz. [*Effective replacement of dynamic polymorphism with `std::variant`*](https://www.youtube.com/watch?v=JGYxOieiZnY) – ACCU (2019)
+- M.Pusz. [*Effective replacement of dynamic polymorphism with `std::variant`*](https://www.youtube.com/watch?v=gKbORJtnVu8) – CppCon (2018)
 - D.Sankel. [*Variants: Past, present, and future*](https://www.youtube.com/watch?v=k3O4EKX4z1c) – CppCon (2016)
 
 :anchor:

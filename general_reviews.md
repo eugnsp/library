@@ -20,17 +20,17 @@
 - [Operating systems](#operating-systems)
 	- [Linux](#linux)
 - [Automated theorem proving](#automated-theorem-proving)
+- [Algorithms](#algorithms)
 - [Natural language processing](#natural-language-processing)
 	- [Spelling correction](#spelling-correction)
 	- [Neural networks](#neural-networks)
 		- [Graph neural networks](#graph-neural-networks)
-- [Algorithms](#algorithms)
 - [Journals](#journals)
 - [Blogs](#blogs)
-- [Folklore](#folklore)
 - [Hardware history](#hardware-history)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
+- [Humor, folklore, etc.](#humor-folklore-etc)
 
 ## People
 
@@ -219,6 +219,14 @@
 
 ---
 
+## Algorithms
+
+:link:
+
+- [*The aggregate magic algorithms*](http://aggregate.org/MAGIC/)
+
+---
+
 ## Natural language processing
 
 ### Spelling correction
@@ -239,14 +247,6 @@
 
 ---
 
-## Algorithms
-
-:link:
-
-- [*The aggregate magic algorithms*](http://aggregate.org/MAGIC/)
-
----
-
 ## Journals
 
 - [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
@@ -264,21 +264,12 @@
 - [KrzaQ](https://dev.krzaq.cc/)
 - [Arne Mertz](http://arne-mertz.de/)
 - [Jonathan Müller](http://foonathan.net/)
+- [Arthur O’Dwyer](https://quuxplusone.github.io/blog/)
 - [Vittorio Romeo](https://vittorioromeo.info/)
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
+- [Philip Trettner](https://artificial-mind.net/)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
-
----
-
-## Folklore
-
-- [*Greenspun’s tenth rule*](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule) – Wikipedia
-- E.Siegel. [*Educational computer science songs*](http://www.cs.columbia.edu/~evs/songs/)
-
-<!-- Fun -->
-
-<!-- https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->
 
 ---
 
@@ -300,3 +291,15 @@
 :movie_camera:
 
 - R.Hill. [*BBC B microcomputer*](https://www.youtube.com/watch?v=do6xydtcVPk), [*Original Elite on the BBC B*](https://www.youtube.com/watch?v=owz7XExO-Wk) – Computerphile (2013)
+
+---
+
+## Humor, folklore, etc.
+
+- [*Greenspun’s tenth rule*](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule) – Wikipedia
+- [*C++23: `fullptr` to replace `nullptr`*](https://codingtidbit.com/2019/04/01/c22-fullptr-to-replace-nullptr/) (2019, April 1)
+- E.Siegel. [*Educational computer science songs*](http://www.cs.columbia.edu/~evs/songs/)
+
+<!-- Fun -->
+
+<!-- https://medium.com/@laura.derohan/how-to-de-obfuscate-jim-hagues-ioccc-winner-program-3e7ea82c1fa4 -->

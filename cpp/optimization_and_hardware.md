@@ -237,6 +237,10 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 ### Floating-point arithmetic
 
+:link:
+
+- K.Walfridsson. [*Optimizations enabled by `-ffast-math`*](https://kristerw.github.io/2021/10/19/fast-math/) (2021)
+
 :grey_question:
 
 - [*What does gcc’s `ffast-math` actually do?*](https://stackoverflow.com/q/7420665) – Stack Overflow
@@ -301,6 +305,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :camera:
 
+- A.O’Dwyer. [*The complete guide to `return x;`*](https://www.youtube.com/watch?v=OGKAJD7bmr8) – C++Now (2021)
 - J.Kalb. [*Copy elision*](https://www.youtube.com/watch?v=fSB57PiXpRw) – C++Now (2018)
 
 :anchor:

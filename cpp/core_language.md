@@ -57,6 +57,7 @@
 		- [Recursive lambdas](#recursive-lambdas)
 	- [Member functions](#member-functions)
 		- [Member function poiners](#member-function-poiners)
+	- [Deleted functions (`= delete;`)](#deleted-functions--delete)
 	- [`main()`](#main)
 - [Operators](#operators)
 	- [Comparisons](#comparisons)
@@ -264,6 +265,7 @@ See also [*Layout* – Class types](#layout).
 
 :grey_question:
 
+- [*C++11 – declaring non-static data members as `auto`*](https://stackoverflow.com/q/11302981) – Stack Overflow
 - [*Does `auto` make C++ code harder to understand?*](https://softwareengineering.stackexchange.com/q/180216) – Software Engineering
 
 ### `const` and `mutable`
@@ -656,6 +658,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :grey_question:
 
 - [*Simplest way to determine return type of function*](https://stackoverflow.com/q/53673442) – Stack Overflow
+- [*C++ `decltype` deducing current function returned type*](https://stackoverflow.com/q/21412144) – Stack Overflow
 
 ### Overload resolution
 
@@ -718,6 +721,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :movie_camera:
 
+- R.Orr. [*Let’s look at lambdas*](https://www.youtube.com/watch?v=NAuFNXIsbtw) – ACCU (2021)
 - B.Geller, A.Sermersheim. [*Back to basics: Lambda expressions*](https://www.youtube.com/watch?v=ZIPNFcw6V9o) – CppCon (2020)
 - B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Lambdas from scratch*](https://www.youtube.com/watch?v=3jCOwajNch0) – CppCon (2019)
@@ -749,6 +753,18 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :anchor:
 
 - [*Pointers to member functions*](https://isocpp.org/wiki/faq/pointers-to-members) – C++ FAQ
+
+### Deleted functions (`= delete;`)
+
+> If, instead of a function body, the special syntax `= delete;` is used, the function is defined as deleted. Any use of a deleted function is ill-formed (the program will not compile).
+
+:link:
+
+- A.O’Dwyer. [*What `=delete` means*](https://quuxplusone.github.io/blog/2021/10/17/equals-delete-means/) (2021)
+
+:anchor:
+
+- [*Deleted functions*](https://en.cppreference.com/w/cpp/language/function#Deleted_functions) – C++ reference
 
 ### `main()`
 
@@ -1112,7 +1128,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :link:
 
-- D.Weiler. [incbin – Include binary files in C/C++](https://github.com/graphitemaster/incbin)
+- D.Weiler. [*incbin – Include binary files in C/C++*](https://github.com/graphitemaster/incbin)
 - H.Landau. [*Embedding of binary data into programs*](https://www.devever.net/~hl/incbin)
 
 :grey_question:
@@ -1129,9 +1145,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :link:
 
-- D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
+- A.Weissflog. [*Modern C for C++ peeps*](https://floooh.github.io/2019/09/27/modern-c-for-cpp-peeps.html) (2019)
 - [*Linus Torvalds on C++*](http://harmful.cat-v.org/software/c++/linus) (2007)
 - J.Nieminen. [*A response to Linus Torvalds on C++*](http://warp.povusers.org/OpenLetters/ResponseToTorvalds.html) (2007)
+- D.R.Tribble. [*Incompatibilities between ISO C and ISO C++*](http://david.tribble.com/text/cdiffs.htm) (2001)
 
 :grey_question:
 
@@ -1141,6 +1158,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*Is there any reason to use C++ instead of C, Perl, Python, etc.?*](https://softwareengineering.stackexchange.com/q/29109) – Software Engineering
 - [*When to use C over C++, and C++ over C?*](https://softwareengineering.stackexchange.com/q/113295) – Software Engineering
 - [*Is the C programming language still used?*](https://softwareengineering.stackexchange.com/q/103897) – Software Engineering
+
+:movie_camera:
+
+- L.Sas. [*Modern C and what we can learn from it*](https://www.youtube.com/watch?v=QpAhX-gsHMs) – ACCU (2021)
 
 ### Functions
 

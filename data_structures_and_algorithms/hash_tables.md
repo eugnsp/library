@@ -6,6 +6,7 @@
 - [Hash functions](#hash-functions)
 	- [Fowler–Noll–Vo hash function](#fowlernollvo-hash-function)
 	- [Cryptographic hash functions](#cryptographic-hash-functions)
+	- [Custom hash functions](#custom-hash-functions)
 - [Hash tables](#hash-tables)
 	- [Bloom filter](#bloom-filter)
 	- [Extendible hashing](#extendible-hashing)
@@ -43,6 +44,12 @@
 ### Cryptographic hash functions
 
 See [*Hashing* – Cryptographic algorithms](cryptographic.md#hashing).
+
+### Custom hash functions
+
+:link:
+
+- [*xxHash – Extremely fast hash algorithm*](https://github.com/Cyan4973/xxHash)
 
 ## Hash tables
 

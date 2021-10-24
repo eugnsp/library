@@ -19,8 +19,10 @@
 		- [Exceptions](#exceptions)
 	- [Unit tests](#unit-tests)
 		- [Seams](#seams)
+- [Safety and security](#safety-and-security)
+	- [Memory safety](#memory-safety)
 - [Working with existing code](#working-with-existing-code)
-- [Patterns and idioms](#patterns-and-idioms)
+- [Overview of patterns and idioms](#overview-of-patterns-and-idioms)
 - [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
 	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
@@ -57,6 +59,7 @@
 - [Visitor](#visitor)
 - [Local buffer optimization](#local-buffer-optimization)
 - [Nifty counter](#nifty-counter)
+- [`switch` statement](#switch-statement)
 - [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
 	- [Go to](#go-to)
 	- [Duff’s device](#duffs-device)
@@ -348,6 +351,20 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ---
 
+## Safety and security
+
+### Memory safety
+
+:movie_camera:
+
+- K.Serebryany. [*Memory tagging and how it improves C/C++ memory safety*](https://www.youtube.com/watch?v=lLEcbXidK2o) – CppCon (2018)
+
+:page_facing_up:
+
+- K.Serebryany, E.Stepanov, A.Shlyapnikov, V.Tsyrklevich, D.Vyukov. [*Memory tagging and how it improves C/C++ memory safety*](https://arxiv.org/pdf/1802.09517.pdf) – Preprint (2018)
+
+---
+
 ## Working with existing code
 
 :movie_camera:
@@ -356,7 +373,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ---
 
-## Patterns and idioms
+## Overview of patterns and idioms
 
 > A design pattern is a general technique used to solve a class of related problems.
 
@@ -368,6 +385,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
+- D.Nesteruk. [*Design patterns in modern C++*](https://www.youtube.com/watch?v=sJnoIF4_Ug8) – ACCU (2016)
 
 ---
 
@@ -716,17 +734,17 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 > };
 > ```
 
-:memo:
-
-- > Nobody seemed to know, so I wrote a mail to the author, Walter E. Brown, and asked him. He told me that Bjarne doesn’t like that feature (anymore), so it is very unlikely that it will come anytime soon. Apparently C++ won’t get strong typedefs as core language feature. [[J.M&uuml;ller]](https://foonathan.net/blog/2016/10/19/strong-typedefs.html)
-
 :link:
 
 - L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/journals/overload/27/152/boger_2683/) – [Overload **152**](https://accu.org/journals/overload/overload152) (2019)
 - J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
+- A.Williams. [*`jss::strong_typedef` library*](https://github.com/anthonywilliams/strong_typedef)
+- P.Sommerlad. [*`PSsst` library*](https://github.com/PeterSommerlad/PSsst)
+- M.Moene. [*Whole value idiom*](https://github.com/martinmoene/WholeValue)
 
 :movie_camera:
 
+- A.Williams. [*Library approaches for strong type aliases*](https://www.youtube.com/watch?v=b1Gq9WABaRU) – C++Now (2021)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)
 
 :anchor:
@@ -799,6 +817,12 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 ## Local buffer optimization
 
 ## Nifty counter
+
+## `switch` statement
+
+:link:
+
+- M.Weisfeld. [*An alternative to large `switch` statements*](https://github.com/eugnsp/CUJ/blob/master/12.04/weisfeld/weisfeld.md) – C/C++ Users Journal **12** (1994)
 
 ---
 
