@@ -296,6 +296,7 @@ See also [*Layout* – Class types](#layout).
 
 :link:
 
+- B.Revzin. [*The `constexpr` array size problem*](https://brevzin.github.io/c++/2020/02/05/constexpr-array-size/) (2020)
 - A.Krzemie&nacute;ski. [`constexpr` function is not `const`](https://akrzemi1.wordpress.com/2013/06/20/constexpr-function-is-not-const/) (2013)
 
 :grey_question:
@@ -953,6 +954,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :link:
 
 - E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
+- E.Bendersky. [*Dumping a C++ object’s memory layout with Clang*](https://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/) (2012)
 
 :grey_question:
 
@@ -1030,6 +1032,7 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
 - S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
 - S.Meyers. [*Universal references in C++11*](https://accu.org/journals/overload/20/111/meyers_1887/) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/journals/overload/overload111), 8 (2012)
+- E.Bendersky. [*Understanding lvalues and rvalues in C and C++*](https://eli.thegreenplace.net/2011/12/15/understanding-lvalues-and-rvalues-in-c-and-c/) (2011)
 
 :grey_question:
 

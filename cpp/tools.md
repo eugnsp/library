@@ -89,6 +89,12 @@
 
 - [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
 
+#### Clang
+
+:link:
+
+- E.Bendersky. [*Dumping a C++ object’s memory layout with Clang*](https://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/) (2012)
+
 ### Windows
 
 #### MSVC

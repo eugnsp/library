@@ -64,6 +64,10 @@
 
 ## Multithreading
 
+:link:
+
+- E.Bendersky. [*C++11 threads, affinity and hyperthreading*](https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/) (2016)
+
 :movie_camera:
 
 - F.Petriconi. [*An adventure in race conditions*](https://www.youtube.com/watch?v=asgO4P2fhTw) – ACCU (2019)

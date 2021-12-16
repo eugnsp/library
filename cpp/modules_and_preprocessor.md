@@ -16,6 +16,7 @@
 
 :movie_camera:
 
+- S.Downey. [*Writing a C++20 module*](https://www.youtube.com/watch?v=AO4piAqV9mg) – C++Now (2021)
 - B.Kolpackov. [*Building C++ modules*](https://www.youtube.com/watch?v=E8EbDcLQAoc) – CppCon (2017)
 
 ---

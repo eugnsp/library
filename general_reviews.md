@@ -296,6 +296,8 @@
 
 ## Humor, folklore, etc.
 
+:link:
+
 - [*Greenspun’s tenth rule*](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule) – Wikipedia
 - [*C++23: `fullptr` to replace `nullptr`*](https://codingtidbit.com/2019/04/01/c22-fullptr-to-replace-nullptr/) (2019, April 1)
 - E.Siegel. [*Educational computer science songs*](http://www.cs.columbia.edu/~evs/songs/)

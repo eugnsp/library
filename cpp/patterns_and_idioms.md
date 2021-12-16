@@ -129,6 +129,7 @@
 - N.Josuttis. [*When C++ style guides contradict*](https://www.youtube.com/watch?v=WRQ1xqYBKgc) – CppCon (2019)
 - M.Price. [*A critical look at the coding standards landscape*](https://www.youtube.com/watch?v=5XfSM-vDYUs) – CppCon (2019)
 - M.Wong. [*Writing safety critical automotive software for high perf AI hardware*](https://www.youtube.com/watch?v=F4GzsA00s5I) – CppCon (2019)
+- K.Gregory. [*10 core guidelines you need to start using now*](https://www.youtube.com/watch?v=XkDEzfpdcSg) – CppCon (2017)
 - B.Stroustrup. [*Writing good C++14*](https://www.youtube.com/watch?v=1OEu9C51K2A) – CppCon (2015)
 - H.Sutter. [*Back to the basics! Essentials of modern C++ style*](https://www.youtube.com/watch?v=xnqTKD8uD64) – CppCon (2014)
 
@@ -362,6 +363,12 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :page_facing_up:
 
 - K.Serebryany, E.Stepanov, A.Shlyapnikov, V.Tsyrklevich, D.Vyukov. [*Memory tagging and how it improves C/C++ memory safety*](https://arxiv.org/pdf/1802.09517.pdf) – Preprint (2018)
+
+### Safe integers
+
+:movie_camera:
+
+- P.Sommerlad. [*Simplest safe integers*](https://www.youtube.com/watch?v=Z0X_TFCcTXA) – C++Now (2021)
 
 ---
 
@@ -653,6 +660,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 :link:
 
 - [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
+- E.Bendersky. [*C++: RAII without exceptions*](https://eli.thegreenplace.net/2016/c-raii-without-exceptions/) (2016)
 - P.Grenyer. [*RAII is not garbage*](https://accu.org/journals/overload/19/106/grenyer_1945/) – [Overload **106**](https://accu.org/journals/overload/overload106) (2011)
 
 :grey_question:

@@ -74,6 +74,7 @@
 - [*How many unique values are there between 0 and 1 of a standard float?*](https://stackoverflow.com/q/17949796) – Stack Overflow
 - [*Why does IEEE 754 reserve so many NaN values?*](https://stackoverflow.com/q/19800415) – Stack Overflow
 - [*How many normalized numbers can be represented using IEEE-754 single precision?*](https://stackoverflow.com/q/12558780) – Stack Overflow
+- [*Is assigning two `double`s guaranteed to yield the same bitset patterns?*](https://stackoverflow.com/q/55379715) – Stack Overflow
 
 :page_facing_up:
 

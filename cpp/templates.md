@@ -7,6 +7,7 @@
 	- [Class template argument deduction](#class-template-argument-deduction)
 		- [Deduction guides](#deduction-guides)
 - [Concepts](#concepts)
+	- [Standard concepts](#standard-concepts)
 - [Function templates](#function-templates)
 	- [Friend function templates](#friend-function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
@@ -101,21 +102,30 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :link:
 
-- A.Sutton. [*Introducing concepts*](https://accu.org/journals/overload/23/129/sutton_2157/) – [Overload **129**](https://accu.org/journals/overload/overload129) (2015)
 - A.Sutton. [*Defining concepts*](https://accu.org/journals/overload/24/131/sutton_2198/) – [Overload **131**](https://accu.org/journals/overload/overload131) (2016)
+- A.Sutton. [*Introducing concepts*](https://accu.org/journals/overload/23/129/sutton_2157/) – [Overload **129**](https://accu.org/journals/overload/overload129) (2015)
 
 :grey_question:
 
 - [*How will concepts lite interact with universal references?*](https://stackoverflow.com/q/29182279) – Stack Overflow
+- [*Why does `same_as` concept check type equality twice?*](https://stackoverflow.com/q/58509147) – Stack Overflow
 
 :movie_camera:
 
+- J.Garland. *Using concepts: C++ design in a concept world.* [Part I](https://www.youtube.com/watch?v=Ffu9C1BZ4-c), [Part II](https://www.youtube.com/watch?v=IXbf5lxGtr0) – C++Now (2021)
+- R.Barkan. [*Semantic sugar: Tips for effective template library APIs*](https://www.youtube.com/watch?v=u0rvEMV8Qq4) – C++Now (2021)
 - H.Matthews. [*C++ concepts for developers*](https://www.youtube.com/watch?v=ut40iShzqEY) – NDC (2019)
 - B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) – CppCon (2018)
 
 :anchor:
 
 - W.E.Brown. [*`enable_if` vs.`requires`: A case study*](https://wg21.link/p0552) – WG21/P0552
+
+### Standard concepts
+
+:grey_question:
+
+- [*Why is the `std::derived_from` concept implemented with an additional convertibility test that adds cv-qualifiers?*](https://stackoverflow.com/q/65915059) – Stack Overflow
 
 ---
 
@@ -299,6 +309,10 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 ---
 
 ## Variadic templates
+
+:link:
+
+- E.Bendersky. [*Variadic templates in C++*](https://eli.thegreenplace.net/2014/variadic-templates-in-c/) (2014)
 
 :grey_question:
 

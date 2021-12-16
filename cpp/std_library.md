@@ -36,6 +36,7 @@
 		- [`std::span`](#stdspan)
 	- [Transparent comparators](#transparent-comparators)
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
+	- [Non-standard containers](#non-standard-containers)
 - [Exceptions](#exceptions)
 - [Input/output](#inputoutput)
 	- [Input/output manipulators](#inputoutput-manipulators)
@@ -81,6 +82,7 @@
 		- [Pairs and tuples](#pairs-and-tuples)
 		- [`std::optional`](#stdoptional)
 		- [`std::variant`](#stdvariant)
+		- [`std::any`](#stdany)
 		- [`(std::)expected`](#stdexpected)
 	- [`std::launder`](#stdlaunder)
 	- [`std::source_location`](#stdsource_location)
@@ -357,10 +359,11 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
-- M.Chastain. [TotW #1: *`string_view`*](https://abseil.io/tips/1) – Abseil C++ Tips
+- A.O’Dwyer. [*Three reasons to pass `std::string_view` by value*](https://quuxplusone.github.io/blog/2021/11/09/pass-string-view-by-value/) (2021)
 - J.Miller. [*C++ `std::string_view` for better performance: An example use case*](https://www.nextptr.com/tutorial/ta1217154594/cplusplus-stdstring_view-for-better-performance-an-example-use-case) (2019)
 - A.O’Dwyer. [*`std::string_view` is a borrow type*](https://quuxplusone.github.io/blog/2018/03/27/string-view-is-a-borrow-type/) (2018)
 - J.M&uuml;ller. [*`std::string_view` accepting temporaries: good idea or horrible pitfall?*](https://www.foonathan.net/2017/03/string_view-temporary/) (2017)
+- M.Chastain. [TotW #1: *`string_view`*](https://abseil.io/tips/1) – Abseil C++ Tips
 
 :grey_question:
 
@@ -441,11 +444,13 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :link:
 
 - A.O’Dwyer. [*`std::span` should have a converting constructor from `initializer_list`*](https://quuxplusone.github.io/blog/2021/10/03/p2447-span-from-initializer-list/) (2021)
+- B.Revzin. [*`span`: the best span*](https://brevzin.github.io/c++/2018/12/03/span-best-span/) (2018)
 - B.Revzin. [*Should span be regular?*](https://medium.com/@barryrevzin/should-span-be-regular-6d7e828dd44) (2018)
 
 :grey_question:
 
-- [*What is a “span” and when should I use one?*](https://stackoverflow.com/q/45723819) – Stack Overflow
+- [*What is a `span` and when should I use one?*](https://stackoverflow.com/q/45723819) – Stack Overflow
+- [*Why does `std::span` lack `cbegin` and `cend` methods?*](https://stackoverflow.com/q/62757700) – Stack Overflow
 
 :movie_camera:
 
@@ -494,6 +499,12 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 - J.Brown. [*Signed `ssize()` functions, unsigned `size()` functions*](https://wg21.link/p1227) – WG21/P1227
 - R.Douglas, N.Liber, M.Clow. [*Sizes should only `​span`​ unsigned*](https://wg21.link/p1089) – WG21/P1089
+
+### Non-standard containers
+
+:link:
+
+- [*Amadeus containers (amc)*](https://github.com/AmadeusITGroup/amc)
 
 ---
 
@@ -1035,6 +1046,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 :movie_camera:
 
+- R.Barkan. [*Variations on variants*](https://www.youtube.com/watch?v=YBXRiPKa_bc) – C++Now (2021)
 - N.Liber. [*The many variants of `std::variant`*](https://www.youtube.com/watch?v=JUxhwf7gYLg) – C++Now (2019)
 - M.Pusz. [*Effective replacement of dynamic polymorphism with `std::variant`*](https://www.youtube.com/watch?v=JGYxOieiZnY) – ACCU (2019)
 - M.Pusz. [*Effective replacement of dynamic polymorphism with `std::variant`*](https://www.youtube.com/watch?v=gKbORJtnVu8) – CppCon (2018)
@@ -1044,6 +1056,16 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 - [*`std::variant`*](https://en.cppreference.com/w/cpp/utility/variant) – C++ reference
 - Y.Zhihao. [*A sane `variant` converting constructor*](https://wg21.link/p0608) – WG21/P0608
+
+#### `std::any`
+
+:link:
+
+- C.Carter. [*`std::any`: How, when, and why*](https://devblogs.microsoft.com/cppblog/stdany-how-when-and-why/) (2018)
+
+:anchor:
+
+- [*`std::any`*](https://en.cppreference.com/w/cpp/utility/any) – C++ reference
 
 #### `(std::)expected`
 

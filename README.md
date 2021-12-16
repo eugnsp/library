@@ -28,7 +28,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :arrow_heading_up: [Backtracking](data_structures_and_algorithms/backtracking.md)
 	* :rocket: [Optimization algorithms](data_structures_and_algorithms/optimization.md)
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
-	* :symbols: [Parsing algorithms](data_structures_and_algorithms/parsing.md)
+	* :symbols: [Parsers and compilers](data_structures_and_algorithms/parsing.md)
 	* :file_folder: [Data compression algorithms](data_structures_and_algorithms/compression.md)
 	* :chart_with_upwards_trend: [Digital signal processing](data_structures_and_algorithms/signal_processing.md)
 	* :spades: [Game theory](data_structures_and_algorithms/game_theory.md)

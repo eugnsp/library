@@ -119,6 +119,8 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 ## Optimizations
 
+See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsing.md#optimizations).
+
 :link:
 
 - [*Optimizing C++*](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B) – WikiBooks
