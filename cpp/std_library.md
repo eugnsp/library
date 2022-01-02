@@ -42,6 +42,7 @@
 	- [Input/output manipulators](#inputoutput-manipulators)
 		- [`std::endl`](#stdendl)
 	- [Output formatting](#output-formatting)
+		- [Standard formatting library](#standard-formatting-library)
 	- [`std::stringstream`](#stdstringstream)
 	- [`std::ios_base::Init`](#stdios_baseinit)
 - [Iterators](#iterators)
@@ -554,6 +555,15 @@ See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idio
 
 - [*`std::printf` vs. `std::cout`*](https://stackoverflow.com/q/2872543) – Stack Overflow
 - [*Is `std::cout` synchronized/thread-safe?*](https://stackoverflow.com/q/6374264) – Stack Overflow
+
+#### Standard formatting library
+
+:link:
+
+- S.Collyer. [*C++20 text formatting: An introduction*](https://accu.org/journals/overload/29/166/collyer/) – [Overload **166**](https://accu.org/journals/overload/overload166) (2021)
+
+:grey_question:
+
 - [*How can I use C++20 `std::format`?*](https://stackoverflow.com/q/59024390) – Stack Overflow
 
 :anchor:
@@ -592,7 +602,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :anchor:
 
-- [*Boost.Iterator: The iterator library*](https://www.boost.org/doc/libs/release/libs/iterator/doc/html/index.html)
+- [*Boost.Iterator: The iterator library*](https://www.boost.org/doc/libs/release/libs/iterator/)
 
 ### Reverse iterators
 
@@ -675,7 +685,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :anchor:
 
-- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm)
+- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/)
 
 #### `std::unique_ptr`
 
@@ -1034,7 +1044,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 :anchor:
 
 - [*`std::optional`*](https://en.cppreference.com/w/cpp/utility/optional) – C++ reference
-- [*Boost.Optional: The optional wrapper library*](https://www.boost.org/doc/libs/release/libs/optional/doc/html/index.html)
+- [*Boost.Optional: The optional wrapper library*](https://www.boost.org/doc/libs/release/libs/optional/)
 - F.Cacciola, A.Krzemieński. [*A proposal to add a utility class to represent optional objects*](https://wg21.link/n3793) – WG21/N3793
 - A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
 
@@ -1192,6 +1202,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 :movie_camera:
 
+- B.Steagall. [*Back to basics: Classic STL*](https://www.youtube.com/watch?v=0itiHQVWq4M) – CppCon (2021)
 - A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
 
 :anchor:

@@ -47,6 +47,11 @@
 
 ## SIMD
 
+:movie_camera:
+
+- B.Steagall. [*Adventures in SIMD-thinking*](https://www.youtube.com/watch?v=1FPobiebZLE) – CppNow (2021)
+- B.Steagall. *Adventures in SIMD-thinking* [Part I](https://www.youtube.com/watch?v=qejTqnxQRcw), [Part II](https://www.youtube.com/watch?v=qXleSwCCEvY) – CppCon (2020)
+
 ### SIMD within a register (SWAR)
 
 :link:

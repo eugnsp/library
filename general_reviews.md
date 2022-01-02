@@ -6,6 +6,7 @@
 	- [Georgy Adelson-Velsky](#georgy-adelson-velsky)
 	- [Howard Aiken](#howard-aiken)
 	- [John Conway](#john-conway)
+	- [Margaret Hamilton](#margaret-hamilton)
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
 	- [Peter Norvig](#peter-norvig)
@@ -28,6 +29,7 @@
 - [Journals](#journals)
 - [Blogs](#blogs)
 - [Hardware history](#hardware-history)
+	- [Apollo Guidance Computer (AGC)](#apollo-guidance-computer-agc)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
 - [Humor, folklore, etc.](#humor-folklore-etc)
@@ -76,6 +78,12 @@
 :movie_camera:
 
 - [*Inventing Game of Life*](https://www.youtube.com/watch?v=R9Plq-D1gEk) – Numberphile (2014)
+
+### Margaret Hamilton
+
+:movie_camera:
+
+- M.Hamilton. [*The language as a software engineer*](https://www.youtube.com/watch?v=ZbVOF0Uk5lU) – ICSE (2018)
 
 ### Brian Kernighan
 
@@ -275,9 +283,18 @@
 
 ## Hardware history
 
+:anchor:
+
+- [*Vintage Computer Federation*](https://www.youtube.com/channel/UCKdBVD2wVUkuJQZhxGvVr0Q) (YouTube channel)
+- [*The National Museum of Computing*](https://www.youtube.com/user/tnmoc) (YouTube channel)
+- [*The National Museum of Computing*](https://www.tnmoc.org/)
+
+### Apollo Guidance Computer (AGC)
+
 :movie_camera:
 
-- [Vintage Computer Federation](https://www.youtube.com/channel/UCKdBVD2wVUkuJQZhxGvVr0Q) (YouTube channel)
+- R.Wills. [*Light years ahead: The 1969 Apollo guidance computer (revisited)*](https://www.youtube.com/watch?v=VYI0Kf_1wqk)  (2021)
+- R.Wills. [*Light years ahead: The 1969 Apollo guidance computer*](https://www.youtube.com/watch?v=B1J2RMorJXM) – The National Museum of Computing (2019)
 
 ### BESM-6
 

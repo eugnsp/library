@@ -9,6 +9,9 @@
 		- [NaNs](#nans)
 	- [Applications](#applications)
 - [Arithmetic algorithms](#arithmetic-algorithms)
+	- [Greatest common divisor (GCD)](#greatest-common-divisor-gcd)
+		- [Euclidean algorithm](#euclidean-algorithm)
+		- [Binary Euclidean algorithm (Stein’s algorithm)](#binary-euclidean-algorithm-steins-algorithm)
 	- [Arithmetic means](#arithmetic-means)
 	- [Binomial coefficient](#binomial-coefficient)
 	- [Division algorithms](#division-algorithms)
@@ -123,6 +126,20 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 :link:
 
 - T.Prince. [*Tuning up math functions*](https://github.com/eugnsp/CUJ/blob/master/10.12/prince/prince.md) – C/C++ Users Journal **10** (1992)
+
+### Greatest common divisor (GCD)
+
+#### Euclidean algorithm
+
+:link:
+
+- [*Euclidean algorithm*](https://en.wikipedia.org/wiki/Euclidean_algorithm) – Wikipedia
+
+#### Binary Euclidean algorithm (Stein’s algorithm)
+
+:link:
+
+- [*Binary GCD algorithm*](https://en.wikipedia.org/wiki/Binary_GCD_algorithm) – Wikipedia
 
 ### Arithmetic means
 

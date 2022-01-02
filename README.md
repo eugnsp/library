@@ -14,7 +14,7 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :hash: [Modules and preprocessor](cpp/modules_and_preprocessor.md)
 	* :wrench: [Tools](cpp/tools.md)
 - Data structures and algorithms
-	* :microscope: [Algorithm analysis](data_structures_and_algorithms/algorithm_analysis.md)
+	* :microscope: [Design and analysis](data_structures_and_algorithms/design_and_analysis.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
 	* :1234: [Sequence data structures and algorithms](data_structures_and_algorithms/sequence.md)
 	* :signal_strength: [Sorting and searching](data_structures_and_algorithms/sorting.md)

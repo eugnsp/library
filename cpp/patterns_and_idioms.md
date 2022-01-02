@@ -8,7 +8,6 @@
 	- [Style and guidelines](#style-and-guidelines)
 		- [Initialization](#initialization)
 		- [Comments](#comments)
-	- [Type design](#type-design)
 	- [Object-oriented design](#object-oriented-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
 		- [Interface segregation principle](#interface-segregation-principle)
@@ -17,10 +16,11 @@
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
-	- [Unit tests](#unit-tests)
+	- [Testing](#testing)
 		- [Seams](#seams)
 - [Safety and security](#safety-and-security)
 	- [Memory safety](#memory-safety)
+	- [Safe integers](#safe-integers)
 - [Working with existing code](#working-with-existing-code)
 - [Overview of patterns and idioms](#overview-of-patterns-and-idioms)
 - [Creational patterns](#creational-patterns)
@@ -154,17 +154,6 @@
 :movie_camera:
 
 - W.E.Brown. [*Whitespace <= comments << code*](https://www.youtube.com/watch?v=NLebZ3XT92E) – CppCon (2017)
-
-### Type design
-
-:link:
-
-
-:movie_camera:
-
-- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=h60zqdzIelE) – CppCon (2018)
-- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=OMhzlcBl9Hc) – ACCU (2019)
-- A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
 
 ### Object-oriented design
 
@@ -327,7 +316,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 - [*`std::move_if_noexcept`*](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
 
-### Unit tests
+### Testing
 
 :link:
 
@@ -339,6 +328,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - B.Saks. [*Back to basics: Unit tests*](https://www.youtube.com/watch?v=_OHE33s7EKw) – CppCon (2020)
 - D.Steffen. [*The science of unit tests*](https://www.youtube.com/watch?v=FjwayiHNI1w) – CppCon (2020)
 - F.Pikus. [*Back to basics: Test-driven development*](https://www.youtube.com/watch?v=RoYljVOj2H8) – CppCon (2019)
+- M.Clow. [*Making your library more reliable with fuzzing*](https://www.youtube.com/watch?v=LlLJRHToyUk) – C++Now (2018)
 - K.Henney. [*Test smells and fragrances*](https://www.youtube.com/watch?v=wCx_6kOo99M) – DevWeek (2014)
 
 #### Seams

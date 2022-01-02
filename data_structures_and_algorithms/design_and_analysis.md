@@ -1,7 +1,10 @@
-# Algorithm analysis <!-- omit in toc -->
+# Design and analysis <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
+- [Types design](#types-design)
+- [Algorithms design](#algorithms-design)
+	- [Generic algorithms design](#generic-algorithms-design)
 - [Complexity analysis](#complexity-analysis)
 	- [Amortized analysis](#amortized-analysis)
 - [Loop invariants](#loop-invariants)
@@ -9,6 +12,26 @@
 - [Stability (order of elements)](#stability-order-of-elements)
 
 ---
+
+## Types design
+
+:movie_camera:
+
+- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=h60zqdzIelE) – CppCon (2018)
+- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=OMhzlcBl9Hc) – ACCU (2019)
+- A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
+
+## Algorithms design
+
+### Generic algorithms design
+
+:movie_camera:
+
+- B.Deane. [*Constructing generic algorithms: Principles and practice*](https://www.youtube.com/watch?v=InMh3JxbiTs) – CppCon (2020)
+
+:book:
+
+- A.A.Stepanov, D.E.Rose. [*From mathematics to generic programming*](http://www.fm2gp.com/) (2014)
 
 ## Complexity analysis
 

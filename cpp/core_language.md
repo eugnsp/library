@@ -652,6 +652,18 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - D.K&uuml;hl. [*Range `for`*](https://www.youtube.com/watch?v=hGu9XWsOgWQ) – CppCon (2016)
 
+### `if`
+
+:anchor:
+
+- [`if` statement](https://en.cppreference.com/w/cpp/language/if) – C++ reference
+
+#### `if constexpr`
+
+:grey_question:
+
+- [*Difference between `if constexpr()` vs `if()`*](https://stackoverflow.com/q/43434491) – Stack Overflow
+
 ---
 
 ## Functions and functional objects

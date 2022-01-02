@@ -131,6 +131,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 - [*Can `const`-correctness improve performance?*](https://stackoverflow.com/q/3435026) – Stack Overflow
 - [*Why does this loop produce “warning: iteration 3u invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
 - [*What is tail call optimization?*](https://stackoverflow.com/q/310974) – Stack Overflow
+- [*Is premature optimization really the root of all evil?*](https://softwareengineering.stackexchange.com/q/80084) – Software Engineering
 
 :movie_camera:
 
