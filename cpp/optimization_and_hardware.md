@@ -342,6 +342,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 :movie_camera:
 
+- A.Sermersheim, B.Geller. [*Back to basics: Undefined behavior*](https://www.youtube.com/watch?v=NpL9YnxnOqM) – CppCon (2021)
 - J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) – C++Now (2018)
 - B.Geller, A.Sermersheim. [*Undefined behavior is not an error*](https://www.youtube.com/watch?v=XEXpwis_deQ) – CppCon (2018)
 - P.Padlewski. [*Undefined behaviour is awesome!*](https://www.youtube.com/watch?v=ehyHyAIa5so) – CppCon (2017)

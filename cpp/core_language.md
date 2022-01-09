@@ -7,7 +7,8 @@
 - [ABI and implementation](#abi-and-implementation)
 	- [Itanium C++ ABI](#itanium-c-abi)
 	- [Calling conventions](#calling-conventions)
-	- [Inheritance](#inheritance)
+	- [Implementation of inheritance](#implementation-of-inheritance)
+	- [Implementation of exceptions](#implementation-of-exceptions)
 - [Attributes](#attributes)
 	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
 	- [`[[nodiscard]]`](#nodiscard)
@@ -48,6 +49,8 @@
 	- [Value categories](#value-categories)
 - [Flow control](#flow-control)
 	- [Range-based `for` loop](#range-based-for-loop)
+	- [`if`](#if)
+		- [`if constexpr`](#if-constexpr)
 - [Functions and functional objects](#functions-and-functional-objects)
 	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
@@ -164,7 +167,7 @@
 
 - R.Orr. [*Windows 64-bit calling conventions*](https://accu.org/journals/overload/22/120/orr_1897/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
 
-### Inheritance
+### Implementation of inheritance
 
 :link:
 
@@ -177,6 +180,24 @@
 :book:
 
 - Ch. 1: *Inheritance*, Sec.: *Inheritance implementation*; Ch. 2: *Multiple inheritance*, Sec.: *Multiple inheritance implementation* – N.Llopis. *C++ for game programmers* – Charles River Media (2003)
+
+### Implementation of exceptions
+
+See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+
+:link:
+
+- V.Kochhar. [*How a C++ compiler implements exception handling*](https://www.codeproject.com/Articles/2126/How-a-C-compiler-implements-exception-handling) (2002)
+
+:movie_camera:
+
+- A.Weis. [*Exceptions demystified*](https://www.youtube.com/watch?v=kO0KVB-XIeE) – C++Now (2019)
+- J.McNellis. [*Unwinding the stack: Exploring how C++ exceptions work on windows*](https://www.youtube.com/watch?v=COEv2kq_Ht8) – CppCon (2018)
+- D.Watson. [*C++ exceptions and stack unwinding*](https://www.youtube.com/watch?v=_Ivd3qzgT7U) – CppCon (2017)
+
+:anchor:
+
+- [*Exception handling*](https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html) – [Itanium C++ ABI](https://itanium-cxx-abi.github.io/cxx-abi/abi.html)
 
 ---
 

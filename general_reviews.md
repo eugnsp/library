@@ -276,6 +276,7 @@
 - [Vittorio Romeo](https://vittorioromeo.info/)
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
+- [Bob Steagall](https://bobsteagall.com/)
 - [Philip Trettner](https://artificial-mind.net/)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
 

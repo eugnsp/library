@@ -3,6 +3,7 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Types design](#types-design)
+	- [Affine space types](#affine-space-types)
 - [Algorithms design](#algorithms-design)
 	- [Generic algorithms design](#generic-algorithms-design)
 - [Complexity analysis](#complexity-analysis)
@@ -17,9 +18,20 @@
 
 :movie_camera:
 
-- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=h60zqdzIelE) – CppCon (2018)
 - V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=OMhzlcBl9Hc) – ACCU (2019)
+- V.Ciura. [*Regular types and why do I care?*](https://www.youtube.com/watch?v=h60zqdzIelE) – CppCon (2018)
 - A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
+
+### Affine space types
+
+:link:
+
+- A.Shavit. [*Affine space types*](http://videocortex.io/2018/Affine-Space-Types/) (2018)
+
+:movie_camera:
+
+- A.Shavit, B.Fahller. [*The curiously recurring pattern of coupled types*](https://www.youtube.com/watch?v=msi4WNQZyWs) – NDC (2019)
+- A.Shavit, B.Fahller: [*The Curiously Recurring Pattern of Coupled Types*](https://www.youtube.com/watch?v=EhlYsKnAmjs) – StockholmCpp (2018)
 
 ## Algorithms design
 

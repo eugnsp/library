@@ -306,6 +306,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*What is the ideal growth rate for a dynamically allocated array?*](https://stackoverflow.com/q/1100311) – Stack Overflow
 - [*Why would I ever use `push_back` instead of `emplace_back`?*](https://stackoverflow.com/q/10890653) – Stack Overflow
 - [*Can `std::vector` `emplace_back` copy construct from an element of the vector itself?*](https://stackoverflow.com/q/24908718) – Stack Overflow
+- [*Is inserting an element of a `std::vector` into the same vector allowed?*](https://stackoverflow.com/q/29300408) – Stack Overflow
 
 :book:
 
@@ -718,6 +719,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :grey_question:
 
+- [*`std::shared_ptr` exception safety*](https://stackoverflow.com/q/20053504) – Stack Overflow
 - [*`std::shared_ptr` thread safety*](https://stackoverflow.com/q/14482830) – Stack Overflow
 - [*`shared_ptr` magic*](https://stackoverflow.com/q/3899790) – Stack Overflow
 - [*How do I call `std::make_shared` on a class with only protected or private constructors?*](https://stackoverflow.com/q/8147027) – Stack Overflow
@@ -1068,6 +1070,8 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 - Y.Zhihao. [*A sane `variant` converting constructor*](https://wg21.link/p0608) – WG21/P0608
 
 #### `std::any`
+
+See also [*Type erasure* – Patterns, idioms, and design principles](patterns_and_idioms.md#type-erasure).
 
 :link:
 

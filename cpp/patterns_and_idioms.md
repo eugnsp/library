@@ -256,6 +256,16 @@
 - [*The rule of three/five/zero*](https://en.cppreference.com/w/cpp/language/rule_of_three) – C++ reference
 - W.E.Brown. [*Proposing the rule of five, v2*](http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3839.pdf) – WG21/N3839 (2014)
 
+### Contracts
+
+:link:
+
+- A.Krzemie&nacute;ski. [*Contracts, preconditions & invariants*](https://akrzemi1.wordpress.com/2020/12/09/contracts-preconditions-invariants/) (2020)
+
+:movie_camera:
+
+- A.Krzemie&nacute;ski. [*Preconditions, postconditions, invariants: How they help write robust programs*](https://www.youtube.com/watch?v=4Qyu8uBrRUs) – C++Now (2021)
+
 ### Error handling
 
 :link:
@@ -359,6 +369,11 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - P.Sommerlad. [*Simplest safe integers*](https://www.youtube.com/watch?v=Z0X_TFCcTXA) – C++Now (2021)
+- R.Ramey. [*Safe Numerics*](https://www.youtube.com/watch?v=93Cjg42bGEw) – CppCon (2018)
+
+:anchor:
+
+- [*Boost.SafeNumerics: Guaranteed correct integer arithmetic*](https://www.boost.org/doc/libs/release/libs/safe_numerics/)
 
 ---
 
@@ -774,6 +789,14 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 - Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
 ## Type erasure
+
+:link:
+
+- K.Henney. [*Valued conversions*](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.374.2252&rep=rep1&type=pdf) – C++ Report (2000)
+
+:movie_camera:
+
+- K.Iglberger. [*Breaking dependencies: Type erasure – A design analysis*](https://www.youtube.com/watch?v=M4ekpfVo4_o) – CppCon (2021)
 
 ## Visitor
 
