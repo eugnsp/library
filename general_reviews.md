@@ -6,6 +6,7 @@
 	- [Georgy Adelson-Velsky](#georgy-adelson-velsky)
 	- [Howard Aiken](#howard-aiken)
 	- [John Conway](#john-conway)
+	- [Robert W Floyd](#robert-w-floyd)
 	- [Margaret Hamilton](#margaret-hamilton)
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
@@ -79,7 +80,21 @@
 
 - [*Inventing Game of Life*](https://www.youtube.com/watch?v=R9Plq-D1gEk) – Numberphile (2014)
 
+### Robert W Floyd
+
+:movie_camera:
+
+- D.Knuth. [*Robert W Floyd, In memoriam*](https://www.youtube.com/watch?v=OJsMXu3EPCw) – Stanford Lecture (2002)
+
+:page_facing_up:
+
+- Robert W. Floyd. [*The paradigms of programming*](https://dl.acm.org/doi/pdf/10.1145/359138.359140) – [Communications of the ACM **22**, 455](https://doi.org/10.1145/359138.359140) (1979)
+
 ### Margaret Hamilton
+
+:link:
+
+- [*Margaret Hamilton*](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) – Wikipedia
 
 :movie_camera:
 
@@ -150,6 +165,7 @@
 - [*Elements of programming*](https://www.youtube.com/watch?v=Ih9gpJga4Vc) – Stanford (2010)
 - *Transformations and their orbits.* [Part I](https://www.youtube.com/watch?v=QmuMHtbO4ug), [Part II](https://www.youtube.com/watch?v=uCGifwlgAQg) – Yandex (in Russian, 2010)
 - *Greatest common measure: The last 2500 years.* [Part I](https://www.youtube.com/watch?v=NfGeVRebiio), [Part II](https://www.youtube.com/watch?v=zwucsB2EfXc) – Yandex (in Russian, 2010)
+- [*Educating programmers: A customer perspective*](https://www.youtube.com/watch?v=I_diUagUxGM) – Workshop on Quality Software (2012)
 
 :book:
 
@@ -215,6 +231,10 @@
 
 ## Operating systems
 
+:movie_camera:
+
+- D.Zavalishin. [*Beyond Intel and Linux: Uncommon processors and operating systems*](https://www.youtube.com/watch?v=DBOTcG6iJEI) – Demodulation (in Russian, 2019)
+
 ### Linux
 
 ---
@@ -269,6 +289,7 @@
 - [Jonathan Boccara](http://www.fluentcpp.com/)
 - [Bartlomiej Filipek](http://www.bfilipek.com/)
 - [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)
+- [Andrzej Krzemie&nacute;ski](https://akrzemi1.wordpress.com/author/akrzemi1/)
 - [KrzaQ](https://dev.krzaq.cc/)
 - [Arne Mertz](http://arne-mertz.de/)
 - [Jonathan Müller](http://foonathan.net/)

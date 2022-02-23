@@ -5,6 +5,7 @@
 - [Hardware](#hardware)
 	- [CPU](#cpu)
 		- [CPU word size](#cpu-word-size)
+		- [Endianness and NUXI problem](#endianness-and-nuxi-problem)
 		- [x87](#x87)
 	- [Memory](#memory)
 		- [Memory addressing](#memory-addressing)
@@ -62,6 +63,16 @@
 
 - J.Mashey. [*The long road to 64 bits*](https://cacm.acm.org/magazines/2009/1/15667-the-long-road-to-64-bits/fulltext) – [Communications of the ACM **52**, 45-53](https://doi.org/10.1145/1435417.1435431) (2009)
 
+#### Endianness and NUXI problem
+
+:link:
+
+- [*Endianness*](https://en.wikipedia.org/wiki/Endianness) – Wikipedia
+
+:book:
+
+- Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
+
 #### x87
 
 See also [*Numeric data structures and algorithms*](../data_structures_and_algorithms/numeric.md).
@@ -100,6 +111,10 @@ See also [*Numeric data structures and algorithms*](../data_structures_and_algor
 - C.Santili. [*x86 paging tutorial*](https://cirosantilli.com/x86-paging)
 - [*How does x86 paging work?*](https://stackoverflow.com/q/18431261) – Stack Overflow
 - [*What are near, far and huge pointers?*](https://stackoverflow.com/q/3575592) – Stack Overflow
+
+:book:
+
+- Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 <!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
 
@@ -204,6 +219,8 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 ### Memory allocation
 
+See also [*Allocators* – The standard library, Boost, and proposals](std_library.md#allocators).
+
 :link:
 
 - N.Fitzgerald. [*Always bump downwards*](https://fitzgeraldnick.com/2019/11/01/always-bump-downwards.html) (2019)
@@ -214,6 +231,8 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 :movie_camera:
 
+- J.Lakos. *Local (“arena”) memory allocators.* [Part I](https://www.youtube.com/watch?v=nZNd5FjSquk), [Part II](https://www.youtube.com/watch?v=CFzuFNSpycI) – CppCon (2017)
+- J.Lakos. [*Local (“arena”) memory allocators*](https://www.youtube.com/watch?v=d1DpVR0tw0U) – ACCU (2017)
 - A.Alexandrescu. [*`std::allocator` is to allocation what `std::vector` is to vexation*](https://www.youtube.com/watch?v=LIb3L4vKZ7U) – CppCon (2015)
 
 ### Memory relocation

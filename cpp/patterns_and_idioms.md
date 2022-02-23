@@ -14,6 +14,7 @@
 	- [Interface design](#interface-design)
 		- [Destructors](#destructors)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
+	- [Contracts](#contracts)
 	- [Error handling](#error-handling)
 		- [Exceptions](#exceptions)
 	- [Testing](#testing)
@@ -29,9 +30,11 @@
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Singleton](#singleton)
 - [Structural patterns](#structural-patterns)
+	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
 - [Behavioural patterns](#behavioural-patterns)
 	- [Iterator](#iterator)
-		- [Transform iterator](#transform-iterator)
+		- [Transform iterators](#transform-iterators)
+		- [Constant iterators](#constant-iterators)
 	- [Template method](#template-method)
 - [Metaprogramming patterns](#metaprogramming-patterns)
 	- [Curiously recurring template](#curiously-recurring-template)
@@ -207,6 +210,7 @@
 :link:
 
 - S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
+- A.O’Dwyer. [*`const` is a contract*](https://quuxplusone.github.io/blog/2019/01/03/const-is-a-contract/) (2019)
 - S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html) (2018)
 - M.Clow. [*Fixing an interface bug*](https://cplusplusmusings.wordpress.com/2013/02/27/fixing-an-interface-bug/) (2013)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
@@ -216,6 +220,7 @@
 
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
 - [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
+- [*Purpose of returning by `const` value?*](https://stackoverflow.com/q/8716330) – Stack Overflow
 
 :movie_camera:
 
@@ -468,6 +473,12 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ## Structural patterns
 
+### `const` and non-`const` member functions
+
+:grey_question:
+
+- [*How do I remove code duplication between similar `const` and non-`const` member functions?*](https://stackoverflow.com/q/1661529) – Stack Overflow
+
 ---
 
 ## Behavioural patterns
@@ -480,7 +491,7 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 
 - J.M.Curran. [*Creating a word iterator*](https://github.com/eugnsp/CUJ/blob/master/16.08/curran/curran.md) – C/C++ Users Journal **16** (1998)
 
-#### Transform iterator
+#### Transform iterators
 
 > A transform iterator adapts an iterator by modifying the dereference operator to apply a function object to the result of dereferencing the iterator and returning the result.
 
@@ -491,6 +502,12 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :anchor:
 
 - [*Transform iterator*](https://www.boost.org/doc/libs/release/libs/iterator/doc/html/iterator/specialized/transform.html) – Boost.Iterator
+
+#### Constant iterators
+
+:link:
+
+- A.O’Dwyer. [*Pitfalls and decision points in implementing `const_iterator`](https://quuxplusone.github.io/blog/2018/12/01/const-iterator-antipatterns/) (2018)
 
 ### Template method
 

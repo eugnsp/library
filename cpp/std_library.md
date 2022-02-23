@@ -656,6 +656,11 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 - [*Why is `allocator::rebind` necessary when we have template template parameters?*](https://stackoverflow.com/q/12362363) – Stack Overflow
 - [*Why is `std::allocator` a template?*](https://stackoverflow.com/q/45267275) – Stack Overflow
 
+:movie_camera:
+
+- P.Halpern. [*Allocators: The good parts*](https://www.youtube.com/watch?v=v3dz-AKOVL8) – CppCon (2017)
+- B.Steagall. [*How to write a custom allocator*](https://www.youtube.com/watch?v=kSWfushlvB8) – CppCon (2017)
+
 :anchor:
 
 - [*`std::allocator`*](https://en.cppreference.com/w/cpp/memory/allocator) – C++ reference
@@ -1177,6 +1182,7 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 :link:
 
+- D.Levin. [*glibc: The C library in GNU/Linux system*](https://www.youtube.com/watch?v=qntaaVf5oUg) – OS Day (in Russian, 2018)
 - J.Wakely. [*Why `<cstdlib>` is more complicated than you might think*](https://developers.redhat.com/blog/2016/02/29/why-cstdlib-is-more-complicated-than-you-might-think/) (2016)
 
 :anchor:

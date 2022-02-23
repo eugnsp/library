@@ -7,7 +7,7 @@
 - [CDN](#cdn)
 - [DNS](#dns)
 - [Big storage: file systems](#big-storage-file-systems)
-	- [GFS (Google file system)](#gfs-google-file-system)
+	- [GFS (Google File System)](#gfs-google-file-system)
 	- [HDFS (Hadoop Distributed File System)](#hdfs-hadoop-distributed-file-system)
 - [Big storage: databases](#big-storage-databases)
 	- [NoSQL databases](#nosql-databases)
@@ -34,13 +34,12 @@
 	- [Instagram](#instagram)
 - [Protocols](#protocols)
 	- [Layer 4 protocols](#layer-4-protocols)
-		- [TCP](#tcp)
 		- [UDP](#udp)
+		- [TCP](#tcp)
 	- [Layer 7 protocols](#layer-7-protocols)
 		- [HTTP](#http)
 		- [History](#history)
 	- [WebSocket](#websocket)
-- [Web APIs](#web-apis)
 - [CAP theorem](#cap-theorem)
 - [Load balancing](#load-balancing)
 	- [Layer 4 load balancing](#layer-4-load-balancing)
@@ -102,7 +101,7 @@
 
 ## Big storage: file systems
 
-### GFS (Google file system)
+### GFS (Google File System)
 
 :link:
 

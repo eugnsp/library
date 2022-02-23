@@ -38,6 +38,7 @@
 	- [Alignment](#alignment)
 	- [Object creation and placement `new`](#object-creation-and-placement-new)
 - [Exceptions](#exceptions)
+	- [`noexcept` specifier](#noexcept-specifier)
 - [Expressions](#expressions)
 	- [`nullptr`](#nullptr)
 	- [Compound literals](#compound-literals)
@@ -74,6 +75,7 @@
 	- [Floating-point types](#floating-point-types)
 		- [`__float128`](#__float128)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
+	- [Pointer and array types](#pointer-and-array-types)
 	- [Class types](#class-types)
 		- [Layout](#layout)
 		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
@@ -92,6 +94,7 @@
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
 	- [Embedding binary data](#embedding-binary-data)
 - [C, C vs C++](#c-c-vs-c)
+	- [Arrays](#arrays)
 	- [Functions](#functions)
 	- [Static variables](#static-variables)
 	- [Conditional operator](#conditional-operator)
@@ -297,6 +300,7 @@ See also [*Layout* – Class types](#layout).
 
 - [*Const correctness*](https://isocpp.org/wiki/faq/const-correctness) – C++ FAQ
 - H.Sutter. [GotW #6: *Const-correctness*](http://www.gotw.ca/gotw/006.htm)
+- A.O’Dwyer. [*`const` is a contract*](https://quuxplusone.github.io/blog/2019/01/03/const-is-a-contract/) (2019)
 - S.Meyers. [*Appearing and disappearing `const`s in C++*](https://aristeia.com/Papers/appearing%20and%20disappearing%20consts.pdf) (2011)
 - D.Saks. [*Stepping up to C++: Mutable class members*](https://github.com/eugnsp/CUJ/blob/master/13.04/saks/saks.md) – C/C++ Users Journal **13** (1995)
 
@@ -548,6 +552,21 @@ See also [*Uninitialized storage* – The standard library, Boost, and proposals
 
 See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
 
+### `noexcept` specifier
+
+> Specifies whether a function could throw exceptions.
+
+:link:
+
+- [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
+- [*Why those two `std::string::find()` functions are declared as `noexcept`?*](https://stackoverflow.com/q/66603543) – Stack Overflow
+- [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
+
+:anchor:
+
+- [*`noexcept` specifier*](https://en.cppreference.com/w/cpp/language/noexcept_spec) – C++ reference
+- A.Meredith, J.Lakos. [*`noexcept` prevents library validation*](https://wg21.link/n3248) – WG21/N3248
+
 ---
 
 ## Expressions
@@ -795,6 +814,9 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :link:
 
 - A.O’Dwyer. [*What `=delete` means*](https://quuxplusone.github.io/blog/2021/10/17/equals-delete-means/) (2021)
+- A.Knatten. [*No move vs deleted move constructors*](https://accu.org/journals/overload/29/166/knatten/) – [Overload **166**](https://accu.org/journals/overload/overload166) (2021)
+- A.Knatten. [*The difference between no move constructor and a deleted move constructor*](https://blog.knatten.org/2021/10/15/the-difference-between-no-move-constructor-and-a-deleted-move-constructor/) (2021)
+
 
 :anchor:
 
@@ -972,6 +994,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 - [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
 - [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/q/6496545) – Stack Overflow
 
+### Pointer and array types
+
+:movie_camera:
+
+- B.Saks. [*Back to basics: Pointers and memory*](https://www.youtube.com/watch?v=rqVWj0aVSxg) – CppCon (2020)
+
 ### Class types
 
 :grey_question:
@@ -1144,6 +1172,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*Why compilers test the least significant bit in an address?*](https://stackoverflow.com/q/53421279) – Stack Overflow
 - [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
 - [*Difference between `struct` and `typedef struct` in C++?*](https://stackoverflow.com/q/612328) – Stack Overflow
+- [*What are “extern char condition tricks”?*](https://stackoverflow.com/q/70818988) – Stack Overflow
 
 :movie_camera:
 
@@ -1198,6 +1227,12 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - L.Sas. [*Modern C and what we can learn from it*](https://www.youtube.com/watch?v=QpAhX-gsHMs) – ACCU (2021)
+
+### Arrays
+
+:book:
+
+- Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 ### Functions
 

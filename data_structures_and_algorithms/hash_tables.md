@@ -11,6 +11,7 @@
 	- [Bloom filter](#bloom-filter)
 	- [Extendible hashing](#extendible-hashing)
 - [Consistent hashing](#consistent-hashing)
+- [Implementations](#implementations)
 
 ---
 
@@ -114,6 +115,12 @@ See [*Hashing* – Cryptographic algorithms](cryptographic.md#hashing).
 
 - [*Consistent hashing*](https://en.wikipedia.org/wiki/Consistent_hashing) – Wikipedia
 - M.Nielsen. [*Consistent hashing*](http://michaelnielsen.org/blog/consistent-hashing/) (2009)
+
+## Implementations
+
+:grey_question:
+
+- [*Super high performance C/C++ hash map (table, dictionary)*](https://stackoverflow.com/q/3300525) – Stack Overflow
 
 <!--
 

@@ -2,13 +2,22 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Introduction and overview](#introduction-and-overview)
 - [Hashing](#hashing)
 	- [Hash functions](#hash-functions)
 	- [Password hashing](#password-hashing)
 - [Random numbers generation](#random-numbers-generation)
 	- [Potential problems](#potential-problems)
+- [Public-key cryptography](#public-key-cryptography)
+	- [Diffie–Hellman key exchange](#diffiehellman-key-exchange)
 
 ---
+
+## Introduction and overview
+
+:book:
+
+- Essay 7: *Locking the barn door* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 ## Hashing
 
@@ -35,6 +44,10 @@
 ---
 
 ## Public-key cryptography
+
+:book:
+
+- Essay 8: *Half a secret* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 ### Diffie–Hellman key exchange
 

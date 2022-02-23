@@ -127,6 +127,18 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 - T.Prince. [*Tuning up math functions*](https://github.com/eugnsp/CUJ/blob/master/10.12/prince/prince.md) – C/C++ Users Journal **10** (1992)
 
+### Common functions
+
+:book:
+
+- Essay 6: *Do-it-yourself math functions* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
+
+#### Square root
+
+:link:
+
+- [*Fast inverse square root*](https://en.wikipedia.org/wiki/Fast_inverse_square_root) – Wikipedia
+
 ### Greatest common divisor (GCD)
 
 #### Euclidean algorithm

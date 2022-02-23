@@ -2,6 +2,7 @@
 
 - [Modules](#modules)
 - [Preprocessor](#preprocessor)
+	- [`#include` directive](#include-directive)
 	- [Variadic macros](#variadic-macros)
 
 ---
@@ -32,6 +33,10 @@
 - B.Ruth. [*The preprocessor: Everything you need to know and more!*](https://www.youtube.com/watch?v=ElkTaRHZz18) – CppCon (2021)
 - J.Jagger. [*Everything you’ve ever wanted to know about the C/C++ preprocessor but didn’t know you couldn ask!*](https://www.youtube.com/watch?v=OAuRkAAh6Hk) – NDC Techtown (2018)
 - A.Deutsch. [*Preprocessor 101*](https://www.youtube.com/watch?v=qBJaM8ki7bM) – DigiPen Game Engine Architecture Club (2016)
+
+### `#include` directive
+
+- A.Knatten. [*Another reason to avoid `#include`s in headers*](https://blog.knatten.org/2012/11/09/another-reason-to-avoid-includes-in-headers/#comment-25982) (2012)
 
 ### Variadic macros
 
