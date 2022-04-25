@@ -11,6 +11,7 @@
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
 	- [Peter Norvig](#peter-norvig)
+	- [Robert Sedgewick](#robert-sedgewick)
 	- [Bjarne Stroustrup](#bjarne-stroustrup)
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Ken Thompson](#ken-thompson)
@@ -33,6 +34,7 @@
 	- [Apollo Guidance Computer (AGC)](#apollo-guidance-computer-agc)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
+- [Software-related accidents](#software-related-accidents)
 - [Humor, folklore, etc.](#humor-folklore-etc)
 
 ## People
@@ -135,6 +137,12 @@
 
 - L.Fridman. [*Artificial intelligence: A modern approach*](https://www.youtube.com/watch?v=_VPxEcT_Adc) (2019)
 
+### Robert Sedgewick
+
+:link:
+
+- [*Robert Sedgewick*](https://sedgewick.io/)
+
 ### Bjarne Stroustrup
 
 :link:
@@ -198,6 +206,10 @@
 :movie_camera:
 
 - [*The languages*](https://www.youtube.com/watch?v=xnCgoEyz31M) – Unix50 - Unix Today and Tomorrow (2019)
+
+:book:
+
+- Essay 4: *The central folly* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 ### Algol
 
@@ -330,6 +342,14 @@
 :movie_camera:
 
 - R.Hill. [*BBC B microcomputer*](https://www.youtube.com/watch?v=do6xydtcVPk), [*Original Elite on the BBC B*](https://www.youtube.com/watch?v=owz7XExO-Wk) – Computerphile (2013)
+
+---
+
+## Software-related accidents
+
+:link:
+
+- [*Therac-25*](https://en.wikipedia.org/wiki/Therac-25) – Wikipedia
 
 ---
 

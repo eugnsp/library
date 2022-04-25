@@ -72,6 +72,7 @@
 - [Types](#types)
 	- [Integral types](#integral-types)
 		- [Integral promotion](#integral-promotion)
+		- [`wchar_t`](#wchar_t)
 	- [Floating-point types](#floating-point-types)
 		- [`__float128`](#__float128)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
@@ -953,6 +954,12 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - [*Integral promotion*](https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion) – C++ reference
 
+#### `wchar_t`
+
+:link:
+
+- [*`wchar_t` is a historical accident*](https://www.moria.us/articles/wchar-is-a-historical-accident/) (2017)
+
 ### Floating-point types
 
 > There are three floating point types: `float`, `double`, and `long double`. The type `double` provides at least as much precision as `float`, and the type `long double` provides at least as much precision as `double`. The set of values of the type `float` is a subset of the set of values of the type `double`; the set of values of the type `double` is a subset of the set of values of the type `long double`. The value representation of floating-point types is implementation-defined.
@@ -1173,6 +1180,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*Why does the size of class in C++ depend on the `public`/`private` status of data members?*](https://stackoverflow.com/q/58960303) – Stack Overflow
 - [*Difference between `struct` and `typedef struct` in C++?*](https://stackoverflow.com/q/612328) – Stack Overflow
 - [*What are “extern char condition tricks”?*](https://stackoverflow.com/q/70818988) – Stack Overflow
+- [*Why can I use scalar type as the return type of `operator->`?*](https://stackoverflow.com/q/70773154/) – Stack Overflow
 
 :movie_camera:
 

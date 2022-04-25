@@ -9,6 +9,8 @@
 	- [Random points generation](#random-points-generation)
 		- [Random points in triangles](#random-points-in-triangles)
 		- [Random points in polygons](#random-points-in-polygons)
+- [Polyline algorithms](#polyline-algorithms)
+	- [Ramer–Douglas–Peucker algorithm](#ramerdouglaspeucker-algorithm)
 - [Drawing algorithms](#drawing-algorithms)
 	- [Bresenham’s-type algorithms](#bresenhams-type-algorithms)
 		- [Bresenham’s line algorithm](#bresenhams-line-algorithm)
@@ -64,6 +66,16 @@
 :grey_question:
 
 - [*How to get a random point on the interior of an irregular polygon?*](https://stackoverflow.com/q/19481514) – Stack Overflow
+
+---
+
+## Polyline algorithms
+
+### Ramer–Douglas–Peucker algorithm
+
+:link:
+
+- [*Ramer–Douglas–Peucker algorithm*](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm) – Wikipedia
 
 ---
 

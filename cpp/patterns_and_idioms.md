@@ -7,6 +7,7 @@
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
 		- [Initialization](#initialization)
+		- [West-`const` vs east-`const`](#west-const-vs-east-const)
 		- [Comments](#comments)
 	- [Object-oriented design](#object-oriented-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
@@ -31,6 +32,7 @@
 	- [Singleton](#singleton)
 - [Structural patterns](#structural-patterns)
 	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
+	- [Passkey](#passkey)
 - [Behavioural patterns](#behavioural-patterns)
 	- [Iterator](#iterator)
 		- [Transform iterators](#transform-iterators)
@@ -56,7 +58,6 @@
 - [Infinite loop](#infinite-loop)
 - [Observer](#observer)
 - [Opaque typedef (whole value)](#opaque-typedef-whole-value)
-- [Passkey](#passkey)
 - [Strategy / Policy](#strategy--policy)
 - [Type erasure](#type-erasure)
 - [Visitor](#visitor)
@@ -146,6 +147,14 @@
 :link:
 
 - T.Winters. [TotW #88: *Initialization: `=`, `()`, and `{}*`](https://abseil.io/tips/88) – Abseil C++ Tips
+
+#### West-`const` vs east-`const`
+
+:movie_camera:
+
+- J.Kalb. [*This is why we can’t have nice things*](https://www.youtube.com/watch?v=fv--IKZFVO8) – CppCon (2018)
+
+<!-- Dan Saks. Simplifying const Syntax. Dr.Dobb's, September 26, 2011. -->
 
 #### Comments
 
@@ -479,6 +488,20 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*How do I remove code duplication between similar `const` and non-`const` member functions?*](https://stackoverflow.com/q/1661529) – Stack Overflow
 
+### Passkey
+
+:link:
+
+- Y.Mandelbaum. [TotW #134: *`make_unique` and private constructors*`](https://abseil.io/tips/134) – Abseil C++ Tips
+
+:grey_question:
+
+<!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
+
+<!-- https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern -->
+
+- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
+
 ---
 
 ## Behavioural patterns
@@ -539,6 +562,7 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :link:
 
 - [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
+- [*Curiously recurring template pattern*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Curiously_Recurring_Template_Pattern) – Wikibooks
 - A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/journals/overload/13/70/nasonov_296/) – [Overload **70**](https://accu.org/journals/overload/overload70) (2005)
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
 
@@ -782,15 +806,9 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 - W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) – WG21/N3741 (2013)
 - [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) – Boost.Serialization
 
-## Passkey
-
-:grey_question:
-
-<!-- https://stackoverflow.com/questions/3217390/clean-c-granular-friend-equivalent-answer-attorney-client-idiom/3218920#3218920-->
-
-<!-- https://stackoverflow.com/questions/3324248/how-to-name-this-key-oriented-access-protection-pattern -->
-
-- [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
+<!-- guthib / anthonywilliems/strong_typedef
+github PeterSommerlad/ Pssst
+martinmoene/WholeValue -->
 
 ## Strategy / Policy
 

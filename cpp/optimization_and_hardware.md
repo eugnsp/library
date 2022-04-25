@@ -31,6 +31,7 @@
 		- [Infinite loops](#infinite-loops)
 		- [Strict aliasing rule](#strict-aliasing-rule)
 - [Benchmarking](#benchmarking)
+- [Profiling](#profiling)
 
 ---
 
@@ -390,3 +391,11 @@ See [*Type-punning* – Core language](core_language.md#type-punning).
 :link:
 
 - D.Ferenc. [*Contractual loopholes*](https://accu.org/journals/overload/25/138/ferenc_2363/) – [Overload **138**](https://accu.org/journals/overload/overload138) (2017)
+
+---
+
+## Profiling
+
+:movie_camera:
+
+- M.Ropert. [*The basics of profiling*](https://www.youtube.com/watch?v=dToaepIXW4s) – CppCon (2021)

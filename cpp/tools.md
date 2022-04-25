@@ -7,13 +7,13 @@
 - [Version control](#version-control)
 	- [Git](#git)
 - [Compilation and compilers](#compilation-and-compilers)
-	- [Linux](#linux)
-		- [GCC](#gcc)
-	- [Windows](#windows)
-		- [MSVC](#msvc)
+	- [GCC](#gcc)
+	- [Clang](#clang)
+	- [MSVC](#msvc)
+	- [Circle](#circle)
 - [Linking and linkers](#linking-and-linkers)
-	- [Linux](#linux-1)
-	- [Windows](#windows-1)
+	- [Linux](#linux)
+	- [Windows](#windows)
 		- [DLLs](#dlls)
 - [IDE](#ide)
 	- [Visual Studio Code](#visual-studio-code)
@@ -66,9 +66,7 @@
 
 - [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) – C++ reference
 
-### Linux
-
-#### GCC
+### GCC
 
 :link:
 
@@ -89,19 +87,23 @@
 
 - [*Semantics of floating point math in GCC*](https://gcc.gnu.org/wiki/FloatingPointMath) – GCC Wiki
 
-#### Clang
+### Clang
 
 :link:
 
 - E.Bendersky. [*Dumping a C++ object’s memory layout with Clang*](https://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/) (2012)
 
-### Windows
-
-#### MSVC
+### MSVC
 
 :anchor:
 
 - [*Compiler options: `/fp` (specify floating-point behavior)](https://docs.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior) – Visual C++ documentation
+
+### Circle
+
+:link:
+
+- [*Circle C++ compiler*](https://www.circle-lang.org/)
 
 ---
 
@@ -199,6 +201,7 @@
 
 :movie_camera:
 
+- B.Steagall. [*Back to basics: Debugging techniques*](https://www.youtube.com/watch?v=M7fV-eQwxrY) – CppCon (2021)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) – ACCU (2019)
 - G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) – CppCon (2018)
 - [*Unusual memory bit patterns*](https://www.softwareverify.com/memory-bit-patterns.php)

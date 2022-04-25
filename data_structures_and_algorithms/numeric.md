@@ -9,6 +9,10 @@
 		- [NaNs](#nans)
 	- [Applications](#applications)
 - [Arithmetic algorithms](#arithmetic-algorithms)
+	- [Common functions](#common-functions)
+		- [Powers and logarithms](#powers-and-logarithms)
+		- [Square root](#square-root)
+		- [Inverse square root](#inverse-square-root)
 	- [Greatest common divisor (GCD)](#greatest-common-divisor-gcd)
 		- [Euclidean algorithm](#euclidean-algorithm)
 		- [Binary Euclidean algorithm (Stein’s algorithm)](#binary-euclidean-algorithm-steins-algorithm)
@@ -18,9 +22,6 @@
 		- [Integer division](#integer-division)
 	- [Horner’s method](#horners-method)
 	- [Kahan summation algorithm](#kahan-summation-algorithm)
-	- [Powers and logarithms](#powers-and-logarithms)
-		- [Square root](#square-root)
-		- [Inverse square root](#inverse-square-root)
 - [Prime numbers](#prime-numbers)
 - [Linear equations solution algorithms](#linear-equations-solution-algorithms)
 	- [Iterative methods](#iterative-methods)
@@ -55,6 +56,10 @@
 
 - [*Floating-point arithmetic*](https://en.wikipedia.org/wiki/Floating-point_arithmetic) – Wikipedia
 - C.Moler. [*Floating point arithmetic before IEEE 754*](https://blogs.mathworks.com/cleve/2019/01/18/floating-point-arithmetic-before-ieee-754/) (2019)
+
+:book:
+
+- Essay 3: *Floating-point arithmetic*, Essay 5: *Safe math* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 :page_facing_up:
 
@@ -133,11 +138,29 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 - Essay 6: *Do-it-yourself math functions* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
+#### Powers and logarithms
+
+:link:
+
+- [*How to check if an integer is a power of `3`?*](https://stackoverflow.com/q/1804311) – Stack Overflow
+
 #### Square root
 
 :link:
 
+- [*Methods of computing square roots*](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) – Wikipedia
+- P.Martin. [*Eight rooty pieces*](https://accu.org/journals/overload/24/135/martin_2294/) – [Overload **135**](https://accu.org/journals/overload/overload135) (2016)
+
+#### Inverse square root
+
 - [*Fast inverse square root*](https://en.wikipedia.org/wiki/Fast_inverse_square_root) – Wikipedia
+- C.Lomont. [*Fast inverse square root*](http://www.lomont.org/papers/2003/InvSqrt.pdf) (2003)
+
+<!-- https://web.archive.org/web/20030426190503/http://www.magic-software.com/Documentation/FastInverseSqrt.pdf
+https://www.beyond3d.com/content/articles/8/
+David Eberly, Fast inverse square root (revisited), 2010.
+http://www.azillionmonkeys.com/qed/sqroot.html
+ -->
 
 ### Greatest common divisor (GCD)
 
@@ -197,30 +220,6 @@ https://web.stanford.edu/class/ee486/doc/chap5.pdf -->
 :grey_question:
 
 - [*Kahan summation*](https://stackoverflow.com/q/4940072) – Stack Overflow
-
-### Powers and logarithms
-
-:link:
-
-- [*How to check if an integer is a power of `3`?*](https://stackoverflow.com/q/1804311) – Stack Overflow
-
-#### Square root
-
-:link:
-
-- [*Methods of computing square roots*](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots) – Wikipedia
-- P.Martin. [*Eight rooty pieces*](https://accu.org/journals/overload/24/135/martin_2294/) – [Overload **135**](https://accu.org/journals/overload/overload135) (2016)
-
-#### Inverse square root
-
-- [*Fast inverse square root*](https://en.wikipedia.org/wiki/Fast_inverse_square_root) – Wikipedia
-- C.Lomont. [*Fast inverse square root*](http://www.lomont.org/papers/2003/InvSqrt.pdf) (2003)
-
-<!-- https://web.archive.org/web/20030426190503/http://www.magic-software.com/Documentation/FastInverseSqrt.pdf
-https://www.beyond3d.com/content/articles/8/
-David Eberly, Fast inverse square root (revisited), 2010.
-http://www.azillionmonkeys.com/qed/sqroot.html
- -->
 
 ---
 

@@ -236,6 +236,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :link:
 
 - K.Kreft, A.Langer. [*Effective standard C++ library: Are `set` iterators mutable or immutable*](https://github.com/eugnsp/CUJ/blob/master/18.10/kreft/kreft.md) – C/C++ Users Journal **18** (2000)
+- M.Austern. [*Why you shouldn’t use `set` – and what you should use instead*](http://lafstern.org/matt/col1.pdf) – C++ Report (2000)
 
 #### `std::map`
 
@@ -341,6 +342,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*Why `std::string` does not have `const char*` cast*](https://stackoverflow.com/q/59076004) – Stack Overflow
 - [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
 - [*Is it safe to append `std::string` to itself?*](https://stackoverflow.com/q/37074905) – Stack Overflow
+- [*How do I check if a C++ `std::string` starts with a certain string, and convert a substring to an `int`?*](https://stackoverflow.com/q/1878001) – Stack Overflow
 - [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
 
 :anchor:
@@ -370,6 +372,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :grey_question:
 
 - [*How exactly is `std::string_view` faster than `const std::string&`?*](https://stackoverflow.com/q/40127965) – Stack Overflow
+- [*Is a `std::string_view` literal guaranteed to be null-terminated?*](https://stackoverflow.com/q/40127965) – Stack Overflow
 
 :movie_camera:
 
@@ -701,6 +704,8 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - E.Bendersky. [*Using `unique_ptr` with standard library containers*](https://eli.thegreenplace.net/2012/06/20/c11-using-unique_ptr-with-standard-library-containers) (2012)
+- Y.Mandelbaum. [TotW #134: *`make_unique` and private constructors*`](https://abseil.io/tips/134) – Abseil C++ Tips
+- J.Dennett. [TotW #126: *`make_unique` is the new `new`*`](https://abseil.io/tips/126) – Abseil C++ Tips
 
 :grey_question:
 
@@ -721,6 +726,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 :link:
 
 - A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+- H.Kumar. [*`shared_ptr` initialized with `nullptr` is null or empty?*](https://www.nextptr.com/question/qa1372136808/shared_ptr-initialized-with-nullptr-is-null-or-empty) (2020)
 
 :grey_question:
 

@@ -323,6 +323,10 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 
 - M.Dominiak. [*“Variadic expansion in examples*](https://www.youtube.com/watch?v=Os5YLB5D2BU) – CppCon (2016)
 
+:anchor:
+
+- B.Seymour, S.T.Lavavej. [*Searching for types in parameter packs*](https://wg21.link/n4115) – WG21/N4115
+
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm
 
