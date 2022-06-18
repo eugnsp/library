@@ -16,6 +16,7 @@
 	- [Greatest common divisor (GCD)](#greatest-common-divisor-gcd)
 		- [Euclidean algorithm](#euclidean-algorithm)
 		- [Binary Euclidean algorithm (Stein’s algorithm)](#binary-euclidean-algorithm-steins-algorithm)
+	- [Interpolation](#interpolation)
 	- [Arithmetic means](#arithmetic-means)
 	- [Binomial coefficient](#binomial-coefficient)
 	- [Division algorithms](#division-algorithms)
@@ -153,6 +154,8 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 #### Inverse square root
 
+:link:
+
 - [*Fast inverse square root*](https://en.wikipedia.org/wiki/Fast_inverse_square_root) – Wikipedia
 - C.Lomont. [*Fast inverse square root*](http://www.lomont.org/papers/2003/InvSqrt.pdf) (2003)
 
@@ -175,6 +178,18 @@ http://www.azillionmonkeys.com/qed/sqroot.html
 :link:
 
 - [*Binary GCD algorithm*](https://en.wikipedia.org/wiki/Binary_GCD_algorithm) – Wikipedia
+
+### Interpolation
+
+:grey_question:
+
+- [*What are the differences between the two lerp functions?*](https://stackoverflow.com/q/72668151) – Stack Overflow
+- [*Floating point linear interpolation*](https://stackoverflow.com/q/4353525) – Stack Overflow
+- [*Accurate floating-point linear interpolation*](https://math.stackexchange.com/q/907327) – Mathematics
+
+:anchor:
+
+- S.D.Herring. [*Well-behaved interpolation for numbers and pointers*](https://wg21.link/p0811) – WG21/P0811
 
 ### Arithmetic means
 
