@@ -326,6 +326,10 @@ See also [*Allocators* – The standard library, Boost, and proposals](std_libra
 
 ### Return value optimization and copy elision
 
+:link:
+
+- A.Fertig. [*Why you should use `std::move` only rarely*](https://andreasfertig.blog/2022/02/why-you-should-use-stdmove-only-rarely/) (2022)
+
 :camera:
 
 - A.O’Dwyer. [*The complete guide to `return x;`*](https://www.youtube.com/watch?v=OGKAJD7bmr8) – C++Now (2021)

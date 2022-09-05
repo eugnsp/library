@@ -72,7 +72,12 @@
 
 :link:
 
+- A.O’Dwyer. [*Beware CTAD on `reverse_iterator`*](https://quuxplusone.github.io/blog/2022/08/02/reverse-iterator-ctad/) (2022)
 - R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/journals/overload/26/143/orr_2465/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2019)
+
+:grey_question:
+
+- [*Is `std::make_move_iterator` redundant since C++17’s class template argument deduction?*](https://stackoverflow.com/q/57762121) – Stack Overflow
 
 :movie_camera:
 

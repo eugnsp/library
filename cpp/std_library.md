@@ -32,6 +32,7 @@
 	- [Container adaptors](#container-adaptors)
 		- [`std::stack`](#stdstack)
 		- [`std::queue`](#stdqueue)
+		- [`std::priority_queue`](#stdpriority_queue)
 	- [Views](#views)
 		- [`std::span`](#stdspan)
 	- [Transparent comparators](#transparent-comparators)
@@ -296,6 +297,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
+- A.O’Dwyer. [*What is the “vector pessimization”?*](https://quuxplusone.github.io/blog/2022/08/26/vector-pessimization/) (2022)
 - G.Romer. [TotW #112: *`emplace` vs. `push_back`*`](https://abseil.io/tips/112) – Abseil C++ Tips
 - R.Getov. [*Persistent vector iterators*](https://github.com/eugnsp/CUJ/blob/master/17.01/getov/getov.md) – C/C++ Users Journal **17** (1999)
 - [*`folly::fbvector`*](https://github.com/facebook/folly/blob/master/folly/docs/FBVector.md)
@@ -333,6 +335,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
+- O.Betts. [*Empty strings in C++*](https://survex.com/~olly/blog/coding/empty-strings-in-c%2B%2B.html) (2013)
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
 - P.Becker. [*Questions & Answers: The complex evolution of `<string>`*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
 - P.J.Plauger. [*Standard C/C++: The header `<string>`*](https://github.com/eugnsp/CUJ/blob/master/13.07/plauger/plauger.md) – C/C++ Users Journal **13** (1995)
@@ -386,6 +389,9 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 :link:
 
+- A.O’Dwyer. [*`unordered_multiset`’s API affects its big-O*](https://quuxplusone.github.io/blog/2022/06/23/unordered-multiset-equal-range/) (2022)
+- J.M.L&oacute;pez Mu&ntilde;oz. [*Advancing the state of the art for `std::unordered_map` implementations*](https://accu.org/journals/overload/27/149/sharpe_2619/) – [Overload **170**](https://accu.org/journals/overload/overload170) (2022)
+- J.M.L&oacute;pez Mu&ntilde;oz. [*Advancing the state of the art for `std::unordered_map` implementations*](https://bannalia.blogspot.com/2022/06/advancing-state-of-art-for.html) (2022)
 - P.Trettner. [*Measuring `std::unordered_map` badness*](https://artificial-mind.net/blog/2021/10/09/unordered-map-badness) (2021)
 - N.Wu. [*Blowing up `unordered_map`, and how to stop getting hacked on it*](https://codeforces.com/blog/entry/62393) (2018)
 - P.J.Plauger. [*Standard C/C++: Hash tables*](https://github.com/eugnsp/CUJ/blob/master/16.11/plauger/plauger.md) – C/C++ Users Journal **16** (1998)
@@ -439,6 +445,20 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 :grey_question:
 
 - [*Why doesn’t `std::queue::pop` return value?*](https://stackoverflow.com/q/25035691) – Stack Overflow
+
+:anchor:
+
+- [*std::queue*](https://en.cppreference.com/w/cpp/container/queue) – C++ reference
+
+#### `std::priority_queue`
+
+:grey_question:
+
+- [*Priority queue clear method*](https://stackoverflow.com/q/2852140) – Stack Overflow
+
+:anchor:
+
+- [*std::priority_queue*](https://en.cppreference.com/w/cpp/container/priority_queue) – C++ reference
 
 ### Views
 

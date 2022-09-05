@@ -181,6 +181,10 @@ http://www.azillionmonkeys.com/qed/sqroot.html
 
 ### Interpolation
 
+:link:
+
+- J.Bloch. [*Extra, Extra – Read all about it: Nearly all binary searches and mergesorts are broken*] – Google AI blog (2006)
+
 :grey_question:
 
 - [*What are the differences between the two lerp functions?*](https://stackoverflow.com/q/72668151) – Stack Overflow

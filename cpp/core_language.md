@@ -34,6 +34,7 @@
 	- [Storage class specifiers](#storage-class-specifiers)
 	- [Structured binding](#structured-binding)
 - [Initialization](#initialization)
+	- [`constinit`](#constinit)
 - [Dynamic memory](#dynamic-memory)
 	- [Alignment](#alignment)
 	- [Object creation and placement `new`](#object-creation-and-placement-new)
@@ -79,6 +80,7 @@
 	- [Pointer and array types](#pointer-and-array-types)
 	- [Class types](#class-types)
 		- [Layout](#layout)
+		- [Member functions](#member-functions-1)
 		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
 	- [Union types](#union-types)
 	- [Function types](#function-types)
@@ -239,6 +241,10 @@ See [*`[[likely]]` / `[[unlikely]]` attributes* – Hardware, optimization, and 
 
 > This attribute indicates that the function does not return.
 
+:link:
+
+- A.O’Dwyer. [*`void` versus `[[noreturn]]`*](https://quuxplusone.github.io/blog/2022/06/29/that-undiscovered-country/) (2022)
+
 :grey_question:
 
 - [*What is the point of `[[noreturn]]`?*](https://stackoverflow.com/q/10538291) – Stack Overflow
@@ -373,6 +379,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### `inline`
 
+:link:
+
+- P.Arias. [*Inline variables and functions*](https://pabloariasal.github.io/2019/02/28/cpp-inlining/) (2019)
+
 :grey_question:
 
 - [*One Definition Rule – multiple definition of `inline` functions*](https://stackoverflow.com/q/39652884) – Stack Overflow
@@ -476,6 +486,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
+- P.Arias. [*Initialization of static variables*](https://pabloariasal.github.io/2020/01/02/static-variable-initialization/) (2020)
 - C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
 - B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
 - S.Brand. [*Initialization in C++ is bonkers*](https://accu.org/journals/overload/25/139/brand_2379/) – [Overload **139**](https://accu.org/journals/overload/overload139), 9 (2017)
@@ -490,6 +501,12 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Initialization*](https://en.cppreference.com/w/cpp/language/initialization) – C++ reference
+
+### `constinit`
+
+:grey_question:
+
+- [*What is `constinit` in C++20?*](https://stackoverflow.com/q/57845131) – Stack Overflow
 
 ---
 
@@ -551,13 +568,13 @@ See also [*Uninitialized storage* – The standard library, Boost, and proposals
 
 ## Exceptions
 
-See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
 
 ### `noexcept` specifier
 
 > Specifies whether a function could throw exceptions.
 
-:link:
+:grey_question:
 
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
 - [*Why those two `std::string::find()` functions are declared as `noexcept`?*](https://stackoverflow.com/q/66603543) – Stack Overflow
@@ -768,6 +785,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :grey_question:
 
+- [*What is the need of template lambda introduced in C++20 when C++14 already has generic lambda?*](https://stackoverflow.com/q/54126204) – Stack Overflow
 - [*What is a lambda expression in C++11?*](https://stackoverflow.com/q/7627098) – Stack Overflow
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/q/22232164) – Stack Overflow
 - [*Can we get the type of a lambda argument?*](https://stackoverflow.com/q/6512019) – Stack Overflow
@@ -783,6 +801,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :anchor:
 
 - L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](https://wg21.link/p0315) – WG21/P0315
+- L.Dionne. [*Familiar template syntax for generic lambdas*](https://wg21.link/p0428) – WG21/P0428
 
 #### Recursive lambdas
 
@@ -1037,6 +1056,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 - [*C++ named requirements: `StandardLayoutType`*](https://en.cppreference.com/w/cpp/named_req/StandardLayoutType) – C++ reference
 - [*`std::is_standard_layout`*](https://en.cppreference.com/w/cpp/types/is_standard_layout) – C++ reference
 - [*`std::has_unique_object_representations`*](https://en.cppreference.com/w/cpp/types/has_unique_object_representations) – C++ reference
+
+#### Member functions
+
+:link:
+
+- A.Fertig. [*The power of ref-qualifiers*](https://andreasfertig.blog/2022/07/the-power-of-ref-qualifiers/) (2022)
 
 #### Polymorphism and inheritance
 
