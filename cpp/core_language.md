@@ -520,7 +520,8 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*How do compilers use “over-allocation” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-overalloc) – C++ FAQ
 - [*How do compilers use an “associative array” to remember the number of elements in an allocated array?*](https://isocpp.org/wiki/faq/compiler-dependencies#num-elems-in-new-array-assocarray) – C++ FAQ
-- [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/q/53451770/1625187) – Stack Overflow
+- [*Treating memory returned by operator `new(sizeof(T) * N)` as an array*](https://stackoverflow.com/q/53451770) – Stack Overflow
+- [*Why should C++ programmers minimize use of `new`?*](https://stackoverflow.com/q/6500313) – Stack Overflow
 - [*Difference between `new` and `operator new`?*](https://stackoverflow.com/q/1885849) – Stack Overflow
 
 :book:
@@ -944,11 +945,13 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
+- J.M&uuml;ller. [*New integer types I’d like to see*](https://www.foonathan.net/2022/09/new-integer-types/) (2022)
 - W.Dietz et al. [*Understanding integer overflow in C/C++*](https://www.cs.utah.edu/~regehr/papers/overflow12.pdf) – Proc. ICSE (2012)
 - [*Rule 04. Integers*](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152052) – SEI CERT C coding standard
 
 :grey_question:
 
+- [*Compiler optimizations may cause integer overflow. Is that okay?*](https://stackoverflow.com/q/74102654) – Stack Overflow
 - [*Why does integer overflow on x86 with GCC cause an infinite loop?*](https://stackoverflow.com/q/7682477) – Stack Overflow
 - [*Why does this loop produce “warning: iteration `3u` invokes undefined behavior” and output more than 4 lines?*](https://stackoverflow.com/q/24296571) – Stack Overflow
 - [*Does a `long` ban make sense?*](https://softwareengineering.stackexchange.com/q/317670) – Software Engineering
@@ -1118,6 +1121,8 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 #### Rvalue references, universal references, and move semantics
 
+See also [*Move semantics* – Patterns, idioms, and design principles](patterns_and_idioms.md#move-semantics).
+
 :link:
 
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
@@ -1198,6 +1203,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 ## Tricks and subtleties
 
+:link:
+
+- A.O’Dwyer. [*Hidden `reinterpret_cast`s*](https://quuxplusone.github.io/blog/2020/01/22/expression-list-in-functional-cast/) (2020)
+
 :grey_question:
 
 - [*Hidden features of C++*](https://stackoverflow.com/q/75538) – Stack Overflow
@@ -1206,6 +1215,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*Difference between `struct` and `typedef struct` in C++?*](https://stackoverflow.com/q/612328) – Stack Overflow
 - [*What are “extern char condition tricks”?*](https://stackoverflow.com/q/70818988) – Stack Overflow
 - [*Why can I use scalar type as the return type of `operator->`?*](https://stackoverflow.com/q/70773154/) – Stack Overflow
+- [*What is the worst real-world macros/pre-processor abuse you’ve ever come across?*](https://stackoverflow.com/q/652788/) – Stack Overflow
 
 :movie_camera:
 

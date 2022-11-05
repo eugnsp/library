@@ -27,6 +27,7 @@
 	- [Strings](#strings)
 		- [Short string optimization](#short-string-optimization)
 		- [`std::string_view`](#stdstring_view)
+		- [C-strings](#c-strings)
 	- [Unordered containers](#unordered-containers)
 		- [`std::hash`](#stdhash)
 	- [Container adaptors](#container-adaptors)
@@ -39,6 +40,7 @@
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
 	- [Non-standard containers](#non-standard-containers)
 - [Exceptions](#exceptions)
+	- [`std::bad_alloc`](#stdbad_alloc)
 - [Input/output](#inputoutput)
 	- [Input/output manipulators](#inputoutput-manipulators)
 		- [`std::endl`](#stdendl)
@@ -91,6 +93,7 @@
 - [Date and time utilities](#date-and-time-utilities)
 - [Filesystem](#filesystem)
 - [Tricks and subtleties](#tricks-and-subtleties)
+	- [Self-assignment](#self-assignment)
 	- [C standard library](#c-standard-library)
 - [The Standard Template Library (STL)](#the-standard-template-library-stl)
 
@@ -250,6 +253,12 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 > Sequence containers are: `std::array` (static contiguous array), `std::vector` (dynamic contiguous array), `std::deque` (double-ended queue), `std::forward_list` (singly-linked list), and `std::list` (doubly-linked list).
 
+See also [*Arrays and vectors* – Sequence data structures and algorithms](../data_structures_and_algorithms/sequence.md#arrays-and-vectors).
+
+:link:
+
+- A.O’Dwyer. [*The “array size constant” antipattern*](https://quuxplusone.github.io/blog/2020/08/06/array-size/) (2020)
+
 #### `std::array`
 
 :grey_question:
@@ -382,6 +391,12 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 - V.Ciura [*Enough `string_view` to hang ourselves*](https://www.youtube.com/watch?v=xwP4YCP_0q0) – CppCon (2018)
 - M.Clow. [*`string_view`: When to use it and when not*](https://www.youtube.com/watch?v=H9gAaNRoon4) – CppCon (2015)
 - N.MacIntosh. [*Evolving `array_view` and `string_view` for safe C++ code*](https://www.youtube.com/watch?v=C4Z3c4Sv52U) – CppCon (2015)
+
+#### C-strings
+
+:grey_question:
+
+- [*Is it guaranteed to be safe to perform `memcpy(0, 0, 0)`?*](https://stackoverflow.com/q/5243012) – Stack Overflow
 
 ### Unordered containers
 
@@ -535,7 +550,22 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 ## Exceptions
 
-See [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+
+:link:
+
+- A.O’Dwyer. [*What is the “vector pessimization”?*](https://quuxplusone.github.io/blog/2022/08/26/vector-pessimization/) (2022)
+- A.O’Dwyer. [*A “pick two” triangle for `std::vector`*](https://quuxplusone.github.io/blog/2022/09/30/vector-pessimization-pick-two/) (2022)
+
+:grey_question:
+
+- [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
+
+### `std::bad_alloc`
+
+:anchor:
+
+- A.Krzemie&nacute;ski, T.Kami&nacute;ski. [*`bad_alloc` is not out-of-memory!*](https://wg21.link/p1404) – WG21/P1404
 
 ---
 
@@ -724,6 +754,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - E.Bendersky. [*Using `unique_ptr` with standard library containers*](https://eli.thegreenplace.net/2012/06/20/c11-using-unique_ptr-with-standard-library-containers) (2012)
+- A.Soffer. [TotW #187: *`std::unique_ptr` must be moved*`](https://abseil.io/tips/187) – Abseil C++ Tips
 - Y.Mandelbaum. [TotW #134: *`make_unique` and private constructors*`](https://abseil.io/tips/134) – Abseil C++ Tips
 - J.Dennett. [TotW #126: *`make_unique` is the new `new`*`](https://abseil.io/tips/126) – Abseil C++ Tips
 
@@ -1058,6 +1089,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 :link:
 
+- A.Krzemieński. [*A moved-from optional*](https://akrzemi1.wordpress.com/2022/09/06/a-moved-from-optional/) (2022)
 - B.Filipek. [*Using C++17 `std::optional`*](https://www.bfilipek.com/2018/05/using-optional.html) (2018)
 - B.Filipek. [*Error handling and `std::optional`*](https://www.bfilipek.com/2018/05/errors-and-optional.html) (2018)
 - B.Filipek. [*In-place construction for `std::any`, `std::variant` and `std::optional`*](https://www.bfilipek.com/2018/07/in-place-cpp17.html) (2018)
@@ -1065,8 +1097,8 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 - S.Brand. [*Functional error-handling with optional and expected*](https://accu.org/journals/overload/26/143/brand_2462/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2018)
 - S.Brand. [*Functional exceptionless error-handling with optional and expected*](https://blog.tartanllama.xyz/optional-expected/) (2017)
 - S.Brand. [*Implementation with functional-style extensions and reference support*](https://github.com/TartanLlama/optional)
-- A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
 - A.Krzemieński. [*Efficient optional values*](https://akrzemi1.wordpress.com/2015/07/15/efficient-optional-values/) (2015)
+- A.Krzemieński. [*A gotcha with Optional*](https://akrzemi1.wordpress.com/2014/12/02/a-gotcha-with-optional/) (2014)
 
 :grey_question:
 
@@ -1082,6 +1114,10 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 - A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
 
 #### `std::variant`
+
+:link:
+
+- J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2022/05/recursive-variant-box/) (2022)
 
 :grey_question:
 
@@ -1160,6 +1196,11 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 :link:
 
+- A.Krzemieński. [*Using `std::chrono`*](https://akrzemi1.wordpress.com/2022/04/11/using-stdchrono/) (2022)
+- A.Krzemieński. [*Local time*](https://akrzemi1.wordpress.com/2022/04/24/local-time/) (2022)
+
+:grey_question:
+
 - [*Accepting `std::chrono::duration` of any representation/period*](https://stackoverflow.com/q/22362717) – Stack Overflow
 
 :movie_camera:
@@ -1203,6 +1244,17 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 :movie_camera:
 
 - J.Brown. [*This one weird trick: `std::integral_constant`*](https://www.youtube.com/watch?v=MKes-sG3zAU) – CppCon (2019)
+
+### Self-assignment
+
+:link:
+
+- E.Niebler. [*Post-conditions on self-move](https://ericniebler.com/2017/03/31/post-conditions-on-self-move/) (2017)
+
+:grey_question:
+
+- [*What does the standard library guarantee about self move assignment?*](https://stackoverflow.com/q/13127455) – Stack Overflow
+- [*What is the rationale for self-assignment-unsafe move assignment operators in the standard library?*](https://stackoverflow.com/q/39852013) – Stack Overflow
 
 ### C standard library
 

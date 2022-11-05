@@ -4,6 +4,7 @@
 - [Preprocessor](#preprocessor)
 	- [`#include` directive](#include-directive)
 	- [Variadic macros](#variadic-macros)
+	- [X-Macros](#x-macros)
 
 ---
 
@@ -27,6 +28,7 @@
 :link:
 
 - [*What is the value of an undefined constant used in `#if`?*](https://stackoverflow.com/q/5085392) – Stack Overflow
+- [*What is the worst real-world macros/pre-processor abuse you’ve ever come across?*](https://stackoverflow.com/q/652788/) – Stack Overflow
 
 :movie_camera:
 
@@ -43,3 +45,16 @@
 :anchor:
 
 - T.K&ouml;ppe. [*Comma omission and comma deletion*](https://wg21.link/p0306) – WG21/P00306
+
+### X-Macros
+
+:link:
+
+- [*X Macro*](https://en.wikipedia.org/wiki/X_Macro) – Wikipedia
+- [*X-Macros*](https://en.wikibooks.org/wiki/C_Programming/Preprocessor_directives_and_macros#X-Macros) – WikiBooks
+- A.Lucas. *Reduce C-language coding errors with X macros.* [Part I](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-1/), [Part II](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-2/), [Part III](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-3/) (2013)
+  
+  :grey_question:
+
+- [*Real-world use of X-Macros*](https://stackoverflow.com/q/6635851) – Stack Overflow
+- 

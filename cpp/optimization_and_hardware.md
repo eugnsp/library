@@ -14,11 +14,12 @@
 	- [Branch prediction](#branch-prediction)
 		- [`[[likely]]` / `[[unlikely]]` attributes](#likely--unlikely-attributes)
 		- [`likely` / `unlikely` Linux kernel macros](#likely--unlikely-linux-kernel-macros)
-	- [Memory copying](#memory-copying)
+	- [Memory](#memory-1)
+		- [Memory copying](#memory-copying)
+		- [Memory allocation](#memory-allocation)
+		- [Memory relocation](#memory-relocation)
+		- [Memory access](#memory-access)
 		- [Nested `std::vector`s](#nested-stdvectors)
-	- [Memory allocation](#memory-allocation)
-	- [Memory relocation](#memory-relocation)
-	- [Memory access](#memory-access)
 	- [Floating-point arithmetic](#floating-point-arithmetic)
 	- [Integral arithmetic](#integral-arithmetic)
 		- [Integral multiplication](#integral-multiplication)
@@ -198,7 +199,13 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 - [*How do the `likely`/`unlikely` macros in the Linux kernel work and what is their benefit?*](https://stackoverflow.com/q/109710) – Stack Overflow
 
-### Memory copying
+### Memory
+
+:link:
+
+- J.M&uuml;ller. [*`malloc()` and `free()` are a bad API*](https://www.foonathan.net/2022/08/malloc-interface/) (2022)
+
+#### Memory copying
 
 :link:
 
@@ -210,15 +217,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 - [*What setup does `REP` do?*](https://stackoverflow.com/q/33902068) – Stack Overflow
 - [*Why are complicated `memcpy`/`memset` superior?*](https://stackoverflow.com/q/8858778) – Stack Overflow
 
-#### Nested `std::vector`s
-
-:grey_question:
-
-- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) – Computational Science
-- [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/q/45747848) – Stack Overflow
-- [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/q/33093860) – Stack Overflow
-
-### Memory allocation
+#### Memory allocation
 
 See also [*Allocators* – The standard library, Boost, and proposals](std_library.md#allocators).
 
@@ -236,7 +235,7 @@ See also [*Allocators* – The standard library, Boost, and proposals](std_libra
 - J.Lakos. [*Local (“arena”) memory allocators*](https://www.youtube.com/watch?v=d1DpVR0tw0U) – ACCU (2017)
 - A.Alexandrescu. [*`std::allocator` is to allocation what `std::vector` is to vexation*](https://www.youtube.com/watch?v=LIb3L4vKZ7U) – CppCon (2015)
 
-### Memory relocation
+#### Memory relocation
 
 :link:
 
@@ -250,13 +249,21 @@ See also [*Allocators* – The standard library, Boost, and proposals](std_libra
 
 - A.O’Dwyer. [*Object relocation in terms of move plus destroy*](https://wg21.link/p1144) – WG21/P1144
 
-### Memory access
+#### Memory access
 
 :grey_question:
 
 - [*Why is transposing a matrix of `512x512` much slower than transposing a matrix of `513x513`?*](https://stackoverflow.com/q/11413855) – Stack Overflow
 - [*Why are elementwise additions much faster in separate loops than in a combined loop?*](https://stackoverflow.com/q/8547778) – Stack Overflow
 - [*Why don’t C++ compilers optimize this conditional boolean assignment as an unconditional assignment?*](https://stackoverflow.com/q/40303182) – Stack Overflow
+
+#### Nested `std::vector`s
+
+:grey_question:
+
+- [*Is it a good idea to use `vector<vector<double>>` to form a matrix class for high performance scientific computing code?*](https://scicomp.stackexchange.com/questions/3159/is-it-a-good-idea-to-use-vectorvectordouble-to-form-a-matrix-class-for-high/3162) – Computational Science
+- [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/q/45747848) – Stack Overflow
+- [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/q/33093860) – Stack Overflow
 
 ### Floating-point arithmetic
 

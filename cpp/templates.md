@@ -73,6 +73,7 @@
 :link:
 
 - A.O’Dwyer. [*Beware CTAD on `reverse_iterator`*](https://quuxplusone.github.io/blog/2022/08/02/reverse-iterator-ctad/) (2022)
+- A.O’Dwyer. [*Thoughts on `-Wctad-maybe-unsupported`*](https://quuxplusone.github.io/blog/2022/10/07/wctad-maybe-unsupported/) (2022)
 - R.Orr. [*CTAD – What is this new acronym all about?*](https://accu.org/journals/overload/26/143/orr_2465/) – [Overload **143**](https://accu.org/journals/overload/overload143) (2019)
 
 :grey_question:
@@ -108,6 +109,8 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :link:
 
+- A.Krzemieński. [*Concepts – case studies*](https://akrzemi1.wordpress.com/2021/09/16/concepts-case-studies/) (2021)
+- A.Krzemieński. [*Semantic requirements in concepts*](https://akrzemi1.wordpress.com/2020/10/26/semantic-requirements-in-concepts/) (2020)
 - A.Sutton. [*Defining concepts*](https://accu.org/journals/overload/24/131/sutton_2198/) – [Overload **131**](https://accu.org/journals/overload/overload131) (2016)
 - A.Sutton. [*Introducing concepts*](https://accu.org/journals/overload/23/129/sutton_2157/) – [Overload **129**](https://accu.org/journals/overload/overload129) (2015)
 

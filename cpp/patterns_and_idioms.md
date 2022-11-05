@@ -2,10 +2,10 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Programming paradigms](#programming-paradigms)
-	- [Procedural programming](#procedural-programming)
 - [Design principles](#design-principles)
 	- [Style and guidelines](#style-and-guidelines)
+		- [Code organization](#code-organization)
+		- [Naming and aliasing](#naming-and-aliasing)
 		- [Initialization](#initialization)
 		- [West-`const` vs east-`const`](#west-const-vs-east-const)
 		- [Comments](#comments)
@@ -13,7 +13,10 @@
 		- [Liskov substitution principle](#liskov-substitution-principle)
 		- [Interface segregation principle](#interface-segregation-principle)
 	- [Interface design](#interface-design)
+		- [Function parameters](#function-parameters)
+		- [Function return values](#function-return-values)
 		- [Destructors](#destructors)
+		- [Move semantics](#move-semantics)
 		- [Rule of zero/three/five](#rule-of-zerothreefive)
 	- [Contracts](#contracts)
 	- [Error handling](#error-handling)
@@ -37,6 +40,7 @@
 	- [Iterator](#iterator)
 		- [Transform iterators](#transform-iterators)
 		- [Constant iterators](#constant-iterators)
+		- [Iterator sentinels](#iterator-sentinels)
 	- [Template method](#template-method)
 - [Metaprogramming patterns](#metaprogramming-patterns)
 	- [Curiously recurring template](#curiously-recurring-template)
@@ -114,10 +118,9 @@
 
 :link:
 
-- [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Google C++ style guide*](https://google.github.io/styleguide/cppguide.html)
 - D.Kieras. [*C++ header file guidelines*](http://www.umich.edu/~eecs381/handouts/CppHeaderFileGuidelines.pdf)
-- M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/journals/overload/24/133/wilson_2249/) – [Overload **133**](https://accu.org/journals/overload/overload133) (2016)
+- A.O’Dwyer. [*Prefer core-language features over library facilities*](https://quuxplusone.github.io/blog/2022/10/16/prefer-core-over-library/) (2022)
 - M.Wilson. [*QM bites: The two sides of boolean parameters*](https://accu.org/journals/overload/23/130/wilson_2183/) – [Overload **130**](https://accu.org/journals/overload/overload130) (2015)
 - S.Ignatchenko. [*Best practices vs witch hunts*](https://accu.org/journals/overload/23/125/ignatchenko_2066/) – [Overload **125**](https://accu.org/journals/overload/overload125) (2015)
 - B.Schmidt. [*I like whitespace*](https://accu.org/journals/overload/23/125/schmidt_2063/) – [Overload **125**](https://accu.org/journals/overload/overload125) (2015)
@@ -129,7 +132,6 @@
 
 :movie_camera:
 
-- A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
 - N.Josuttis. [*When C++ style guides contradict*](https://www.youtube.com/watch?v=WRQ1xqYBKgc) – CppCon (2019)
 - M.Price. [*A critical look at the coding standards landscape*](https://www.youtube.com/watch?v=5XfSM-vDYUs) – CppCon (2019)
 - M.Wong. [*Writing safety critical automotive software for high perf AI hardware*](https://www.youtube.com/watch?v=F4GzsA00s5I) – CppCon (2019)
@@ -140,7 +142,26 @@
 :anchor:
 
 - [*C++ core guidelines*](https://github.com/isocpp/CppCoreGuidelines)
+- [*Standard library guidelines*](https://github.com/cplusplus/LEWG/blob/master/library-design-guidelines.md)
 - [*Linux kernel coding style*](https://www.kernel.org/doc/html/latest/process/coding-style.html)
+
+#### Code organization
+
+:link:
+
+- J.Dennett, and J.Rennie. [TotW #186: *Prefer to put functions in the unnamed namespace*`](https://abseil.io/tips/186) – Abseil C++ Tips
+- M.Wilson. [*QM bites: Order your includes (twice over)*](https://accu.org/journals/overload/24/133/wilson_2249/) – [Overload **133**](https://accu.org/journals/overload/overload133) (2016)
+
+#### Naming and aliasing
+
+:link:
+
+- T.Winters. [TotW #130: *Namespace naming*`](https://abseil.io/tips/130) – Abseil C++ Tips
+- T.K&ouml;ppe. [TotW #119: *Using-declarations and namespace aliases*`](https://abseil.io/tips/119) – Abseil C++ Tips
+
+:movie_camera:
+
+- A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
 
 #### Initialization
 
@@ -218,27 +239,43 @@
 
 :link:
 
-- [*Pass-by-value vs pass-by-reference*](https://reductor.dev/cpp/2022/06/27/pass-by-value-vs-pass-by-reference.html) (2022)
-- S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
+- J.M&uuml;ller. [*`malloc()` and `free()` are a bad API*](https://www.foonathan.net/2022/08/malloc-interface/) (2022)
+- J.M&uuml;ller. [*`saturating_add` vs. `saturating_int` – new function vs. new type?*](https://www.foonathan.net/2022/03/behavior-function-type/) (2022)
 - A.O’Dwyer. [*`const` is a contract*](https://quuxplusone.github.io/blog/2019/01/03/const-is-a-contract/) (2019)
-- S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html) (2018)
-- M.Clow. [*Fixing an interface bug*](https://cplusplusmusings.wordpress.com/2013/02/27/fixing-an-interface-bug/) (2013)
+- A.O’Dwyer. [*Pointer to raw memory? `T*`.*](https://quuxplusone.github.io/blog/2018/06/08/raw-memory-and-t-star/) (2018)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
 - S.Meyers. [*Signed and unsigned types in interfaces*](https://www.aristeia.com/Papers/C++ReportColumns/sep95.pdf) – C++ Report (1995)
-
-:grey_question:
-
-- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
-- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
-- [*Purpose of returning by `const` value?*](https://stackoverflow.com/q/8716330) – Stack Overflow
 
 :movie_camera:
 
 - K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
+#### Function parameters
+
+:link:
+
+- [*Pass-by-value vs pass-by-reference*](https://reductor.dev/cpp/2022/06/27/pass-by-value-vs-pass-by-reference.html) (2022)
+- S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
+
+:grey_question:
+
+- [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*Is it better to pass by value or pass by constant reference?*](https://stackoverflow.com/q/270408) – Stack Overflow
+
 :anchor:
 
 - [F.16: *For “in” parameters, pass cheaply-copied types by value and others by reference to `const`*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-in) – C++ core guidelines
+
+#### Function return values
+
+:link
+
+- S.Parent. [*Stop using out arguments*](https://stlab.cc/tips/stop-using-out-arguments.html) (2018)
+- M.Clow. [*Fixing an interface bug*](https://cplusplusmusings.wordpress.com/2013/02/27/fixing-an-interface-bug/) (2013)
+
+:grey_question:
+
+- [*Purpose of returning by `const` value?*](https://stackoverflow.com/q/8716330) – Stack Overflow
 
 #### Destructors
 
@@ -254,6 +291,14 @@
 :movie_camera:
 
 - P.Isensee. [*Destructor case studies: Best practices for safe and efficient teardown*](https://www.youtube.com/watch?v=XvWyLAW_U0Q) – CppCon (2019)
+
+#### Move semantics
+
+See also [*Rvalue references, universal references, and move semantics* – Core language](core_language.md#rvalue-references-universal-references-and-move-semantics).
+
+:link
+
+- J.M&uuml;ller. [*Move safety – Know what can be done in the moved-from state*](https://www.foonathan.net/2016/07/move-safety/) (2016)
 
 #### Rule of zero/three/five
 
@@ -316,7 +361,6 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
-- A.O’Dwyer. [*What is the “vector pessimization”?*](https://quuxplusone.github.io/blog/2022/08/26/vector-pessimization/) (2022)
 - R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
@@ -330,7 +374,6 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
 - [*Is there any difference between `noexcept` and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
-- [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
 - [*Losing exception type when rethrowing an exception from a `catch` block*](https://stackoverflow.com/q/12548022) – Stack Overflow
 
 :movie_camera:
@@ -534,6 +577,12 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 
 - A.O’Dwyer. [*Pitfalls and decision points in implementing `const_iterator`](https://quuxplusone.github.io/blog/2018/12/01/const-iterator-antipatterns/) (2018)
 
+#### Iterator sentinels
+
+:link:
+
+- J.M&uuml;ller. [*Tutorial: C++20’s iterator sentinels*](https://foonathan.net/2020/03/iterator-sentinel/) (2020)
+
 ### Template method
 
 - Ch. 14: *The template method pattern and the non-virtual idiom* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
@@ -565,6 +614,7 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 
 - [*Curiously recurring template pattern*](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) – Wikipedia
 - [*Curiously recurring template pattern*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Curiously_Recurring_Template_Pattern) – Wikibooks
+- J.M&uuml;ller. [*Tutorial: The CRTP interface technique*](https://foonathan.net/2021/10/crtp-interface/) (2021)
 - A.Nasonov. [*Better encapsulation for the curiously recurring template pattern*](https://accu.org/journals/overload/13/70/nasonov_296/) – [Overload **70**](https://accu.org/journals/overload/overload70) (2005)
 - J.Coplien. [*Curiously recurring template patterns*](https://sites.google.com/a/gertrudandcope.com/info/Publications/InheritedTemplate.pdf) – C++ Report (1995)
 
@@ -888,6 +938,7 @@ martinmoene/WholeValue -->
 
 :link:
 
+- A.O’Dwyer. [*The “array size constant” antipattern*](https://quuxplusone.github.io/blog/2020/08/06/array-size/) (2020)
 - J.Wakely. [*C++ antipatterns*](https://accu.org/journals/overload/24/134/wakely_2271/) – [Overload **134**](https://accu.org/journals/overload/overload134) (2016)
 - R.B.Doe. [*How to leak memory in C++*](https://github.com/eugnsp/CUJ/blob/master/15.03/doe/doe.md) – C/C++ Users Journal **15** (1997)
 

@@ -2,6 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Arrays and vectors](#arrays-and-vectors)
 - [Rotation (cyclic shift)](#rotation-cyclic-shift)
 	- [Three reverses rotation algorithm](#three-reverses-rotation-algorithm)
 	- [Gries–Mills algorithm](#griesmills-algorithm)
@@ -15,6 +16,15 @@
 - [Sqrt decomposition](#sqrt-decomposition)
 
 ---
+
+## Arrays and vectors
+
+See also [*Sequence containers* – The standard library, Boost, and proposals](../cpp/std_library.md#sequence-containers).
+
+:movie_camera:
+
+- D.Stone. [*Faster, easier, simpler vectors*](https://www.youtube.com/watch?v=MfFzr9qqPDw) – CppCon (2021)
+- D.Stone. [*Implementing `static_vector`: How hard could it be?*](https://www.youtube.com/watch?v=I8QJLGI0GOE) – CppCon (2021)
 
 ## Rotation (cyclic shift)
 

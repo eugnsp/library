@@ -7,6 +7,7 @@
 	- [Fowler–Noll–Vo hash function](#fowlernollvo-hash-function)
 	- [Cryptographic hash functions](#cryptographic-hash-functions)
 	- [Custom hash functions](#custom-hash-functions)
+	- [Combining hash values](#combining-hash-values)
 - [Hash tables](#hash-tables)
 	- [Bloom filter](#bloom-filter)
 	- [Extendible hashing](#extendible-hashing)
@@ -51,6 +52,12 @@ See [*Hashing* – Cryptographic algorithms](cryptographic.md#hashing).
 :link:
 
 - [*xxHash – Extremely fast hash algorithm*](https://github.com/Cyan4973/xxHash)
+
+### Combining hash values
+
+:anchor:
+
+- N.Josuttis. [*Convenience functions to combine hash values*](https://wg21.link/n3876) – WG21/N3876
 
 ## Hash tables
 
