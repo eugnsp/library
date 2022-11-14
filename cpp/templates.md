@@ -3,8 +3,9 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
-- [Argument deduction](#argument-deduction)
-	- [Class template argument deduction](#class-template-argument-deduction)
+- [Template arguments](#template-arguments)
+	- [Argument deduction](#argument-deduction)
+		- [Class template argument deduction](#class-template-argument-deduction)
 		- [Deduction guides](#deduction-guides)
 - [Concepts](#concepts)
 	- [Standard concepts](#standard-concepts)
@@ -21,6 +22,7 @@
 - [Type lists](#type-lists)
 - [Type traits](#type-traits)
 - [Variadic templates](#variadic-templates)
+	- [Fold expressions](#fold-expressions)
 
 ---
 
@@ -54,7 +56,13 @@
 
 ---
 
-## Argument deduction
+## Template arguments
+
+:link:
+
+- J.M&uuml;ller. [*Tricks with default template arguments*](https://foonathan.net/2020/10/tricks-default-template-argument/) (2020)
+ 
+### Argument deduction
 
 :grey_question:
 
@@ -68,7 +76,7 @@
 
 - [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
 
-### Class template argument deduction
+#### Class template argument deduction
 
 :link:
 
@@ -295,9 +303,11 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 
 :link:
 
-- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) ([mirror](https://www.drdobbs.com/cpp/c-type-traits/184404270)) – Dr. Dobb’s Journal (2000)
-- T.Frogley. [*An introduction to C++ traits*](https://accu.org/journals/overload/9/43/frogley_442/) – ACCU (2001)
+- J.M&uuml;ller. [*Trivially copyable does not mean trivially copy constructible*](https://www.foonathan.net/2021/03/trivially-copyable/) (2021)
+- J.M&uuml;ller. [*Technique: Immediately-invoked function expression for metaprogramming*](https://www.foonathan.net/2020/10/iife-metaprogramming/) (2020)
 - N.Deppe. [*Template metaprogramming. Part 1*](https://nilsdeppe.com/posts/tmpl-part1) (2017)
+- T.Frogley. [*An introduction to C++ traits*](https://accu.org/journals/overload/9/43/frogley_442/) – ACCU (2001)
+- J.Maddock, S.Cleary. [*C++ type traits*](https://www.boost.org/doc/libs/1_31_0/libs/type_traits/c++_type_traits.htm) ([mirror](https://www.drdobbs.com/cpp/c-type-traits/184404270)) – Dr. Dobb’s Journal (2000)
 
 :grey_question:
 
@@ -334,6 +344,17 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 :anchor:
 
 - B.Seymour, S.T.Lavavej. [*Searching for types in parameter packs*](https://wg21.link/n4115) – WG21/N4115
+
+### Fold expressions
+
+:link:
+
+- J.M&uuml;ller. [*Nifty fold expression tricks*](https://www.foonathan.net/2020/05/fold-tricks/) (2020)
+- A.O’Dwyer. [*Folding over `operator=`*](https://quuxplusone.github.io/blog/2020/05/07/assignment-operator-fold-expression/) (2020)
+
+:anchor:
+
+- [*Fold expression*](https://en.cppreference.com/w/cpp/language/fold) – C++ reference
 
 <!--
 http://www.gotw.ca/publications/mxc++-item-4.htm

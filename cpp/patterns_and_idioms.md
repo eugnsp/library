@@ -47,6 +47,10 @@
 	- [Expression templates](#expression-templates)
 	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Shim class](#shim-class)
+- [Lambda expression idioms](#lambda-expression-idioms)
+	- [Immediately invoked function expressions](#immediately-invoked-function-expressions)
+	- [Lambda overload set](#lambda-overload-set)
+	- [Recursive lambdas](#recursive-lambdas)
 - [Adapter](#adapter)
 - [Bridge and pimpl](#bridge-and-pimpl)
 - [Builder](#builder)
@@ -71,6 +75,7 @@
 - [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
 	- [Go to](#go-to)
 	- [Duff’s device](#duffs-device)
+	- [Standard library algorithms abuse](#standard-library-algorithms-abuse)
 
 ---
 
@@ -156,12 +161,18 @@
 
 :link:
 
-- T.Winters. [TotW #130: *Namespace naming*`](https://abseil.io/tips/130) – Abseil C++ Tips
 - T.K&ouml;ppe. [TotW #119: *Using-declarations and namespace aliases*`](https://abseil.io/tips/119) – Abseil C++ Tips
+- T.Winters. [TotW #130: *Namespace naming*`](https://abseil.io/tips/130) – Abseil C++ Tips
+- J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2019/11/implementer-vs-user-names/) (2019)
 
 :movie_camera:
 
 - A.O’Dwyer. [*When should you give two things the same name?*](https://www.youtube.com/watch?v=OQgFEkgKx2s) – C++Now (2021)
+- K.Gregory. [*Naming is hard: Let’s do better*](https://www.youtube.com/watch?v=MBRoCdtZOYg) – CppCon (2019)
+
+:anchor:
+
+- V.Reverdy. [*On the names of low-level bit manipulation functions*](https://wg21.link/p1956) – WG21/P1956
 
 #### Initialization
 
@@ -199,7 +210,6 @@
 
 :link:
 
-- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
 - R.C.Martin. [*Design principles and design patterns*](http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf)
 - R.C.Martin. SOLID: [*Single responsibility principle*](https://web.archive.org/web/20150202200348/http://www.objectmentor.com/resources/articles/srp.pdf), [*Open-closed principle*](https://web.archive.org/web/20150905081105/http://www.objectmentor.com/resources/articles/ocp.pdf), [*Interface segregation principle*](https://web.archive.org/web/20150905081110/http://www.objectmentor.com/resources/articles/isp.pdf), [*Dependency inversion principle*](https://web.archive.org/web/20150905081103/http://www.objectmentor.com/resources/articles/dip.pdf)
 - L.R.Teodorescu. [*Deconstructing inheritance*](https://accu.org/journals/overload/28/156/teodorescu_2772/) – [Overload **156**](https://accu.org/journals/overload/overload156) (2020)
@@ -217,6 +227,10 @@
 :book:
 
 - Sec.: *Class design and inheritance* – H.Sutter, A.Alexandrescu. [*C++ coding standards: 101 rules, guidelines, and best practices*](http://www.gotw.ca/publications/c++cs.htm) – [Addison-Wesley](https://www.pearson.com/us/higher-education/program/Sutter-C-Coding-Standards-101-Rules-Guidelines-and-Best-Practices/PGM147301.html) (2004)
+
+:anchor:
+
+- [*SOLID*](https://en.wikipedia.org/wiki/SOLID) – Wikipedia
 
 #### Liskov substitution principle
 
@@ -241,6 +255,7 @@
 
 - J.M&uuml;ller. [*`malloc()` and `free()` are a bad API*](https://www.foonathan.net/2022/08/malloc-interface/) (2022)
 - J.M&uuml;ller. [*`saturating_add` vs. `saturating_int` – new function vs. new type?*](https://www.foonathan.net/2022/03/behavior-function-type/) (2022)
+- A.Mertz. [*`isValid()`? Establish invariants and avoid zombie objects*](https://arne-mertz.de/2021/09/isvalid-establish-invariants-avoid-zombies/) (2021)
 - A.O’Dwyer. [*`const` is a contract*](https://quuxplusone.github.io/blog/2019/01/03/const-is-a-contract/) (2019)
 - A.O’Dwyer. [*Pointer to raw memory? `T*`.*](https://quuxplusone.github.io/blog/2018/06/08/raw-memory-and-t-star/) (2018)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
@@ -351,6 +366,8 @@ See also [*Rvalue references, universal references, and move semantics* – Core
 
 #### Exceptions
 
+See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exceptions* – The standard library, Boost, and proposals](std_library.md#exceptions).
+
 > Levels of exception guarantee:
 > - *nothrow exception guarantee*: the function never throws exceptions;
 > - *strong exception guarantee*: if the function throws an exception, the state of the program is rolled back to the state just before the function call (commit-or-rollback semantics);
@@ -361,7 +378,6 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
-- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
@@ -371,10 +387,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :grey_question:
 
-- B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
 - [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
-- [*Is there any difference between `noexcept` and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
-- [*Losing exception type when rethrowing an exception from a `catch` block*](https://stackoverflow.com/q/12548022) – Stack Overflow
 
 :movie_camera:
 
@@ -384,6 +397,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Exceptions*](https://en.cppreference.com/w/cpp/language/exceptions) – C++ reference
 - [*`std::move_if_noexcept`*](https://en.cppreference.com/w/cpp/utility/move_if_noexcept) – C++ reference
+- A.Meredith, J.Lakos. [*`noexcept` prevents library validation*](https://wg21.link/n3248) – WG21/N3248
 
 ### Testing
 
@@ -650,6 +664,72 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :link:
 
 - D.Reichard. [*Shim classes*](https://github.com/eugnsp/CUJ/blob/master/18.02/reichard/reichard.md) – C/C++ Users Journal **18** (2000)
+
+---
+
+## Lambda expression idioms
+
+See also [*Lambda expressions* – Core language](core_language.md#lambda-expressions).
+
+:movie_camera:
+
+- T.Doumler. [*C++ lambda idioms*](https://www.youtube.com/watch?v=xBAduq0RGes) – CppCon (2022)
+
+### Immediately invoked function expressions
+
+```cpp
+const auto value = []{ return /* complex code */; }();
+const auto value = std::invoke([]{ return /* complex code */; });
+```
+
+:link:
+
+- J.M&uuml;ller. [*Technique: Immediately-invoked function expression for metaprogramming*](https://www.foonathan.net/2020/10/iife-metaprogramming/) (2020)
+
+:anchor:
+
+- [*Immediately invoked function expression*](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression) – Wikipedia
+- [*Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.org/wiki/faq/input-output) – C++ FAQ
+
+<!-- Call-once lambda
+
+static int dummy = []{ ... ; return 0; }();
+
+variable template lambda
+
+template<class T>
+auto c_cast = [](auto value) { return (T)value; };
+
+
+unique type generator
+
+recursive lambdas -->
+
+### Lambda overload set
+
+```cpp
+template<class... Ts>
+struct overloaded : Ts... {
+	using Ts::operator()...;
+};
+
+template<class... Ts>
+overloaded(Ts...) -> overloaded<Ts...>;
+```
+
+:anchor:
+
+- [*`std::visit` example*](https://en.cppreference.com/w/cpp/utility/variant/visit#Example) – C++ reference
+
+### Recursive lambdas
+
+:link:
+
+- P.Melendez. [*Recursive lambdas in C++(14)*](http://pedromelendez.com/blog/2015/07/16/recursive-lambdas-in-c14/) (2015)
+
+:grey_question:
+
+- [*Recursive lambda functions in C++11*](https://stackoverflow.com/q/2067988) – Stack Overflow
 
 ---
 
@@ -967,3 +1047,13 @@ martinmoene/WholeValue -->
 
 - [*Duff’s device*](https://en.wikipedia.org/wiki/Duff%27s_device) – Wikipedia
 - T.Duff. [*Tom Duff on Duff’s device*](https://www.lysator.liu.se/c/duffs-device.html) (1988)
+
+### Standard library algorithms abuse
+
+:link:
+
+- A.Mertz. [*Algorithms and the KISS principle*](https://arne-mertz.de/2019/05/algorithms-and-the-kiss-principle/) (2019)
+
+:movie_camera:
+
+- C.Hoekstra. *Algorithm intuition.* [Part I](https://www.youtube.com/watch?v=pUEnO6SvAMo), [Part II](https://www.youtube.com/watch?v=sEvYmb3eKsw) – CppCon (2019)

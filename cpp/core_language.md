@@ -59,7 +59,6 @@
 	- [Function wrappers](#function-wrappers)
 		- [`std::function`](#stdfunction)
 	- [Lambda expressions](#lambda-expressions)
-		- [Recursive lambdas](#recursive-lambdas)
 	- [Member functions](#member-functions)
 		- [Member function poiners](#member-function-poiners)
 	- [Deleted functions (`= delete;`)](#deleted-functions--delete)
@@ -328,6 +327,7 @@ See also [*Layout* – Class types](#layout).
 
 :link:
 
+- J.M&uuml;ller. [*`constexpr` is a platform*](https://www.foonathan.net/2020/10/constexpr-platform/) (2020)
 - B.Revzin. [*The `constexpr` array size problem*](https://brevzin.github.io/c++/2020/02/05/constexpr-array-size/) (2020)
 - A.Krzemie&nacute;ski. [`constexpr` function is not `const`](https://akrzemi1.wordpress.com/2013/06/20/constexpr-function-is-not-const/) (2013)
 
@@ -569,22 +569,25 @@ See also [*Uninitialized storage* – The standard library, Boost, and proposals
 
 ## Exceptions
 
-See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions) and [*Exceptions* – The standard library, Boost, and proposals](std_library.md#exceptions).
+
+:link:
+
+- R.McArdell. [*C++11 (and beyond) exception support*](https://accu.org/journals/overload/25/141/mcardell_2422/) – [Overload **141**](https://accu.org/journals/overload/overload141) (2017)
+
+:grey_question:
+
+- B.Stroustrup. [*Why doesn’t C++ provide a `finally` construct?*](http://www.stroustrup.com/bs_faq2.html#finally) – C++ style and technique FAQ
+- [*Is there any difference between `noexcept` and empty throw specification for an lambda expression?*](https://stackoverflow.com/q/37433371) – Stack Overflow
+- [*Losing exception type when rethrowing an exception from a `catch` block*](https://stackoverflow.com/q/12548022) – Stack Overflow
 
 ### `noexcept` specifier
 
 > Specifies whether a function could throw exceptions.
 
-:grey_question:
-
-- [*When should I really use `noexcept`?*](https://stackoverflow.com/q/10787766) – Stack Overflow
-- [*Why those two `std::string::find()` functions are declared as `noexcept`?*](https://stackoverflow.com/q/66603543) – Stack Overflow
-- [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
-
 :anchor:
 
 - [*`noexcept` specifier*](https://en.cppreference.com/w/cpp/language/noexcept_spec) – C++ reference
-- A.Meredith, J.Lakos. [*`noexcept` prevents library validation*](https://wg21.link/n3248) – WG21/N3248
 
 ---
 
@@ -645,6 +648,11 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 - Item 2: *Prefer C++-style casts* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 #### `dynamic_cast`
+
+:grey_question:
+
+- [*C++ equivalent of Java’s `instanceof`*](https://stackoverflow.com/q/500493) – Stack Overflow
+- [*`dynamic_cast` with RTTI disabled*](https://stackoverflow.com/q/7687041) – Stack Overflow
 
 :movie_camera:
 
@@ -777,6 +785,8 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ### Lambda expressions
 
+See also [*Lambda expression idioms* – Patterns, idioms, and design principles](./patterns_and_idioms.md#lambda-expression-idioms).
+
 :link:
 
 - R.Chen. [*Non-capturing C++ lambdas can be converted to a pointer to function, but what about the calling convention?*](https://devblogs.microsoft.com/oldnewthing/20150220-00/?p=44623) (2015)
@@ -803,16 +813,6 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - L.Dionne, H.Tong. [*Wording for lambdas in unevaluated contexts*](https://wg21.link/p0315) – WG21/P0315
 - L.Dionne. [*Familiar template syntax for generic lambdas*](https://wg21.link/p0428) – WG21/P0428
-
-#### Recursive lambdas
-
-:link:
-
-- P.Melendez. [*Recursive lambdas in C++(14)*](http://pedromelendez.com/blog/2015/07/16/recursive-lambdas-in-c14/) (2015)
-
-:grey_question:
-
-- [*Recursive lambda functions in C++11*](https://stackoverflow.com/q/2067988) – Stack Overflow
 
 ### Member functions
 
@@ -1125,9 +1125,10 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 
 :link:
 
+- J.M&uuml;ller. [*Implementation сhallenge: Replacing `std::move` and `std::forward`*](https://www.foonathan.net/2020/09/move-forward/) (2020)
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
-- T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
+- T.Becker. [*C++ rvalue references explained*](http://thbecker.net/articles/rvalue_references/section_01.html) (2013)
 - S.Meyers. [*C++14 lambdas and perfect forwarding*](https://scottmeyers.blogspot.com/2013/05/c14-lambdas-and-perfect-forwarding.html) (2013)
 - S.Meyers. [*Universal references in C++11*](https://accu.org/journals/overload/20/111/meyers_1887/) ([mirror](https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)) – [Overload **111**](https://accu.org/journals/overload/overload111), 8 (2012)
 - E.Bendersky. [*Understanding lvalues and rvalues in C and C++*](https://eli.thegreenplace.net/2011/12/15/understanding-lvalues-and-rvalues-in-c-and-c/) (2011)

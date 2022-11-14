@@ -40,6 +40,7 @@
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
 	- [Non-standard containers](#non-standard-containers)
 - [Exceptions](#exceptions)
+	- [`noexcept` specifier](#noexcept-specifier)
 	- [`std::bad_alloc`](#stdbad_alloc)
 - [Input/output](#inputoutput)
 	- [Input/output manipulators](#inputoutput-manipulators)
@@ -63,6 +64,7 @@
 		- [`std::observer_ptr`](#stdobserver_ptr)
 		- [`boost::intrusive_ptr`](#boostintrusive_ptr)
 - [Numerics](#numerics)
+	- [Bit manipulation functions](#bit-manipulation-functions)
 	- [`std::bit_cast`](#stdbit_cast)
 	- [Linear algebra support](#linear-algebra-support)
 	- [Random numbers](#random-numbers)
@@ -344,6 +346,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 
 :link:
 
+- A.Mertz. [*`std::string` is not a container for raw data*](https://arne-mertz.de/2018/11/string-not-for-raw-data/) (2018)
 - O.Betts. [*Empty strings in C++*](https://survex.com/~olly/blog/coding/empty-strings-in-c%2B%2B.html) (2013)
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
 - P.Becker. [*Questions & Answers: The complex evolution of `<string>`*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#conditional-operator) – C/C++ Users Journal **16** (1998)
@@ -355,7 +358,12 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 - [*Why doesn’t `std::string` provide implicit conversion to `char*`?*](https://stackoverflow.com/q/492061) – Stack Overflow
 - [*Is it safe to append `std::string` to itself?*](https://stackoverflow.com/q/37074905) – Stack Overflow
 - [*How do I check if a C++ `std::string` starts with a certain string, and convert a substring to an `int`?*](https://stackoverflow.com/q/1878001) – Stack Overflow
+- [*Most optimized way of concatenation in strings*](https://stackoverflow.com/q/18892281) – Stack Overflow
 - [*Why are there so many string classes in the face of `std::string`?*](https://softwareengineering.stackexchange.com/q/151619) – Software Engineering
+
+:movie_camera:
+
+- B.Ruth. [*`std::basic_string`: For more than just text*](https://www.youtube.com/watch?v=SDJImePyftY) – CppCon (2018)
 
 :anchor:
 
@@ -550,16 +558,23 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 ## Exceptions
 
-See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
+See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions).
 
 :link:
 
 - A.O’Dwyer. [*What is the “vector pessimization”?*](https://quuxplusone.github.io/blog/2022/08/26/vector-pessimization/) (2022)
 - A.O’Dwyer. [*A “pick two” triangle for `std::vector`*](https://quuxplusone.github.io/blog/2022/09/30/vector-pessimization-pick-two/) (2022)
 
+### `noexcept` specifier
+
 :grey_question:
 
+- [*Why those two `std::string::find()` functions are declared as `noexcept`?*](https://stackoverflow.com/q/66603543) – Stack Overflow
 - [*Why vector access operators are not specified as `noexcept`?*](https://stackoverflow.com/q/20517259) – Stack Overflow
+
+:anchor:
+
+- A.Berg&eacute;. [*“Throws: Nothing” should be `noexcept`*](https://wg21.link/p1656) – WG21/P1656
 
 ### `std::bad_alloc`
 
@@ -856,6 +871,13 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 ## Numerics
 
+### Bit manipulation functions
+
+:anchor:
+
+- [*Standard library header `<bit>`*](https://en.cppreference.com/w/cpp/header/bit) – C++ reference
+- V.Reverdy. [*On the names of low-level bit manipulation functions*](https://wg21.link/p1956) – WG21/P1956
+
 ### `std::bit_cast`
 
 :anchor:
@@ -1111,6 +1133,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 - [*`std::optional`*](https://en.cppreference.com/w/cpp/utility/optional) – C++ reference
 - [*Boost.Optional: The optional wrapper library*](https://www.boost.org/doc/libs/release/libs/optional/)
 - F.Cacciola, A.Krzemieński. [*A proposal to add a utility class to represent optional objects*](https://wg21.link/n3793) – WG21/N3793
+- M.Mutz. [*More flexible `optional::value or()`*](https://wg21.link/p2218) – WG21/P2218
 - A.Krzemieński. [*N3793 reference implementation*](https://github.com/akrzemi1/Optional/)
 
 #### `std::variant`
