@@ -36,14 +36,6 @@
 
 > Lyndon word is a (non-empty) string that is strictly smaller in lexicographic order than all of its rotations. Lyndon factorization is a decomposition of a string `s` into Lyndon words, <code>s = w<sub>1</sub>w<sub>2</sub>...w<sub>n</sub></code>, such that <code>w<sub>1</sub> &ge; w<sub>i</sub> &ge; ... &ge; w<sub>n</sub></code>.
 
-:memo:
-
-- [Lexicographically minimal string rotation](#lexicographically-minimal-string-rotation)
-	- [Duval’s based algorithm](#duvals-based-algorithm)
-- [Lyndon factorization](#lyndon-factorization)
-	- [Duval’s algorithm](#duvals-algorithm)
-- [String searching](#string-searching)
-	- [Knuth–Morris–Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
 
 :link:
 

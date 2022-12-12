@@ -747,7 +747,7 @@ overloaded(Ts...) -> overloaded<Ts...>;
 
 :link:
 
-- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
+- A.Mertz. [*The pImpl idiom*](https://arne-mertz.de/2019/01/the-pimpl-idiom/) (2019)
 
 :grey_question:
 
@@ -758,6 +758,10 @@ overloaded(Ts...) -> overloaded<Ts...>;
 
 - D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
 - D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
+
+:anchor:
+
+- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
 
 ## Builder
 

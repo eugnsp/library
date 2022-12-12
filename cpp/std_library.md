@@ -325,6 +325,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 :book:
 
 - B.Stroustrup. *Making a `vector` fit for a standard* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+- T.Cargill. *A dynamic vector is harder than it looks* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 #### `std::vector<bool>`
 
@@ -791,7 +792,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :link:
 
-- A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html)
+- A.Williams. [*`std::shared_ptr`’s secret constructor*](https://www.justsoftwaresolutions.co.uk/cplusplus/shared-ptr-secret-constructor.html) (2015)
 - H.Kumar. [*`shared_ptr` initialized with `nullptr` is null or empty?*](https://www.nextptr.com/question/qa1372136808/shared_ptr-initialized-with-nullptr-is-null-or-empty) (2020)
 
 :grey_question:
@@ -1141,6 +1142,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 :link:
 
 - J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2022/05/recursive-variant-box/) (2022)
+- A.Williams. [*Standardizing `variant`: Difficult decisions*](https://www.justsoftwaresolutions.co.uk/cplusplus/standardizing-variant.html) (2015)
 
 :grey_question:
 
@@ -1157,6 +1159,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 :anchor:
 
 - [*`std::variant`*](https://en.cppreference.com/w/cpp/utility/variant) – C++ reference
+- A.Naumann. [*Variant: a type-safe union*](https://wg21.link/n4542) – WG21/N4542
 - Y.Zhihao. [*A sane `variant` converting constructor*](https://wg21.link/p0608) – WG21/P0608
 
 #### `std::any`

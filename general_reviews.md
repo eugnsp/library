@@ -304,7 +304,7 @@
 - [Andrzej Krzemie&nacute;ski](https://akrzemi1.wordpress.com/author/akrzemi1/)
 - [KrzaQ](https://dev.krzaq.cc/)
 - [Arne Mertz](http://arne-mertz.de/)
-- [Jonathan Müller](http://foonathan.net/)
+- [Jonathan M&uuml;ller](http://foonathan.net/)
 - [Arthur O’Dwyer](https://quuxplusone.github.io/blog/)
 - [Vittorio Romeo](https://vittorioromeo.info/)
 - [Filip Roséen](http://b.atch.se/)
@@ -312,6 +312,7 @@
 - [Bob Steagall](https://bobsteagall.com/)
 - [Philip Trettner](https://artificial-mind.net/)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
+- [Anthony Williams](https://www.justsoftwaresolutions.co.uk/blog/)
 
 ---
 

@@ -211,6 +211,7 @@
 :link:
 
 - S.Ignatchenko. [*5 big fat reasons why mutexes suck big time*](https://accu.org/journals/overload/27/149/ignatchenko_2623/) – [Overload **149**](https://accu.org/journals/overload/overload149) (2019)
+- M.Spertus. [*Thread-safe copy and move constructors*](https://www.justsoftwaresolutions.co.uk/threading/thread-safe-copy-constructors.html) (2011)
 
 #### Spin locks
 

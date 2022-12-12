@@ -20,7 +20,7 @@
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 	- [`decltype`](#decltype)
-	- [Elaborated type specifier](#elaborated-type-specifier)
+	- [`enum`, `enum class`](#enum-enum-class)
 	- [`friend`](#friend)
 		- [Friend function templates](#friend-function-templates)
 		- [Hidden friends](#hidden-friends)
@@ -28,6 +28,7 @@
 	- [`static`](#static)
 	- [`using`](#using)
 		- [`using enum`](#using-enum)
+	- [Elaborated type specifier](#elaborated-type-specifier)
 	- [Flexible array member](#flexible-array-member)
 	- [Most vexing parse](#most-vexing-parse)
 	- [Namespaces](#namespaces)
@@ -70,6 +71,7 @@
 	- [Conditional operator `?:`](#conditional-operator-)
 	- [`sizeof` / `alignof`](#sizeof--alignof)
 - [Types](#types)
+	- [`void`](#void)
 	- [Integral types](#integral-types)
 		- [Integral promotion](#integral-promotion)
 		- [`wchar_t`](#wchar_t)
@@ -355,11 +357,13 @@ See also [*Layout* – Class types](#layout).
 
 - [*`decltype` specifier*](https://en.cppreference.com/w/cpp/language/decltype) – C++ reference
 
-### Elaborated type specifier
+### `enum`, `enum class`
+
+- A.Williams. [*Using `enum class`es as bitfields*](https://www.justsoftwaresolutions.co.uk/cplusplus/using-enum-classes-as-bitfields.html) (2015)
 
 :anchor:
 
-- [*Elaborated type specifier*](https://en.cppreference.com/w/cpp/language/elaborated_type_specifier) – C++ reference
+- [*Enumeration declaration*](https://en.cppreference.com/w/cpp/language/enum) – C++ reference
 
 ### `friend`
 
@@ -411,6 +415,12 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*Using-enum-declaration*](https://en.cppreference.com/w/cpp/language/enum#Using-enum-declaration) – C++ reference
 - G.A&zcaron;man, J.M&uuml;ller. [*Using enum*](https://wg21.link/p1099) – WG21/P1099
+
+### Elaborated type specifier
+
+:anchor:
+
+- [*Elaborated type specifier*](https://en.cppreference.com/w/cpp/language/elaborated_type_specifier) – C++ reference
 
 ### Flexible array member
 
@@ -636,6 +646,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 :grey_question:
 
 - [*Undefined behavior and sequence points*](https://stackoverflow.com/q/4176328) – Stack Overflow
+
+:book:
+
+- T.Cargill. *A dynamic vector is harder than it looks* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 
 :anchor:
 
@@ -940,6 +954,16 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 :movie_camera:
 
 - B.Milewski. [*Why algebraic data types are important*](https://www.youtube.com/watch?v=LkqTLJK2API) – code::dive (2018)
+
+### `void`
+
+:grey_question:
+
+- [*How much existing C++ code would break if `void` was actually defined as `struct void {};`*](https://stackoverflow.com/questions/53197340) – Stack Overflow
+
+:anchor:
+
+- [Void type](https://en.cppreference.com/w/cpp/language/types#Void_type) – C++ reference
 
 ### Integral types
 
@@ -1279,6 +1303,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
 
 ### Functions
+
+:link:
+
+- A.Mertz. [*Calling C code from C++ with `extern “C”`*](https://arne-mertz.de/2018/10/calling-cpp-code-from-c-with-extern-c/) (2018)
 
 :grey_question:
 

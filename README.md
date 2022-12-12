@@ -1,6 +1,6 @@
 # Data structures, algorithms, and C++ reference library
 
-This is a library of usefull and interesting references – web pages, videos, books, research papers – on common data structures and algorithms with an emphasis on C++ when it comes to their implementation.
+:construction: A library of usefull and interesting references – web pages, videos, books, research papers – on common data structures and algorithms with an emphasis on C++ when it comes to their implementation.
 
 ## Table of contents
 
@@ -30,19 +30,14 @@ This is a library of usefull and interesting references – web pages, videos, b
 	* :triangular_ruler: [Geometric algorithms](data_structures_and_algorithms/geometric.md)
 	* :symbols: [Parsers and compilers](data_structures_and_algorithms/parsing.md)
 	* :file_folder: [Data compression algorithms](data_structures_and_algorithms/compression.md)
+	* :satellite: [Data exchange](data_structures_and_algorithms/data_exchange.md)
 	* :chart_with_upwards_trend: [Digital signal processing](data_structures_and_algorithms/signal_processing.md)
 	* :spades: [Game theory](data_structures_and_algorithms/game_theory.md)
 	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :lock: [Cryptographic algorithms](data_structures_and_algorithms/cryptographic.md)
 	* :game_die: [Randomized algorithms and probabilistic data structures](data_structures_and_algorithms/random.md)
-	* :satellite: [Distributed algorithms](data_structures_and_algorithms/distributed.md)
+	* :sparkler: [Distributed algorithms](data_structures_and_algorithms/distributed.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
 - [Distributed systems and computer networks](distributed_systems.md)
 - [General reviews and interviews](general_reviews.md)
 - [C++ conferences](cpp/conferences.md)
-
-Note: algorithm examples are written for clarity rather than optimal performance.
-
-:construction: Currently is under construction, and will always be. Please report broken links.
-
-<!-- :hourglass: Optimization -->
