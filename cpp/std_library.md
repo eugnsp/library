@@ -12,6 +12,7 @@
 	- [`std::next_permutation` / `std::prev_permutation` / `std::is_permutation`](#stdnext_permutation--stdprev_permutation--stdis_permutation)
 	- [`std::[stable_]sort` / `std::is_sorted`](#stdstable_sort--stdis_sorted)
 	- [`std::[stable_]partition`](#stdstable_partition)
+	- [`std::[transform_]exclusive_scan` / `std::[transform_]inclusive_scan`](#stdtransform_exclusive_scan--stdtransform_inclusive_scan)
 - [Concepts](#concepts)
 - [Containers](#containers)
 	- [Associative containers](#associative-containers)
@@ -37,6 +38,7 @@
 	- [Views](#views)
 		- [`std::span`](#stdspan)
 	- [Transparent comparators](#transparent-comparators)
+	- [Erasing from containers](#erasing-from-containers)
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
 	- [Non-standard containers](#non-standard-containers)
 - [Exceptions](#exceptions)
@@ -63,6 +65,7 @@
 		- [`std::auto_ptr`](#stdauto_ptr)
 		- [`std::observer_ptr`](#stdobserver_ptr)
 		- [`boost::intrusive_ptr`](#boostintrusive_ptr)
+		- [`std::out_ptr` and `std::inout_ptr` adaptors](#stdout_ptr-and-stdinout_ptr-adaptors)
 - [Numerics](#numerics)
 	- [Bit manipulation functions](#bit-manipulation-functions)
 	- [`std::bit_cast`](#stdbit_cast)
@@ -136,6 +139,13 @@
 
 ## Algorithms
 
+:link:
+
+- S.Dargo. [*The big STL algorithms tutorial: wrapping up*](https://www.sandordargo.com/blog/2022/02/23/stl-alogorithms-tutorial-part-31-wrap-up) (2022)
+- S.Dargo. [*The big STL algorithms tutorial: the memory header*](https://www.sandordargo.com/blog/2022/02/02/stl-alogorithms-tutorial-part-30-memory-header) (2022)
+- S.Dargo. [*The big STL algorithms tutorial: more numeric algorithms*](https://www.sandordargo.com/blog/2022/01/05/stl-alogorithms-tutorial-part-28-more_numeric) (2022)
+- S.Dargo. [*The big STL algorithms tutorial: Introduction*](https://www.sandordargo.com/blog/2019/01/30/stl-algos-intro) (2019)
+
 :movie_camera:
 
 - C.Hoekstra. *Algorithm intuition.* [Part I](https://www.youtube.com/watch?v=pUEnO6SvAMo), [Part II](https://www.youtube.com/watch?v=sEvYmb3eKsw) – CppCon (2019)
@@ -201,6 +211,19 @@
 
 - [*`stable_partition` on forward iterators*](https://stackoverflow.com/q/59642958) – Stack Overflow
 - [*How is `stable_partition` an adaptive algorithm?*](https://stackoverflow.com/q/21554635) – Stack Overflow
+
+### `std::[transform_]exclusive_scan` / `std::[transform_]inclusive_scan`
+
+:link:
+
+- S.Dargo. [*The big STL algorithms tutorial: numeric scans*](https://www.sandordargo.com/blog/2022/01/19/stl-alogorithms-tutorial-part-29-numeric-scans) (2022)
+
+:anchor:
+
+- [*`std::exclusive_scan`*](https://en.cppreference.com/w/cpp/algorithm/exclusive_scan) – C++ reference
+- [*`std::transform_exclusive_scan`*](https://en.cppreference.com/w/cpp/algorithm/transform_exclusive_scan) – C++ reference
+- [*`std::inclusive_scan`*](https://en.cppreference.com/w/cpp/algorithm/inclusive_scan) – C++ reference
+- [*`std::transform_inclusive_scan`*](https://en.cppreference.com/w/cpp/algorithm/transform_inclusive_scan) – C++ reference
 
 ---
 
@@ -528,6 +551,20 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 - J.Wakely, S.T.Lavavej, J.M.L&oacute;pez Mu&ntilde;oz. [*Adding heterogeneous comparison lookup to associative containers*](https://wg21.link/n3657) – WG21/N3657
 
+### Erasing from containers
+
+:link:
+
+- A.O’Dwyer. [*How to erase from an STL container*](https://quuxplusone.github.io/blog/2020/07/08/erase-if/) (2020)
+
+:grey_question:
+
+- [*Is stability of `std::remove` and `std::remove_if` design fail?*](https://stackoverflow.com/q/13818369) – Stack Overflow
+
+:anchor:
+
+- B.Friedman. [*Unstable remove algorithms*](https://wg21.link/p0041) – WG21/P0041
+
 ### Signedness vs unsignedness of size
 
 :link:
@@ -658,6 +695,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :link:
 
+- S.Dargo. [*C++ basics: Pointers vs iterators*](https://www.sandordargo.com/blog/2022/03/16/iterators-vs-pointers) (2022)
 - K.Kreft, A.Langer. [*Iterators in the Standard C++ library*](https://web.archive.org/web/20050308162147/http://www.langer.camelot.de/Articles/C++Report/IteratorsInStdlib/IteratorsInStdlib.html) – C++ Report (1996)
 
 :grey_question:
@@ -740,7 +778,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :link:
 
-- [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
+- S.Dargo. [*Smart pointers and their deleters*](https://www.sandordargo.com/blog/2022/06/08/smart-pointers-and-deleters) (2022)
 - A.O’Dwyer. [*In praise of `make_unique`*](https://quuxplusone.github.io/blog/2018/05/26/the-versatile-make-unique/) (2018)
 - H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
 - Y.Sharon. [*Smart pointers: What, why, which?*](http://ootips.org/yonat/4dev/smart-pointers.html) (1999)
@@ -760,6 +798,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :anchor:
 
+- [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
 - [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/)
 
 #### `std::unique_ptr`
@@ -867,6 +906,24 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 - [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
 - I.Muerte. [*An intrusive smart pointer*](https://wg21.link/p0468) – WG21/P0468
+
+#### `std::out_ptr` and `std::inout_ptr` adaptors
+
+> `std::out_ptr` and `std::inout_ptr` are a thing convertible to a `T**` that updates (with a `reset()` call or semantically equivalent behavior) the smart pointer it is created with when it goes out of scope.
+
+:link:
+
+- S.Dargo. [*C++23: `std::out_ptr` and `std::inout_ptr`*](https://www.sandordargo.com/blog/2022/12/07/inout_ptr-and-out_ptr) (2022)
+
+:grey_question:
+
+- [*Understanding `std::inout_ptr` and `std::out_ptr` in C++23*](https://stackoverflow.com/q/68918312) – Stack Overflow
+
+:anchor:
+
+- [*`std::out_ptr_t`*](https://en.cppreference.com/w/cpp/memory/out_ptr_t) – C++ reference
+- [*`std::inout_ptr_t`*](https://en.cppreference.com/w/cpp/memory/inout_ptr_t) – C++ reference
+- J.Meneide, T.Buyukliev, I.Muerte. [*`out_ptr` – a scalable output pointer abstraction*](https://wg21.link/p1132) – WG21/P1132
 
 ---
 
@@ -1246,6 +1303,7 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 :grey_question:
 
 - [*Native path separator bug in C++17 `std::filesystem::path`?*](https://stackoverflow.com/q/51886072) – Stack Overflow
+- [*What is the C++17 equivalent to `boost::filesystem::unique_path()`?*](https://stackoverflow.com/q/43316527) – Stack Overflow
 
 :anchor:
 

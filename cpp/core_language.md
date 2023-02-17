@@ -19,7 +19,7 @@
 	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
-	- [`decltype`](#decltype)
+	- [`decltype` and `std::declval()`](#decltype-and-stddeclval)
 	- [`enum`, `enum class`](#enum-enum-class)
 	- [`friend`](#friend)
 		- [Friend function templates](#friend-function-templates)
@@ -340,18 +340,23 @@ See also [*Layout* – Class types](#layout).
 - [*Detecting `constexpr` with SFINAE*](https://stackoverflow.com/q/15232758) – Stack Overflow
 - [*Should I mark a compiler-generated constructor as `constexpr`?*](https://stackoverflow.com/q/20810378) – Stack Overflow
 - [*Why disallow `goto` in `constexpr` functions?*](https://stackoverflow.com/q/45266577) – Stack Overflow
+- [*The value of a `const` variable is or is not usable in a constant expression, depending on the variable type*](https://stackoverflow.com/q/45593044) – Stack Overflow
 
 :movie_camera:
 
 - S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) – CppCon (2015)
 
-### `decltype`
+### `decltype` and `std::declval()`
 
-> The `decltype` specifier inspects the declared type of an entity or the type and value category of an expression.
+> The `decltype` specifier inspects the declared type of an entity or the type and value category of an expression. `std::declval` converts any type `T` to a reference type, making it possible to use member functions in the operand of the decltype specifier without the need to go through constructors.
 
 :link:
 
 - A.O’Dwyer. [*`decltype` of a non-static member*](https://quuxplusone.github.io/blog/2021/02/10/decltype-of-member/) (2021)
+
+:grey_question:
+
+- [*Why does `std::declval` add a reference?*](https://stackoverflow.com/q/25707441) – Stack Overflow
 
 :anchor:
 
@@ -359,6 +364,7 @@ See also [*Layout* – Class types](#layout).
 
 ### `enum`, `enum class`
 
+- S.Dargo. [*Bitwise enumerations*](https://www.sandordargo.com/blog/2022/06/22/bitwise-enums) (2022)
 - A.Williams. [*Using `enum class`es as bitfields*](https://www.justsoftwaresolutions.co.uk/cplusplus/using-enum-classes-as-bitfields.html) (2015)
 
 :anchor:
@@ -404,6 +410,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 - [*What is a `static` function in C?*](https://stackoverflow.com/q/558122) – Stack Overflow
 
 ### `using`
+
+:link:
+
+- S.Dargo. [*The 4 use of `using` in C++*](https://www.sandordargo.com/blog/2022/04/27/the-4-use-of-using-in-cpp) (2022)
 
 :grey_question:
 
@@ -727,6 +737,7 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 :link:
 
+- S.Dargo. [*The infamous bug of range-based for loops*](https://www.sandordargo.com/blog/2022/04/20/range-base-p2012) (2022)
 - M.Clow. [*Range based for loops and pairs of iterators*](https://cplusplusmusings.wordpress.com/2013/04/14/range-based-for-loops-and-pairs-of-iterators/) (2013)
 
 :movie_camera:
@@ -848,6 +859,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :link:
 
+- A.O’Dwyer. [*Refactoring with `=delete`*](https://quuxplusone.github.io/blog/2022/11/11/refactoring-with-delete/) (2022)
 - A.O’Dwyer. [*What `=delete` means*](https://quuxplusone.github.io/blog/2021/10/17/equals-delete-means/) (2021)
 - A.Knatten. [*No move vs deleted move constructors*](https://accu.org/journals/overload/29/166/knatten/) – [Overload **166**](https://accu.org/journals/overload/overload166) (2021)
 - A.Knatten. [*The difference between no move constructor and a deleted move constructor*](https://blog.knatten.org/2021/10/15/the-difference-between-no-move-constructor-and-a-deleted-move-constructor/) (2021)
@@ -1067,6 +1079,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 :link:
 
+- S.Dargo. [*Make declaration order layout mandated*](https://www.sandordargo.com/blog/2022/05/04/cpp23-P1847R4-Make-declaration-order-mandated) (2022)
 - E.S.Raymond. [*The lost art of structure packing*](http://www.catb.org/esr/structure-packing/)
 - E.Bendersky. [*Dumping a C++ object’s memory layout with Clang*](https://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/) (2012)
 
@@ -1083,6 +1096,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 - [*C++ named requirements: `StandardLayoutType`*](https://en.cppreference.com/w/cpp/named_req/StandardLayoutType) – C++ reference
 - [*`std::is_standard_layout`*](https://en.cppreference.com/w/cpp/types/is_standard_layout) – C++ reference
 - [*`std::has_unique_object_representations`*](https://en.cppreference.com/w/cpp/types/has_unique_object_representations) – C++ reference
+- P.Balog. [*Make declaration order layout mandated*](https://wg21.link/p1847) – WG21/P1847
 
 #### Member functions
 
@@ -1133,6 +1147,10 @@ See also [*Inheritance* – ABI and implementation](#inheritance).
 
 :link:
 
+- T.Winters. [TotW #107: *Reference lifetime extension*`](https://abseil.io/tips/107) – Abseil C++ Tips (2015)
+
+:grey_question:
+
 - [*Does a `const` reference class member prolong the life of a temporary?*](https://stackoverflow.com/q/2784262) – Stack Overflow
 
 :movie_camera
@@ -1149,6 +1167,7 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 
 :link:
 
+- C.DaCamara. [*Improving the state of debug performance in C++*](https://devblogs.microsoft.com/cppblog/improving-the-state-of-debug-performance-in-c/) (2022)
 - J.M&uuml;ller. [*Implementation сhallenge: Replacing `std::move` and `std::forward`*](https://www.foonathan.net/2020/09/move-forward/) (2020)
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
 - [*Rvalue reference declarator: `&&`*](https://docs.microsoft.com/en-us/cpp/cpp/rvalue-reference-declarator-amp-amp) – Microsoft Visual C++ (2016)
@@ -1213,6 +1232,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 - [*C++17 compiler support*](https://en.cppreference.com/w/cpp/compiler_support#cpp17) – C++ reference
 
 ### C++20
+
+:link:
+
+- S.Dargo. [*My first work experience with C++20*](https://www.sandordargo.com/blog/2022/04/13/first-company-project-experience-with-cpp20) (2022)
 
 :movie_camera:
 

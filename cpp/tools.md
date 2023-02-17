@@ -64,6 +64,10 @@
 
 :link:
 
+- A.O’Dwyer. [*Always read the first error message first*](https://quuxplusone.github.io/blog/2023/01/21/did-you-mean-bool/) (2023)
+
+:anchor:
+
 - [*C++ compiler support*](https://en.cppreference.com/w/cpp/compiler_support) – C++ reference
 
 ### GCC
@@ -94,6 +98,10 @@
 - E.Bendersky. [*Dumping a C++ object’s memory layout with Clang*](https://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/) (2012)
 
 ### MSVC
+
+:link:
+
+- [*Compiler limits*](https://learn.microsoft.com/en-us/cpp/cpp/compiler-limits) (2021)
 
 :anchor:
 

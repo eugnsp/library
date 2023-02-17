@@ -185,6 +185,8 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :link:
 
+- C.DaCamara. [*Improving the state of debug performance in C++*](https://devblogs.microsoft.com/cppblog/improving-the-state-of-debug-performance-in-c/) (2022)
+- A.O’Dwyer. [*Benchmarking Clang’s `-fbuiltin-std-forward`*](https://quuxplusone.github.io/blog/2022/12/24/builtin-std-forward/) (2022)
 - D.Pallastrelli. [*Reduce compilation times with `extern template`*](https://arne-mertz.de/2019/02/extern-template-reduce-compile-times/) (2019)
 - L.Dionne. [*Efficient parameter pack indexing*](https://ldionne.com/2015/11/29/efficient-parameter-pack-indexing/) (2015)
 - A.Berg&eacute;. [*True story: Efficient packing*](http://talesofcpp.fusionfenix.com/post-22/true-story-efficient-packing) (2015)

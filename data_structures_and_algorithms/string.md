@@ -6,8 +6,9 @@
 	- [Duval’s based algorithm](#duvals-based-algorithm)
 - [Lyndon factorization](#lyndon-factorization)
 	- [Duval’s algorithm](#duvals-algorithm)
-- [String searching](#string-searching)
-	- [Knuth–Morris–Pratt algorithm](#knuthndashmorrisndashpratt-algorithm)
+- [String matching](#string-matching)
+	- [Exact string matching](#exact-string-matching)
+		- [Knuth–Morris–Pratt algorithm](#knuthmorrispratt-algorithm)
 
 ---
 

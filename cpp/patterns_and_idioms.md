@@ -70,6 +70,7 @@
 - [Type erasure](#type-erasure)
 - [Visitor](#visitor)
 - [Local buffer optimization](#local-buffer-optimization)
+- [Compile-time strings](#compile-time-strings)
 - [Nifty counter](#nifty-counter)
 - [`switch` statement](#switch-statement)
 - [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
@@ -256,6 +257,7 @@
 - J.M&uuml;ller. [*`malloc()` and `free()` are a bad API*](https://www.foonathan.net/2022/08/malloc-interface/) (2022)
 - J.M&uuml;ller. [*`saturating_add` vs. `saturating_int` – new function vs. new type?*](https://www.foonathan.net/2022/03/behavior-function-type/) (2022)
 - A.Mertz. [*`isValid()`? Establish invariants and avoid zombie objects*](https://arne-mertz.de/2021/09/isvalid-establish-invariants-avoid-zombies/) (2021)
+- A.O’Dwyer. [*A very short war story on too much overloading*](https://quuxplusone.github.io/blog/2020/10/11/overloading-considered-harmful/) (2020)
 - A.O’Dwyer. [*`const` is a contract*](https://quuxplusone.github.io/blog/2019/01/03/const-is-a-contract/) (2019)
 - A.O’Dwyer. [*Pointer to raw memory? `T*`.*](https://quuxplusone.github.io/blog/2018/06/08/raw-memory-and-t-star/) (2018)
 - S.Meyers. [*How non-member functions improve encapsulation*](https://github.com/eugnsp/CUJ/blob/master/18.02/meyers/meyers.md) – C/C++ Users Journal **18** (2000)
@@ -269,7 +271,8 @@
 
 :link:
 
-- [*Pass-by-value vs pass-by-reference*](https://reductor.dev/cpp/2022/06/27/pass-by-value-vs-pass-by-reference.html) (2022)
+- S.Dargo. [*Use strong types instead of `bool` parameters*](https://www.sandordargo.com/blog/2022/04/06/use-strong-types-instead-booleans) (2022)
+- J.Mitchell. [*Pass-by-value vs pass-by-reference*](https://reductor.dev/cpp/2022/06/27/pass-by-value-vs-pass-by-reference.html) (2022)
 - S.Collyer. [*Replacing `bool` values*](https://accu.org/journals/overload/29/163/collyer/) – [Overload **163**](https://accu.org/journals/overload/overload163) (2021)
 
 :grey_question:
@@ -1007,6 +1010,12 @@ martinmoene/WholeValue -->
 <!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
 
 ## Local buffer optimization
+
+## Compile-time strings
+
+:link:
+
+- Y.Wu. [*Compile-time strings*](https://accu.org/journals/overload/30/172/wu/) – [Overload **172**](https://accu.org/journals/overload/overload172) (2022)
 
 ## Nifty counter
 
