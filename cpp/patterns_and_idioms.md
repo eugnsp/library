@@ -265,6 +265,7 @@
 
 :movie_camera:
 
+- M.Godbolt. [*Correct by construction: APIs that are easy to use and hard to misuse*](https://www.youtube.com/watch?v=nLSm3Haxz0I) – C++ on Sea (2020)
 - K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
 #### Function parameters
@@ -458,6 +459,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - D.Sankel. [*So, you inherited a large code base...*](https://www.youtube.com/watch?v=B2XtqVZcSdM) – CppCon (2017)
+- W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*A review of published code*](https://www.youtube.com/watch?v=dRClYjASTvA&t=4109s) – C++ on Sea (2022)
 
 ---
 
@@ -1037,6 +1039,7 @@ martinmoene/WholeValue -->
 
 :movie_camera:
 
+- A.Mertz. [*Identifying common code smells*](https://www.youtube.com/watch?v=KFbrhXVb7pw) – C++ on Sea (2022)
 - J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=RgTFO1D3bSU) – code::dive (2019)
 - J.Turner. [*C++ code smells*](https://www.youtube.com/watch?v=f_tLQl0wLUM) – CppCon (2019)
 - P.Roy. [*Some programming myths revisited*](https://www.youtube.com/watch?v=KNqRjzSlUVo) – CppCon (2019)

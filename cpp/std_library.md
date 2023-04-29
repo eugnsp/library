@@ -112,6 +112,10 @@
 
 - S.Love. [*Are you afraid of the dark? – Making sense of the STL*](https://accu.org/journals/overload/9/43/love_443/) – [Overload **43**](https://accu.org/journals/overload/overload43) (2001)
 
+:movie_camera:
+
+- S.Dargo. [*Undefined behaviour in the STL*](https://www.youtube.com/watch?v=BEmAo6Fdg-Q) – C++ on Sea (2020)
+
 :book:
 
 - J.Galowicz. [*C++17 STL cookbook: Discover the latest enhancements to functional programming and lambda expressions*](https://www.packtpub.com/application-development/c17-stl-cookbook) (2017)
@@ -952,6 +956,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :movie_camera:
 
+- G.Davidson. [*A linear algebra library for C++23*](https://www.youtube.com/watch?v=RzO7s-RbLwk) – C++ on Sea (2019)
 - G.Davidson. [*Standardizing a linear algebra library*](https://www.youtube.com/watch?v=cIPmhIiY68U) – Meeting C++ (2018)
 
 :anchor:

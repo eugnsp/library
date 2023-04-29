@@ -273,6 +273,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 :movie_camera:
 
+- W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*The principle behind C++ declaration syntax*](https://www.youtube.com/watch?v=dRClYjASTvA&t=1535s) – C++ on Sea (2022)
 - H.Hinnant. [*How to initialize `x` from expression `y`*](https://www.youtube.com/watch?v=hobFOAehwio) – Meeting C++ (2019)
 
 ### `alignas` and alignment
@@ -716,6 +717,8 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 ### Value categories
 
+:link:
+
 - A.S.Knatten. [*lvalues, rvalues, glvalues, prvalues, xvalues, help!*](https://accu.org/journals/overload/27/150/knatten_2641/) – [Overload **150**](https://accu.org/journals/overload/overload150) (2019)
 - B.Revzin. [*Value categories in C++17*](https://medium.com/@barryrevzin/value-categories-in-c-17-f56ae54bccbe) (2017)
 
@@ -723,6 +726,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 
 - [*What categories (lvalue, rvalue, xvalue, etc.) can expressions that produce temporaries of class type fall into?*](https://stackoverflow.com/q/20717180) – Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
+
+:movie_camera:
+
+- W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*Exploring C++ value categories and the expression category taxonomy*](https://www.youtube.com/watch?v=dRClYjASTvA&t=5078s) – C++ on Sea (2022)
 
 :anchor:
 
@@ -829,6 +836,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :movie_camera:
 
+- W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*Why are they named lambdas?*](https://www.youtube.com/watch?v=dRClYjASTvA&t=2696s) – C++ on Sea (2022)
 - R.Orr. [*Let’s look at lambdas*](https://www.youtube.com/watch?v=NAuFNXIsbtw) – ACCU (2021)
 - B.Geller, A.Sermersheim. [*Back to basics: Lambda expressions*](https://www.youtube.com/watch?v=ZIPNFcw6V9o) – CppCon (2020)
 - B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
@@ -965,6 +973,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :movie_camera:
 
+- W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*The universe of C++ types*](https://www.youtube.com/watch?v=dRClYjASTvA&t=170s) – C++ on Sea (2022)
 - B.Milewski. [*Why algebraic data types are important*](https://www.youtube.com/watch?v=LkqTLJK2API) – code::dive (2018)
 
 ### `void`
@@ -1223,9 +1232,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- N.Josuttis. [*C++17 : The biggest traps*](https://www.youtube.com/watch?v=mAZyaAo3M70) – C++ on Sea (2019)
+- N.Josuttis. [*C++17 – The best features*](https://www.youtube.com/watch?v=e2ZQyYr0Oi0) - ACCU (2018)
 - B.A.Lelbach. *C++17 features.* [Part I](https://www.youtube.com/watch?v=fI2xiUqqH3Q), [Part II](https://www.youtube.com/watch?v=qjxBKINAWk0) – CppCon (2017)
 - A.Meredith. *C++17 in breadth (not depth).* [Part I](https://www.youtube.com/watch?v=22jIHfvelZk), [Part II](https://www.youtube.com/watch?v=-rIixnNJM4k) – CppCon (2016)
-- N.Josuttis. [*C++17 – The best features*](https://www.youtube.com/watch?v=e2ZQyYr0Oi0) - ACCU (2018)
 
 :anchor:
 
@@ -1240,6 +1250,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
+- F.Cooper. [*C++20: All the small things*](https://www.youtube.com/watch?v=LL_NrM7MY44) – C++ on Sea (2020)
 - B.Stroustrup. [*C++20: C++ at 40*](https://www.youtube.com/watch?v=u_ij0YNkFUs) – CppCon (2019)
 - A.Meredith. [*How C++20 can simplify `std::tuple`*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2019)
 

@@ -3,9 +3,10 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Introduction and overview](#introduction-and-overview)
+	- [Applications](#applications)
 - [Template arguments](#template-arguments)
 	- [Argument deduction](#argument-deduction)
-		- [Class template argument deduction](#class-template-argument-deduction)
+		- [Class template argument deduction (CTAD)](#class-template-argument-deduction-ctad)
 		- [Deduction guides](#deduction-guides)
 - [Concepts](#concepts)
 	- [Standard concepts](#standard-concepts)
@@ -54,6 +55,12 @@
 - D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
 - A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
 
+### Applications
+
+:movie_camera:
+
+- J.Gopel. [*Using modern C++ to eliminate virtual functions*](https://www.youtube.com/watch?v=gTNJXVmuRRA) – CppCon (2022)
+
 ---
 
 ## Template arguments
@@ -76,7 +83,7 @@
 
 - [*Template argument deduction*](https://en.cppreference.com/w/cpp/language/template_argument_deduction) – C++ reference
 
-#### Class template argument deduction
+#### Class template argument deduction (CTAD)
 
 :link:
 
@@ -90,6 +97,7 @@
 
 :movie_camera:
 
+- M.Clow. [*Class template argument deduction: History, how to ise it, and how to enable it for your classes*](https://www.youtube.com/watch?v=EPfPMW-rOtc) – CppCon (2022)
 - T.Doumler. [*Class template argument deduction in C++17*](https://www.youtube.com/watch?v=UDs90b0yjjQ) – CppCon (2018)
 - T.Doumler. [*Class template argument deduction in C++17*](https://www.youtube.com/watch?v=STJExxBU54M) – ACCU (2018)
 - S.T.Lavavej. [*Class template argument deduction for everyone*](https://www.youtube.com/watch?v=-H-ut6j1BYU) – CppCon (2018)
@@ -158,6 +166,7 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :movie_camera:
 
+- W.E.Brown. [*C++ function templates: How do they really work?*](https://www.youtube.com/watch?v=nfIX8yWlByY) – C++ on Sea (2019)
 - W.E.Brown. [*C++ function templates: How do they really work?*](https://www.youtube.com/watch?v=NIDEjY5ywqU) – CppCon (2018)
 
 ### Friend function templates

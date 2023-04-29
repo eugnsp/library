@@ -9,6 +9,7 @@
 - [Random numbers generation](#random-numbers-generation)
 	- [Potential problems](#potential-problems)
 - [Public-key cryptography](#public-key-cryptography)
+	- [RSA (Rivest–Shamir–Adleman)](#rsa-rivestshamiradleman)
 	- [Diffie–Hellman key exchange](#diffiehellman-key-exchange)
 
 ---
@@ -48,6 +49,12 @@
 :book:
 
 - Essay 8: *Half a secret* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
+
+### RSA (Rivest–Shamir–Adleman)
+
+:movie_camera:
+
+- J.Keating. [*How does RSA cryptography work?*](https://www.youtube.com/watch?v=qph77bTKJTM)
 
 ### Diffie–Hellman key exchange
 

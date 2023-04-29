@@ -35,6 +35,8 @@
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
 - [Software-related accidents](#software-related-accidents)
+	- [Patriot Missile failure](#patriot-missile-failure)
+	- [Therac-25](#therac-25)
 - [Humor, folklore, etc.](#humor-folklore-etc)
 
 ## People
@@ -347,6 +349,21 @@
 ---
 
 ## Software-related accidents
+
+:link:
+
+- T.Huckle. [*Collection of software bugs*](https://www5.in.tum.de/~huckle/bugse.html)
+- D.N.Arnold. [*Some disasters attributable to bad numerical computing*](https://www-users.cse.umn.edu/~arnold/disasters/) 
+- M.Lake. [*Epic failures: 11 infamous software bugs*](https://www.computerworld.com/article/2515483/epic-failures-11-infamous-software-bugs.html) – Computerworld
+
+
+### Patriot Missile failure
+
+:link:
+
+- D.N.Arnold. [*The Patriot Missile failure*](https://www-users.cse.umn.edu/~arnold/disasters/patriot.html) 
+
+### Therac-25
 
 :link:
 

@@ -9,3 +9,4 @@
 - [code::dive](https://www.youtube.com/channel/UCU0Rt8VHO5-YNQXwIjkf-1g)
 - [ACCU](https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw)
 - [Sweden C++](https://www.youtube.com/channel/UC_LAXFBuK7J2J6NLiYzdPEA)
+- [C++ on Sea](https://www.youtube.com/@cpponsea2834)

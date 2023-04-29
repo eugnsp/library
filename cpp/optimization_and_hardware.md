@@ -20,6 +20,7 @@
 		- [Memory relocation](#memory-relocation)
 		- [Memory access](#memory-access)
 		- [Nested `std::vector`s](#nested-stdvectors)
+		- [Aliasing](#aliasing)
 	- [Floating-point arithmetic](#floating-point-arithmetic)
 	- [Integral arithmetic](#integral-arithmetic)
 		- [Integral multiplication](#integral-multiplication)
@@ -265,6 +266,15 @@ See also [*Allocators* – The standard library, Boost, and proposals](std_libra
 - [*Performance impact of nested vectors vs. contiguous arrays*](https://stackoverflow.com/q/45747848) – Stack Overflow
 - [*Using nested vectors vs a flatten vector wrapper, strange behaviour*](https://stackoverflow.com/q/33093860) – Stack Overflow
 
+#### Aliasing
+
+See also [*Type-punning* – Core language](core_language.md#type-punning).
+
+:movie_camera:
+
+- R.Barkan. [*Aliasing: Risks, opportunities and techniques*](https://www.youtube.com/watch?v=zHkmk1Y-gqM) – CppCon (2022)
+- R.Barkan. [*Aliasing: Risks, opportunities and techniques*](https://www.youtube.com/watch?v=1eAERikCzVg) – C++ on Sea (2022)
+
 ### Floating-point arithmetic
 
 :link:
@@ -354,6 +364,8 @@ See also [*Allocators* – The standard library, Boost, and proposals](std_libra
 - A.Balaam. [*Tail call optimisation in C++*](https://accu.org/journals/overload/20/109/balaam_1914/) – [Overload **109**](https://accu.org/journals/overload/overload109) (2012)
 
 ### Devirtualization
+
+:link:
 
 - A.O’Dwyer. [*When can the C++ compiler devirtualize a call?*](https://quuxplusone.github.io/blog/2021/02/15/devirtualization/) (2021)
 
