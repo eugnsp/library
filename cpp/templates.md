@@ -14,6 +14,7 @@
 	- [Friend function templates](#friend-function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
 	- [Optimization](#optimization)
+		- [`extern template`](#extern-template)
 	- [Two-phase lookup](#two-phase-lookup)
 		- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [SFINAE](#sfinae)
@@ -176,6 +177,10 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 - [*Why do I get linker errors when I use template friends?*](https://isocpp.org/wiki/faq/templates#template-friends) – C++ FAQ
 - [*Correct syntax for friend template function*](https://stackoverflow.com/q/42692050) – Stack Overflow
 
+:movie_camera:
+
+- D.Saks. [*Making new friends*](https://www.youtube.com/watch?v=POa_V15je8Y&t=1854s) – CppCon (2018)
+
 ---
 
 ## Parsing and compilation
@@ -183,6 +188,9 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 :link:
 
 - [*C++ keyword of the day: `export`*](https://blogs.msmvps.com/vandooren/2008/09/24/c-keyword-of-the-day-export/) (2008)
+
+:grey_question:
+
 - [*Why do templates use the angle bracket syntax?*](https://stackoverflow.com/q/43254027) – Stack Overflow
 - [*How do compilers eliminate the need to write white spaces between closing angle brackets, when using template classes since C++ 11 standard?*](https://www.quora.com/How-do-C++-compilers-eliminate-the-need-to-write-white-spaces-between-closing-angle-brackets-when-using-template-classes-since-C++-11-standard) – Quora
 
@@ -203,6 +211,12 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 :movie_camera:
 
 - J.Brown. [*Reducing template compilation overhead, using C++11, 14, 17, and 20*](https://www.youtube.com/watch?v=TyiiNVA1syk) – CppCon (2019)
+
+#### `extern template`
+
+:grey_question:
+
+- [*Using `extern template` with third-party header-only library*](https://stackoverflow.com/q/61477486) – Stack Overflow
 
 ### Two-phase lookup
 
@@ -233,8 +247,12 @@ See also [*Concepts* – The standard library, Boost, and proposals](core_langua
 
 :link:
 
-- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/q/610245) – Stack Overflow
 - H.Sutter. [GotW #35: *Typename*](http://www.gotw.ca/gotw/035.htm)
+
+:grey_question:
+
+- [*Why don’t I need to specify `typename` before a dependent type in C++20?*](https://stackoverflow.com/q/61990971) – Stack Overflow
+- [*Where and why do I have to put the `template` and `typename` keywords?*](https://stackoverflow.com/q/610245) – Stack Overflow
 
 :movie_camera:
 

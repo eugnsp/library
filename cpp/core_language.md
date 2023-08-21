@@ -374,6 +374,10 @@ See also [*Layout* – Class types](#layout).
 
 ### `friend`
 
+:movie_camera:
+
+- D.Saks. [*Making new friends*](https://www.youtube.com/watch?v=POa_V15je8Y) – CppCon (2018)
+
 #### Friend function templates
 
 See [*Friend function templates* – Function templates – Templates](templates.md#friend-function-templates).
@@ -478,6 +482,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 - [*What is external linkage and internal linkage?*](https://stackoverflow.com/q/1358400) – Stack Overflow
 - P.Goldsborough. [*Internal and external linkage in C++*](http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/) (2016)
 - J.Schilling. [*Extern inlines by default*](https://web.archive.org/web/20060509150105/glenmccl.com/ansi_015.htm) (2001)
+
+:movie_camera:
+
+- D.Saks. [*Storage duration and linkage in C and C++*](https://www.youtube.com/watch?v=0kgTuWkyorc) – NDC TechTown (2019)
 
 :anchor:
 
@@ -667,6 +675,10 @@ See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_libra
 - [*Order of evaluation*](https://en.cppreference.com/w/cpp/language/eval_order) – C++ reference
 
 ### Type conversions
+
+:grey_question:
+
+- [*When should `static_cast`, `dynamic_cast`, `const_cast`, and `reinterpret_cast` be used?*](https://stackoverflow.com/q/332030) – Stack Overflow
 
 :book:
 
@@ -1070,6 +1082,11 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 ### Pointer and array types
 
+:grey_question:
+
+- [*Can C arrays contain padding in between elements?*](https://stackoverflow.com/q/1066681) – Stack Overflow
+- [*One-dimensional access to a multidimensional array: is it well-defined behaviour?*](https://stackoverflow.com/q/6290956) – Stack Overflow
+
 :movie_camera:
 
 - B.Saks. [*Back to basics: Pointers and memory*](https://www.youtube.com/watch?v=rqVWj0aVSxg) – CppCon (2020)
@@ -1079,6 +1096,10 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :grey_question:
 
 - [*Is C++ allowed to increase the derived class size if there are no new member variables compared to the base class?*](https://stackoverflow.com/q/19949737) – Stack Overflow
+
+:movie_camera:
+
+- R.Powell. [*Intro to the C++ object model*](https://www.youtube.com/watch?v=iLiDezv_Frk) – CppCon (2015)
 
 :anchor:
 
@@ -1115,7 +1136,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 #### Polymorphism and inheritance
 
-See also [*Inheritance* – ABI and implementation](#inheritance).
+See also [*Implementation of inheritance* – ABI and implementation](#implementation-of-inheritance).
 
 :link:
 

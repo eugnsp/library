@@ -8,9 +8,13 @@
 	- [Password hashing](#password-hashing)
 - [Random numbers generation](#random-numbers-generation)
 	- [Potential problems](#potential-problems)
+		- [Debian OpenSSL bug](#debian-openssl-bug)
+		- [Dual\_EC\_DRBG backdoor](#dual_ec_drbg-backdoor)
 - [Public-key cryptography](#public-key-cryptography)
 	- [RSA (Rivest–Shamir–Adleman)](#rsa-rivestshamiradleman)
 	- [Diffie–Hellman key exchange](#diffiehellman-key-exchange)
+- [Protocols](#protocols)
+	- [TLS](#tls)
 
 ---
 
@@ -37,10 +41,30 @@
 
 ### Potential problems
 
+:movie_camera:
+
+- N.Heninger. [*Random number generation failures from Netscape to DUHK*](https://www.youtube.com/watch?v=fC6QySrAd7U) (2018)
+
+#### Debian OpenSSL bug
+
 :link:
 
 - R.Cox. [*Lessons from the Debian/OpenSSL fiasco*](https://research.swtch.com/openssl) (2008)
 - J.Kroll. [*The Debian OpenSSL bug: Backdoor or security accident?*](https://freedom-to-tinker.com/2013/09/20/software-transparency-debian-openssl-bug/) (2013)
+
+#### Dual_EC_DRBG backdoor
+
+:link:
+
+- B.Schneier. [*Did NSA put a secret backdoor in new encryption standard?*](https://www.wired.com/2007/11/securitymatters-1115/)
+
+:movie_camera:
+
+- M.Pound. [*Elliptic curve back door*](https://www.youtube.com/watch?v=nybVFJVXbww) – Computerphile
+
+:anchor:
+
+- [*Dual_EC_DRBG*](https://en.wikipedia.org/wiki/Dual_EC_DRBG) – Wikipedia
 
 ---
 
@@ -61,3 +85,13 @@
 :link:
 
 - [*Diffie–Hellman key exchange*](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) – Wikipedia
+
+---
+
+## Protocols
+
+### TLS
+
+:movie_camera:
+
+- P.Bindels. [*TLS cryptography for programmers*](https://www.youtube.com/watch?v=6_9ODzckrfc) – ACCU (2022)

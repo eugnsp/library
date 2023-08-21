@@ -15,7 +15,7 @@
 
 ### Algorithm L
 
-> Algorithm L for the given sequence of `n` initially sorted elements <code>{a<sub>0</sub> &leq; a<sub>1</sub> &leq; ... &leq; a<sub>n-1</sub>}</code>, generates all permutations visiting them in the lexicographic order. Gist of the algorithm: for the current permutation, find the longest descreasing subsequence on the right, <code>{...a<sub>p</sub> &leq; a<sub>i</sub> &gt; a<sub>j</sub> &gt; ... &gt; a<sub>k</sub>}</code>, find the next front element <code>a<sub>f</sub> &gt; a<sub>p</sub></code> with the largest possible `f` in the range `[i, k]`, swap <code>a<sub>f</sub></code> and <code>a<sub>p</sub></code>, and then put the remaining elements in the ascending order, i.e. reverse the subsequence <code>{a<sub>i</sub>...a<sub>p</sub>...a<sub>k</sub>}</code>.
+> Algorithm L for the given sequence of `n` initially sorted elements <code>{a<sub>0</sub> &leq; a<sub>1</sub> &leq; ... &leq; a<sub>n-1</sub>}</code>, generates all permutations visiting them in the lexicographic order. Gist of the algorithm: for the current permutation, find the longest decreasing subsequence on the right, <code>{...a<sub>p</sub> &leq; a<sub>i</sub> &gt; a<sub>j</sub> &gt; ... &gt; a<sub>k</sub>}</code>, find the next front element <code>a<sub>f</sub> &gt; a<sub>p</sub></code> with the largest possible `f` in the range `[i, k]`, swap <code>a<sub>f</sub></code> and <code>a<sub>p</sub></code>, and then put the remaining elements in the ascending order, i.e. reverse the subsequence <code>{a<sub>i</sub>...a<sub>p</sub>...a<sub>k</sub>}</code>.
 
 :memo:
 

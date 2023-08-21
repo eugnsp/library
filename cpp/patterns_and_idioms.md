@@ -34,9 +34,15 @@
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Singleton](#singleton)
 - [Structural patterns](#structural-patterns)
+	- [Adapter](#adapter)
+	- [Bridge and pimpl](#bridge-and-pimpl)
+	- [Flyweight](#flyweight)
 	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
 	- [Passkey](#passkey)
 - [Behavioural patterns](#behavioural-patterns)
+	- [Strategy / Policy](#strategy--policy)
+	- [Dependency injection](#dependency-injection)
+	- [Visitor](#visitor)
 	- [Iterator](#iterator)
 		- [Transform iterators](#transform-iterators)
 		- [Constant iterators](#constant-iterators)
@@ -51,24 +57,20 @@
 	- [Immediately invoked function expressions](#immediately-invoked-function-expressions)
 	- [Lambda overload set](#lambda-overload-set)
 	- [Recursive lambdas](#recursive-lambdas)
-- [Adapter](#adapter)
-- [Bridge and pimpl](#bridge-and-pimpl)
+- [Concurrency patterns](#concurrency-patterns)
+	- [Double-checked locking](#double-checked-locking)
 - [Builder](#builder)
 - [Chain-of-responsibility](#chain-of-responsibility)
 - [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
-- [Double-checked locking](#double-checked-locking)
 - [Execute-around](#execute-around)
 	- [Execute-around object (RAII)](#execute-around-object-raii)
 	- [Execute-around proxy](#execute-around-proxy)
 	- [Execute-around pointer](#execute-around-pointer)
 	- [Execute-around function](#execute-around-function)
-- [Flyweight](#flyweight)
 - [Infinite loop](#infinite-loop)
 - [Observer](#observer)
 - [Opaque typedef (whole value)](#opaque-typedef-whole-value)
-- [Strategy / Policy](#strategy--policy)
 - [Type erasure](#type-erasure)
-- [Visitor](#visitor)
 - [Local buffer optimization](#local-buffer-optimization)
 - [Compile-time strings](#compile-time-strings)
 - [Nifty counter](#nifty-counter)
@@ -77,20 +79,6 @@
 	- [Go to](#go-to)
 	- [Duff’s device](#duffs-device)
 	- [Standard library algorithms abuse](#standard-library-algorithms-abuse)
-
----
-
-## Programming paradigms
-
-### Procedural programming
-
-:link:
-
-- [*Procedural programming*](https://en.wikipedia.org/wiki/Procedural_programming) – Wikipedia
-
-:movie_camera:
-
-- K.Henney. [*Procedural programming: It’s back? It never went away*](https://www.youtube.com/watch?v=SvxBvSK4i4k) – ACCU (2018)
 
 ---
 
@@ -138,6 +126,7 @@
 
 :movie_camera:
 
+- B.Dechrai. [*Clean code: Be the hero*](https://www.youtube.com/watch?v=Yu4kIgAH_NM) – NDC Oslo (2023)
 - N.Josuttis. [*When C++ style guides contradict*](https://www.youtube.com/watch?v=WRQ1xqYBKgc) – CppCon (2019)
 - M.Price. [*A critical look at the coding standards landscape*](https://www.youtube.com/watch?v=5XfSM-vDYUs) – CppCon (2019)
 - M.Wong. [*Writing safety critical automotive software for high perf AI hardware*](https://www.youtube.com/watch?v=F4GzsA00s5I) – CppCon (2019)
@@ -162,9 +151,10 @@
 
 :link:
 
+- K.Henney. [*Exceptional naming*](https://kevlinhenney.medium.com/exceptional-naming-6e3c8f5bffac) (2021)
+- J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2019/11/implementer-vs-user-names/) (2019)
 - T.K&ouml;ppe. [TotW #119: *Using-declarations and namespace aliases*`](https://abseil.io/tips/119) – Abseil C++ Tips
 - T.Winters. [TotW #130: *Namespace naming*`](https://abseil.io/tips/130) – Abseil C++ Tips
-- J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2019/11/implementer-vs-user-names/) (2019)
 
 :movie_camera:
 
@@ -193,6 +183,7 @@
 
 :link:
 
+- K.Henney. [*Comment only what the code cannot say*](https://kevlinhenney.medium.com/exceptional-naming-6e3c8f5bffac) (2020)
 - K.Henney. [*Comment only what the code cannot say*](https://accu.org/journals/overload/28/157/henney_2796/) – [Overload **157**](https://accu.org/journals/overload/overload157) (2020)
 - J.Atwood. [*Coding without comments*](https://blog.codinghorror.com/coding-without-comments/) (2008)
 
@@ -546,6 +537,42 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ## Structural patterns
 
+### Adapter
+
+:link:
+
+- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) – Wikipedia
+
+:movie_camera:
+
+- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
+
+### Bridge and pimpl
+
+:link:
+
+- A.Mertz. [*The pImpl idiom*](https://arne-mertz.de/2019/01/the-pimpl-idiom/) (2019)
+
+:grey_question:
+
+- [*Is the pImpl idiom really used in practice?*](https://stackoverflow.com/q/8972588) – Stack Overflow
+- [*Pimpl with smart ptr – Why constructor/destructor needed*](https://stackoverflow.com/q/21699201) – Stack Overflow
+
+:movie_camera:
+
+- D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
+- D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
+
+:anchor:
+
+- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
+  
+### Flyweight
+
+:link:
+
+- [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
+
 ### `const` and non-`const` member functions
 
 :grey_question:
@@ -569,6 +596,72 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 ---
 
 ## Behavioural patterns
+
+### Strategy / Policy
+
+> The strategy pattern enables run- or compile-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
+
+:movie_camera:
+
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) – ACCU (2017)
+
+:book:
+
+- Ch. 16: *Policy-based design* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+- Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
+  
+### Dependency injection
+
+> Dependency injection is a design pattern in which an object or function receives other objects or functions that it depends on. It aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
+
+:movie_camera:
+
+- F.Zoffoli. [*How to use C++ dependency injection to write maintainable software*](https://www.youtube.com/watch?v=l6Y9PqyK1Mc) – CppCon (2022)
+
+:grey_question:
+
+- [*What is the difference between Strategy pattern and Dependency Injection?*](https://stackoverflow.com/q/4176520) – Stack Overflow
+
+:anchor:
+
+- [*Dependency injection*](https://en.wikipedia.org/wiki/Dependency_injection) – Wikipedia
+
+### Visitor
+
+> The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm. It lets one define a new operation without changing the classes of the elements on which it operates.
+> ```cpp
+> class Visitor {
+> public:
+>     void visit(A&);
+>     void visit(B&);
+> };
+>
+> class A {
+> public:
+>     void accept(Visitor& v) { v.visit(*this); }
+> };
+>
+> class B {
+> public:
+>     void accept(Visitor& v) { v.visit(*this); }
+> };
+> ```
+
+:link:
+
+- [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
+- F.Glassborow. [*Exploring patterns: Part 2*](https://accu.org/journals/overload/6/27/glassborow_593/) – [Overload **27**](https://accu.org/journals/overload/overload27) (1998)
+
+:grey_question:
+
+- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/q/255214) – Stack Overflow
+
+:movie_camera:
+
+- B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) – CppCon (2019)
+
+<!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
+<!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
 
 ### Iterator
 
@@ -738,35 +831,25 @@ overloaded(Ts...) -> overloaded<Ts...>;
 
 ---
 
-## Adapter
-
-:link:
-
-- [*Adapter pattern*](https://en.wikipedia.org/wiki/Adapter_pattern) – Wikipedia
+## Concurrency patterns
 
 :movie_camera:
 
-- [*Adapter design pattern*](https://www.youtube.com/watch?v=9jIgSsIfh_8) – D.Banas
+- R.Grimm. [*Concurrency Patterns*](https://www.youtube.com/watch?v=OSZ7XtU1Oh4) – Meeting C++ (2023)
 
-## Bridge and pimpl
+### Double-checked locking
+
+See also [*Multithreading* – Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
 
 :link:
 
-- A.Mertz. [*The pImpl idiom*](https://arne-mertz.de/2019/01/the-pimpl-idiom/) (2019)
-
-:grey_question:
-
-- [*Is the pImpl idiom really used in practice?*](https://stackoverflow.com/q/8972588) – Stack Overflow
-- [*Pimpl with smart ptr – Why constructor/destructor needed*](https://stackoverflow.com/q/21699201) – Stack Overflow
+- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) – Wikipedia
 
 :movie_camera:
 
-- D.Schmidt. [*The composite and bridge patterns*](https://www.youtube.com/watch?v=iM4W5hFqaEA&t=730)
-- D.Banas. [*Bridge design pattern*](https://www.youtube.com/watch?v=qG286LQM6BU)
+- F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) – CppCon (2015)
 
-:anchor:
-
-- [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
+---
 
 ## Builder
 
@@ -822,18 +905,6 @@ overloaded(Ts...) -> overloaded<Ts...>;
 
 - Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 
-## Double-checked locking
-
-See also [*Multithreading* – Concurrency and parallelism](concurrency_and_parallelism.md#multithreading).
-
-:link:
-
-- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) – Wikipedia
-
-:movie_camera:
-
-- F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) – CppCon (2015)
-
 ## Execute-around
 
 :link:
@@ -885,12 +956,6 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 ### Execute-around function
 
 > Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
-
-## Flyweight
-
-:link:
-
-- [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
 
 ## Infinite loop
 
@@ -951,19 +1016,6 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 github PeterSommerlad/ Pssst
 martinmoene/WholeValue -->
 
-## Strategy / Policy
-
-> The strategy pattern enables run- or compile-time selection of an algorithm for a particular behaviour. This pattern is also known by the name of policy pattern.
-
-:movie_camera:
-
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs&t=2387) – ACCU (2017)
-
-:book:
-
-- Ch. 16: *Policy-based design* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
-- Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
-
 ## Type erasure
 
 :link:
@@ -973,43 +1025,6 @@ martinmoene/WholeValue -->
 :movie_camera:
 
 - K.Iglberger. [*Breaking dependencies: Type erasure – A design analysis*](https://www.youtube.com/watch?v=M4ekpfVo4_o) – CppCon (2021)
-
-## Visitor
-
-> The visitor pattern separates an algorithm from an object structure, which is the data for this algorithm. It lets one define a new operation without changing the classes of the elements on which it operates.
-> ```cpp
-> class Visitor {
-> public:
->     void visit(A&);
->     void visit(B&);
-> };
->
-> class A {
-> public:
->     void accept(Visitor& v) { v.visit(*this); }
-> };
->
-> class B {
-> public:
->     void accept(Visitor& v) { v.visit(*this); }
-> };
-> ```
-
-:link:
-
-- [*Visitor pattern*](https://en.wikipedia.org/wiki/Visitor_pattern) – Wikipedia
-- F.Glassborow. [*Exploring patterns: Part 2*](https://accu.org/journals/overload/6/27/glassborow_593/) – [Overload **27**](https://accu.org/journals/overload/overload27) (1998)
-
-:grey_question:
-
-- [*When should I use the Visitor design pattern?*](https://stackoverflow.com/q/255214) – Stack Overflow
-
-:movie_camera:
-
-- B.Kannan. [*Generalised double dispatch*](https://www.youtube.com/watch?v=nNqiBasCab4) – CppCon (2019)
-
-<!-- https://stackoverflow.com/questions/44447292/when-should-i-return-by-value-as-opposed-to-returning-a-unique-pointer -->
-<!-- https://stackoverflow.com/questions/1691007/whats-the-right-way-to-overload-operator-for-a-class-hierarchy -->
 
 ## Local buffer optimization
 

@@ -54,6 +54,7 @@
 - [Iterators](#iterators)
 	- [Reverse iterators](#reverse-iterators)
 - [Ranges](#ranges)
+	- [Views](#views-1)
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
@@ -737,6 +738,12 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 - T.Brindle. [*An overview of standard ranges*](https://www.youtube.com/watch?v=SYLgG7Q5Zws) – CppCon (2019)
 - A.Schödl. [*Why iterators got it all wrong and what we should use instead*](https://www.youtube.com/watch?v=srp9Tie5BYk) – CodeNode (2017)
 - A.Schödl. [*From iterators to ranges: The upcoming evolution of the STL*](https://www.youtube.com/watch?v=vrCtS6FDay8) – Meeting C++ (2015)
+
+### Views
+
+:movie_camera:
+
+- N.Josuttis. [*C++ views*](https://www.youtube.com/watch?v=qv29fo9sUjY) – ACCU (2023)
 
 ---
 

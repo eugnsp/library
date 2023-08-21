@@ -16,10 +16,6 @@
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Ken Thompson](#ken-thompson)
 	- [Linus Torvalds](#linus-torvalds)
-- [Programming languages](#programming-languages)
-	- [Algol](#algol)
-	- [C](#c)
-	- [Pascal](#pascal)
 - [Operating systems](#operating-systems)
 	- [Linux](#linux)
 - [Automated theorem proving](#automated-theorem-proving)
@@ -37,6 +33,7 @@
 - [Software-related accidents](#software-related-accidents)
 	- [Patriot Missile failure](#patriot-missile-failure)
 	- [Therac-25](#therac-25)
+- [Soft skills](#soft-skills)
 - [Humor, folklore, etc.](#humor-folklore-etc)
 
 ## People
@@ -203,46 +200,6 @@
 
 ---
 
-## Programming languages
-
-:movie_camera:
-
-- [*The languages*](https://www.youtube.com/watch?v=xnCgoEyz31M) – Unix50 - Unix Today and Tomorrow (2019)
-
-:book:
-
-- Essay 4: *The central folly* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
-
-### Algol
-
-:link:
-
-- D.James. [*Algol 68 – a retrospective*](https://accu.org/journals/overload/26/148/james_2586/) – [Overload **148**](https://accu.org/journals/overload/overload148) (2018)
-
-:movie_camera:
-
-- D.Brailsford. [*Algol 60 at 60*](https://www.youtube.com/watch?v=T-NTEc8Ag-I) – Computerphile
-
-### C
-
-:movie_camera:
-
-- B.Kernighan. [*C programming language*](https://www.youtube.com/watch?v=de2Hsvxaf8M) – Computerphile
-- D.Brailsford. [*Why C is so influential*](https://www.youtube.com/watch?v=ci1PJexnfNE) - Computerphile
-
-### Pascal
-
-:page_facing_up:
-
-- B.W.Kernighan. [*Why Pascal is not my favorite programming language*](https://www.lysator.liu.se/c/bwk-on-pascal.html) – Computer Science Technical Report **100** (1981)
-- A.N.Habermann. [*Critical comments on the programming language Pascal*](https://figshare.com/articles/journal_contribution/Critical_comments_on_the_programming_language_PASCAL/6604568/files/12094973.pdf) – [Acta Informatica **3**, 47](https://doi.org/10.1007/BF00288652) (1973)
-
-:anchor:
-
-- N.Wirth. [*Recollections about the development of Pascal*](http://www.math.bas.bg/bantchev/place/pascal/recollections.pdf) – History of programming languages II (1996)
-
----
-
 ## Operating systems
 
 :movie_camera:
@@ -302,6 +259,7 @@
 - [Eli Bendersky](http://eli.thegreenplace.net/)
 - [Jonathan Boccara](http://www.fluentcpp.com/)
 - [Bartlomiej Filipek](http://www.bfilipek.com/)
+- [Kevlin Henney](https://kevlinhenney.medium.com/)
 - [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)
 - [Andrzej Krzemie&nacute;ski](https://akrzemi1.wordpress.com/author/akrzemi1/)
 - [KrzaQ](https://dev.krzaq.cc/)
@@ -368,6 +326,14 @@
 :link:
 
 - [*Therac-25*](https://en.wikipedia.org/wiki/Therac-25) – Wikipedia
+
+---
+
+## Soft skills
+
+:movie_camera:
+
+- D.Sankel. [*Rules for radical engineers: Make a difference in your code, team, and organization*](https://www.youtube.com/watch?v=ady2mUIQpt4) – CppCon (2022)
 
 ---
 

@@ -25,7 +25,7 @@
 	- [Integral arithmetic](#integral-arithmetic)
 		- [Integral multiplication](#integral-multiplication)
 		- [Integeral division](#integeral-division)
-	- [Empty base class optimization](#empty-base-class-optimization)
+	- [Empty base class optimization (EBO)](#empty-base-class-optimization-ebo)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Tail call optimisation](#tail-call-optimisation)
 	- [Devirtualization](#devirtualization)
@@ -153,6 +153,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 :movie_camera:
 
+- A.Lachmish. [*Algorithmic complexity, data locality, parallelism, and compiler optimizations, seasoned with some concurrency*](https://www.youtube.com/watch?v=0iXRRCnurvo) – CppCon (2022)
 - A.Alexandrescu. [*Speed is found in the minds of people*](https://www.youtube.com/watch?v=FJJTYQYB1JQ) – CppCon (2019)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) – ACCU (2019)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=IGFBCvroXJ8) – NDC (2018)
@@ -313,7 +314,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 - [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/q/41183935) – Stack Overflow
 - [*Why does the compiler generate a right-shift by 31 bits when dividing by 2?*](https://stackoverflow.com/q/40638335) – Stack Overflow
 
-### Empty base class optimization
+### Empty base class optimization (EBO)
 
 > Empty base class optimization allows the size of an empty base subobject to be zero. Empty base optimization is required for standard layout types.
 > ```cpp
@@ -333,6 +334,10 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 - [*`boost::compressed_pair`*](https://www.boost.org/doc/libs/release/libs/utility/compressed_pair.htm)
 - [*`boost::empty_value`*](https://www.boost.org/doc/libs/release/libs/core/doc/html/core/empty_value.html)
 
+:movie_camera:
+
+- J.Berg. [*Empty objects*](https://www.youtube.com/watch?v=vKDQxhyyMr8) – Sweden C++ (2023)
+
 :book:
 
 - Sec. 21.1: *The empty base class optimization*, Sec. 25.5.1: *Tuples and the EBCO* – D.Vandevoorde, N.M.Josuttis, D.Gregor. [*C++ templates: The complete guide*](http://www.tmplbook.com/) – [Addison-Wesley](https://www.informit.com/store/c-plus-plus-templates-the-complete-guide-9780321714121) (2017)
@@ -347,7 +352,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 
 - A.Fertig. [*Why you should use `std::move` only rarely*](https://andreasfertig.blog/2022/02/why-you-should-use-stdmove-only-rarely/) (2022)
 
-:camera:
+:movie_camera:
 
 - A.O’Dwyer. [*The complete guide to `return x;`*](https://www.youtube.com/watch?v=OGKAJD7bmr8) – C++Now (2021)
 - J.Kalb. [*Copy elision*](https://www.youtube.com/watch?v=fSB57PiXpRw) – C++Now (2018)
@@ -373,6 +378,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 
 :link:
 
+- T.Chatzigiannakis. [*Undefined behavior can literally erase your hard disk*](https://blog.tchatzigiannakis.com/undefined-behavior-can-literally-erase-your-hard-disk/) (2017)
 - K.Walfridsson. [*How undefined signed overflow enables optimizations in GCC*](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html) (2016)
 - K.Walfridsson. [*Dangling pointers and undefined behavior*](https://kristerw.blogspot.com/2016/04/dangling-pointers-and-undefined-behavior.html) (2016)
 - K.Walfridsson. [*Pointer comparison — an invalid optimization in GCC*](https://kristerw.blogspot.com/2016/12/pointer-comparison-invalid-optimization.html) (2016)
@@ -385,6 +391,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 
 :movie_camera:
 
+- A.Meredith. [*Removing needless undefined behavior for a safer C++*](https://www.youtube.com/watch?v=iY7ft98nM2k) – ACCU (2023)
 - A.Sermersheim, B.Geller. [*Back to basics: Undefined behavior*](https://www.youtube.com/watch?v=NpL9YnxnOqM) – CppCon (2021)
 - J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) – C++Now (2018)
 - B.Geller, A.Sermersheim. [*Undefined behavior is not an error*](https://www.youtube.com/watch?v=XEXpwis_deQ) – CppCon (2018)

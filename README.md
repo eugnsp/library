@@ -39,4 +39,5 @@
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
 - [Distributed systems and computer networks](distributed_systems.md)
 - [General reviews and interviews](general_reviews.md)
+    * :computer: [Programming](programming.md)
 - [C++ conferences](cpp/conferences.md)

@@ -25,6 +25,7 @@
 	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
 	- [Coroutines](#coroutines)
+	- [Concurrency patterns](#concurrency-patterns)
 - [GPU computing](#gpu-computing)
 
 ---
@@ -75,6 +76,7 @@
 
 :movie_camera:
 
+- A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
 - F.Petriconi. [*An adventure in race conditions*](https://www.youtube.com/watch?v=asgO4P2fhTw) – ACCU (2019)
 - A.Sermersheim. *Multithreading is the answer. What is the question?* [Part I](https://www.youtube.com/watch?v=GNw3RXr-VJk), [Part II](https://www.youtube.com/watch?v=sDLQWivf1-I) – CppCon (2017)
 - R.Grimm. [*C++11 multithreading done right?*](https://www.youtube.com/watch?v=paK38WAq8WY) – Meeting C++ (2014)
@@ -289,6 +291,10 @@ http://www.drdobbs.com/parallel/volatile-vs-volatile/212701484
 :movie_camera:
 
 - J.McNellis. [*Introduction to C++ coroutines*](https://www.youtube.com/watch?v=ZTqHjjm86Bw) – CppCon (2016)
+
+### Concurrency patterns
+
+See [*Concurrency patterns* – Patterns, idioms, and design principles](patterns_and_idioms.md#concurrency-patterns).
 
 ---
 

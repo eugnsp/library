@@ -16,6 +16,7 @@
 	- [Windows](#windows)
 		- [DLLs](#dlls)
 - [IDE](#ide)
+	- [Visual Studio](#visual-studio)
 	- [Visual Studio Code](#visual-studio-code)
 - [Code analysis and optimization tools](#code-analysis-and-optimization-tools)
 	- [Online compilers](#online-compilers)
@@ -49,14 +50,15 @@
 
 ### Git
 
+:movie_camera:
+
+- E.Campidoglio. [*Git hidden gems*](https://www.youtube.com/watch?v=WtUCZYyv-_w) – NDC Oslo (2023) 
+- C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
+
 :grey_question:
 
 - [*How to make Git “forget” about a file that was tracked but is now in `.gitignore`?*](https://stackoverflow.com/q/1274057) – Stack Overflow
 - [*When should I use `git pull --rebase`?*](https://stackoverflow.com/q/2472254) – Stack Overflow
-
-:movie_camera:
-
-- C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
 
 ---
 
@@ -65,6 +67,10 @@
 :link:
 
 - A.O’Dwyer. [*Always read the first error message first*](https://quuxplusone.github.io/blog/2023/01/21/did-you-mean-bool/) (2023)
+
+:movie_camera:
+
+- V.Romeo. [*Improving C++ compilation times: Tools & techniques*](https://www.youtube.com/watch?v=PfHD3BsVsAM) – ACCU (2023)
 
 :anchor:
 
@@ -158,6 +164,12 @@
 ---
 
 ## IDE
+
+### Visual Studio
+
+:link:
+
+- A.Rich. [*Troubleshooting tips for IntelliSense slowness*](https://devblogs.microsoft.com/cppblog/troubleshooting-tips-for-intellisense-slowness/)
 
 ### Visual Studio Code
 
