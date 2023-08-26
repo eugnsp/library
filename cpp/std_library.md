@@ -6,6 +6,8 @@
 	- [The standard library](#the-standard-library)
 		- [Implementations](#implementations)
 	- [Boost](#boost)
+- [Design principles](#design-principles)
+	- [Customization point objects](#customization-point-objects)
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
 	- [`std::midpoint`](#stdmidpoint)
@@ -35,7 +37,7 @@
 		- [`std::stack`](#stdstack)
 		- [`std::queue`](#stdqueue)
 		- [`std::priority_queue`](#stdpriority_queue)
-	- [Views](#views)
+	- [Container views](#container-views)
 		- [`std::span`](#stdspan)
 	- [Transparent comparators](#transparent-comparators)
 	- [Erasing from containers](#erasing-from-containers)
@@ -54,7 +56,7 @@
 - [Iterators](#iterators)
 	- [Reverse iterators](#reverse-iterators)
 - [Ranges](#ranges)
-	- [Views](#views-1)
+	- [Views](#views)
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
@@ -74,6 +76,7 @@
 	- [Random numbers](#random-numbers)
 - [Regular expressions](#regular-expressions)
 - [Type support](#type-support)
+	- [`std::type_info`](#stdtype_info)
 	- [Additional basic types](#additional-basic-types)
 		- [`std::nullptr_t`](#stdnullptr_t)
 	- [Fixed-width integer types](#fixed-width-integer-types)
@@ -139,6 +142,23 @@
 :link:
 
 - [Boost library incubator](http://blincubator.com/)
+
+## Design principles
+
+:movie_camera:
+
+- A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
+- B.Steagall. [*Back to basics: Classic STL*](https://www.youtube.com/watch?v=0itiHQVWq4M) – CppCon (2021)
+
+### Customization point objects
+
+:link:
+
+- [*Customization point design in C++11 and beyond*](https://ericniebler.com/2014/10/21/customization-point-design-in-c11-and-beyond/) (2014)
+
+:grey_question:
+
+- [*What are customization point objects and how to use them?*](https://stackoverflow.com/q/53495848) – Stack Overflow
 
 ---
 
@@ -269,6 +289,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :link:
 
+- A.O’Dwyer. [*Implementation divergence with a moved-from `set` comparator*](https://quuxplusone.github.io/blog/2023/05/10/lwg-2227/) (2023)
 - K.Kreft, A.Langer. [*Effective standard C++ library: Are `set` iterators mutable or immutable*](https://github.com/eugnsp/CUJ/blob/master/18.10/kreft/kreft.md) – C/C++ Users Journal **18** (2000)
 - M.Austern. [*Why you shouldn’t use `set` – and what you should use instead*](http://lafstern.org/matt/col1.pdf) – C++ Report (2000)
 
@@ -512,7 +533,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 - [*std::priority_queue*](https://en.cppreference.com/w/cpp/container/priority_queue) – C++ reference
 
-### Views
+### Container views
 
 #### `std::span`
 
@@ -701,10 +722,12 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 :link:
 
 - S.Dargo. [*C++ basics: Pointers vs iterators*](https://www.sandordargo.com/blog/2022/03/16/iterators-vs-pointers) (2022)
+- S.Meyers. [*Three guidelines for effective iterator usage*](https://www.drdobbs.com/cpp/three-guidelines-for-effective-iterator/184401406) – Dr.Dobb’s Journal (2001)
 - K.Kreft, A.Langer. [*Iterators in the Standard C++ library*](https://web.archive.org/web/20050308162147/http://www.langer.camelot.de/Articles/C++Report/IteratorsInStdlib/IteratorsInStdlib.html) – C++ Report (1996)
 
 :grey_question:
 
+- [*`const_iterator` and constness of `const_iterator::value_type`*](https://stackoverflow.com/q/12819405) – Stack Overflow
 - [*Why use iterators instead of array indices?*](https://stackoverflow.com/q/131241) – Stack Overflow
 - [*Iterator loop vs index loop*](https://stackoverflow.com/q/14373934) – Stack Overflow
 - [*Why is `std::iterator` deprecated?*](https://stackoverflow.com/q/43268146) – Stack Overflow
@@ -740,6 +763,10 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 - A.Schödl. [*From iterators to ranges: The upcoming evolution of the STL*](https://www.youtube.com/watch?v=vrCtS6FDay8) – Meeting C++ (2015)
 
 ### Views
+
+:grey_question:
+
+- [*Ranges `filter_view::iterator` element modification results in UB*](https://stackoverflow.com/q/75456524) – Stack Overflow
 
 :movie_camera:
 
@@ -789,6 +816,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 :link:
 
+- R.Chen. [*Making sure that people use `make_unique` and `make_shared` to make your object*](https://devblogs.microsoft.com/oldnewthing/20220721-00/?p=106879) (2022)
 - S.Dargo. [*Smart pointers and their deleters*](https://www.sandordargo.com/blog/2022/06/08/smart-pointers-and-deleters) (2022)
 - A.O’Dwyer. [*In praise of `make_unique`*](https://quuxplusone.github.io/blog/2018/05/26/the-versatile-make-unique/) (2018)
 - H.Sutter. [GotW #91: *Smart pointer parameters*](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/) – Guru of the Week (2013)
@@ -830,6 +858,7 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 - [*Should I assign or reset a `unique_ptr`?*](https://stackoverflow.com/q/16061407) – Stack Overflow
 - [*`make_unique` with brace initialization*](https://stackoverflow.com/q/55141594) – Stack Overflow
 - [*How do I pass a `unique_ptr` argument to a constructor or a function?*](https://stackoverflow.com/q/8114276) – Stack Overflow
+- [*Why can a `T*` be passed in register, but a `unique_ptr<T>` cannot?*](https://stackoverflow.com/q/58339165) – Stack Overflow
 
 :anchor:
 
@@ -860,6 +889,10 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 #### `std::enable_shared_from_this`
 
 > `std::enable_shared_from_this` allows a member function of an object that is currently managed by a `std::shared_ptr` to extend the lifetime of that object dynamically by generating additional `std::shared_ptr` instances.
+
+:link:
+
+- R.Chen. [*Inside STL: The `shared_ptr` constructor and `enable_shared_from_this`*](https://devblogs.microsoft.com/oldnewthing/20230816-00/?p=108608) (2023)
 
 :grey_question:
 
@@ -1014,6 +1047,18 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 ---
 
 ## Type support
+
+### `std::type_info`
+
+> This class holds implementation-specific information about a type, including the name of the type and means to compare two types for equality or collating order. This is the class returned by the `typeid` operator.
+
+:grey_question:
+
+- [*Unmangling the result of `std::type_info::name`*](https://stackoverflow.com/q/281818) – Stack Overflow
+
+:anchor:
+
+- [*`std::type_info`*](https://en.cppreference.com/w/cpp/types/type_info) – C++ reference
 
 ### Additional basic types
 
@@ -1297,6 +1342,7 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 :grey_question:
 
 - [*Accepting `std::chrono::duration` of any representation/period*](https://stackoverflow.com/q/22362717) – Stack Overflow
+- [*What are the uses of `std::chrono::high_resolution_clock`?*](https://stackoverflow.com/q/37426832) – Stack Overflow
 
 :movie_camera:
 
@@ -1386,8 +1432,6 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 :movie_camera:
 
-- B.Steagall. [*Back to basics: Classic STL*](https://www.youtube.com/watch?v=0itiHQVWq4M) – CppCon (2021)
-- A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
 
 :anchor:
 

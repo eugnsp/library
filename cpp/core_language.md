@@ -19,6 +19,7 @@
 	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
+		- [`constexpr` and dynamic allocations](#constexpr-and-dynamic-allocations)
 	- [`decltype` and `std::declval()`](#decltype-and-stddeclval)
 	- [`enum`, `enum class`](#enum-enum-class)
 	- [`friend`](#friend)
@@ -79,6 +80,7 @@
 		- [`__float128`](#__float128)
 	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
 	- [Pointer and array types](#pointer-and-array-types)
+		- [Null pointers](#null-pointers)
 	- [Class types](#class-types)
 		- [Layout](#layout)
 		- [Member functions](#member-functions-1)
@@ -347,6 +349,12 @@ See also [*Layout* – Class types](#layout).
 
 - S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) – CppCon (2015)
 
+#### `constexpr` and dynamic allocations
+
+:grey_question:
+
+- [*C++20 `constexpr` `vector` and `string` not working*](https://stackoverflow.com/q/69498115) – Stack Overflow
+
 ### `decltype` and `std::declval()`
 
 > The `decltype` specifier inspects the declared type of an entity or the type and value category of an expression. `std::declval` converts any type `T` to a reference type, making it possible to use member functions in the operand of the decltype specifier without the need to go through constructors.
@@ -365,8 +373,15 @@ See also [*Layout* – Class types](#layout).
 
 ### `enum`, `enum class`
 
+:link:
+
 - S.Dargo. [*Bitwise enumerations*](https://www.sandordargo.com/blog/2022/06/22/bitwise-enums) (2022)
 - A.Williams. [*Using `enum class`es as bitfields*](https://www.justsoftwaresolutions.co.uk/cplusplus/using-enum-classes-as-bitfields.html) (2015)
+
+:grey_question:
+
+- [*Is it safe to `reinterpret_cast` an `enum class` variable to a reference of the underlying type?*](https://stackoverflow.com/q/19476818) – Stack Overflow
+- [*Using `reinterpret_cast` on an enum class – valid or undefined behavior?*](https://stackoverflow.com/q/29066335) – Stack Overflow
 
 :anchor:
 
@@ -515,6 +530,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
+- A.O’Dwyer. [*PSA: Value-initialization is not merely default-construction*](https://quuxplusone.github.io/blog/2023/06/22/psa-value-initialization/) (2023)
 - P.Arias. [*Initialization of static variables*](https://pabloariasal.github.io/2020/01/02/static-variable-initialization/) (2020)
 - C.McClure. [*C++ object initialization*](https://daemons.net/programming/c++/initialization.html)
 - B.Filipek. [*What happens to your static variables at the start of the program?*](https://www.bfilipek.com/2018/02/staticvars.html) (2018)
@@ -1091,6 +1107,12 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - B.Saks. [*Back to basics: Pointers and memory*](https://www.youtube.com/watch?v=rqVWj0aVSxg) – CppCon (2020)
 
+#### Null pointers
+
+:anchor:
+
+- [*Null pointers*](https://c-faq.com/null/) – C programming FAQs
+
 ### Class types
 
 :grey_question:
@@ -1197,6 +1219,7 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 
 :link:
 
+- A.O’Dwyer. [*Don’t `forward things` that aren’t forwarding references*](https://quuxplusone.github.io/blog/2023/05/27/dont-forward-non-forwarding-references/) (2023)
 - C.DaCamara. [*Improving the state of debug performance in C++*](https://devblogs.microsoft.com/cppblog/improving-the-state-of-debug-performance-in-c/) (2022)
 - J.M&uuml;ller. [*Implementation сhallenge: Replacing `std::move` and `std::forward`*](https://www.foonathan.net/2020/09/move-forward/) (2020)
 - H.E.Hinnant et al. [*A brief introduction to rvalue references*](https://www.artima.com/cppsource/rvalue.html) (2008)
@@ -1350,6 +1373,10 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - L.Sas. [*Modern C and what we can learn from it*](https://www.youtube.com/watch?v=QpAhX-gsHMs) – ACCU (2021)
+
+:anchor:
+
+- [*C programming FAQs*](https://c-faq.com/)
 
 ### Arrays
 
