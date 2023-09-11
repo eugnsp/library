@@ -10,3 +10,4 @@
 - [ACCU](https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw)
 - [Sweden C++](https://www.youtube.com/channel/UC_LAXFBuK7J2J6NLiYzdPEA)
 - [C++ on Sea](https://www.youtube.com/@cpponsea2834)
+- [CppNorth](https://www.youtube.com/@cppnorth)

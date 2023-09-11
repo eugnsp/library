@@ -1031,6 +1031,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :movie_camera:
 
+- R.Seacord. [*Integer type selection in C++ in safe, secure and correct code*](https://www.youtube.com/watch?v=82jVpEmAEV4) – C++ Now (2023)
 - J.Bastien. [*Signed integers are two’s complement*](https://www.youtube.com/watch?v=JhUxIVf1qok) – CppCon (2018)
 - D.Saks. [*Choosing the right integer types in C and C++*](https://www.youtube.com/watch?v=IJaa58cfvOw) – code::dive (2018)
 
@@ -1293,6 +1294,8 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
+- N.Josuttis. [*C++20: My favourite code examples*](https://www.youtube.com/watch?v=UCIKbUvEKfI) – ACCU (2022)
 - B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
 - F.Cooper. [*C++20: All the small things*](https://www.youtube.com/watch?v=LL_NrM7MY44) – C++ on Sea (2020)
 - B.Stroustrup. [*C++20: C++ at 40*](https://www.youtube.com/watch?v=u_ij0YNkFUs) – CppCon (2019)

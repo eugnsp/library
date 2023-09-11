@@ -103,6 +103,7 @@
 
 :movie_camera:
 
+- A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
 - M.Shah. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=pfIC-kle4b0) – CppCon (2021)
 - A.O’Dwyer. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=F6Ipn7gCOsY) – CppCon (2020)
 - B.A.Lelbach. [*The C++17 parallel algorithms library and beyond*](https://www.youtube.com/watch?v=Vck6kzWjY88) – CppCon (2016)

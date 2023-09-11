@@ -53,6 +53,7 @@
 	- [Expression templates](#expression-templates)
 	- [Barton–Nackman trick](#bartonnackman-trick)
 	- [Shim class](#shim-class)
+	- [Integral constant wrapper / Int-to-type](#integral-constant-wrapper--int-to-type)
 - [Lambda expression idioms](#lambda-expression-idioms)
 	- [Immediately invoked function expressions](#immediately-invoked-function-expressions)
 	- [Lambda overload set](#lambda-overload-set)
@@ -762,6 +763,24 @@ See also [*Iterators* – The standard library, Boost, and proposals](std_librar
 :link:
 
 - D.Reichard. [*Shim classes*](https://github.com/eugnsp/CUJ/blob/master/18.02/reichard/reichard.md) – C/C++ Users Journal **18** (2000)
+
+### Integral constant wrapper / Int-to-type
+
+:link:
+
+- [*Int-to-type*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Int-To-Type) – Wikibooks
+
+:grey_question:
+
+- [*Why does Boost MPL have integral constants?*](https://stackoverflow.com/q/14389429) – Stack Overflow
+
+:book:
+
+- Sec. 2.4: *Mapping integral constants to types* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
+
+:anchor:
+
+- [*`std::integral_constant`*](https://en.cppreference.com/w/cpp/types/integral_constant) – C++ reference
 
 ---
 

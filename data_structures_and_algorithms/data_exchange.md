@@ -6,6 +6,7 @@
 - [Serialization](#serialization)
   - [Boost.Serialization](#boostserialization)
 - [Compression](#compression)
+  - [JPEG](#jpeg)
 
 ---
 
@@ -43,3 +44,14 @@
 :movie_camera:
 
 - D.Brailsford. [*Compression*](https://www.youtube.com/watch?v=Lto-ajuqW3w), [*Entropy in compression*](https://www.youtube.com/watch?v=M5c_RFKVkko), [*Elegant compression in text (the LZ77 method)*](https://www.youtube.com/watch?v=goOa3DGezUA) – Computerphile (2013)
+
+### JPEG
+
+:movie_camera:
+
+- [*The unreasonable effectiveness of JPEG: A signal processing approach*](https://www.youtube.com/watch?v=0me3guauqOU) – 
+Reducible (2022)
+
+:page_facing_up:
+
+- N.Ahmed. [*How I came up with the discrete cosine transform*](https://www.cse.iitd.ac.in/~pkalra/col783-2017/DCT-History.pdf) – [Digital Signal Processing **1**, 4-5](https://dx.doi.org/10.1016/1051-2004(91)90086-Z) (1991)
