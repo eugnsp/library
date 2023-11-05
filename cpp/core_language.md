@@ -593,7 +593,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Object creation and placement `new`
 
-See also [*Uninitialized storage* – The standard library, Boost, and proposals](std_library.md#uninitialized-storage).
+See also [*Uninitialized storage* – The standard library and proposals](std_library.md#uninitialized-storage).
 
 :grey_question:
 
@@ -614,7 +614,7 @@ See also [*Uninitialized storage* – The standard library, Boost, and proposals
 
 ## Exceptions
 
-See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions) and [*Exceptions* – The standard library, Boost, and proposals](std_library.md#exceptions).
+See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and_idioms.md#exceptions) and [*Exceptions* – The standard library and proposals](std_library.md#exceptions).
 
 :link:
 
@@ -642,7 +642,7 @@ See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and
 
 > The keyword `nullptr` denotes the pointer literal. It is a prvalue of type `std::nullptr_t`.
 
-See [*`std::nullptr_t`* – The standard library, Boost and proposals](std_library.md#stdnullptr_t).
+See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#stdnullptr_t).
 
 ### Compound literals
 
@@ -1242,6 +1242,7 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 
 :movie_camera:
 
+- A.Kirsh. [*To move or not to move: An interactive analysis*](https://www.youtube.com/watch?v=PuCWH5DXDBc) – CppNorth (2023)
 - N.Josuttis. [*The hidden secrets of move semantics*](https://www.youtube.com/watch?v=TFMKjL38xAI) – CppCon (2020)
 - D.Olsen. [*Back to basics: Move semantics*](https://www.youtube.com/watch?v=ZG59Bqo7qX4) – CppCon (2020)
 - K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) – CppCon (2019)
@@ -1325,6 +1326,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- JF Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
 - M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
 - J.Wakely, M.Clow. [*These 10 tricks that only library implementors know!*](https://www.youtube.com/watch?v=wYd2V4nPn0E) – ACCU (2018)
 
@@ -1375,6 +1377,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- D.Zalewski. [*C is great, long live C! Programming in modern C with a sneak peek into C23*](https://www.youtube.com/watch?v=lLv1s7rKeCM) – ACCU (2023)
 - L.Sas. [*Modern C and what we can learn from it*](https://www.youtube.com/watch?v=QpAhX-gsHMs) – ACCU (2021)
 
 :anchor:

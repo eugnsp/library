@@ -26,10 +26,13 @@
 		- [Graph neural networks](#graph-neural-networks)
 - [Journals](#journals)
 - [Blogs](#blogs)
-- [Hardware history](#hardware-history)
+- [Hardware and hardware history](#hardware-and-hardware-history)
+	- [MOS 6502 CPU](#mos-6502-cpu)
 	- [Apollo Guidance Computer (AGC)](#apollo-guidance-computer-agc)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
+	- [Flash memory](#flash-memory)
+	- [Software history](#software-history)
 - [Software-related accidents](#software-related-accidents)
 	- [Patriot Missile failure](#patriot-missile-failure)
 	- [Therac-25](#therac-25)
@@ -276,13 +279,27 @@
 
 ---
 
-## Hardware history
+## Hardware and hardware history
 
 :anchor:
 
 - [*Vintage Computer Federation*](https://www.youtube.com/channel/UCKdBVD2wVUkuJQZhxGvVr0Q) (YouTube channel)
 - [*The National Museum of Computing*](https://www.youtube.com/user/tnmoc) (YouTube channel)
 - [*The National Museum of Computing*](https://www.tnmoc.org/)
+
+### MOS 6502 CPU
+
+:link:
+
+- [*Visual transistor-level simulation of the 6502 CPU*](http://visual6502.org/)
+
+:movie_camera:
+
+- M.Steil. [*Reverse engineering the MOS 6502 CPU](https://www.youtube.com/watch?v=fWqBmmPQP40) – 27C3 (2011)
+
+:anchor:
+
+- [*MOS Technology 6502*](https://en.wikipedia.org/wiki/MOS_Technology_6502) – Wikipedia
 
 ### Apollo Guidance Computer (AGC)
 
@@ -303,6 +320,16 @@
 :movie_camera:
 
 - R.Hill. [*BBC B microcomputer*](https://www.youtube.com/watch?v=do6xydtcVPk), [*Original Elite on the BBC B*](https://www.youtube.com/watch?v=owz7XExO-Wk) – Computerphile (2013)
+
+### Flash memory
+
+- bunnie, Xobs. [*The exploration and exploitation of an SD memory card*](https://www.youtube.com/watch?v=ruEn7TE4YMM) – 27C3 (2014)
+
+---
+
+### Software history
+
+- M.Steil. [Bill Gates’ personal easter eggs in 8-bit BASIC](https://www.pagetable.com/?p=43)
 
 ---
 

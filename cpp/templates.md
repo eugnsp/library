@@ -122,7 +122,7 @@
 
 ## Concepts
 
-See also [*Concepts* – The standard library, Boost, and proposals](core_language.md#concepts).
+See also [*Concepts* – The standard library and proposals](core_language.md#concepts).
 
 :link:
 

@@ -115,6 +115,10 @@ See also [*Numeric data structures and algorithms*](../data_structures_and_algor
 - [*How does x86 paging work?*](https://stackoverflow.com/q/18431261) – Stack Overflow
 - [*What are near, far and huge pointers?*](https://stackoverflow.com/q/3575592) – Stack Overflow
 
+:movie_camera:
+
+- JF Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
+
 :book:
 
 - Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
@@ -221,7 +225,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 #### Memory allocation
 
-See also [*Allocators* – The standard library, Boost, and proposals](std_library.md#allocators).
+See also [*Allocators* – The standard library and proposals](std_library.md#allocators).
 
 :link:
 

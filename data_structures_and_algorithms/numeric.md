@@ -32,7 +32,6 @@
 - [Wavelets](#wavelets)
 - [Applications](#applications-1)
 	- [Finite elements and finite volume methods](#finite-elements-and-finite-volume-methods)
-	- [Space industry](#space-industry)
 
 ---
 
@@ -321,10 +320,3 @@ https://www.maths.tcd.ie/~dbennett/js/ising.pdf
 
 - D.Arnold. [*The fundamental theorem of numerical analysis*](https://www.youtube.com/watch?v=mmIrLgCFFhM) – Annual conference of the Great Lakes section of the SIAM (2015)
 - P.Roe. [*Colorful fluid dynamics: Behind the scenes*](https://www.youtube.com/watch?v=uaH91P665PI) – AE585 Seminar lecture series (2014)
-
-### Space industry
-
-:movie_camera:
-
-- P.Nyman. [*C++ in space*](https://www.youtube.com/watch?v=VxNVGVW9nyI) – Sweden C++ (2023)
-- J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)

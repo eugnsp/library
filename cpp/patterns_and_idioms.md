@@ -257,6 +257,7 @@
 
 :movie_camera:
 
+- J.Pavan. [*API design principles in C++*](https://www.youtube.com/watch?v=esQ9khv5QnQ) – CppNorth (2023)
 - M.Godbolt. [*Correct by construction: APIs that are easy to use and hard to misuse*](https://www.youtube.com/watch?v=nLSm3Haxz0I) – C++ on Sea (2020)
 - K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
@@ -362,7 +363,7 @@ See also [*Rvalue references, universal references, and move semantics* – Core
 
 #### Exceptions
 
-See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exceptions* – The standard library, Boost, and proposals](std_library.md#exceptions).
+See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exceptions* – The standard library and proposals](std_library.md#exceptions).
 
 > Levels of exception guarantee:
 > - *nothrow exception guarantee*: the function never throws exceptions;
@@ -666,7 +667,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ### Iterator
 
-See also [*Iterators* – The standard library, Boost, and proposals](std_library.md#iterators).
+See also [*Iterators* – The standard library and proposals](std_library.md#iterators).
 
 :link:
 

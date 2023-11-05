@@ -6,12 +6,13 @@
 
 - C++
 	* :chestnut: [Core language](cpp/core_language.md)
-	* :anchor: [The standard library, Boost, and proposals](cpp/std_library.md)
+	* :anchor: [The standard library and proposals](cpp/std_library.md)
 	* :white_square_button: [Templates](cpp/templates.md)
 	* :twisted_rightwards_arrows: [Concurrency and parallelism](cpp/concurrency_and_parallelism.md)
 	* :rocket: [Optimization and hardware](cpp/optimization_and_hardware.md)
 	* :bookmark_tabs: [Patterns, idioms, and design principles](cpp/patterns_and_idioms.md)
 	* :hash: [Modules and preprocessor](cpp/modules_and_preprocessor.md)
+	* :ferris_wheel: [Libraries and applications](cpp/libraries_and_applications.md)
 	* :wrench: [Tools](cpp/tools.md)
 - Data structures and algorithms
 	* :microscope: [Design and analysis](data_structures_and_algorithms/design_and_analysis.md)

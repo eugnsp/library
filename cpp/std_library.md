@@ -1,11 +1,10 @@
-# The standard library, Boost, and proposals <!-- omit in toc -->
+# The standard library and proposals <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
 - [General information](#general-information)
 	- [The standard library](#the-standard-library)
 		- [Implementations](#implementations)
-	- [Boost](#boost)
 - [Design principles](#design-principles)
 	- [Customization point objects](#customization-point-objects)
 - [Algorithms](#algorithms)
@@ -67,7 +66,6 @@
 		- [`std::weak_ptr`](#stdweak_ptr)
 		- [`std::auto_ptr`](#stdauto_ptr)
 		- [`std::observer_ptr`](#stdobserver_ptr)
-		- [`boost::intrusive_ptr`](#boostintrusive_ptr)
 		- [`std::out_ptr` and `std::inout_ptr` adaptors](#stdout_ptr-and-stdinout_ptr-adaptors)
 - [Numerics](#numerics)
 	- [Bit manipulation functions](#bit-manipulation-functions)
@@ -137,11 +135,7 @@
 - [*libc++*](https://github.com/llvm-mirror/libcxx)
 - [*Microsoft*](https://github.com/microsoft/STL)
 
-### Boost
-
-:link:
-
-- [Boost library incubator](http://blincubator.com/)
+---
 
 ## Design principles
 
@@ -485,6 +479,7 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 
 - M.Austern. [*A proposal to add hash tables to the standard library*](https://wg21.link/n1456) – WG21/N1456
 - J.M.L&oacute;pez Mu&ntilde;oz. [*`erase(iterator)` for unordered containers should not return an iterator*](https://wg21.link/n2023) – WG21/N2023
+- J.Lakos, P.Halpern. [*Equality comparison for unordered container*](https://wg21.link/n2986) – WG21/N2986
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
 - A.Tavory, V.Dreizin, B.Kosnik. [*Hash table design*](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
 
@@ -717,7 +712,7 @@ See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exc
 
 ## Iterators
 
-See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_idioms.md#iterator).
+See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_idioms.md#iterator) and [*Boost.Iterator* – Applications](applications.md#boostiterator).
 
 :link:
 
@@ -735,10 +730,6 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 :movie_camera:
 
 - C.Carter. [*Iterator haiku*](https://www.youtube.com/watch?v=rZs9ndzGB_8) – CppCon (2016)
-
-:anchor:
-
-- [*Boost.Iterator: The iterator library*](https://www.boost.org/doc/libs/release/libs/iterator/)
 
 ### Reverse iterators
 
@@ -771,6 +762,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 :movie_camera:
 
 - N.Josuttis. [*C++ views*](https://www.youtube.com/watch?v=qv29fo9sUjY) – ACCU (2023)
+- N.Josuttis. [*Belle views on C++ ranges, their details and the devil*](https://www.youtube.com/watch?v=O8HndvYNvQ4) – Meeting C++ (2022)
 
 ---
 
@@ -812,6 +804,8 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 ### Smart pointers
 
+See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
+
 > A smart pointer is a class that simulates a raw C++ pointer, and provides automatic exception-safe object lifetime management.
 
 :link:
@@ -838,7 +832,6 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 :anchor:
 
 - [*Smart pointer*](https://en.wikipedia.org/wiki/Smart_pointer) – Wikipedia
-- [*Boost.SmartPtr: The smart pointer library*](https://www.boost.org/doc/libs/release/libs/smart_ptr/)
 
 #### `std::unique_ptr`
 
@@ -933,23 +926,6 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 - [*`std::experimental::observer_ptr`*](https://en.cppreference.com/w/cpp/experimental/observer_ptr) – C++ reference
 - B.Stroustrup. [*Abandon `observer_ptr`*](https://wg21.link/p1408) – WG21/P1408
 - W.E.Brown. [*A proposal for the world’s dumbest smart pointer*](https://wg21.link/n4282) – WG21/N4282
-
-#### `boost::intrusive_ptr`
-
-> The `boost::intrusive_ptr` class is a smart pointer that stores a pointer to an object with an embedded reference count, which is managed somewhere outside the smart pointer.
-
-:link:
-
-- B.Wicht. [*Boost `intrusive_ptr`: Faster shared pointer*](https://baptiste-wicht.com/posts/2011/11/boost-intrusive_ptr.html) (2011)
-
-:grey_question:
-
-- [*Boost intrusive pointer*](https://stackoverflow.com/q/40137660) – Stack Overflow
-
-:anchor:
-
-- [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
-- I.Muerte. [*An intrusive smart pointer*](https://wg21.link/p0468) – WG21/P0468
 
 #### `std::out_ptr` and `std::inout_ptr` adaptors
 
