@@ -17,6 +17,7 @@
 	- [Alexander Stepanov](#alexander-stepanov)
 	- [Ken Thompson](#ken-thompson)
 	- [Linus Torvalds](#linus-torvalds)
+	- [Niklaus Wirth](#niklaus-wirth)
 - [Operating systems](#operating-systems)
 	- [Linux](#linux)
 - [Automated theorem proving](#automated-theorem-proving)
@@ -209,6 +210,12 @@
 
 - W.Cardwell. [*A talk with Linus Torvalds*](https://www.youtube.com/watch?v=MShbP3OpASA) – Aalto Center for Entrepreneurship (2012)
 - [*Do you see any other language other than C for OS development?*](https://www.youtube.com/watch?v=CYvJPra7Ebk)
+
+### Niklaus Wirth
+
+:movie_camera:
+
+- E.Trichina. [*Interview with Niklaus Wirth, 1984 ACM Turing award recipient*](https://www.youtube.com/watch?v=SUgrS_KbSI8) (2018)
 
 ---
 

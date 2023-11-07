@@ -10,6 +10,7 @@
 	- [Implementation of inheritance](#implementation-of-inheritance)
 	- [Implementation of exceptions](#implementation-of-exceptions)
 - [Attributes](#attributes)
+	- [`[[maybe_unused]]`](#maybe_unused)
 	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
 	- [`[[nodiscard]]`](#nodiscard)
 	- [`[[noreturn]]`](#noreturn)
@@ -40,12 +41,14 @@
 - [Dynamic memory](#dynamic-memory)
 	- [Alignment](#alignment)
 	- [Object creation and placement `new`](#object-creation-and-placement-new)
+	- [Global replacement of `operator new` and `operator delete`](#global-replacement-of-operator-new-and-operator-delete)
 - [Exceptions](#exceptions)
 	- [`noexcept` specifier](#noexcept-specifier)
 - [Expressions](#expressions)
 	- [`nullptr`](#nullptr)
 	- [Compound literals](#compound-literals)
 	- [User-defined literals](#user-defined-literals)
+	- [Operator precedence and associativity](#operator-precedence-and-associativity)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
 		- [`dynamic_cast`](#dynamic_cast)
@@ -63,6 +66,7 @@
 	- [Lambda expressions](#lambda-expressions)
 	- [Member functions](#member-functions)
 		- [Member function poiners](#member-function-poiners)
+		- [Special member functions](#special-member-functions)
 	- [Deleted functions (`= delete;`)](#deleted-functions--delete)
 	- [`main()`](#main)
 - [Operators](#operators)
@@ -215,6 +219,10 @@ See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and
 :movie_camera:
 
 - B.Saks. [*Better code with C++ attributes*](https://www.youtube.com/watch?v=teUA5U6eYQY) – CppCon (2019)
+
+### `[[maybe_unused]]`
+
+See also [*Unused variables and return values* – Patterns, idioms, and design principles](./patterns_and_idioms.md#unused-variables-and-return-values).
 
 ### `[[likely]]` / `[[unlikely]]`
 
@@ -382,10 +390,13 @@ See also [*Layout* – Class types](#layout).
 
 - [*Is it safe to `reinterpret_cast` an `enum class` variable to a reference of the underlying type?*](https://stackoverflow.com/q/19476818) – Stack Overflow
 - [*Using `reinterpret_cast` on an enum class – valid or undefined behavior?*](https://stackoverflow.com/q/29066335) – Stack Overflow
+- [*Are C++ enums signed or unsigned?*](https://stackoverflow.com/q/159034) – Stack Overflow
 
 :anchor:
 
 - [*Enumeration declaration*](https://en.cppreference.com/w/cpp/language/enum) – C++ reference
+- [*What is the type of an enumeration such as `enum Color`? Is it of type `int`?*](https://isocpp.org/wiki/faq/newbie#enumeration-is-its-own-type) – C++ FAQ
+- [*If an enumeration type is distinct from any other type, what good is it? What can you do with it?*](https://isocpp.org/wiki/faq/newbie#enumeration-type-ops) – C++ FAQ
 
 ### `friend`
 
@@ -610,6 +621,17 @@ See also [*Uninitialized storage* – The standard library and proposals](std_li
 - B.Hutchings. [*Determining the buffer size for placement new*](https://wg21.link/cwg476) – WG21/CWG issue 476 (2004)
 - T.Koeppe. [*C++ DR about global placement array new*](https://wg21.link/ewg68) – WG21/EWG issue 68 (2013)
 
+### Global replacement of `operator new` and `operator delete`
+
+:grey_question:
+
+- [*How to properly replace global `new` and `delete` operators*](https://stackoverflow.com/q/8186018) – Stack Overflow
+- [*Is it possible to replace the global `operator new` everywhere?*](https://stackoverflow.com/q/2104459) – Stack Overflow
+
+:anchor:
+
+- [*`operator new`, `operator new[]`: Global_replacements*](https://en.cppreference.com/w/cpp/memory/new/operator_new#Global_replacements) – C++ reference
+
 ---
 
 ## Exceptions
@@ -672,14 +694,28 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 - [*User-defined literals*](https://en.cppreference.com/w/cpp/language/user_literal) – C++ reference
 
+### Operator precedence and associativity
+
+:grey_question:
+
+- [*Who defines C operator precedence and associativity, and how does it relate to order of evaluation?*](https://stackoverflow.com/q/20767745) – Stack Overflow
+- [*What is the relation between operator precedence and order of evaluation?*](https://stackoverflow.com/q/5473107) – Stack Overflow
+
+:anchor:
+
+- [*C++ operator precedence*](https://en.cppreference.com/w/cpp/language/operator_precedence) – C++ reference
+
 ### Order of evaluation
 
 :link:
 
+- E.Lippert. [*Precedence vs associativity vs order*](https://ericlippert.com/2008/05/23/precedence-vs-associativity-vs-order/) (2008)
 - P.Becker. [*Questions & Answers*](https://github.com/eugnsp/CUJ/blob/master/16.01/becker/becker.md#order-of-evaluation) – C/C++ Users Journal **16** (1998)
 
 :grey_question:
 
+- [*What is the relation between operator precedence and order of evaluation?*](https://stackoverflow.com/q/5473107) – Stack Overflow
+- [*Who defines C operator precedence and associativity, and how does it relate to order of evaluation?*](https://stackoverflow.com/q/20767745) – Stack Overflow
 - [*Undefined behavior and sequence points*](https://stackoverflow.com/q/4176328) – Stack Overflow
 
 :book:
@@ -730,7 +766,9 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 :grey_question:
 
+- [*gcc, strict-aliasing, and horror stories*](https://stackoverflow.com/q/2958633) – Stack Overflow
 - [*What is the strict aliasing rule?*](https://stackoverflow.com/q/98650) – Stack Overflow
+- [*Performance benefits of strict aliasing*](https://stackoverflow.com/q/754929) – Stack Overflow
 - [*Gcc, strict-aliasing, and casting through a union*](https://stackoverflow.com/q/2906365) – Stack Overflow
 - [*Can I safely convert struct of floats into float array in C++?*](https://stackoverflow.com/q/45898184) – Stack Overflow
 - [*Reinterpret struct with members of the same type as an array in a standard compliant way*](https://stackoverflow.com/q/41419164) – Stack Overflow
@@ -888,6 +926,12 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 :anchor:
 
 - [*Pointers to member functions*](https://isocpp.org/wiki/faq/pointers-to-members) – C++ FAQ
+
+#### Special member functions
+
+:movie_camera:
+
+- K.van Rens. [*Special member functions in C++*](https://www.youtube.com/watch?v=ajRTADPXEko) – C++ on Sea (2023)
 
 ### Deleted functions (`= delete;`)
 
@@ -1327,6 +1371,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 :movie_camera:
 
 - JF Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
+- J.M&uuml;ller . [*C++ features you might not know*](https://www.youtube.com/watch?v=zGWj7Qo_POY) – C++ on Sea (2023)
 - M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
 - J.Wakely, M.Clow. [*These 10 tricks that only library implementors know!*](https://www.youtube.com/watch?v=wYd2V4nPn0E) – ACCU (2018)
 

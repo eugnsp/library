@@ -33,6 +33,7 @@
 	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Singleton](#singleton)
+	- [Two-phase initialization / Functional update](#two-phase-initialization--functional-update)
 - [Structural patterns](#structural-patterns)
 	- [Adapter](#adapter)
 	- [Bridge and pimpl](#bridge-and-pimpl)
@@ -48,6 +49,7 @@
 		- [Constant iterators](#constant-iterators)
 		- [Iterator sentinels](#iterator-sentinels)
 	- [Template method](#template-method)
+	- [Execution token](#execution-token)
 - [Metaprogramming patterns](#metaprogramming-patterns)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Expression templates](#expression-templates)
@@ -76,6 +78,7 @@
 - [Compile-time strings](#compile-time-strings)
 - [Nifty counter](#nifty-counter)
 - [`switch` statement](#switch-statement)
+- [Unused variables and return values](#unused-variables-and-return-values)
 - [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
 	- [Go to](#go-to)
 	- [Duff’s device](#duffs-device)
@@ -258,6 +261,7 @@
 :movie_camera:
 
 - J.Pavan. [*API design principles in C++*](https://www.youtube.com/watch?v=esQ9khv5QnQ) – CppNorth (2023)
+- A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y) – C++ on Sea (2023)
 - M.Godbolt. [*Correct by construction: APIs that are easy to use and hard to misuse*](https://www.youtube.com/watch?v=nLSm3Haxz0I) – C++ on Sea (2020)
 - K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
@@ -535,6 +539,13 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
 - Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
+### Two-phase initialization / Functional update
+
+:movie_camera:
+
+- A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y&t=2563s) – C++ on Sea (2023)
+- A.Weis. [*Fixing two-phase initialization*](https://www.youtube.com/watch?v=S7I66lZX_zM) – CppCon (2018)
+
 ---
 
 ## Structural patterns
@@ -700,6 +711,12 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 ### Template method
 
 - Ch. 14: *The template method pattern and the non-virtual idiom* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
+### Execution token
+
+:movie_camera:
+
+- A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y&t=2870s) – C++ on Sea (2023)
 
 ---
 
@@ -1065,6 +1082,14 @@ martinmoene/WholeValue -->
 :link:
 
 - M.Weisfeld. [*An alternative to large `switch` statements*](https://github.com/eugnsp/CUJ/blob/master/12.04/weisfeld/weisfeld.md) – C/C++ Users Journal **12** (1994)
+
+## Unused variables and return values
+
+:grey_question:
+
+- [*Why cast unused return values to `void`?*](https://stackoverflow.com/q/689677) – Stack Overflow
+- [*What does casting to `void` really do?*](https://stackoverflow.com/q/34288844) – Stack Overflow
+- [*Is it ok to use `std::ignore` in order to discard a return value of a function to avoid any related compiler warnings?*](https://stackoverflow.com/q/77195426) – Stack Overflow
 
 ---
 

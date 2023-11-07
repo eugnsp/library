@@ -994,6 +994,7 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 - [*Random engine differences*](https://stackoverflow.com/q/16536617) – Stack Overflow
 - [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
 - [*If we seed `mt19937` as the same on different machines, will we get the same sequence of random numbers?*](https://stackoverflow.com/q/48730363) – Stack Overflow
+- [*Is uninitialized local variable the fastest random number generator?*](https://stackoverflow.com/q/31739792) – Stack Overflow
 
 :movie_camera:
 

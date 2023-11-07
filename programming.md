@@ -2,6 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
+- [Programming](#programming)
 - [Programming languages](#programming-languages)
   - [Algol](#algol)
   - [BASIC](#basic)
@@ -15,6 +16,12 @@
 - [Generic programming](#generic-programming)
 
 ---
+
+## Programming
+
+:movie_camera:
+
+- R.Campbell. [*The next decade of software development*](https://www.youtube.com/watch?v=ND_AjF_KTD8) – NDC London (2023)
 
 ## Programming languages
 
@@ -44,6 +51,10 @@
 
 - [*BASIC at 50*](https://www.dartmouth.edu/basicfifty/) – Dartmouth
 - H.McCracken. [*Fifty years of BASIC, the programming language that made computers personal*](https://time.com/69316/basic/) – Time (2014)
+
+:movie_camera:
+
+- [*Birth of BASIC*](https://www.youtube.com/watch?v=T-NTEc8Ag-I) – Dartmouth (2014)
 
 :book:
 

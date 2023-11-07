@@ -133,6 +133,7 @@
 
 :movie_camera:
 
+- O.Shilon. [*Shared libraries in Windows and Linux*](https://www.youtube.com/watch?v=6TrJc06IekE) – C++ on Sea (2023)
 - N.Friedman. [*What C++ developers should know about globals (and the linker)*](https://www.youtube.com/watch?v=xVT1y0xWgww) – CppCon (2017)
 
 :book:
@@ -217,6 +218,7 @@
 
 :grey_question:
 
+- [*Creating a `SIGSEGV` for debug purposes*](https://stackoverflow.com/q/9457928) – Stack Overflow
 - [*When and why will an OS initialise memory to `0xCD`, `0xDD`, etc. on `malloc`/`free`/`new`/`delete`?*](https://stackoverflow.com/q/370195) – Stack Overflow
 
 :movie_camera:

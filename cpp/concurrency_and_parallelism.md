@@ -285,12 +285,15 @@ https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf
 https://stackoverflow.com/questions/5002046/atomicity-in-c-myth-or-reality
 
 http://www.drdobbs.com/parallel/volatile-vs-volatile/212701484
+
+https://www.hpl.hp.com/techreports/2004/HPL-2004-209.pdf
 -->
 
 ### Coroutines
 
 :movie_camera:
 
+- R.Barkan. [*Coroutine intuition in C++*](https://www.youtube.com/watch?v=2jzuuOeUDQI) – C++ on Sea (2023)
 - J.McNellis. [*Introduction to C++ coroutines*](https://www.youtube.com/watch?v=ZTqHjjm86Bw) – CppCon (2016)
 
 ### Concurrency patterns
