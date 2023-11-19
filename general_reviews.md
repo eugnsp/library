@@ -8,6 +8,7 @@
 	- [John Conway](#john-conway)
 	- [Robert W Floyd](#robert-w-floyd)
 	- [Margaret Hamilton](#margaret-hamilton)
+	- [John Kemeny](#john-kemeny)
 	- [Brian Kernighan](#brian-kernighan)
 	- [Donald Knuth](#donald-knuth)
 	- [Peter Norvig](#peter-norvig)
@@ -27,12 +28,14 @@
 - [Journals](#journals)
 - [Blogs](#blogs)
 - [Hardware and hardware history](#hardware-and-hardware-history)
+	- [8086 CPU](#8086-cpu)
+	- [80386 CPU](#80386-cpu)
 	- [MOS 6502 CPU](#mos-6502-cpu)
 	- [Apollo Guidance Computer (AGC)](#apollo-guidance-computer-agc)
 	- [BESM-6](#besm-6)
 	- [BBC B](#bbc-b)
 	- [Flash memory](#flash-memory)
-	- [Software history](#software-history)
+- [Software history](#software-history)
 - [Software-related accidents](#software-related-accidents)
 	- [Patriot Missile failure](#patriot-missile-failure)
 	- [Therac-25](#therac-25)
@@ -103,6 +106,12 @@
 :movie_camera:
 
 - M.Hamilton. [*The language as a software engineer*](https://www.youtube.com/watch?v=ZbVOF0Uk5lU) – ICSE (2018)
+
+### John Kemeny
+
+:link:
+
+- K.King. [*The computer and the campus: An interview with John Kemeny*](https://www.youtube.com/watch?v=HHi3VFOL-AI) – Dartmouth (1991)
 
 ### Brian Kernighan
 
@@ -272,6 +281,7 @@
 - [Vittorio Romeo](https://vittorioromeo.info/)
 - [Filip Roséen](http://b.atch.se/)
 - [Adi Shavit](https://adishavit.github.io/#blog)
+- [Ken Shirriff](https://www.righto.com/)
 - [Bob Steagall](https://bobsteagall.com/)
 - [Philip Trettner](https://artificial-mind.net/)
 - [Krister Walfridsson](https://kristerw.blogspot.com/)
@@ -286,6 +296,18 @@
 - [*Vintage Computer Federation*](https://www.youtube.com/channel/UCKdBVD2wVUkuJQZhxGvVr0Q) (YouTube channel)
 - [*The National Museum of Computing*](https://www.youtube.com/user/tnmoc) (YouTube channel)
 - [*The National Museum of Computing*](https://www.tnmoc.org/)
+
+### 8086 CPU
+
+:link:
+
+- K.Shirriff. [*A bug fix in the 8086 microprocessor, revealed in the die’s silicon*](https://www.righto.com/2022/11/a-bug-fix-in-8086-microprocessor.html) (2022)
+
+### 80386 CPU
+
+:link:
+
+- K.Shirriff. [*Examining the silicon dies of the Intel 386 processor*](https://www.righto.com/2023/10/intel-386-die-versions.html) (2023)
 
 ### MOS 6502 CPU
 
@@ -327,7 +349,7 @@
 
 ---
 
-### Software history
+## Software history
 
 - M.Steil. [Bill Gates’ personal easter eggs in 8-bit BASIC](https://www.pagetable.com/?p=43)
 

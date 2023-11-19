@@ -945,6 +945,10 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
 
+:movie_camera:
+
+- N.Josuttis. [*The most important C++ feature (Lightning talk)*](https://www.youtube.com/watch?v=rt3YMOKa0TI) – ACCU (2023)
+
 :book:
 
 - Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)

@@ -4,6 +4,7 @@
 
 - [Programming languages](#programming-languages)
   - [Algol](#algol)
+  - [BASIC](#basic)
   - [C](#c)
   - [Pascal](#pascal)
 - [Procedural programming](#procedural-programming)
@@ -34,6 +35,19 @@
 :movie_camera:
 
 - D.Brailsford. [*Algol 60 at 60*](https://www.youtube.com/watch?v=T-NTEc8Ag-I) – Computerphile
+
+### BASIC
+
+> Beginner’s All-Purpose Symbolic Instruction Code
+
+:link:
+
+- [*BASIC at 50*](https://www.dartmouth.edu/basicfifty/) – Dartmouth
+- H.McCracken. [*Fifty years of BASIC, the programming language that made computers personal*](https://time.com/69316/basic/) – Time (2014)
+
+:book:
+
+- M.J.Lorenzo. *Endless loop: The History of the BASIC programming language* (2017)
 
 ### C
 
@@ -69,7 +83,8 @@
 
 :movie_camera:
 
-- R.Feldman. [*Why isn’t functional programming the norm?](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – ClojuTRE (2019)
+- V.Ciura. [*Functional programming in modern C++: The imperatives must go!*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – HE71NqRpvTQ (2023)
+- R.Feldman. [*Why isn’t functional programming the norm?*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – ClojuTRE (2019)
 
 ### Lambda calculus
 
