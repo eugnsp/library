@@ -14,6 +14,7 @@
 	* :hash: [Modules and preprocessor](cpp/modules_and_preprocessor.md)
 	* :ferris_wheel: [Libraries and applications](cpp/libraries_and_applications.md)
 	* :wrench: [Tools](cpp/tools.md)
+	* :microphone: [Conferences](cpp/conferences.md)
 - Data structures and algorithms
 	* :microscope: [Design and analysis](data_structures_and_algorithms/design_and_analysis.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
@@ -41,4 +42,4 @@
 - [Distributed systems and computer networks](distributed_systems.md)
 - [General reviews and interviews](general_reviews.md)
     * :computer: [Programming](programming.md)
-- [C++ conferences](cpp/conferences.md)
+    * :bust_in_silhouette: [People in computer science](people.md)
