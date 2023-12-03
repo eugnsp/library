@@ -1264,6 +1264,7 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 
 :link:
 
+- R.Chen. [*On harmful overuse of `std::move`*](https://devblogs.microsoft.com/oldnewthing/20231124-00/?p=109059) (2023)
 - A.O’Dwyer. [*Don’t `forward things` that aren’t forwarding references*](https://quuxplusone.github.io/blog/2023/05/27/dont-forward-non-forwarding-references/) (2023)
 - C.DaCamara. [*Improving the state of debug performance in C++*](https://devblogs.microsoft.com/cppblog/improving-the-state-of-debug-performance-in-c/) (2022)
 - J.M&uuml;ller. [*Implementation сhallenge: Replacing `std::move` and `std::forward`*](https://www.foonathan.net/2020/09/move-forward/) (2020)

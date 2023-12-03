@@ -1,20 +1,12 @@
-# Hardware, optimization, and OS internals <!-- omit in toc -->
+# Optimization <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
-- [Hardware](#hardware)
-	- [CPU](#cpu)
-		- [CPU word size](#cpu-word-size)
-		- [Endianness and NUXI problem](#endianness-and-nuxi-problem)
-		- [x87](#x87)
-	- [Memory](#memory)
-		- [Memory addressing](#memory-addressing)
-	- [Device drivers](#device-drivers)
 - [Optimizations](#optimizations)
 	- [Branch prediction](#branch-prediction)
 		- [`[[likely]]` / `[[unlikely]]` attributes](#likely--unlikely-attributes)
 		- [`likely` / `unlikely` Linux kernel macros](#likely--unlikely-linux-kernel-macros)
-	- [Memory](#memory-1)
+	- [Memory](#memory)
 		- [Memory copying](#memory-copying)
 		- [Memory allocation](#memory-allocation)
 		- [Memory relocation](#memory-relocation)
@@ -34,108 +26,6 @@
 		- [Strict aliasing rule](#strict-aliasing-rule)
 - [Benchmarking](#benchmarking)
 - [Profiling](#profiling)
-
----
-
-## Hardware
-
-:link:
-
-- B.Wagstaff. [*A journey through the CPU pipeline*](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/a-journey-through-the-cpu-pipeline-r3115/) (2013)
-- U.Drepper. [*What every programmer should know about memory*](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) (2007)
-- [*Simple benchmark for memory throughput and latency*](https://github.com/ssvb/tinymembench)
-- L.Maranget, S.Sarkar, P.Sewell. [*A tutorial introduction to the ARM and POWER relaxed memory models*](https://www.cl.cam.ac.uk/~pes20/ppc-supplemental/test7.pdf) (2012)
-
-:movie_camera:
-
-- C.Terman. *Virtual memory.* [Part I](https://www.youtube.com/watch?v=3akTtCu_F_k), [Part II](https://www.youtube.com/watch?v=DelO8tZFMrc) – MIT 6.004: Computation structures (2013)
-
-<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
-<!-- - O.Mutlu. [Lec. 20: *Virtual memory*](https://www.youtube.com/watch?v=2RhGMpY18zw) – - Comp. Arch. 2015 -->
-
-### CPU
-
-#### CPU word size
-
-:link:
-
-- S.Ignatchenko. [*Size matters*](https://accu.org/journals/overload/22/120/ignatchenko_1895/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
-- E.Musayev. [*A brief history of the road to 64 bits*](https://web.archive.org/web/20191222085303/http://www.eldar.com/node/262) (in Russian, 2009)
-
-:page_facing_up:
-
-- J.Mashey. [*The long road to 64 bits*](https://cacm.acm.org/magazines/2009/1/15667-the-long-road-to-64-bits/fulltext) – [Communications of the ACM **52**, 45-53](https://doi.org/10.1145/1435417.1435431) (2009)
-
-#### Endianness and NUXI problem
-
-:link:
-
-- [*Endianness*](https://en.wikipedia.org/wiki/Endianness) – Wikipedia
-
-:book:
-
-- Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
-
-#### x87
-
-See also [*Numeric data structures and algorithms*](../data_structures_and_algorithms/numeric.md).
-
-:link:
-
-- [*Pentium `FDIV` bug*](https://en.wikipedia.org/wiki/Pentium_FDIV_bug#cite_note-halfhill-199503-3) – Wikipedia
-- B.Dawson. [*Intel underestimates error bounds by 1.3 quintillion](https://randomascii.wordpress.com/2014/10/09/intel-underestimates-error-bounds-by-1-3-quintillion/) (2014)
-- S.Duplichan. [*Intel overstates FPU accuracy*](http://notabs.org/fpuaccuracy/index.htm) (2013)
-- T.R.Halfhill. [*The truth behind the Pentium bug*](https://web.archive.org/web/20060209005434/http://www.byte.com/art/9503/sec13/art1.htm) – BYTE.com (1995)
-
-:grey_question:
-
-- [*Extended (80-bit) double floating point in x87, not SSE2 – we don’t miss it?*](https://stackoverflow.com/q/3206101) – Stack Overflow
-- [*Did any compiler fully use Intel x87 80-bit floating point?*](https://retrocomputing.stackexchange.com/q/9751) – Retrocomputing
-
-:anchor:
-
-- [*Programming with the x87 floating-point unit*](http://www.infophysics.net/x87.pdf) – Intel
-
-### Memory
-
-:link:
-
-- E.Martin. [*Some things I’ve learned about memory*](http://neugierig.org/software/blog/2011/05/memory.html) (2011)
-
-:movie_camera:
-
-- U.Drepper. [*C++ and memory: Between correctness and performance*](https://www.youtube.com/watch?v=LXfSXzxDY_M) – code::dive (2018)
-
-#### Memory addressing
-
-:link:
-
-- D.A.Rusling. [Ch. 3: *Memory management*](http://www.tldp.org/LDP/tlk/mm/memory.html) – [The Linux kernel](http://www.tldp.org/LDP/tlk/tlk-title.html)
-- C.Santili. [*x86 paging tutorial*](https://cirosantilli.com/x86-paging)
-- [*How does x86 paging work?*](https://stackoverflow.com/q/18431261) – Stack Overflow
-- [*What are near, far and huge pointers?*](https://stackoverflow.com/q/3575592) – Stack Overflow
-
-:movie_camera:
-
-- JF Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
-
-:book:
-
-- Essay 1: *You must be joking* – P.J.Plauger. [*Programming on purpose III: Essays on software technology*](https://www.pearson.com/us/higher-education/program/Plauger-Programming-on-Purpose-III-Essays-on-Software-Technology/PGM133229.html) (1994)
-
-<!-- https://web.archive.org/web/20080107035604/http://www.cellperformance.com/mike_acton/2006/05/demystifying_the_restrict_keyw.html -->
-
-<!-- https://www.airs.com/blog/archives/120
-https://www.agner.org/optimize/optimizing_cpp.pdf
-https://www.agner.org/optimize/
-http://www.reedbeta.com/blog/data-oriented-hash-table/
- -->
-
-### Device drivers
-
-:movie_camera:
-
-- D.Saks. [*Memory-mapped devices as objects*](https://www.youtube.com/watch?v=uwzuAGtAEFk) – CppCon (2020)
 
 ---
 
@@ -354,6 +244,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 
 :link:
 
+- R.Chen. [*On harmful overuse of `std::move`*](https://devblogs.microsoft.com/oldnewthing/20231124-00/?p=109059) (2023)
 - A.Fertig. [*Why you should use `std::move` only rarely*](https://andreasfertig.blog/2022/02/why-you-should-use-stdmove-only-rarely/) (2022)
 
 :movie_camera:

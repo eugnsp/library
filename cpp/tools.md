@@ -12,9 +12,6 @@
 	- [MSVC](#msvc)
 	- [Circle](#circle)
 - [Linking and linkers](#linking-and-linkers)
-	- [Linux](#linux)
-	- [Windows](#windows)
-		- [DLLs](#dlls)
 - [IDE](#ide)
 	- [Visual Studio](#visual-studio)
 	- [Visual Studio Code](#visual-studio-code)
@@ -123,6 +120,8 @@
 
 ## Linking and linkers
 
+See also [*Libraries* – Assembly, low-level programming, and OS internals](../low_level.md#libraries).
+
 :link:
 
 - D.Drysdale. [*Beginner’s guide to linkers*](http://www.lurklurk.org/linkers/linkers.html) (2009)
@@ -133,34 +132,11 @@
 
 :movie_camera:
 
-- O.Shilon. [*Shared libraries in Windows and Linux*](https://www.youtube.com/watch?v=6TrJc06IekE) – C++ on Sea (2023)
 - N.Friedman. [*What C++ developers should know about globals (and the linker)*](https://www.youtube.com/watch?v=xVT1y0xWgww) – CppCon (2017)
 
 :book:
 
 - J.R.Levine. [*Linkers and loaders*](https://linker.iecc.com/) – Morgan-Kauffman (1999)
-
-### Linux
-
-:link:
-
-- I.Wienand. [*Position independent code and x86-64 libraries*](https://www.technovelty.org/c/position-independent-code-and-x86-64-libraries.html) (2013)
-- E.Bendersky. [*Library order in static linking*](https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking) (2013)
-- E.Bendersky. [*Load-time relocation of shared libraries*](https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries) (2011)
-- E.Bendersky. [*Position independent code (PIC) in shared libraries*](https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries) (2011)
-- E.Bendersky. [*Position independent code (PIC) in shared libraries on x64*](https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64) (2011)
-
-### Windows
-
-#### DLLs
-
-:link:
-
-- S.Ignatchenko. [*To DLL or not to DLL*](https://accu.org/journals/overload/18/99/ignatchenko_1704/) – [Overload **163**](https://accu.org/journals/overload/overload99) (2010)
-
-:movie_camera:
-
-- J.McNellis. [*Everything you ever wanted to know about DLLs*](https://www.youtube.com/watch?v=JPQWQfDhICA) – CppCon (2017)
 
 ---
 

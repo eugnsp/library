@@ -11,7 +11,6 @@
 	- [Neural networks](#neural-networks)
 		- [Graph neural networks](#graph-neural-networks)
 - [Journals](#journals)
-- [Blogs](#blogs)
 - [Hardware and hardware history](#hardware-and-hardware-history)
 	- [8086 CPU](#8086-cpu)
 	- [80386 CPU](#80386-cpu)
@@ -33,8 +32,8 @@
 
 :movie_camera:
 
-- M.Russinovich. [*Windows and Linux: A tale of two kernels*](https://www.youtube.com/watch?v=HdV9QuvgS_w) – Tech-Ed (2004)
 - D.Zavalishin. [*Beyond Intel and Linux: Uncommon processors and operating systems*](https://www.youtube.com/watch?v=DBOTcG6iJEI) – Demodulation (in Russian, 2019)
+- M.Russinovich. [*Windows and Linux: A tale of two kernels*](https://www.youtube.com/watch?v=HdV9QuvgS_w) – Tech-Ed (2004)
 
 ### Linux
 
@@ -80,30 +79,6 @@
 
 - [*Dr. Dobb’s journal*](http://www.6502.org/documents/publications/dr_dobbs_journal/) (1976–1990)
 - [*Informatics and education*](http://publ.lib.ru/ARCHIVES/I/%27%27Informatika_i_obrazovanie%27%27/_%27%27Informatika_i_obrazovanie%27%27.html) (in Russian, 1986–2013)
-
----
-
-## Blogs
-
-- [Simon Brand](https://blog.tartanllama.xyz/)
-- [Eli Bendersky](http://eli.thegreenplace.net/)
-- [Jonathan Boccara](http://www.fluentcpp.com/)
-- [Bartlomiej Filipek](http://www.bfilipek.com/)
-- [Kevlin Henney](https://kevlinhenney.medium.com/)
-- [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)
-- [Andrzej Krzemie&nacute;ski](https://akrzemi1.wordpress.com/author/akrzemi1/)
-- [KrzaQ](https://dev.krzaq.cc/)
-- [Arne Mertz](http://arne-mertz.de/)
-- [Jonathan M&uuml;ller](http://foonathan.net/)
-- [Arthur O’Dwyer](https://quuxplusone.github.io/blog/)
-- [Vittorio Romeo](https://vittorioromeo.info/)
-- [Filip Roséen](http://b.atch.se/)
-- [Adi Shavit](https://adishavit.github.io/#blog)
-- [Ken Shirriff](https://www.righto.com/)
-- [Bob Steagall](https://bobsteagall.com/)
-- [Philip Trettner](https://artificial-mind.net/)
-- [Krister Walfridsson](https://kristerw.blogspot.com/)
-- [Anthony Williams](https://www.justsoftwaresolutions.co.uk/blog/)
 
 ---
 

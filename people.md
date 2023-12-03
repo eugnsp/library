@@ -17,6 +17,7 @@
 - [Ken Thompson](#ken-thompson)
 - [Linus Torvalds](#linus-torvalds)
 - [Niklaus Wirth](#niklaus-wirth)
+- [Blogs](#blogs)
 
 ---
 
@@ -191,3 +192,27 @@
 :movie_camera:
 
 - E.Trichina. [*Interview with Niklaus Wirth, 1984 ACM Turing award recipient*](https://www.youtube.com/watch?v=SUgrS_KbSI8) (2018)
+
+---
+
+## Blogs
+
+- [Simon Brand](https://blog.tartanllama.xyz/)
+- [Eli Bendersky](http://eli.thegreenplace.net/)
+- [Jonathan Boccara](http://www.fluentcpp.com/)
+- [Bartlomiej Filipek](http://www.bfilipek.com/)
+- [Kevlin Henney](https://kevlinhenney.medium.com/)
+- [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)
+- [Andrzej Krzemie&nacute;ski](https://akrzemi1.wordpress.com/author/akrzemi1/)
+- [KrzaQ](https://dev.krzaq.cc/)
+- [Arne Mertz](http://arne-mertz.de/)
+- [Jonathan M&uuml;ller](http://foonathan.net/)
+- [Arthur O’Dwyer](https://quuxplusone.github.io/blog/)
+- [Vittorio Romeo](https://vittorioromeo.info/)
+- [Filip Roséen](http://b.atch.se/)
+- [Adi Shavit](https://adishavit.github.io/#blog)
+- [Ken Shirriff](https://www.righto.com/)
+- [Bob Steagall](https://bobsteagall.com/)
+- [Philip Trettner](https://artificial-mind.net/)
+- [Krister Walfridsson](https://kristerw.blogspot.com/)
+- [Anthony Williams](https://www.justsoftwaresolutions.co.uk/blog/)
