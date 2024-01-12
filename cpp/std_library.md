@@ -729,6 +729,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :movie_camera:
 
+- N.Josuttis. [*Back to basics: Iterators in C++*](https://www.youtube.com/watch?v=26aW6aBVpk0) – CppCon (2023)
 - C.Carter. [*Iterator haiku*](https://www.youtube.com/watch?v=rZs9ndzGB_8) – CppCon (2016)
 
 ### Reverse iterators
