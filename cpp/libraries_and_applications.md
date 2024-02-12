@@ -5,11 +5,13 @@
 - [Dimensional analysis](#dimensional-analysis)
   - [Boost.Units](#boostunits)
   - [mp-units](#mp-units)
-- [Space industry](#space-industry)
 - [Boost](#boost)
   - [Boost.Iterator](#boostiterator)
   - [Boost.SmartPtr](#boostsmartptr)
     - [`boost::intrusive_ptr`](#boostintrusive_ptr)
+- [Applications](#applications)
+  - [Space industry](#space-industry)
+  - [Robotics](#robotics)
 
 ---
 
@@ -28,15 +30,6 @@
 :movie_camera:
 
 - M.Pusz. [*`mp-units`: Lessons learned and a new C++ library design*](https://www.youtube.com/watch?v=l0rXdJfXLZc) – ACCU (2023)
-
----
-
-## Space industry
-
-:movie_camera:
-
-- P.Nyman. [*C++ in space*](https://www.youtube.com/watch?v=VxNVGVW9nyI) – Sweden C++ (2023)
-- J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)
 
 ---
 
@@ -74,3 +67,18 @@
 
 - [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
 - I.Muerte. [*An intrusive smart pointer*](https://wg21.link/p0468) – WG21/P0468
+
+---
+
+## Applications
+
+### Space industry
+
+:movie_camera:
+
+- P.Nyman. [*C++ in space*](https://www.youtube.com/watch?v=VxNVGVW9nyI) – Sweden C++ (2023)
+- J.Arrieta. [*Traveling the Solar system with C++: Programming rocket science*](https://www.youtube.com/watch?v=YXs3DFrZZL4) – CppCon (2017)
+
+### Robotics
+
+- S.Brawner. [*Robotics at compile time: Optimizing robotics algorithms with C++’s compile-time features*](https://www.youtube.com/watch?v=Y6AUsB3RUhA) – CppCon (2023)

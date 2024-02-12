@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-- C++
+- :heavy_plus_sign: C++
 	* :chestnut: [Core language](cpp/core_language.md)
 	* :anchor: [The standard library and proposals](cpp/std_library.md)
 	* :white_square_button: [Templates](cpp/templates.md)
@@ -15,8 +15,7 @@
 	* :ferris_wheel: [Libraries and applications](cpp/libraries_and_applications.md)
 	* :wrench: [Tools](cpp/tools.md)
 	* :microphone: [Conferences](cpp/conferences.md)
-- [Assembly, low-level programming, and OS internals](low_level.md)
-- Data structures and algorithms
+- :seedling: Data structures and algorithms
 	* :microscope: [Design and analysis](data_structures_and_algorithms/design_and_analysis.md)
 	* :keycap_ten: [Bit algorithms](data_structures_and_algorithms/bit_algorithms.md)
 	* :1234: [Sequence data structures and algorithms](data_structures_and_algorithms/sequence.md)
@@ -35,12 +34,14 @@
 	* :satellite: [Data exchange and compression](data_structures_and_algorithms/data_exchange.md)
 	* :chart_with_upwards_trend: [Digital signal processing](data_structures_and_algorithms/signal_processing.md)
 	* :spades: [Game theory](data_structures_and_algorithms/game_theory.md)
-	* :heavy_plus_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
+	* :heavy_division_sign: [Numeric algorithms](data_structures_and_algorithms/numeric.md)
 	* :lock: [Cryptographic algorithms](data_structures_and_algorithms/cryptographic.md)
 	* :game_die: [Randomized algorithms and probabilistic data structures](data_structures_and_algorithms/random.md)
 	* :sparkler: [Distributed algorithms](data_structures_and_algorithms/distributed.md)
 	* :wrench: [Tools](data_structures_and_algorithms/tools.md)
-- [Distributed systems and computer networks](distributed_systems.md)
-- [General reviews and interviews](general_reviews.md)
+- :hammer: [Assembly, low-level programming, and OS internals](low_level.md)
+- :floppy_disk: [Hardware and hardware history](hardware.md)
+- :eight_spoked_asterisk: [Distributed systems and computer networks](distributed_systems.md)
+- :newspaper: [General reviews and interviews](general_reviews.md)
     * :computer: [Programming](programming.md)
     * :bust_in_silhouette: [People in computer science](people.md)

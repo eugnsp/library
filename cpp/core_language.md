@@ -74,6 +74,8 @@
 		- [Three-ways comparisons](#three-ways-comparisons)
 		- [Pointer comparisons](#pointer-comparisons)
 	- [Conditional operator `?:`](#conditional-operator-)
+	- [Logical operators](#logical-operators)
+		- [Implication](#implication)
 	- [`sizeof` / `alignof`](#sizeof--alignof)
 - [Types](#types)
 	- [`void`](#void)
@@ -123,6 +125,7 @@
 
 :movie_camera:
 
+- W.E.Brown. [*What I think when I think about C++*](https://www.youtube.com/watch?v=bgyY3x8y4PE) – Core C++ (2022)
 - H.Sutter. [*Quantifying accidental complexity: An empirical look at teaching and using C++*](https://www.youtube.com/watch?v=6lurOCdaj0Y) – CppCon (2020)
 - C.Carruth, T.Winters. [*What is C++*](https://www.youtube.com/watch?v=LJh5QCV4wDg) – CppCon (2019)
 
@@ -1022,6 +1025,18 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 - K.Pugh. [*Using the conditional operator `?:`*](https://github.com/eugnsp/CUJ/blob/master/10.02/pugh/pugh.md#conditional_operator) – C/C++ Users Journal **10** (1992)
 
+### Logical operators
+
+#### Implication
+
+:link:
+
+- [*In support of implication for C++*](https://www.elbeno.com/blog/?p=1725) (2023)
+
+:anchor:
+
+- W.E.Brown. [*Implication for C++*](https://wg21.link/p2971) – WG21/P2971
+
 ### `sizeof` / `alignof`
 
 > The `sizeof` operator yields the size in bytes of the object or type. When applied to a class type, the result is the size of an object of that class plus any additional padding required to place such object in an array. The `alignof` operator returns the alignment required for any instance of a type.
@@ -1183,6 +1198,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :grey_question:
 
 - [*Structure padding and packing*](https://stackoverflow.com/q/4306186) – Stack Overflow
+- [*Passing reference of packed `struct` member to template – GCC bug?*](https://stackoverflow.com/q/29340160) – Stack Overflow
 
 :movie_camera:
 

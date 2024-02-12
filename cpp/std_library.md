@@ -38,6 +38,7 @@
 		- [`std::priority_queue`](#stdpriority_queue)
 	- [Container views](#container-views)
 		- [`std::span`](#stdspan)
+		- [`std::mdspan`](#stdmdspan)
 	- [Transparent comparators](#transparent-comparators)
 	- [Erasing from containers](#erasing-from-containers)
 	- [Signedness vs unsignedness of size](#signedness-vs-unsignedness-of-size)
@@ -558,6 +559,12 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 - T.Brindle. [*Usability enhancements for `std::span`*](https://wg21.link/p1024) – WG21/P1024
 - J.Brown. [*Signed `ssize()` functions, unsigned `size()` functions*](https://wg21.link/p1227) – WG21/P1227
 - R.Douglas, N.Liber, M.Clow. [*Sizes should only `​span​` unsigned*](https://wg21.link/p1089) – WG21/P1089
+
+#### `std::mdspan`
+
+:movie_camera:
+
+- N.Liber. [*`mdspan`: A deep dive spanning C++, Kokkos & SYCL*](https://www.youtube.com/watch?v=J02S50z5zEo) – Core C++ (2023)
 
 ### Transparent comparators
 
@@ -1298,6 +1305,10 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 ### `std::source_location`
 
+:link:
+
+- [*`std::source_location`` is broken*](https://www.elbeno.com/blog/?p=1738) (2023)
+
 :grey_question:
 
 - [*`std::experimental::source_location` at compile time*](https://stackoverflow.com/q/52977593) – Stack Overflow
@@ -1364,6 +1375,7 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 :movie_camera:
 
 - J.Brown. [*This one weird trick: `std::integral_constant`*](https://www.youtube.com/watch?v=MKes-sG3zAU) – CppCon (2019)
+- B.Fahller. [*My favourite memory leak*](https://www.youtube.com/watch?v=LKKmPAQFNgE) – Meeting C++ (2023)
 
 ### Self-assignment
 

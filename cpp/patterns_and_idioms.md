@@ -260,6 +260,7 @@
 
 :movie_camera:
 
+- B.Fahller. [*Typical C++, but why?*](https://www.youtube.com/watch?v=ZJKWNBcPHaQ) – C++ Meeting (2023)
 - J.Pavan. [*API design principles in C++*](https://www.youtube.com/watch?v=esQ9khv5QnQ) – CppNorth (2023)
 - A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y) – C++ on Sea (2023)
 - M.Godbolt. [*Correct by construction: APIs that are easy to use and hard to misuse*](https://www.youtube.com/watch?v=nLSm3Haxz0I) – C++ on Sea (2020)

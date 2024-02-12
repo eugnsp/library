@@ -103,6 +103,7 @@
 
 :movie_camera:
 
+- J.Machutov&aacute;. [*Memory Model: Get your shared data under control*](https://www.youtube.com/watch?v=L5RCGDAan2Y) – C++ Meeting (2023)
 - A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
 - M.Shah. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=pfIC-kle4b0) – CppCon (2021)
 - A.O’Dwyer. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=F6Ipn7gCOsY) – CppCon (2020)
