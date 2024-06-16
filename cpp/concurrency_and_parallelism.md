@@ -25,6 +25,7 @@
 	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
 	- [Coroutines](#coroutines)
+	- [Executors](#executors)
 	- [Concurrency patterns](#concurrency-patterns)
 - [GPU computing](#gpu-computing)
 
@@ -296,6 +297,13 @@ https://www.hpl.hp.com/techreports/2004/HPL-2004-209.pdf
 
 - R.Barkan. [*Coroutine intuition in C++*](https://www.youtube.com/watch?v=2jzuuOeUDQI) – C++ on Sea (2023)
 - J.McNellis. [*Introduction to C++ coroutines*](https://www.youtube.com/watch?v=ZTqHjjm86Bw) – CppCon (2016)
+
+### Executors
+
+:movie_camera:
+
+- E.Niebler. *Working with asynchrony generically: A tour of C++ executors*. [Part I](https://www.youtube.com/watch?v=xLboNIf7BTg), [Part II](https://www.youtube.com/watch?v=6a0zzUBUNW4) – CppCon (2021)
+- D.Vollmann. [*Executors for C++ – A Long story ...*](https://www.youtube.com/watch?v=sAJGoHN6Xx8) – CppCon (2015)
 
 ### Concurrency patterns
 

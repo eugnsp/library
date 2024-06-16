@@ -7,6 +7,8 @@
   - [CPU word size](#cpu-word-size)
   - [Endianness and NUXI problem](#endianness-and-nuxi-problem)
   - [x87](#x87)
+  - [CPU vulnerabilities](#cpu-vulnerabilities)
+    - [Spectre](#spectre)
   - [Tricks](#tricks)
 - [Memory](#memory)
   - [Memory addressing](#memory-addressing)
@@ -75,6 +77,14 @@ See also [*Numeric data structures and algorithms*](../data_structures_and_algor
 :anchor:
 
 - [*Programming with the x87 floating-point unit*](http://www.infophysics.net/x87.pdf) – Intel
+
+### CPU vulnerabilities
+
+#### Spectre
+
+:movie_camera:
+
+- Z.Bridges, D.Jeanpierre. [*Spectre/C++*](https://www.youtube.com/watch?v=ehNkhmEg0bw) – CppCon (2019)
 
 ### Tricks
 

@@ -14,6 +14,7 @@
 		- [Hoare partition](#hoare-partition)
 		- [“Fat pivot” partition / Dutch national flag problem](#fat-pivot-partition--dutch-national-flag-problem)
 	- [Order statistics and quick select](#order-statistics-and-quick-select)
+		- [Median finding](#median-finding)
 - [Linear-time sorting](#linear-time-sorting)
 	- [Count sort](#count-sort)
 	- [Radix sort](#radix-sort)
@@ -319,6 +320,12 @@
 
 - K.Chen, A.Dumitrescu. [*Selection algorithms with small groups*](https://arxiv.org/abs/1409.3600) (2019)
 - S.S.Kislitsyn. [*On the selection of the k<sup>th</sup> element of an ordered set by pairwise comparison*](https://gdz.sub.uni-goettingen.de/id/PPN394039319_0005?tify={%22pages%22:[559]}) – Sibirsky Matematichesky Zhurnal **5**, 557 (in Russian, 1964)
+
+#### Median finding
+
+:movie_camera:
+
+- P.Isensee. [*Evolution of a median algorithm in C++*](https://www.youtube.com/watch?v=izxuLq_HZHA) – CppCon (2023)
 
 ---
 

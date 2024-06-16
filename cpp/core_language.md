@@ -28,6 +28,7 @@
 		- [Hidden friends](#hidden-friends)
 	- [`inline`](#inline)
 	- [`static`](#static)
+	- [`static_assert`](#static_assert)
 	- [`using`](#using)
 		- [`using enum`](#using-enum)
 	- [Elaborated type specifier](#elaborated-type-specifier)
@@ -37,6 +38,8 @@
 	- [Storage class specifiers](#storage-class-specifiers)
 	- [Structured binding](#structured-binding)
 - [Initialization](#initialization)
+	- [Aggregate initialization](#aggregate-initialization)
+	- [Uniform initialization](#uniform-initialization)
 	- [`constinit`](#constinit)
 - [Dynamic memory](#dynamic-memory)
 	- [Alignment](#alignment)
@@ -58,7 +61,7 @@
 	- [Range-based `for` loop](#range-based-for-loop)
 	- [`if`](#if)
 		- [`if constexpr`](#if-constexpr)
-- [Functions and functional objects](#functions-and-functional-objects)
+- [Functions and function objects](#functions-and-function-objects)
 	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
 	- [Function wrappers](#function-wrappers)
@@ -84,10 +87,11 @@
 		- [`wchar_t`](#wchar_t)
 	- [Floating-point types](#floating-point-types)
 		- [`__float128`](#__float128)
-	- [Aggregate, trivial and POD types](#aggregate-trivial-and-pod-types)
+	- [Trivial and POD types](#trivial-and-pod-types)
 	- [Pointer and array types](#pointer-and-array-types)
 		- [Null pointers](#null-pointers)
 	- [Class types](#class-types)
+		- [Destructors](#destructors)
 		- [Layout](#layout)
 		- [Member functions](#member-functions-1)
 		- [Polymorphism and inheritance](#polymorphism-and-inheritance)
@@ -218,6 +222,10 @@ See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and
 ---
 
 ## Attributes
+
+:grey_question:
+
+- [*In a lambda, what does the second list of attributes do?*](https://stackoverflow.com/q/77704109) – Stack Overflow
 
 :movie_camera:
 
@@ -417,6 +425,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - A.Williams. [*The power of hidden friends in C++*](https://www.justsoftwaresolutions.co.uk/cplusplus/hidden-friends.html) (2019)
 
+:movie_camera:
+
+- P.Bindels. [*Crouching tiger, hidden friend*](https://www.youtube.com/watch?v=H5TEUiEplY0) – ACCU (2023)
+
 :anchor:
 
 - W.E.Brown, D.Sunderland. [*Recommendations for specifying “hidden friends”*](https://wg21.link/p1601) – WG21/P1601
@@ -442,6 +454,13 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 - [*Static variables in an inlined function*](https://stackoverflow.com/q/185624) – Stack Overflow
 - [*What is a `static` function in C?*](https://stackoverflow.com/q/558122) – Stack Overflow
+
+### `static_assert`
+
+:anchor:
+
+- [*`static_assert` declaration*](https://en.cppreference.com/w/cpp/language/static_assert) – C++ reference
+- B.Revzin. [*Allowing `static_assert(false)`*](https://wg21.link/p2593) – WG21/P2593
 
 ### `using`
 
@@ -496,6 +515,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 ### Namespaces
 
+:link:
+
+- A.Fertig. [*`static`, `inline`, or an unnamed namespace what’s the difference*](https://andreasfertig.blog/2023/03/static-inline-or-an-unnamed-namespace-whats-the-difference/) (2023)
+
 :grey_question:
 
 - [*Wherefore inline unnamed namespaces?*](https://stackoverflow.com/q/20208591) – Stack Overflow
@@ -508,6 +531,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 
 :link:
 
+- A.Fertig. [*`static`, `inline`, or an unnamed namespace what’s the difference*](https://andreasfertig.blog/2023/03/static-inline-or-an-unnamed-namespace-whats-the-difference/) (2023)
 - [*What is external linkage and internal linkage?*](https://stackoverflow.com/q/1358400) – Stack Overflow
 - P.Goldsborough. [*Internal and external linkage in C++*](http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/) (2016)
 - J.Schilling. [*Extern inlines by default*](https://web.archive.org/web/20060509150105/glenmccl.com/ansi_015.htm) (2001)
@@ -560,6 +584,26 @@ See [*Friend function templates* – Function templates – Templates](templates
 :anchor:
 
 - [*Initialization*](https://en.cppreference.com/w/cpp/language/initialization) – C++ reference
+
+### Aggregate initialization
+
+:link:
+
+- A.Fertig. [*Aggregates: C++17 vs. C++20*](https://andreasfertig.blog/2024/02/aggregates-cpp17-vs-cpp20/) (2024)
+
+:grey_question:
+
+- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
+
+:anchor:
+
+- [*Aggregate initialization*](https://en.cppreference.com/w/cpp/language/aggregate_initialization) – C++ reference
+
+### Uniform initialization
+
+:link:
+
+- A.Fertig. [*Evaluation order in C++ and uniform initialization*](https://andreasfertig.blog/2023/05/evaluation-order-in-cpp-and-uniform-initialization/) (2023)
 
 ### `constinit`
 
@@ -834,12 +878,16 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 ---
 
-## Functions and functional objects
+## Functions and function objects
 
 :grey_question:
 
 - [*Simplest way to determine return type of function*](https://stackoverflow.com/q/53673442) – Stack Overflow
 - [*C++ `decltype` deducing current function returned type*](https://stackoverflow.com/q/21412144) – Stack Overflow
+
+:movie_camera:
+
+- M.Shah. [*Back to basics: Functions in C++*](https://www.youtube.com/watch?v=CpHX1Du5R0Q) – CppCon (2023)
 
 ### Overload resolution
 
@@ -902,6 +950,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 - [*Why are lambda expressions not allowed in an unevaluated operands but allowed in the unevaluated portions of constant expressions?*](https://stackoverflow.com/q/22232164) – Stack Overflow
 - [*Can we get the type of a lambda argument?*](https://stackoverflow.com/q/6512019) – Stack Overflow
 - [*Why is a `const` variable sometimes not required to be captured in a lambda?*](https://stackoverflow.com/q/43467095) – Stack Overflow
+- [*In a lambda, what does the second list of attributes do?*](https://stackoverflow.com/q/77704109) – Stack Overflow
 
 :movie_camera:
 
@@ -922,6 +971,8 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :link:
 
+- A.Fertig. [*Calling a C++ member function with a null object*](https://andreasfertig.blog/2024/06/calling-a-cpp-member-function-with-a-null-object/) (2024)
+- A.Fertig. [*The power of ref-qualifiers*](https://andreasfertig.blog/2022/07/the-power-of-ref-qualifiers/) (2022)
 - V.Lazarenko. [*Why C++ member function pointers are 16 bytes wide*](http://lazarenko.me/wide-pointers/) (2013)
 - R.Chen. [*Pointers to member functions are very strange animals*](https://devblogs.microsoft.com/oldnewthing/?p=40713) (2004)
 - C.Skelly. [*Powerful pointers to member functions*](https://github.com/eugnsp/CUJ/blob/master/12.10/skelly/skelly.md) – C/C++ Users Journal **12** (1994)
@@ -1148,12 +1199,11 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - [*Additional floating types*](https://gcc.gnu.org/onlinedocs/gcc/Floating-Types.html) – GCC documentation
 
-### Aggregate, trivial and POD types
+### Trivial and POD types
 
 :link:
 
 - [*Trivial, standard-layout, POD, and literal types*](https://docs.microsoft.com/en-us/cpp/cpp/trivial-standard-layout-and-pod-types?view=vs-2019) – Visual C++ language reference (2018)
-- [*What are aggregates and PODs and how/why are they special?*](https://stackoverflow.com/q/4178175) – Stack Overflow
 - [*Trivial vs. standard layout vs. POD*](https://stackoverflow.com/q/6496545) – Stack Overflow
 
 ### Pointer and array types
@@ -1187,6 +1237,17 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - [*Class declaration*](https://en.cppreference.com/w/cpp/language/class) – C++ reference
 
+#### Destructors
+
+:link:
+
+- A.Fertig. [*When an empty destructor is required*](https://andreasfertig.blog/2023/12/when-an-empty-destructor-is-required/) (2023)
+- A.Fertig. [*Why you shouldn’t provide an empty destructor*](https://andreasfertig.blog/2023/11/why-you-shouldnt-provide-an-empty-destructor/) (2023)
+
+:anchor:
+
+- [*Destructors*](https://en.cppreference.com/w/cpp/language/destructor) – C++ reference
+
 #### Layout
 
 :link:
@@ -1213,9 +1274,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 #### Member functions
 
-:link:
-
-- A.Fertig. [*The power of ref-qualifiers*](https://andreasfertig.blog/2022/07/the-power-of-ref-qualifiers/) (2022)
+See [Functions and function objects – *Member functions*](#member-functions).
 
 #### Polymorphism and inheritance
 
@@ -1296,6 +1355,7 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 - [*What is move semantics?*](https://stackoverflow.com/q/3106110) – Stack Overflow
 - [*Rvalues, lvalues and formal definitions*](https://stackoverflow.com/q/56716647) – Stack Overflow
 - [*Pass by value vs pass by rvalue reference*](https://stackoverflow.com/q/37935393) – Stack Overflow
+- [*Rvalues and move semantics with `return` statement*](https://stackoverflow.com/q/4986673) – Stack Overflow
 - [*The implementation of `std::forward`*](https://stackoverflow.com/q/27501400) – Stack Overflow
 - [*Advantages of using `forward`*](https://stackoverflow.com/q/3582001) – Stack Overflow
 - [*Do rvalue references to `const` have any use?*](https://stackoverflow.com/q/4938875) – Stack Overflow
@@ -1358,6 +1418,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 - A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
 - N.Josuttis. [*C++20: My favourite code examples*](https://www.youtube.com/watch?v=UCIKbUvEKfI) – ACCU (2022)
+- N.Josuttis. [*C++20: My favourite code examples*](https://www.youtube.com/watch?v=ey4pTOfdi9k) – Meeting C++ (2021)
 - B.Deane. [*C++20 lambdas: Familiar template syntax*](https://www.youtube.com/watch?v=uOc6RPu9-CA) – CppCon (2020)
 - F.Cooper. [*C++20: All the small things*](https://www.youtube.com/watch?v=LL_NrM7MY44) – C++ on Sea (2020)
 - B.Stroustrup. [*C++20: C++ at 40*](https://www.youtube.com/watch?v=u_ij0YNkFUs) – CppCon (2019)

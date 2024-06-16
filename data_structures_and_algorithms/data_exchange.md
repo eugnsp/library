@@ -14,7 +14,7 @@
 
 :movie_camera:
 
-- P.Bindels. [*What’s in a bit – Designing, using and reverse-engineering ninary file formats*](https://www.youtube.com/watch?v=QEIGc3tXGmM) – C++ on Sea (2022)
+- P.Bindels. [*What’s in a bit – Designing, using and reverse-engineering binary file formats*](https://www.youtube.com/watch?v=QEIGc3tXGmM) – C++ on Sea (2022)
 
 ## Serialization
 

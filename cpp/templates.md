@@ -10,6 +10,7 @@
 		- [Deduction guides](#deduction-guides)
 - [Concepts](#concepts)
 	- [Standard concepts](#standard-concepts)
+	- [Applications](#applications-1)
 - [Function templates](#function-templates)
 	- [Friend function templates](#friend-function-templates)
 - [Parsing and compilation](#parsing-and-compilation)
@@ -152,6 +153,12 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 :grey_question:
 
 - [*Why is the `std::derived_from` concept implemented with an additional convertibility test that adds cv-qualifiers?*](https://stackoverflow.com/q/65915059) – Stack Overflow
+
+### Applications
+
+:link:
+
+- A.Fertig. [*C++20 concepts applied – Safe bitmasks using scoped enums*](https://andreasfertig.blog/2024/01/cpp20-concepts-applied/) (2024)
 
 ---
 

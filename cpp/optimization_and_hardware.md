@@ -127,6 +127,7 @@ See also [*Allocators* – The standard library and proposals](std_library.md#al
 
 :movie_camera:
 
+- S.Al Bahra, H.Sowa, P.Khuong. [*What programmers should know about memory allocation*](https://www.youtube.com/watch?v=gYfd25Bdmws) – CppCon (2019)
 - J.Lakos. *Local (“arena”) memory allocators.* [Part I](https://www.youtube.com/watch?v=nZNd5FjSquk), [Part II](https://www.youtube.com/watch?v=CFzuFNSpycI) – CppCon (2017)
 - J.Lakos. [*Local (“arena”) memory allocators*](https://www.youtube.com/watch?v=d1DpVR0tw0U) – ACCU (2017)
 - A.Alexandrescu. [*`std::allocator` is to allocation what `std::vector` is to vexation*](https://www.youtube.com/watch?v=LIb3L4vKZ7U) – CppCon (2015)
@@ -286,6 +287,7 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 
 :movie_camera:
 
+- F.Pikus. [*Undefined behavior in C++: What every programmer should know and fear*](https://www.youtube.com/watch?v=k9N8OrhrSZw) – CppCon (2023)
 - A.Meredith. [*Removing needless undefined behavior for a safer C++*](https://www.youtube.com/watch?v=iY7ft98nM2k) – ACCU (2023)
 - A.Sermersheim, B.Geller. [*Back to basics: Undefined behavior*](https://www.youtube.com/watch?v=NpL9YnxnOqM) – CppCon (2021)
 - J.Regehr. [*Undefined behavior and compiler optimizations*](https://www.youtube.com/watch?v=AeEwxtEOgH0) – C++Now (2018)

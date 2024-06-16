@@ -6,6 +6,8 @@
 - [Random numbers generation](#random-numbers-generation)
 - [Distributions](#distributions)
 	- [Uniform distribution](#uniform-distribution)
+	- [Normal distribution](#normal-distribution)
+		- [Marsaglia polar method](#marsaglia-polar-method)
 - [Sampling](#sampling)
 	- [Selection sampling](#selection-sampling)
 	- [Reservoir sampling](#reservoir-sampling)
@@ -31,8 +33,11 @@ For cryptographically secure random number generation see [*Random numbers gener
 
 :link:
 
-- [*Xorshift*](https://en.wikipedia.org/wiki/Xorshift) – Wikipedia
 - M.Marini. [*A class hierarchy for random number generation*](https://github.com/eugnsp/CUJ/blob/master/14.10/marini/marini.md) – C/C++ Users Journal **14** (1996)
+
+:anchor:
+
+- [*Xorshift*](https://en.wikipedia.org/wiki/Xorshift) – Wikipedia
 
 ---
 
@@ -41,6 +46,25 @@ For cryptographically secure random number generation see [*Random numbers gener
 ### Uniform distribution
 
 - D.Lemire. [*Nearly divisionless random integer generation on various systems*](https://lemire.me/blog/2019/06/06/nearly-divisionless-random-integer-generation-on-various-systems/) (2019)
+
+:anchor:
+
+- [*`std::uniform_int_distribution`*](https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution) – C++ reference
+- [*`std::uniform_real_distribution`*](https://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution) – C++ reference
+
+### Normal distribution
+
+:anchor:
+
+- [*`std::normal_distribution`*](https://en.cppreference.com/w/cpp/numeric/random/normal_distribution) – C++ reference
+
+#### Marsaglia polar method
+
+> This method is used in some implementations (e.g., in `libstdc++` and `MSVC STL`) of `std::normal_distribution`.
+
+:anchor:
+
+- [*Marsaglia polar method*](https://en.wikipedia.org/wiki/Marsaglia_polar_method) – Wikipedia
 
 ---
 

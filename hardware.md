@@ -8,8 +8,8 @@
   - [BESM-6](#besm-6)
   - [BBC B](#bbc-b)
 - [CPUs](#cpus)
-  - [8086 CPU](#8086-cpu)
-  - [80386 CPU](#80386-cpu)
+  - [Intel 8086 CPU](#intel-8086-cpu)
+  - [Intel 80386 CPU](#intel-80386-cpu)
   - [MOS 6502 CPU](#mos-6502-cpu)
 - [Flash memory](#flash-memory)
 - [Interfaces](#interfaces)
@@ -54,13 +54,13 @@
 
 ## CPUs
 
-### 8086 CPU
+### Intel 8086 CPU
 
 :link:
 
 - K.Shirriff. [*A bug fix in the 8086 microprocessor, revealed in the die’s silicon*](https://www.righto.com/2022/11/a-bug-fix-in-8086-microprocessor.html) (2022)
 
-### 80386 CPU
+### Intel 80386 CPU
 
 :link:
 
@@ -74,6 +74,8 @@
 
 :movie_camera:
 
+- D.Murray. [*The 6502 CPU powered a whole generation!*](https://www.youtube.com/watch?v=acUH4lWe2NQ) – The 8-Bit Guy (2024)
+- S.Edwards, B.Mensch. [*The genesis of the 6502 microprocessor*](https://www.youtube.com/watch?v=mEhvfJaPTlI) – Vintage Computer Federation (2020)
 - M.Steil. [*Reverse engineering the MOS 6502 CPU](https://www.youtube.com/watch?v=fWqBmmPQP40) – 27C3 (2011)
 
 :anchor:

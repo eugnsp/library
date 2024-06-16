@@ -9,6 +9,7 @@
 	- [Customization point objects](#customization-point-objects)
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
+	- [`std::min`, `std::max`, `std::minmax`](#stdmin-stdmax-stdminmax)
 	- [`std::midpoint`](#stdmidpoint)
 	- [`std::next_permutation` / `std::prev_permutation` / `std::is_permutation`](#stdnext_permutation--stdprev_permutation--stdis_permutation)
 	- [`std::[stable_]sort` / `std::is_sorted`](#stdstable_sort--stdis_sorted)
@@ -27,6 +28,7 @@
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
 	- [Strings](#strings)
+		- [`std::string`](#stdstring)
 		- [Short string optimization](#short-string-optimization)
 		- [`std::string_view`](#stdstring_view)
 		- [C-strings](#c-strings)
@@ -73,6 +75,8 @@
 	- [`std::bit_cast`](#stdbit_cast)
 	- [Linear algebra support](#linear-algebra-support)
 	- [Random numbers](#random-numbers)
+		- [Random engines](#random-engines)
+		- [Random distributions](#random-distributions)
 - [Regular expressions](#regular-expressions)
 - [Type support](#type-support)
 	- [`std::type_info`](#stdtype_info)
@@ -85,6 +89,7 @@
 		- [`std::is_class`](#stdis_class)
 		- [`std::is_base_of`](#stdis_base_of)
 		- [`std::is_trivial*`](#stdis_trivial)
+		- [`std::type_identity`](#stdtype_identity)
 - [Utilities](#utilities)
 	- [Integer comparison functions](#integer-comparison-functions)
 	- [Function objects](#function-objects)
@@ -95,7 +100,7 @@
 		- [`std::optional`](#stdoptional)
 		- [`std::variant`](#stdvariant)
 		- [`std::any`](#stdany)
-		- [`(std::)expected`](#stdexpected)
+		- [`std::expected`](#stdexpected)
 	- [`std::launder`](#stdlaunder)
 	- [`std::source_location`](#stdsource_location)
 - [Date and time utilities](#date-and-time-utilities)
@@ -188,6 +193,13 @@
 :grey_question:
 
 - [*What does iota of `std::iota` stand for?*](https://stackoverflow.com/q/9244879) – Stack Overflow
+
+### `std::min`, `std::max`, `std::minmax`
+
+:movie_camera:
+
+- S.T&oacute;th. [*The dark corner of STL: MinMax algorithms*](https://www.youtube.com/watch?v=jBeTvNgW25M) – CppCon (2022)
+- W.E.Brown. [*Correctly calculating `min`, `max`, and more – What can go wrong*](https://www.youtube.com/watch?v=jBeTvNgW25M) – Meeting C++ (2021)
 
 ### `std::midpoint`
 
@@ -352,6 +364,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 
 :link:
 
+- A.Fertig. [*`push_back` vs `emplace_back`: When to use what*](https://andreasfertig.blog/2023/04/push_back-vs-emplace_back-when-to-use-what/) (2023)
 - A.O’Dwyer. [*What is the “vector pessimization”?*](https://quuxplusone.github.io/blog/2022/08/26/vector-pessimization/) (2022)
 - G.Romer. [TotW #112: *`emplace` vs. `push_back`*`](https://abseil.io/tips/112) – Abseil C++ Tips
 - R.Getov. [*Persistent vector iterators*](https://github.com/eugnsp/CUJ/blob/master/17.01/getov/getov.md) – C/C++ Users Journal **17** (1999)
@@ -383,6 +396,8 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 
 ### Strings
 
+#### `std::string`
+
 > The class template `std::basic_string` stores and manipulates sequences of `char`-like objects, which are non-array objects of trivial standard-layout type.
 
 :memo:
@@ -391,6 +406,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 
 :link:
 
+- R.Chen. [*An informal comparison of the three major implementations of `std::string`*](https://devblogs.microsoft.com/oldnewthing/20240510-00/?p=109742) (2024)
 - A.Mertz. [*`std::string` is not a container for raw data*](https://arne-mertz.de/2018/11/string-not-for-raw-data/) (2018)
 - O.Betts. [*Empty strings in C++*](https://survex.com/~olly/blog/coding/empty-strings-in-c%2B%2B.html) (2013)
 - H.Sutter. [GotW #29: *Strings*](http://www.gotw.ca/gotw/029.htm) – Guru of the Week (2009)
@@ -652,6 +668,10 @@ See also [*Exceptions* – Core language](core_language.md#exceptions) and [*Exc
 
 ## Input/output
 
+:movie_camera:
+
+- G.Davidson. [*File I/O: Past, present, and future*](https://www.youtube.com/watch?v=1CdduHa-KgA) – CppCon (2023)
+
 :grey_question:
 
 - [*`tellg()` function give wrong size of file?*](https://stackoverflow.com/q/22984956) – Stack Overflow
@@ -755,6 +775,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :movie_camera:
 
+- J.Garland. [*Effective ranges: A tutorial for using C++2x ranges*](https://www.youtube.com/watch?v=QoaVRQvA6hI) – CppCon (2023)
 - T.Brindle. [*An overview of standard ranges*](https://www.youtube.com/watch?v=d9qDEEJFwNc) – ACCU (2021)
 - T.Brindle. [*C++20 ranges in practice*](https://www.youtube.com/watch?v=d_E-VLyUnzc) – CppCon (2020)
 - T.Brindle. [*An overview of standard ranges*](https://www.youtube.com/watch?v=SYLgG7Q5Zws) – CppCon (2019)
@@ -769,6 +790,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :movie_camera:
 
+- N.Josuttis. [*Using the filter view in practice*](https://www.youtube.com/watch?v=49ZYW4gHBIQ) – Meeting C++ (2023)
 - N.Josuttis. [*C++ views*](https://www.youtube.com/watch?v=qv29fo9sUjY) – ACCU (2023)
 - N.Josuttis. [*Belle views on C++ ranges, their details and the devil*](https://www.youtube.com/watch?v=O8HndvYNvQ4) – Meeting C++ (2022)
 
@@ -847,6 +869,7 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 
 :link:
 
+- A.Fertig. [*Using C++23s `constexpr` `unique_ptr`*](https://andreasfertig.blog/2023/10/using-cpp23s-constexpr-unique_ptr/) (2023)
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - E.Bendersky. [*Using `unique_ptr` with standard library containers*](https://eli.thegreenplace.net/2012/06/20/c11-using-unique_ptr-with-standard-library-containers) (2012)
 - A.Soffer. [TotW #187: *`std::unique_ptr` must be moved*`](https://abseil.io/tips/187) – Abseil C++ Tips
@@ -865,6 +888,7 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 
 - [*`std::unique_ptr`*](https://en.cppreference.com/w/cpp/memory/unique_ptr) – C++ reference
 - S.T.Lavavej. [*`make_unique`*](https://wg21.link/n3588) – WG21/N3588
+- A.Fertig. [*Making `std::unique_ptr` `constexpr`*](https://wg21.link/p2273) – WG21/P2273
 
 #### `std::shared_ptr`
 
@@ -999,23 +1023,40 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 
 - [*Why is the new random library better than `std::rand()`?*](https://stackoverflow.com/q/53040940) – Stack Overflow
 - [*Why not just use `random_device`?*](https://stackoverflow.com/q/39288595) – Stack Overflow
-- [*Random engine differences*](https://stackoverflow.com/q/16536617) – Stack Overflow
-- [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
-- [*If we seed `mt19937` as the same on different machines, will we get the same sequence of random numbers?*](https://stackoverflow.com/q/48730363) – Stack Overflow
 - [*Is uninitialized local variable the fastest random number generator?*](https://stackoverflow.com/q/31739792) – Stack Overflow
 
 :movie_camera:
 
+- F.Buontempo. [*What is a random number and why should I care*](https://www.youtube.com/watch?v=tGKMuaMNxMw) – Meeting C++ (2023)
 - A.Weis. [*Random numbers are hard*](https://www.youtube.com/watch?v=WDScnjQwEK8) – Meeting C++ (2019)
 - W.E.Brown. [*What C++ programmers need to know about header `<random>`*](https://www.youtube.com/watch?v=6DPkyvkMkk8) – CppCon (2016)
 - C.Marks. [*I just wanted a random integer!*](https://www.youtube.com/watch?v=4_QO1nm7uJs) – CppCon (2016)
 - S.T.Lavavej. [*`rand()` considered harmful*](https://www.youtube.com/watch?v=LDPMpc-ENqY) – GoingNative (2013)
 
+<!-- http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2003/n1452.html -->
+
+#### Random engines
+
+:grey_question:
+
+- [*Random engine differences*](https://stackoverflow.com/q/16536617) – Stack Overflow
+- [*How to succinctly, portably, and thoroughly seed the `mt19937` PRNG?*](https://stackoverflow.com/q/45069219) – Stack Overflow
+- [*If we seed `mt19937` as the same on different machines, will we get the same sequence of random numbers?*](https://stackoverflow.com/q/48730363) – Stack Overflow
+
 :anchor:
 
 - M.Klammler. [*Efficient seeding of random number engines*](https://wg21.link/p0205) – WG21/P0205
+- P.Dyakov, I.Burylov, R.Arutyunyan, A.Nikolaev. [*Extension of the C++ random number generators*](https://wg21.link/p1932) – WG21/P1932
+
+#### Random distributions
+
+See [Randomized algorithms and probabilistic data structures – *Distributions*](../data_structures_and_algorithms/random.md#distributions).
+
+:anchor:
+
+- M.Ho&rcaron;e&ncaron;ovsk&yacute;. [*Make pseudo-random numbers portable*](https://wg21.link/p2059) – WG21/P2059
 - M.Paterno. [*On random-number distributions for C++0x*](https://wg21.link/n1588) – WG21/N1588
-<!-- http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2003/n1452.html -->
+- W.E.Brown. [*LWG issue 2168 is NAD*](https://wg21.link/n3926) – WG21/N3926
 
 ---
 
@@ -1134,6 +1175,18 @@ See also [*Type traits* – Templates](templates.md#type-traits).
 
 - J.Turner. [*Great C++ `is_trivial`*](https://www.youtube.com/watch?v=ZxWjii99yao) – CppCon (2019)
 
+#### `std::type_identity`
+
+:link:
+
+- R.Chen. [*What’s the deal with `std::type_identity`?*](https://devblogs.microsoft.com/oldnewthing/20240607-00/?p=109865) (2024)
+
+:anchor:
+
+- [*`std::type_identity`*](https://en.cppreference.com/w/cpp/types/type_identity) – C++ reference
+- T.Doumler. [*The identity metafunction*](https://wg21.link/p0887) – WG21/P0887
+- J.Yasskin. [*The identity type transformation*](https://wg21.link/n3766) – WG21/N3766
+
 ---
 
 ## Utilities
@@ -1153,13 +1206,13 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 ### Function objects
 
-:link:
-
-- [*Function objects*](https://en.cppreference.com/w/cpp/utility/functional) – C++ reference
-
 :movie_camera:
 
 - S.T.Lavavej. [*`<functional>`: What’s new, and proper usage*](https://www.youtube.com/watch?v=zt7ThwVfap0) – CppCon (2015)
+
+:anchor:
+
+- [*Function objects*](https://en.cppreference.com/w/cpp/utility/functional) – C++ reference
 
 #### `std::reference_wrapper`
 
@@ -1240,6 +1293,7 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 
 :link:
 
+- A.Fertig. [*Visiting a `std::variant` safely*](https://andreasfertig.blog/2023/07/visiting-a-stdvariant-safely/) (2023)
 - J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2022/05/recursive-variant-box/) (2022)
 - A.Williams. [*Standardizing `variant`: Difficult decisions*](https://www.justsoftwaresolutions.co.uk/cplusplus/standardizing-variant.html) (2015)
 
@@ -1273,9 +1327,9 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 - [*`std::any`*](https://en.cppreference.com/w/cpp/utility/any) – C++ reference
 
-#### `(std::)expected`
+#### `std::expected`
 
-> A proposed utility class to represent expected monad.
+> A utility class to represent expected monad.
 
 :link:
 

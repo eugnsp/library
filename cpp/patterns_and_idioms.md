@@ -12,6 +12,7 @@
 	- [Object-oriented design](#object-oriented-design)
 		- [Liskov substitution principle](#liskov-substitution-principle)
 		- [Interface segregation principle](#interface-segregation-principle)
+	- [Data-oriented design](#data-oriented-design)
 	- [Interface design](#interface-design)
 		- [Function parameters](#function-parameters)
 		- [Function return values](#function-return-values)
@@ -30,6 +31,7 @@
 - [Overview of patterns and idioms](#overview-of-patterns-and-idioms)
 - [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
+	- [Builder](#builder)
 	- [Factory method / Virtual constructor](#factory-method--virtual-constructor)
 	- [In-place factory, typed in-place factory](#in-place-factory-typed-in-place-factory)
 	- [Singleton](#singleton)
@@ -37,10 +39,19 @@
 - [Structural patterns](#structural-patterns)
 	- [Adapter](#adapter)
 	- [Bridge and pimpl](#bridge-and-pimpl)
+	- [Type erasure](#type-erasure)
 	- [Flyweight](#flyweight)
-	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
 	- [Passkey](#passkey)
+	- [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
+	- [Execute-around](#execute-around)
+		- [Execute-around object (RAII)](#execute-around-object-raii)
+		- [Execute-around proxy](#execute-around-proxy)
+		- [Execute-around pointer](#execute-around-pointer)
+		- [Execute-around function](#execute-around-function)
+	- [Duff’s device](#duffs-device)
+	- [`switch` statement](#switch-statement)
 - [Behavioural patterns](#behavioural-patterns)
+	- [Chain-of-responsibility](#chain-of-responsibility)
 	- [Strategy / Policy](#strategy--policy)
 	- [Dependency injection](#dependency-injection)
 	- [Visitor](#visitor)
@@ -50,6 +61,14 @@
 		- [Iterator sentinels](#iterator-sentinels)
 	- [Template method](#template-method)
 	- [Execution token](#execution-token)
+	- [Observer](#observer)
+- [Semantic code patterns](#semantic-code-patterns)
+	- [Address of](#address-of)
+	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
+	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
+	- [Infinite loop](#infinite-loop)
+	- [Unused variables and return values](#unused-variables-and-return-values)
+	- [Compile-time strings](#compile-time-strings)
 - [Metaprogramming patterns](#metaprogramming-patterns)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Expression templates](#expression-templates)
@@ -62,26 +81,10 @@
 	- [Recursive lambdas](#recursive-lambdas)
 - [Concurrency patterns](#concurrency-patterns)
 	- [Double-checked locking](#double-checked-locking)
-- [Builder](#builder)
-- [Chain-of-responsibility](#chain-of-responsibility)
-- [Copy-and-swap / Move-and-swap](#copy-and-swap--move-and-swap)
-- [Execute-around](#execute-around)
-	- [Execute-around object (RAII)](#execute-around-object-raii)
-	- [Execute-around proxy](#execute-around-proxy)
-	- [Execute-around pointer](#execute-around-pointer)
-	- [Execute-around function](#execute-around-function)
-- [Infinite loop](#infinite-loop)
-- [Observer](#observer)
-- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
-- [Type erasure](#type-erasure)
-- [Local buffer optimization](#local-buffer-optimization)
-- [Compile-time strings](#compile-time-strings)
-- [Nifty counter](#nifty-counter)
-- [`switch` statement](#switch-statement)
-- [Unused variables and return values](#unused-variables-and-return-values)
-- [Antipatterns and uncommon constructs](#antipatterns-and-uncommon-constructs)
+- [Functional programming patterns](#functional-programming-patterns)
+	- [Monads](#monads)
+- [Antipatterns](#antipatterns)
 	- [Go to](#go-to)
-	- [Duff’s device](#duffs-device)
 	- [Standard library algorithms abuse](#standard-library-algorithms-abuse)
 
 ---
@@ -244,6 +247,12 @@
 #### Interface segregation principle
 
 > The interface segregation principle states that no client should be forced to depend on methods it does not use.
+
+### Data-oriented design
+
+:movie_camera:
+
+- S.Nikolov. [*OOP is dead, long live data-oriented design*](https://www.youtube.com/watch?v=yy8jQgmhbAU) – CppCon (2018)
 
 ### Interface design
 
@@ -472,6 +481,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- С.Ryan. [*Design patterns: Examples in C++*](https://www.youtube.com/watch?v=MEejmuLwX9M) – ACCU (2023)
 - F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 - D.Nesteruk. [*Design patterns in modern C++*](https://www.youtube.com/watch?v=sJnoIF4_Ug8) – ACCU (2016)
 
@@ -490,6 +500,22 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 <!-- :book: -->
 
 <!-- - App. sec. *Abstract factory* – A.Holub. [*Holub on patterns: Learning design patterns by looking at code*](https://holub.com/patterns/book.pdf) (2004) -->
+
+### Builder
+
+> The builder pattern separates the creation of an object from its representation. It is used to create complex objects that are built in multiple stages:
+> ```cpp
+> struct Builder {
+>     Builder(...);
+>     Builder& add(...) { ...; return *this; }
+>     operator Product() const;
+> };
+>
+> Product pr = Builder(...).add(...).add(...).add(...);
+
+:link:
+
+- [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) – Wikipedia
 
 ### Factory method / Virtual constructor
 
@@ -565,6 +591,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
+- A.Fertig. [*When an empty destructor is required*](https://andreasfertig.blog/2023/12/when-an-empty-destructor-is-required/) (2023)
 - A.Mertz. [*The pImpl idiom*](https://arne-mertz.de/2019/01/the-pimpl-idiom/) (2019)
 
 :grey_question:
@@ -581,17 +608,24 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
   
+### Type erasure
+
+:link:
+
+- K.Henney. [*Valued conversions*](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.374.2252&rep=rep1&type=pdf) – C++ Report (2000)
+- [*Type erasure*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Type_Erasure) – Wikibooks
+
+:movie_camera:
+
+- K.Iglberger. [*Breaking dependencies: Type erasure – The implementation details*](https://www.youtube.com/watch?v=7MNyAHp0h7A) – C++ Meeting (2023)
+- K.Iglberger. [*Breaking dependencies: Type erasure – A design analysis*](https://www.youtube.com/watch?v=M4ekpfVo4_o) – CppCon (2021)
+
+
 ### Flyweight
 
 :link:
 
 - [*Boost.Flyweight: Small-sized handle classes granting constant access to shared common data*](https://www.boost.org/doc/libs/release/libs/flyweight/doc/index.html)
-
-### `const` and non-`const` member functions
-
-:grey_question:
-
-- [*How do I remove code duplication between similar `const` and non-`const` member functions?*](https://stackoverflow.com/q/1661529) – Stack Overflow
 
 ### Passkey
 
@@ -607,9 +641,120 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - [*Is this key-oriented access-protection pattern a known idiom?*](https://stackoverflow.com/q/3220009) – Stack Overflow
 
+### Copy-and-swap / Move-and-swap
+
+> The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
+> ```cpp
+> class Object {
+> public:
+>     Object(const Object&);
+>     Object(Object&&);
+>
+>     Object& operator=(const Object& obj) {
+>         Object{obj}.swap(*this);
+>         return *this;
+>     }
+>
+>     Object& operator=(Object&& obj) {
+>         Object{std::move(obj)}.swap(*this);
+>         return *this;
+>     }
+> };
+> ```
+
+:link:
+
+- [*Copy-and-swap*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Copy-and-swap) – WikiBooks
+
+:grey_question:
+
+- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
+- [*Using `swap` to implement move assignment*](https://stackoverflow.com/q/32234623) – Stack Overflow
+
+:book:
+
+- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
+### Execute-around
+
+:link:
+
+- K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) – EuroPLoP (2000)
+
+#### Execute-around object (RAII)
+
+> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII). An example of this idiom is provided by standard library [smart pointers](std_library.md#smart-pointers), e.g. by `std::unique_ptr`.
+
+:link:
+
+- [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
+- E.Bendersky. [*C++: RAII without exceptions*](https://eli.thegreenplace.net/2016/c-raii-without-exceptions/) (2016)
+- P.Grenyer. [*RAII is not garbage*](https://accu.org/journals/overload/19/106/grenyer_1945/) – [Overload **106**](https://accu.org/journals/overload/overload106) (2011)
+
+:grey_question:
+
+- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
+
+:movie_camera:
+
+- N.Josuttis. [*The most important C++ feature (Lightning talk)*](https://www.youtube.com/watch?v=rt3YMOKa0TI) – ACCU (2023)
+
+:book:
+
+- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
+
+:anchor:
+
+- [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
+
+<!--Scoped Resource - Generic RAII Wrapper for theStandard Library  https://isocpp.org/files/papers/N3949.pdf -->
+<!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
+
+#### Execute-around proxy
+
+> Execute-around proxy idiom applies execute-around object idiom for individual calls on an object.
+
+#### Execute-around pointer
+
+> Execute-around pointer idiom defines an execute-around proxy idiom when the actions performed on a target object are the same for all functions.
+
+:memo:
+
+- This idiom can be used to “convert” a non-thread-safe class into a thread-safe one by automatically locking and unlocking a mutex when member functions are called.
+
+:link:
+
+- [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) – WikiBooks
+- [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) – CodeProject (2018)
+
+#### Execute-around function
+
+> Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
+
+### Duff’s device
+
+:link:
+
+- [*Duff’s device*](https://en.wikipedia.org/wiki/Duff%27s_device) – Wikipedia
+- T.Duff. [*Tom Duff on Duff’s device*](https://www.lysator.liu.se/c/duffs-device.html) (1988)
+
+### `switch` statement
+
+:link:
+
+- M.Weisfeld. [*An alternative to large `switch` statements*](https://github.com/eugnsp/CUJ/blob/master/12.04/weisfeld/weisfeld.md) – C/C++ Users Journal **12** (1994)
+
 ---
 
 ## Behavioural patterns
+
+### Chain-of-responsibility
+
+> The chain-of-responsibility is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.
+
+:link:
+
+- [*Chain-of-responsibility pattern*](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern) – Wikipedia
 
 ### Strategy / Policy
 
@@ -718,6 +863,102 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 :movie_camera:
 
 - A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y&t=2870s) – C++ on Sea (2023)
+
+### Observer
+
+<!-- :link: -->
+
+<!-- WRONG? - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016) -->
+
+---
+
+## Semantic code patterns
+
+### Address of
+
+> The "address of" trick is used to find the address of an object of a class that has an overloaded unary `operator&`. 
+
+:link:
+
+[*Address of*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Address_Of) – WikiBooks
+
+:anchor:
+
+- [*std::addressof*](https://en.cppreference.com/w/cpp/memory/addressof) – C++ reference
+
+### `const` and non-`const` member functions
+
+:grey_question:
+
+- [*How do I remove code duplication between similar `const` and non-`const` member functions?*](https://stackoverflow.com/q/1661529) – Stack Overflow
+
+### Opaque typedef (whole value)
+
+> An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
+> ```cpp
+> template<class T> class Whole_value {
+> public:
+>     Whole_value(T v) : v_(v) {}
+>     operator T() const { return v_; }
+> private:
+>     T v_;
+> };
+> ```
+
+:link:
+
+- A.Fertig. [*A strongly typed `bool`*](https://andreasfertig.blog/2023/08/a-strongly-typed-bool/) (2023)
+- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/journals/overload/27/152/boger_2683/) – [Overload **152**](https://accu.org/journals/overload/overload152) (2019)
+- J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
+- A.Williams. [*`jss::strong_typedef` library*](https://github.com/anthonywilliams/strong_typedef)
+- P.Sommerlad. [*`PSsst` library*](https://github.com/PeterSommerlad/PSsst)
+- M.Moene. [*Whole value idiom*](https://github.com/martinmoene/WholeValue)
+
+:movie_camera:
+
+- A.Williams. [*Library approaches for strong type aliases*](https://www.youtube.com/watch?v=b1Gq9WABaRU) – C++Now (2021)
+- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)
+
+:anchor:
+
+- W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) – WG21/N3741 (2013)
+- [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) – Boost.Serialization
+
+<!-- guthib / anthonywilliems/strong_typedef
+github PeterSommerlad/ Pssst
+martinmoene/WholeValue -->
+
+### Infinite loop
+
+> ```cpp
+> for (;;) { ... }
+> while (true) { ... }
+> do { ... } while (true);
+> ```
+
+See also [*Infinite loops* – Hardware, optimization, and OS internals](optimization_and_hardware.md#infinite-loops).
+
+:link:
+
+- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
+
+:grey_question:
+
+- [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
+
+### Unused variables and return values
+
+:grey_question:
+
+- [*Why cast unused return values to `void`?*](https://stackoverflow.com/q/689677) – Stack Overflow
+- [*What does casting to `void` really do?*](https://stackoverflow.com/q/34288844) – Stack Overflow
+- [*Is it ok to use `std::ignore` in order to discard a return value of a function to avoid any related compiler warnings?*](https://stackoverflow.com/q/77195426) – Stack Overflow
+
+### Compile-time strings
+
+:link:
+
+- Y.Wu. [*Compile-time strings*](https://accu.org/journals/overload/30/172/wu/) – [Overload **172**](https://accu.org/journals/overload/overload172) (2022)
 
 ---
 
@@ -853,6 +1094,10 @@ template<class... Ts>
 overloaded(Ts...) -> overloaded<Ts...>;
 ```
 
+:link:
+
+- A.Fertig. [*Visiting a `std::variant` safely*](https://andreasfertig.blog/2023/07/visiting-a-stdvariant-safely/) (2023)
+
 :anchor:
 
 - [*`std::visit` example*](https://en.cppreference.com/w/cpp/utility/variant/visit#Example) – C++ reference
@@ -889,212 +1134,24 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 ---
 
-## Builder
-
-> The builder pattern separates the creation of an object from its representation. It is used to create complex objects that are built in multiple stages:
-> ```cpp
-> struct Builder {
->     Builder(...);
->     Builder& add(...) { ...; return *this; }
->     operator Product() const;
-> };
->
-> Product pr = Builder(...).add(...).add(...).add(...);
-
-:link:
-
-- [*Builder pattern*](https://en.wikipedia.org/wiki/Builder_pattern) – Wikipedia
-
-## Chain-of-responsibility
-
-> The chain-of-responsibility is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.
-
-:link:
-
-- [*Chain-of-responsibility pattern*](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern) – Wikipedia
-
-## Copy-and-swap / Move-and-swap
-
-> The copy-and-swap idiom allows an assignment operator to be implemented elegantly with strong exception safety. However, it is often harmful to performance when a strong exception safety guarantee of the copy assignment operator is not needed.
-> ```cpp
-> class Object {
-> public:
->     Object(const Object&);
->     Object(Object&&);
->
->     Object& operator=(const Object& obj) {
->         Object{obj}.swap(*this);
->         return *this;
->     }
->
->     Object& operator=(Object&& obj) {
->         Object{std::move(obj)}.swap(*this);
->         return *this;
->     }
-> };
-> ```
-
-:grey_question:
-
-- [*What is the copy-and-swap idiom?*](https://stackoverflow.com/q/3279543) – Stack Overflow
-- [*Using `swap` to implement move assignment*](https://stackoverflow.com/q/32234623) – Stack Overflow
-
-:book:
-
-- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
-
-## Execute-around
-
-:link:
-
-- K.Henney. [*C++ patterns: Executing around sequences*](https://hillside.net/europlop/HillsideEurope/Papers/EuroPLoP2000/2000_Henney_ExecutingAroundSequences.pdf) – EuroPLoP (2000)
-
-### Execute-around object (RAII)
-
-> Execute-around object idiom abstracts the execution of a pair of actions that surround a sequence of statements, or a single action that follows a sequence. This idiom is also known by the name of scope guard and resource acquisition is initialization (RAII). An example of this idiom is provided by standard library [smart pointers](std_library.md#smart-pointers), e.g. by `std::unique_ptr`.
-
-:link:
-
-- [*Resource acquisition is initialization*](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) – Wikipedia
-- E.Bendersky. [*C++: RAII without exceptions*](https://eli.thegreenplace.net/2016/c-raii-without-exceptions/) (2016)
-- P.Grenyer. [*RAII is not garbage*](https://accu.org/journals/overload/19/106/grenyer_1945/) – [Overload **106**](https://accu.org/journals/overload/overload106) (2011)
-
-:grey_question:
-
-- [*What is meant by Resource acquisition is initialization (RAII)?*](https://stackoverflow.com/q/2321511) – Stack Overflow
+## Functional programming patterns
 
 :movie_camera:
 
-- N.Josuttis. [*The most important C++ feature (Lightning talk)*](https://www.youtube.com/watch?v=rt3YMOKa0TI) – ACCU (2023)
+- V.Ciura. [*Functional programming in modern C++: The imperatives must go!*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – HE71NqRpvTQ (2023)
+- R.Feldman. [*Why isn’t functional programming the norm?*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – ClojuTRE (2019)
 
-:book:
+### Monads
 
-- Ch. 5: *A comprehensive look at RAII* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
-
-:anchor:
-
-- [*RAII*](https://en.cppreference.com/w/cpp/language/raii) – C++ reference
-
-<!--Scoped Resource - Generic RAII Wrapper for theStandard Library  https://isocpp.org/files/papers/N3949.pdf -->
-<!-- https://www.codeproject.com/Articles/10141/RAII-Dynamic-Objects-and-Factories-in-C -->
-
-### Execute-around proxy
-
-> Execute-around proxy idiom applies execute-around object idiom for individual calls on an object.
-
-### Execute-around pointer
-
-> Execute-around pointer idiom defines an execute-around proxy idiom when the actions performed on a target object are the same for all functions.
-
-:memo:
-
-- This idiom can be used to “convert” a non-thread-safe class into a thread-safe one by automatically locking and unlocking a mutex when member functions are called.
-
-:link:
-
-- [*Execute-around pointer*](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Execute-Around_Pointer) – WikiBooks
-- [*We make any object thread-safe*](https://www.codeproject.com/Articles/1183379/We-make-any-object-thread-safe) – CodeProject (2018)
-
-### Execute-around function
-
-> Execute-around function idiom safely groups and executes a sequence of statements that must be enclosed by a pair of actions, or followed by a single action.
-
-## Infinite loop
-
-> ```cpp
-> for (;;) { ... }
-> while (true) { ... }
-> do { ... } while (true);
-> ```
-
-See also [*Infinite loops* – Hardware, optimization, and OS internals](optimization_and_hardware.md#infinite-loops).
-
-:link:
-
-- M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016)
-
-:grey_question:
-
-- [*Endless loop in C/C++*](https://stackoverflow.com/q/20186809) – Stack Overflow
-
-## Observer
-
-<!-- :link: -->
-
-<!-- WRONG? - M.Wilson. [*QM bites: Looping for-ever*](https://accu.org/journals/overload/24/132/wilson_2227/) – [Overload **132**](https://accu.org/journals/overload/overload132) (2016) -->
-
-## Opaque typedef (whole value)
-
-> An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
-> ```cpp
-> template<class T> class Whole_value {
-> public:
->     Whole_value(T v) : v_(v) {}
->     operator T() const { return v_; }
-> private:
->     T v_;
-> };
-> ```
-
-:link:
-
-- L.B&ouml;ger. [*Empty scoped enums as strong aliases for integral types*](https://accu.org/journals/overload/27/152/boger_2683/) – [Overload **152**](https://accu.org/journals/overload/overload152) (2019)
-- J.M&uuml;ller. [*Tutorial: Emulating strong/opaque typedefs in C++*](https://foonathan.net/2016/10/strong-typedefs/) (2016)
-- A.Williams. [*`jss::strong_typedef` library*](https://github.com/anthonywilliams/strong_typedef)
-- P.Sommerlad. [*`PSsst` library*](https://github.com/PeterSommerlad/PSsst)
-- M.Moene. [*Whole value idiom*](https://github.com/martinmoene/WholeValue)
+See also [*Monads* – Functional programming – General reviews and interviews](../programming.md#monads).
 
 :movie_camera:
 
-- A.Williams. [*Library approaches for strong type aliases*](https://www.youtube.com/watch?v=b1Gq9WABaRU) – C++Now (2021)
-- H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)
-
-:anchor:
-
-- W.E.Brown. [*Toward opaque typedefs for C++1Y, v2*](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf) – WG21/N3741 (2013)
-- [*`BOOST_STRONG_TYPEDEF`*](https://www.boost.org/doc/libs/1_71_0/libs/serialization/doc/strong_typedef.html) – Boost.Serialization
-
-<!-- guthib / anthonywilliems/strong_typedef
-github PeterSommerlad/ Pssst
-martinmoene/WholeValue -->
-
-## Type erasure
-
-:link:
-
-- K.Henney. [*Valued conversions*](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.374.2252&rep=rep1&type=pdf) – C++ Report (2000)
-
-:movie_camera:
-
-- K.Iglberger. [*Breaking dependencies: Type erasure – A design analysis*](https://www.youtube.com/watch?v=M4ekpfVo4_o) – CppCon (2021)
-
-## Local buffer optimization
-
-## Compile-time strings
-
-:link:
-
-- Y.Wu. [*Compile-time strings*](https://accu.org/journals/overload/30/172/wu/) – [Overload **172**](https://accu.org/journals/overload/overload172) (2022)
-
-## Nifty counter
-
-## `switch` statement
-
-:link:
-
-- M.Weisfeld. [*An alternative to large `switch` statements*](https://github.com/eugnsp/CUJ/blob/master/12.04/weisfeld/weisfeld.md) – C/C++ Users Journal **12** (1994)
-
-## Unused variables and return values
-
-:grey_question:
-
-- [*Why cast unused return values to `void`?*](https://stackoverflow.com/q/689677) – Stack Overflow
-- [*What does casting to `void` really do?*](https://stackoverflow.com/q/34288844) – Stack Overflow
-- [*Is it ok to use `std::ignore` in order to discard a return value of a function to avoid any related compiler warnings?*](https://stackoverflow.com/q/77195426) – Stack Overflow
+- G.Koyrushki, A.Fisher. [*Monads in modern C++*](https://www.youtube.com/watch?v=kZ8rbhGgtv4) – CppCon (2023)
 
 ---
 
-## Antipatterns and uncommon constructs
+## Antipatterns
 
 :link:
 
@@ -1121,13 +1178,6 @@ martinmoene/WholeValue -->
 :page_facing_up:
 
 - E.W.Dijkstra. [*A case against the Go To statement*](https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF), [*Go To statement considered harmful*](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf) – EWD215 (1968)
-
-### Duff’s device
-
-:link:
-
-- [*Duff’s device*](https://en.wikipedia.org/wiki/Duff%27s_device) – Wikipedia
-- T.Duff. [*Tom Duff on Duff’s device*](https://www.lysator.liu.se/c/duffs-device.html) (1988)
 
 ### Standard library algorithms abuse
 

@@ -200,6 +200,7 @@
 - [Simon Brand](https://blog.tartanllama.xyz/)
 - [Eli Bendersky](http://eli.thegreenplace.net/)
 - [Jonathan Boccara](http://www.fluentcpp.com/)
+- [Andreas Fertig](https://andreasfertig.blog/)
 - [Bartlomiej Filipek](http://www.bfilipek.com/)
 - [Kevlin Henney](https://kevlinhenney.medium.com/)
 - [Stephanie Hurlburt](http://stephaniehurlburt.com/blog-archive/)

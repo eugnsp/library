@@ -55,6 +55,7 @@
 :movie_camera:
 
 - [*Birth of BASIC*](https://www.youtube.com/watch?v=T-NTEc8Ag-I) – Dartmouth (2014)
+- [*The basics of BASIC, the programming language of the 1980s*](https://www.youtube.com/watch?v=seM9SqTsRG4) – The 8-Bit Guy (2017)
 
 :book:
 
@@ -94,8 +95,7 @@
 
 :movie_camera:
 
-- V.Ciura. [*Functional programming in modern C++: The imperatives must go!*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – HE71NqRpvTQ (2023)
-- R.Feldman. [*Why isn’t functional programming the norm?*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – ClojuTRE (2019)
+- G.Lebec. *&lambda;as.js, or a flock of functions*. [Part I](https://www.youtube.com/watch?v=3VQ382QG-y4) – Fullstack Academy 
 
 ### Lambda calculus
 
@@ -111,9 +111,13 @@
 
 ### Monads
 
+:grey_question:
+
+- [*What is a monad?*](https://stackoverflow.com/q/44965) – Stack Overflow
+
 :movie_camera:
 
-- [*What is a Monad?*](https://www.youtube.com/watch?v=t1e8gqXLbsU) – Computerphile
+- [*What is a monad?*](https://www.youtube.com/watch?v=t1e8gqXLbsU) – Computerphile
 
 ---
 
