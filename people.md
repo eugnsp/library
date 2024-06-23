@@ -7,9 +7,11 @@
 - [John Conway](#john-conway)
 - [Robert W Floyd](#robert-w-floyd)
 - [Margaret Hamilton](#margaret-hamilton)
+- [Alan Kay](#alan-kay)
 - [John Kemeny](#john-kemeny)
 - [Brian Kernighan](#brian-kernighan)
 - [Donald Knuth](#donald-knuth)
+- [Thomas Kurtz](#thomas-kurtz)
 - [Peter Norvig](#peter-norvig)
 - [Robert Sedgewick](#robert-sedgewick)
 - [Bjarne Stroustrup](#bjarne-stroustrup)
@@ -36,9 +38,7 @@
 
 ## Georgy Adelson-Velsky
 
-:link:
-
-- [*Georgy Adelson-Velsky*](https://en.wikipedia.org/wiki/Georgy_Adelson-Velsky) – Wikipedia
+> Georgy Adelson-Velsky (Georgii Adelson-Velskii) was a Soviet and Israeli mathematician and computer scientist. He began working in artificial intelligence and other applied topics in the late 1950s. Along with Evgenii Landis, he invented the [AVL tree](data_structures_and_algorithms/trees.md#avl-adelson-velskylandis-trees) in 1962 – the first known balanced binary search tree data structure.Beginning in 1963, Adelson-Velsky headed the development of a computer chess program at the Institute for Theoretical and Experimental Physics in Moscow. His innovations included the first use of bitboards (a now-common method for representing game positions) in computer chess. The program evolved into Kaissa, the first world computer chess champion.
 
 :movie_camera:
 
@@ -47,6 +47,10 @@
 :book:
 
 - G.M.Adelson-Velsky, V.L.Arlazarov, A.R.Bitman, M.V.Donskoy. [*Computer plays chess*](https://www.computer-museum.ru/books/kaissa.pdf) (in Russian, 1983)
+
+:anchor:
+
+- [*Georgy Adelson-Velsky*](https://en.wikipedia.org/wiki/Georgy_Adelson-Velsky) – Wikipedia
 
 ## Howard Aiken
 
@@ -76,19 +80,39 @@
 
 ## Margaret Hamilton
 
-:link:
-
-- [*Margaret Hamilton*](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) – Wikipedia
+> Margaret Hamilton was director of the Software Engineering Division of the MIT Instrumentation Laboratory, which developed on-board flight software for NASA’s Apollo program. She has published more than 130 papers, proceedings, and reports, about sixty projects, and six major programs. She coined the term “software engineering”, stating “I began to use the term *software engineering* to distinguish it from hardware and other kinds of engineering, yet treat each type of engineering as part of the overall systems engineering process”.
 
 :movie_camera:
 
 - M.Hamilton. [*The language as a software engineer*](https://www.youtube.com/watch?v=ZbVOF0Uk5lU) – ICSE (2018)
 
+:anchor:
+
+- [*Margaret Hamilton*](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) – Wikipedia
+
+## Alan Kay
+
+> Alan Kay is best known for his pioneering work on object-oriented programming and windowing graphical user interface (GUI) design. At Xerox PARC he led the design and development of the first modern windowed computer desktop interface. There he also led the development of the influential object-oriented programming language Smalltalk, both personally designing most of the early versions of the language and coining the term “object-oriented”. 
+
+:movie_camera:
+
+- A.Kay. [*The computer revolution hasn’t happened yet*](https://www.youtube.com/watch?v=oKg1hTOQXoY) – OOPSLA (1997)
+
+:anchor:
+
+- [*Alan Kay*](https://en.wikipedia.org/wiki/Alan_Kay) – Wikipedia
+
 ## John Kemeny
+
+> John Kemeny is best known for co-developing the BASIC programming language in 1964 with [Thomas E. Kurtz](#thomas-kurtz). Kemeny served as the 13th President of Dartmouth College from 1970 to 1981 and pioneered the use of computers in college education. He chaired the presidential commission that investigated the Three Mile Island accident in 1979.
 
 :link:
 
 - K.King. [*The computer and the campus: An interview with John Kemeny*](https://www.youtube.com/watch?v=HHi3VFOL-AI) – Dartmouth (1991)
+
+:anchor:
+
+- [*John G. Kemeny*](https://en.wikipedia.org/wiki/John_G._Kemeny) – Wikipedia
 
 ## Brian Kernighan
 
@@ -118,6 +142,14 @@
 :book:
 
 - D.E.Knuth. [*The art of computer programming*](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
+
+## Thomas Kurtz
+
+> Thomas Kurtz is a retired Dartmouth professor of mathematics and computer scientist, who along with his colleague [John G. Kemeny](#john-kemeny) set in motion the then revolutionary concept of making computers as freely available to college students as library books were, by implementing the concept of time-sharing at Dartmouth College. In his mission to allow non-expert users to interact with the computer, he co-developed the BASIC programming language and the Dartmouth Time Sharing System during 1963 to 1964.
+
+:anchor:
+
+- [*Thomas E. Kurtz*](https://en.wikipedia.org/wiki/Thomas_E._Kurtz) – Wikipedia
 
 ## Peter Norvig
 

@@ -142,6 +142,7 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 - J.Garland. *Using concepts: C++ design in a concept world.* [Part I](https://www.youtube.com/watch?v=Ffu9C1BZ4-c), [Part II](https://www.youtube.com/watch?v=IXbf5lxGtr0) – C++Now (2021)
 - R.Barkan. [*Semantic sugar: Tips for effective template library APIs*](https://www.youtube.com/watch?v=u0rvEMV8Qq4) – C++Now (2021)
 - H.Matthews. [*C++ concepts for developers*](https://www.youtube.com/watch?v=ut40iShzqEY) – NDC (2019)
+- R.Grimm. [*Concepts in C++20: Revolution or evolution*](https://www.youtube.com/watch?v=BXBnAmqZvpo) – CppCon (2019)
 - B.Stroustrup. [*Concepts: The future of generic programming (the future is here)*](https://www.youtube.com/watch?v=HddFGPTAmtU) – CppCon (2018)
 
 :anchor:

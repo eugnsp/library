@@ -48,6 +48,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 :movie_camera:
 
 - A.Lachmish. [*Algorithmic complexity, data locality, parallelism, and compiler optimizations, seasoned with some concurrency*](https://www.youtube.com/watch?v=0iXRRCnurvo) – CppCon (2022)
+- J.Bielak. [*The most important otimizations to apply in your C++ programs*](https://www.youtube.com/watch?v=qCjEN5XRzHc) – CppCon (2022)
 - A.Alexandrescu. [*Speed is found in the minds of people*](https://www.youtube.com/watch?v=FJJTYQYB1JQ) – CppCon (2019)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) – ACCU (2019)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=IGFBCvroXJ8) – NDC (2018)

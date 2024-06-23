@@ -24,6 +24,7 @@
 		- [Exceptions](#exceptions)
 	- [Testing](#testing)
 		- [Seams](#seams)
+	- [Embedded systems](#embedded-systems)
 - [Safety and security](#safety-and-security)
 	- [Memory safety](#memory-safety)
 	- [Safe integers](#safe-integers)
@@ -62,13 +63,14 @@
 	- [Template method](#template-method)
 	- [Execution token](#execution-token)
 	- [Observer](#observer)
-- [Semantic code patterns](#semantic-code-patterns)
+- [Miscellaneous patterns](#miscellaneous-patterns)
 	- [Address of](#address-of)
 	- [`const` and non-`const` member functions](#const-and-non-const-member-functions)
 	- [Opaque typedef (whole value)](#opaque-typedef-whole-value)
 	- [Infinite loop](#infinite-loop)
 	- [Unused variables and return values](#unused-variables-and-return-values)
 	- [Compile-time strings](#compile-time-strings)
+	- [Customization point objects](#customization-point-objects)
 - [Metaprogramming patterns](#metaprogramming-patterns)
 	- [Curiously recurring template](#curiously-recurring-template)
 	- [Expression templates](#expression-templates)
@@ -272,6 +274,7 @@
 - B.Fahller. [*Typical C++, but why?*](https://www.youtube.com/watch?v=ZJKWNBcPHaQ) – C++ Meeting (2023)
 - J.Pavan. [*API design principles in C++*](https://www.youtube.com/watch?v=esQ9khv5QnQ) – CppNorth (2023)
 - A.Weis. [*How to build C++ interfaces that are hard to use incorrectly*](https://www.youtube.com/watch?v=lIK7NrBrw6Y) – C++ on Sea (2023)
+- K.Iglberger. [*Back to basics: Designing classes, part II*](https://www.youtube.com/watch?v=O65lEiYkkbc) – CppCon (2021)
 - M.Godbolt. [*Correct by construction: APIs that are easy to use and hard to misuse*](https://www.youtube.com/watch?v=nLSm3Haxz0I) – C++ on Sea (2020)
 - K.Iglberger. [*Free your functions!*](https://www.youtube.com/watch?v=WLDT1lDOsb4) – CppCon (2017)
 
@@ -434,6 +437,13 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - M.R&uuml;egg. [*Refactoring towards seams in C++*](https://accu.org/journals/overload/20/108/ruegg_1927/) – [Overload **108**](https://accu.org/journals/overload/overload108) (2012)
 - M.Feathers. [*Testing effectively with legacy code*](https://www.informit.com/articles/article.aspx?p=359417) (2005)
 
+### Embedded systems
+
+:movie_camera:
+
+- L.Valenty. [*Embedded logging case study: From C to shining C++*](https://www.youtube.com/watch?v=Dt0vx-7e_B0) – C++Now (2022)
+- D.Saks. [*Writing better embedded software*](https://www.youtube.com/watch?v=3VtGCPIoBfs) – Meeting C++ (2018)
+
 ---
 
 ## Safety and security
@@ -482,6 +492,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - С.Ryan. [*Design patterns: Examples in C++*](https://www.youtube.com/watch?v=MEejmuLwX9M) – ACCU (2023)
+- K.Iglberger. [*Back to basics: Designing classes, part I*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2021)
 - F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)
 - D.Nesteruk. [*Design patterns in modern C++*](https://www.youtube.com/watch?v=sJnoIF4_Ug8) – ACCU (2016)
 
@@ -872,7 +883,7 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 
 ---
 
-## Semantic code patterns
+## Miscellaneous patterns
 
 ### Address of
 
@@ -959,6 +970,21 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 :link:
 
 - Y.Wu. [*Compile-time strings*](https://accu.org/journals/overload/30/172/wu/) – [Overload **172**](https://accu.org/journals/overload/overload172) (2022)
+
+### Customization point objects
+
+:link:
+
+- [*Customization point design in C++11 and beyond*](https://ericniebler.com/2014/10/21/customization-point-design-in-c11-and-beyond/) (2014)
+
+:grey_question:
+
+- [*What are customization point objects and how to use them?*](https://stackoverflow.com/q/53495848) – Stack Overflow
+- [*What is a niebloid?*](https://stackoverflow.com/q/62928396) – Stack Overflow
+
+:anchor:
+
+- [*Customization point object*](https://en.cppreference.com/w/cpp/ranges/cpo) – C++ reference
 
 ---
 
@@ -1140,6 +1166,7 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 - V.Ciura. [*Functional programming in modern C++: The imperatives must go!*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – HE71NqRpvTQ (2023)
 - R.Feldman. [*Why isn’t functional programming the norm?*](https://www.youtube.com/watch?v=QyJZzq0v7Z4) – ClojuTRE (2019)
+- S.Wlaschin. [*Functional design patterns*](https://www.youtube.com/watch?v=srQt1NAHYC0) – NDC Sydney (2017)
 
 ### Monads
 

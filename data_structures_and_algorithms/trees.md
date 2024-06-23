@@ -5,7 +5,7 @@
 - [Binary trees](#binary-trees)
 	- [Binary search trees](#binary-search-trees)
 	- [Self-balancing binary search trees](#self-balancing-binary-search-trees)
-		- [AVL (Adelson-Velskiĭ–Landis) trees](#avl-adelson-velskiĭlandis-trees)
+		- [AVL (Adelson-Velsky–Landis) trees](#avl-adelson-velskylandis-trees)
 	- [Other binary trees](#other-binary-trees)
 		- [Binary indexed trees (Fenwick trees)](#binary-indexed-trees-fenwick-trees)
 	- [Generation of binary trees](#generation-of-binary-trees)
@@ -13,6 +13,7 @@
 	- [Optimization of binary trees](#optimization-of-binary-trees)
 - [B/B+-trees](#bb-trees)
 - [Range trees](#range-trees)
+- [Interval trees](#interval-trees)
 - [Tries](#tries)
 - [Traversal](#traversal)
 - [Volumetric trees](#volumetric-trees)
@@ -55,7 +56,7 @@
 
 - [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) – Wikipedia
 
-#### AVL (Adelson-Velskiĭ–Landis) trees
+#### AVL (Adelson-Velsky–Landis) trees
 
 > An AVL tree is a self-balancing binary search tree in which for every node the height of the left and right subtrees can differ by at most one.
 

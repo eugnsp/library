@@ -9,6 +9,7 @@
 	- [Calling conventions](#calling-conventions)
 	- [Implementation of inheritance](#implementation-of-inheritance)
 	- [Implementation of exceptions](#implementation-of-exceptions)
+- [Keywords](#keywords)
 - [Attributes](#attributes)
 	- [`[[maybe_unused]]`](#maybe_unused)
 	- [`[[likely]]` / `[[unlikely]]`](#likely--unlikely)
@@ -21,6 +22,7 @@
 	- [`const` and `mutable`](#const-and-mutable)
 	- [`constexpr`](#constexpr)
 		- [`constexpr` and dynamic allocations](#constexpr-and-dynamic-allocations)
+	- [`consteval`](#consteval)
 	- [`decltype` and `std::declval()`](#decltype-and-stddeclval)
 	- [`enum`, `enum class`](#enum-enum-class)
 	- [`friend`](#friend)
@@ -70,6 +72,7 @@
 	- [Member functions](#member-functions)
 		- [Member function poiners](#member-function-poiners)
 		- [Special member functions](#special-member-functions)
+		- [Explicit object parameter / deducing `this`](#explicit-object-parameter--deducing-this)
 	- [Deleted functions (`= delete;`)](#deleted-functions--delete)
 	- [`main()`](#main)
 - [Operators](#operators)
@@ -130,6 +133,7 @@
 :movie_camera:
 
 - W.E.Brown. [*What I think when I think about C++*](https://www.youtube.com/watch?v=bgyY3x8y4PE) – Core C++ (2022)
+- V.Ciura. [*C++ mythbusters*](https://www.youtube.com/watch?v=Ue836lVgPtk) – Meeting C++ (2022)
 - H.Sutter. [*Quantifying accidental complexity: An empirical look at teaching and using C++*](https://www.youtube.com/watch?v=6lurOCdaj0Y) – CppCon (2020)
 - C.Carruth, T.Winters. [*What is C++*](https://www.youtube.com/watch?v=LJh5QCV4wDg) – CppCon (2019)
 
@@ -221,6 +225,14 @@ See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and
 
 ---
 
+## Keywords
+
+:link:
+
+- H.Sutter. [*Keywords that aren’t (or, comments by another name)*](https://www.drdobbs.com/keywords-that-arent-or-comments-by-anoth/184403859) – Dr.Dobb’s Journal (2003)
+
+---
+
 ## Attributes
 
 :grey_question:
@@ -296,6 +308,7 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 
 - W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*The principle behind C++ declaration syntax*](https://www.youtube.com/watch?v=dRClYjASTvA&t=1535s) – C++ on Sea (2022)
 - H.Hinnant. [*How to initialize `x` from expression `y`*](https://www.youtube.com/watch?v=hobFOAehwio) – Meeting C++ (2019)
+- D.Saks. [*East `const` but `constexpr` West*](https://www.youtube.com/watch?v=z6s6bacI424) – code::dive (2018)
 
 ### `alignas` and alignment
 
@@ -373,6 +386,12 @@ See also [*Layout* – Class types](#layout).
 :grey_question:
 
 - [*C++20 `constexpr` `vector` and `string` not working*](https://stackoverflow.com/q/69498115) – Stack Overflow
+
+### `consteval`
+
+:grey_question:
+
+- [*Will `consteval` functions allow template parameters dependent on function arguments?*](https://stackoverflow.com/q/56130792) – Stack Overflow
 
 ### `decltype` and `std::declval()`
 
@@ -471,6 +490,7 @@ See [*Friend function templates* – Function templates – Templates](templates
 :grey_question:
 
 - [*A `using` statement compiles with g++, fails compilation with clang*](https://stackoverflow.com/q/27954940) – Stack Overflow
+- [*About the ambiguity of `using` a name vs `using` a namespace when doing unqualified calls*](https://stackoverflow.com/q/71690024) – Stack Overflow
 
 #### `using enum`
 
@@ -806,7 +826,7 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 :link:
 
-- [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) – Wikipedia
+- M.Sebor. *The joys and perils of C and C++ aliasing.* [Part 1](https://developers.redhat.com/blog/2020/06/02/the-joys-and-perils-of-c-and-c-aliasing-part-1), [Part II](https://developers.redhat.com/blog/2020/06/03/the-joys-and-perils-of-aliasing-in-c-and-c-part-2) (2020)
 - L.Torvalds. [*... What’s the **real** reason for avoiding union aliasing?*](https://lkml.org/lkml/2018/6/5/769) – Linux kernel mailing list (2018)
 - S.Yaghmour. [*What is the strict aliasing rule and why do we care?*](https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8) (2018)
 - M.Acton. [*Understanding strict aliasing*](https://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html) (2006)
@@ -826,6 +846,7 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 :anchor:
 
+- [*Type punning*](https://en.wikipedia.org/wiki/Type_punning) – Wikipedia
 - [Options that control optimization: Type punning](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html#Type-punning) – GCC documentation
 
 ### Value categories
@@ -987,6 +1008,12 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 - K.van Rens. [*Special member functions in C++*](https://www.youtube.com/watch?v=ajRTADPXEko) – C++ on Sea (2023)
 
+#### Explicit object parameter / deducing `this`
+
+:link:
+
+- S.Brand. [*C++23’s deducing `this`: what it is, why it is, how to use it*](https://devblogs.microsoft.com/cppblog/cpp23-deducing-this/)
+
 ### Deleted functions (`= delete;`)
 
 > If, instead of a function body, the special syntax `= delete;` is used, the function is defined as deleted. Any use of a deleted function is ill-formed (the program will not compile).
@@ -1052,6 +1079,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :movie_camera:
 
+- L.de Cock. [*Space invaders: The C++20 spaceship operator is upon us*](https://www.youtube.com/watch?v=_dFnSfFMuPw) – ACCU (2023)
 - W.E.Brown. [*A C++20 preview: `operator<=>`*](https://www.youtube.com/watch?v=_PKpyD6Ba1s) – CppCon (2017)
 
 :anchor:
