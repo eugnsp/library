@@ -6,7 +6,6 @@
 	- [The standard library](#the-standard-library)
 		- [Implementations](#implementations)
 - [Design principles](#design-principles)
-	- [Customization point objects](#customization-point-objects)
 - [Algorithms](#algorithms)
 	- [`std::iota`](#stdiota)
 	- [`std::min`, `std::max`, `std::minmax`](#stdmin-stdmax-stdminmax)
@@ -27,6 +26,7 @@
 		- [`std::list`](#stdlist)
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
+	- [`std::bitset`](#stdbitset)
 	- [Strings](#strings)
 		- [`std::string`](#stdstring)
 		- [Short string optimization](#short-string-optimization)
@@ -59,6 +59,7 @@
 	- [Reverse iterators](#reverse-iterators)
 - [Ranges](#ranges)
 	- [Views](#views)
+		- [`std::ranges::views::filter`](#stdrangesviewsfilter)
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
@@ -149,16 +150,6 @@
 
 - A.Stepanov. [*STL and its design principles*](https://www.youtube.com/watch?v=COuHLky7E2Q) (2002)
 - B.Steagall. [*Back to basics: Classic STL*](https://www.youtube.com/watch?v=0itiHQVWq4M) – CppCon (2021)
-
-### Customization point objects
-
-:link:
-
-- [*Customization point design in C++11 and beyond*](https://ericniebler.com/2014/10/21/customization-point-design-in-c11-and-beyond/) (2014)
-
-:grey_question:
-
-- [*What are customization point objects and how to use them?*](https://stackoverflow.com/q/53495848) – Stack Overflow
 
 ---
 
@@ -378,6 +369,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 - [*Why would I ever use `push_back` instead of `emplace_back`?*](https://stackoverflow.com/q/10890653) – Stack Overflow
 - [*Can `std::vector` `emplace_back` copy construct from an element of the vector itself?*](https://stackoverflow.com/q/24908718) – Stack Overflow
 - [*Is inserting an element of a `std::vector` into the same vector allowed?*](https://stackoverflow.com/q/29300408) – Stack Overflow
+- [*How can I propagate `const` when returning a `std::vector<int*>` from a `const` method?*](https://stackoverflow.com/q/71997744) – Stack Overflow
 
 :book:
 
@@ -393,6 +385,19 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 :grey_question:
 
 - [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/q/17794569) – Stack Overflow
+
+### `std::bitset`
+
+> The class template `bitset` represents a fixed-size sequence of `N` bits. Bitsets can be manipulated by standard logic operators and converted to and from strings and integers.
+
+:grey_question:
+
+- [*What is the performance of `std::bitset`?*](https://stackoverflow.com/q/30295174) – Stack Overflow
+- [*Is there any advantage to C-style bit manipulation over `std::bitset`?*](https://softwareengineering.stackexchange.com/q/284160) – Software Engineering
+
+:anchor:
+
+- [*`std::bitset`*](https://en.cppreference.com/w/cpp/utility/bitset) – C++ reference
 
 ### Strings
 
@@ -501,6 +506,10 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 - A.Tavory, V.Dreizin, B.Kosnik. [*Hash table design*](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
 
 #### `std::hash`
+
+:link:
+
+- A.O’Dwyer. [*Don’t reopen namespace `std`*](https://quuxplusone.github.io/blog/2021/10/27/dont-reopen-namespace-std/) (2021)
 
 :grey_question:
 
@@ -790,9 +799,15 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :movie_camera:
 
-- N.Josuttis. [*Using the filter view in practice*](https://www.youtube.com/watch?v=49ZYW4gHBIQ) – Meeting C++ (2023)
 - N.Josuttis. [*C++ views*](https://www.youtube.com/watch?v=qv29fo9sUjY) – ACCU (2023)
 - N.Josuttis. [*Belle views on C++ ranges, their details and the devil*](https://www.youtube.com/watch?v=O8HndvYNvQ4) – Meeting C++ (2022)
+
+#### `std::ranges::views::filter`
+
+:movie_camera:
+
+- N.Josuttis. [*Understanding the filter view to use it right*](https://www.youtube.com/watch?v=jR3WE-hAhCc) – ACCU (2024)
+- N.Josuttis. [*Using the filter view in practice*](https://www.youtube.com/watch?v=49ZYW4gHBIQ) – Meeting C++ (2023)
 
 ---
 
@@ -980,6 +995,10 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 ---
 
 ## Numerics
+
+:anchor:
+
+- E.J.Rosten, O.J.Rosten. [*`constexpr` for `<cmath>` and `<cstdlib>`*](https://wg21.link/p0533) – WG21/P0533
 
 ### Bit manipulation functions
 

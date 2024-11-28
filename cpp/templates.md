@@ -21,6 +21,7 @@
 - [SFINAE](#sfinae)
 	- [Detection idiom](#detection-idiom)
 - [Specialization](#specialization)
+- [Explicit instantiation](#explicit-instantiation)
 - [Tuples](#tuples)
 - [Type lists](#type-lists)
 - [Type traits](#type-traits)
@@ -298,11 +299,18 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 
 :link:
 
+- A.O’Dwyer. [*Don’t reopen namespace `std`*](https://quuxplusone.github.io/blog/2021/10/27/dont-reopen-namespace-std/) (2021)
 - O.Wigley. [*Alternatives for partial template function specialisation*](https://accu.org/journals/overload/10/50/wigley_385/) – [Overload **50**](https://accu.org/journals/overload/overload50) (2002)
 
 :grey_question:
 
 - [*Partial specialization of template class copy constructor*](https://stackoverflow.com/q/16575257) – Stack Overflow
+
+---
+
+## Explicit instantiation
+
+- A.O’Dwyer. [*Don’t explicitly instantiate `std` templates*](https://quuxplusone.github.io/blog/2021/08/06/dont-explicitly-instantiate-std-templates/) (2021)
 
 ---
 

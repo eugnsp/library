@@ -376,10 +376,15 @@ See also [*Layout* – Class types](#layout).
 - [*Should I mark a compiler-generated constructor as `constexpr`?*](https://stackoverflow.com/q/20810378) – Stack Overflow
 - [*Why disallow `goto` in `constexpr` functions?*](https://stackoverflow.com/q/45266577) – Stack Overflow
 - [*The value of a `const` variable is or is not usable in a constant expression, depending on the variable type*](https://stackoverflow.com/q/45593044) – Stack Overflow
+- [*Can you call a `static constexpr` member function at compile time?*](https://stackoverflow.com/q/78742160) – Stack Overflow
 
 :movie_camera:
 
 - S.Schurr. *`constexpr`:* [*Introduction*](https://www.youtube.com/watch?v=fZjYCQ8dzTc), [*Applications*](https://www.youtube.com/watch?v=qO-9yiAOQqc) – CppCon (2015)
+
+:anchor:
+
+- B.Revzin. [*Using unknown pointers and references in constant expressions*](https://wg21.link/p2280) – WG21/P2280
 
 #### `constexpr` and dynamic allocations
 
@@ -804,6 +809,10 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 - Item 2: *Prefer C++-style casts* – S.Meyers. *More effective C++: 35 new ways to improve your programs and designs* – [Addison-Wesley](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
 
 #### `dynamic_cast`
+
+:link:
+
+- A.O’Dwyer. [*Classically polymorphic visit replaces some uses of `dynamic_cast`*](https://quuxplusone.github.io/blog/2020/09/29/oop-visit/) (2020)
 
 :grey_question:
 

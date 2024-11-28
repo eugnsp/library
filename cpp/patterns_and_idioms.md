@@ -28,7 +28,7 @@
 - [Safety and security](#safety-and-security)
 	- [Memory safety](#memory-safety)
 	- [Safe integers](#safe-integers)
-- [Working with existing code](#working-with-existing-code)
+- [Working with existing code and legacy systems](#working-with-existing-code-and-legacy-systems)
 - [Overview of patterns and idioms](#overview-of-patterns-and-idioms)
 - [Creational patterns](#creational-patterns)
 	- [Abstract factory](#abstract-factory)
@@ -405,6 +405,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- P.Muldoon. [*Exceptionally bad: The story on the misuse of exceptions and how to do better*](https://www.youtube.com/watch?v=Oy-VTqz1_58) – CppCon (2023)
 - B.Saks. [*Back to basics: Exception handling and exception safety*](https://www.youtube.com/watch?v=W6jZKibuJpU) – CppCon (2019)
 
 :anchor:
@@ -448,6 +449,10 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ## Safety and security
 
+:movie_camera:
+
+- P.Sommerlad. [*Safer C++ with MISRA-C++-2023*](https://www.youtube.com/watch?v=oCZ1Rn-4AQE) – ACCU (2024)
+
 ### Memory safety
 
 :movie_camera:
@@ -471,10 +476,11 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 ---
 
-## Working with existing code
+## Working with existing code and legacy systems
 
 :movie_camera:
 
+- P.Muldoon. [*Redesigning legacy systems: Keys to success*](https://www.youtube.com/watch?v=c5CDAKAe0i0) – C++Now (2022)
 - D.Sankel. [*So, you inherited a large code base...*](https://www.youtube.com/watch?v=B2XtqVZcSdM) – CppCon (2017)
 - W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*A review of published code*](https://www.youtube.com/watch?v=dRClYjASTvA&t=4109s) – C++ on Sea (2022)
 

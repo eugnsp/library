@@ -92,7 +92,7 @@
 
 ## Alan Kay
 
-> Alan Kay is best known for his pioneering work on object-oriented programming and windowing graphical user interface (GUI) design. At Xerox PARC he led the design and development of the first modern windowed computer desktop interface. There he also led the development of the influential object-oriented programming language Smalltalk, both personally designing most of the early versions of the language and coining the term “object-oriented”. 
+> Alan Kay is best known for his pioneering work on object-oriented programming and windowing graphical user interface (GUI) design. At Xerox PARC he led the design and development of the first modern windowed computer desktop interface. There he also led the development of the influential object-oriented programming language [Smalltalk](programming.md#smalltalk), both personally designing most of the early versions of the language and coining the term “object-oriented”. 
 
 :movie_camera:
 

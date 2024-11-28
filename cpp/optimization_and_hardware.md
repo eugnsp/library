@@ -304,9 +304,14 @@ See also [*Infinite loop* – Patterns, idioms, and design principles](patterns_
 
 - [*Optimizing away a `while(1);` in C++0x*](https://stackoverflow.com/q/3592557) – Stack Overflow
 
+:movie_camera:
+
+- O.Giroux. [*Forward progress in C++*](https://www.youtube.com/watch?v=CuWM-OrPitw) – CppNorth (2022)
+
 :anchor:
 
 - H.-J. Boehm. [*Why undefined behavior for infinite loops?*](https://wg14.link/n1528) – WG14/N1528
+- JF.Bastien. [*Trivial infinite loops are not Undefined Behavior*](https://wg14.link/p2809) – WG14/P2809
 
 #### Strict aliasing rule
 
