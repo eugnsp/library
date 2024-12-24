@@ -806,6 +806,7 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 :movie_camera:
 
+- N.Josuttis. [*Guide to the C++ filter view in C++ programming*](https://www.youtube.com/watch?v=c1gfbbE2zts) – CppCon (2024)
 - N.Josuttis. [*Understanding the filter view to use it right*](https://www.youtube.com/watch?v=jR3WE-hAhCc) – ACCU (2024)
 - N.Josuttis. [*Using the filter view in practice*](https://www.youtube.com/watch?v=49ZYW4gHBIQ) – Meeting C++ (2023)
 
@@ -985,6 +986,10 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 :grey_question:
 
 - [*Understanding `std::inout_ptr` and `std::out_ptr` in C++23*](https://stackoverflow.com/q/68918312) – Stack Overflow
+
+:movie_camera:
+
+- J.Erickson. [*Leveraging C++20/23 features for low level interactions*](https://www.youtube.com/watch?v=RzO7s-RbLwk) – CppCon (2024)
 
 :anchor:
 

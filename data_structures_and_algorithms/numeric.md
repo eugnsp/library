@@ -8,6 +8,7 @@
 		- [Denormal numbers](#denormal-numbers)
 		- [NaNs](#nans)
 	- [Applications](#applications)
+	- [History](#history)
 - [Arithmetic algorithms](#arithmetic-algorithms)
 	- [Common functions](#common-functions)
 		- [Powers and logarithms](#powers-and-logarithms)
@@ -71,7 +72,6 @@
 
 :link:
 
-- [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
 - R.Harris. [*You’re going to have to think!*](https://accu.org/journals/overload/18/99/harris_1702/) – [Overload **99**](https://accu.org/journals/overload/overload99) (2010)
 - R.Harris. [*Why fixed point won’t cure your floating point blues*](https://accu.org/journals/overload/18/100/harris_1717/) – [Overload **100**](https://accu.org/journals/overload/overload100) (2011)
 - R.Harris. [*Why rationals won’t cure your floating point blues*](https://accu.org/journals/overload/19/101/harris_1986/) – [Overload **101**](https://accu.org/journals/overload/overload101) (2011)
@@ -101,6 +101,10 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 - J.Farrier. [*Demystifying floating point*](https://www.youtube.com/watch?v=k12BJGSc2Nc) – CppCon (2015)
 - J.Gustafson. [*Beating floats at their own game*](https://www.youtube.com/watch?v=N05yYbUZMSQ) – HPC Advisory Council Australia Conference (2017)
 
+:anchor:
+
+- [*IEEE 754*](https://en.wikipedia.org/wiki/IEEE_754) – Wikipedia
+
 #### Denormal numbers
 
 :link:
@@ -116,13 +120,27 @@ programming for games and science*](https://www.crcpress.com/GPGPU-Programming-f
 
 :link:
 
-- [*What is the rationale for all comparisons returning false for IEEE754 NaN values?*](https://stackoverflow.com/q/1565164) – Stack Overflow
+- A.Cherkaev. [*The secret life of NaN*](https://anniecherkaev.com/the-secret-life-of-nan) (2018)
+
+:grey_question:
+
+- [*What is the rationale for all comparisons returning false for IEEE 754 NaN values?*](https://stackoverflow.com/q/1565164) – Stack Overflow
+
+:movie_camera:
+
+- A.Cherkaev. [*The secret life of Not-a-Number*](https://www.youtube.com/watch?v=3jddE24Ep54) – Con West (2019)
 
 ### Applications
 
 :link:
 
 - M.Rayman. [*How many decimals of &pi; do we really need?*](https://www.jpl.nasa.gov/edu/news/2016/3/16/how-many-decimals-of-pi-do-we-really-need/) – NASA (2016)
+
+### History
+
+:link:
+
+- C.Severance. [*An interview with the old man of floating-point*](https://people.eecs.berkeley.edu/~wkahan/ieee754status/754story.html) (1998)
 
 ---
 

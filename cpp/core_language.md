@@ -63,6 +63,7 @@
 	- [Range-based `for` loop](#range-based-for-loop)
 	- [`if`](#if)
 		- [`if constexpr`](#if-constexpr)
+	- [`switch`](#switch)
 - [Functions and function objects](#functions-and-function-objects)
 	- [Overload resolution](#overload-resolution)
 	- [Argument-dependent lookup](#argument-dependent-lookup)
@@ -168,6 +169,7 @@
 
 :movie_camera:
 
+- M.Clow. [*What is an ABI, and why is breaking it a problem?*](https://www.youtube.com/watch?v=-XjUiLgJE2Y) – C++Now (2021)
 - M.Clow. [*What is an ABI, and why is breaking it bad?*](https://www.youtube.com/watch?v=7RoTDjLLXJQ) – CppCon (2020)
 - L.Dionne. [*The C++ ABI from the ground up*](https://www.youtube.com/watch?v=DZ93lP1I7wU) – CppCon (2019)
 
@@ -906,6 +908,18 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 - [*Difference between `if constexpr()` vs `if()`*](https://stackoverflow.com/q/43434491) – Stack Overflow
 
+### `switch`
+
+> Transfers control to one of several statements, depending on the value of a condition.
+
+:movie_camera:
+
+- H.Wennborg. [*C++ `switch` statements under the hood in LLVM*](https://www.youtube.com/watch?v=nfy51jenN3M) – StockholmCpp (2024)
+
+:anchor:
+
+- [*`switch` statement*](https://en.cppreference.com/w/cpp/language/switch) - C++ reference
+
 ---
 
 ## Functions and function objects
@@ -917,6 +931,7 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 :movie_camera:
 
+- B.Saks. [*Back to basics: Function call resolution in C++*](https://www.youtube.com/watch?v=ab_RzvGAS1Q) – CppCon (2024)
 - M.Shah. [*Back to basics: Functions in C++*](https://www.youtube.com/watch?v=CpHX1Du5R0Q) – CppCon (2023)
 
 ### Overload resolution
@@ -1325,6 +1340,10 @@ See also [*Implementation of inheritance* – ABI and implementation](#implement
 :grey_question:
 
 - [*Inheritance — Multiple and virtual inheritance*](https://isocpp.org/wiki/faq/multiple-inheritance) – C++ FAQ
+
+:movie_camera
+
+- I.Bogosavljevic. [*The hidden performance price of C++ virtual functions*](https://www.youtube.com/watch?v=n6PvvE_tEPk) – CppCon (2022)
 
 :book:
 

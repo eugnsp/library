@@ -176,6 +176,7 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 
 :movie_camera:
 
+- B.Saks. [*Back to basics: Function call resolution in C++*](https://www.youtube.com/watch?v=ab_RzvGAS1Q) – CppCon (2024)
 - W.E.Brown. [*C++ function templates: How do they really work?*](https://www.youtube.com/watch?v=nfIX8yWlByY) – C++ on Sea (2019)
 - W.E.Brown. [*C++ function templates: How do they really work?*](https://www.youtube.com/watch?v=NIDEjY5ywqU) – CppCon (2018)
 
