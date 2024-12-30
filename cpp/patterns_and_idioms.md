@@ -160,6 +160,7 @@
 
 :link:
 
+- R.Chen. [*API naming principles for conditional operations: `On`, `When`, and `If`*](https://devblogs.microsoft.com/oldnewthing/20241212-00/?p=110632) (2024)
 - K.Henney. [*Exceptional naming*](https://kevlinhenney.medium.com/exceptional-naming-6e3c8f5bffac) (2021)
 - J.M&uuml;ller. [*Technique: Recursive variants and boxes*](https://www.foonathan.net/2019/11/implementer-vs-user-names/) (2019)
 - T.K&ouml;ppe. [TotW #119: *Using-declarations and namespace aliases*`](https://abseil.io/tips/119) – Abseil C++ Tips
@@ -497,6 +498,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- S.Theophil. [*Reusable code, reusable data structures*](https://www.youtube.com/watch?v=5zkDeiyF5Rc) – CppCon (2024)
 - С.Ryan. [*Design patterns: Examples in C++*](https://www.youtube.com/watch?v=MEejmuLwX9M) – ACCU (2023)
 - K.Iglberger. [*Back to basics: Designing classes, part I*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2021)
 - F.Pikus. [*C++ design patterns: From C++03 to C++17*](https://www.youtube.com/watch?v=MdtYi0vvct0) – CppCon (2019)

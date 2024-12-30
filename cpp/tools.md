@@ -22,6 +22,7 @@
 - [Debugging](#debugging)
 	- [GDB](#gdb)
 		- [Pretty printers](#pretty-printers)
+- [AI tools](#ai-tools)
 - [C++ tests and quizes](#c-tests-and-quizes)
 
 ---
@@ -224,6 +225,14 @@ See also [*Libraries* – Assembly, low-level programming, and OS internals](../
 - *Pretty printing.* [Part I](http://tromey.com/blog/?p=524), [Part II](http://tromey.com/blog/?p=546) (2008)
 - [*Make debugging easier with custom pretty-printers*](https://rethinkdb.com/blog/make-debugging-easier-with-custom-pretty-printers) (2010)
 - R.Sonderfeld. [*GDB pretty printers for Boost*](https://github.com/ruediger/Boost-Pretty-Printer)
+
+---
+
+## AI tools
+
+:movie_camera:
+
+- A.Alexandrescu. [*Robots are after your job: Exploring generative AI for C++*](https://www.youtube.com/watch?v=J48YTbdJNNc) – CppCon (2023)
 
 ---
 
