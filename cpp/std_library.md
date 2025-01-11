@@ -371,10 +371,18 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 - [*Is inserting an element of a `std::vector` into the same vector allowed?*](https://stackoverflow.com/q/29300408) – Stack Overflow
 - [*How can I propagate `const` when returning a `std::vector<int*>` from a `const` method?*](https://stackoverflow.com/q/71997744) – Stack Overflow
 
+:movie_camera:
+
+- K.Carpenter. [*Back to basics: Almost always vector*](https://www.youtube.com/watch?v=VRGRTvfOxb4) – CppCon (2024)
+
 :book:
 
 - B.Stroustrup. *Making a `vector` fit for a standard* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
 - T.Cargill. *A dynamic vector is harder than it looks* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
+
+:anchor:
+
+- U.Steinm&uuml;ller, A.Zitzewitz. [*Generic dynamic arrays in C++*](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/1992/WG21%201992/X3J16_92-0005%20WG21_N0083.pdf) – WG21/N0083 (1992)
 
 #### `std::vector<bool>`
 

@@ -146,7 +146,7 @@ http://www.reedbeta.com/blog/data-oriented-hash-table/
 
 :movie_camera:
 
-- O.Shilon. [*Shared libraries in Windows and Linux*](https://www.youtube.com/watch?v=6TrJc06IekE) – C++ on Sea (2023)
+- O.Shilon. [*Linkers, loaders and shared libraries in Windows, Linux, and C++*](https://www.youtube.com/watch?v=_enXuIxuNV4) – CppCon (2023)
 
 #### Linux
 
