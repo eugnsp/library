@@ -193,7 +193,7 @@
 
 - R.Orr. [*Windows 64-bit calling conventions*](https://accu.org/journals/overload/22/120/orr_1897/) – [Overload **120**](https://accu.org/journals/overload/overload120) (2014)
 
-### Implementation of inheritance
+### Implementation of inheritance and virtual functions
 
 :link:
 
@@ -202,6 +202,10 @@
 :grey_question:
 
 - [*Virtual table layout of multiple inheritance*](https://stackoverflow.com/q/15921372) – Stack Overflow
+
+:movie_camera:
+
+- C.Ryan. [*C++ under the hood: Internal class mechanisms*](https://www.youtube.com/watch?v=gWinNE5rd6Q) – CppCon (2024)
 
 :book:
 
@@ -1012,7 +1016,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 ### Member functions
 
-#### Member function poiners
+#### Member function pointers
 
 :link:
 
@@ -1021,6 +1025,10 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 - V.Lazarenko. [*Why C++ member function pointers are 16 bytes wide*](http://lazarenko.me/wide-pointers/) (2013)
 - R.Chen. [*Pointers to member functions are very strange animals*](https://devblogs.microsoft.com/oldnewthing/?p=40713) (2004)
 - C.Skelly. [*Powerful pointers to member functions*](https://github.com/eugnsp/CUJ/blob/master/12.10/skelly/skelly.md) – C/C++ Users Journal **12** (1994)
+
+:movie_camera:
+
+- C.Ryan. [*C++ under the hood: Internal class mechanisms*](https://www.youtube.com/watch?v=gWinNE5rd6Q) – CppCon (2024)
 
 :anchor:
 
@@ -1267,6 +1275,7 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 :movie_camera:
 
+- M.Shah. [*Back to basics: Pointers*](https://www.youtube.com/watch?v=0zd8eznWv4k) – CppCon (2021)
 - B.Saks. [*Back to basics: Pointers and memory*](https://www.youtube.com/watch?v=rqVWj0aVSxg) – CppCon (2020)
 
 #### Null pointers
@@ -1420,6 +1429,8 @@ See also [*Move semantics* – Patterns, idioms, and design principles](patterns
 :movie_camera:
 
 - A.Kirsh. [*To move or not to move: An interactive analysis*](https://www.youtube.com/watch?v=PuCWH5DXDBc) – CppNorth (2023)
+- A.Fertig. [*Back to basics: Move semantics*](https://www.youtube.com/watch?v=knEaMpytRMA) – CppCon (2022)
+- N.Josuttis. [*Back to basics: Move semantics*](https://www.youtube.com/watch?v=Bt3zcJZIalk) – CppCon (2021)
 - N.Josuttis. [*The hidden secrets of move semantics*](https://www.youtube.com/watch?v=TFMKjL38xAI) – CppCon (2020)
 - D.Olsen. [*Back to basics: Move semantics*](https://www.youtube.com/watch?v=ZG59Bqo7qX4) – CppCon (2020)
 - K.Iglberger. *Back to basics: Move semantics.* [Part I](https://www.youtube.com/watch?v=St0MNEU5b0o), [Part II](https://www.youtube.com/watch?v=pIzaZbKUw2s) – CppCon (2019)

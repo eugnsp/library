@@ -71,6 +71,8 @@
 :link:
 
 - [*Visual transistor-level simulation of the 6502 CPU*](http://visual6502.org/)
+- K.Shirriff. [*The 6502 CPU’s overflow flag explained at the silicon level*](https://www.righto.com/2013/01/a-small-part-of-6502-chip-explained.html) (2013)
+- K.Shirriff. [*The 6502 overflow flag explained mathematically*](https://www.righto.com/2012/12/the-6502-overflow-flag-explained.html) (2012)
 
 :movie_camera:
 

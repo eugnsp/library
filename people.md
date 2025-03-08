@@ -12,6 +12,7 @@
 - [Brian Kernighan](#brian-kernighan)
 - [Donald Knuth](#donald-knuth)
 - [Thomas Kurtz](#thomas-kurtz)
+- [John McCarthy](#john-mccarthy)
 - [Peter Norvig](#peter-norvig)
 - [Robert Sedgewick](#robert-sedgewick)
 - [Bjarne Stroustrup](#bjarne-stroustrup)
@@ -92,7 +93,7 @@
 
 ## Alan Kay
 
-> Alan Kay is best known for his pioneering work on object-oriented programming and windowing graphical user interface (GUI) design. At Xerox PARC he led the design and development of the first modern windowed computer desktop interface. There he also led the development of the influential object-oriented programming language [Smalltalk](programming.md#smalltalk), both personally designing most of the early versions of the language and coining the term “object-oriented”. 
+> Alan Kay is best known for his pioneering work on object-oriented programming and windowing graphical user interface (GUI) design. At Xerox PARC he led the design and development of the first modern windowed computer desktop interface. There he also led the development of the influential object-oriented programming language [Smalltalk](programming.md#smalltalk), both personally designing most of the early versions of the language and coining the term “object-oriented”.
 
 :movie_camera:
 
@@ -145,11 +146,23 @@
 
 ## Thomas Kurtz
 
-> Thomas Kurtz is a retired Dartmouth professor of mathematics and computer scientist, who along with his colleague [John G. Kemeny](#john-kemeny) set in motion the then revolutionary concept of making computers as freely available to college students as library books were, by implementing the concept of time-sharing at Dartmouth College. In his mission to allow non-expert users to interact with the computer, he co-developed the BASIC programming language and the Dartmouth Time Sharing System during 1963 to 1964.
+> Thomas Kurtz was a Dartmouth professor of mathematics and computer scientist, who along with his colleague [John G. Kemeny](#john-kemeny) set in motion the then revolutionary concept of making computers as freely available to college students as library books were, by implementing the concept of time-sharing at Dartmouth College. In his mission to allow non-expert users to interact with the computer, he co-developed the BASIC programming language and the Dartmouth Time Sharing System during 1963 to 1964.
 
 :anchor:
 
 - [*Thomas E. Kurtz*](https://en.wikipedia.org/wiki/Thomas_E._Kurtz) – Wikipedia
+
+## John McCarthy
+
+> John McCarthy was an American computer scientist who was one of the founders of the discipline of artificial intelligence. He co-authored the document that coined the term “artificial intelligence”, developed the programming language family Lisp, significantly influenced the design of the language ALGOL, popularized time-sharing, and invented garbage collection.
+
+:movie_camera:
+
+- J.Mishlove. [*John McCarthy: Artificial intelligence*](https://www.youtube.com/watch?v=Ozipf13jRr4) – Thinking Allowed (1989)
+
+:anchor:
+
+- [*John McCarthy*](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)) – Wikipedia
 
 ## Peter Norvig
 

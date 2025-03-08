@@ -2,7 +2,6 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Introduction and overview](#introduction-and-overview)
 - [Bit operations](#bit-operations)
 	- [Bit index](#bit-index)
 		- [De Bruijn sequence](#de-bruijn-sequence)
@@ -12,22 +11,19 @@
 
 ---
 
-## Introduction and overview
+## Bit operations
 
 :link:
 
+- J.L.Neumann. [*Bit permutations*](http://programming.sirrida.de/bit_perm.html) (2020)
 - S.E.Anderson. [*Bit twiddling hacks*](http://graphics.stanford.edu/~seander/bithacks.html) (2005)
+- H.G.Dietz. [*The aggregate magic algorithms*](http://aggregate.org/MAGIC/) 
 
 :movie_camera:
 
 - J.Shun. [*Bit hacks*](https://www.youtube.com/watch?v=ZusiKXcz_ac) – MIT 6.172: [Performance engineering of software systems](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/) (2018)
 
 <!-- Hacker's delight -->
-
-
----
-
-## Bit operations
 
 ### Bit index
 

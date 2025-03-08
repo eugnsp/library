@@ -393,9 +393,12 @@
 
 ### Binary search
 
-See also [*Binary search* – Algorithm analysis](algorithm_analysis.md#binary-search).
+See also [*Binary search* – Design and analysis](design_and_analysis.md#binary-search).
+
+:movie_camera:
+
+- A.Alexandrescu. [*Robots are after your job: Exploring generative AI for C++*](https://www.youtube.com/watch?v=J48YTbdJNNc) – CppCon (2023)
 
 :book:
 
 - Col. 4: *Writing correct programs*, Sec. 9.4: *Major surgery – binary search* – J.Bentley. [*Programming pearls*](https://www.oreilly.com/library/view/programming-pearls-second/9780134498058/) (1999)
-

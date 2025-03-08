@@ -396,6 +396,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - M.Clow. [*Simplifying code and achieving exception safety using `unique_ptr`*](https://cplusplusmusings.wordpress.com/2015/03/09/simplifying-code-and-achieving-exception-safety-using-unique_ptr/) (2015)
 - H.Sutter. [GotW #102: *Exception-safe function calls*](https://herbsutter.com/gotw/_102/) (2012)
 - H.Sutter. [GotW #56: *Exception-safe function calls*](http://www.gotw.ca/gotw/056.htm)
+- E.Lippert. [*Vexing exceptions*](https://ericlippert.com/2008/09/10/vexing-exceptions/) (2008)
 - H.Sutter. [*When and how to use exceptions*](http://www.drdobbs.com/when-and-how-to-use-exceptions/184401836) – Dr.Dobb’s Journal (2004)
 - H.Sutter. [*Exception-safe generic containers*](http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/aw/meyerscddemo/DEMO/MAGAZINE/SU_FRAME.HTM) (1997)
 - T.Cargill. [*Exception handling: A false sense of security*](http://ptgmedia.pearsoncmg.com/images/020163371x/supplements/Exception_Handling_Article.html) (1994)
@@ -406,6 +407,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- M.Burke. [*You’re doing exceptions wrong*](https://www.youtube.com/watch?v=oWvX-hdIAQo) – NDC London (2025)
 - P.Muldoon. [*Exceptionally bad: The story on the misuse of exceptions and how to do better*](https://www.youtube.com/watch?v=Oy-VTqz1_58) – CppCon (2023)
 - B.Saks. [*Back to basics: Exception handling and exception safety*](https://www.youtube.com/watch?v=W6jZKibuJpU) – CppCon (2019)
 
@@ -444,7 +446,6 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - L.Valenty. [*Embedded logging case study: From C to shining C++*](https://www.youtube.com/watch?v=Dt0vx-7e_B0) – C++Now (2022)
-- D.Saks. [*Writing better embedded software*](https://www.youtube.com/watch?v=3VtGCPIoBfs) – Meeting C++ (2018)
 
 ---
 
@@ -452,6 +453,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- H.Penne. [*The existential threat against C++ and where to go from here*](https://www.youtube.com/watch?v=gG4BJ23BFBE) – NDC TechTown (2024)
 - P.Sommerlad. [*Safer C++ with MISRA-C++-2023*](https://www.youtube.com/watch?v=oCZ1Rn-4AQE) – ACCU (2024)
 
 ### Memory safety
@@ -626,7 +628,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :anchor:
 
 - [*Bridge pattern*](https://en.wikipedia.org/wiki/Bridge_pattern) – Wikipedia
-  
+
 ### Type erasure
 
 :link:
@@ -787,7 +789,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 - Ch. 16: *Policy-based design* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 - Ch. 1: *Policy-based class design* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) – [Addison-Wesley](https://www.informit.com/store/modern-c-plus-plus-design-generic-programming-and-design-9780201704310) (2001)
-  
+
 ### Dependency injection
 
 > Dependency injection is a design pattern in which an object or function receives other objects or functions that it depends on. It aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
@@ -895,7 +897,7 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 
 ### Address of
 
-> The "address of" trick is used to find the address of an object of a class that has an overloaded unary `operator&`. 
+> The "address of" trick is used to find the address of an object of a class that has an overloaded unary `operator&`.
 
 :link:
 
@@ -914,15 +916,6 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 ### Opaque typedef (whole value)
 
 > An opaque type is a new type that is distinct from and distinguishable from its underlying type, yet retaining layout compatibility with its underlying type. The intent is to allow programmer control (1) over substitutability between an opaque alias and its underlying type, and (2) over overloading based on any parameter whose type is or involves an opaque alias.
-> ```cpp
-> template<class T> class Whole_value {
-> public:
->     Whole_value(T v) : v_(v) {}
->     operator T() const { return v_; }
-> private:
->     T v_;
-> };
-> ```
 
 :link:
 
@@ -936,6 +929,7 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 :movie_camera:
 
 - A.Williams. [*Library approaches for strong type aliases*](https://www.youtube.com/watch?v=b1Gq9WABaRU) – C++Now (2021)
+- S.Brand. [*How to write well-behaved value wrappers*](https://www.youtube.com/watch?v=J4A2B9eexiw) – CppCon (2018)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)
 
 :anchor:

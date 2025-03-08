@@ -63,6 +63,7 @@
 - [Memory](#memory)
 	- [`std::malloc` / `std::calloc` / `std::free`](#stdmalloc--stdcalloc--stdfree)
 	- [Allocators](#allocators)
+		- [Fancy (synthetic) pointers](#fancy-synthetic-pointers)
 	- [Smart pointers](#smart-pointers)
 		- [`std::unique_ptr`](#stdunique_ptr)
 		- [`std::shared_ptr`](#stdshared_ptr)
@@ -270,6 +271,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 
 :movie_camera:
 
+- R.Grimm. [*Back to basics: Standard library containers*](https://www.youtube.com/watch?v=ZMUKa2kWtTk) – CppCon (2022)
 - B.Steagall. [*If I had my ’druthers: A proposal for improving the containers in C++2x*](https://www.youtube.com/watch?v=bAE0qteS4Rk) – C++Now (2018)
 - D.Higgins. [*Using STL containers efficiently*](https://www.youtube.com/watch?v=oBbGC-sUYVA) – CppCon (2016)
 - M.Clow. [*Customizing the standard containers*](https://www.youtube.com/watch?v=NyivAC3WE6g) – CppCon (2016)
@@ -856,6 +858,12 @@ See also [*Memory* – Optimization and hardware](optimization_and_hardware.md#m
 
 - [*`std::allocator`*](https://en.cppreference.com/w/cpp/memory/allocator) – C++ reference
 
+#### Fancy (synthetic) pointers
+
+:movie_camera:
+
+- B.Steagall. [*Fancy pointers for fun and profit*](https://www.youtube.com/watch?v=v3dz-AKOVL8) – CppCon (2018)
+
 ### Smart pointers
 
 See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
@@ -878,6 +886,7 @@ See also [*Boost.SmartPtr* – Applications](applications.md#boostsmartptr).
 
 :movie_camera:
 
+- D.Olsen. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=YokY6HzLkXs) – CppCon (2022)
 - R.Grimm. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=sQCSX7vmmKY) – CppCon (2020)
 - A.O’Dwyer. [*Back to basics: Smart pointers*](https://www.youtube.com/watch?v=xGDLkt-jBJ4) – CppCon (2019)
 - M.Fleming. [*The smart pointers I wish I had*](https://www.youtube.com/watch?v=CKCR5eFVrmc) – CppCon (2019)
@@ -1517,5 +1526,3 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 <!-- move into Templates
 - [*Making `std::get` play nice with SFINAE*](https://stackoverflow.com/q/41708491) – Stack Overflow -->
-
-

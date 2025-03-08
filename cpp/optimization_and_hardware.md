@@ -26,6 +26,7 @@
 		- [Strict aliasing rule](#strict-aliasing-rule)
 - [Benchmarking](#benchmarking)
 - [Profiling](#profiling)
+- [Interaction with hardware](#interaction-with-hardware)
 
 ---
 
@@ -332,3 +333,13 @@ See [*Type-punning* – Core language](core_language.md#type-punning).
 :movie_camera:
 
 - M.Ropert. [*The basics of profiling*](https://www.youtube.com/watch?v=dToaepIXW4s) – CppCon (2021)
+
+---
+
+## Interaction with hardware
+
+:movie_camera:
+
+- J.Erickson. [*Leveraging C++20/23 features for low level interactions*](https://www.youtube.com/watch?v=RzO7s-RbLwk) – CppCon (2024)
+- D.Saks. [*Writing better embedded software*](https://www.youtube.com/watch?v=3VtGCPIoBfs) – Meeting C++ (2018)
+- K.Smith. [*C++ hardware register access*](https://www.youtube.com/watch?v=lrrQaa_-hzU) – CppCon (2014)

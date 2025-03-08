@@ -35,6 +35,10 @@ For cryptographically secure random number generation see [*Random numbers gener
 
 - M.Marini. [*A class hierarchy for random number generation*](https://github.com/eugnsp/CUJ/blob/master/14.10/marini/marini.md) – C/C++ Users Journal **14** (1996)
 
+:movie_camera:
+
+- R.Michaels. [*Fast, high-quality pseudo-random numbers for non-cryptographers*](https://www.youtube.com/watch?v=I5UY3yb0128) – CppCon (2022)
+
 :anchor:
 
 - [*Xorshift*](https://en.wikipedia.org/wiki/Xorshift) – Wikipedia
