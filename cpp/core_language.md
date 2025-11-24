@@ -7,7 +7,7 @@
 - [ABI and implementation](#abi-and-implementation)
 	- [Itanium C++ ABI](#itanium-c-abi)
 	- [Calling conventions](#calling-conventions)
-	- [Implementation of inheritance](#implementation-of-inheritance)
+	- [Implementation of inheritance and virtual functions](#implementation-of-inheritance-and-virtual-functions)
 	- [Implementation of exceptions](#implementation-of-exceptions)
 - [Keywords](#keywords)
 - [Attributes](#attributes)
@@ -20,6 +20,7 @@
 	- [`alignas` and alignment](#alignas-and-alignment)
 	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
+	- [`volatile`](#volatile)
 	- [`constexpr`](#constexpr)
 		- [`constexpr` and dynamic allocations](#constexpr-and-dynamic-allocations)
 	- [`consteval`](#consteval)
@@ -71,7 +72,7 @@
 		- [`std::function`](#stdfunction)
 	- [Lambda expressions](#lambda-expressions)
 	- [Member functions](#member-functions)
-		- [Member function poiners](#member-function-poiners)
+		- [Member function pointers](#member-function-pointers)
 		- [Special member functions](#special-member-functions)
 		- [Explicit object parameter / deducing `this`](#explicit-object-parameter--deducing-this)
 	- [Deleted functions (`= delete;`)](#deleted-functions--delete)
@@ -91,6 +92,8 @@
 		- [`wchar_t`](#wchar_t)
 	- [Floating-point types](#floating-point-types)
 		- [`__float128`](#__float128)
+	- [Numeric limits](#numeric-limits)
+		- [`CHAR_BIT`](#char_bit)
 	- [Trivial and POD types](#trivial-and-pod-types)
 	- [Pointer and array types](#pointer-and-array-types)
 		- [Null pointers](#null-pointers)
@@ -110,6 +113,7 @@
 	- [C++14](#c14)
 	- [C++17](#c17)
 	- [C++20](#c20)
+	- [C++23](#c23)
 - [Tricks and subtleties](#tricks-and-subtleties)
 	- [Accessing private and protected members](#accessing-private-and-protected-members)
 	- [Embedding binary data](#embedding-binary-data)
@@ -155,6 +159,7 @@
 
 :movie_camera:
 
+- B.A.Lelbach. [*The C++ execution model*](https://www.youtube.com/watch?v=6zq5ZmCvldU) – ACCU (2025)
 - B.Steagall. [*Back to basics: The abstract machine*](https://www.youtube.com/watch?v=ZAji7PkXaKY) – CppCon (2020)
 
 ---
@@ -365,6 +370,12 @@ See also [*Layout* – Class types](#layout).
 :anchor:
 
 - [ES.28: *Use lambdas for complex initialization, especially of `const` variables*](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-lambda-init) – C++ core guidelines
+
+### `volatile`
+
+:movie_camera:
+
+- B.Saks. [*What `volatile` means (and doesn’t mean)*](https://www.youtube.com/watch?v=GeblxEQIPFM) – CppCon (2024)
 
 ### `constexpr`
 
@@ -1098,16 +1109,20 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 :link:
 
 - J.M&uuml;ller. [*Mathematics behind comparison*](https://foonathan.net/2018/06/equivalence-relations/) (2018)
+- B.Stroustrup. [*A bit of background for the default comparison proposal*](https://isocpp.org/blog/2016/02/a-bit-of-background-for-the-default-comparison-proposal-bjarne-stroustrup) (2016)
 
 :anchor:
 
 - [*Comparison operators*](https://en.cppreference.com/w/cpp/language/operator_comparison) – C++ reference
+- B.Stroustrup. [*Default comparisons*](https://wg21.link/n4175) – WG21/N4175
 
 #### Three-ways comparisons
 
 :link:
 
-- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) – [Overload **147**](https://accu.org/journals/overload/overload147) (2018)
+- J.Boccara. [*How to define comparison operators by default in C++*](https://www.fluentcpp.com/2021/08/23/how-to-define-comparison-operators-by-default-in-c/) (2021)
+- B.Revzin. [*Implementing the spaceship operator for `optional`*](https://accu.org/journals/overload/26/147/revzin_2563/) (2018)
+ – [Overload **147**](https://accu.org/journals/overload/overload147) (2018)
 
 :movie_camera:
 
@@ -1216,6 +1231,10 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 - [*Implicit type conversion rules in C++ operators*](https://stackoverflow.com/q/5563000) – Stack Overflow
 - [*Why do unsigned “small” integers promote to `signed int`?*](https://stackoverflow.com/q/56604299) – Stack Overflow
 
+:movie_camera:
+
+- S.Shemesh. [*C++ integer promotion is completely broken*](https://www.youtube.com/watch?v=b0VjS0OKTmQ) – Core C++ (2021)
+
 :anchor:
 
 - [*Integral promotion*](https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion) – C++ reference
@@ -1258,6 +1277,22 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 :anchor:
 
 - [*Additional floating types*](https://gcc.gnu.org/onlinedocs/gcc/Floating-Types.html) – GCC documentation
+
+### Numeric limits
+
+> The `std::numeric_limits` class template provides a standardized way to query various properties of arithmetic types.
+
+:anchor:
+
+- [*`std::numeric_limits`*](https://en.cppreference.com/w/cpp/types/numeric_limits) – C++ reference
+
+#### `CHAR_BIT`
+
+> Bit width of a byte.
+
+:anchor:
+
+- J.Bastien. [*There are exactly 8 bits in a byte*](https://wg21.link/p3477) – WG21/P3477
 
 ### Trivial and POD types
 
@@ -1304,6 +1339,10 @@ See also [*Floating-point arithmetic* – Numeric data structures and algorithms
 
 - A.Fertig. [*When an empty destructor is required*](https://andreasfertig.blog/2023/12/when-an-empty-destructor-is-required/) (2023)
 - A.Fertig. [*Why you shouldn’t provide an empty destructor*](https://andreasfertig.blog/2023/11/why-you-shouldnt-provide-an-empty-destructor/) (2023)
+
+:grey_question:
+
+- [*Significance of trivial destruction*](https://stackoverflow.com/q/41897418) – Stack Overflow
 
 :anchor:
 
@@ -1495,6 +1534,16 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 - [*Compiler support for C++20*](https://en.cppreference.com/w/cpp/compiler_support/20) – C++ reference
 
+### C++23
+
+:movie_camera:
+
+- M.Gregoire. [*C++23: An overview of almost all new and updated features*](https://www.youtube.com/watch?v=Cttb8vMuq-Y) – CppCon (2023)
+
+:anchor:
+
+- [*Compiler support for C++23*](https://en.cppreference.com/w/cpp/compiler_support/23) – C++ reference
+
 ---
 
 ## Tricks and subtleties
@@ -1515,7 +1564,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
-- JF Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
+- J.Bastien. [*`*(char*)0 = 0;`*](https://www.youtube.com/watch?v=dFIqNZ8VbRY) – C++ on Sea (2023)
 - J.M&uuml;ller . [*C++ features you might not know*](https://www.youtube.com/watch?v=zGWj7Qo_POY) – C++ on Sea (2023)
 - M.Kruse. [*`v.~uint32_t();`*](https://www.youtube.com/watch?v=Pf8gDb-j4wQ) – CppCon (2019)
 - J.Wakely, M.Clow. [*These 10 tricks that only library implementors know!*](https://www.youtube.com/watch?v=wYd2V4nPn0E) – ACCU (2018)

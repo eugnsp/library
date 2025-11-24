@@ -19,6 +19,7 @@
 	- [Two-phase lookup](#two-phase-lookup)
 		- [Keywords `template` and `typename` as disambiguators](#keywords-template-and-typename-as-disambiguators)
 - [SFINAE](#sfinae)
+	- [SFINAE-friendliness](#sfinae-friendliness)
 	- [Detection idiom](#detection-idiom)
 - [Specialization](#specialization)
 - [Explicit instantiation](#explicit-instantiation)
@@ -71,7 +72,7 @@
 :link:
 
 - J.M&uuml;ller. [*Tricks with default template arguments*](https://foonathan.net/2020/10/tricks-default-template-argument/) (2020)
- 
+
 ### Argument deduction
 
 :grey_question:
@@ -168,6 +169,7 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 
 :link:
 
+- R.Chen. [*Function overloading is more flexible (and more convenient) than template function specialization*](https://devblogs.microsoft.com/oldnewthing/20250410-00/?p=111063) (2025)
 - H.Sutter. [*Why not specialize function templates?*](http://www.gotw.ca/publications/mill17.htm)
 
 :grey_question:
@@ -281,7 +283,6 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 :grey_question:
 
 - [*What exactly is the “immediate context” mentioned in the C++11 Standard for which SFINAE applies?*](https://stackoverflow.com/q/15260685) – Stack Overflow
-- [*What is “Expression SFINAE”?*](https://stackoverflow.com/q/12654067) – Stack Overflow
 - [*How does `std::void_t` work*](https://stackoverflow.com/q/27687389) – Stack Overflow
 - [*SFINAE and partial class template specializations*](https://stackoverflow.com/q/30676839) – Stack Overflow
 - [*SFINAE examples?*](https://stackoverflow.com/q/982808) – Stack Overflow
@@ -289,6 +290,16 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 :anchor:
 
 - [*SFINAE*](https://en.cppreference.com/w/cpp/language/sfinae) – C++ reference
+
+### SFINAE-friendliness
+
+:link:
+
+- B.Ganetsky. [*A single-function SFINAE-friendly `std::apply`*](https://blog.ganets.ky/SfinaeApply/) (2024)
+
+:grey_question:
+
+- [*What is “Expression SFINAE”?*](https://stackoverflow.com/q/12654067) – Stack Overflow
 
 ### Detection idiom
 

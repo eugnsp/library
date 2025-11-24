@@ -60,6 +60,7 @@
 		- [Transform iterators](#transform-iterators)
 		- [Constant iterators](#constant-iterators)
 		- [Iterator sentinels](#iterator-sentinels)
+		- [Segmented iterators](#segmented-iterators)
 	- [Template method](#template-method)
 	- [Execution token](#execution-token)
 	- [Observer](#observer)
@@ -425,6 +426,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :movie_camera:
 
+- P.Nash. [*Back to basics: Testing in C++*](https://www.youtube.com/watch?v=7_H4qzhWbnQ) – CppCon (2023)
 - P.Nash. [*Test driven C++*](https://www.youtube.com/watch?v=N2gTxeIHMP0) – CppCon (2020)
 - B.Saks. [*Back to basics: Unit tests*](https://www.youtube.com/watch?v=_OHE33s7EKw) – CppCon (2020)
 - D.Steffen. [*The science of unit tests*](https://www.youtube.com/watch?v=FjwayiHNI1w) – CppCon (2020)
@@ -874,6 +876,12 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 :link:
 
 - J.M&uuml;ller. [*Tutorial: C++20’s iterator sentinels*](https://foonathan.net/2020/03/iterator-sentinel/) (2020)
+
+#### Segmented iterators
+
+:link:
+
+- M.H.Austern. [*Segmented iterators and hierarchical algorithms*](https://lafstern.org/matt/segmented.pdf) (2000)
 
 ### Template method
 

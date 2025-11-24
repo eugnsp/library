@@ -37,6 +37,10 @@
 
 - [*Closest pair of points*](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem) – Wikipedia
 
+:movie_camera:
+
+- E.Izzy. [*Divide and conquer algorithms*](https://www.youtube.com/watch?v=DB_JfiWoaV8) – PWL NYC (2019)
+
 :book:
 
 - Sec. 33.4: *Finding the closest pair of points* – T.H.Cormen, C.E.Leiserson, R.L.Rivest, C.Stein. [*Introduction to algorithms*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) (2009)

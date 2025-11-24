@@ -18,6 +18,7 @@
 
 :movie_camera:
 
+- A.Weis. [*C++ modules: Getting started today*](https://www.youtube.com/watch?v=twWFfYNd5gU) – ACCU (2024)
 - S.Downey. [*Writing a C++20 module*](https://www.youtube.com/watch?v=AO4piAqV9mg) – C++Now (2021)
 - B.Kolpackov. [*Building C++ modules*](https://www.youtube.com/watch?v=E8EbDcLQAoc) – CppCon (2017)
 
@@ -58,8 +59,7 @@
 - [*X Macro*](https://en.wikipedia.org/wiki/X_Macro) – Wikipedia
 - [*X-Macros*](https://en.wikibooks.org/wiki/C_Programming/Preprocessor_directives_and_macros#X-Macros) – WikiBooks
 - A.Lucas. *Reduce C-language coding errors with X macros.* [Part I](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-1/), [Part II](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-2/), [Part III](https://www.embedded.com/reduce-c-language-coding-errors-with-x-macros-part-3/) (2013)
-  
+
   :grey_question:
 
 - [*Real-world use of X-Macros*](https://stackoverflow.com/q/6635851) – Stack Overflow
-- 

@@ -2,7 +2,7 @@
 
 ## Table of contents <!-- omit in toc -->
 
-- [Optimizations](#optimizations)
+- [Performance and optimization](#performance-and-optimization)
 	- [Branch prediction](#branch-prediction)
 		- [`[[likely]]` / `[[unlikely]]` attributes](#likely--unlikely-attributes)
 		- [`likely` / `unlikely` Linux kernel macros](#likely--unlikely-linux-kernel-macros)
@@ -17,10 +17,12 @@
 	- [Integral arithmetic](#integral-arithmetic)
 		- [Integral multiplication](#integral-multiplication)
 		- [Integeral division](#integeral-division)
+		- [Signed and unsigned types](#signed-and-unsigned-types)
 	- [Empty base class optimization (EBO)](#empty-base-class-optimization-ebo)
 	- [Return value optimization and copy elision](#return-value-optimization-and-copy-elision)
 	- [Tail call optimisation](#tail-call-optimisation)
-	- [Devirtualization](#devirtualization)
+	- [Virtual functions](#virtual-functions)
+		- [Devirtualization](#devirtualization)
 	- [Undefined behavior](#undefined-behavior)
 		- [Infinite loops](#infinite-loops)
 		- [Strict aliasing rule](#strict-aliasing-rule)
@@ -30,7 +32,7 @@
 
 ---
 
-## Optimizations
+## Performance and optimization
 
 See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsing.md#optimizations).
 
@@ -48,6 +50,7 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 :movie_camera:
 
+- M.Godbolt. [*What every programmer should know about how CPUs work*](https://www.youtube.com/watch?v=-HNpim5x-IE) – GOTO (2024)
 - A.Lachmish. [*Algorithmic complexity, data locality, parallelism, and compiler optimizations, seasoned with some concurrency*](https://www.youtube.com/watch?v=0iXRRCnurvo) – CppCon (2022)
 - J.Bielak. [*The most important otimizations to apply in your C++ programs*](https://www.youtube.com/watch?v=qCjEN5XRzHc) – CppCon (2022)
 - A.Alexandrescu. [*Speed is found in the minds of people*](https://www.youtube.com/watch?v=FJJTYQYB1JQ) – CppCon (2019)
@@ -211,6 +214,12 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 - [*Why does GCC use multiplication by a strange number in implementing integer division?*](https://stackoverflow.com/q/41183935) – Stack Overflow
 - [*Why does the compiler generate a right-shift by 31 bits when dividing by 2?*](https://stackoverflow.com/q/40638335) – Stack Overflow
 
+#### Signed and unsigned types
+
+:movie_camera:
+
+- A.Dathskovsky. [*To int or to uint, this is the question*](https://www.youtube.com/watch?v=pnaZ0x9Mmm0) – CppCon (2024)
+
 ### Empty base class optimization (EBO)
 
 > Empty base class optimization allows the size of an empty base subobject to be zero. Empty base optimization is required for standard layout types.
@@ -266,7 +275,13 @@ See also [*Type-punning* – Core language](core_language.md#type-punning).
 - A.O’Dwyer. [*It’s not always obvious when tail-call optimization is allowed*](https://quuxplusone.github.io/blog/2021/01/09/tail-call-optimization/) (2021)
 - A.Balaam. [*Tail call optimisation in C++*](https://accu.org/journals/overload/20/109/balaam_1914/) – [Overload **109**](https://accu.org/journals/overload/overload109) (2012)
 
-### Devirtualization
+### Virtual functions
+
+:movie_camera:
+
+- S.Shemesh. [*Optimizing away C++ virtual functions may be pointless*](https://www.youtube.com/watch?v=i5MAXAxp_Tw) – CppCon (2023)
+
+#### Devirtualization
 
 :link:
 

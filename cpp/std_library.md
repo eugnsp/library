@@ -57,6 +57,7 @@
 	- [`std::ios_base::Init`](#stdios_baseinit)
 - [Iterators](#iterators)
 	- [Reverse iterators](#reverse-iterators)
+	- [Iterator categories](#iterator-categories)
 - [Ranges](#ranges)
 	- [Views](#views)
 		- [`std::ranges::views::filter`](#stdrangesviewsfilter)
@@ -142,6 +143,10 @@
 - [*libstdc++*](https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3)
 - [*libc++*](https://github.com/llvm-mirror/libcxx)
 - [*Microsoft*](https://github.com/microsoft/STL)
+
+:movie_camera:
+
+- H.Xie. [*Implement the C++ standard library: Design decisions, optimisations, and testing in implementing libc++*](https://www.youtube.com/watch?v=iw8hqKftP4I) – CppCon (2025)
 
 ---
 
@@ -258,6 +263,7 @@ See also [*Concepts* – Templates](templates.md#concepts).
 :grey_question:
 
 [*Why does `same_as` concept check type equality twice?*](https://stackoverflow.com/q/58509147) – Stack Overflow
+[*What is the difference between `std::default_initializable` and `std::is_default_constructible`?*](https://stackoverflow.com/q/62577956) – Stack Overflow
 
 ---
 
@@ -268,6 +274,9 @@ See also [*Concepts* – Templates](templates.md#concepts).
 - [*Nesting `std::` containers of movable objects*](https://stackoverflow.com/q/61269785) – Stack Overflow
 - [*Does C++11 allow `vector<const T>`?*](https://stackoverflow.com/q/6954906) – Stack Overflow
 - [*What’s the best way to iterate over two or more containers simultaneously*](https://stackoverflow.com/q/12552277) – Stack Overflow
+- [*Should an STL container avoid copying elements into themselves when the container is copied into itself?*](https://stackoverflow.com/q/57672592) – Stack Overflow
+- [*What does the standard library guarantee about self move assignment?*](https://stackoverflow.com/q/13127455) – Stack Overflow
+- [*What is the rationale for self-assignment-unsafe move assignment operators in the standard library?*](https://stackoverflow.com/q/39852013) – Stack Overflow
 
 :movie_camera:
 
@@ -372,6 +381,7 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 - [*Can `std::vector` `emplace_back` copy construct from an element of the vector itself?*](https://stackoverflow.com/q/24908718) – Stack Overflow
 - [*Is inserting an element of a `std::vector` into the same vector allowed?*](https://stackoverflow.com/q/29300408) – Stack Overflow
 - [*How can I propagate `const` when returning a `std::vector<int*>` from a `const` method?*](https://stackoverflow.com/q/71997744) – Stack Overflow
+- [*Why did C++11 remove the default value from the prototypes of `std::vector`’s fill constructor?*](https://stackoverflow.com/q/45926295) – Stack Overflow
 
 :movie_camera:
 
@@ -784,6 +794,16 @@ See also [*Iterator* – Patterns, idioms, and design principles](patterns_and_i
 
 - [*Iterator vs reverse iterator*](https://stackoverflow.com/q/889262) – Stack Overflow
 
+### Iterator categories
+
+:grey_question:
+
+- [*Why does `std::fill` use `ForwardIterator`, not `OutputIterator`?*](https://stackoverflow.com/q/43507846) – Stack Overflow
+
+:anchor:
+
+- [*`std::*_iterator_tag`*](https://en.cppreference.com/w/cpp/iterator/iterator_tags) – C++ reference
+
 ---
 
 ## Ranges
@@ -1177,6 +1197,11 @@ See [Randomized algorithms and probabilistic data structures – *Distributions*
 
 ### `std::byte`
 
+:grey_question:
+
+- [*A byte type: `std::byte` vs `std::uint8_t` vs `unsigned char` vs `char` vs `std::bitset<8>`*](https://stackoverflow.com/q/77097673) – Stack Overflow
+- [*Does a pointer to `std::byte` have the same aliasing relaxations as `char*`?*](https://stackoverflow.com/q/43551665) – Stack Overflow
+
 :anchor:
 
 - [*`std::byte`*](https://en.cppreference.com/w/cpp/types/byte) – C++ reference
@@ -1321,6 +1346,10 @@ Integer comparison functions `std::cmp_equal`, `std::cmp_not_equal`, `std::cmp_l
 - [*What to use: `std::optional` or `std::unique_ptr`?*](https://stackoverflow.com/q/44856701) – Stack Overflow
 - [*Implementing `operator<=>` for `optional<T>`*](https://stackoverflow.com/q/47315539) – Stack Overflow
 - [*Difference between Boost.Optional and `std::experimental::optional` assignment*](https://stackoverflow.com/q/40391244) – Stack Overflow
+
+:movie_camera:
+
+- S.Downey. [*`std::optional<T&>: Optional over references`*](https://www.youtube.com/watch?v=fTbTF0MUsPA) – CppCon (2025)
 
 :anchor:
 
