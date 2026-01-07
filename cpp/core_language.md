@@ -17,6 +17,7 @@
 	- [`[[noreturn]]`](#noreturn)
 	- [`[[trivially_relocatable]]`](#trivially_relocatable)
 - [Declarations](#declarations)
+	- [Forward declarations](#forward-declarations)
 	- [`alignas` and alignment](#alignas-and-alignment)
 	- [`auto`](#auto)
 	- [`const` and `mutable`](#const-and-mutable)
@@ -51,9 +52,11 @@
 - [Exceptions](#exceptions)
 	- [`noexcept` specifier](#noexcept-specifier)
 - [Expressions](#expressions)
-	- [`nullptr`](#nullptr)
-	- [Compound literals](#compound-literals)
-	- [User-defined literals](#user-defined-literals)
+	- [Literals](#literals)
+		- [`nullptr`](#nullptr)
+		- [String literals](#string-literals)
+		- [Compound literals](#compound-literals)
+		- [User-defined literals](#user-defined-literals)
 	- [Operator precedence and associativity](#operator-precedence-and-associativity)
 	- [Order of evaluation](#order-of-evaluation)
 	- [Type conversions](#type-conversions)
@@ -320,6 +323,12 @@ See [*Relocation* – Memory – Optimization and hardware](optimization_and_har
 - W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*The principle behind C++ declaration syntax*](https://www.youtube.com/watch?v=dRClYjASTvA&t=1535s) – C++ on Sea (2022)
 - H.Hinnant. [*How to initialize `x` from expression `y`*](https://www.youtube.com/watch?v=hobFOAehwio) – Meeting C++ (2019)
 - D.Saks. [*East `const` but `constexpr` West*](https://www.youtube.com/watch?v=z6s6bacI424) – code::dive (2018)
+
+### Forward declarations
+
+:grey_question:
+
+- [*When can I use a forward declaration?*](https://stackoverflow.com/q/553682) – Stack Overflow
 
 ### `alignas` and alignment
 
@@ -749,13 +758,21 @@ See also [*Exceptions* – Patterns, idioms, and design principles](patterns_and
 
 ## Expressions
 
-### `nullptr`
+### Literals
+
+#### `nullptr`
 
 > The keyword `nullptr` denotes the pointer literal. It is a prvalue of type `std::nullptr_t`.
 
 See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#stdnullptr_t).
 
-### Compound literals
+#### String literals
+
+:movie_camera:
+
+- N.Josuttis. [*What is `"hello"`*](https://www.youtube.com/watch?v=mMT5wLU1z-I) – ACCU (2025)
+
+#### Compound literals
 
 > A compound literal constructs an unnamed object of specified type in-place: `( type ) { initializer-list }`.
 
@@ -771,7 +788,7 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 
 - [*Compound literals*](https://en.cppreference.com/w/c/language/compound_literal) – C++ reference
 
-### User-defined literals
+#### User-defined literals
 
 > A user-defined literal (UDL) allows integer, floating-point, character, and string literals to produce objects of user-defined type by defining a user-defined suffix.
 
@@ -820,6 +837,10 @@ See [*`std::nullptr_t`* – The standard library and proposals](std_library.md#s
 :grey_question:
 
 - [*When should `static_cast`, `dynamic_cast`, `const_cast`, and `reinterpret_cast` be used?*](https://stackoverflow.com/q/332030) – Stack Overflow
+
+:movie_camera:
+
+- J.Turner. [*Implicit conversions considered harmful?*](https://www.youtube.com/watch?v=UECI6Q4bqWg) – NDC TechTown (2025)
 
 :book:
 
@@ -1014,6 +1035,7 @@ See also [*Lambda expression idioms* – Patterns, idioms, and design principles
 
 :movie_camera:
 
+- B.Ganetsky. [*Lambda none of the things*](https://www.youtube.com/watch?v=jyQLDIdiMPc) (lightning talk) – C++Now (2025)
 - W.E.Brown. [*A medley of C++*](https://www.youtube.com/watch?v=dRClYjASTvA): [*Why are they named lambdas?*](https://www.youtube.com/watch?v=dRClYjASTvA&t=2696s) – C++ on Sea (2022)
 - R.Orr. [*Let’s look at lambdas*](https://www.youtube.com/watch?v=NAuFNXIsbtw) – ACCU (2021)
 - B.Geller, A.Sermersheim. [*Back to basics: Lambda expressions*](https://www.youtube.com/watch?v=ZIPNFcw6V9o) – CppCon (2020)

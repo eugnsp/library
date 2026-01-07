@@ -641,8 +641,8 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 :movie_camera:
 
 - K.Iglberger. [*Breaking dependencies: Type erasure – The implementation details*](https://www.youtube.com/watch?v=7MNyAHp0h7A) – C++ Meeting (2023)
+- K.Iglberger. [*Breaking dependencies: Type erasure – The implementation details*](https://www.youtube.com/watch?v=qn6OqefuH08) – CppCon (2022)
 - K.Iglberger. [*Breaking dependencies: Type erasure – A design analysis*](https://www.youtube.com/watch?v=M4ekpfVo4_o) – CppCon (2021)
-
 
 ### Flyweight
 
@@ -936,6 +936,7 @@ See also [*Iterators* – The standard library and proposals](std_library.md#ite
 
 :movie_camera:
 
+- S.Shemesh. [*When C++ integers are not integers*](https://www.youtube.com/watch?v=74Mv3_iwa0w) (lightning talk) – C++Now (2025)
 - A.Williams. [*Library approaches for strong type aliases*](https://www.youtube.com/watch?v=b1Gq9WABaRU) – C++Now (2021)
 - S.Brand. [*How to write well-behaved value wrappers*](https://www.youtube.com/watch?v=J4A2B9eexiw) – CppCon (2018)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScst=975) – ACCU (2017)

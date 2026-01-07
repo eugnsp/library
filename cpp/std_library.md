@@ -26,6 +26,7 @@
 		- [`std::list`](#stdlist)
 		- [`std::vector`](#stdvector)
 		- [`std::vector<bool>`](#stdvectorbool)
+		- [`std::inplace_vector`](#stdinplace_vector)
 	- [`std::bitset`](#stdbitset)
 	- [Strings](#strings)
 		- [`std::string`](#stdstring)
@@ -405,6 +406,19 @@ See also [*Arrays and vectors* – Sequence data structures and algorithms](../d
 :grey_question:
 
 - [*Why is `vector<bool>` not an STL container?*](https://stackoverflow.com/q/17794569) – Stack Overflow
+
+#### `std::inplace_vector`
+
+> `inplace_vector` is a dynamically-resizable array with contiguous inplace storage.
+
+:grey_question:
+
+- [*When should I use a `std::inplace_vector` instead of a `std::vector`?*](https://stackoverflow.com/q/79137791) – Stack Overflow
+
+:anchor:
+
+- [*`std::inplace_vector`*](https://en.cppreference.com/w/cpp/container/inplace_vector.html) – C++ reference
+- G.B.Gadeschi et al. [*`inplace_vector`*](https://wg21.link/p0843) – WG21/P0843
 
 ### `std::bitset`
 

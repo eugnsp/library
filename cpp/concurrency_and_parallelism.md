@@ -6,6 +6,7 @@
 - [SIMD](#simd)
 	- [SIMD within a register (SWAR)](#simd-within-a-register-swar)
 - [Multithreading](#multithreading)
+	- [Memory model](#memory-model)
 	- [Concurrency and the standard library](#concurrency-and-the-standard-library)
 		- [`std::atomic`](#stdatomic)
 		- [`std::atomic_shared_ptr`](#stdatomic_shared_ptr)
@@ -20,9 +21,9 @@
 		- [Mutex locks](#mutex-locks)
 		- [Spin locks](#spin-locks)
 	- [Lock-free](#lock-free)
+		- [Atomic smart pointers](#atomic-smart-pointers)
 		- [Hazard pointers](#hazard-pointers)
 		- [Read-copy-update (RCU)](#read-copy-update-rcu)
-	- [Memory model](#memory-model)
 	- [POSIX threads](#posix-threads)
 	- [Coroutines](#coroutines)
 	- [Executors](#executors)
@@ -93,6 +94,23 @@
 :page_facing_up:
 
 - P.E.McKenney. [*Memory barriers: A hardware view for software hackers*](http://www.rdrop.com/~paulmck/scalability/paper/whymb.2010.06.07c.pdf) (2010)
+
+### Memory model
+
+:link:
+
+- [*C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?*](https://stackoverflow.com/q/6319146) – Stack Overflow
+
+:movie_camera:
+
+- A.S.Knatten. [*The two memory models*](https://www.youtube.com/watch?v=iEd9_ilEgdg) – Meeting C++ (2025)
+- R.Grimm. [*The C++ memory model*](https://www.youtube.com/watch?v=j7S0j0qnsTg) – Meeting C++ (2016)
+- M.Wong. [*C++11/14/17 atomics and memory model: Before the story consumes you*](https://www.youtube.com/watch?v=DS2m7T6NKZQ) – CppCon (2015)
+- V.Ziegler. [*The C++ memory model*](https://www.youtube.com/watch?v=gpsz8sc6mNU) – Meeting C++ (2014)
+
+:anchor:
+
+- [*Memory model*](https://en.cppreference.com/w/cpp/language/memory_model) – C++ reference
 
 ### Concurrency and the standard library
 
@@ -234,21 +252,37 @@
 :movie_camera:
 
 - F.Pikus. [*C++ atomics, from basic to advanced: What do they really do?*](https://www.youtube.com/watch?v=ZQFzMfHIxng) – CppCon (2017)
+- H.Boehm. [*Using weakly ordered C++ atomics correctly*](https://www.youtube.com/watch?v=M15UKpNlpeM) – CppCon (2016)
 - F.Pikus. *Live lock-free or deadlock (practical lock-free programming).* [Part I](https://www.youtube.com/watch?v=lVBvHbJsg5Y), [Part II](https://www.youtube.com/watch?v=1obZeHnAwz4) – CppCon (2015)
 - H.Sutter. *`atomic<>` weapons:* [Part I](https://www.youtube.com/watch?v=A8eCGOqgvH4), [Part II](https://www.youtube.com/watch?v=KeLBd2EJLOU) – C++ and Beyond (2012)
+
+:anchor:
+
+- H.Boehm. [*Memory model rationale*](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1479.htm) – WG14/N1479
+- H.Boehm. [*Memory model rationales*](https://wg21.link/n2176) – WG21/N2176
+- H.Boehm. [*A less formal explanation of the proposed C++ concurrency memory model*](https://wg21.link/n2138) – WG21/N2138
+- H.Boehm, L.Crowl. [*C++ atomic types and operations*](https://wg21.link/n2427) – WG21/N2427
+
+#### Atomic smart pointers
+
+:movie_camera:
+
+- D.Anderson. [*Smarter C++ atomic smart pointers: Efficient concurrent memory management for everybody*](https://www.youtube.com/watch?v=OS7Asaa6zmY) – CppCon (2022)
 
 #### Hazard pointers
 
 :link:
 
-- [*Hazard pointer* – Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
 - A.Alexandrescu, M.Michael. [*Lock-free data structures with hazard pointers*](http://www.drdobbs.com/lock-free-data-structures-with-hazard-po/184401890) – Dr.Dobb’s Journal (2004)
+
+:anchor:
+
+- [*Hazard pointer* – Wikipedia](https://en.wikipedia.org/wiki/Hazard_pointer)
 
 #### Read-copy-update (RCU)
 
 :link:
 
-- [*Read-copy-update*](https://en.wikipedia.org/wiki/Read-copy-update) – Wikipedia
 - P.E.McKenney. [*Introduction to RCU*](http://www2.rdrop.com/users/paulmck/RCU/)
 
 :movie_camera:
@@ -258,18 +292,9 @@
 
 :anchor:
 
+- [*Read-copy-update*](https://en.wikipedia.org/wiki/Read-copy-update) – Wikipedia
 - P.E.McKenney et al. [*Proposed RCU C++ API*](https://wg21.link/p0461) – WG21/P0461
 - P.E.McKenney. [*Read-copy update (RCU) for C++*](https://wg21.link/p0279) – WG21/P0279
-
-### Memory model
-
-:link:
-
-- [*C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?*](https://stackoverflow.com/q/6319146) – Stack Overflow
-
-:anchor:
-
-- [*Memory model*](https://en.cppreference.com/w/cpp/language/memory_model) – C++ reference
 
 ### POSIX threads
 

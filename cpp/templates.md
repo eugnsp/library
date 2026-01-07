@@ -24,9 +24,9 @@
 - [Specialization](#specialization)
 - [Explicit instantiation](#explicit-instantiation)
 - [Tuples](#tuples)
-- [Type lists](#type-lists)
 - [Type traits](#type-traits)
 - [Variadic templates](#variadic-templates)
+	- [Type lists](#type-lists)
 	- [Fold expressions](#fold-expressions)
 
 ---
@@ -340,21 +340,6 @@ See also [*Concepts* – The standard library and proposals](core_language.md#co
 
 ---
 
-## Type lists
-
-:link:
-
-- N.Deppe. [*Template metaprogramming. Part 2: Typelist*](https://nilsdeppe.com/posts/tmpl-part2) (2017)
-- J.Galowicz. [*Type lists*](https://blog.galowicz.de/2016/05/08/compile_time_type_lists/) (2016)
-- J.Galowicz. [*Type list compile time performance*](https://blog.galowicz.de/2016/06/25/cpp_template_type_list_performance/) (2016)
-- J.Galowicz. [*Transformations between user input/output and type lists*](https://blog.galowicz.de/2016/05/14/converting_between_c_strings_and_type_lists/) (2016)
-
-:book:
-
-- Ch. 3: *Typelists* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
-
----
-
 ## Type traits
 
 See also [*Type traits* – The standard library and Boost](std_library.md#type-traits).
@@ -402,6 +387,19 @@ See also [*Type traits* – The standard library and Boost](std_library.md#type-
 :anchor:
 
 - B.Seymour, S.T.Lavavej. [*Searching for types in parameter packs*](https://wg21.link/n4115) – WG21/N4115
+
+### Type lists
+
+:link:
+
+- N.Deppe. [*Template metaprogramming. Part 2: Typelist*](https://nilsdeppe.com/posts/tmpl-part2) (2017)
+- J.Galowicz. [*Type lists*](https://blog.galowicz.de/2016/05/08/compile_time_type_lists/) (2016)
+- J.Galowicz. [*Type list compile time performance*](https://blog.galowicz.de/2016/06/25/cpp_template_type_list_performance/) (2016)
+- J.Galowicz. [*Transformations between user input/output and type lists*](https://blog.galowicz.de/2016/05/14/converting_between_c_strings_and_type_lists/) (2016)
+
+:book:
+
+- Ch. 3: *Typelists* – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
 
 ### Fold expressions
 

@@ -50,7 +50,7 @@
 
 :movie_camera:
 
-- E.Campidoglio. [*Git hidden gems*](https://www.youtube.com/watch?v=WtUCZYyv-_w) – NDC Oslo (2023) 
+- E.Campidoglio. [*Git hidden gems*](https://www.youtube.com/watch?v=WtUCZYyv-_w) – NDC Oslo (2023)
 - C.Schafer. [*Git tutorial for beginners*](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
 
 :grey_question:
@@ -192,6 +192,7 @@ See also [*Libraries* – Assembly, low-level programming, and OS internals](../
 :link:
 
 - [*Debugging stack traces from crash dumps*](https://github.com/microsoft/WinObjC/wiki/Debugging-Stack-Traces-from-Crash-Dumps) – Microsoft
+- [*Unusual memory bit patterns*](https://www.softwareverify.com/memory-bit-patterns.php)
 
 :grey_question:
 
@@ -200,10 +201,10 @@ See also [*Libraries* – Assembly, low-level programming, and OS internals](../
 
 :movie_camera:
 
+- S.Brand. [*How debuggers work*](https://www.youtube.com/watch?v=0kgTuWkyorc) – NDC TechTown (2025)
 - B.Steagall. [*Back to basics: Debugging techniques*](https://www.youtube.com/watch?v=M7fV-eQwxrY) – CppCon (2021)
 - H.Matthews. [*Optimising a small real-world C++ application*](https://www.youtube.com/watch?v=fDlE93hs_-U) – ACCU (2019)
 - G.Law. [*Debugging Linux C++*](https://www.youtube.com/watch?v=V1t6faOKjuQ) – CppCon (2018)
-- [*Unusual memory bit patterns*](https://www.softwareverify.com/memory-bit-patterns.php)
 
 ### GDB
 
