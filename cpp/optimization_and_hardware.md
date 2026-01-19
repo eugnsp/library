@@ -355,6 +355,7 @@ See [*Type-punning* – Core language](core_language.md#type-punning).
 
 :movie_camera:
 
+- A.Fertig. [*Embedded friendly C++: Features that make a difference*](https://www.youtube.com/watch?v=eo7LuyzJPWY) – Meeting C++ (2025)
 - J.Erickson. [*Leveraging C++20/23 features for low level interactions*](https://www.youtube.com/watch?v=RzO7s-RbLwk) – CppCon (2024)
 - D.Saks. [*Writing better embedded software*](https://www.youtube.com/watch?v=3VtGCPIoBfs) – Meeting C++ (2018)
 - K.Smith. [*C++ hardware register access*](https://www.youtube.com/watch?v=lrrQaa_-hzU) – CppCon (2014)

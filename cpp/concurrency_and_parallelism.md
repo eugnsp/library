@@ -24,6 +24,7 @@
 		- [Atomic smart pointers](#atomic-smart-pointers)
 		- [Hazard pointers](#hazard-pointers)
 		- [Read-copy-update (RCU)](#read-copy-update-rcu)
+		- [Lock-free queues (FIFO)](#lock-free-queues-fifo)
 	- [POSIX threads](#posix-threads)
 	- [Coroutines](#coroutines)
 	- [Executors](#executors)
@@ -37,6 +38,10 @@
 :link:
 
 - B.Barney. [*Introduction to parallel computing*](https://computing.llnl.gov/tutorials/parallel_comp/) – Lawrence Livermore National Laboratory
+
+:movie_camera:
+
+- D.Gross. [*When nanoseconds matter: Ultrafast trading systems in C++*](https://www.youtube.com/watch?v=sX2nF1fW7kI) – CppCon (2024)
 
 ---
 
@@ -104,6 +109,7 @@
 :movie_camera:
 
 - A.S.Knatten. [*The two memory models*](https://www.youtube.com/watch?v=iEd9_ilEgdg) – Meeting C++ (2025)
+- J.Machutov&aacute;. [*Memory model: Get your shared data under control*](https://www.youtube.com/watch?v=L5RCGDAan2Y) – C++ Meeting (2023)
 - R.Grimm. [*The C++ memory model*](https://www.youtube.com/watch?v=j7S0j0qnsTg) – Meeting C++ (2016)
 - M.Wong. [*C++11/14/17 atomics and memory model: Before the story consumes you*](https://www.youtube.com/watch?v=DS2m7T6NKZQ) – CppCon (2015)
 - V.Ziegler. [*The C++ memory model*](https://www.youtube.com/watch?v=gpsz8sc6mNU) – Meeting C++ (2014)
@@ -122,7 +128,6 @@
 
 :movie_camera:
 
-- J.Machutov&aacute;. [*Memory Model: Get your shared data under control*](https://www.youtube.com/watch?v=L5RCGDAan2Y) – C++ Meeting (2023)
 - A.Williams. [*An introduction to multithreading in C++20*](https://www.youtube.com/watch?v=A7sVFJLJM-A) – CppCon (2022)
 - M.Shah. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=pfIC-kle4b0) – CppCon (2021)
 - A.O’Dwyer. [*Back to basics: Concurrency*](https://www.youtube.com/watch?v=F6Ipn7gCOsY) – CppCon (2020)
@@ -296,6 +301,12 @@
 - P.E.McKenney et al. [*Proposed RCU C++ API*](https://wg21.link/p0461) – WG21/P0461
 - P.E.McKenney. [*Read-copy update (RCU) for C++*](https://wg21.link/p0279) – WG21/P0279
 
+#### Lock-free queues (FIFO)
+
+:movie_camera:
+
+- C.Frasch. [*Single producer single consumer lock-free FIFO from the ground up*](https://www.youtube.com/watch?v=K3P_Lmq6pw0) – CppCon (2023)
+
 ### POSIX threads
 
 :link:
@@ -341,3 +352,5 @@ See [*Concurrency patterns* – Patterns, idioms, and design principles](pattern
 :movie_camera:
 
 - P.Steinbach. [*C++ on GPUs done right?*](https://www.youtube.com/watch?v=z43l_LaOqnM) – Meeting C++ (2015)
+
+<!-- http://alumni.cs.ucr.edu/~kishore/papers/semaphores.pdf -->

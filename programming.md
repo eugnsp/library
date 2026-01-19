@@ -6,6 +6,7 @@
 - [Programming languages](#programming-languages)
   - [Algol](#algol)
   - [BASIC](#basic)
+  - [B](#b)
   - [C](#c)
   - [Pascal](#pascal)
 - [Procedural programming](#procedural-programming)
@@ -61,6 +62,18 @@
 
 - M.J.Lorenzo. *Endless loop: The History of the BASIC programming language* (2017)
 
+### B
+
+> B is a programming language developed at Bell Labs around 1969 by Ken Thompson and Dennis Ritchie. It was a typeless language, with the only data type being the underlying machine's natural memory word format, whatever that might be. Depending on the context, the word was treated either as an integer or a memory address.
+
+:movie_camera:
+
+- [*The B programming language*](https://www.youtube.com/watch?v=OLDTPlLa1bI) – Vintage Computing Festival (2024)
+
+:anchor:
+
+- [*B*](https://en.wikipedia.org/wiki/B_%28programming_language%29) – Wikipedia
+
 ### C
 
 :movie_camera:
@@ -95,7 +108,7 @@
 
 :movie_camera:
 
-- G.Lebec. *&lambda;as.js, or a flock of functions*. [Part I](https://www.youtube.com/watch?v=3VQ382QG-y4) – Fullstack Academy 
+- G.Lebec. *&lambda;as.js, or a flock of functions*. [Part I](https://www.youtube.com/watch?v=3VQ382QG-y4) – Fullstack Academy
 
 ### Lambda calculus
 
