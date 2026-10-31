@@ -46,6 +46,7 @@
 
 - J.Hagins. [*Template metaprogramming: Practical application*](https://www.youtube.com/watch?v=4YC6_77-iEY) – CppCon (2021)
 - H.Matthews. [*The C++ type system is your friend*](https://www.youtube.com/watch?v=MCiVdu7gScs) – ACCU (2017)
+- E.Alligand. [*How I learned to stop worrying and love metaprogramming*](https://www.youtube.com/watch?v=u_8MMuVFz_k) – CppCon (2015)
 - W.E.Brown. *Modern template metaprogramming: A compendium.* [Part I](https://www.youtube.com/watch?v=Am2is2QCvxY), [Part II](https://www.youtube.com/watch?v=a0FliKwcwXE) – CppCon (2014)
 - A.Modell. [*C++ advanced topics in templates*](https://www.youtube.com/watch?v=X30OwlsMWak) – Tech Talk (2014)
 - M.Caisse. *Introduction to modern C++ techniques.* [Part I](https://www.youtube.com/watch?v=9TFV2JxX7L0), [Part II](https://www.youtube.com/watch?v=urshrBatNo4) – C++Now (2012)

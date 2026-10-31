@@ -223,6 +223,7 @@
 
 :movie_camera:
 
+- S.Downey. [*Object oriented programming in contemporary C++*](https://www.youtube.com/watch?v=m7gwSr27m74) – C++Now (2026)
 - T.Van Eerd. [*Keynote: SOLID, revisited*](https://www.youtube.com/watch?v=glYq-dvgby4) – C++Now (2021)
 - J.Kalb. [*Back to basics: Object-oriented programming*](https://www.youtube.com/watch?v=32tDTD9UJCE) – CppCon (2018)
 - S.Parent. [*Inheritance is the base class of evil*](https://www.youtube.com/watch?v=bIhUE5uUFOA) – GoingNative (2013)
@@ -582,7 +583,7 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 
 :link:
 
-- [*Singleton*](https://en.wikipedia.org/wiki/Singleton_pattern) – Wikipedia
+- S.Meyers, A.Alexandrescu. [*C++ and the perils of double-checked locking*](https://www.aristeia.com/Papers/DDJ_Jul_Aug_2004_revised.pdf) (2004)
 - F.Glassborow. *Exploring patterns: Part 1* – [Overload **26**](https://accu.org/journals/overload/overload26) (1998)
 - R.Nystrom. [*Singleton*](https://gameprogrammingpatterns.com/singleton.html) – Game programming patterns
 <!-- https://wiki.c2.com/?SingletonPattern -->
@@ -596,6 +597,11 @@ For exceptions in destructors, see [*Destructors*](#destructors).
 - Ch. 15: *Singleton – A classic OOP pattern* – F.G.Pikus. [*Hands-on design patterns with C++*](https://www.packtpub.com/application-development/hands-design-patterns-c) (2019)
 - Ch. 6: *Implementing singletons*  – A.Alexandrescu. [*Modern C++ design: Generic programming and design patterns applied*](http://erdani.com/index.php/books/modern-c-design/) (2001)
 - Item 26: *Limiting the number of objects of a class* – S.Meyers. [*More effective C++: 35 new ways to improve your programs and designs*](https://www.informit.com/store/more-effective-c-plus-plus-35-new-ways-to-improve-your-9780201633719) (1996)
+
+:anchor:
+
+- [*Singleton*](https://en.wikipedia.org/wiki/Singleton_pattern) – Wikipedia
+
 
 ### Two-phase initialization / Functional update
 
@@ -1053,6 +1059,10 @@ See also [*Infinite loops* – Hardware, optimization, and OS internals](optimiz
 
 ### Expression templates
 
+:movie_camera:
+
+- J.Falcou. *Expression templates – Past, present, future.* [Part I](https://www.youtube.com/watch?v=IiVl5oSU5B8), [Part II](https://www.youtube.com/watch?v=imU_WfonVr8), [Part III](https://www.youtube.com/watch?v=A9trwnv6k-w) – CppCon (2015)
+
 :book:
 
 - T.Veldhuizen. *Expression templates* – S.B.Lippman. [*C++ gems: Programming pearls from The C++ report*](https://www.cambridge.org/ru/academic/subjects/computer-science/software-engineering-and-development/c-gems-programming-pearls-c-report) (1997)
@@ -1176,11 +1186,16 @@ See also [*Multithreading* – Concurrency and parallelism](concurrency_and_para
 
 :link:
 
-- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) – Wikipedia
+- S.Meyers, A.Alexandrescu. [*C++ and the perils of double-checked locking*](https://www.aristeia.com/Papers/DDJ_Jul_Aug_2004_revised.pdf) (2004)
 
 :movie_camera:
 
+- K.Baker, C.Bhattacharyya. [*C++ magic statics demystified: History, internals, pitfalls, and optimizations *](https://www.youtube.com/watch?v=h40xp211BCw) – ACCU (2026)
 - F.Pikus. [*Live lock-free or deadlock (practical lock-free programming). Part I*](https://www.youtube.com/watch?v=lVBvHbJsg5Y) – CppCon (2015)
+
+:anchor:
+
+- [*Double-checked locking*](https://en.wikipedia.org/wiki/Double-checked_locking) – Wikipedia
 
 ---
 

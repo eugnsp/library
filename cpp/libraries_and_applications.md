@@ -9,6 +9,7 @@
   - [Boost.Iterator](#boostiterator)
   - [Boost.SmartPtr](#boostsmartptr)
     - [`boost::intrusive_ptr`](#boostintrusive_ptr)
+- [Qt](#qt)
 - [Applications](#applications)
   - [Space industry](#space-industry)
   - [Robotics](#robotics)
@@ -67,6 +68,14 @@
 
 - [*`intrusive_ptr`*](https://www.boost.org/doc/libs/release/libs/smart_ptr/smart_ptr.htm#intrusive_ptr) – Boost.SmartPtr
 - I.Muerte. [*An intrusive smart pointer*](https://wg21.link/p0468) – WG21/P0468
+
+---
+
+## Qt
+
+:movie_camera:
+
+- M.Wolff. [*Modern user interfaces for C++*](https://www.youtube.com/watch?v=RXTfC-35Nx8) – CppCon (2015)
 
 ---
 

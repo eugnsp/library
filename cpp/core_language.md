@@ -483,6 +483,10 @@ See [*Friend function templates* – Function templates – Templates](templates
 - [*Static variables in an inlined function*](https://stackoverflow.com/q/185624) – Stack Overflow
 - [*What is a `static` function in C?*](https://stackoverflow.com/q/558122) – Stack Overflow
 
+:movie_camera:
+
+- K.Baker, C.Bhattacharyya. [*C++ magic statics demystified: History, internals, pitfalls, and optimizations *](https://www.youtube.com/watch?v=h40xp211BCw) – ACCU (2026)
+
 ### `static_assert`
 
 :anchor:
@@ -1492,7 +1496,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :grey_question:
 
-- B.Stroustrup. [*C++11 - the new ISO C++ standard*](https://www.stroustrup.com/C++11FAQ.html)
+- B.Stroustrup. [*C++11 – the new ISO C++ standard*](https://www.stroustrup.com/C++11FAQ.html)
 
 ### C++14
 
@@ -1538,6 +1542,7 @@ See [*Opaque typedef* – Patterns, idioms, and design principles](patterns_and_
 
 :movie_camera:
 
+- N.M.Josuttis. [*Taming C++23: The things about C++23 you do not know*](https://www.youtube.com/watch?v=IVee1JXbrQE) – ACCU on Sea (2026)
 - M.Gregoire. [*C++23: An overview of almost all new and updated features*](https://www.youtube.com/watch?v=Cttb8vMuq-Y) – CppCon (2023)
 
 :anchor:

@@ -27,6 +27,8 @@
 	- [Undefined behavior](#undefined-behavior)
 		- [Infinite loops](#infinite-loops)
 		- [Strict aliasing rule](#strict-aliasing-rule)
+	- [Assembly](#assembly)
+		- [Zeroing a register](#zeroing-a-register)
 - [Benchmarking](#benchmarking)
 - [Profiling](#profiling)
 - [Interaction with hardware](#interaction-with-hardware)
@@ -57,6 +59,8 @@ See also [*Optimizations* – Compilers](../data_structures_and_algorithms/parsi
 
 :movie_camera:
 
+- R.C.Seacord. [*Dangerous optimizations*](https://www.youtube.com/watch?v=2KZgFiciOxY) – ACCU (2025)
+- L.Boehm. [*C++ as a microscope into hardware*](https://www.youtube.com/watch?v=KFe6LCcDjL8) – C++Now (2025)
 - M.Godbolt. [*What every programmer should know about how CPUs work*](https://www.youtube.com/watch?v=-HNpim5x-IE) – GOTO (2024)
 - A.Lachmish. [*Algorithmic complexity, data locality, parallelism, and compiler optimizations, seasoned with some concurrency*](https://www.youtube.com/watch?v=0iXRRCnurvo) – CppCon (2022)
 - J.Bielak. [*The most important optimizations to apply in your C++ programs*](https://www.youtube.com/watch?v=qCjEN5XRzHc) – CppCon (2022)
@@ -340,6 +344,19 @@ See also [*Infinite loop* – Patterns, idioms, and design principles](patterns_
 
 See [*Type-punning* – Core language](core_language.md#type-punning).
 
+### Assembly
+
+#### Zeroing a register
+
+:link:
+
+- R.Chen. [*Sure, `xor`ing a register with itself is the idiom for zeroing it out, but why not `sub`?*](https://devblogs.microsoft.com/oldnewthing/20260421-00/?p=112247) (2026)
+- M.Godbolt. [*Why `xor eax, eax`?*](https://xania.org/202512/01-xor-eax-eax) (2025)
+
+:movie_camera:
+
+- M.Godbolt. [*Why `xor eax, eax`?*](https://www.youtube.com/watch?v=eLjZ48gqbyg) (2025)
+
 ---
 
 ## Benchmarking
@@ -363,6 +380,6 @@ See [*Type-punning* – Core language](core_language.md#type-punning).
 :movie_camera:
 
 - A.Fertig. [*Embedded friendly C++: Features that make a difference*](https://www.youtube.com/watch?v=eo7LuyzJPWY) – Meeting C++ (2025)
-- J.Erickson. [*Leveraging C++20/23 features for low level interactions*](https://www.youtube.com/watch?v=RzO7s-RbLwk) – CppCon (2024)
+- J.Erickson. [*Leveraging C++20/23 features for low level interactions*](https://www.youtube.com/watch?v=rfkSHxSoQVE) – CppCon (2024)
 - D.Saks. [*Writing better embedded software*](https://www.youtube.com/watch?v=3VtGCPIoBfs) – Meeting C++ (2018)
 - K.Smith. [*C++ hardware register access*](https://www.youtube.com/watch?v=lrrQaa_-hzU) – CppCon (2014)

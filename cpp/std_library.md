@@ -35,6 +35,7 @@
 		- [`std::string_view`](#stdstring_view)
 		- [C-strings](#c-strings)
 	- [Unordered containers](#unordered-containers)
+		- [`std::unordered_map`](#stdunordered_map)
 		- [`std::hash`](#stdhash)
 	- [Container adaptors](#container-adaptors)
 		- [`std::stack`](#stdstack)
@@ -550,6 +551,12 @@ See also [*Local buffer optimization* – Patterns, idioms, and design principle
 - J.Lakos, P.Halpern. [*Equality comparison for unordered container*](https://wg21.link/n2986) – WG21/N2986
 - M.Pusz. [*Heterogeneous lookup for unordered containers*](https://wg21.link/p0919) – WG21/P0919
 - A.Tavory, V.Dreizin, B.Kosnik. [*Hash table design*](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/hash_based_containers.html) – [Policy-based data structures](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/)
+
+#### `std::unordered_map`
+
+:movie_camera:
+
+- K.B.Carpenter. [*`O(1)` or `O(no-no-no)` – Mastering the `unordered_map`*](https://www.youtube.com/watch?v=OF4Id8085s0) – ACCU on Sea (2026)
 
 #### `std::hash`
 
@@ -1452,6 +1459,7 @@ See also [*Type erasure* – Patterns, idioms, and design principles](patterns_a
 
 :movie_camera:
 
+- V.Fanaskov. [*Five issues with `std::expected` and how to fix them*](https://www.youtube.com/watch?v=eRi8q1FjEoY) – C++Now (2025)
 - N.Douglas. [*Introduction to proposed `std::expected`*](https://www.youtube.com/watch?v=JfMBLx7qE0I) – Meeting C++ (2017)
 
 :anchor:

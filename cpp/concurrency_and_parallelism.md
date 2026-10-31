@@ -30,6 +30,9 @@
 	- [Concurrency patterns](#concurrency-patterns)
 - [Coroutines](#coroutines)
 	- [Coroutines and the standard library](#coroutines-and-the-standard-library)
+	- [Generators](#generators)
+	- [Asynchronous I/O](#asynchronous-io)
+	- [Exceptions](#exceptions)
 - [GPU computing](#gpu-computing)
 
 ---
